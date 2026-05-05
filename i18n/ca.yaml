@@ -24,6 +24,7 @@ section_noticies_title:   "Notícies"
 # Galeria
 galeria_eyebrow:    "Treballs"
 galeria_title:      "Galeria"
+galeria_count_label: "fotografies"
 galeria_empty:      "Aviat hi haurà fotografies."
 foto_open:          "Ampliar imatge"
 foto_alt_default:   "Fotografia de Pocallum"

@@ -23,6 +23,7 @@ section_noticies_title:   "News"
 # Gallery
 galeria_eyebrow:    "Work"
 galeria_title:      "Gallery"
+galeria_count_label: "photographs"
 galeria_empty:      "Photos coming soon."
 foto_open:          "View image"
 foto_alt_default:   "Pocallum photography"

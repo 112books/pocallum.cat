@@ -21,16 +21,42 @@
   });
 })();
 
-/* ── Galeria shuffle ─────────────────────────────────────────────────────── */
+/* ── Galeria shuffle + mosaic ────────────────────────────────────────────── */
 (function () {
-  const grids = document.querySelectorAll('.js-shuffle');
-  grids.forEach(grid => {
-    const items = [...grid.querySelectorAll('.foto-item')];
-    for (let i = items.length - 1; i > 0; i--) {
+  const SIZE_CLASSES = ['foto-item--wide', 'foto-item--tall', 'foto-item--big', 'foto-item--hero'];
+
+  // Weighted pool: 50% standard, 22% tall, 14% wide, 10% big, 4% hero
+  const SIZE_POOL = [
+    ...Array(50).fill(''),
+    ...Array(22).fill('foto-item--tall'),
+    ...Array(14).fill('foto-item--wide'),
+    ...Array(10).fill('foto-item--big'),
+    ...Array(4).fill('foto-item--hero'),
+  ];
+
+  function fisherYates(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
+    return arr;
+  }
+
+  document.querySelectorAll('.js-shuffle').forEach(grid => {
+    const items = [...grid.querySelectorAll('.foto-item')];
+    const isMosaic = grid.classList.contains('js-mosaic');
+
+    fisherYates(items);
     items.forEach(el => grid.appendChild(el));
+
+    if (isMosaic) {
+      const pool = fisherYates([...SIZE_POOL]);
+      items.forEach((el, i) => {
+        SIZE_CLASSES.forEach(c => el.classList.remove(c));
+        const cls = pool[i % pool.length];
+        if (cls) el.classList.add(cls);
+      });
+    }
   });
 })();
 

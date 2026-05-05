@@ -1,22 +1,19 @@
 {{ define "main" }}
 
-<section class="page-header">
-  <div class="container">
-    <p class="page-eyebrow">{{ i18n "galeria_eyebrow" | default "Treballs" }}</p>
-    <h1 class="page-title">{{ i18n "galeria_title" | default "Galeria" }}</h1>
-  </div>
-</section>
-
 {{ $fotos := where .Site.RegularPages "Type" "galeria" }}
+
+<div class="galeria-bar container">
+  <h1 class="galeria-bar__title">{{ i18n "galeria_title" | default "Galeria" }}</h1>
+  <span class="galeria-bar__count">{{ len $fotos }}&nbsp;{{ i18n "galeria_count_label" | default "fotografies" }}</span>
+</div>
+
 {{ if $fotos }}
-<section class="galeria-section">
-  <div class="foto-grid foto-grid--galeria js-foto-grid js-shuffle" id="js-galeria-grid">
-    {{ range $i, $foto := $fotos }}
-      {{ $foto.Scratch.Set "index" $i }}
-      {{ partial "foto-card.html" $foto }}
-    {{ end }}
-  </div>
-</section>
+<div class="foto-grid foto-grid--galeria js-foto-grid js-shuffle js-mosaic" id="js-galeria-grid">
+  {{ range $i, $foto := $fotos }}
+    {{ $foto.Scratch.Set "index" $i }}
+    {{ partial "foto-card.html" $foto }}
+  {{ end }}
+</div>
 {{ else }}
 <div class="container" style="padding:4rem 0;">
   <p>{{ i18n "galeria_empty" | default "Aviat hi haurà fotografies." }}</p>

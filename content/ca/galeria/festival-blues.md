@@ -1,6 +1,6 @@
 ---
 title: ""
-date: 2024-01-01
+date: 2018-07-14
 servei: "cultura"
 image: "/images/galeria/Festival-blues-.jpg"
 draft: false
