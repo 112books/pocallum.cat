@@ -1,4 +1,4 @@
-name: Deploy → Producció (GitHub Pages → Dinahosting)
+name: Deploy → Producció (GitHub Pages)
 
 on:
   push:
@@ -29,15 +29,8 @@ jobs:
           hugo-version: '0.159.0'
           extended: true
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Build Hugo
-        env:
-          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
-        run: |
-          hugo --minify --baseURL "$HUGO_BASEURL"
+        run: hugo --minify --baseURL "https://pocallum.cat/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -54,14 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  # TODO: quan el domini estigui a punt, afegir un step de rsync a Dinahosting:
-  # - name: Deploy to Dinahosting via rsync
-  #   uses: burnett01/rsync-deployments@7.0.1
-  #   with:
-  #     switches: -avzr --delete
-  #     path: public/
-  #     remote_path: ${{ secrets.DINAHOSTING_PATH }}
-  #     remote_host: ${{ secrets.DINAHOSTING_HOST }}
-  #     remote_user: ${{ secrets.DINAHOSTING_USER }}
-  #     remote_key: ${{ secrets.DINAHOSTING_KEY }}

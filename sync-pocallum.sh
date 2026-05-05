@@ -149,20 +149,20 @@ deploy_prod_pages() {
   dim "(Quan el domini apunti a Dinahosting, usa l'opció 7 per al deploy final.)"
 }
 
-deploy_vps() {
-  require_vps
-  require_clean
-  print "Build producció per a ${REPO_PROD}..."
-  hugo --minify --baseURL "${REPO_PROD}" || exit 1
-  ok "Build correcte"
-  print "Pujant a ${SSH_HOST} via rsync..."
-  rsync -avz --delete \
-    --exclude='.well-known' \
-    --exclude='ssl' \
-    --exclude='cgi-bin' \
-    -e "ssh -o StrictHostKeyChecking=accept-new" \
-    "${BUILD_DIR}/" "${SSH_USER}@${SSH_HOST}:${SSH_PATH}" || exit 1
-  ok "Deploy VPS fet → ${REPO_PROD}"
+check_dns() {
+  print "Comprovant DNS de pocallum.cat..."
+  echo ""
+  dim "IPs esperades de GitHub Pages:"
+  dim "  185.199.108.153  185.199.109.153  185.199.110.153  185.199.111.153"
+  echo ""
+  dim "IPs actuals:"
+  dig +short pocallum.cat A | sort || echo "  (dig no disponible)"
+  echo ""
+  dim "CNAME www:"
+  dig +short www.pocallum.cat CNAME || echo "  (dig no disponible)"
+  echo ""
+  warn "Per activar el domini: configura els registres A a Dinahosting i afegeix"
+  warn "el Custom Domain 'pocallum.cat' a GitHub → Settings → Pages."
 }
 
 nova_foto() {
@@ -202,7 +202,7 @@ echo " 4) Build local (amb drafts)"
 echo "───────────────────────────────────────"
 echo " 5) Deploy staging  →  GitHub Pages (develop + staticrypt)"
 echo " 6) Deploy producció → GitHub Pages (main)"
-echo " 7) Deploy producció → VPS Dinahosting (rsync) [pendent config]"
+echo " 7) Estat del DNS (comprova si pocallum.cat apunta a GitHub Pages)"
 echo "───────────────────────────────────────"
 echo " f) Nova fotografia de galeria"
 echo " n) Nova notícia"
@@ -220,7 +220,7 @@ case $opt in
   4) build_local ;;
   5) deploy_staging ;;
   6) deploy_prod_pages ;;
-  7) deploy_vps ;;
+  7) check_dns ;;
   f) nova_foto ;;
   n) nova_noticia ;;
   0) exit 0 ;;
