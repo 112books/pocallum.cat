@@ -1,0 +1,115 @@
+{{ define "main" }}
+{{ $lp := $.Site.LanguagePrefix }}
+{{ $siteRoot := strings.TrimSuffix "/" site.BaseURL }}
+
+{{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>
+    <h1 class="hero-title">
+      {{ i18n "hero_title" | safeHTML | default "Fem fotos<br>que entenen<br>la música." | safeHTML }}
+    </h1>
+    <p class="hero-sub">{{ i18n "hero_sub" | default "Jazz, blues, teatre, dansa i arts escèniques. Barcelona, des del 2010." }}</p>
+    <div class="hero-actions">
+      <a href="{{ printf "%s/contacte/" $lp | relURL }}" class="btn btn--primary">
+        {{ i18n "cta_contact" | default "Demana pressupost" }}
+      </a>
+      <a href="{{ printf "%s/galeria/" $lp | relURL }}" class="btn btn--ghost">
+        {{ i18n "cta_gallery" | default "Veure galeria" }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* ── Darreres fotografies ─────────────────────────────────────────────── */}}
+{{ $fotos := where .Site.RegularPages "Type" "galeria" | first 8 }}
+{{ if $fotos }}
+<section class="section section--fotos">
+  <div class="foto-grid foto-grid--home js-foto-grid">
+    {{ range $i, $foto := $fotos }}
+      {{ $foto.Scratch.Set "index" $i }}
+      {{ partial "foto-card.html" $foto }}
+    {{ end }}
+  </div>
+  <div class="section-cta">
+    <a href="{{ printf "%s/galeria/" $lp | relURL }}" class="btn btn--ghost">
+      {{ i18n "see_all_photos" | default "Tota la galeria" }} →
+    </a>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Serveis — resum ─────────────────────────────────────────────────────── */}}
+{{ $serveis := hugo.Data.serveis }}
+{{ if $serveis }}
+<section class="section section--alt section--serveis-preview">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">{{ i18n "section_serveis_eyebrow" | default "El que fem" }}</p>
+      <h2 class="section-title">{{ i18n "section_serveis_title" | default "Serveis" }}</h2>
+    </div>
+    <div class="serveis-preview-grid">
+      {{ $lang := site.Language.Lang }}
+      {{ range $serveis.grups }}
+      <div class="serveis-preview-grup">
+        <h3 class="serveis-preview-grup__title">
+          {{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}
+        </h3>
+        <ul class="serveis-preview-list" role="list">
+          {{ range .items }}
+          <li>{{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+    <div class="section-cta">
+      <a href="{{ printf "%s/serveis/" $lp | relURL }}" class="btn btn--ghost">
+        {{ i18n "see_all_services" | default "Tots els serveis" }} →
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Notícies recents ─────────────────────────────────────────────────── */}}
+{{ $noticies := where .Site.RegularPages "Type" "noticies" | first 3 }}
+{{ if $noticies }}
+<section class="section section--noticies-preview">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">{{ i18n "section_noticies_eyebrow" | default "Actualitat" }}</p>
+      <h2 class="section-title">{{ i18n "section_noticies_title" | default "Notícies" }}</h2>
+    </div>
+    <div class="noticies-grid">
+      {{ range $noticies }}
+      <article class="noticia-card">
+        {{ if .Params.image }}
+        <a href="{{ .RelPermalink }}" class="noticia-card__img-wrap" tabindex="-1">
+          <img src="{{ .Params.image | absURL }}" alt="" loading="lazy">
+        </a>
+        {{ end }}
+        <div class="noticia-card__body">
+          <time class="noticia-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2 Jan 2006" }}
+          </time>
+          <h3 class="noticia-card__title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          {{ with .Params.lead }}
+          <p class="noticia-card__lead">{{ . | truncate 120 }}</p>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <div class="section-cta">
+      <a href="{{ printf "%s/noticies/" $lp | relURL }}" class="btn btn--ghost">
+        {{ i18n "see_all_news" | default "Totes les notícies" }} →
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

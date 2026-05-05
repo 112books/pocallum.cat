@@ -1,0 +1,135 @@
+baseURL = "https://pocallum.cat/"
+title   = "Pocallum"
+theme   = "pocallum"
+enableRobotsTXT = true
+enableGitInfo   = false
+summaryLength   = 70
+
+defaultContentLanguage        = "ca"
+defaultContentLanguageInSubdir = false
+
+[pagination]
+  pagerSize = 24
+
+[outputs]
+  home    = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+# ── Idiomes ──────────────────────────────────────────────────────────────────
+
+[languages]
+
+  [languages.ca]
+    contentDir   = "content/ca"
+    languageName = "Català"
+    languageCode = "ca"
+    weight       = 1
+    title        = "Pocallum"
+    [languages.ca.params]
+      description = "Fotografia de cultura. Jazz, blues, teatre, dansa i arts escèniques. Barcelona."
+      locale      = "ca_ES"
+
+  [languages.en]
+    contentDir   = "content/en"
+    languageName = "English"
+    languageCode = "en"
+    weight       = 2
+    title        = "Pocallum"
+    [languages.en.params]
+      description = "Cultural photography. Jazz, blues, theatre, dance and performing arts. Barcelona."
+      locale      = "en_GB"
+
+  [languages.es]
+    contentDir   = "content/es"
+    languageName = "Castellano"
+    languageCode = "es"
+    weight       = 3
+    disabled     = true
+    title        = "Pocallum"
+    [languages.es.params]
+      description = "Fotografía cultural. Jazz, blues, teatro, danza y artes escénicas. Barcelona."
+      locale      = "es_ES"
+
+# ── Paràmetres globals ────────────────────────────────────────────────────────
+
+[params]
+  author          = "Joan Linux Martínez"
+  contactEmail    = "hola@pocallum.cat"
+  contactPhone    = "+34 687 836 757"
+  location        = "Nau Bostik, Barcelona"
+  instagram       = "https://www.instagram.com/pocallum"
+  facebook        = "https://www.facebook.com/pocallum"
+  flickr          = "https://www.flickr.com/photos/pocallum"
+  blog            = "https://blog.pocallum.cat"
+  about           = "https://about.pocallum.cat"
+  goatcounterSite = "pocallum"
+  tallyFormContact = ""   # ID del formulari Tally — a configurar
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style  = "monokai"
+    lineNos = false
+
+[minify]
+  disableCSS  = false
+  disableHTML = false
+  disableJS   = false
+
+# ── Menús ─────────────────────────────────────────────────────────────────────
+
+[[languages.ca.menus.main]]
+  name   = "Galeria"
+  url    = "/galeria/"
+  weight = 1
+
+[[languages.ca.menus.main]]
+  name   = "Serveis"
+  url    = "/serveis/"
+  weight = 2
+
+[[languages.ca.menus.main]]
+  name   = "Notícies"
+  url    = "/noticies/"
+  weight = 3
+
+[[languages.ca.menus.main]]
+  name   = "Qui som"
+  url    = "/qui-som/"
+  weight = 4
+
+[[languages.ca.menus.main]]
+  name   = "Contacte"
+  url    = "/contacte/"
+  weight = 5
+  [languages.ca.menus.main.params]
+    highlight = true
+
+[[languages.en.menus.main]]
+  name   = "Gallery"
+  url    = "/galeria/"
+  weight = 1
+
+[[languages.en.menus.main]]
+  name   = "Services"
+  url    = "/serveis/"
+  weight = 2
+
+[[languages.en.menus.main]]
+  name   = "News"
+  url    = "/noticies/"
+  weight = 3
+
+[[languages.en.menus.main]]
+  name   = "About"
+  url    = "/qui-som/"
+  weight = 4
+
+[[languages.en.menus.main]]
+  name   = "Contact"
+  url    = "/contacte/"
+  weight = 5
+  [languages.en.menus.main.params]
+    highlight = true

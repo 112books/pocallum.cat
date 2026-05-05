@@ -1,0 +1,14 @@
+{
+  "name": "pocallum-cat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web oficial de Pocallum — fotografia de cultura",
+  "scripts": {
+    "dev":   "hugo server -D",
+    "build": "hugo --minify",
+    "clean": "rm -rf public resources"
+  },
+  "devDependencies": {
+    "staticrypt": "^3.4.2"
+  }
+}

@@ -1,0 +1,41 @@
+{{ $lp := $.Site.LanguagePrefix }}
+<header class="site-header" id="js-header">
+  <nav class="nav" aria-label="{{ i18n "nav_label" | default "Navegació principal" }}">
+
+    <a href="{{ printf "%s/" $lp | relURL }}" class="nav-logo" aria-label="{{ .Site.Title }}">
+      pocallum<span class="nav-logo-dot">.</span>
+    </a>
+
+    <button class="nav-toggle" id="js-nav-toggle" aria-expanded="false" aria-controls="js-nav-menu"
+            aria-label="{{ i18n "nav_open" | default "Obre el menú" }}">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="js-nav-menu" hidden>
+      <ul class="nav-links" role="list">
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL | relURL }}"
+             class="nav-link{{ if $.IsMenuCurrent "main" . }} is-active{{ end }}{{ with .Params.highlight }} nav-link--cta{{ end }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+
+      <div class="nav-langs" aria-label="{{ i18n "lang_switcher" | default "Canvi d'idioma" }}">
+        {{ range .AllTranslations }}
+          {{ if not .Language.Disabled }}
+          <a href="{{ .Permalink }}"
+             class="nav-lang{{ if eq . $ }} is-active{{ end }}"
+             lang="{{ .Language.Lang }}"
+             hreflang="{{ .Language.Lang }}">
+            {{ upper .Language.Lang }}
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+  </nav>
+</header>

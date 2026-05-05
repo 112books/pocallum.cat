@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "contacte_eyebrow" | default "Treballem junts?" }}</p>
+    <h1 class="page-title">{{ i18n "contacte_title" | default "Parla amb nosaltres" }}</h1>
+    <p class="page-intro">{{ i18n "contacte_intro" | default "Explica'ns el teu projecte. T'enviarem un pressupost sense compromís." }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--narrow">
+
+    {{ with .Site.Params.tallyFormContact }}
+    <div class="tally-wrap">
+      <iframe data-tally-src="https://tally.so/embed/{{ . }}?alignLeft=1&hideTitle=1&transparentBackground=1"
+              loading="lazy"
+              width="100%"
+              height="500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="{{ i18n "contacte_form_title" | default "Formulari de contacte" }}">
+      </iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+    {{ else }}
+    <div class="contact-direct">
+      <p class="contact-note">{{ i18n "contacte_form_pending" | default "El formulari s'activarà aviat. Mentrestant, escriu-nos directament:" }}</p>
+    </div>
+    {{ end }}
+
+    <div class="contact-info">
+      <a href="mailto:{{ .Site.Params.contactEmail }}" class="contact-email">
+        {{ .Site.Params.contactEmail }}
+      </a>
+      <span class="contact-sep">·</span>
+      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-phone">
+        {{ .Site.Params.contactPhone }}
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

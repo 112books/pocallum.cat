@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <p class="footer-logo">pocallum<span class="footer-logo-dot">.</span></p>
+      <p class="footer-tagline">{{ i18n "footer_tagline" | default "Fotografia de cultura" }}</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="{{ i18n "footer_nav_label" | default "Navegació peu de pàgina" }}">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}" class="footer-nav-link">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="footer-contact">
+      <a href="mailto:{{ .Site.Params.contactEmail }}" class="footer-email">{{ .Site.Params.contactEmail }}</a>
+      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="footer-phone">{{ .Site.Params.contactPhone }}</a>
+      <p class="footer-location">{{ .Site.Params.location }}</p>
+    </div>
+
+    <div class="footer-social">
+      {{ with .Site.Params.instagram }}
+      <a href="{{ . }}" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+      </a>
+      {{ end }}
+      {{ with .Site.Params.flickr }}
+      <a href="{{ . }}" class="footer-social-link" target="_blank" rel="noopener" aria-label="Flickr">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="7.5" cy="12" r="4.5"/><circle cx="16.5" cy="12" r="4.5"/></svg>
+      </a>
+      {{ end }}
+      {{ with .Site.Params.blog }}
+      <a href="{{ . }}" class="footer-social-link footer-blog-link" target="_blank" rel="noopener">Blog →</a>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="footer-legal">
+    <p>&copy; {{ now.Year }} Pocallum · Joan Linux Martínez</p>
+  </div>
+</footer>

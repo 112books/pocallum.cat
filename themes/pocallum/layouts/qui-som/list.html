@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "quisom_eyebrow" | default "El projecte" }}</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--narrow">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{ with .Site.Params.about }}
+    <div class="about-link-block">
+      <a href="{{ . }}" class="btn btn--ghost" target="_blank" rel="noopener">
+        {{ i18n "quisom_full_bio" | default "Biografia completa" }} →
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

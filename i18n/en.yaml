@@ -1,0 +1,56 @@
+site_tagline:       "Cultural photography"
+nav_label:          "Main navigation"
+nav_open:           "Open menu"
+footer_nav_label:   "Footer navigation"
+footer_tagline:     "Cultural photography"
+lang_switcher:      "Language"
+
+# Homepage
+hero_eyebrow:       "Cultural photography — Barcelona"
+hero_title:         "We take photos<br>that understand<br>the music."
+hero_sub:           "Jazz, blues, theatre, dance and performing arts. Since 2010."
+cta_contact:        "Request a quote"
+cta_gallery:        "See gallery"
+see_all_photos:     "Full gallery"
+see_all_services:   "All services"
+see_all_news:       "All news"
+
+section_serveis_eyebrow: "What we do"
+section_serveis_title:   "Services"
+section_noticies_eyebrow: "Latest"
+section_noticies_title:   "News"
+
+# Gallery
+galeria_eyebrow:    "Work"
+galeria_title:      "Gallery"
+galeria_empty:      "Photos coming soon."
+foto_open:          "View image"
+foto_alt_default:   "Pocallum photography"
+lightbox_label:     "Enlarged image"
+lightbox_close:     "Close"
+lightbox_prev:      "Previous"
+lightbox_next:      "Next"
+
+# Services
+serveis_eyebrow:    "What we do"
+serveis_title:      "Photography services"
+serveis_intro:      "We don't work with fixed rates. Each project is different and deserves a tailored quote."
+serveis_cta_title:  "Tell us about your project"
+serveis_cta_text:   "We work by quote. Write to us and we'll explain how we can help."
+
+# News
+noticies_eyebrow:   "Latest"
+noticies_title:     "News"
+noticies_empty:     "News coming soon."
+back_to_news:       "News"
+
+# About
+quisom_eyebrow:     "The project"
+quisom_full_bio:    "Full biography"
+
+# Contact
+contacte_eyebrow:       "Work together?"
+contacte_title:         "Talk to us"
+contacte_intro:         "Tell us about your project. We'll send you a no-commitment quote."
+contacte_form_title:    "Contact form"
+contacte_form_pending:  "The form will be live soon. Meanwhile, write to us directly:"

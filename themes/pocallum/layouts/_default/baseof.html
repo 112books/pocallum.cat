@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  <div id="js-lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="{{ i18n "lightbox_label" | default "Imatge ampliada" }}">
+    <button class="lb-close" id="js-lb-close" aria-label="{{ i18n "lightbox_close" | default "Tancar" }}">&#215;</button>
+    <button class="lb-prev"  id="js-lb-prev"  aria-label="{{ i18n "lightbox_prev"  | default "Anterior" }}">&#8249;</button>
+    <button class="lb-next"  id="js-lb-next"  aria-label="{{ i18n "lightbox_next"  | default "Següent" }}">&#8250;</button>
+    <img id="js-lb-img" src="" alt="">
+    <span class="lb-counter" id="js-lb-counter"></span>
+  </div>
+
+</body>
+</html>

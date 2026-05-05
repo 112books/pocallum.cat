@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{ $lp := $.Site.LanguagePrefix }}
+{{ $serveis := hugo.Data.serveis }}
+{{ $lang := site.Language.Lang }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "serveis_eyebrow" | default "El que fem" }}</p>
+    <h1 class="page-title">{{ i18n "serveis_title" | default "Serveis fotogràfics" }}</h1>
+    <p class="page-intro">{{ i18n "serveis_intro" | default "No treballem amb tarifes tancades. Cada projecte és diferent i mereix un pressupost fet a mida." }}</p>
+  </div>
+</section>
+
+{{ if $serveis }}
+{{ range $serveis.grups }}
+{{ $grup := . }}
+<section class="section section--servei-grup">
+  <div class="container">
+    <h2 class="servei-grup-title">
+      {{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}
+    </h2>
+    {{ with (cond (eq $lang "en") $grup.desc_en $grup.desc) }}
+    <p class="servei-grup-desc">{{ . }}</p>
+    {{ end }}
+    <div class="serveis-grid">
+      {{ range $grup.items }}
+      <div class="servei-item">
+        <h3 class="servei-item__title">
+          {{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}
+        </h3>
+        <p class="servei-item__desc">
+          {{ if eq $lang "en" }}{{ .desc_en }}{{ else }}{{ .desc }}{{ end }}
+        </p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<section class="section section--alt section--serveis-cta">
+  <div class="container container--narrow">
+    <h2 class="cta-block-title">{{ i18n "serveis_cta_title" | default "Explica'ns el teu projecte" }}</h2>
+    <p class="cta-block-text">{{ i18n "serveis_cta_text" | default "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te." }}</p>
+    <a href="{{ printf "%s/contacte/" $lp | relURL }}" class="btn btn--primary btn--lg">
+      {{ i18n "cta_contact" | default "Demana pressupost" }}
+    </a>
+  </div>
+</section>
+
+{{ end }}

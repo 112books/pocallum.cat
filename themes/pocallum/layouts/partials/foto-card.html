@@ -1,0 +1,11 @@
+{{/* Paràmetres: . = pàgina de foto, index = posició per al lightbox */}}
+<figure class="foto-item" data-lb-src="{{ .Params.image | absURL }}" data-lb-alt="{{ .Title }}">
+  <a class="foto-item__link js-lb-trigger" href="{{ .Params.image | absURL }}"
+     data-lb-index="{{ .Scratch.Get "index" }}"
+     aria-label="{{ i18n "foto_open" | default "Ampliar imatge" }}: {{ .Title }}">
+    <img src="{{ .Params.image | absURL }}"
+         alt="{{ with .Title }}{{ . }}{{ else }}{{ i18n "foto_alt_default" | default "Fotografia de Pocallum" }}{{ end }}"
+         loading="lazy"
+         decoding="async">
+  </a>
+</figure>

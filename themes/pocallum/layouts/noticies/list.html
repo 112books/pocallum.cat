@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "noticies_eyebrow" | default "Actualitat" }}</p>
+    <h1 class="page-title">{{ i18n "noticies_title" | default "Notícies" }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {{ $noticies := where .Site.RegularPages "Type" "noticies" }}
+    {{ if $noticies }}
+    <div class="noticies-list">
+      {{ range $noticies }}
+      <article class="noticia-row">
+        <div class="noticia-row__meta">
+          <time class="noticia-row__date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2 Jan 2006" }}
+          </time>
+        </div>
+        <div class="noticia-row__body">
+          <h2 class="noticia-row__title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          {{ with .Params.lead }}
+          <p class="noticia-row__lead">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ if .Params.image }}
+        <div class="noticia-row__img">
+          <a href="{{ .RelPermalink }}" tabindex="-1">
+            <img src="{{ .Params.image | absURL }}" alt="" loading="lazy">
+          </a>
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p>{{ i18n "noticies_empty" | default "Aviat hi haurà notícies." }}</p>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

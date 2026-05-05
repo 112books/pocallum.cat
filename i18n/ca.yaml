@@ -1,0 +1,57 @@
+site_tagline:       "Fotografia de cultura"
+nav_label:          "Navegació principal"
+nav_open:           "Obre el menú"
+footer_nav_label:   "Navegació peu de pàgina"
+footer_tagline:     "Fotografia de cultura"
+lang_switcher:      "Canvi d'idioma"
+
+# Portada
+hero_eyebrow:       "Fotografia cultural — Barcelona"
+hero_title:         "Fem fotos<br>que entenen<br>la música."
+hero_sub:           "Jazz, blues, teatre, dansa i arts escèniques. Des del 2010."
+cta_contact:        "Demana pressupost"
+cta_gallery:        "Veure galeria"
+see_all_photos:     "Tota la galeria"
+see_all_services:   "Tots els serveis"
+see_all_news:       "Totes les notícies"
+
+# Seccions portada
+section_serveis_eyebrow: "El que fem"
+section_serveis_title:   "Serveis"
+section_noticies_eyebrow: "Actualitat"
+section_noticies_title:   "Notícies"
+
+# Galeria
+galeria_eyebrow:    "Treballs"
+galeria_title:      "Galeria"
+galeria_empty:      "Aviat hi haurà fotografies."
+foto_open:          "Ampliar imatge"
+foto_alt_default:   "Fotografia de Pocallum"
+lightbox_label:     "Imatge ampliada"
+lightbox_close:     "Tancar"
+lightbox_prev:      "Anterior"
+lightbox_next:      "Següent"
+
+# Serveis
+serveis_eyebrow:    "El que fem"
+serveis_title:      "Serveis fotogràfics"
+serveis_intro:      "No treballem amb tarifes tancades. Cada projecte és diferent i mereix un pressupost fet a mida."
+serveis_cta_title:  "Explica'ns el teu projecte"
+serveis_cta_text:   "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te."
+
+# Notícies
+noticies_eyebrow:   "Actualitat"
+noticies_title:     "Notícies"
+noticies_empty:     "Aviat hi haurà notícies."
+back_to_news:       "Notícies"
+
+# Qui som
+quisom_eyebrow:     "El projecte"
+quisom_full_bio:    "Biografia completa"
+
+# Contacte
+contacte_eyebrow:       "Treballem junts?"
+contacte_title:         "Parla amb nosaltres"
+contacte_intro:         "Explica'ns el teu projecte. T'enviarem un pressupost sense compromís."
+contacte_form_title:    "Formulari de contacte"
+contacte_form_pending:  "El formulari s'activarà aviat. Mentrestant, escriu-nos directament:"

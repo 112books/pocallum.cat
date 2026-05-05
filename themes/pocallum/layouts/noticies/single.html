@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $lp := $.Site.LanguagePrefix }}
+
+<article class="article">
+
+  <header class="article-header container">
+    <div class="article-meta">
+      <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "2 January 2006" }}
+      </time>
+      <a href="{{ printf "%s/noticies/" $lp | relURL }}" class="article-back">
+        ← {{ i18n "back_to_news" | default "Notícies" }}
+      </a>
+    </div>
+    <h1 class="article-title">{{ .Title }}</h1>
+    {{ with .Params.lead }}
+    <p class="article-lead">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if .Params.image }}
+  <div class="article-hero-img">
+    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" loading="eager">
+  </div>
+  {{ end }}
+
+  <div class="article-body container">
+    {{ .Content }}
+  </div>
+
+</article>
+
+{{ end }}
