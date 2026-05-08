@@ -3,6 +3,7 @@ title: "We don't just take concert photos. We build a visual story for musicians
 date: 2026-03-18
 lead: "Visual support for artists and bands who want to communicate coherently and build an image with long-term impact."
 image: "/images/noticies/no-fem-fotos-concerts.jpg"
+tags: ["Los Mambo Jambo", "visual story", "follow-up", "editorial", "musicians"]
 draft: false
 ---
 
@@ -24,6 +25,8 @@ Working with time allows us to capture gestures, pauses, movements, and small de
 
 This material doesn't just help communicate better in the present. It can also grow into other formats: publications, archives, editorial pieces, or simply a visual memory that doesn't get lost in the constant stream of images.
 
+{{< vimeo-embed 1174846038 "Visual follow-up Los Mambo Jambo — Pocallum" >}}
+
 ## Real follow-up, not a one-off session
 
 - Concerts and live shows
@@ -43,6 +46,14 @@ This allows images to stop being merely accessory and become part of the project
 ## Material that works for you
 
 The result is not just a selection of images. It's a solid visual base for better communication: press, social media, and press kits. In some cases, it's also the starting point for broader projects — a publication, a meaningful archive.
+
+{{< gallery >}}
+/images/noticies/no-fem-fotos-concerts/HD308-028.jpg
+/images/noticies/no-fem-fotos-concerts/L1340968.jpg
+/images/noticies/no-fem-fotos-concerts/L1350079.jpg
+/images/noticies/no-fem-fotos-concerts/DSCF8758.jpg
+/images/noticies/no-fem-fotos-concerts/HC470-019.jpg
+{{< /gallery >}}
 
 ## Who it makes sense for
 

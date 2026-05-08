@@ -4,6 +4,7 @@ date: 2026-03-16
 lead: "Exploring the zoom burst technique to convey a sense of movement in static photographs."
 image: "/images/noticies/movent-imatges-fixes.jpg"
 equip: ["Canon EOS 5D Mark II", "Sigma 70-200mm f2.8"]
+tags: ["zoom burst", "Jazz I Am", "technique", "movement", "digital"]
 draft: false
 ---
 
@@ -24,5 +25,23 @@ It's very much a trial-and-error technique: you need to shoot quite a few frames
 It's not a technique to overuse, but it can be a good way to break the monotony of hyper-sharp images where everything is in perfect focus. Sometimes a little visual chaos also communicates better what was happening.
 
 Some of the images are pure zooming; others were simply taken at slow shutter speeds to give a more syncopated sense of movement.
+
+{{< gallery >}}
+/images/noticies/movent-imatges-fixes/IMG_6226.jpg
+/images/noticies/movent-imatges-fixes/IMG_6309.jpg
+/images/noticies/movent-imatges-fixes/IMG_6042.jpg
+/images/noticies/movent-imatges-fixes/IMG_6551.jpg
+/images/noticies/movent-imatges-fixes/IMG_6683.jpg
+/images/noticies/movent-imatges-fixes/IMG_6503.jpg
+/images/noticies/movent-imatges-fixes/IMG_5570.jpg
+/images/noticies/movent-imatges-fixes/IMG_5942.jpg
+/images/noticies/movent-imatges-fixes/IMG_5987.jpg
+/images/noticies/movent-imatges-fixes/IMG_5868.jpg
+/images/noticies/movent-imatges-fixes/IMG_6302.jpg
+/images/noticies/movent-imatges-fixes/IMG_6219.jpg
+/images/noticies/movent-imatges-fixes/IMG_6718.jpg
+/images/noticies/movent-imatges-fixes/IMG_5764.jpg
+/images/noticies/movent-imatges-fixes/IMG_6695.jpg
+{{< /gallery >}}
 
 Give it a try.

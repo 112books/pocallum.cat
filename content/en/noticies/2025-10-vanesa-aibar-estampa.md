@@ -4,6 +4,7 @@ date: 2025-10-20
 lead: "Cristalización IV: contemporary dance, light beams and crystals in a piece that fuses flamenco with visual research."
 image: "/images/noticies/vanesa-aibar-estampa.jpg"
 equip: ["Canon EOS 6D", "Sigma 70-200mm f2.8"]
+tags: ["Vanesa Aibar", "Estampa", "contemporary dance", "Nau Bostik", "Ciutat Flamenco"]
 draft: false
 ---
 
@@ -26,3 +27,20 @@ As residents of Nau Bostik, we sometimes have the privilege of attending present
 I left surprised and moved by the piece. The fusion of flamenco with contemporary elements is something that has interested me for a while, and here the visual and scenic research went completely hand in hand.
 
 I worked with the Sigma 70-200mm f2.8 at slow shutter speeds — between 1/15 and 1/30s — to try to capture the dancer's syncopated movement and the light she herself was shaping.
+
+{{< gallery >}}
+/images/noticies/vanesa-aibar-estampa/IMG_1421.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1430.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1433.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1434.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1457.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1460.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1463.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1472.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1505.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1523.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1529.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1532.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1549-1.jpg
+/images/noticies/vanesa-aibar-estampa/IMG_1571.jpg
+{{< /gallery >}}

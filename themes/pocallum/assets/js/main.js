@@ -100,6 +100,14 @@
     });
   });
 
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const gallery = item.closest('.article-gallery');
+      items = [...gallery.querySelectorAll('.gallery-item')];
+      open(items.indexOf(item));
+    });
+  });
+
   lbClose.addEventListener('click', close);
   lbPrev.addEventListener('click', () => show(current - 1));
   lbNext.addEventListener('click', () => show(current + 1));

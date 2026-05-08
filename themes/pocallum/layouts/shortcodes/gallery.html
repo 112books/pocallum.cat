@@ -3,8 +3,8 @@
   {{ range $imgs }}
   {{ $url := trim . " \t\r" }}
   {{ if $url }}
-  <figure class="gallery-item">
-    <img src="{{ $url }}" loading="lazy" alt="">
+  <figure class="gallery-item" data-lb-src="{{ $url | strings.TrimLeft "/" | relURL }}" data-lb-alt="">
+    <img src="{{ $url | strings.TrimLeft "/" | relURL }}" loading="lazy" alt="">
   </figure>
   {{ end }}
   {{ end }}

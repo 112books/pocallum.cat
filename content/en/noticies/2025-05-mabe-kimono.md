@@ -4,6 +4,7 @@ date: 2025-05-09
 lead: "Studio portrait session with Adox HR-50, Leica M4-2 and Summicron 50mm. Minimalist geisha aesthetic."
 image: "/images/noticies/mabe-kimono.jpg"
 equip: ["Leica M4-2", "Summicron 50mm", "Adox HR-50"]
+tags: ["portrait", "Leica", "Adox HR-50", "studio", "MABE", "kimono", "geisha"]
 draft: false
 ---
 
@@ -21,6 +22,15 @@ The kimono in the images is mine. Having something personal appear in a session 
 
 Very simple lip makeup, with a subtle nod to the Japanese geisha aesthetic. Nothing fussy: the weight of the image is carried by the fabric's texture, the light and the person.
 
----
+{{< gallery >}}
+/images/noticies/mabe-kimono/mabe-01.jpg
+/images/noticies/mabe-kimono/mabe-02.jpg
+/images/noticies/mabe-kimono/mabe-03.jpg
+/images/noticies/mabe-kimono/mabe-04.jpg
+/images/noticies/mabe-kimono/mabe-05.jpg
+/images/noticies/mabe-kimono/mabe-06.jpg
+/images/noticies/mabe-kimono/mabe-07.jpg
+/images/noticies/mabe-kimono/mabe-08.jpg
+{{< /gallery >}}
 
 I'll be sharing more photographs from the same session taken with different cameras and film combinations soon. If you're interested in a similar session, get in touch and we'll set a date.

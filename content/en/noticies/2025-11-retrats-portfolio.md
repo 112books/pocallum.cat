@@ -3,6 +3,7 @@ title: "Portraits to start the year looking sharp (and with a better portfolio)"
 date: 2025-11-26
 lead: "Two portrait session options for artists who need to refresh their professional images."
 image: "/images/noticies/retrats-portfolio.jpg"
+tags: ["portrait", "analogue", "session", "artists", "portfolio", "black and white"]
 draft: false
 ---
 
@@ -44,6 +45,8 @@ Up to **25 final images**: sharp, versatile, and ready for any professional use.
 
 Because a new year deserves a new image. Because gigs, castings and presentations don't wait. And because — let's be honest — updating that 2018 portrait won't hurt anyone.
 
-**Start the year with a fresh face.**
+**I'll bring the camera, you bring the attitude.**
 
-I'll bring the camera, you bring the attitude.
+{{< gallery >}}
+/images/noticies/retrats-portfolio/eli-alba.jpg
+{{< /gallery >}}

@@ -46,3 +46,7 @@ Fins a **25 fotografies finals**, nítides, versàtils i llestes per a qualsevol
 Perquè un any nou demana una imatge nova. Perquè els bolos, càstings i presentacions no s'esperen. I perquè renovar el retrat del 2018 no farà mal a ningú.
 
 **Jo poso la càmera, tu posa l'actitud.**
+
+{{< gallery >}}
+/images/noticies/retrats-portfolio/eli-alba.jpg
+{{< /gallery >}}

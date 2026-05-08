@@ -4,6 +4,7 @@ date: 2025-06-30
 lead: "Sprocket Rocket and Adox HR-50 film at the Menorca salt flats: images that evoke salt, tramuntana wind and whites that almost hurt."
 image: "/images/noticies/mirada-diferent-analogica.jpg"
 equip: ["Lomography Sprocket Rocket", "Adox HR-50"]
+tags: ["Sprocket Rocket", "Adox HR-50", "Menorca", "analogue", "panoramic", "salt flats"]
 draft: false
 ---
 
@@ -25,6 +26,20 @@ The photographs were taken in early June at the Menorca salt flats on a day of i
 
 We thank Sal de Menorca for their generosity in allowing us to photograph the location with multiple cameras and films from every possible angle.
 
----
+{{< gallery >}}
+/images/noticies/mirada-diferent-analogica/sproket-01.jpg
+/images/noticies/mirada-diferent-analogica/sproket-02.jpg
+/images/noticies/mirada-diferent-analogica/sproket-03.jpg
+/images/noticies/mirada-diferent-analogica/sproket-04.jpg
+/images/noticies/mirada-diferent-analogica/sproket-05.jpg
+/images/noticies/mirada-diferent-analogica/sproket-06.jpg
+/images/noticies/mirada-diferent-analogica/sproket-07.jpg
+/images/noticies/mirada-diferent-analogica/sproket-08.jpg
+/images/noticies/mirada-diferent-analogica/sproket-09.jpg
+/images/noticies/mirada-diferent-analogica/sproket-10.jpg
+/images/noticies/mirada-diferent-analogica/sproket-11.jpg
+/images/noticies/mirada-diferent-analogica/sproket-12.jpg
+/images/noticies/mirada-diferent-analogica/sproket-13.jpg
+{{< /gallery >}}
 
 We invite you to immerse yourself in this visual universe that goes beyond the simple image and awakens all the senses.
