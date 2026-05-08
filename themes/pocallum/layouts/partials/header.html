@@ -27,7 +27,7 @@
       <div class="nav-langs" aria-label="{{ i18n "lang_switcher" | default "Canvi d'idioma" }}">
         {{ range .AllTranslations }}
           {{ if not .Language.Disabled }}
-          <a href="{{ .Permalink }}"
+          <a href="{{ .RelPermalink }}"
              class="nav-lang{{ if eq . $ }} is-active{{ end }}"
              lang="{{ .Language.Lang }}"
              hreflang="{{ .Language.Lang }}">
