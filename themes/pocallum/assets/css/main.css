@@ -806,6 +806,23 @@ h1, h2, h3, h4 {
   color: var(--mid);
 }
 
+.footer-legal-links {
+  margin-top: var(--space-2);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+}
+
+.footer-legal-links a {
+  color: var(--mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-legal-links a:hover {
+  color: var(--fg);
+}
+
 /* ── Responsive ────────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .foto-grid { grid-template-columns: repeat(3, 1fr); }

@@ -56,3 +56,9 @@ contacte_title:         "Parla amb nosaltres"
 contacte_intro:         "Explica'ns el teu projecte. T'enviarem un pressupost sense compromís."
 contacte_form_title:    "Formulari de contacte"
 contacte_form_pending:  "El formulari s'activarà aviat. Mentrestant, escriu-nos directament:"
+
+# Legal
+footer_legal_nav:   "Pàgines legals"
+legal_avis:         "Avís legal"
+legal_privacitat:   "Privacitat"
+legal_cookies:      "Cookies"

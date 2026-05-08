@@ -55,3 +55,9 @@ contacte_title:         "Talk to us"
 contacte_intro:         "Tell us about your project. We'll send you a no-commitment quote."
 contacte_form_title:    "Contact form"
 contacte_form_pending:  "The form will be live soon. Meanwhile, write to us directly:"
+
+# Legal
+footer_legal_nav:   "Legal pages"
+legal_avis:         "Legal notice"
+legal_privacitat:   "Privacy"
+legal_cookies:      "Cookies"
