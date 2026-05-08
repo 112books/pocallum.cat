@@ -5,7 +5,7 @@ anys: "2016 – 2025"
 lloc: "Barcelona"
 disciplina: "Jazz"
 web: ""
-image: "/images/festivals/im-jazz.jpg"
+image: ""
 draft: false
 ---
 

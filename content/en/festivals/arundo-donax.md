@@ -1,11 +1,11 @@
 ---
 title: "Arundo Donax"
-date: 2025-01-01
-anys: "2025"
+date: 2025-03-26
+anys: "2013 – 2025"
 lloc: "La Pobla de Híjar, Teruel"
 disciplina: "Musical reed"
 web: ""
-image: ""
+image: "/images/festivals/arundo-donax.jpg"
 draft: false
 ---
 
@@ -17,8 +17,14 @@ The festival is organised by the Musical Association "Fuera de Tono" with suppor
 
 The format combines concerts, reed-making workshops, exhibitions, talks and demonstrations by luthiers and musicians from across the country. An unusual mix that works because the reed is the thread connecting everything: from agriculture to music, from the field to the stage.
 
-## Our coverage
+## Editions covered
 
-We covered the IX edition (March 2025) with the same spirit as the festival: documenting without creating distance, showing the people and the process as much as the performances.
+We've been there since 2013. Five editions documented, each different from the last:
+
+- [La Puebla de Híjar – Arundo Donax 2013](https://blog.pocallum.cat/2013/03/27/la-puebla-de-hijar-arundo-donax/)
+- [Arundo Donax 2015](https://blog.pocallum.cat/2015/03/01/arundo-donax-2015/)
+- [Arundo Donax 2017](https://blog.pocallum.cat/2017/03/12/arundo-donax-2017/)
+- [Arundo Donax 2023 — VIII edition](https://blog.pocallum.cat/2023/03/12/2023-03-12-arundo-donax-2023-la-puebla-de-hijar/)
+- [IX Arundo Donax 2025](https://blog.pocallum.cat/2025/03/26/ix-arundo-donax-2025-a-la-puebla-de-hijar/)
 
 A festival that puts a small village on the world map of lutherie and wind music deserves to be photographed with the same care the craftspeople bring to the reed.

@@ -5,7 +5,7 @@ anys: "2017 – 2025"
 lloc: "Santa Coloma de Gramenet"
 disciplina: "Teatre inclusiu"
 web: "https://www.fiti.cat"
-image: ""
+image: "/images/festivals/fiti.jpg"
 draft: false
 ---
 
