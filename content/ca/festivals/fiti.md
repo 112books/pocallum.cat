@@ -1,7 +1,7 @@
 ---
 title: "FITI — Festival Internacional de Teatre Integratiu"
-date: 2024-01-01
-anys: ""
+date: 2025-01-01
+anys: "2017 – 2025"
 lloc: "Santa Coloma de Gramenet"
 disciplina: "Teatre inclusiu"
 web: "https://www.fiti.cat"
@@ -21,4 +21,4 @@ El FITI — Festival Internacional de Teatre Integratiu — és el seu festival 
 
 El repte del teatre inclusiu és fotogràficament diferent: no es pot preveure res, els cossos es mouen d'una altra manera, les emocions afloren sense filtre. És el tipus d'escena que obliga a estar completament present.
 
-Treballem amb Alquimistes des que entenem que documentar aquest festival és documentar alguna cosa que importa.
+Cinc edicions seguides — de la V a la IX — i cada vegada entenem millor que documentar el FITI és documentar alguna cosa que importa.
