@@ -17,7 +17,7 @@ Analògic és el punt de partida. El gra de la pel·lícula no falsifica: regist
 
 Digital quan la situació ho exigeix: llum molt limitada, ritme de lliurament molt ràpid, volum alt, produccions que no assumeixen el cost analògic. **Mai per comoditat.**
 
-El laboratori és a la **Nau Bostik**, al nord de Barcelona — on som residents des del 2020. Espai d'alquímia privat: s'hi revela, s'hi imprimeix, s'hi decideix. No s'obre.
+El laboratori és a la **Nau Bostik**, al barri de la Segrera — on som residents des del 2020. Espai d'alquímia privat: s'hi revela, s'hi imprimeix, s'hi decideix. No s'obre.
 
 ---
 
