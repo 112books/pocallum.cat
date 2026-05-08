@@ -4,6 +4,40 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-05-09 (sessió 2)
+
+### Secció Festivals — implementació completa
+
+**Disseny "Paret de Cartells"**
+- `layouts/festivals/list.html`: graella 3 columnes, sense header — el mur de cartells ocupa tot l'ample des del primer píxel
+- Primer festival (hero): `grid-column: span 3`, aspect-ratio 21:9, títol fins a 7rem
+- Resta: aspect-ratio 2:3 (format cartell de concert), 2 columnes
+- Gap de 2px negre entre targetes — efecte galeria / press wall
+- Imatge molt fosca per defecte (brightness 0.22), il·luminada al hover (0.6) + zoom 1.08x
+- Títol passa de translúcid a blanc pur al hover
+- Línia accent taronja que s'extén des de 0 a 4rem al hover
+- Disciplina com a eyebrow amb `letter-spacing` animat
+
+**Single de festival**
+- `layouts/festivals/single.html`: hero full-viewport (100svh), nom del festival enormous (fins 10rem) al peu de la imatge
+- Barra de metadades horitzontal: back link + pills de disciplina / lloc / anys / web
+- Pill de disciplina en accent, pill web amb hover accent
+- Prose body amb padding generós
+
+**Contingut (10 fitxers)**
+- 5 festivals CA + 5 EN: VijazZ, Blues de Barcelona, Arundo Donax, I'm Jazz, Flamenco de Barrio
+- Copy amb veu punyent i directa, en primera persona, sense màrqueting
+- Cadascun amb slug, disciplina, lloc, anys, web (si aplica)
+- Imatges referenciades a `static/images/festivals/` (pendents d'afegir)
+
+**Infraestructura**
+- `archetypes/festivals.md` creat
+- `hugo.toml`: Festivals afegit al menú CA+EN (weight 2, entre Galeria i Serveis)
+- `i18n/ca.yaml` + `en.yaml`: strings `festivals_eyebrow`, `festivals_title`, `back_to_festivals`, `festival_web`
+- CSS: ~170 línies noves per a festivals list + single + responsive
+
+---
+
 ## 2026-05-09
 
 ### Secció Notícies — UI Filmin, lightbox, fidelitat de continguts i tags

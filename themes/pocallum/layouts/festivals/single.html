@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<article class="festival-single">
+
+  <div class="festival-single__hero">
+    {{ with .Params.image }}
+    <img class="festival-single__hero-img"
+         src="{{ . | strings.TrimLeft "/" | relURL }}"
+         alt="{{ $.Title }}"
+         loading="eager">
+    {{ end }}
+    <div class="festival-single__hero-overlay"></div>
+    <div class="festival-single__hero-name">
+      <h1>{{ .Title }}</h1>
+    </div>
+  </div>
+
+  <div class="festival-single__bar container">
+    <a class="festival-single__back" href="{{ "festivals/" | relLangURL }}">
+      ← {{ i18n "back_to_festivals" | default "Festivals" }}
+    </a>
+    <div class="festival-single__meta">
+      {{ with .Params.disciplina }}
+      <span class="festival-meta-pill festival-meta-pill--accent">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.lloc }}
+      <span class="festival-meta-pill">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.anys }}
+      <span class="festival-meta-pill">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.web }}
+      <a class="festival-meta-pill festival-meta-pill--link"
+         href="{{ . }}"
+         target="_blank"
+         rel="noopener noreferrer">{{ i18n "festival_web" | default "Web" }} →</a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="festival-single__body container">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+
+</article>
+
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $pages := .Pages.ByDate.Reverse }}
+
+<div class="festivals-wall">
+  {{ range $i, $p := $pages }}
+  <a class="festival-card{{ if eq $i 0 }} festival-card--hero{{ end }}"
+     href="{{ $p.RelPermalink }}">
+    <div class="festival-card__bg">
+      {{ with $p.Params.image }}
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+           alt="{{ $p.Title }}"
+           loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
+      {{ end }}
+    </div>
+    <div class="festival-card__overlay"></div>
+    <div class="festival-card__body">
+      {{ with $p.Params.disciplina }}
+      <p class="festival-card__eyebrow">{{ . }}</p>
+      {{ end }}
+      <h2 class="festival-card__title">{{ $p.Title }}</h2>
+      <span class="festival-card__line" aria-hidden="true"></span>
+      <p class="festival-card__meta">
+        {{ $p.Params.lloc }}{{ with $p.Params.anys }}&ensp;·&ensp;{{ . }}{{ end }}
+      </p>
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+{{ end }}

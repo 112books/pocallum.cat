@@ -51,6 +51,12 @@ pagination_next:    "Següent"
 read_article:       "Llegir article"
 timeline_label:     "Cronologia"
 
+# Festivals
+festivals_eyebrow:    "On hem treballat"
+festivals_title:      "Festivals"
+back_to_festivals:    "Festivals"
+festival_web:         "Web"
+
 # Qui som
 quisom_eyebrow:     "El projecte"
 quisom_full_bio:    "Biografia completa"

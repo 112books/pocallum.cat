@@ -50,6 +50,12 @@ pagination_next:    "Next"
 read_article:       "Read article"
 timeline_label:     "Archive"
 
+# Festivals
+festivals_eyebrow:    "Where we've worked"
+festivals_title:      "Festivals"
+back_to_festivals:    "Festivals"
+festival_web:         "Website"
+
 # About
 quisom_eyebrow:     "The project"
 quisom_full_bio:    "Full biography"

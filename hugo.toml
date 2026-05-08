@@ -90,24 +90,29 @@ defaultContentLanguageInSubdir = false
   weight = 1
 
 [[languages.ca.menus.main]]
+  name   = "Festivals"
+  url    = "/festivals/"
+  weight = 2
+
+[[languages.ca.menus.main]]
   name   = "Serveis"
   url    = "/serveis/"
-  weight = 2
+  weight = 3
 
 [[languages.ca.menus.main]]
   name   = "Notícies"
   url    = "/noticies/"
-  weight = 3
+  weight = 4
 
 [[languages.ca.menus.main]]
   name   = "Qui som"
   url    = "/qui-som/"
-  weight = 4
+  weight = 5
 
 [[languages.ca.menus.main]]
   name   = "Contacte"
   url    = "/contacte/"
-  weight = 5
+  weight = 6
   [languages.ca.menus.main.params]
     highlight = true
 
@@ -117,23 +122,28 @@ defaultContentLanguageInSubdir = false
   weight = 1
 
 [[languages.en.menus.main]]
+  name   = "Festivals"
+  url    = "/en/festivals/"
+  weight = 2
+
+[[languages.en.menus.main]]
   name   = "Services"
   url    = "/serveis/"
-  weight = 2
+  weight = 3
 
 [[languages.en.menus.main]]
   name   = "News"
   url    = "/noticies/"
-  weight = 3
+  weight = 4
 
 [[languages.en.menus.main]]
   name   = "About"
   url    = "/qui-som/"
-  weight = 4
+  weight = 5
 
 [[languages.en.menus.main]]
   name   = "Contact"
   url    = "/contacte/"
-  weight = 5
+  weight = 6
   [languages.en.menus.main.params]
     highlight = true
