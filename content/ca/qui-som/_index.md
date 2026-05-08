@@ -63,7 +63,7 @@ Pocallum no és una illa. Forma part d'una xarxa de projectes que comparteixen v
 
 ## L'arrel
 
-**9Barris Imatge** — coordinació des del 2002.
+**9Barris Imatge** — co-coordinació des del 2002.
 **Nau Bostik** — resident i participant en l'autogestió des del 2020.
 **Prollema** — col·laboració amb joves migrants des del 2002.
 **Teatre inclusiu** — documentació de projectes d'arts escèniques amb persones amb diversitat funcional.

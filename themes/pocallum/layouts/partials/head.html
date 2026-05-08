@@ -24,7 +24,7 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 <meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url"         content="{{ .Permalink }}">
-{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ with .Params.image }}<meta property="og:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 
 {{/* GoatCounter — sense cookies, GDPR */}}
 {{ with site.Params.goatcounterSite }}

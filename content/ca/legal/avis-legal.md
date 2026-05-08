@@ -7,13 +7,13 @@ draft: false
 
 ## Titular del web
 
-En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSICE), s'informa:
+En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSICE):
 
-**Titular:** Joan Linux Martínez i Serres
-**NIF:** [NIF]
-**Domicili:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
-**Correu electrònic:** hola@pocallum.cat
-**Web:** https://pocallum.cat
+- **Titular:** Joan Linux Martínez i Serres
+- **NIF:** 38121766W
+- **Domicili:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
+- **Correu electrònic:** hola@pocallum.cat
+- **Web:** https://pocallum.cat
 
 ---
 

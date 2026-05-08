@@ -30,7 +30,7 @@
         {{ if .Params.image }}
         <div class="noticia-row__img">
           <a href="{{ .RelPermalink }}" tabindex="-1">
-            <img src="{{ .Params.image | absURL }}" alt="" loading="lazy">
+            <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
           </a>
         </div>
         {{ end }}
