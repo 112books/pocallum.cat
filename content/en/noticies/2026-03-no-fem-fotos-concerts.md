@@ -3,7 +3,7 @@ title: "We don't just take concert photos. We build a visual story for musicians
 date: 2026-03-18
 lead: "Visual support for artists and bands who want to communicate coherently and build an image with long-term impact."
 image: "/images/noticies/no-fem-fotos-concerts.jpg"
-tags: ["Los Mambo Jambo", "visual story", "follow-up", "editorial", "musicians"]
+tags: ["Los Mambo Jambo", "visual story", "visual narrative", "follow-up", "editorial", "musicians", "rehearsals", "backstage", "making-of", "live", "music photography"]
 draft: false
 ---
 

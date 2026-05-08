@@ -9,7 +9,7 @@ defaultContentLanguage        = "ca"
 defaultContentLanguageInSubdir = false
 
 [pagination]
-  pagerSize = 24
+  pagerSize = 6
 
 [outputs]
   home    = ["HTML", "RSS"]

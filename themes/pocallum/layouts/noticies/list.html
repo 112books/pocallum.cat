@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $pages := .Pages.ByDate.Reverse }}
 
 <section class="page-header">
   <div class="container">
@@ -7,40 +8,60 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    {{ $noticies := where .Site.RegularPages "Type" "noticies" }}
-    {{ if $noticies }}
-    <div class="noticies-list">
-      {{ range $noticies }}
-      <article class="noticia-row">
-        <div class="noticia-row__meta">
-          <time class="noticia-row__date" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "2 Jan 2006" }}
-          </time>
-        </div>
-        <div class="noticia-row__body">
-          <h2 class="noticia-row__title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h2>
-          {{ with .Params.lead }}
-          <p class="noticia-row__lead">{{ . }}</p>
-          {{ end }}
-        </div>
-        {{ if .Params.image }}
-        <div class="noticia-row__img">
-          <a href="{{ .RelPermalink }}" tabindex="-1">
-            <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
-          </a>
-        </div>
-        {{ end }}
-      </article>
+{{ if $pages }}
+{{ $first := index $pages 0 }}
+
+<section class="noticies-showcase">
+
+  <a class="noticies-featured" id="js-nf-link" href="{{ $first.RelPermalink }}">
+    <div class="noticies-featured__img" id="js-nf-img">
+      {{ with $first.Params.image }}
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" id="js-nf-imgel">
       {{ end }}
     </div>
-    {{ else }}
-    <p>{{ i18n "noticies_empty" | default "Aviat hi haurà notícies." }}</p>
-    {{ end }}
+    <div class="noticies-featured__info">
+      <time class="noticies-featured__date" id="js-nf-date">
+        {{ $first.Date.Format "02 Jan 2006" | upper }}
+      </time>
+      <h2 class="noticies-featured__title" id="js-nf-title">{{ $first.Title }}</h2>
+      {{ with $first.Params.lead }}
+      <p class="noticies-featured__lead" id="js-nf-lead">{{ . }}</p>
+      {{ end }}
+      <span class="noticies-featured__cta">{{ i18n "read_article" | default "Llegir article" }} →</span>
+    </div>
+  </a>
+
+  <div class="noticies-timeline-wrap">
+    <div class="noticies-timeline-label">
+      <span class="noticies-timeline-label__text">{{ i18n "timeline_label" | default "Arxiu" }}</span>
+    </div>
+    <div class="noticies-strip-wrap">
+      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-strip-prev" aria-label="Anterior" type="button">‹</button>
+      <div class="noticies-strip" id="js-noticies-strip">
+        {{ range $i, $p := $pages }}
+        <button type="button"
+                class="noticies-thumb{{ if eq $i 0 }} is-active{{ end }}"
+                data-href="{{ $p.RelPermalink }}"
+                data-img="{{ with $p.Params.image }}{{ . | strings.TrimLeft "/" | relURL }}{{ end }}"
+                data-title="{{ $p.Title }}"
+                data-lead="{{ $p.Params.lead | default "" }}"
+                data-date="{{ $p.Date.Format "02 Jan 2006" | upper }}"
+                data-year="{{ $p.Date.Format "2006" }}">
+          <time class="noticies-thumb__ts">{{ $p.Date.Format "Jan '06" | upper }}</time>
+          <div class="noticies-thumb__img">
+            {{ with $p.Params.image }}
+            <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
+            {{ end }}
+          </div>
+          <span class="noticies-thumb__title">{{ $p.Title }}</span>
+        </button>
+        {{ end }}
+      </div>
+      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-strip-next" aria-label="Següent" type="button">›</button>
+    </div>
   </div>
+
 </section>
+{{ end }}
 
 {{ end }}

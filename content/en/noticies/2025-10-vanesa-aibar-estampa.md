@@ -4,7 +4,7 @@ date: 2025-10-20
 lead: "Cristalización IV: contemporary dance, light beams and crystals in a piece that fuses flamenco with visual research."
 image: "/images/noticies/vanesa-aibar-estampa.jpg"
 equip: ["Canon EOS 6D", "Sigma 70-200mm f2.8"]
-tags: ["Vanesa Aibar", "Estampa", "contemporary dance", "Nau Bostik", "Ciutat Flamenco"]
+tags: ["Vanesa Aibar", "Estampa", "Taller Estampa", "contemporary dance", "contemporary flamenco", "Nau Bostik", "Ciutat Flamenco Festival", "stage photography", "performance", "experimental", "show"]
 draft: false
 ---
 

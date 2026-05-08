@@ -44,6 +44,11 @@ noticies_eyebrow:   "Latest"
 noticies_title:     "News"
 noticies_empty:     "News coming soon."
 back_to_news:       "News"
+pagination_label:   "Pagination"
+pagination_prev:    "Previous"
+pagination_next:    "Next"
+read_article:       "Read article"
+timeline_label:     "Archive"
 
 # About
 quisom_eyebrow:     "The project"

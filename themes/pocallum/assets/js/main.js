@@ -60,6 +60,70 @@
   });
 })();
 
+/* ── Noticies showcase (Filmin-style) ────────────────────────────────────── */
+(function () {
+  const strip   = document.getElementById('js-noticies-strip');
+  if (!strip) return;
+
+  const featured = document.querySelector('.noticies-featured');
+  const link     = document.getElementById('js-nf-link');
+  const imgWrap  = document.getElementById('js-nf-img');
+  const dateEl   = document.getElementById('js-nf-date');
+  const titleEl  = document.getElementById('js-nf-title');
+  const leadEl   = document.getElementById('js-nf-lead');
+  const btnPrev  = document.getElementById('js-strip-prev');
+  const btnNext  = document.getElementById('js-strip-next');
+
+  // Injecta separadors d'any entre miniatures de anys diferents
+  let lastYear = null;
+  [...strip.querySelectorAll('.noticies-thumb')].forEach(thumb => {
+    const year = thumb.dataset.year;
+    if (year && year !== lastYear) {
+      const sep = document.createElement('div');
+      sep.className = 'noticies-year-sep';
+      sep.innerHTML = `<span>${year}</span>`;
+      strip.insertBefore(sep, thumb);
+      lastYear = year;
+    }
+  });
+
+  const thumbs = [...strip.querySelectorAll('.noticies-thumb')];
+  let activeIdx = 0;
+
+  function activate(idx) {
+    activeIdx = (idx + thumbs.length) % thumbs.length;
+    const t = thumbs[activeIdx];
+
+    featured.classList.add('is-switching');
+
+    setTimeout(() => {
+      thumbs.forEach(th => th.classList.remove('is-active'));
+      t.classList.add('is-active');
+
+      link.href           = t.dataset.href;
+      dateEl.textContent  = t.dataset.date;
+      titleEl.textContent = t.dataset.title;
+      if (leadEl) leadEl.textContent = t.dataset.lead;
+
+      const img = imgWrap.querySelector('img');
+      if (t.dataset.img) {
+        if (img) { img.src = t.dataset.img; }
+        else { imgWrap.innerHTML = `<img src="${t.dataset.img}" alt="">`; }
+      } else {
+        imgWrap.innerHTML = '';
+      }
+
+      featured.classList.remove('is-switching');
+    }, 180);
+
+    t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  thumbs.forEach((t, i) => t.addEventListener('click', () => activate(i)));
+  if (btnPrev) btnPrev.addEventListener('click', () => activate(activeIdx - 1));
+  if (btnNext) btnNext.addEventListener('click', () => activate(activeIdx + 1));
+})();
+
 /* ── Lightbox ────────────────────────────────────────────────────────────── */
 (function () {
   const lb      = document.getElementById('js-lightbox');

@@ -4,7 +4,7 @@ date: 2026-03-16
 lead: "Exploring the zoom burst technique to convey a sense of movement in static photographs."
 image: "/images/noticies/movent-imatges-fixes.jpg"
 equip: ["Canon EOS 5D Mark II", "Sigma 70-200mm f2.8"]
-tags: ["zoom burst", "Jazz I Am", "technique", "movement", "digital"]
+tags: ["zoom burst", "zooming technique", "Jazz I Am", "technique", "movement", "digital", "experimental photography", "slow shutter", "motion blur", "jazz photography"]
 draft: false
 ---
 

@@ -4,7 +4,7 @@ date: 2025-10-30
 lead: "Cobertura fotogràfica del festival Ciutat Flamenco Barcelona 2025, des de la Nau Bostik fins als grans escenaris."
 image: "/images/noticies/ciutat-flamenco-2025.jpg"
 equip: ["Canon EOS 5D Mark II", "Canon EOS 6D", "Sigma 70-200mm f2.8"]
-tags: ["Ciutat Flamenco", "flamenc", "dansa", "concert", "Nau Bostik", "Flamenco de Barrio"]
+tags: ["Ciutat Flamenco", "Festival Ciutat Flamenco", "flamenc", "flamenc contemporani", "dansa", "dansa contemporània", "concert", "arts escèniques", "Nau Bostik", "Flamenco de Barrio", "festivals Barcelona", "fotografia de dansa", "fotografia analògica"]
 draft: false
 ---
 
@@ -24,6 +24,15 @@ Les imatges es van fer totes en digital, principalment amb un objectiu 70-200mm 
 
 El festival va desplegar la seva programació del 19 al 26 d'octubre per diverses sales de Barcelona. Cada concert, una visió diferent del flamenc contemporani: des de la recerca de moviment fins a la tradició revisitada, passant per les col·laboracions interdisciplinàries que fan d'aquest festival un espai d'experimentació real.
 
-Les cròniques fotogràfiques detallades de cada actuació es troben al [Blog de Pocallum](https://blog.pocallum.cat/?s=Ciutat+flamenco+Barcelona).
+![Festival Ciutat Flamenco Barcelona](/images/noticies/ciutat-flamenco-barcelona/festival-general.jpg)
+
+Les cròniques fotogràfiques detallades de cada actuació es troben al [Blog de Pocallum](https://blog.pocallum.cat/?s=Ciutat+flamenco+Barcelona):
+
+- [Vanesa Aibar i Estampa](https://blog.pocallum.cat/2025/10/20/vanesa-aibar-i-estampa-al-festival-ciutat-flamenco/)
+- [Captura U / Fuga — José Manuel Álvarez](https://blog.pocallum.cat/2025/10/24/2025-10-23-captura-u-fuga-jose-manuel-alvarez-dins-el-festival-ciutat-flamenco/)
+- [Districte Flamenco](https://blog.pocallum.cat/2025/10/25/2025-10-24-districte-flamenco-al-ciutat-flamenco-barcelona/)
+- [Julio Ruiz — La Familia](https://blog.pocallum.cat/2025/10/26/2025-10-25-julio-ruiz-la-familia/)
+- [Ciutat Batalla](https://blog.pocallum.cat/2025/10/26/2025-10-25-ciutat-flamenco-barcelona-ciutat-batalla/)
+- [Chicharrón — Circo Flamenco](https://blog.pocallum.cat/2025/10/27/2025-10-26-ciutat-flamenco-barcelona-chicharron-circo-flamenco/)
 
 Descobrir el plaer de combinar la fotografia amb la reflexió escrita sobre el que passa a l'escenari és una de les coses que fa que val la pena estar-hi.

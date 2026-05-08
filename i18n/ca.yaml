@@ -45,6 +45,11 @@ noticies_eyebrow:   "Actualitat"
 noticies_title:     "Notícies"
 noticies_empty:     "Aviat hi haurà notícies."
 back_to_news:       "Notícies"
+pagination_label:   "Paginació"
+pagination_prev:    "Anterior"
+pagination_next:    "Següent"
+read_article:       "Llegir article"
+timeline_label:     "Cronologia"
 
 # Qui som
 quisom_eyebrow:     "El projecte"

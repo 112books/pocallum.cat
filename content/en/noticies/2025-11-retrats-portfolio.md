@@ -3,7 +3,7 @@ title: "Portraits to start the year looking sharp (and with a better portfolio)"
 date: 2025-11-26
 lead: "Two portrait session options for artists who need to refresh their professional images."
 image: "/images/noticies/retrats-portfolio.jpg"
-tags: ["portrait", "analogue", "session", "artists", "portfolio", "black and white"]
+tags: ["portrait", "analogue", "session", "artists", "portfolio", "black and white", "6x6 portrait", "digital portrait", "portrait session", "photography for actors", "photography for musicians", "editorial portraits", "studio photography"]
 draft: false
 ---
 

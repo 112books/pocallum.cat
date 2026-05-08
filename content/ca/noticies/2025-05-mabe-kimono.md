@@ -4,7 +4,7 @@ date: 2025-05-09
 lead: "Sessió de retrat en estudi amb Adox HR-50, Leica M4-2 i Summicron 50mm. Estètica geisha minimalista."
 image: "/images/noticies/mabe-kimono.jpg"
 equip: ["Leica M4-2", "Summicron 50mm", "Adox HR-50"]
-tags: ["retrat", "Leica", "Adox HR-50", "estudi", "MABE", "kimono", "geisha"]
+tags: ["retrat", "Leica", "Adox HR-50", "estudi", "MABE", "kimono", "geisha", "blanc i negre", "fotografia analògica", "sessió de retrat", "maquillatge", "estudi fotogràfic"]
 draft: false
 ---
 

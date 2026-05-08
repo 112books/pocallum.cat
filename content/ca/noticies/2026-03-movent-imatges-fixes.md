@@ -4,7 +4,7 @@ date: 2026-03-16
 lead: "Explorant la tècnica del zoom burst per transmetre la sensació de moviment en fotografies estàtiques."
 image: "/images/noticies/movent-imatges-fixes.jpg"
 equip: ["Canon EOS 5D Mark II", "Sigma 70-200mm f2.8"]
-tags: ["zoom burst", "Jazz I Am", "tècnica", "moviment", "digital"]
+tags: ["zoom burst", "tècnica zooming", "Jazz I Am", "tècnica", "moviment", "digital", "fotografia experimental", "experimentació fotogràfica", "velocitat lenta", "efecte moviment", "fotografia de jazz"]
 draft: false
 ---
 

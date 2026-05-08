@@ -3,7 +3,7 @@ title: "Retrats per començar l'any amb bona cara (i millor portfolio)"
 date: 2025-11-26
 lead: "Dues opcions de sessió de retrat per a artistes que necessiten renovar les imatges professionals."
 image: "/images/noticies/retrats-portfolio.jpg"
-tags: ["retrat", "analògic", "sessió", "artistes", "portfolio", "blanc i negre"]
+tags: ["retrat", "analògic", "sessió", "artistes", "portfolio", "blanc i negre", "retrat 6x6", "retrat digital", "sessió de retrat", "fotografia per actors", "fotografia per músics", "fotografia per creadors", "retrats editorials", "estudi fotogràfic"]
 draft: false
 ---
 

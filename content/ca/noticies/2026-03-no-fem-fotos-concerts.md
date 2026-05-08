@@ -3,7 +3,7 @@ title: "No fem fotos de concerts. Construïm relat visual per a músics"
 date: 2026-03-18
 lead: "Acompanyament visual per artistes i bandes que volen comunicar amb coherència i construir una imatge amb recorregut."
 image: "/images/noticies/no-fem-fotos-concerts.jpg"
-tags: ["Los Mambo Jambo", "relat visual", "seguiment", "editorial", "músics"]
+tags: ["Los Mambo Jambo", "relat visual", "seguiment visual", "narrativa visual", "editorial", "músics", "assajos", "backstage", "making-of", "directe", "fotografia musical"]
 draft: false
 ---
 

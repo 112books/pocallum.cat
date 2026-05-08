@@ -4,6 +4,51 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-05-09
+
+### Secció Notícies — UI Filmin, lightbox, fidelitat de continguts i tags
+
+**Lightbox per a galeries d'articles**
+- Shortcode `{{< gallery >}}` actualitzat: cada `<figure>` porta `data-lb-src` i `data-lb-alt`
+- `main.js`: handler de click que obre el lightbox existent amb navegació prev/next dins de cada galeria
+
+**Llista Notícies — UI estil Filmin (redisseny complet)**
+- `layouts/noticies/list.html` reescrit: article destacat gran a dalt + filmstrip horitzontal de miniatures a sota
+- Clicar una miniatura canvia l'article destacat (transició suau 180ms)
+- Botons prev/next per navegar el filmstrip
+- Totes les notícies mostrades sense paginació (`.Pages.ByDate.Reverse`)
+- `hugo.toml`: `pagerSize = 6` (per a altres llistats de taxonomia)
+
+**Refinaments visuals**
+- Article destacat en bloc vertical (imatge full-width, info a sota) — no costat a costat
+- `padding-inline: var(--space-24)` a la zona de text (espais laterals generosos)
+- `padding-bottom: var(--space-24)` per separar text del filmstrip
+- `margin-bottom: var(--space-24)` al `.noticies-showcase` per separar del footer
+- Efecte hover exagerat al filmstrip: `brightness(0.15)` a les no-hover (efecte grup)
+- Overlay de color accent via `::after` a la miniatura activa/hover
+- `transform: scale(1.1)` a la imatge en hover
+
+**Línia del temps (CRONOLOGIA)**
+- Label `CRONOLOGIA` amb línia horitzontal que s'extén (`::after`)
+- Data visible a cada miniatura (`Jan '06`)
+- Separadors d'any injectats per JS: text vertical en accent, línia divisòria
+- Punt indicador (6px dot) a cada miniatura, gris → accent + `scale(1.5)` quan actiu
+
+**Fidelitat de continguts vs WordPress original**
+- 10 articles CA + 10 articles EN revisats i actualitzats
+- Tags actualitzats per coincidir exactament amb els de WordPress (13–26 tags per article)
+  - Noms d'artistes: Endless Trio, Cris Lopezz, Barencia, Joe Lovano, Makaya McCraven, etc.
+  - Tècniques: tècnica zooming, velocitat lenta, efecte moviment, fotografia experimental
+  - Localitzacions i festivals: Nau Bostik, Flamenco de Barrio, Jazz I Am, VijazZ
+- Jazz I Am 2026: 4 vídeos Vimeo (`{{< vimeo-embed >}}`) afegits en posició correcta (CA + EN)
+- Ciutat Flamenco Barcelona: imatge inline + 6 links a blog.pocallum.cat afegits (CA + EN)
+- Imatge `festival-general.jpg` descarregada de WordPress i afegida a `static/images/noticies/`
+
+**i18n**
+- `ca.yaml` + `en.yaml`: strings `timeline_label`, `pagination_label`, `pagination_prev`, `pagination_next`, `read_article`
+
+---
+
 ## 2026-05-05
 
 ### Construït des de zero (migració WordPress → Hugo)
