@@ -30,7 +30,7 @@ jobs:
           extended: true
 
       - name: Build Hugo
-        run: hugo --minify --baseURL "https://pocallum.cat/"
+        run: hugo --minify --baseURL "https://112books.github.io/pocallum.cat/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

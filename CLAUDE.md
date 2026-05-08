@@ -8,8 +8,8 @@ Web oficial de **Pocallum**, servei fotogràfic cultural de Joan Linux Martínez
 
 Migrat de WordPress a Hugo. El WordPress roman actiu fins al tall final del domini.
 
-- **Producció:** `https://pocallum.cat` → VPS Dinahosting → rsync via GitHub Action
-- **Staging:** GitHub Pages (branca `develop`)
+- **Producció:** `https://pocallum.cat` → GitHub Pages (main)
+- **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026`
 - **Local:** `hugo server -D` → `http://localhost:1313`
 - **Blog personal (extern, no tocar):** `https://blog.pocallum.cat`
 - **Biografia (extern, no tocar):** `https://about.pocallum.cat`
@@ -23,17 +23,17 @@ Migrat de WordPress a Hugo. El WordPress roman actiu fins al tall final del domi
 | SSG | Hugo v0.159+ extended |
 | Tema | Custom `themes/pocallum/` |
 | CSS | Vanilla CSS amb custom properties (cap framework) |
-| JS | Vanilla JS mínim (galeria random + lightbox) |
+| JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Tally.so (embed iframe) |
+| Formulari | Tally.so (embed iframe, wizard 4 passos) |
 | Analytics | GoatCounter (sense cookies, GDPR) |
 | DNS/Domini | Dinahosting |
 
-**Fonts:**
-- `Chicago FLF` → logo/wordmark (autoallotjada, `static/fonts/`)
-- `Syne Bold` → títols display (Google Fonts)
-- `Inter` → cos del text
-- `IBM Plex Mono` → labels, dates, detalls
+**Fonts (totes autoallotjades a `static/fonts/`):**
+- `Chicago FLF` → logo/wordmark
+- `Syne` (variable, 400–800) → títols display
+- `Inter` (400/500) → cos del text
+- `IBM Plex Sans Condensed` (regular/bold) → labels, dates, detalls
 
 ---
 
@@ -48,14 +48,14 @@ hugo server -D --port 1314  # port alternatiu
 ### Staging (branca develop)
 ```bash
 git checkout develop
-git push origin develop     # activa GitHub Action → GitHub Pages
+git push origin develop     # activa GitHub Action → GitHub Pages + staticrypt
 ```
 
 ### Producció (branca main)
 ```bash
 git checkout main
 git merge develop
-git push origin main        # activa GitHub Action → rsync Dinahosting
+git push origin main        # activa GitHub Action → GitHub Pages
 ```
 
 ---
@@ -67,26 +67,36 @@ pocallum.cat/
 ├── .github/workflows/         # CI/CD GitHub Actions
 ├── themes/pocallum/           # tema custom
 │   ├── assets/css/main.css    # tots els estils
-│   ├── assets/js/main.js      # galeria random + lightbox
+│   ├── assets/js/main.js      # shuffle mosaic + lightbox
 │   └── layouts/               # templates Hugo
 │       ├── _default/          # baseof, list, single
 │       ├── index.html         # portada
-│       ├── galeria/           # galeria random
+│       ├── galeria/           # galeria mosaic aleatòria
+│       ├── festivals/         # llistat + pàgines individuals de festival
 │       ├── noticies/          # llistat + single articles
 │       └── partials/          # head, header, footer, foto-card
 ├── content/
 │   ├── ca/                    # contingut català (per defecte)
+│   │   ├── galeria/           # 152 fotografies
+│   │   ├── festivals/         # festivals on hem treballat
+│   │   └── noticies/          # notícies
 │   └── en/                    # contingut anglès
 ├── data/
 │   └── serveis.yaml           # serveis fotogràfics (no pàgines)
 ├── i18n/
 │   ├── ca.yaml                # strings UI català
 │   ├── en.yaml                # strings UI anglès
-│   └── es.yaml                # preparat, buit
+│   └── es.yaml                # preparat, mínim
 ├── static/
-│   ├── fonts/                 # Chicago FLF .woff2
-│   └── images/                # fotografies
+│   ├── fonts/                 # woff2 autoallotjades
+│   ├── images/
+│   │   ├── galeria/           # 152 JPEGs
+│   │   ├── festivals/         # fotos destacades per festival
+│   │   ├── noticies/          # fotos de notícies
+│   │   └── logotip/           # logo làmpara PNG
 ├── archetypes/                # plantilles hugo new
+├── docs/superpowers/specs/    # design docs aprovats
+├── HISTORY.md                 # registre de sessions
 └── hugo.toml                  # configuració principal
 ```
 
@@ -96,7 +106,7 @@ pocallum.cat/
 
 - **CA** (català) — idioma per defecte, `defaultContentLanguage = "ca"`
 - **EN** (anglès) — secundari, `contentDir = "content/en"`
-- **ES** (castellà) — preparat però **no activat**: `es.yaml` buit, sense contingut, no apareix al selector
+- **ES** (castellà) — preparat però **no activat**: `es.yaml` mínim, sense contingut, no apareix al selector
 
 Per activar el castellà quan toqui: afegir contingut a `content/es/`, omplir `es.yaml`, i afegir `languages.es` al menú de `hugo.toml`.
 
@@ -111,6 +121,20 @@ title: "Títol opcional"
 date: 2026-01-01
 servei: "cultura"    # cultura | artistes | empreses
 image: "/images/galeria/nom-fitxer.jpg"
+draft: false
+---
+```
+
+### Festival (`content/ca/festivals/`)
+```yaml
+---
+title: "Nom del Festival"
+date: 2025-01-01        # data darrer any treballat (per ordenació)
+anys: "2019 – 2025"     # rang visible
+lloc: "Barcelona"
+disciplina: "Jazz"
+web: "https://..."      # opcional
+image: "/images/festivals/slug.jpg"
 draft: false
 ---
 ```
@@ -135,8 +159,8 @@ draft: false
 
 Tres grups. No creen pàgines individuals, es renderitzen a `/serveis/`.
 
-**Cultura:** concerts i events, grups musicals, arts escèniques (teatre, dansa)  
-**Artistes:** books actorals, books artístics, perfil professional  
+**Cultura:** concerts i events, grups musicals, arts escèniques (teatre, dansa)
+**Artistes:** books actorals, books artístics, perfil professional
 **Empreses:** fotografia de personal i instal·lacions, fotografies per a xarxes socials
 
 **No s'ofereix:** formació (→ Llumàtics), fotografia de producte, fotografia gastronòmica.
@@ -147,17 +171,17 @@ Tres grups. No creen pàgines individuals, es renderitzen a `/serveis/`.
 
 ### Paleta
 ```css
---bg:   #080808   /* fons principal */
---bg2:  #111111   /* fons seccions alternes */
---fg:   #f5f5f5   /* text principal */
---mid:  #888888   /* text secundari */
---line: #1a1a1a   /* separadors */
+--bg:     #080808   /* fons principal */
+--bg2:    #111111   /* fons seccions alternes */
+--fg:     #f0f0f0   /* text principal */
+--mid:    #777777   /* text secundari */
+--line:   #1c1c1c   /* separadors */
+--accent: #FF5500   /* taronja — CTA, logo dot, botons primaris */
 ```
-Cap accent de color. Les fotografies porten tota la vida cromàtica.
 
 ### Principis de disseny
-- Negre profund + blanc pur, res entremig excepte gris per a text secundari
-- Tipografia **molt gran** com a element de disseny (titols 4–6rem)
+- Negre profund + blanc pur + taronja d'accent
+- Tipografia **molt gran** com a element de disseny (títols 4–6rem)
 - La imatge mana — layouts que donin espai a les fotos
 - Estètica jazz: minimalisme editorial, no decoració
 - Referència visual: `malditasmaquinas.com` (mateix autor)
@@ -166,16 +190,15 @@ Cap accent de color. Les fotografies porten tota la vida cromàtica.
 
 ## Galeria — comportament especial
 
-La galeria (`/galeria/`) mostra les fotografies en **ordre aleatori en cada càrrega**. El shuffle es fa via JS al client, no al servidor. Implementació:
+La galeria (`/galeria/`) combina **shuffle** + **mosaic de mides variables**. Cada càrrega genera un layout únic.
 
-```js
-// Agafar tots els elements de la graella i reordenar-los aleatòriament
-const items = [...document.querySelectorAll('.foto-item')];
-items.sort(() => Math.random() - 0.5);
-items.forEach(el => grid.appendChild(el));
-```
+- Grid: 6 columnes, `grid-auto-flow: dense`, files de 260px
+- Mides (assignació aleatòria ponderada per JS): estàndard (50%), tall (22%), wide (14%), big (10%), hero (4%)
+- Classes CSS: `.foto-item--tall`, `.foto-item--wide`, `.foto-item--big`, `.foto-item--hero`
+- El grid de la galeria porta la classe `js-shuffle js-mosaic`
+- El grid de portada porta `js-shuffle` (sense `js-mosaic` → sense mides variables)
 
-A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (sense shuffle).
+A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (sense mosaic).
 
 ---
 
@@ -184,14 +207,18 @@ A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (
 - **Idioma principal:** català
 - **To:** proper, directe, punyent — ni corporatiu ni servil
 - **Personalitat:** artista i professional, no proveïdor de serveis estàndard
-- **Evitar:** markerting genèric, superlatifs buits, frases fetes del sector
+- **Evitar:** màrqueting genèric, superlatifs buits, frases fetes del sector, castellanismes
 - **Exemple de veu:** "Hi ha fotògrafs que fan fotos de grups. I hi ha fotògrafs que entenen la música."
+- **Exemple CTA:** "Cada projecte és diferent. Explica'ns el teu i et fem un pressupost a mida, sense embuts."
 
 ---
 
 ## Comandes útils
 
 ```bash
+# Nou festival
+hugo new festivals/nom-festival.md
+
 # Nou article de notícies
 hugo new noticies/2026-01-titol.md
 
@@ -201,9 +228,20 @@ hugo new galeria/2026-01-nom-foto.md
 # Build de producció (minificat)
 hugo --minify
 
-# Comprovar links trencats
-hugo --gc --minify && npx broken-link-checker http://localhost:1313
+# Deploy complet (menú interactiu)
+./sync-pocallum.sh
 ```
+
+---
+
+## Pendent d'implementar
+
+- **Secció Festivals** — content type, plantilles, CSS, 5 fitxers inicials (vijazz, blues-bcn, arundo-donax, im-jazz, flamenco-barrio)
+- **Copy serveis** — actualitzar `data/serveis.yaml` amb el text aprovat (veure spec)
+- **Formulari pressupost** — crear wizard 4 passos a tally.so + afegir ID a `hugo.toml`
+- **Logo** — exportar `pocallum-logo.png` amb fons transparent (ara funciona amb mix-blend-mode)
+
+Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-design.md`
 
 ---
 
