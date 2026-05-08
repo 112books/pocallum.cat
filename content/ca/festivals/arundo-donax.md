@@ -1,24 +1,24 @@
 ---
 title: "Arundo Donax"
 date: 2025-01-01
-anys: "2018 – 2025"
-lloc: "Nau Bostik, Barcelona"
-disciplina: "Música experimental"
+anys: "2025"
+lloc: "La Pobla de Híjar, Teruel"
+disciplina: "Canya musical"
 web: ""
 image: "/images/festivals/arundo-donax.jpg"
 draft: false
 ---
 
-Arundo Donax succeeix a la Nau Bostik, i nosaltres hi vivim. L'avantatge de ser residents és que quan comença el so, ja hi som dins.
+A La Pobla de Híjar, un poble petit del Baix Aragó, es fa cada dos anys un festival dedicat a la canya musical — la planta *Arundo donax* amb la qual es fabriquen les anses dels instruments de vent de tot el món. Des de les gaites fins al saxofon, passant pels clarinets, els oboès o la dolçaina.
 
 ---
 
-Arundo Donax és on la música deixa de ser música per tornar-se una altra cosa: instal·lació, textura, recerca. Electrònica, improvisació, col·laboracions que no haurien de funcionar però que funcionen.
+El festival el munta l'Associació Musical "Fuera de Tono" amb el suport de l'ajuntament, la Comarca del Baix Martín i la Diputació de Terol. En pocs anys s'ha convertit en la festa major cultural del poble.
 
-La fotografia experimental troba aquí el seu ecosistema natural. Velocitats lentes, focus selectiu, imatge com a recerca paral·lela al que passa al so. No expliquem el concert: hi participem.
+El format combina concerts, tallers d'elaboració d'anses, exposicions, conferències i demostracions de luthiers i músics de tot l'estat. Una barreja poc habitual que funciona perquè la canya és el fil conductor: de l'agricultura a la música, del camp a l'escenari.
 
-## Ser residents canvia tot
+## La nostra cobertura
 
-La Nau Bostik és casa. Coneixem cada racó de la sala, com cau la llum en cada hora del dia, on s'acumula el públic. Quan arriba Arundo Donax no hem de descobrir l'espai: podem dedicar-nos tot al que hi passa.
+Hem cobert la IX edició (març 2025) amb el mateix esperit del festival: documentar sense marcar distàncies, mostrar la gent i el procés tant com les actuacions.
 
-Alguns dels experiments visuals que més ens han satisfet han nascut aquí, en sessions que no eren per a ningú i que s'han convertit en les més importants.
+Un festival que posa un poble petit al mapa mundial de la lutheria i la música de vent mereix ser fotografiat amb la mateixa cura amb què els artesans treballen la canya.

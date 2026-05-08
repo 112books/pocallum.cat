@@ -1,24 +1,24 @@
 ---
 title: "Arundo Donax"
 date: 2025-01-01
-anys: "2018 – 2025"
-lloc: "Nau Bostik, Barcelona"
-disciplina: "Experimental music"
+anys: "2025"
+lloc: "La Pobla de Híjar, Teruel"
+disciplina: "Musical reed"
 web: ""
 image: "/images/festivals/arundo-donax.jpg"
 draft: false
 ---
 
-Arundo Donax happens at Nau Bostik, and we live there. The advantage of being residents is that when the sound starts, we're already inside.
+In La Pobla de Híjar, a small village in Lower Aragon, a biennial festival celebrates the musical reed — the *Arundo donax* plant used to make the reeds and mouthpieces for wind instruments across the world. From bagpipes and gaitas to saxophones, clarinets and oboes.
 
 ---
 
-Arundo Donax is where music stops being music and becomes something else: installation, texture, research. Electronics, improvisation, collaborations that shouldn't work but do.
+The festival is organised by the Musical Association "Fuera de Tono" with support from the local government, the Comarca del Bajo Martín and the Provincial Council of Teruel. In just a few years it has become the village's flagship cultural event.
 
-Experimental photography finds its natural ecosystem here. Slow shutter speeds, selective focus, image as research running parallel to the sound. We don't document the concert: we participate in it.
+The format combines concerts, reed-making workshops, exhibitions, talks and demonstrations by luthiers and musicians from across the country. An unusual mix that works because the reed is the thread connecting everything: from agriculture to music, from the field to the stage.
 
-## Being residents changes everything
+## Our coverage
 
-Nau Bostik is home. We know every corner of the room, how the light falls at each hour of the day, where the audience gathers. When Arundo Donax arrives, we don't need to discover the space — we can give everything to what happens inside it.
+We covered the IX edition (March 2025) with the same spirit as the festival: documenting without creating distance, showing the people and the process as much as the performances.
 
-Some of our most satisfying visual experiments were born here, in sessions that weren't meant for anyone and turned out to be the most important ones.
+A festival that puts a small village on the world map of lutherie and wind music deserves to be photographed with the same care the craftspeople bring to the reed.
