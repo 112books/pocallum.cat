@@ -2,14 +2,14 @@
 title: "Flamenco de Barrio"
 date: 2025-01-01
 anys: "2020 – 2025"
-lloc: "Poblenou, Barcelona"
+lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenc"
 web: ""
 image: "/images/festivals/flamenco-de-barrio.jpg"
 draft: false
 ---
 
-Flamenco de Barrio porta el flamenc al carrer. Literalment. Places, patis, espais quotidians del Poblenou on de cop s'hi instal·la alguna cosa que no hauria de cabre-hi però que hi encaixa perfectament.
+Flamenco de Barrio porta el flamenc al carrer. Literalment. Places, patis, espais quotidians de Nou Barris on de cop s'hi instal·la alguna cosa que no hauria de cabre-hi però que hi encaixa perfectament.
 
 ---
 

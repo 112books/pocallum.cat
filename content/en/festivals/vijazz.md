@@ -2,18 +2,18 @@
 title: "VijazZ Festival"
 date: 2025-01-01
 anys: "2019 – 2025"
-lloc: "Vic"
+lloc: "Vilafranca del Penedès"
 disciplina: "Jazz"
 web: "https://vijazz.cat"
 image: "/images/festivals/vijazz.jpg"
 draft: false
 ---
 
-VijazZ arrives and Vic transforms. Seven years following the festival, room by room, night by night. Some of our most treasured images were born here — in impossible lighting conditions, a few metres from the musicians.
+VijazZ arrives and Vilafranca del Penedès transforms. Seven years following the festival, room by room, night by night. Some of our most treasured images were born here — in impossible lighting conditions, a few metres from the musicians.
 
 ---
 
-VijazZ is the festival Vic deserves: honest, close-up, with the best musicians anyone could bring to the territory without anyone expecting it. The European and American jazz scene shows up in small format, face to face with the audience, no barriers.
+VijazZ is the festival Vilafranca del Penedès deserves: honest, close-up, with the best musicians anyone could bring to the territory without anyone expecting it. The European and American jazz scene shows up in small format, face to face with the audience, no barriers.
 
 Joe Lovano, Makaya McCraven, Marcin Wasilewski, Fresh Sound New Talent — names that fill billings in Oslo or New York, playing in rooms where you can hear them breathe.
 

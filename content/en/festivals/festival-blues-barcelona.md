@@ -2,7 +2,7 @@
 title: "Festival de Blues de Barcelona"
 date: 2024-01-01
 anys: "2015 – 2024"
-lloc: "Barcelona"
+lloc: "Nou Barris, Barcelona"
 disciplina: "Blues"
 web: ""
 image: "/images/festivals/festival-blues-barcelona.jpg"

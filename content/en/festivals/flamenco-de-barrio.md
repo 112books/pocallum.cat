@@ -2,14 +2,14 @@
 title: "Flamenco de Barrio"
 date: 2025-01-01
 anys: "2020 – 2025"
-lloc: "Poblenou, Barcelona"
+lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenco"
 web: ""
 image: "/images/festivals/flamenco-de-barrio.jpg"
 draft: false
 ---
 
-Flamenco de Barrio takes flamenco to the street. Literally. Squares, courtyards, everyday spaces in Poblenou where something that shouldn't fit suddenly fits perfectly.
+Flamenco de Barrio takes flamenco to the street. Literally. Squares, courtyards, everyday spaces in Nou Barris where something that shouldn't fit suddenly fits perfectly.
 
 ---
 
