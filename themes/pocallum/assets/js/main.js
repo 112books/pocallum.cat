@@ -1,3 +1,56 @@
+/* ── Hero: imatge aleatòria + frase aleatòria ────────────────────────────── */
+(function () {
+  const bg    = document.getElementById('js-hero-bg');
+  const title = document.getElementById('js-hero-title');
+  if (!bg || !title) return;
+
+  const PHRASES = {
+    ca: [
+      'Fem fotos<br>que entenen<br>la música.',
+      'La llum<br>no perdona.<br>Nosaltres sí.',
+      'Cada concert<br>és una sola<br>oportunitat.',
+      'No expliquem<br>l\'escena.<br>Hi som.',
+      'Quinze anys<br>al fossat<br>i a la platea.',
+      'El moment<br>no es repeteix.<br>La foto, sí.',
+      'Jazz, blues,<br>flamenc, dansa.<br>Sempre en directe.',
+      'Fotografiem<br>el que passa<br>entre dues notes.',
+    ],
+    en: [
+      'We take photos<br>that understand<br>the music.',
+      'Light doesn\'t<br>forgive.<br>We do.',
+      'Every concert<br>is a single<br>chance.',
+      'We don\'t explain<br>the scene.<br>We\'re in it.',
+      'Fifteen years<br>in the pit<br>and the stalls.',
+      'The moment<br>doesn\'t repeat.<br>The photo does.',
+      'Jazz, blues,<br>flamenco, dance.<br>Always live.',
+      'We photograph<br>what happens<br>between two notes.',
+    ],
+  };
+
+  const lang    = window.__heroLang || 'ca';
+  const phrases = PHRASES[lang] || PHRASES.ca;
+  const images  = window.__heroImages || [];
+
+  // Phrase: fade out → swap → fade in
+  const phrase = phrases[Math.floor(Math.random() * phrases.length)];
+  title.classList.add('is-switching');
+  setTimeout(() => {
+    title.innerHTML = phrase;
+    title.classList.remove('is-switching');
+  }, 350);
+
+  // Image: pick random, preload, fade in
+  if (images.length > 0) {
+    const src = images[Math.floor(Math.random() * images.length)];
+    const img = new Image();
+    img.onload = () => {
+      bg.style.backgroundImage = `url('${src}')`;
+      bg.classList.add('is-loaded');
+    };
+    img.src = src;
+  }
+})();
+
 /* ── Mobile nav ─────────────────────────────────────────────────────────── */
 (function () {
   const toggle = document.getElementById('js-nav-toggle');

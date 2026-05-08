@@ -3,10 +3,11 @@
 {{ $siteRoot := strings.TrimSuffix "/" site.BaseURL }}
 
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
-<section class="hero">
+<section class="hero" id="js-hero">
+  <div class="hero-bg" id="js-hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
     <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>
-    <h1 class="hero-title">
+    <h1 class="hero-title" id="js-hero-title">
       {{ i18n "hero_title" | safeHTML | default "Fem fotos<br>que entenen<br>la música." | safeHTML }}
     </h1>
     <p class="hero-sub">{{ i18n "hero_sub" | default "Jazz, blues, teatre, dansa i arts escèniques. Barcelona, des del 2010." }}</p>
@@ -19,7 +20,12 @@
       </a>
     </div>
   </div>
+  <div class="hero-scroll" aria-hidden="true"></div>
 </section>
+<script>
+window.__heroImages = [{{ range (where .Site.RegularPages "Type" "galeria") }}{{ with .Params.image }}"{{ . | strings.TrimLeft "/" | relURL }}",{{ end }}{{ end }}];
+window.__heroLang = "{{ site.Language.Lang }}";
+</script>
 
 {{/* ── Darreres fotografies ─────────────────────────────────────────────── */}}
 {{ $fotos := where .Site.RegularPages "Type" "galeria" | first 8 }}

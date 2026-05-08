@@ -237,13 +237,39 @@ h1, h2, h3, h4 {
 
 /* ── Hero ──────────────────────────────────────────────────────────────────── */
 .hero {
-  min-height: calc(90vh - var(--nav-h));
+  position: relative;
+  min-height: calc(100svh - var(--nav-h));
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line);
   padding: var(--space-24) var(--space-8);
+  overflow: hidden;
 }
+
+/* Background image (JS-injected) */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.hero-bg.is-loaded { opacity: 1; }
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(8,8,8,0.94) 0%, rgba(8,8,8,0.78) 45%, rgba(8,8,8,0.25) 100%),
+    linear-gradient(to top,   rgba(8,8,8,0.6)  0%, rgba(8,8,8,0.0)  60%);
+}
+
 .hero-inner {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: var(--container);
   margin-inline: auto;
@@ -264,7 +290,9 @@ h1, h2, h3, h4 {
   letter-spacing: -0.03em;
   color: var(--fg);
   margin-bottom: var(--space-8);
+  transition: opacity 0.35s ease;
 }
+.hero-title.is-switching { opacity: 0; }
 .hero-sub {
   font-size: 1.05rem;
   color: var(--mid);
@@ -276,6 +304,23 @@ h1, h2, h3, h4 {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-4);
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 1px;
+  height: 3rem;
+  background: linear-gradient(to bottom, transparent 0%, var(--mid) 100%);
+  animation: hero-scroll-pulse 2s ease-in-out infinite;
+}
+@keyframes hero-scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: translateX(-50%) scaleY(1); }
+  50%       { opacity: 0.7; transform: translateX(-50%) scaleY(1.15); }
 }
 
 /* ── Seccions genèriques ───────────────────────────────────────────────────── */
