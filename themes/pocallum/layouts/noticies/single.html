@@ -1,32 +1,72 @@
 {{ define "main" }}
-{{ $lp := $.Site.LanguagePrefix }}
 
-<article class="article">
-
-  <header class="article-header container">
-    <div class="article-meta">
-      <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">
-        {{ .Date.Format "2 January 2006" }}
-      </time>
-      <a href="{{ "noticies/" | relLangURL }}" class="article-back">
-        ← {{ i18n "back_to_news" | default "Notícies" }}
-      </a>
-    </div>
-    <h1 class="article-title">{{ .Title }}</h1>
-    {{ with .Params.lead }}
-    <p class="article-lead">{{ . }}</p>
-    {{ end }}
-  </header>
+<article class="article-jazz">
 
   {{ if .Params.image }}
-  <div class="article-hero-img">
-    <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" alt="{{ .Title }}" loading="eager">
+  <div class="article-jazz__hero">
+    <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
+         alt="{{ .Title }}"
+         class="article-jazz__hero-img"
+         loading="eager">
+    <div class="article-jazz__hero-grad"></div>
+    <div class="article-jazz__hero-nav container">
+      <a href="{{ "noticies/" | relLangURL }}" class="article-jazz__back">
+        ← {{ i18n "back_to_news" | default "Notícies" }}
+      </a>
+      <time class="article-jazz__date-hero" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "02 Jan 2006" | upper }}
+      </time>
+    </div>
   </div>
   {{ end }}
 
-  <div class="article-body container">
+  <div class="article-jazz__head container">
+    {{ if not .Params.image }}
+    <div class="article-jazz__meta-bare">
+      <a href="{{ "noticies/" | relLangURL }}" class="article-jazz__back">
+        ← {{ i18n "back_to_news" | default "Notícies" }}
+      </a>
+      <time class="article-jazz__date-hero" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "02 Jan 2006" | upper }}
+      </time>
+    </div>
+    {{ end }}
+    <h1 class="article-jazz__title">{{ .Title }}</h1>
+    {{ with .Params.lead }}
+    <p class="article-jazz__lead">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <div class="article-jazz__body prose container">
     {{ .Content }}
   </div>
+
+  {{ $hasTags := .GetTerms "tags" }}
+  {{ $hasEquip := .GetTerms "equip" }}
+  {{ if or $hasTags $hasEquip }}
+  <div class="article-footer-meta container">
+    {{ with $hasEquip }}
+    <div class="article-footer-col">
+      <p class="article-footer-label">{{ i18n "equip_label" | default "Equip" }}</p>
+      <div class="equip-tags">
+        {{ range . }}
+        <a href="{{ .RelPermalink }}" class="equip-tag">{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ with $hasTags }}
+    <div class="article-footer-col">
+      <p class="article-footer-label">Tags</p>
+      <div class="tags-list">
+        {{ range . }}
+        <a href="{{ .RelPermalink }}" class="tag-link">{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
 
 </article>
 

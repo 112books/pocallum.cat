@@ -1,0 +1,11 @@
+{{ $imgs := split (trim .Inner "\n ") "\n" }}
+<div class="article-gallery">
+  {{ range $imgs }}
+  {{ $url := trim . " \t\r" }}
+  {{ if $url }}
+  <figure class="gallery-item">
+    <img src="{{ $url }}" loading="lazy" alt="">
+  </figure>
+  {{ end }}
+  {{ end }}
+</div>

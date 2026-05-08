@@ -65,6 +65,10 @@ defaultContentLanguageInSubdir = false
   goatcounterSite = "pocallum"
   tallyFormContact = ""   # ID del formulari Tally — a configurar
 
+[taxonomies]
+  equip = "equip"
+  tag   = "tags"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

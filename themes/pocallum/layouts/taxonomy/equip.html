@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "equip_eyebrow" | default "Equipament" }}</p>
+    <h1 class="page-title">{{ i18n "equip_all_title" | default "Tot l'equipament" }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="equip-taxonomy-grid">
+      {{ range .Data.Terms.Alphabetical }}
+      <a href="{{ .Page.RelPermalink }}" class="equip-taxonomy-item">
+        <span class="equip-taxonomy-name">{{ .Page.LinkTitle }}</span>
+        <span class="equip-taxonomy-count">{{ .Count }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

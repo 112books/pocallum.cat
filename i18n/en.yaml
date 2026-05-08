@@ -56,6 +56,12 @@ contacte_intro:         "Tell us about your project. We'll send you a no-commitm
 contacte_form_title:    "Contact form"
 contacte_form_pending:  "The form will be live soon. Meanwhile, write to us directly:"
 
+# Equipment
+equip_label:        "Gear"
+equip_eyebrow:      "Equipment"
+equip_all_title:    "All equipment"
+equip_articles_pre: "Articles with"
+
 # Legal
 footer_legal_nav:   "Legal pages"
 legal_avis:         "Legal notice"

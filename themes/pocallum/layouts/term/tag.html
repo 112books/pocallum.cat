@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <a href="{{ "tags/" | relLangURL }}" class="page-eyebrow page-eyebrow--link">← Tags</a>
+    <h1 class="page-title">#{{ .Title }}</h1>
+    <p class="page-intro equip-term-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="noticies-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <article class="noticia-row">
+        <div class="noticia-row__meta">
+          <time class="noticia-row__date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2 Jan 2006" }}
+          </time>
+        </div>
+        <div class="noticia-row__body">
+          <h2 class="noticia-row__title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          {{ with .Params.lead }}
+          <p class="noticia-row__lead">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ if .Params.image }}
+        <div class="noticia-row__img">
+          <a href="{{ .RelPermalink }}" tabindex="-1">
+            <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
+          </a>
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

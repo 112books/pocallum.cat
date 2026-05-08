@@ -1,0 +1,8 @@
+<div class="video-embed">
+  <iframe src="https://player.vimeo.com/video/{{ .Get 0 }}?dnt=1"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+          title="{{ .Get 1 | default "Video" }}"></iframe>
+</div>
