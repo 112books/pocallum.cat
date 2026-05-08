@@ -11,10 +11,10 @@
     </h1>
     <p class="hero-sub">{{ i18n "hero_sub" | default "Jazz, blues, teatre, dansa i arts escèniques. Barcelona, des del 2010." }}</p>
     <div class="hero-actions">
-      <a href="{{ printf "%s/contacte/" $lp | relURL }}" class="btn btn--primary">
+      <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary">
         {{ i18n "cta_contact" | default "Demana pressupost" }}
       </a>
-      <a href="{{ printf "%s/galeria/" $lp | relURL }}" class="btn btn--ghost">
+      <a href="{{ "galeria/" | relLangURL }}" class="btn btn--ghost">
         {{ i18n "cta_gallery" | default "Veure galeria" }}
       </a>
     </div>
@@ -32,7 +32,7 @@
     {{ end }}
   </div>
   <div class="section-cta">
-    <a href="{{ printf "%s/galeria/" $lp | relURL }}" class="btn btn--ghost">
+    <a href="{{ "galeria/" | relLangURL }}" class="btn btn--ghost">
       {{ i18n "see_all_photos" | default "Tota la galeria" }} →
     </a>
   </div>
@@ -64,7 +64,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ printf "%s/serveis/" $lp | relURL }}" class="btn btn--ghost">
+      <a href="{{ "serveis/" | relLangURL }}" class="btn btn--ghost">
         {{ i18n "see_all_services" | default "Tots els serveis" }} →
       </a>
     </div>
@@ -104,7 +104,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ printf "%s/noticies/" $lp | relURL }}" class="btn btn--ghost">
+      <a href="{{ "noticies/" | relLangURL }}" class="btn btn--ghost">
         {{ i18n "see_all_news" | default "Totes les notícies" }} →
       </a>
     </div>

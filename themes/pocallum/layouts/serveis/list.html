@@ -43,7 +43,7 @@
   <div class="container container--narrow">
     <h2 class="cta-block-title">{{ i18n "serveis_cta_title" | default "Explica'ns el teu projecte" }}</h2>
     <p class="cta-block-text">{{ i18n "serveis_cta_text" | default "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te." }}</p>
-    <a href="{{ printf "%s/contacte/" $lp | relURL }}" class="btn btn--primary btn--lg">
+    <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary btn--lg">
       {{ i18n "cta_contact" | default "Demana pressupost" }}
     </a>
   </div>

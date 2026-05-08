@@ -8,7 +8,7 @@
       <time class="article-date" datetime="{{ .Date.Format "2006-01-02" }}">
         {{ .Date.Format "2 January 2006" }}
       </time>
-      <a href="{{ printf "%s/noticies/" $lp | relURL }}" class="article-back">
+      <a href="{{ "noticies/" | relLangURL }}" class="article-back">
         ← {{ i18n "back_to_news" | default "Notícies" }}
       </a>
     </div>
