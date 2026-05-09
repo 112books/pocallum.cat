@@ -63,8 +63,14 @@ Pocallum no és una illa. Forma part d'una xarxa de projectes que comparteixen v
 
 ## L'arrel
 
-**9Barris Imatge** — co-coordinació des del 2002.
-**Nau Bostik** — resident i participant en l'autogestió des del 2020.
-**Prollema** — col·laboració amb joves migrants des del 2002.
-**Teatre inclusiu** — documentació de projectes d'arts escèniques amb persones amb diversitat funcional.
-**Casal de Barri de la Prosperitat** — membre de la gestora (2002–2017).
+Més que clients o col·laboradors, hi ha projectes amb els quals compartim arrel. Estructures de barri, espais d'autogestió i entitats que treballen en les interseccions de la cultura, la diversitat i el territori.
+
+**[9Barris Imatge](https://9barrisimatge.org)** — Col·lectiu fotogràfic del districte de Nou Barris. Co-coordinació des del 2002. Documentem el territori i les seves comunitats.
+
+**[Nau Bostik](https://naubostik.net)** — Espai d'art i cultura al barri de la Segrera. Residents des del 2020. Aquí hi ha el laboratori, l'estudi i bona part del pensament.
+
+**[Prollema](https://prollema.org)** — Entitat de treball amb joves migrants en risc d'exclusió social. Col·laboració fotogràfica des del 2002.
+
+**[FITI — Festival Internacional de Teatre Integratiu](https://www.fiti.cat)** — Documentació del festival i dels processos de teatre inclusiu amb persones amb diversitat funcional.
+
+**Casal de Barri de la Prosperitat** — Membre de la gestora del casal de 2002 a 2017. L'escola de moltes coses.
