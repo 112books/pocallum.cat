@@ -64,7 +64,7 @@ defaultContentLanguageInSubdir = false
   blog            = "https://blog.pocallum.cat"
   about           = "https://about.pocallum.cat"
   goatcounterSite = "pocallum"
-  tallyFormContact  = ""   # ID del formulari Tally (no utilitzat, substituït pel wizard natiu)
+  # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
   formspreeContact  = "https://formspree.io/f/xnjgrpnn"
 
 [taxonomies]
