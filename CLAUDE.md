@@ -58,6 +58,17 @@ git merge develop
 git push origin main        # activa GitHub Action → GitHub Pages
 ```
 
+### ⚠️ Ordre obligatori en canvis de domini (lliçó apresa)
+
+El workflow usa `actions/configure-pages` que llegeix el custom domain de GitHub Settings **en el moment de la build**. Si el DNS canvia abans que el custom domain estigui configurat a GitHub, la build es fa amb la URL de github.io i el CSS/imatges no carreguen.
+
+**Ordre correcte per a migracions de domini:**
+1. GitHub → Settings → Pages → Custom domain → escriu el domini → Save
+2. Verifica que el CNAME file existeix a `static/CNAME`
+3. Fes un push a main i comprova que el workflow acaba correctament
+4. Comprova que el HTML generat té paths correctes (no `/repositori/css/...`)
+5. *Llavors* canvia els DNS a Dinahosting
+
 ---
 
 ## Estructura de directoris
@@ -248,7 +259,9 @@ Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-des
 ## Fora d'abast (no tocar en aquesta fase)
 
 - Newsletter / mailing list
-- Botiga o e-commerce
+- Botiga o e-commerce amb mercandatge propi
 - Castellà activat
-- Blog integrat (`blog.pocallum.cat` és independent)
+- Blog integrat (`blog.pocallum.cat` és independent) <--- compte al passar a producció!
 - Formació fotogràfica (→ Llumàtics)
+- Backend per publicar notícies, festivals, fotos a galeria.
+
