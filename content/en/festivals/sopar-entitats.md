@@ -14,9 +14,11 @@ Every autumn, the organisations and collectives of the neighbourhood gather at C
 
 ---
 
+We play at home here. La Prosperitat is our neighbourhood, the Casal is our space, and the organisations that come — we know them. There is a warmth and a horizontality to this dinner that no conventional festival can replicate: nobody is the audience, everyone is a participant.
+
 We've been documenting it since 2015 with the same eye we bring to any other event: trying to capture what happens between the tables, not just in front of the stage.
 
-The format is alive and changing: international solidarity causes, feminist and LGBTQ+ comedians, local food cooperatives, neighbourhood organisations of all kinds. Each edition has its own character but the same neighbourhood spirit of taking its time.
+The format is alive and changing: international solidarity causes, feminist and LGBTQ+ comedians, local food cooperatives, neighbourhood organisations of all kinds. Each edition has its own character but the same neighbourhood spirit of taking its time. Good moments, every year.
 
 We attend representing [9barrisimatge.org](https://9barrisimatge.org), the district's photography collective.
 

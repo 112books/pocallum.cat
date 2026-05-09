@@ -14,9 +14,11 @@ Cada tardor, les entitats i col·lectius del barri es reuneixen al Casal de Barr
 
 ---
 
+Juguem a casa. La Prosperitat és el nostre barri, el Casal és el nostre espai, i les entitats que hi van, les coneixem. Hi ha un caliu i una horizontalitat en aquest sopar que no es troba en cap festival convencional: ningú és públic, tothom és participant.
+
 L'hem documentat des del 2015 amb la mateixa mirada que portem a qualsevol altre event: intentant capturar el que passa entre les taules, no només davant de l'escenari.
 
-El format és viu i canviant. Solidaritat amb causes internacionals, còmiques feministes i LGBTQ+, cooperatives de menjar local, entitats de tot el barri representades. Cada edició té un color diferent però la mateixa voluntat de barri que es pren el seu temps.
+El format és viu i canviant. Solidaritat amb causes internacionals, còmiques feministes i LGBTQ+, cooperatives de menjar local, entitats de tot el barri representades. Cada edició té un color diferent però la mateixa voluntat de barri que es pren el seu temps. Bons moments, cada any.
 
 Hi anem representant [9barrisimatge.org](https://9barrisimatge.org), el col·lectiu fotogràfic del districte.
 
