@@ -16,7 +16,11 @@ Every May, Capibola Blues brings blues music to Parc Central de Nou Barris as pa
 
 The Pícnic de Blues is a free, neighbourhood event with no pretensions, which for some reason always works. Perhaps because blues in a park, with people lying on the grass and kids running through the crowd, is exactly the right setting for this music.
 
-Capibola Blues is the organisation that puts it together year after year with the same energy and the same limited resources. In 2016 it rained and they played anyway.
+Capibola Blues is the organisation that puts it together year after year with the same energy and the same limited resources — the same people behind the Festival de Blues de Barcelona, the city's reference festival for African-American music. The Pícnic is the spring warm-up: blues in the body before the summer and the main festival. In 2016 it rained and they played anyway.
+
+Free. Because culture stands above the speculation that rules the entertainment industry.
+
+It may have grown from the spirit of 9binblack, an initiative we were part of. However it began, this event is becoming essential in Barcelona's African-American music calendar — and we have the privilege of documenting it from the very first edition.
 
 ## Editions documented on the blog
 

@@ -14,11 +14,14 @@ Cada any, quan acaba el mes de dejuni, la comunitat islàmica de Nou Barris surt
 
 ---
 
-El 2023 vam fer seguiment dels costums de la comunitat islàmica de Nou Barris durant la festa de l'Eid al-Fitr. Una celebració que molts veïns del districte organitzen any rere any, sense cartells ni patrocinadors, amb la força de qui sap exactament per què celebra.
+Els veïns de Nou Barris tenim molts orígens diferents. Una de les comunitats que configuren el districte és la islàmica, i el 2023 vam tenir el privilegi de poder documentar-ne el Ramadà i les seves celebracions — des de l'Iftar de trencament del dejuni fins a la gran festa de l'Eid al-Fitr.
+
+Una celebració que el barri organitza any rere any, sense cartells ni patrocinadors, amb la força de qui sap exactament per què celebra.
 
 Llum de tarda, espais públics transformats, gent que no posa per a la càmera perquè té coses millors a fer. El tipus d'event que ens interessa documentar.
 
 ## Edicions documentades al blog
 
+- [Iftar a Nou Barris (2023)](https://blog.pocallum.cat/2023/04/16/2023-04-15-iftar-a-nou-barris/)
 - [Final del Ramadà a Nou Barris (2023)](https://blog.pocallum.cat/2023/04/21/2023-04-20-final-del-ramada-a-nou-barris/)
 - [Festa fi del Ramadà al districte de Nou Barris (2023)](https://blog.pocallum.cat/2023/04/22/2023-04-21-festa-fi-del-ramada-al-districte-de-nou-barris/)

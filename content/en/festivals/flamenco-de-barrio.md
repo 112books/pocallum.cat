@@ -1,7 +1,7 @@
 ---
 title: "Flamenco de Barrio"
-date: 2030-01-05
-anys: "2020 – 2025"
+date: 2025-11-08
+anys: "2012 – 2025"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenco"
 web: "https://www.instagram.com/flamencodebarrio_oficial/"

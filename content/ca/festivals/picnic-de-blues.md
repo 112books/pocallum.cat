@@ -16,7 +16,11 @@ Cada mes de maig, Capibola Blues porta el blues al Parc Central de Nou Barris di
 
 El Pícnic de Blues és un event gratuït, de barri i sense pretensions, que per alguna raó sempre funciona. Potser perquè el blues en un parc, amb gent estirada a la gespa i nens que corren entre el públic, és exactament el context adequat per a aquesta música.
 
-Capibola Blues és l'entitat que ho organitza any rere any amb la mateixa energia i els mateixos recursos escassos. El 2016 va ploure i es va fer igualment.
+Capibola Blues és l'entitat que ho organitza any rere any amb la mateixa energia i els mateixos recursos escassos. Els mateixos que hi ha darrere del Festival de Blues de Barcelona, el festival de referència de la música afroamericana a la ciutat. El Pícnic n'és el preescalfament de primavera, la manera de posar el blues al cos i afrontar l'estiu. El 2016 va ploure i es va fer igualment.
+
+De fran. Perquè la cultura está per sobre de l'especulació en el món de l'espectacle.
+
+Potser va néixer de l'esperit del 9binblack, del qual vàrem ser-ne part. Sigui com sigui, aquesta iniciativa comença a ser imprescindible dins la programació de música d'arrel afroamericana a Barcelona. I nosaltres tenim el privilegi de documentar-ho des del primer dia.
 
 ## Edicions documentades al blog
 
