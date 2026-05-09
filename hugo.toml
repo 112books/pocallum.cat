@@ -134,7 +134,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.en.menus.main]]
   name   = "Festivals"
-  url    = "/en/festivals/"
+  url    = "/festivals/"
   weight = 2
 
 [[languages.en.menus.main]]
@@ -149,7 +149,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.en.menus.main]]
   name   = "Blog"
-  url    = "/en/blog/"
+  url    = "/blog/"
   weight = 5
 
 [[languages.en.menus.main]]
