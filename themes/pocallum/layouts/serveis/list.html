@@ -38,7 +38,7 @@
   </div>
   {{ with $grup.image }}
   <div class="servei-chapter__photo-wrap">
-    <img src="{{ . | relURL }}" alt="" class="servei-chapter__photo" loading="lazy">
+    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" class="servei-chapter__photo" loading="lazy">
   </div>
   {{ end }}
   <div class="container">
