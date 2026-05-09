@@ -1,6 +1,13 @@
 {{ define "main" }}
 
 {{ $fotos := where .Site.RegularPages "Type" "galeria" }}
+{{ if not $fotos }}
+  {{ range hugo.Sites }}
+    {{ if eq .Language.Lang "ca" }}
+      {{ $fotos = where .RegularPages "Type" "galeria" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 <div class="galeria-bar container">
   <h1 class="galeria-bar__title">{{ i18n "galeria_title" | default "Galeria" }}</h1>
