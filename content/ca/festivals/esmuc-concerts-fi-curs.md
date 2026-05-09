@@ -1,6 +1,6 @@
 ---
 title: "Concerts Finals de Curs ESMUC"
-date: 2024-05-21
+date: 2030-01-02
 anys: "2024"
 lloc: "ESMUC, Barcelona"
 disciplina: "Jazz · Música clàssica"

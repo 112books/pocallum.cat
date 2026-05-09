@@ -1,6 +1,6 @@
 ---
 title: "I'm Jazz"
-date: 2025-01-01
+date: 2030-01-04
 anys: "2016 – 2025"
 lloc: "Barcelona"
 disciplina: "Jazz"

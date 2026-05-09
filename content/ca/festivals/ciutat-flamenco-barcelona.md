@@ -1,6 +1,6 @@
 ---
 title: "Ciutat Flamenco Barcelona"
-date: 2025-10-30
+date: 2030-01-07
 anys: "2025"
 lloc: "Barcelona"
 disciplina: "Flamenc contemporani"

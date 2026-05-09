@@ -1,6 +1,6 @@
 ---
 title: "Barcelona Tattoo Expo"
-date: 2024-03-02
+date: 2030-01-08
 anys: "2013 – 2024"
 lloc: "Fira de Barcelona"
 disciplina: "Tattoo · Urban art"

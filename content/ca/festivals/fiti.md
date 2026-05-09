@@ -1,6 +1,6 @@
 ---
 title: "FITI — Festival Internacional de Teatre Integratiu"
-date: 2025-01-01
+date: 2030-01-03
 anys: "2017 – 2025"
 lloc: "Santa Coloma de Gramenet"
 disciplina: "Teatre inclusiu"

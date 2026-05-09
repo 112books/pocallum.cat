@@ -1,6 +1,6 @@
 ---
 title: "ESMUC End-of-Year Concerts"
-date: 2024-05-21
+date: 2030-01-02
 anys: "2024"
 lloc: "ESMUC, Barcelona"
 disciplina: "Jazz · Classical music"

@@ -1,6 +1,6 @@
 ---
 title: "Flamenco de Barrio"
-date: 2025-01-01
+date: 2030-01-05
 anys: "2020 – 2025"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenco"

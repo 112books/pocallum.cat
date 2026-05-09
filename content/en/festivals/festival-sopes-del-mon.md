@@ -1,6 +1,6 @@
 ---
 title: "Festival de Sopes del Món"
-date: 2023-10-22
+date: 2030-01-01
 anys: "2013 – 2023"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Community culture"
