@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $serveis := hugo.Data.serveis }}
+{{ $lang := site.Language.Lang }}
 
 <section class="page-header">
   <div class="container">
@@ -8,39 +10,280 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section--wizard">
   <div class="container container--narrow">
 
-    {{ with .Site.Params.tallyFormContact }}
-    <div class="tally-wrap">
-      <iframe data-tally-src="https://tally.so/embed/{{ . }}?alignLeft=1&hideTitle=1&transparentBackground=1"
-              loading="lazy"
-              width="100%"
-              height="500"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              title="{{ i18n "contacte_form_title" | default "Formulari de contacte" }}">
-      </iframe>
-      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    <div class="wiz-progress-wrap" id="js-progress-wrap">
+      <div class="wiz-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" id="js-progressbar">
+        <div class="wiz-progress__fill" id="js-progress-fill"></div>
+      </div>
+      <span class="wiz-step-counter" id="js-step-counter" aria-live="polite">01 / 04</span>
     </div>
-    {{ else }}
-    <div class="contact-direct">
-      <p class="contact-note">{{ i18n "contacte_form_pending" | default "El formulari s'activarà aviat. Mentrestant, escriu-nos directament:" }}</p>
-    </div>
-    {{ end }}
 
-    <div class="contact-info">
-      <a href="mailto:{{ .Site.Params.contactEmail }}" class="contact-email">
-        {{ .Site.Params.contactEmail }}
-      </a>
-      <span class="contact-sep">·</span>
-      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-phone">
-        {{ .Site.Params.contactPhone }}
-      </a>
+    <form id="js-wizard"{{ with .Site.Params.formspreeContact }} action="{{ . }}"{{ end }} method="POST" novalidate>
+
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="{{ i18n "wiz_email_subject" | default "Nou pressupost — pocallum.cat" }}">
+      <input type="hidden" name="_language" value="{{ $lang }}">
+
+      {{/* ── PAS 1 — Servei ───────────────────────────────────────────────────── */}}
+      <div class="wiz-panel" data-panel="1">
+        <h2 class="wiz-panel__title" tabindex="-1">{{ i18n "wiz_s1_title" | default "Quin és el projecte?" }}</h2>
+        <p class="wiz-panel__sub">{{ i18n "wiz_s1_sub" | default "Tria la categoria que millor s'hi adapta." }}</p>
+        {{ if $serveis }}
+        <div class="wiz-cards" role="group" aria-label="{{ i18n "wiz_s1_title" | default "Tipus de projecte" }}">
+          {{ range $i, $g := $serveis.grups }}
+          <label class="wiz-card">
+            <input type="radio" name="servei" value="{{ if eq $lang "en" }}{{ $g.nom_en }}{{ else }}{{ $g.nom }}{{ end }}" required>
+            <span class="wiz-card__num">{{ printf "%02d" (add $i 1) }}</span>
+            <span class="wiz-card__body">
+              <span class="wiz-card__title">{{ if eq $lang "en" }}{{ $g.nom_en }}{{ else }}{{ $g.nom }}{{ end }}</span>
+              <span class="wiz-card__desc">{{ if eq $lang "en" }}{{ $g.desc_en | truncate 90 "…" }}{{ else }}{{ $g.desc | truncate 90 "…" }}{{ end }}</span>
+            </span>
+            <span class="wiz-card__check" aria-hidden="true"></span>
+          </label>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      {{/* ── PAS 2 — Projecte ────────────────────────────────────────────────── */}}
+      <div class="wiz-panel" data-panel="2" hidden>
+        <h2 class="wiz-panel__title" tabindex="-1">{{ i18n "wiz_s2_title" | default "Explica'ns-ho" }}</h2>
+        <p class="wiz-panel__sub">{{ i18n "wiz_s2_sub" | default "Com més detalls ens dones, millor pressupost podem fer." }}</p>
+        <div class="wiz-field">
+          <label class="wiz-label" for="f-desc">{{ i18n "wiz_s2_desc_label" | default "El projecte" }} <span class="wiz-required" aria-hidden="true">*</span></label>
+          <textarea class="wiz-textarea" id="f-desc" name="projecte" rows="5"
+            placeholder="{{ i18n "wiz_s2_desc_ph" | default "Descriu el projecte: event, artista, context, el tipus d'imatges que necessites..." }}"
+            required></textarea>
+        </div>
+        <div class="wiz-field-row">
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-quan">{{ i18n "wiz_s2_quan_label" | default "Quan? (opcional)" }}</label>
+            <input class="wiz-input" type="text" id="f-quan" name="quan"
+              placeholder="{{ i18n "wiz_s2_quan_ph" | default "Data o termini aproximat" }}">
+          </div>
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-lloc">{{ i18n "wiz_s2_lloc_label" | default "On? (opcional)" }}</label>
+            <input class="wiz-input" type="text" id="f-lloc" name="lloc"
+              placeholder="{{ i18n "wiz_s2_lloc_ph" | default "Lloc o localització" }}">
+          </div>
+        </div>
+      </div>
+
+      {{/* ── PAS 3 — Contacte ────────────────────────────────────────────────── */}}
+      <div class="wiz-panel" data-panel="3" hidden>
+        <h2 class="wiz-panel__title" tabindex="-1">{{ i18n "wiz_s3_title" | default "Les teves dades" }}</h2>
+        <p class="wiz-panel__sub">{{ i18n "wiz_s3_sub" | default "Per poder-te enviar el pressupost." }}</p>
+        <div class="wiz-field-row">
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-nom">{{ i18n "wiz_s3_nom" | default "Nom" }} <span class="wiz-required" aria-hidden="true">*</span></label>
+            <input class="wiz-input" type="text" id="f-nom" name="nom" autocomplete="name"
+              placeholder="{{ i18n "wiz_s3_nom_ph" | default "Com et diem?" }}" required>
+          </div>
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-email">Email <span class="wiz-required" aria-hidden="true">*</span></label>
+            <input class="wiz-input" type="email" id="f-email" name="email" autocomplete="email"
+              placeholder="{{ i18n "wiz_s3_email_ph" | default "on t'enviem el pressupost" }}" required>
+          </div>
+        </div>
+        <div class="wiz-field-row">
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-tel">{{ i18n "wiz_s3_tel" | default "Telèfon (opcional)" }}</label>
+            <input class="wiz-input" type="tel" id="f-tel" name="telefon" autocomplete="tel"
+              placeholder="{{ i18n "wiz_s3_tel_ph" | default "Per si preferim trucar" }}">
+          </div>
+          <div class="wiz-field">
+            <label class="wiz-label" for="f-via">{{ i18n "wiz_s3_via" | default "Com ens has trobat? (opcional)" }}</label>
+            <select class="wiz-select" id="f-via" name="via">
+              <option value="">—</option>
+              <option>Instagram</option>
+              <option>{{ i18n "wiz_via_blog" | default "Blog pocallum.cat" }}</option>
+              <option>{{ i18n "wiz_via_ref" | default "Recomanació" }}</option>
+              <option>{{ i18n "wiz_via_web" | default "Cerca web" }}</option>
+              <option>{{ i18n "wiz_via_other" | default "Altra via" }}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {{/* ── PAS 4 — Resum ───────────────────────────────────────────────────── */}}
+      <div class="wiz-panel" data-panel="4" hidden>
+        <h2 class="wiz-panel__title" tabindex="-1">{{ i18n "wiz_s4_title" | default "Tot llest" }}</h2>
+        <p class="wiz-panel__sub">{{ i18n "wiz_s4_sub" | default "Comprova les dades i envia'ns la petició." }}</p>
+        <div class="wiz-summary" id="js-summary" aria-live="polite"></div>
+        <p class="wiz-reply-note">{{ i18n "wiz_reply" | default "Et respondrem en menys de 48 hores." }}</p>
+      </div>
+
+      {{/* ── Navegació ────────────────────────────────────────────────────────── */}}
+      <div class="wiz-nav">
+        <button type="button" id="js-wiz-prev" class="wiz-nav__prev" hidden>
+          ← {{ i18n "wizard_prev" | default "Enrere" }}
+        </button>
+        <button type="button" id="js-wiz-next" class="wiz-nav__next btn btn--ghost">
+          {{ i18n "wizard_next" | default "Continuar" }} →
+        </button>
+        <button type="submit" id="js-wiz-send" class="btn btn--primary btn--lg" hidden>
+          {{ i18n "wizard_send" | default "Enviar pressupost" }} →
+        </button>
+      </div>
+
+    </form>
+
+    <div class="wiz-success" id="js-wiz-success" hidden>
+      <div class="wiz-success__check">✓</div>
+      <h2 class="wiz-success__title">{{ i18n "wiz_ok_title" | default "Rebut!" }}</h2>
+      <p class="wiz-success__text">{{ i18n "wiz_ok_text" | default "Et respondrem en menys de 48 hores." }}</p>
+      <a href="{{ "/" | relLangURL }}" class="btn btn--ghost">{{ i18n "wiz_ok_back" | default "Tornar a l'inici" }}</a>
     </div>
 
   </div>
 </section>
+
+<section class="section section--alt section--contact-direct">
+  <div class="container container--narrow">
+    <div class="contact-info">
+      <a href="mailto:{{ .Site.Params.contactEmail }}" class="contact-email">{{ .Site.Params.contactEmail }}</a>
+      <span class="contact-sep">·</span>
+      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-phone">{{ .Site.Params.contactPhone }}</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('js-wizard');
+  if (!form) return;
+
+  var panels    = Array.from(form.querySelectorAll('.wiz-panel'));
+  var fill      = document.getElementById('js-progress-fill');
+  var bar       = document.getElementById('js-progressbar');
+  var counter   = document.getElementById('js-step-counter');
+  var prevBtn   = document.getElementById('js-wiz-prev');
+  var nextBtn   = document.getElementById('js-wiz-next');
+  var sendBtn   = document.getElementById('js-wiz-send');
+  var successEl = document.getElementById('js-wiz-success');
+  var wrapEl    = document.getElementById('js-progress-wrap');
+  var N         = panels.length;
+  var cur       = 0;
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  function goTo(n) {
+    panels[cur].hidden = true;
+    cur = n;
+    panels[cur].hidden = false;
+
+    var pct = Math.round((cur + 1) / N * 100);
+    fill.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+    counter.textContent = pad(cur + 1) + ' / ' + pad(N);
+
+    prevBtn.hidden = (cur === 0);
+    nextBtn.hidden = (cur === N - 1);
+    sendBtn.hidden = (cur !== N - 1);
+
+    if (cur === N - 1) buildSummary();
+
+    var title = panels[cur].querySelector('.wiz-panel__title');
+    if (title) title.focus();
+    var top = form.getBoundingClientRect().top + window.scrollY - 90;
+    if (window.scrollY > top) window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  function validate() {
+    var p = panels[cur];
+
+    var radio = p.querySelector('input[type="radio"][required]');
+    if (radio) {
+      if (!p.querySelector('input[name="' + radio.name + '"]:checked')) {
+        var cards = p.querySelector('.wiz-cards');
+        if (cards) { cards.classList.add('wiz--shake'); setTimeout(function () { cards.classList.remove('wiz--shake'); }, 500); }
+        return false;
+      }
+    }
+
+    var fields = p.querySelectorAll('input[required]:not([type="radio"]), textarea[required]');
+    for (var i = 0; i < fields.length; i++) {
+      var f = fields[i];
+      if (!f.value.trim() || (f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value))) {
+        f.classList.add('wiz--invalid');
+        f.focus();
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  function row(k, v) {
+    if (!v) return '';
+    return '<div class="wiz-summary__item"><span class="wiz-summary__key">' + esc(k) + '</span><span class="wiz-summary__val">' + esc(v) + '</span></div>';
+  }
+
+  function buildSummary() {
+    var checked = form.querySelector('input[name="servei"]:checked');
+    var servei  = checked ? checked.closest('.wiz-card').querySelector('.wiz-card__title').textContent.trim() : '';
+    var proj    = (form.querySelector('[name="projecte"]') || {}).value || '';
+    var quan    = (form.querySelector('[name="quan"]') || {}).value || '';
+    var lloc    = (form.querySelector('[name="lloc"]') || {}).value || '';
+    var nom     = (form.querySelector('[name="nom"]') || {}).value || '';
+    var email   = (form.querySelector('[name="email"]') || {}).value || '';
+    var tel     = (form.querySelector('[name="telefon"]') || {}).value || '';
+    var via     = (form.querySelector('[name="via"]') || {}).value || '';
+
+    document.getElementById('js-summary').innerHTML =
+      row('{{ i18n "wiz_sum_servei" | default "Servei" }}', servei) +
+      row('{{ i18n "wiz_sum_proj" | default "Projecte" }}', proj) +
+      row('{{ i18n "wiz_sum_quan" | default "Quan" }}', quan) +
+      row('{{ i18n "wiz_sum_lloc" | default "On" }}', lloc) +
+      row('{{ i18n "wiz_sum_nom" | default "Nom" }}', nom) +
+      row('Email', email) +
+      row('{{ i18n "wiz_sum_tel" | default "Tel." }}', tel) +
+      row('{{ i18n "wiz_sum_via" | default "Via" }}', via);
+  }
+
+  form.addEventListener('input', function (e) { e.target.classList.remove('wiz--invalid'); });
+
+  prevBtn.addEventListener('click', function () { goTo(cur - 1); });
+
+  nextBtn.addEventListener('click', function () { if (validate()) goTo(cur + 1); });
+
+  form.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.target.type === 'radio') { e.preventDefault(); if (validate()) goTo(cur + 1); }
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validate()) return;
+
+    var action = form.getAttribute('action') || '';
+    if (!action) {
+      window.location.href = 'mailto:{{ .Site.Params.contactEmail }}?subject={{ i18n "wiz_email_subject" | default "Pressupost" | urlize }}';
+      return;
+    }
+
+    sendBtn.disabled = true;
+    sendBtn.textContent = '{{ i18n "wiz_sending" | default "Enviant..." }}';
+
+    fetch(action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d.ok) {
+          form.hidden = true;
+          wrapEl.hidden = true;
+          successEl.hidden = false;
+        } else { onErr(); }
+      })
+      .catch(onErr);
+
+    function onErr() {
+      sendBtn.disabled = false;
+      sendBtn.textContent = '{{ i18n "wizard_send" | default "Enviar pressupost" }} →';
+    }
+  });
+})();
+</script>
 
 {{ end }}
