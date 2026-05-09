@@ -7,6 +7,19 @@
   </div>
 </section>
 
+{{ with .Params.stats }}
+<div class="blog-stats">
+  <div class="container">
+    {{ range . }}
+    <div class="blog-stat">
+      <span class="blog-stat__num">{{ .num }}</span>
+      <span class="blog-stat__label">{{ .label }}</span>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
 <div class="blog-pres container">
   <div class="blog-pres__text">
     <div class="prose">

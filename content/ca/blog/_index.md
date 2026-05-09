@@ -2,6 +2,12 @@
 title: "Blog"
 description: "Crònica fotogràfica tal com raja. Des del 2010."
 layout: "blog"
+stats:
+  - { num: "2.317", label: "posts" }
+  - { num: "411.227", label: "paraules" }
+  - { num: "93", label: "categories" }
+  - { num: "2.939", label: "etiquetes" }
+  - { num: "94", label: "comentaris" }
 ---
 
 El blog és la banda sonora del que es fotografia. Hi ha entrades amb crònica llarga i detallada, amb context, noms, dates i opinions. I n'hi ha d'altres que són quatre línies i un àlbum, perquè era tard, perquè la feina parlava per si sola, perquè no calia afegir-hi res.
