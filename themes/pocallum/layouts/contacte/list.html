@@ -13,9 +13,15 @@
 <section class="section section--wizard">
   <div class="container container--narrow">
 
-    <div class="wiz-progress-wrap" id="js-progress-wrap">
-      <div class="wiz-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" id="js-progressbar">
-        <div class="wiz-progress__fill" id="js-progress-fill"></div>
+    <div class="wiz-progress-wrap" id="js-progress-wrap" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-label="{{ i18n "wiz_s1_title" | default "Pas 1 de 4" }}">
+      <div class="wiz-steps" id="js-wiz-steps">
+        <span class="wiz-step-dot is-active" data-step="1">01</span>
+        <div class="wiz-step-line"><div class="wiz-step-line__fill" id="js-line-1"></div></div>
+        <span class="wiz-step-dot" data-step="2">02</span>
+        <div class="wiz-step-line"><div class="wiz-step-line__fill" id="js-line-2"></div></div>
+        <span class="wiz-step-dot" data-step="3">03</span>
+        <div class="wiz-step-line"><div class="wiz-step-line__fill" id="js-line-3"></div></div>
+        <span class="wiz-step-dot" data-step="4">04</span>
       </div>
       <span class="wiz-step-counter" id="js-step-counter" aria-live="polite">01 / 04</span>
     </div>
@@ -169,8 +175,13 @@
   if (!form) return;
 
   var panels    = Array.from(form.querySelectorAll('.wiz-panel'));
-  var fill      = document.getElementById('js-progress-fill');
-  var bar       = document.getElementById('js-progressbar');
+  var progressEl= document.getElementById('js-progress-wrap');
+  var dots      = Array.from(document.querySelectorAll('.wiz-step-dot'));
+  var lines     = [
+    document.getElementById('js-line-1'),
+    document.getElementById('js-line-2'),
+    document.getElementById('js-line-3')
+  ];
   var counter   = document.getElementById('js-step-counter');
   var prevBtn   = document.getElementById('js-wiz-prev');
   var nextBtn   = document.getElementById('js-wiz-next');
@@ -187,9 +198,17 @@
     cur = n;
     panels[cur].hidden = false;
 
-    var pct = Math.round((cur + 1) / N * 100);
-    fill.style.width = pct + '%';
-    bar.setAttribute('aria-valuenow', pct);
+    /* Update step dots */
+    dots.forEach(function (d, i) {
+      d.classList.toggle('is-done',   i < cur);
+      d.classList.toggle('is-active', i === cur);
+    });
+    /* Fill connector lines */
+    lines.forEach(function (l, i) {
+      if (l) l.style.width = (i < cur) ? '100%' : '0%';
+    });
+
+    progressEl.setAttribute('aria-valuenow', cur + 1);
     counter.textContent = pad(cur + 1) + ' / ' + pad(N);
 
     prevBtn.hidden = (cur === 0);
