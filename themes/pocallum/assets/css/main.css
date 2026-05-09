@@ -1501,7 +1501,8 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 .wiz-panel__sub {
   color: var(--mid);
   font-size: 0.95rem;
-  margin-bottom: var(--space-14);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-16);
 }
 
 /* Cards — Pas 1 */
@@ -1516,7 +1517,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   grid-template-columns: 3.5rem 1fr 1.5rem;
   align-items: center;
   gap: var(--space-6);
-  padding: var(--space-9) var(--space-2);
+  padding: var(--space-10) var(--space-2);
   border-bottom: 1px solid var(--line);
   cursor: pointer;
   transition: background 0.12s, padding-left 0.15s;
