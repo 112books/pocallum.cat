@@ -1,0 +1,22 @@
+---
+title: "ESMUC End-of-Year Concerts"
+date: 2024-05-21
+anys: "2024"
+lloc: "ESMUC, Barcelona"
+disciplina: "Jazz · Classical music"
+web: "https://www.esmuc.cat"
+image: "/images/festivals/esmuc-concerts-fi-curs.jpg"
+draft: false
+---
+
+Every spring, the Escola Superior de Música de Catalunya closes the academic year with a series of concerts where students perform under professional conditions. We documented the 2023–2024 edition on film: Leica M6, Summicron 50mm and APX400 pushed to 3200.
+
+---
+
+ESMUC trains musicians in jazz, classical, traditional and modern music. The end-of-year concerts are not an academic showcase — they are real concerts, played by musicians who are about to step into the professional world.
+
+Difficult venue light, intimate spaces, young musicians with intense focus. The ideal context for working in analogue and pushing grain to its limit.
+
+## Editions documented on the blog
+
+- [M'agrada la música de Jazz — ESMUC Concerts 2024](https://blog.pocallum.cat/2024/10/23/magrada-la-musica-de-jazz/)
