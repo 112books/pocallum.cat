@@ -1150,9 +1150,6 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 .blog-pres__photo {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center top;
   display: block;
   filter: grayscale(0.15);
   margin-bottom: var(--space-4);
