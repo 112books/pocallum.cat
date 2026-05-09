@@ -37,7 +37,7 @@ No treballen amb tothom. Quan hi ha encaix, el resultat és millor per als dos c
 |-----|---|
 | 2002 | Inici documentació Blues Festival BCN, 9Barris Imatge, Tattoo Expo |
 | 2010 | Inici de Pocallum com a projecte fotogràfic professional |
-| 2011 | Docent a Cameras & Films (antiga Lomography Embassy Barcelona) |
+| 2011 | Inici docència a Lomography Embassy Barcelona (ara Cameras & Films) |
 | 2012 | Inici col·laboració Flamenco de Barrio |
 | 2015 | Final etapa Tattoo Expo (fotògraf oficial 2002–2015) |
 | 2017 | Inici docència a Llumàtics |
