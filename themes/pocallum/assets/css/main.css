@@ -926,6 +926,24 @@ h1, h2, h3, h4 {
 .noticies-thumb.is-active .noticies-thumb__title { color: var(--fg); }
 .noticies-thumb:hover .noticies-thumb__title { color: var(--fg); }
 
+a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
+
+.noticies-thumb.is-current {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.32;
+}
+.noticies-thumb.is-current::before {
+  background: var(--accent);
+  transform: translateX(-50%) scale(1.5);
+}
+
+.article-nav-strip {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-6);
+  margin-top: var(--space-8);
+}
+
 /* ── Article Jazz (notícia single) ─────────────────────────────────────────── */
 .article-jazz__hero {
   position: relative;
