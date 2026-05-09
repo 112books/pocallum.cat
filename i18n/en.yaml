@@ -71,6 +71,7 @@ contacte_title:         "Talk to us"
 contacte_intro:         "Tell us about your project. We'll send you a no-commitment quote."
 contacte_form_title:    "Contact form"
 contacte_form_pending:  "The form will be live soon. Meanwhile, write to us directly:"
+contact_tel_note:       "We prefer email or the form"
 
 # Equipment
 equip_label:        "Gear"

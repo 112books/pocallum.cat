@@ -72,6 +72,7 @@ contacte_title:         "Parla amb nosaltres"
 contacte_intro:         "Explica'ns el teu projecte. T'enviarem un pressupost sense compromís."
 contacte_form_title:    "Formulari de contacte"
 contacte_form_pending:  "El formulari s'activarà aviat. Mentrestant, escriu-nos directament:"
+contact_tel_note:       "Preferim el mail o el formulari"
 
 # Equip
 equip_label:        "Equip"

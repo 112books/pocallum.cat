@@ -150,12 +150,15 @@
         </svg>
         {{ .Site.Params.contactEmail }}
       </a>
-      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-info__item">
-        <svg class="contact-info__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M5 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L13.5 11 17.5 12.5v3A1.5 1.5 0 0116 17C8.8 17 3 11.2 3 4a1.5 1.5 0 011.5-1.5L5 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-        </svg>
-        {{ .Site.Params.contactPhone }}
-      </a>
+      <div class="contact-info__item contact-info__item--tel">
+        <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-info__tel-link">
+          <svg class="contact-info__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L13.5 11 17.5 12.5v3A1.5 1.5 0 0116 17C8.8 17 3 11.2 3 4a1.5 1.5 0 011.5-1.5L5 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          {{ .Site.Params.contactPhone }}
+        </a>
+        <span class="contact-info__tel-note">{{ i18n "contact_tel_note" | default "Preferim el mail o el formulari" }}</span>
+      </div>
     </div>
   </div>
 </section>

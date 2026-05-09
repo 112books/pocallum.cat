@@ -1695,7 +1695,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   padding-top: var(--space-14);
   padding-bottom: var(--space-14);
   border-top: 1px solid var(--line);
-  margin-top: var(--space-16);
+  margin-top: var(--space-24);
 }
 .wiz-nav__prev {
   font-family: var(--f-mono);
@@ -1755,6 +1755,28 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   transition: color 0.15s;
 }
 .contact-info__item:hover { color: var(--mid); }
+.contact-info__item--tel {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+.contact-info__tel-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--f-mono);
+  font-size: 0.85rem;
+  color: var(--fg);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.contact-info__tel-link:hover { color: var(--mid); }
+.contact-info__tel-note {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  color: var(--mid);
+  letter-spacing: 0.03em;
+}
 .contact-info__icon {
   width: 18px;
   height: 18px;
