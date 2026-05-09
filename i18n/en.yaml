@@ -36,8 +36,11 @@ lightbox_next:      "Next"
 serveis_eyebrow:    "What we do"
 serveis_title:      "Photography services"
 serveis_intro:      "We don't work with fixed rates. Each project is different and deserves a tailored quote."
-serveis_cta_title:  "Tell us about your project"
-serveis_cta_text:   "We work by quote. Write to us and we'll explain how we can help."
+serveis_cta_title:   "Tell us about your project"
+serveis_cta_text:    "We work by quote. Write to us and we'll explain how we can help."
+serveis_chapter_cta: "Let's talk →"
+serveis_final_pre:   "Every project is different."
+serveis_final_title: "Tell us yours and we'll make it happen."
 
 # News
 noticies_eyebrow:   "Latest"

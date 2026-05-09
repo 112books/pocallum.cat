@@ -512,43 +512,127 @@ h1, h2, h3, h4 {
 }
 
 /* ── Serveis ───────────────────────────────────────────────────────────────── */
-.section--servei-grup {
+.servei-chapter {
+  padding-block: var(--space-20);
   border-bottom: 1px solid var(--line);
 }
-.servei-grup-title {
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  letter-spacing: -0.025em;
-  margin-bottom: var(--space-4);
+.servei-chapter--alt {
+  background: var(--bg2);
 }
-.servei-grup-desc {
-  color: var(--mid);
-  max-width: 40rem;
-  margin-bottom: var(--space-12);
-  font-size: 1rem;
-}
-.serveis-grid {
+.servei-chapter__head {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  gap: 1px;
-  border: 1px solid var(--line);
+  grid-template-columns: 3.5rem 1fr;
+  column-gap: var(--space-8);
+  row-gap: var(--space-4);
+  align-items: start;
+  margin-bottom: var(--space-12);
 }
-.servei-item {
-  padding: var(--space-8);
-  border: none;
-  transition: background 0.15s;
+.servei-chapter__num {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  padding-top: 0.6em;
+  grid-row: 1 / 3;
 }
-.servei-item:hover { background: var(--bg2); }
-.servei-item__title {
+.servei-chapter__title {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin: 0;
+}
+.servei-chapter__desc {
+  color: var(--mid);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 44rem;
+  margin: 0;
+}
+.servei-chapter__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+.servei-chapter__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-8);
+  align-items: baseline;
+  padding-block: var(--space-6);
+  border-bottom: 1px solid var(--line);
+}
+.servei-chapter__item:hover .servei-chapter__item-title { color: var(--accent); }
+.servei-chapter__item-title {
   font-family: var(--f-display);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  margin-bottom: var(--space-3);
+  transition: color 0.15s;
 }
-.servei-item__desc {
+.servei-chapter__item-desc {
   font-size: 0.9rem;
   color: var(--mid);
   line-height: 1.6;
+}
+.servei-chapter__photo-wrap {
+  margin-top: var(--space-16);
+  width: 100%;
+  max-height: 65vh;
+  overflow: hidden;
+}
+.servei-chapter__photo {
+  width: 100%;
+  height: 100%;
+  max-height: 65vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.75) contrast(1.1);
+  transition: filter 0.4s;
+}
+.servei-chapter:hover .servei-chapter__photo { filter: brightness(0.85) contrast(1.05); }
+.servei-chapter__cta-bar {
+  margin-top: var(--space-8);
+  text-align: right;
+}
+.servei-chapter__cta-link {
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.servei-chapter__cta-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Final CTA */
+.section--serveis-final-cta {
+  padding-block: var(--space-24);
+  text-align: center;
+  background: var(--bg);
+}
+.serveis-final-cta__pre {
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: var(--space-4);
+}
+.serveis-final-cta__title {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: var(--space-10);
+  max-width: 22rem;
+  margin-inline: auto;
+  margin-bottom: var(--space-10);
 }
 
 /* Serveis preview a portada */
@@ -1868,7 +1952,13 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 
   /* Serveis */
   .serveis-preview-grid { grid-template-columns: 1fr; gap: var(--space-8); }
-  .serveis-grid { grid-template-columns: 1fr; }
+  .servei-chapter { padding-block: var(--space-12); }
+  .servei-chapter__head { grid-template-columns: 1fr; }
+  .servei-chapter__num { grid-row: auto; padding-top: 0; margin-bottom: var(--space-2); }
+  .servei-chapter__item { grid-template-columns: 1fr; gap: var(--space-2); }
+  .servei-chapter__photo-wrap { max-height: 45vw; }
+  .servei-chapter__photo { max-height: 45vw; }
+  .servei-chapter__cta-bar { text-align: left; }
 
   /* Notícies */
   .noticies-grid { grid-template-columns: 1fr; }

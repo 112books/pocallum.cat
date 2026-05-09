@@ -4,6 +4,45 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-05-09 (sessió 3)
+
+### Pàgina de serveis — redisseny "capítols cinematogràfics" + noves seccions
+
+**Pàgina de serveis (redisseny complet)**
+- `layouts/serveis/list.html` reescrit: 5 capítols amb número `01`–`05` en taronja, títol enorme (fins 5rem), descripció del grup, llista d'ítems en dos columnes (nom + desc), foto full-width, CTA "Parlem-ne →"
+- `data/serveis.yaml`: camp `image` afegit als 5 grups, paths actualitzats a `/images/services/`
+- Fotos a `static/images/services/`: `instant.jpg`, `produccio.jpg`, `peper.png` (paper), `persona.jpg`, `empresa.jpg`
+- Capítols alternats entre `--bg` i `--bg2` per ritme visual
+- Foto oscurida per defecte (brightness 0.75), s'aclareix lleugerament al hover
+- CTA final destacat: eyebrow + títol gran + botó primari taronja
+- `i18n/ca.yaml` + `en.yaml`: strings `serveis_chapter_cta`, `serveis_final_pre`, `serveis_final_title`
+
+**Secció Blog — pàgina de presentació**
+- `layouts/blog/list.html` creat: page-header → estadístiques animades → presentació amb foto autor
+- Estadístiques: 2.317 posts, 411.227 paraules, 93 categories, 2.939 tags, 94 comentaris
+- Animació count-up: IntersectionObserver + requestAnimationFrame + easeOutCubic (1.6s)
+- Foto de l'autor: `joan-blog.jpg` (blanc i negre analògic), sense crop forçat
+- Menú: Blog afegit CA+EN (weight 5), Contacte bumped a weight 7
+- `content/ca/blog/_index.md` + `content/en/blog/_index.md` creats
+
+**Tira de navegació a pàgines individuals**
+- Noticies single: tira horitzontal scrollable al final de l'article, ítem actual apagat
+- Festivals single: tira de targetes 2:3 (format cartell), mateixa mecànica
+- Ambdues: botons prev/next, scroll automàtic fins a l'ítem actual
+
+**Nous festivals (6 nous continguts CA+EN)**
+- Ramadà a Nou Barris (2023), Any Nou Xinès (2026), Jornades 9 Barris Acull (2030-order), Pícnic de Blues (2025), Carnestoltes Nou Barris (2026), ESMUC Concerts Fi de Curs (2030-order)
+- Sopar d'Entitats actualitzat: 11 edicions 2015–2025 amb links al blog
+- Ordre dels 9 festivals destacats: dates 2030-01-09 a 2030-01-01
+- `hugo.toml`: `buildFuture = true` per mostrar festivals amb dates de 2030
+
+**Qui som**
+- Foto de l'autor afegida (retrat color): `joan-qui-som.jpg`
+- Trajectòria corregida: Prollema → 2024, Lomography → "Cameras & Films"
+- Links a entitats i projectes a la secció "L'arrel"
+
+---
+
 ## 2026-05-09 (sessió 2)
 
 ### Secció Festivals — implementació completa

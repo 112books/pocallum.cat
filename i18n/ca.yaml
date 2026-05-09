@@ -37,8 +37,11 @@ lightbox_next:      "Següent"
 serveis_eyebrow:    "El que fem"
 serveis_title:      "Serveis fotogràfics"
 serveis_intro:      "No treballem amb tarifes tancades. Cada projecte és diferent i mereix un pressupost fet a mida."
-serveis_cta_title:  "Explica'ns el teu projecte"
-serveis_cta_text:   "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te."
+serveis_cta_title:   "Explica'ns el teu projecte"
+serveis_cta_text:    "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te."
+serveis_chapter_cta: "Parlem-ne →"
+serveis_final_pre:   "Cada projecte és diferent."
+serveis_final_title: "Explica'ns el teu i ho fem possible."
 
 # Notícies
 noticies_eyebrow:   "Actualitat"

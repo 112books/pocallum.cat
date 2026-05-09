@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $lp := $.Site.LanguagePrefix }}
 {{ $serveis := hugo.Data.serveis }}
 {{ $lang := site.Language.Lang }}
 
@@ -12,37 +11,51 @@
 </section>
 
 {{ if $serveis }}
-{{ range $serveis.grups }}
-{{ $grup := . }}
-<section class="section section--servei-grup">
+{{ range $i, $grup := $serveis.grups }}
+<section class="servei-chapter{{ if mod $i 2 }} servei-chapter--alt{{ end }}">
   <div class="container">
-    <h2 class="servei-grup-title">
-      {{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}
-    </h2>
-    {{ with (cond (eq $lang "en") $grup.desc_en $grup.desc) }}
-    <p class="servei-grup-desc">{{ . }}</p>
-    {{ end }}
-    <div class="serveis-grid">
+    <div class="servei-chapter__head">
+      <span class="servei-chapter__num">{{ printf "%02d" (add $i 1) }}</span>
+      <h2 class="servei-chapter__title">
+        {{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}
+      </h2>
+      <p class="servei-chapter__desc">
+        {{ if eq $lang "en" }}{{ $grup.desc_en }}{{ else }}{{ $grup.desc }}{{ end }}
+      </p>
+    </div>
+    <ul class="servei-chapter__list">
       {{ range $grup.items }}
-      <div class="servei-item">
-        <h3 class="servei-item__title">
+      <li class="servei-chapter__item">
+        <span class="servei-chapter__item-title">
           {{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}
-        </h3>
-        <p class="servei-item__desc">
+        </span>
+        <span class="servei-chapter__item-desc">
           {{ if eq $lang "en" }}{{ .desc_en }}{{ else }}{{ .desc }}{{ end }}
-        </p>
-      </div>
+        </span>
+      </li>
       {{ end }}
+    </ul>
+  </div>
+  {{ with $grup.image }}
+  <div class="servei-chapter__photo-wrap">
+    <img src="{{ . | relURL }}" alt="" class="servei-chapter__photo" loading="lazy">
+  </div>
+  {{ end }}
+  <div class="container">
+    <div class="servei-chapter__cta-bar">
+      <a href="{{ "contacte/" | relLangURL }}" class="servei-chapter__cta-link">
+        {{ i18n "serveis_chapter_cta" | default "Parlem-ne →" }}
+      </a>
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
 
-<section class="section section--alt section--serveis-cta">
+<section class="section--serveis-final-cta">
   <div class="container container--narrow">
-    <h2 class="cta-block-title">{{ i18n "serveis_cta_title" | default "Explica'ns el teu projecte" }}</h2>
-    <p class="cta-block-text">{{ i18n "serveis_cta_text" | default "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te." }}</p>
+    <p class="serveis-final-cta__pre">{{ i18n "serveis_final_pre" | default "Cada projecte és diferent." }}</p>
+    <h2 class="serveis-final-cta__title">{{ i18n "serveis_final_title" | default "Explica'ns el teu i ho fem possible." }}</h2>
     <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary btn--lg">
       {{ i18n "cta_contact" | default "Demana pressupost" }}
     </a>
