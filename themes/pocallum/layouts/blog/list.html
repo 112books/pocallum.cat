@@ -12,7 +12,7 @@
   <div class="container">
     {{ range . }}
     <div class="blog-stat">
-      <span class="blog-stat__num">{{ .num }}</span>
+      <span class="blog-stat__num" data-count="{{ .raw }}">{{ .num }}</span>
       <span class="blog-stat__label">{{ .label }}</span>
     </div>
     {{ end }}

@@ -238,3 +238,44 @@
     if (e.key === 'ArrowRight') show(current + 1);
   });
 })();
+
+/* ── Blog stats count-up ─────────────────────────────────────────────────── */
+(function () {
+  const nums = document.querySelectorAll('.blog-stat__num[data-count]');
+  if (!nums.length) return;
+
+  const DURATION = 1600;
+  const locale   = document.documentElement.lang || 'ca';
+
+  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function formatNum(n, target) {
+    if (locale === 'en') return n.toLocaleString('en-GB');
+    return n.toLocaleString('ca-ES');
+  }
+
+  function animateNum(el) {
+    const target = parseInt(el.dataset.count, 10);
+    const start  = performance.now();
+    function step(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / DURATION, 1);
+      const value = Math.round(easeOutCubic(progress) * target);
+      el.textContent = formatNum(value, target);
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = formatNum(target, target);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        nums.forEach(animateNum);
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(document.querySelector('.blog-stats'));
+})();
