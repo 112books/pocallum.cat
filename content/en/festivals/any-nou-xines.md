@@ -10,11 +10,11 @@ tags: ["community-culture", "popular-culture", "barcelona"]
 draft: false
 ---
 
-Barcelona's Chinese community celebrates the lunar new year with dragons, fire, music and food. It is not a spectacle designed for tourists — it is a tradition brought to the street because the street belongs to everyone. Since 2017, we have been there whenever we can.
+Barcelona's Chinese community celebrates the lunar new year with dragons, fire, music and food. It is not a spectacle designed for tourists — it is a tradition brought to the street because the street belongs to everyone. A welcoming and extraordinary celebration that keeps growing year after year. Since 2017, we have been there whenever we can.
 
 ---
 
-The celebrations don't always happen in the same place or on the same date. Sometimes it's at Parc de l'Estació del Nord. Other times in the city centre, around the Arc de Triomf. In 2026, across two days, we documented two editions: the central Barcelona celebration and the Nou Barris one, where the community organises its own neighbourhood event along Via Júlia down to Plaça Ángel Pestaña.
+The celebrations don't always happen in the same place or on the same date. Sometimes it's at Parc de l'Estació del Nord. Other times in the city centre, around the Arc de Triomf. The display put on by residents of Chinese origin is extraordinary — both in central Barcelona and in the neighbourhoods where they have built roots. In 2026, across two days, we documented two editions: the central Barcelona celebration and the Nou Barris one, where the community organises its own event along Via Júlia down to Plaça Ángel Pestaña.
 
 Dragons that take ten people to move. Dance, costumes, and food stalls where neighbours mix with Chinese families of the first, second and third generation. The Year of the Fire Horse — strength, freedom and movement — turned out to be especially charged with energy.
 
