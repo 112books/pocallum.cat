@@ -26,6 +26,9 @@ Our relationship with the project goes beyond festival photography. We have trav
 
 Taking the camera to the international editions is another way of understanding what happens back here in Nou Barris.
 
+- [Photo album — Lille 2009](https://photos.app.goo.gl/3eRFZL34V1JQFw4D7)
+- [Photo album — European exchange](https://photos.app.goo.gl/tFV5wfgZZSFotg3q8)
+
 ## Editions documented on the blog
 
 - [Festival de Sopes del Món 2013](https://blog.pocallum.cat/2013/03/27/festival-de-sopes-del-mon-2013/)

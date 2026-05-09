@@ -131,3 +131,16 @@ wiz_ok_title:        "Received!"
 wiz_ok_text:         "We'll reply within 48 hours."
 wiz_ok_thanks:       "Thank you for your interest in pocallum.cat. Every project that comes our way matters to us."
 wiz_ok_back:         "Back to home"
+
+# Search
+search_open:         "Search"
+search_close:        "Close search"
+search_label:        "Search this site"
+search_input_label:  "Search text"
+search_placeholder:  "Search pocallum.cat…"
+search_submit:       "Search"
+
+# Error 404
+e404_title:  "Someone exposed the film to light."
+e404_desc:   "This page does not exist. If you came from the old WordPress site, the URL has changed — but the photography is still here."
+e404_cta:    "Back to home"

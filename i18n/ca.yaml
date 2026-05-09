@@ -132,3 +132,16 @@ wiz_ok_title:        "Rebut!"
 wiz_ok_text:         "Et respondrem en menys de 48 hores."
 wiz_ok_thanks:       "Gràcies per l'interès en pocallum.cat. Cada projecte que ens arriba és important per a nosaltres."
 wiz_ok_back:         "Tornar a l'inici"
+
+# Cerca
+search_open:         "Cercar"
+search_close:        "Tancar cerca"
+search_label:        "Cerca al lloc"
+search_input_label:  "Text de cerca"
+search_placeholder:  "Cerca a pocallum.cat…"
+search_submit:       "Cercar"
+
+# Error 404
+e404_title:  "Algú ha revelat el rodet a la llum."
+e404_desc:   "Aquesta pàgina no existeix. Si venies del WordPress antic, la URL ha canviat — però la fotografia és aquí."
+e404_cta:    "Tornar a l'inici"

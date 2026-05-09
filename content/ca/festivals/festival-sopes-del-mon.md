@@ -26,6 +26,9 @@ La nostra relació amb el projecte va més enllà de la fotografia de festival. 
 
 Portar la càmera a les edicions internacionals és una altra manera d'entendre el que passa aquí a Nou Barris.
 
+- [Àlbum fotogràfic — Lilla 2009](https://photos.app.goo.gl/3eRFZL34V1JQFw4D7)
+- [Àlbum fotogràfic — Intercanvi europeu](https://photos.app.goo.gl/tFV5wfgZZSFotg3q8)
+
 ## Edicions documentades al blog
 
 - [Festival de Sopes del Món 2013](https://blog.pocallum.cat/2013/03/27/festival-de-sopes-del-mon-2013/)

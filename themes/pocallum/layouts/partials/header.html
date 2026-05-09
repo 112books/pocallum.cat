@@ -23,6 +23,19 @@
         {{ end }}
       </ul>
 
+      <button class="nav-search-btn" id="js-search-btn"
+              aria-label="{{ i18n "search_open" | default "Cercar" }}"
+              aria-expanded="false"
+              aria-controls="js-search-panel">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+
       <div class="nav-langs" aria-label="{{ i18n "lang_switcher" | default "Canvi d'idioma" }}">
         {{ range .AllTranslations }}
           {{ if not .Language.Disabled }}
@@ -38,4 +51,29 @@
     </div>
 
   </nav>
+
+  <div class="nav-search-panel" id="js-search-panel" hidden>
+    <form class="nav-search-form" action="https://duckduckgo.com/" method="get"
+          role="search" aria-label="{{ i18n "search_label" | default "Cerca al lloc" }}">
+      <input type="hidden" name="sites" value="pocallum.cat">
+      <input type="search" name="q" id="js-search-input"
+             class="nav-search-input"
+             placeholder="{{ i18n "search_placeholder" | default "Cerca a pocallum.cat…" }}"
+             autocomplete="off"
+             aria-label="{{ i18n "search_input_label" | default "Text de cerca" }}">
+      <button type="submit" class="nav-search-submit"
+              aria-label="{{ i18n "search_submit" | default "Cercar" }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+      <button type="button" class="nav-search-close" id="js-search-close"
+              aria-label="{{ i18n "search_close" | default "Tancar cerca" }}">&#215;</button>
+    </form>
+  </div>
+
 </header>

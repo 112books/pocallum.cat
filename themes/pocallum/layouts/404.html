@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="e404" aria-labelledby="e404-heading">
+
+  <div class="e404__text">
+    <p class="e404__code" aria-hidden="true">404</p>
+    <h1 class="e404__title" id="e404-heading">
+      {{ i18n "e404_title" | default "Pàgina no trobada." }}
+    </h1>
+    <p class="e404__desc">
+      {{ i18n "e404_desc" | default "Potser venies del WordPress antic. Aquesta URL ja no existeix — però la fotografia, sí." }}
+    </p>
+    <a href="{{ .Site.Home.RelPermalink }}" class="btn e404__cta">
+      {{ i18n "e404_cta" | default "Tornar a l'inici" }} →
+    </a>
+  </div>
+
+  <div class="e404__photo" aria-hidden="true">
+    <img
+      src="{{ "images/404.jpg" | relURL }}"
+      alt=""
+      class="e404__img"
+      width="1024"
+      height="1024"
+      loading="eager"
+      decoding="async"
+    >
+  </div>
+
+</section>
+{{ end }}

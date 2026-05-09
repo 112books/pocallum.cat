@@ -74,6 +74,35 @@
   });
 })();
 
+/* ── Search panel ────────────────────────────────────────────────────────── */
+(function () {
+  const btn   = document.getElementById('js-search-btn');
+  const panel = document.getElementById('js-search-panel');
+  const input = document.getElementById('js-search-input');
+  const close = document.getElementById('js-search-close');
+  if (!btn || !panel) return;
+
+  function openSearch() {
+    panel.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+    if (input) input.focus();
+  }
+  function closeSearch() {
+    panel.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.focus();
+  }
+
+  btn.addEventListener('click', () => {
+    panel.hidden ? openSearch() : closeSearch();
+  });
+  if (close) close.addEventListener('click', closeSearch);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !panel.hidden) closeSearch();
+  });
+})();
+
 /* ── Galeria shuffle + mosaic ────────────────────────────────────────────── */
 (function () {
   const SIZE_CLASSES = ['foto-item--wide', 'foto-item--tall', 'foto-item--big', 'foto-item--hero'];
