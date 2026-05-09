@@ -1,10 +1,10 @@
 ---
-title: "I'm Jazz"
+title: "Jazz I Am"
 date: 2030-01-04
 anys: "2016 – 2025"
 lloc: "Barcelona"
 disciplina: "Jazz"
-web: ""
+web: "https://jazziam.barcelona/ca/"
 image: "/images/festivals/im-jazz.jpg"
 tags: ["jazz", "barcelona"]
 draft: false

@@ -4,7 +4,7 @@ date: 2030-01-05
 anys: "2020 – 2025"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenc"
-web: ""
+web: "https://www.instagram.com/flamencodebarrio_oficial/"
 image: "/images/festivals/flamenco-de-barrio.jpg"
 tags: ["flamenc", "nou-barris", "barcelona"]
 draft: false

@@ -4,7 +4,7 @@ date: 2026-02-14
 anys: "2016 – 2026"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Cultura popular"
-web: ""
+web: "https://ateneu9b.net/ca"
 image: "/images/festivals/carnestoltes-nou-barris.jpg"
 tags: ["cultura-popular", "carnestoltes", "nou-barris", "barcelona"]
 draft: false

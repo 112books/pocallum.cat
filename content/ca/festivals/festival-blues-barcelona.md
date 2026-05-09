@@ -4,7 +4,7 @@ date: 2030-01-09
 anys: "2015 – 2024"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Blues"
-web: ""
+web: "https://www.festivalbluesbarcelona.com"
 image: "/images/festivals/festival-blues-barcelona.jpg"
 tags: ["blues", "nou-barris", "barcelona"]
 draft: false
