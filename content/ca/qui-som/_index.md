@@ -35,7 +35,7 @@ No treballen amb tothom. Quan hi ha encaix, el resultat és millor per als dos c
 
 | Any | |
 |-----|---|
-| 2002 | Inici documentació Blues Festival BCN, Prollema, 9Barris Imatge, Tattoo Expo |
+| 2002 | Inici documentació Blues Festival BCN, 9Barris Imatge, Tattoo Expo |
 | 2010 | Inici de Pocallum com a projecte fotogràfic professional |
 | 2011 | Docent a Cameras & Films (antiga Lomography Embassy Barcelona) |
 | 2012 | Inici col·laboració Flamenco de Barrio |
@@ -69,7 +69,7 @@ Més que clients o col·laboradors, hi ha projectes amb els quals compartim arre
 
 **[Nau Bostik](https://naubostik.net)** — Espai d'art i cultura al barri de la Segrera. Residents des del 2020. Aquí hi ha el laboratori, l'estudi i bona part del pensament.
 
-**[Prollema](https://prollema.org)** — Entitat de treball amb joves migrants en risc d'exclusió social. Col·laboració fotogràfica des del 2002.
+**[Prollema](https://prollema.org)** — Entitat de treball amb joves migrants en risc d'exclusió social. Col·laboració fotogràfica des del 2024.
 
 **[FITI — Festival Internacional de Teatre Integratiu](https://www.fiti.cat)** — Documentació del festival i dels processos de teatre inclusiu amb persones amb diversitat funcional.
 

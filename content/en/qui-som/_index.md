@@ -33,7 +33,7 @@ More than clients or collaborators, these are projects we share roots with — n
 
 **[Nau Bostik](https://naubostik.net)** — Art and culture space in the Segrera neighbourhood. Residents since 2020. The lab, the studio and most of the thinking happen here.
 
-**[Prollema](https://prollema.org)** — Organisation working with young migrants at risk of social exclusion. Photography collaboration since 2002.
+**[Prollema](https://prollema.org)** — Organisation working with young migrants at risk of social exclusion. Photography collaboration since 2024.
 
 **[FITI — International Integrative Theatre Festival](https://www.fiti.cat)** — Documentation of the festival and inclusive theatre processes with people with functional diversity.
 
