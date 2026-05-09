@@ -16,7 +16,9 @@ Sax-o-Rama is the international saxophone festival created by Dani Nel·lo — a
 
 La Paloma has its own character, and Sax-o-Rama makes the most of it: concerts mixing musicians from Japan, the Caribbean and across Spain alongside the Barcelona Big Blues Band as the connecting thread. Every edition is different, but the saxophone is always at the centre.
 
-We've been working the festival since the first edition we covered, documenting sessions that combine the technical rigour of the guest musicians with a concert energy not always found at conventional jazz festivals.
+The festival's reputation is enviable and the quality exceptionally high. Dani Nel·lo is one of the essential figures in Barcelona's jazz and blues scene — and Sax-o-Rama is his curatorial statement: rigorous, generous and uncompromising.
+
+Scheduling conflicts have meant we've only been able to cover a few editions — but it is an unmissable event. Highly recommended.
 
 ## Editions documented
 
