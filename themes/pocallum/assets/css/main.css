@@ -1513,10 +1513,10 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 .wiz-card {
   display: grid;
-  grid-template-columns: 2.4rem 1fr 1.5rem;
+  grid-template-columns: 3.5rem 1fr 1.5rem;
   align-items: center;
   gap: var(--space-6);
-  padding: var(--space-7) var(--space-2);
+  padding: var(--space-9) var(--space-2);
   border-bottom: 1px solid var(--line);
   cursor: pointer;
   transition: background 0.12s, padding-left 0.15s;
@@ -1537,10 +1537,10 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 .wiz-card__num {
   font-family: var(--f-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   color: var(--accent);
-  padding-top: 0.1em;
+  font-weight: 700;
 }
 .wiz-card__body {
   display: flex;
