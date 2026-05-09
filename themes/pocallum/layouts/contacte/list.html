@@ -143,9 +143,19 @@
 <section class="section section--alt section--contact-direct">
   <div class="container container--narrow">
     <div class="contact-info">
-      <a href="mailto:{{ .Site.Params.contactEmail }}" class="contact-email">{{ .Site.Params.contactEmail }}</a>
-      <span class="contact-sep">·</span>
-      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-phone">{{ .Site.Params.contactPhone }}</a>
+      <a href="mailto:{{ .Site.Params.contactEmail }}" class="contact-info__item">
+        <svg class="contact-info__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <rect x="2" y="4" width="16" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M2 6l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        {{ .Site.Params.contactEmail }}
+      </a>
+      <a href="tel:{{ .Site.Params.contactPhone | replaceRE " " "" }}" class="contact-info__item">
+        <svg class="contact-info__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M5 3h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L13.5 11 17.5 12.5v3A1.5 1.5 0 0116 17C8.8 17 3 11.2 3 4a1.5 1.5 0 011.5-1.5L5 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        {{ .Site.Params.contactPhone }}
+      </a>
     </div>
   </div>
 </section>
