@@ -38,6 +38,9 @@ jobs:
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
         run: hugo --minify --baseURL "$HUGO_BASEURL"
 
+      - name: Index with Pagefind
+        run: npx pagefind --site public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

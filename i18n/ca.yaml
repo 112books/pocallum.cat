@@ -135,11 +135,10 @@ wiz_ok_back:         "Tornar a l'inici"
 
 # Cerca
 search_open:         "Cercar"
-search_close:        "Tancar cerca"
 search_label:        "Cerca al lloc"
-search_input_label:  "Text de cerca"
+search_title:        "Cerca"
 search_placeholder:  "Cerca a pocallum.cat…"
-search_submit:       "Cercar"
+search_zero_results: "Cap resultat per a [SEARCH_TERM]"
 
 # Error 404
 e404_title:  "Algú ha revelat el rodet a la llum."

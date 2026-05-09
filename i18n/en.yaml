@@ -134,11 +134,10 @@ wiz_ok_back:         "Back to home"
 
 # Search
 search_open:         "Search"
-search_close:        "Close search"
 search_label:        "Search this site"
-search_input_label:  "Search text"
+search_title:        "Search"
 search_placeholder:  "Search pocallum.cat…"
-search_submit:       "Search"
+search_zero_results: "No results for [SEARCH_TERM]"
 
 # Error 404
 e404_title:  "Someone exposed the film to light."

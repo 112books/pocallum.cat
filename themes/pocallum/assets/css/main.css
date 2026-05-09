@@ -2468,67 +2468,36 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   .festival-thumb__title { font-size: 0.7rem; }
 }
 
-/* ── Search panel ──────────────────────────────────────────────────────────── */
+/* ── Search icon al nav ────────────────────────────────────────────────────── */
 .nav-search-btn {
   display: flex;
   align-items: center;
   color: var(--mid);
   padding: 0.2rem;
   transition: color 0.15s;
-  cursor: pointer;
 }
-.nav-search-btn:hover,
-.nav-search-btn[aria-expanded="true"] { color: var(--fg); }
+.nav-search-btn:hover { color: var(--fg); }
 
-.nav-search-panel {
-  position: absolute;
-  top: var(--nav-h);
-  left: 0;
-  right: 0;
-  background: var(--bg2);
-  border-bottom: 1px solid var(--line);
-  z-index: 199;
-  padding: var(--space-4) var(--space-8);
-}
-.nav-search-panel[hidden] { display: none; }
-
-.nav-search-form {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  max-width: 640px;
+/* ── Pàgina de cerca (Pagefind) ────────────────────────────────────────────── */
+.cerca-page { padding-bottom: var(--space-24); }
+.cerca-wrap {
+  max-width: 760px;
   margin: 0 auto;
+  padding-inline: var(--space-8);
 }
-.nav-search-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--mid);
-  color: var(--fg);
-  font-family: var(--f-body);
-  font-size: 1.1rem;
-  padding: var(--space-3) 0;
-  outline: none;
-}
-.nav-search-input::placeholder { color: var(--mid); }
-.nav-search-input:focus { border-bottom-color: var(--accent); }
 
-.nav-search-submit,
-.nav-search-close {
-  display: flex;
-  align-items: center;
-  color: var(--mid);
-  transition: color 0.15s;
-  flex-shrink: 0;
-  cursor: pointer;
+/* Overrides de l'estil de Pagefind perquè encaixi amb el tema */
+:root {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--accent);
+  --pagefind-ui-text: var(--fg);
+  --pagefind-ui-background: var(--bg);
+  --pagefind-ui-border: var(--line);
+  --pagefind-ui-tag: var(--bg2);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0;
+  --pagefind-ui-font: var(--f-body);
 }
-.nav-search-submit:hover { color: var(--accent); }
-.nav-search-close {
-  font-size: 1.4rem;
-  line-height: 1;
-  padding: 0 0.2rem;
-}
-.nav-search-close:hover { color: var(--fg); }
 
 /* ── 404 standalone ────────────────────────────────────────────────────────── */
 .e404-body {
