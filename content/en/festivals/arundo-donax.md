@@ -6,6 +6,7 @@ lloc: "La Pobla de Híjar, Teruel"
 disciplina: "Musical reed"
 web: ""
 image: "/images/festivals/arundo-donax.jpg"
+tags: ["music", "wind-instruments", "lutherie", "aragon"]
 draft: false
 ---
 

@@ -4,8 +4,9 @@ date: 2030-01-01
 anys: "2013 – 2023"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Cultura comunitària"
-web: ""
+web: "https://www.9barrisacull.org"
 image: "/images/festivals/festival-sopes-del-mon.jpg"
+tags: ["cultura-comunitaria", "diversitat", "nou-barris", "barcelona"]
 draft: false
 ---
 

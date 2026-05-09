@@ -6,6 +6,7 @@ lloc: "Santa Coloma de Gramenet"
 disciplina: "Teatre inclusiu"
 web: "https://www.fiti.cat"
 image: "/images/festivals/fiti.jpg"
+tags: ["teatre", "teatre-inclusiu", "diversitat", "santa-coloma"]
 draft: false
 ---
 

@@ -4,8 +4,9 @@ date: 2030-01-06
 anys: "2017 – 2024"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Cultura comunitària"
-web: ""
+web: "https://www.9barrisacull.org"
 image: "/images/festivals/jornades-9-barris-acull.jpg"
+tags: ["cultura-comunitaria", "diversitat", "nou-barris", "barcelona"]
 draft: false
 ---
 

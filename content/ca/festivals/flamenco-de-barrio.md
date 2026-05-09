@@ -6,6 +6,7 @@ lloc: "Nou Barris, Barcelona"
 disciplina: "Flamenc"
 web: ""
 image: "/images/festivals/flamenco-de-barrio.jpg"
+tags: ["flamenc", "nou-barris", "barcelona"]
 draft: false
 ---
 

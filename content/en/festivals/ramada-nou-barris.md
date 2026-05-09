@@ -6,6 +6,7 @@ lloc: "Nou Barris, Barcelona"
 disciplina: "Community culture"
 web: ""
 image: "/images/festivals/ramada-nou-barris.jpg"
+tags: ["community-culture", "diversity", "nou-barris", "barcelona"]
 draft: false
 ---
 

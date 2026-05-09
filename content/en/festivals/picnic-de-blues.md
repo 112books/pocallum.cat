@@ -6,6 +6,7 @@ lloc: "Parc Central de Nou Barris, Barcelona"
 disciplina: "Blues"
 web: ""
 image: "/images/festivals/picnic-de-blues.jpg"
+tags: ["blues", "nou-barris", "barcelona"]
 draft: false
 ---
 

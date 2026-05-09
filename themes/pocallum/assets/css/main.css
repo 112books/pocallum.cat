@@ -1795,7 +1795,16 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 .wiz-success__text {
   color: var(--mid);
+  margin-bottom: var(--space-4);
+}
+.wiz-success__thanks {
+  font-size: 0.9rem;
+  color: var(--mid);
+  opacity: 0.7;
   margin-bottom: var(--space-10);
+  max-width: 36ch;
+  margin-inline: auto;
+  line-height: 1.6;
 }
 
 /* ── Contact info (peu del formulari) ──────────────────────────────────────── */

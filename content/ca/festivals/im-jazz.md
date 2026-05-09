@@ -6,6 +6,7 @@ lloc: "Barcelona"
 disciplina: "Jazz"
 web: ""
 image: "/images/festivals/im-jazz.jpg"
+tags: ["jazz", "barcelona"]
 draft: false
 ---
 

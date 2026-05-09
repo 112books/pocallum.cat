@@ -6,6 +6,7 @@ lloc: "Nou Barris, Barcelona"
 disciplina: "Popular culture"
 web: ""
 image: "/images/festivals/carnestoltes-nou-barris.jpg"
+tags: ["carnival", "popular-culture", "nou-barris", "barcelona"]
 draft: false
 ---
 

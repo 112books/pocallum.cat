@@ -6,6 +6,7 @@ lloc: "Barcelona"
 disciplina: "Contemporary flamenco"
 web: ""
 image: "/images/festivals/ciutat-flamenco-barcelona.jpg"
+tags: ["flamenco", "dance", "contemporary", "barcelona"]
 draft: false
 ---
 

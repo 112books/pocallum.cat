@@ -6,6 +6,7 @@ lloc: "Calella"
 disciplina: "Harmònica · Blues · Jazz"
 web: ""
 image: "/images/festivals/calella-harmonica-festival.jpg"
+tags: ["harmonica", "blues", "jazz", "calella"]
 draft: false
 ---
 

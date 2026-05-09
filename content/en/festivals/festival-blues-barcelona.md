@@ -6,6 +6,7 @@ lloc: "Nou Barris, Barcelona"
 disciplina: "Blues"
 web: ""
 image: "/images/festivals/festival-blues-barcelona.jpg"
+tags: ["blues", "nou-barris", "barcelona"]
 draft: false
 ---
 

@@ -6,6 +6,7 @@ lloc: "Casal de Barri Prosperitat, Nou Barris"
 disciplina: "Cultura comunitària"
 web: ""
 image: "/images/festivals/sopar-entitats.jpg"
+tags: ["cultura-comunitaria", "nou-barris", "barcelona"]
 draft: false
 ---
 

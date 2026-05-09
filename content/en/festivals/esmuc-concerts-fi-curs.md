@@ -6,6 +6,7 @@ lloc: "ESMUC, Barcelona"
 disciplina: "Jazz · Classical music"
 web: "https://www.esmuc.cat"
 image: "/images/festivals/esmuc-concerts-fi-curs.jpg"
+tags: ["jazz", "classical-music", "music-education", "barcelona"]
 draft: false
 ---
 

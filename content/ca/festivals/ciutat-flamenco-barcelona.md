@@ -6,6 +6,7 @@ lloc: "Barcelona"
 disciplina: "Flamenc contemporani"
 web: ""
 image: "/images/festivals/ciutat-flamenco-barcelona.jpg"
+tags: ["flamenc", "dansa", "contemporani", "barcelona"]
 draft: false
 ---
 

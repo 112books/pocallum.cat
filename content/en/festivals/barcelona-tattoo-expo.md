@@ -6,6 +6,7 @@ lloc: "Fira de Barcelona"
 disciplina: "Tattoo · Urban art"
 web: ""
 image: "/images/festivals/barcelona-tattoo-expo.jpg"
+tags: ["tattoo", "urban-art", "barcelona"]
 draft: false
 ---
 

@@ -6,6 +6,7 @@ lloc: "La Pobla de Híjar, Teruel"
 disciplina: "Canya musical"
 web: ""
 image: "/images/festivals/arundo-donax.jpg"
+tags: ["musica", "vent", "lutheria", "arago"]
 draft: false
 ---
 

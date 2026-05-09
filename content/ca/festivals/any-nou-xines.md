@@ -6,6 +6,7 @@ lloc: "Barcelona"
 disciplina: "Cultura comunitària"
 web: ""
 image: "/images/festivals/any-nou-xines.jpg"
+tags: ["cultura-comunitaria", "cultura-popular", "barcelona"]
 draft: false
 ---
 

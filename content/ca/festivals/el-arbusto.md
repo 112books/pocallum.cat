@@ -6,6 +6,7 @@ lloc: "Casal de Barri Prosperitat, Nou Barris"
 disciplina: "Cultura de barri"
 web: ""
 image: "/images/festivals/el-arbusto.jpg"
+tags: ["cultura-comunitaria", "nou-barris", "barcelona"]
 draft: false
 ---
 

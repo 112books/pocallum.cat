@@ -6,6 +6,7 @@ lloc: "La Paloma, Barcelona"
 disciplina: "Saxofon · Blues · Jazz"
 web: ""
 image: "/images/festivals/sax-o-rama.jpg"
+tags: ["saxofon", "jazz", "blues", "barcelona"]
 draft: false
 ---
 

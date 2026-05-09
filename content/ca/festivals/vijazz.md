@@ -6,6 +6,7 @@ lloc: "Vilafranca del Penedès"
 disciplina: "Jazz"
 web: "https://vijazz.cat"
 image: "/images/festivals/vijazz.jpg"
+tags: ["jazz", "vilafranca-del-penedes"]
 draft: false
 ---
 
