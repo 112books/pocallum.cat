@@ -65,7 +65,7 @@
   --f-body:    'Inter', system-ui, sans-serif;
   --f-mono:    'IBM Plex Sans Condensed', 'Helvetica Neue Condensed', sans-serif;
 
-  --nav-h:   4rem;
+  --nav-h:   5rem;
   --container: 72rem;
   --container-narrow: 48rem;
 
@@ -223,7 +223,7 @@ h1, h2, h3, h4 {
 }
 .nav-link {
   font-family: var(--f-mono);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--mid);
@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
 }
 .nav-lang {
   font-family: var(--f-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   color: var(--mid);
   transition: color 0.15s;
