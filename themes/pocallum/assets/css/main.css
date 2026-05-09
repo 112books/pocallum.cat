@@ -1308,6 +1308,42 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   margin-top: var(--space-12);
 }
 
+.quisom-author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--line);
+}
+.quisom-author__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  filter: grayscale(0.1);
+}
+.quisom-author__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.quisom-author__name {
+  font-family: var(--f-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+.quisom-author__role {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
 /* ── Contacte ──────────────────────────────────────────────────────────────── */
 .tally-wrap {
   margin-bottom: var(--space-12);

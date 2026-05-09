@@ -9,6 +9,15 @@
 
 <section class="section">
   <div class="container container--narrow">
+    <div class="quisom-author">
+      <img src="{{ "images/joan-qui-som.jpg" | relURL }}"
+           alt="Joan Linux Martínez"
+           class="quisom-author__photo">
+      <div class="quisom-author__info">
+        <span class="quisom-author__name">Joan Linux Martínez</span>
+        <span class="quisom-author__role">{{ i18n "quisom_role" | default "Fotògraf · Editor · Activista cultural" }}</span>
+      </div>
+    </div>
     <div class="prose">
       {{ .Content }}
     </div>
