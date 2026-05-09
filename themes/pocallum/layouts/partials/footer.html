@@ -33,19 +33,19 @@
   </div>
 
   <div class="footer-legal">
-    <p>&copy; {{ now.Year }} Pocallum · Joan Linux Martínez</p>
-    <nav class="footer-legal-links" aria-label="{{ i18n "footer_legal_nav" | default "Pàgines legals" }}">
-      <a href="{{ "legal/avis-legal/" | relLangURL }}">{{ i18n "legal_avis" | default "Avís legal" }}</a>
-      <a href="{{ "legal/privacitat/" | relLangURL }}">{{ i18n "legal_privacitat" | default "Privacitat" }}</a>
-      <a href="{{ "legal/cookies/" | relLangURL }}">{{ i18n "legal_cookies" | default "Cookies" }}</a>
-    </nav>
-  </div>
-
-  <div class="footer-powered">
-    <a href="https://linuxbcn.com" target="_blank" rel="noopener" class="footer-powered-link">
-      Powered by <strong>LinuxBCN.com</strong>
-      <span class="footer-powered-sep">·</span>
-      Consultancy <span class="footer-powered-sep">|</span> Development <span class="footer-powered-sep">|</span> Hosting <span class="footer-powered-sep">|</span> Design
-    </a>
+    <div class="footer-legal-left">
+      <p>&copy; {{ now.Year }} Pocallum · Joan Linux Martínez</p>
+      <nav class="footer-legal-links" aria-label="{{ i18n "footer_legal_nav" | default "Pàgines legals" }}">
+        <a href="{{ "legal/avis-legal/" | relLangURL }}">{{ i18n "legal_avis" | default "Avís legal" }}</a>
+        <a href="{{ "legal/privacitat/" | relLangURL }}">{{ i18n "legal_privacitat" | default "Privacitat" }}</a>
+        <a href="{{ "legal/cookies/" | relLangURL }}">{{ i18n "legal_cookies" | default "Cookies" }}</a>
+      </nav>
+    </div>
+    <div class="footer-powered">
+      <a href="https://linuxbcn.com" target="_blank" rel="noopener" class="footer-powered-link">
+        Powered by <strong>LinuxBCN.com</strong>
+      </a>
+      <p class="footer-powered-services">Consultancy | Development | Hosting | Design</p>
+    </div>
   </div>
 </footer>
