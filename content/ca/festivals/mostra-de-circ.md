@@ -5,7 +5,7 @@ anys: "varies edicions"
 lloc: "Plaça Ángel Pestanya, La Prosperitat, Nou Barris"
 disciplina: "Circ"
 web: "https://ateneu9b.net/ca"
-image: "/images/festivals/mostra-de-circ.jpg"
+image: "/images/festivals/mostra-circ-internacional.jpg"
 tags: ["circ", "intercanvi-internacional", "nou-barris", "barcelona", "joves"]
 draft: false
 ---
