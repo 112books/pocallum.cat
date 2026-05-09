@@ -4,7 +4,7 @@ date: 2024-11-30
 anys: "varies edicions"
 lloc: "El Clot, Barcelona"
 disciplina: "Blues"
-web: ""
+web: "https://www.instagram.com/clot.amb.blues/"
 image: "/images/festivals/clot-amb-blues.jpg"
 tags: ["blues", "el-clot", "barcelona", "exposicio"]
 draft: false
