@@ -18,7 +18,22 @@ Each edition had its theme. In 2017, different perspectives on Islam and racism.
 
 We attended to document: talks, roundtables, an audience that listens and an audience that speaks up. And the corridors too, the coffees between sessions, the conversations that never make it onto the agenda.
 
-In 2024, 9 Barris Acull closed. It had coordinated more than eighty local associations, supported thousands of residents, and built a network that will be difficult to rebuild. The last event we documented was the farewell.
+In 2024, 9 Barris Acull closed due to lack of public funding. It had coordinated more than eighty local associations, supported thousands of residents, and built a network that will be difficult to rebuild. The last event we documented was the farewell.
+
+It is an honour to have been a small part of this initiative. It was not a service — it was a structure of rights and dignity. When it gets cut for lack of political will, the loss belongs to everyone.
+
+The work continues in new forms. **Prollema** is one of the responses: different in format, but sharing the same ethos — rejecting charity and prioritising respect and human rights.
+
+## The calendars
+
+For years, the collaboration with 9 Barris Acull went beyond the annual sessions. Each year we co-produced a **photographic calendar** that made the neighbourhood's realities visible: women, young people, community projects. A calendar that was not about landscapes or cats — it was about residents and causes.
+
+Many of these calendars took on a life of their own and became exhibitions that toured institutes and civic centres across the region.
+
+- [Calendar 2024 — "Dones de Nou Barris" (Women of Nou Barris)](https://pocallum.cat/ja-disponible-el-calendari-de-9-barris-acull-dones-de-nou-barris/) — 12 initiatives with a feminine lens across the district
+- [Calendar 2023 — "Joves de Nou Barris, superant obstacles"](https://pocallum.cat/joves-de-nou-barris-superant-obstacles/) — analogue photography (Leica M4-2, ADOX HR-50), design by Roger Font Micás
+- [Audiovisual 2023 — "Joves de 9 Barris Superant Obstacles"](https://pocallum.cat/joves-de-9-barris-superant-obstacles/) — presented at the Jornades at Nau Bostik
+- [9 Barris Acull calendar archive](https://pocallum.cat/calendari-de-9-barris-acull/) — earlier editions
 
 ## Editions documented on the blog
 

@@ -18,7 +18,22 @@ Cada edició tenia el seu tema. El 2017, diverses mirades a l'Islam i el racisme
 
 A Pocallum hi anàvem a documentar: ponències, taules rodones, públic que escolta i públic que intervé. I també els passadissos, els cafès entre sessions, les converses que no surten a l'ordre del dia.
 
-El 2024, 9 Barris Acull va tancar. Coordinava més de vuitanta associacions locals, havia atès milers de veïns i havia construït un teixit que difícilment es reconstrueix. L'últim acte que vam documentar va ser el comiat.
+El 2024, 9 Barris Acull va tancar per falta de finançament públic. Coordinava més de vuitanta associacions locals, havia atès milers de veïns i havia construït un teixit que difícilment es reconstrueix. L'últim acte que vam documentar va ser el comiat.
+
+És un honor haver estat una petita peça d'aquesta iniciativa. No era un servei — era una estructura de drets i de dignitat. I quan la retallen per falta de voluntat política, la pèrdua és de tothom.
+
+La tasca continua de formes noves. **Prollema** és una de les respostes: diferent en format, però compartint el mateix bon fer — prescindir de la caritat i prioritzar el respecte i els drets humans.
+
+## Els calendaris
+
+Durant anys, la col·laboració amb 9 Barris Acull va anar més enllà de les jornades. Cada any editàvem conjuntament un **calendari fotogràfic** que feia visibles les realitats del barri: dones, joves, projectes comunitaris. Un calendari que no era de paisatges ni de gats: era de veïns i de causes.
+
+Molts d'aquests calendaris van agafar vida pròpia i es van convertir en exposicions que van itinerar per instituts i centres cívics d'arreu.
+
+- [Calendari 2024 — "Dones de Nou Barris"](https://pocallum.cat/ja-disponible-el-calendari-de-9-barris-acull-dones-de-nou-barris/) — 12 iniciatives en clau femenina al districte
+- [Calendari 2023 — "Joves de Nou Barris, superant obstacles"](https://pocallum.cat/joves-de-nou-barris-superant-obstacles/) — fotografia analògica (Leica M4-2, ADOX HR-50), disseny de Roger Font Micás
+- [Audiovisual 2023 — "Joves de 9 Barris Superant Obstacles"](https://pocallum.cat/joves-de-9-barris-superant-obstacles/) — presentat a les Jornades a la Nau Bostik
+- [Calendari de 9 Barris Acull](https://pocallum.cat/calendari-de-9-barris-acull/) — edicions anteriors
 
 ## Edicions documentades al blog
 
