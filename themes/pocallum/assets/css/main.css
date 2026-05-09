@@ -98,6 +98,8 @@ ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
 
 /* ── Accessibilitat ────────────────────────────────────────────────────────── */
+[hidden] { display: none !important; }
+
 .skip-link {
   position: absolute;
   top: -100%;
