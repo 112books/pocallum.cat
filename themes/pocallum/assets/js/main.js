@@ -51,6 +51,19 @@
   }
 })();
 
+/* ── Privacy toast ───────────────────────────────────────────────────────── */
+(function () {
+  if (sessionStorage.getItem('privacy-seen')) return;
+  const toast = document.getElementById('js-privacy-toast');
+  if (!toast) return;
+  toast.hidden = false;
+  setTimeout(() => {
+    toast.classList.add('is-hiding');
+    toast.addEventListener('transitionend', () => { toast.hidden = true; }, { once: true });
+  }, 4000);
+  sessionStorage.setItem('privacy-seen', '1');
+})();
+
 /* ── Mobile nav ─────────────────────────────────────────────────────────── */
 (function () {
   const toggle = document.getElementById('js-nav-toggle');

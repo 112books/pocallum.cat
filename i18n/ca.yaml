@@ -134,6 +134,8 @@ wiz_ok_thanks:       "Gràcies per l'interès en pocallum.cat. Cada projecte que
 wiz_ok_back:         "Tornar a l'inici"
 
 # Cerca
+privacy_toast:       "Sense galetes. Sense rastre. Respectem la teva privacitat."
+
 search_open:         "Cercar"
 search_label:        "Cerca al lloc"
 search_title:        "Cerca"

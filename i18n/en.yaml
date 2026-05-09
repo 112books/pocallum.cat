@@ -133,6 +133,8 @@ wiz_ok_thanks:       "Thank you for your interest in pocallum.cat. Every project
 wiz_ok_back:         "Back to home"
 
 # Search
+privacy_toast:       "No cookies. No tracking. We respect your privacy."
+
 search_open:         "Search"
 search_label:        "Search this site"
 search_title:        "Search"

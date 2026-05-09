@@ -13,6 +13,11 @@
 
   {{ partial "footer.html" . }}
 
+  <div id="js-privacy-toast" class="privacy-toast" role="status" aria-live="polite" hidden>
+    <span class="privacy-toast__icon" aria-hidden="true">&#x1F512;</span>
+    <p class="privacy-toast__text">{{ i18n "privacy_toast" | default "Sense galetes. Sense rastre. Respectem la teva privacitat." }}</p>
+  </div>
+
   <div id="js-lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="{{ i18n "lightbox_label" | default "Imatge ampliada" }}">
     <button class="lb-close" id="js-lb-close" aria-label="{{ i18n "lightbox_close" | default "Tancar" }}">&#215;</button>
     <button class="lb-prev"  id="js-lb-prev"  aria-label="{{ i18n "lightbox_prev"  | default "Anterior" }}">&#8249;</button>
