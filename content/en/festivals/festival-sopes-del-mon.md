@@ -16,7 +16,9 @@ Every autumn, Nou Barris fills with pots. The Festival de Sopes del Món — Fes
 
 The festival brings together communities from across the neighbourhood — and the world — around a bowl of soup. Each participant brings their recipe, their story and their table. The result is a gathering that is as much political as gastronomic, in the best sense of both words.
 
-We've been documenting it since 2013, covering editions from the 11th to the 19th, with the usual pilgrimage of camera, tripod and appetite.
+We have been there from the beginning, documenting practically every edition. Camera, tripod, appetite — and sometimes even cooking soups ourselves. This is not a festival you document from the outside: it absorbs you.
+
+Now, with 9 Barris Acull closing due to lack of public funding, the organisation has changed hands. But the festival continues in good shape: the Xarxa d'Intercanvi de Coneixements de Nou Barris is its natural continuation. The soups will go on.
 
 ## European artistic exchange
 

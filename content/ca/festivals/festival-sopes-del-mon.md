@@ -16,7 +16,9 @@ Cada tardor, Nou Barris s'omple de cassoles. El Festival de Sopes del Món demos
 
 El festival aplega comunitats de tot el barri —i del món— al voltant d'un bol de sopa. Cada participant porta la seva recepta, la seva història i la seva taula. El resultat és un espai de trobada tan gastronòmic com polític, en el millor sentit de la paraula.
 
-Hi hem treballat des del 2013, documentant edicions que van de la 11a a la 19a, amb el pelegrinatge habitual de càmera, trípode i gana.
+Hi hem estat des del principi, documentant pràcticament totes les edicions. Càmera, trípode, gana — i de vegades fins i tot cuinant sopes. No és un festival que es documenta des de fora: és un festival que t'absorbeix.
+
+Ara, amb el tancament de 9 Barris Acull per falta de finançament públic, l'organització ha canviat de mans. Però el festival continua en bona forma: la Xarxa d'Intercanvi de Coneixements de Nou Barris n'és la continuïtat natural. Les sopes seguiran.
 
 ## Intercanvi artístic europeu
 
