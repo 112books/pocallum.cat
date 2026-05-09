@@ -41,7 +41,7 @@ window.__heroLang = "{{ site.Language.Lang }}";
 {{ $fotos := $galeria | first 8 }}
 {{ if $fotos }}
 <section class="section section--fotos">
-  <div class="foto-grid foto-grid--home js-foto-grid">
+  <div class="foto-grid foto-grid--home js-foto-grid js-shuffle">
     {{ range $i, $foto := $fotos }}
       {{ $foto.Scratch.Set "index" $i }}
       {{ partial "foto-card.html" $foto }}
