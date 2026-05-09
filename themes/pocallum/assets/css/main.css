@@ -1451,7 +1451,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 
 /* ── Contacte ──────────────────────────────────────────────────────────────── */
-.section--contact-direct { padding-block: var(--space-10); }
+.section--contact-direct { padding-block: var(--space-20); }
 
 /* Wizard */
 .section--wizard { padding-block: var(--space-16) var(--space-20); }
@@ -1689,9 +1689,10 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  padding-top: var(--space-10);
+  padding-top: var(--space-14);
+  padding-bottom: var(--space-14);
   border-top: 1px solid var(--line);
-  margin-top: var(--space-10);
+  margin-top: var(--space-16);
 }
 .wiz-nav__prev {
   font-family: var(--f-mono);
