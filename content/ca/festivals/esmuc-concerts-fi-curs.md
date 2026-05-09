@@ -2,7 +2,7 @@
 title: "Concerts Finals de Curs ESMUC"
 date: 2030-01-02
 anys: "2024"
-lloc: "ESMUC, Barcelona"
+lloc: "Nau Bostik / ESMUC, Barcelona"
 disciplina: "Jazz · Música clàssica"
 web: "https://www.esmuc.cat"
 image: "/images/festivals/esmuc-concerts-fi-curs.jpg"
@@ -17,6 +17,8 @@ Cada primavera, l'Escola Superior de Música de Catalunya tanca el curs amb una 
 L'ESMUC forma músics de jazz, música clàssica, música tradicional i música moderna. Els concerts finals de curs no son un espai d'exhibició acadèmica —són concerts reals, amb músics que estan a punt de sortir al món professional.
 
 Llum de sala difícil, espais íntims, músics joves amb molta concentració. El context ideal per treballar en analògic i forçar el gra fins al límit.
+
+Una d'aquestes setmanes de concerts va tenir lloc a la Nau Bostik — casa nostra, en certa manera. Gairebé una setmana sencera on cada tarda o vespre hi havia un nou grup presentant el seu treball. El talent que puja és molt. Molt.
 
 ## Edicions documentades al blog
 

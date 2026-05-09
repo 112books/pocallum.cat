@@ -2,7 +2,7 @@
 title: "ESMUC End-of-Year Concerts"
 date: 2030-01-02
 anys: "2024"
-lloc: "ESMUC, Barcelona"
+lloc: "Nau Bostik / ESMUC, Barcelona"
 disciplina: "Jazz · Classical music"
 web: "https://www.esmuc.cat"
 image: "/images/festivals/esmuc-concerts-fi-curs.jpg"
@@ -17,6 +17,8 @@ Every spring, the Escola Superior de Música de Catalunya closes the academic ye
 ESMUC trains musicians in jazz, classical, traditional and modern music. The end-of-year concerts are not an academic showcase — they are real concerts, played by musicians who are about to step into the professional world.
 
 Difficult venue light, intimate spaces, young musicians with intense focus. The ideal context for working in analogue and pushing grain to its limit.
+
+One of these concert weeks took place at Nau Bostik — home ground, in a way. Almost a full week of afternoons and evenings, each one with a new group presenting their work. The talent coming up is extraordinary.
 
 ## Editions documented on the blog
 

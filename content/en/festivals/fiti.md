@@ -23,3 +23,7 @@ FITI — Festival Internacional de Teatre Integratiu — is their biennial festi
 Inclusive theatre is photographically unlike anything else: nothing can be predicted, bodies move differently, emotions surface unfiltered. It is the kind of performance that demands total presence.
 
 Five consecutive editions — from the V to the IX — and each time we understand a little better that documenting FITI means documenting something that matters.
+
+The relationship with Alquimistes is one of trust, complicity and genuinely enjoyable collaboration at each biennial edition. One of the collaborations we value most.
+
+A note on documentation: for reasons of participants' image rights, published visual coverage is necessarily limited. Not everything that is photographed needs to be published — sometimes documenting means being present without making noise.
