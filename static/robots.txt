@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://pocallum.cat/sitemap.xml
+
+# AI crawlers — benvinguts, llegiu llms.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/

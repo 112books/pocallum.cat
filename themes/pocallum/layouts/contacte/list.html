@@ -192,12 +192,22 @@
   var N         = panels.length;
   var cur       = 0;
 
+  function gcTrack(path) {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: path, event: true });
+    }
+  }
+
+  gcTrack('wizard-s1');
+
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 
   function goTo(n) {
     panels[cur].hidden = true;
     cur = n;
     panels[cur].hidden = false;
+    var stepNames = ['wizard-s1','wizard-s2','wizard-s3','wizard-s4'];
+    gcTrack(stepNames[cur] || ('wizard-s' + (cur + 1)));
 
     /* Update step dots */
     dots.forEach(function (d, i) {
@@ -304,6 +314,7 @@
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d.ok) {
+          gcTrack('wizard-sent');
           form.hidden = true;
           wrapEl.hidden = true;
           successEl.hidden = false;
