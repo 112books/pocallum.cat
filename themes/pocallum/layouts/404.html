@@ -1,30 +1,42 @@
-{{ define "main" }}
-<section class="e404" aria-labelledby="e404-heading">
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="noindex">
+  <title>404 — {{ .Site.Title }}</title>
+  <link rel="icon" href="{{ "images/favicon.svg" | absURL }}" type="image/svg+xml">
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ with site.Params.goatcounterSite }}
+  <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {{ end }}
+</head>
+<body class="e404-body">
 
-  <div class="e404__text">
-    <p class="e404__code" aria-hidden="true">404</p>
-    <h1 class="e404__title" id="e404-heading">
-      {{ i18n "e404_title" | default "Pàgina no trobada." }}
-    </h1>
-    <p class="e404__desc">
-      {{ i18n "e404_desc" | default "Potser venies del WordPress antic. Aquesta URL ja no existeix — però la fotografia, sí." }}
-    </p>
-    <a href="{{ .Site.Home.RelPermalink }}" class="btn e404__cta">
-      {{ i18n "e404_cta" | default "Tornar a l'inici" }} →
+  <div class="e404-bg" aria-hidden="true"
+       style="background-image: url('{{ "images/404.jpg" | relURL }}')"></div>
+  <div class="e404-overlay" aria-hidden="true"></div>
+
+  <main class="e404-main" id="main-content">
+    <a href="{{ .Site.Home.RelPermalink }}" class="e404-logo" aria-label="{{ .Site.Title }}">
+      pocallum<span>.</span>cat
     </a>
-  </div>
 
-  <div class="e404__photo" aria-hidden="true">
-    <img
-      src="{{ "images/404.jpg" | relURL }}"
-      alt=""
-      class="e404__img"
-      width="1024"
-      height="1024"
-      loading="eager"
-      decoding="async"
-    >
-  </div>
+    <div class="e404-content">
+      <p class="e404-code" aria-hidden="true">404</p>
+      <h1 class="e404-title">
+        {{ i18n "e404_title" | default "Algú ha revelat el rodet a la llum." }}
+      </h1>
+      <p class="e404-desc">
+        {{ i18n "e404_desc" | default "Aquesta pàgina no existeix. Si venies del WordPress antic, la URL ha canviat — però la fotografia és aquí." }}
+      </p>
+      <a href="{{ .Site.Home.RelPermalink }}" class="e404-cta">
+        {{ i18n "e404_cta" | default "Tornar a l'inici" }} →
+      </a>
+    </div>
+  </main>
 
-</section>
-{{ end }}
+</body>
+</html>
