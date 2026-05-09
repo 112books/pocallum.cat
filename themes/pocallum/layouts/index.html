@@ -54,25 +54,18 @@ window.__heroLang = "{{ site.Language.Lang }}";
       <p class="section-eyebrow">{{ i18n "section_serveis_eyebrow" | default "El que fem" }}</p>
       <h2 class="section-title">{{ i18n "section_serveis_title" | default "Serveis" }}</h2>
     </div>
-    <div class="serveis-preview-grid">
+    <div class="serveis-rows">
       {{ $lang := site.Language.Lang }}
-      {{ range $serveis.grups }}
-      <div class="serveis-preview-grup">
-        <h3 class="serveis-preview-grup__title">
-          {{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}
-        </h3>
-        <ul class="serveis-preview-list" role="list">
-          {{ range .items }}
-          <li>{{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}</li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-    </div>
-    <div class="section-cta">
-      <a href="{{ "serveis/" | relLangURL }}" class="btn btn--ghost">
-        {{ i18n "see_all_services" | default "Tots els serveis" }} →
+      {{ range $i, $grup := $serveis.grups }}
+      <a href="{{ "serveis/" | relLangURL }}#servei-{{ add $i 1 }}" class="serveis-row">
+        <span class="serveis-row__num">{{ printf "%02d" (add $i 1) }}</span>
+        <div class="serveis-row__body">
+          <h3 class="serveis-row__title">{{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}</h3>
+          <p class="serveis-row__desc">{{ if eq $lang "en" }}{{ $grup.desc_en }}{{ else }}{{ $grup.desc }}{{ end }}</p>
+        </div>
+        <span class="serveis-row__arrow" aria-hidden="true">→</span>
       </a>
+      {{ end }}
     </div>
   </div>
 </section>
