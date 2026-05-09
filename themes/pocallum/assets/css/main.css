@@ -1475,6 +1475,83 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   padding-bottom: var(--space-32);
 }
 
+/* ── Festival nav strip (bottom of single) ─────────────────────────────────── */
+.festival-nav-strip {
+  border-top: 1px solid var(--line);
+  padding: var(--space-8) 0 var(--space-12);
+}
+
+.festival-thumb {
+  flex: 0 0 140px;
+  scroll-snap-align: start;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.festival-thumb:hover { transform: translateY(-3px); }
+
+.festival-thumb.is-current {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.28;
+}
+
+.festival-thumb__img {
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  background: var(--bg);
+  position: relative;
+}
+.festival-thumb__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.35) saturate(0.5);
+  transition: filter 0.45s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.festival-thumb:hover .festival-thumb__img img {
+  filter: brightness(0.75) saturate(1);
+  transform: scale(1.08);
+}
+.festival-thumb__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  opacity: 0;
+  mix-blend-mode: color;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.festival-thumb:hover .festival-thumb__img::after { opacity: 0.2; }
+
+.festival-thumb__title {
+  display: block;
+  padding: var(--space-2) var(--space-3) var(--space-1);
+  font-size: 0.6rem;
+  font-family: var(--f-mono);
+  line-height: 1.35;
+  color: var(--mid);
+  background: var(--bg2);
+  transition: color 0.25s;
+}
+.festival-thumb:hover .festival-thumb__title { color: var(--fg); }
+
+.festival-thumb__meta {
+  display: block;
+  padding: 0 var(--space-3) var(--space-3);
+  font-size: 0.55rem;
+  font-family: var(--f-mono);
+  letter-spacing: 0.08em;
+  color: var(--line);
+  background: var(--bg2);
+  transition: color 0.25s;
+}
+.festival-thumb:hover .festival-thumb__meta { color: var(--accent); }
+
 /* Responsive festivals */
 @media (max-width: 1024px) {
   .festival-card--hero { aspect-ratio: 16/9; }

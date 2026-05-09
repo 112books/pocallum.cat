@@ -44,6 +44,42 @@
     </div>
   </div>
 
+  {{ $allPages := .Parent.Pages.ByDate.Reverse }}
+  {{ if gt (len $allPages) 1 }}
+  <div class="festival-nav-strip">
+    <div class="noticies-strip-wrap">
+      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-fnav-prev" aria-label="Anterior" type="button">‹</button>
+      <div class="noticies-strip" id="js-fnav-strip">
+        {{ range $allPages }}
+        {{ $isCurrent := eq .RelPermalink $.RelPermalink }}
+        <a href="{{ if not $isCurrent }}{{ .RelPermalink }}{{ else }}#{{ end }}"
+           class="festival-thumb{{ if $isCurrent }} is-current{{ end }}"
+           {{ if $isCurrent }}aria-current="page"{{ end }}>
+          <div class="festival-thumb__img">
+            {{ with .Params.image }}
+            <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
+            {{ end }}
+          </div>
+          <span class="festival-thumb__title">{{ .Title }}</span>
+          {{ with .Params.anys }}<span class="festival-thumb__meta">{{ . }}</span>{{ end }}
+        </a>
+        {{ end }}
+      </div>
+      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-fnav-next" aria-label="Següent" type="button">›</button>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var strip = document.getElementById('js-fnav-strip');
+    if (!strip) return;
+    var current = strip.querySelector('.is-current');
+    if (current) current.scrollIntoView({block:'nearest', inline:'center'});
+    document.getElementById('js-fnav-prev').addEventListener('click', function(){ strip.scrollBy({left:-180,behavior:'smooth'}); });
+    document.getElementById('js-fnav-next').addEventListener('click', function(){ strip.scrollBy({left:180,behavior:'smooth'}); });
+  })();
+  </script>
+  {{ end }}
+
 </article>
 
 {{ end }}
