@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "blog_eyebrow" | default "Des de 2010" }}</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+  </div>
+</section>
+
+<div class="blog-pres container">
+  <div class="blog-pres__text">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    <a href="{{ .Site.Params.blog }}"
+       class="blog-pres__cta"
+       target="_blank"
+       rel="noopener noreferrer">
+      {{ i18n "blog_visit" | default "Visitar el blog" }} →
+    </a>
+  </div>
+  <aside class="blog-pres__author">
+    {{ if fileExists "static/images/joan-blog.jpg" }}
+    <img src="{{ "images/joan-blog.jpg" | relURL }}"
+         alt="Joan Linux Martínez"
+         class="blog-pres__photo">
+    {{ end }}
+    <p class="blog-pres__name">Joan Linux Martínez</p>
+    <p class="blog-pres__handle">@linuxbcn</p>
+  </aside>
+</div>
+
+{{ end }}

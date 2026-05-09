@@ -106,14 +106,19 @@ defaultContentLanguageInSubdir = false
   weight = 4
 
 [[languages.ca.menus.main]]
+  name   = "Blog"
+  url    = "/blog/"
+  weight = 5
+
+[[languages.ca.menus.main]]
   name   = "Qui som"
   url    = "/qui-som/"
-  weight = 5
+  weight = 6
 
 [[languages.ca.menus.main]]
   name   = "Contacte"
   url    = "/contacte/"
-  weight = 6
+  weight = 7
   [languages.ca.menus.main.params]
     highlight = true
 
@@ -138,13 +143,18 @@ defaultContentLanguageInSubdir = false
   weight = 4
 
 [[languages.en.menus.main]]
+  name   = "Blog"
+  url    = "/en/blog/"
+  weight = 5
+
+[[languages.en.menus.main]]
   name   = "About"
   url    = "/qui-som/"
-  weight = 5
+  weight = 6
 
 [[languages.en.menus.main]]
   name   = "Contact"
   url    = "/contacte/"
-  weight = 6
+  weight = 7
   [languages.en.menus.main.params]
     highlight = true

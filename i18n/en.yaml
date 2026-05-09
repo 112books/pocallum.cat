@@ -78,3 +78,7 @@ footer_legal_nav:   "Legal pages"
 legal_avis:         "Legal notice"
 legal_privacitat:   "Privacy"
 legal_cookies:      "Cookies"
+
+# Blog
+blog_eyebrow:  "Since 2010"
+blog_visit:    "Visit the blog"
