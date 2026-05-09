@@ -1453,7 +1453,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 
 /* ── Contacte ──────────────────────────────────────────────────────────────── */
-.section--contact-direct { padding-block: var(--space-20); }
+.section--contact-direct { padding-block: var(--space-20) var(--space-32); }
 
 /* Wizard */
 .section--wizard { padding-block: var(--space-20) var(--space-24); }
@@ -1738,8 +1738,8 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   margin-bottom: var(--space-10);
 }
 .contact-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-6);
   border-top: 1px solid var(--line);
   padding-top: var(--space-10);
