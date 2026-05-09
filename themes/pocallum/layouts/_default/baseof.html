@@ -13,6 +13,11 @@
 
   {{ partial "footer.html" . }}
 
+  <div id="js-scroll-progress" aria-hidden="true"></div>
+  <button id="js-back-top" class="back-top" aria-label="Tornar al principi" hidden>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <div id="js-privacy-toast" class="privacy-toast" role="status" aria-live="polite" hidden>
     <span class="privacy-toast__icon" aria-hidden="true">&#x1F512;</span>
     <p class="privacy-toast__text">{{ i18n "privacy_toast" | default "Sense galetes. Sense rastre. Respectem la teva privacitat." }}</p>

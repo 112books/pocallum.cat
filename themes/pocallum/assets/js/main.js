@@ -51,6 +51,30 @@
   }
 })();
 
+/* ── Scroll progress + back to top ──────────────────────────────────────── */
+(function () {
+  const bar = document.getElementById('js-scroll-progress');
+  const btn = document.getElementById('js-back-top');
+  if (!bar && !btn) return;
+
+  function update() {
+    const scrolled = window.scrollY;
+    const total    = document.documentElement.scrollHeight - window.innerHeight;
+    const pct      = total > 0 ? (scrolled / total * 100) : 0;
+
+    if (bar) bar.style.width = pct + '%';
+
+    if (btn) {
+      const show = scrolled > 400;
+      if (show && btn.hidden) { btn.hidden = false; requestAnimationFrame(() => btn.classList.add('is-visible')); }
+      if (!show && !btn.hidden) { btn.classList.remove('is-visible'); btn.addEventListener('transitionend', () => { if (!btn.classList.contains('is-visible')) btn.hidden = true; }, { once: true }); }
+    }
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  if (btn) btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
 /* ── Privacy toast ───────────────────────────────────────────────────────── */
 (function () {
   if (sessionStorage.getItem('privacy-seen')) return;

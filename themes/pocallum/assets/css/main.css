@@ -2623,3 +2623,46 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   .e404-code { font-size: clamp(6rem, 28vw, 10rem); }
   .nav-search-btn { padding: var(--space-4) 0; }
 }
+
+/* ── Scroll progress bar ──────────────────────────────────────────────────── */
+#js-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  z-index: 200;
+  transition: width .1s linear;
+  transform-origin: left;
+  pointer-events: none;
+}
+
+/* ── Back to top ──────────────────────────────────────────────────────────── */
+.back-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  color: var(--mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .25s ease, transform .25s ease, color .15s, border-color .15s;
+}
+.back-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.back-top:hover {
+  color: var(--fg);
+  border-color: var(--accent);
+}
+.back-top[hidden] { display: none; }
