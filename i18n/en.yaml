@@ -61,7 +61,9 @@ festival_web:         "Website"
 
 # About
 quisom_eyebrow:     "The project"
+quisom_role:        "Photographer · Editor · Cultural activist"
 quisom_full_bio:    "Full biography"
+skip_to_content:    "Skip to main content"
 
 # Contact
 contacte_eyebrow:       "Work together?"

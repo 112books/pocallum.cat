@@ -62,7 +62,9 @@ festival_web:         "Web"
 
 # Qui som
 quisom_eyebrow:     "El projecte"
+quisom_role:        "Fotògraf · Editor · Activista cultural"
 quisom_full_bio:    "Biografia completa"
+skip_to_content:    "Saltar al contingut principal"
 
 # Contacte
 contacte_eyebrow:       "Treballem junts?"

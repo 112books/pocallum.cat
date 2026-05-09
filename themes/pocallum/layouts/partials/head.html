@@ -1,5 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>

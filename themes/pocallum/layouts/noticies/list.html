@@ -36,7 +36,7 @@
       <span class="noticies-timeline-label__text">{{ i18n "timeline_label" | default "Arxiu" }}</span>
     </div>
     <div class="noticies-strip-wrap">
-      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-strip-prev" aria-label="Anterior" type="button">‹</button>
+      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-strip-prev" aria-label="{{ i18n "pagination_prev" | default "Anterior" }}" type="button">‹</button>
       <div class="noticies-strip" id="js-noticies-strip">
         {{ range $i, $p := $pages }}
         <button type="button"
@@ -57,7 +57,7 @@
         </button>
         {{ end }}
       </div>
-      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-strip-next" aria-label="Següent" type="button">›</button>
+      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-strip-next" aria-label="{{ i18n "pagination_next" | default "Següent" }}" type="button">›</button>
     </div>
   </div>
 

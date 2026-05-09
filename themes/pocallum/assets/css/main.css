@@ -97,6 +97,32 @@ a    { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; color: inherit; }
 
+/* ── Accessibilitat ────────────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  z-index: 9999;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+.skip-link:focus { top: 0; outline: 2px solid #fff; outline-offset: 2px; }
+
+/* Focus visible global — tots els elements interactius */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Desactivem l'outline per defecte (no-focus-visible) */
+:focus:not(:focus-visible) { outline: none; }
+
 /* ── Containers ────────────────────────────────────────────────────────────── */
 .container        { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--space-8); }
 .container--narrow { width: 100%; max-width: var(--container-narrow); margin-inline: auto; padding-inline: var(--space-8); }
@@ -1995,4 +2021,12 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   .foto-item--wide, .foto-item--tall, .foto-item--big, .foto-item--hero { grid-column: span 1; grid-row: span 1; }
   .hero-title { font-size: 2.8rem; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
+
+  /* Serveis — mòbil petit */
+  .servei-chapter__title { font-size: 2.2rem; }
+  .servei-chapter__cta-bar { margin-top: var(--space-6); }
+
+  /* Festival strip — mòbil petit */
+  .festival-thumb { flex: 0 0 110px; }
+  .festival-thumb__title { font-size: 0.7rem; }
 }

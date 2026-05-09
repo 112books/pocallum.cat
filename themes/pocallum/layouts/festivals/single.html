@@ -48,7 +48,7 @@
   {{ if gt (len $allPages) 1 }}
   <div class="festival-nav-strip">
     <div class="noticies-strip-wrap">
-      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-fnav-prev" aria-label="Anterior" type="button">‹</button>
+      <button class="noticies-strip-arrow noticies-strip-arrow--prev" id="js-fnav-prev" aria-label="{{ i18n "pagination_prev" | default "Anterior" }}" type="button">‹</button>
       <div class="noticies-strip" id="js-fnav-strip">
         {{ range $allPages }}
         {{ $isCurrent := eq .RelPermalink $.RelPermalink }}
@@ -65,7 +65,7 @@
         </a>
         {{ end }}
       </div>
-      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-fnav-next" aria-label="Següent" type="button">›</button>
+      <button class="noticies-strip-arrow noticies-strip-arrow--next" id="js-fnav-next" aria-label="{{ i18n "pagination_next" | default "Següent" }}" type="button">›</button>
     </div>
   </div>
   <script>
