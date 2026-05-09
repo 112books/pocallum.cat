@@ -5,7 +5,7 @@ anys: "2017"
 lloc: "Ateneu Popular de Nou Barris, Barcelona"
 disciplina: "Circus · Monocycle"
 web: ""
-image: "/images/festivals/trobada-monococlistes.jpg"
+image: "/images/festivals/monociclistes.jpg"
 tags: ["circus", "monocycle", "nou-barris", "barcelona"]
 draft: false
 ---

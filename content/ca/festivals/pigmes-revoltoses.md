@@ -5,7 +5,7 @@ anys: "2014"
 lloc: "Ateneu Popular 9 Barris + Casal de Barri Prosperitat, Nou Barris"
 disciplina: "Música · Activisme cultural"
 web: "https://ateneu9b.net/ca"
-image: "/images/festivals/pigmes-revoltoses.jpg"
+image: "/images/festivals/pigmeos.jpg"
 tags: ["musica", "activisme", "cultura-comunitaria", "nou-barris", "barcelona"]
 draft: false
 ---

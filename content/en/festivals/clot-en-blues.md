@@ -5,7 +5,7 @@ anys: "various editions"
 lloc: "El Clot, Barcelona"
 disciplina: "Blues"
 web: ""
-image: "/images/festivals/clot-en-blues.jpg"
+image: "/images/festivals/clot-amb-blues.jpg"
 tags: ["blues", "el-clot", "barcelona", "exhibition"]
 draft: false
 ---

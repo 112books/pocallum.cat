@@ -5,7 +5,7 @@ anys: "2020 – 2025"
 lloc: "Ateneu Popular 9 Barris, Nou Barris"
 disciplina: "Jazz · Funk · Blues · Música de Nova Orleans"
 web: "https://ateneu9b.net/ca"
-image: "/images/festivals/nou-barris-meets-new-orleans.jpg"
+image: "/images/festivals/BarrismeetsNewOrleans.jpg"
 tags: ["jazz", "funk", "blues", "nova-orleans", "nou-barris", "barcelona"]
 draft: false
 ---
