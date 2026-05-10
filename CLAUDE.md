@@ -224,6 +224,33 @@ A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (
 
 ---
 
+## Dashboard d'estadístiques (`/admin/`)
+
+Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IBM Plex, tema fosc). **Mai canviar el link del footer a una URL externa** — sempre apunta a `/admin/`.
+
+### Arquitectura
+- `static/admin/index.html` — dashboard HTML (autocontingut, protegit per contrasenya SHA-256)
+- `static/admin/analytics.json` — dades generades automàticament cada hora per GitHub Actions
+- `scripts/build-analytics-json.py` + `scripts/process-analytics.py` — scripts que criden l'API de GoatCounter
+- `.github/workflows/fetch-analytics.yml` — workflow que s'executa cada hora (`cron: '0 * * * *'`)
+
+### Secret requerit a GitHub
+El workflow necessita el secret `GOATCOUNTER_TOKEN` al repo (Settings → Secrets and variables → Actions).
+Per generar-lo: `pocallum.goatcounter.com` → Settings → API tokens → New token → Read stats ✓
+
+**Si `analytics.json` té zeros**, el secret falta o és invàlid. Solució: regenerar el token a GoatCounter i afegir-lo a GitHub Secrets, després llançar manualment el workflow (Actions → Fetch GoatCounter Analytics → Run workflow).
+
+### Contrasenya del dashboard
+Hash SHA-256 configurat a `static/admin/index.html` → variable `pwHash`. Per canviar la contrasenya:
+```bash
+echo -n "nova_contrasenya" | shasum -a 256
+```
+
+### Repositori de referència
+`../goatcounter-dashboard` — repositori independent amb el codi font del dashboard i instruccions d'instal·lació.
+
+---
+
 ## Comandes útils
 
 ```bash
