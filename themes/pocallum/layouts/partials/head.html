@@ -1,7 +1,13 @@
+{{- $desc := .Site.Params.description -}}
+{{- if .Description }}{{- $desc = .Description -}}
+{{- else if .Params.lead }}{{- $desc = .Params.lead -}}
+{{- else if .Summary }}{{- $desc = .Summary | truncate 160 -}}
+{{- end -}}
+{{- $ogImage := or .Params.image .Site.Params.defaultOgImage -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta name="description" content="{{ $desc }}">
 
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
@@ -18,22 +24,29 @@
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-<link rel="alternate" hreflang="x-default"            href="{{ .Permalink }}">
+{{ if eq .Language.Lang site.DefaultContentLanguage }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}
+
+{{/* RSS autodiscovery */}}
+{{ range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{ end }}
 
 {{/* Open Graph */}}
 <meta property="og:site_name"   content="Pocallum">
 <meta property="og:locale"      content="{{ .Language.Params.locale | default "ca_ES" }}">
 <meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
 <meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url"         content="{{ .Permalink }}">
-{{ with .Params.image }}<meta property="og:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
+{{ with $ogImage }}<meta property="og:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 
 {{/* Twitter / X Cards */}}
-<meta name="twitter:card"        content="{{ if .Params.image }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:card"        content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
 <meta name="twitter:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-{{ with .Params.image }}<meta name="twitter:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 
 {{/* JSON-LD Structured Data */}}
 {{ if .IsHome }}
@@ -72,14 +85,13 @@
   ]
 }
 </script>
-{{ else if eq .Type "noticies" }}
-{{ if not .IsSection }}
+{{ else if and (eq .Type "noticies") (not .IsSection) }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
   "headline": {{ .Title | jsonify }},
-  "description": {{ with .Params.lead }}{{ . | jsonify }}{{ else }}{{ .Summary | jsonify }}{{ end }},
+  "description": {{ $desc | jsonify }},
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "author": { "@type": "Person", "name": "Joan Linux Martínez" },
@@ -92,7 +104,22 @@
   "image": "{{ . | strings.TrimLeft "/" | absURL }}"{{ end }}
 }
 </script>
-{{ end }}
+{{ else if and (eq .Type "festivals") (not .IsSection) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicFestival",
+  "name": {{ .Title | jsonify }},
+  "location": {
+    "@type": "Place",
+    "name": {{ .Params.lloc | default "" | jsonify }}
+  },
+  "description": {{ $desc | jsonify }},
+  "url": "{{ .Permalink }}"{{ with .Params.image }},
+  "image": "{{ . | strings.TrimLeft "/" | absURL }}"{{ end }}{{ with .Params.web }},
+  "sameAs": {{ . | jsonify }}{{ end }}
+}
+</script>
 {{ end }}
 
 {{/* GoatCounter — sense cookies, GDPR */}}

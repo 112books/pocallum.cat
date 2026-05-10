@@ -70,6 +70,7 @@ defaultContentLanguageInSubdir = false
   goatcounterSite = "pocallum"
   # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
   formspreeContact  = "https://formspree.io/f/xnjgrpnn"
+  defaultOgImage    = "/images/logotip/pocallum-logo.png"
 
 [taxonomies]
   equip = "equip"
