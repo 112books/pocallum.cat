@@ -1,27 +1,258 @@
 {
-  "generated": "2026-05-10T16:42:31.121610Z",
+  "generated": "2026-05-10T20:38:28.586279Z",
   "period": {
     "start": "2025-05-10",
     "end": "2026-05-10"
   },
-  "total": 0,
+  "total": 35,
   "total_unique": 0,
-  "hits_by_day": [],
-  "hits": [],
-  "by_lang": {},
-  "by_section": {},
-  "noticies_top": [],
+  "hits_by_day": [
+    {
+      "date": "2026-05-09",
+      "count": 23
+    },
+    {
+      "date": "2026-05-10",
+      "count": 12
+    }
+  ],
+  "hits": [
+    {
+      "path": "/",
+      "count": 4
+    },
+    {
+      "path": "/ca",
+      "count": 3
+    },
+    {
+      "path": "/galeria",
+      "count": 3
+    },
+    {
+      "path": "/ca/galeria",
+      "count": 2
+    },
+    {
+      "path": "/ca/festivals",
+      "count": 2
+    },
+    {
+      "path": "/festivals",
+      "count": 2
+    },
+    {
+      "path": "/noticies",
+      "count": 2
+    },
+    {
+      "path": "/en/blog",
+      "count": 2
+    },
+    {
+      "path": "/qui-som",
+      "count": 2
+    },
+    {
+      "path": "/serveis",
+      "count": 2
+    },
+    {
+      "path": "/en/festivals",
+      "count": 2
+    },
+    {
+      "path": "/ca/tags/vilafranca-del-penedes",
+      "count": 1
+    },
+    {
+      "path": "/ca/cerca",
+      "count": 1
+    },
+    {
+      "path": "/movent-les-imatges-fixes",
+      "count": 1
+    },
+    {
+      "path": "/contacte",
+      "count": 1
+    },
+    {
+      "path": "/ca/blog",
+      "count": 1
+    },
+    {
+      "path": "/blog",
+      "count": 1
+    },
+    {
+      "path": "/noticies/2026-03-no-fem-fotos-concerts",
+      "count": 1
+    },
+    {
+      "path": "/cerca",
+      "count": 1
+    },
+    {
+      "path": "/admin",
+      "count": 1
+    }
+  ],
+  "by_lang": {
+    "ca": 10,
+    "en": 4
+  },
+  "by_section": {
+    "inici": 7,
+    "galeria": 5,
+    "festivals": 6,
+    "noticies": 3,
+    "blog": 4,
+    "qui-som": 2,
+    "serveis": 2,
+    "tags": 1,
+    "cerca": 2,
+    "movent-les-imatges-fixes": 1,
+    "contacte": 1,
+    "admin": 1
+  },
+  "noticies_top": [
+    {
+      "path": "/noticies/2026-03-no-fem-fotos-concerts",
+      "count": 1
+    }
+  ],
   "festivals_top": [],
   "wizard_funnel": {
     "wizard-s1": 0,
-    "wizard-s2": 0,
+    "wizard-s2": 1,
     "wizard-s3": 0,
     "wizard-s4": 0,
     "wizard-sent": 0
   },
-  "browsers": [],
-  "systems": [],
-  "sizes": [],
-  "locations": [],
-  "refs": []
+  "browsers": [
+    {
+      "name": "Safari",
+      "id": "Safari",
+      "count": 47
+    },
+    {
+      "name": "Chrome",
+      "id": "Chrome",
+      "count": 32
+    },
+    {
+      "name": "Firefox",
+      "id": "Firefox",
+      "count": 3
+    },
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 2
+    }
+  ],
+  "systems": [
+    {
+      "name": "macOS",
+      "id": "macOS",
+      "count": 59
+    },
+    {
+      "name": "iOS",
+      "id": "iOS",
+      "count": 14
+    },
+    {
+      "name": "Linux",
+      "id": "Linux",
+      "count": 5
+    },
+    {
+      "name": "Windows",
+      "id": "Windows",
+      "count": 4
+    },
+    {
+      "name": "Android",
+      "id": "Android",
+      "count": 2
+    }
+  ],
+  "sizes": [
+    {
+      "name": "desktophd",
+      "id": "desktophd",
+      "count": 38
+    },
+    {
+      "name": "desktop",
+      "id": "desktop",
+      "count": 29
+    },
+    {
+      "name": "phone",
+      "id": "phone",
+      "count": 15
+    },
+    {
+      "name": "tablet",
+      "id": "tablet",
+      "count": 2
+    }
+  ],
+  "locations": [
+    {
+      "name": "Spain",
+      "id": "ES",
+      "count": 78
+    },
+    {
+      "name": "Czechia",
+      "id": "CZ",
+      "count": 1
+    },
+    {
+      "name": "United Kingdom",
+      "id": "GB",
+      "count": 1
+    },
+    {
+      "name": "Indonesia",
+      "id": "ID",
+      "count": 1
+    },
+    {
+      "name": "Sweden",
+      "id": "SE",
+      "count": 1
+    },
+    {
+      "name": "Singapore",
+      "id": "SG",
+      "count": 1
+    },
+    {
+      "name": "United States",
+      "id": "US",
+      "count": 1
+    }
+  ],
+  "refs": [
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 4
+    },
+    {
+      "name": "Google",
+      "id": "Google",
+      "count": 1
+    },
+    {
+      "name": "blog.pocallum.cat",
+      "id": "blog.pocallum.cat",
+      "count": 1
+    }
+  ]
 }
