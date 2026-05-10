@@ -238,6 +238,8 @@ Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IB
 El workflow necessita el secret `GOATCOUNTER_TOKEN` al repo (Settings → Secrets and variables → Actions).
 Per generar-lo: `pocallum.goatcounter.com` → Settings → API tokens → New token → Read stats ✓
 
+**⚠️ L'email del compte GoatCounter cal estar verificat** — sense verificació, l'API retorna 401 encara que el token sembli correcte. El mail de verificació sol anar a l'spam.
+
 **Si `analytics.json` té zeros**, el secret falta o és invàlid. Solució: regenerar el token a GoatCounter i afegir-lo a GitHub Secrets, després llançar manualment el workflow (Actions → Fetch GoatCounter Analytics → Run workflow).
 
 ### Contrasenya del dashboard
