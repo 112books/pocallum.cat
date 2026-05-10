@@ -37,6 +37,10 @@
 window.__heroImages = {{ $heroImgs | jsonify }};
 window.__heroLang = {{ site.Language.Lang | jsonify }};
 </script>
+{{/* Preload de la primera imatge del hero per LCP */}}
+{{ with index $galeria 0 }}{{ with .Params.image }}
+<link rel="preload" as="image" href="{{ . | strings.TrimLeft "/" | relURL }}">
+{{ end }}{{ end }}
 
 {{/* ── Darreres fotografies ─────────────────────────────────────────────── */}}
 {{ $fotos := $galeria | first 6 }}
@@ -45,6 +49,7 @@ window.__heroLang = {{ site.Language.Lang | jsonify }};
   <div class="foto-grid foto-grid--home js-foto-grid js-shuffle">
     {{ range $i, $foto := $fotos }}
       {{ $foto.Scratch.Set "index" $i }}
+      {{ $foto.Scratch.Set "loading" "eager" }}
       {{ partial "foto-card.html" $foto }}
     {{ end }}
   </div>

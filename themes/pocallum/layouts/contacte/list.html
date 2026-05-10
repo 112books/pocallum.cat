@@ -216,7 +216,7 @@
     });
     /* Fill connector lines */
     lines.forEach(function (l, i) {
-      if (l) l.style.width = (i < cur) ? '100%' : '0%';
+      if (l) l.style.transform = (i < cur) ? 'scaleX(1)' : 'scaleX(0)';
     });
 
     progressEl.setAttribute('aria-valuenow', cur + 1);

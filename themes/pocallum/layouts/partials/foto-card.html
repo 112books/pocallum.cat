@@ -5,7 +5,7 @@
      aria-label="{{ i18n "foto_open" | default "Ampliar imatge" }}: {{ .Title }}">
     <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
          alt="{{ with .Title }}{{ . }}{{ else }}{{ i18n "foto_alt_default" | default "Fotografia de Pocallum" }}{{ end }}"
-         loading="lazy"
+         loading="{{ .Scratch.Get "loading" | default "lazy" }}"
          decoding="async">
   </a>
 </figure>

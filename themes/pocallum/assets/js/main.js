@@ -62,7 +62,7 @@
     const total    = document.documentElement.scrollHeight - window.innerHeight;
     const pct      = total > 0 ? (scrolled / total * 100) : 0;
 
-    if (bar) bar.style.width = pct + '%';
+    if (bar) bar.style.transform = 'scaleX(' + (pct / 100) + ')';
 
     if (btn) {
       const show = scrolled > 400;
@@ -172,6 +172,7 @@
   const leadEl   = document.getElementById('js-nf-lead');
   const btnPrev  = document.getElementById('js-strip-prev');
   const btnNext  = document.getElementById('js-strip-next');
+  if (!featured || !link || !dateEl || !titleEl) return;
 
   // Injecta separadors d'any entre miniatures de anys diferents
   let lastYear = null;
@@ -233,17 +234,28 @@
   const lbCount = document.getElementById('js-lb-counter');
   if (!lb) return;
 
+  // aria-live region for screen reader announcements on image change
+  const lbAnnounce = document.createElement('span');
+  lbAnnounce.setAttribute('aria-live', 'polite');
+  lbAnnounce.setAttribute('aria-atomic', 'true');
+  lbAnnounce.className = 'sr-only';
+  lb.appendChild(lbAnnounce);
+
   let items = [];
   let current = 0;
+  let openerEl = null;
 
   function show(idx) {
     current = (idx + items.length) % items.length;
     lbImg.src = items[current].dataset.lbSrc;
     lbImg.alt = items[current].dataset.lbAlt || '';
     if (lbCount) lbCount.textContent = `${current + 1} / ${items.length}`;
+    const alt = items[current].dataset.lbAlt;
+    lbAnnounce.textContent = alt ? `${current + 1} / ${items.length}: ${alt}` : `${current + 1} / ${items.length}`;
   }
 
   function open(idx) {
+    openerEl = document.activeElement;
     lb.hidden = false;
     document.body.style.overflow = 'hidden';
     show(idx);
@@ -253,7 +265,21 @@
   function close() {
     lb.hidden = true;
     document.body.style.overflow = '';
+    if (openerEl) { openerEl.focus(); openerEl = null; }
   }
+
+  // Focus trap: cycle Tab/Shift+Tab within lightbox buttons
+  const focusable = [lbClose, lbPrev, lbNext].filter(Boolean);
+  lb.addEventListener('keydown', e => {
+    if (e.key !== 'Tab' || !focusable.length) return;
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+    }
+  });
 
   document.querySelectorAll('.js-lb-trigger').forEach((trigger, i) => {
     trigger.addEventListener('click', e => {
