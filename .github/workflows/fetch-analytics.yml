@@ -23,6 +23,15 @@ jobs:
           BASE="https://${GC_ACCOUNT}.goatcounter.com/api/v0"
           AUTH="Authorization: Bearer ${GC_TOKEN}"
 
+          # Valida el token abans de continuar
+          CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}")
+          if ! echo "${CHECK}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
+            echo "ERROR: Token de GoatCounter invàlid o sense permisos."
+            echo "Resposta: ${CHECK}"
+            exit 1
+          fi
+          echo "Token OK"
+
           fetch_json() {
             local url="$1"
             local result
