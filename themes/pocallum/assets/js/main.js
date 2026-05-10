@@ -353,3 +353,12 @@
   const statsEl = document.querySelector('.blog-stats');
   if (statsEl) observer.observe(statsEl);
 })();
+
+/* ── Foto shimmer: atura l'animació de fons quan la imatge ja ha carregat ── */
+(function () {
+  document.querySelectorAll('.foto-item img').forEach(function (img) {
+    function markLoaded() { img.closest('.foto-item')?.classList.add('img-loaded'); }
+    if (img.complete && img.naturalWidth) markLoaded();
+    else img.addEventListener('load', markLoaded);
+  });
+})();

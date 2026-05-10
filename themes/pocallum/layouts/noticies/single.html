@@ -97,7 +97,7 @@
     var strip = document.getElementById('js-nav-strip');
     if (!strip) return;
     var current = strip.querySelector('.is-current');
-    if (current) current.scrollIntoView({block:'nearest', inline:'center'});
+    if (current) strip.scrollLeft = current.offsetLeft - (strip.offsetWidth / 2) + (current.offsetWidth / 2);
     document.getElementById('js-nav-prev').addEventListener('click', function(){ strip.scrollBy({left:-220,behavior:'smooth'}); });
     document.getElementById('js-nav-next').addEventListener('click', function(){ strip.scrollBy({left:220,behavior:'smooth'}); });
   })();
