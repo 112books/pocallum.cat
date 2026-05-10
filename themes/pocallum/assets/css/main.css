@@ -111,7 +111,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 
 .skip-link {
   position: absolute;
-  top: -100%;
+  top: 0;
   left: var(--space-4);
   z-index: 9999;
   background: var(--accent);
@@ -122,9 +122,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   padding: var(--space-3) var(--space-6);
   border-radius: 0 0 4px 4px;
   text-decoration: none;
-  transition: top 0.15s;
+  transform: translateY(-100%);
+  transition: transform 0.15s;
 }
-.skip-link:focus { top: 0; outline: 2px solid #fff; outline-offset: 2px; }
+.skip-link:focus { transform: translateY(0); outline: 2px solid #fff; outline-offset: 2px; }
 
 /* Focus visible global — tots els elements interactius */
 :focus-visible {
@@ -2642,6 +2643,16 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .e404-code { font-size: clamp(6rem, 28vw, 10rem); }
   .nav-search-btn { padding: var(--space-4) 0; }
+}
+
+/* ── Respectar preferències de moviment reduït ─────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ── Scroll progress bar ──────────────────────────────────────────────────── */

@@ -206,7 +206,7 @@
 
       const img = imgWrap.querySelector('img');
       if (t.dataset.img) {
-        if (img) { img.src = t.dataset.img; }
+        if (img) { img.src = t.dataset.img; img.alt = t.dataset.title || ''; }
         else { imgWrap.innerHTML = `<img src="${t.dataset.img}" alt="">`; }
       } else {
         imgWrap.innerHTML = '';
@@ -323,5 +323,6 @@
     });
   }, { threshold: 0.3 });
 
-  observer.observe(document.querySelector('.blog-stats'));
+  const statsEl = document.querySelector('.blog-stats');
+  if (statsEl) observer.observe(statsEl);
 })();

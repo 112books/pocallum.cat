@@ -16,7 +16,7 @@
   <a class="noticies-featured" id="js-nf-link" href="{{ $first.RelPermalink }}">
     <div class="noticies-featured__img" id="js-nf-img">
       {{ with $first.Params.image }}
-      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" id="js-nf-imgel">
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $first.Title }}" id="js-nf-imgel">
       {{ end }}
     </div>
     <div class="noticies-featured__info">
