@@ -148,6 +148,14 @@
         if (cls) el.classList.add(cls);
       });
     }
+
+    // Slot machine: each photo's img spins in with staggered delay (random order)
+    fisherYates([...items]).forEach((el, i) => {
+      el.style.removeProperty('--_rot');
+      el.style.animationDelay = '';
+      const img = el.querySelector('img');
+      if (img) img.style.animationDelay = (i * 70) + 'ms';
+    });
   });
 })();
 

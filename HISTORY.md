@@ -4,6 +4,33 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-05-10 (sessió 4)
+
+### Header, menú blog i galeria portada amb animació slot machine
+
+**Header més gran**
+- `--nav-h`: 4rem → 5rem
+- `.nav-link font-size`: 0.78rem → 0.95rem
+- `.nav-lang font-size`: 0.75rem → 0.9rem
+
+**Menú blog restaurat**
+- Flux correcte: menú → `/blog/` (pàgina de presentació) → CTA "Visitar el blog" → `https://blog.pocallum.cat`
+- Error anterior: menú apuntava directament a URL externa, saltant-se la pàgina de presentació
+
+**Galeria de portada — layout 3×2**
+- Portada: `first 6` fotos (era 8), 3 columnes a tots els viewports (mobile, tablet, desktop)
+- `.foto-grid--home { grid-template-columns: repeat(3, 1fr) }` al base + overrides a 768px i 480px
+- Resultat: 2 files de 3 fotos consistents a totes les mides
+
+**Animació slot machine al shuffle**
+- `@keyframes slot-spin`: la imatge entra des de dalt, rebota amunt-avall amb amplitud decreixent fins parar (9 keyframes, lineal)
+- S'aplica a `.js-shuffle .foto-item img` — el contenidor queda fix (com un tambor de màquina), la imatge gira dins
+- JS: delay escalonat 70ms × posició en ordre aleatori; s'aplica a l'`img`, no al contenidor
+- Durada total: ~0.9s per carta, darrera carta acaba a ~1.3s
+- Funciona a la galeria de portada i a la galeria completa
+
+---
+
 ## 2026-05-09 (sessió 3)
 
 ### Pàgina de serveis — redisseny "capítols cinematogràfics" + noves seccions

@@ -422,6 +422,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
 }
+.foto-grid--home { grid-template-columns: repeat(3, 1fr); }
 .foto-item {
   overflow: hidden;
   aspect-ratio: 3/2;
@@ -447,6 +448,23 @@ h1, h2, h3, h4 {
 .foto-item:hover {
   outline: 2px solid var(--accent);
   outline-offset: -2px;
+}
+
+/* ── Shuffle slot-machine animation ────────────────────────────────────────── */
+@keyframes slot-spin {
+  0%   { transform: translateY(-110%); }
+  12%  { transform: translateY(90%); }
+  22%  { transform: translateY(-65%); }
+  32%  { transform: translateY(45%); }
+  42%  { transform: translateY(-28%); }
+  54%  { transform: translateY(15%); }
+  65%  { transform: translateY(-7%); }
+  75%  { transform: translateY(3%); }
+  85%  { transform: translateY(-1%); }
+  100% { transform: translateY(0); }
+}
+.js-shuffle .foto-item img {
+  animation: slot-spin 0.9s linear both;
 }
 
 /* ── Galeria mosaic ────────────────────────────────────────────────────────── */
@@ -2397,6 +2415,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 
   /* Foto grids */
   .foto-grid { grid-template-columns: repeat(2, 1fr); }
+  .foto-grid--home { grid-template-columns: repeat(3, 1fr); }
   .foto-grid--galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
@@ -2453,6 +2472,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 
 @media (max-width: 480px) {
   .foto-grid { grid-template-columns: 1fr; }
+  .foto-grid--home { grid-template-columns: repeat(3, 1fr); }
   .foto-grid--galeria { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
   .foto-grid--galeria .foto-item,
   .foto-item--wide, .foto-item--tall, .foto-item--big, .foto-item--hero { grid-column: span 1; grid-row: span 1; }
