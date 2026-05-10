@@ -27,9 +27,10 @@
     ],
   };
 
-  const lang    = window.__heroLang || 'ca';
+  const _heroData = window.__heroData || {};
+  const images  = _heroData.images || [];
+  const lang    = _heroData.lang   || 'ca';
   const phrases = PHRASES[lang] || PHRASES.ca;
-  const images  = window.__heroImages || [];
 
   // Phrase: fade out → swap → fade in
   const phrase = phrases[Math.floor(Math.random() * phrases.length)];

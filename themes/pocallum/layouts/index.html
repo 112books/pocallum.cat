@@ -32,11 +32,9 @@
   {{ end }}
 {{ end }}
 
-<script>
-{{ $heroImgs := slice }}{{ range $galeria }}{{ with .Params.image }}{{ $heroImgs = $heroImgs | append (. | strings.TrimLeft "/" | relURL) }}{{ end }}{{ end -}}
-window.__heroImages = {{ $heroImgs | jsonify }};
-window.__heroLang = {{ site.Language.Lang | jsonify }};
-</script>
+{{- $imgList := slice -}}
+{{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
+<script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang | jsonify | safeJS }};</script>
 {{/* Preload de la primera imatge del hero per LCP */}}
 {{ with index $galeria 0 }}{{ with .Params.image }}
 <link rel="preload" as="image" href="{{ . | strings.TrimLeft "/" | relURL }}">
