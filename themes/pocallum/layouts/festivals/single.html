@@ -73,7 +73,7 @@
     var strip = document.getElementById('js-fnav-strip');
     if (!strip) return;
     var current = strip.querySelector('.is-current');
-    if (current) current.scrollIntoView({block:'nearest', inline:'center'});
+    if (current) strip.scrollLeft = current.offsetLeft - (strip.offsetWidth / 2) + (current.offsetWidth / 2);
     document.getElementById('js-fnav-prev').addEventListener('click', function(){ strip.scrollBy({left:-180,behavior:'smooth'}); });
     document.getElementById('js-fnav-next').addEventListener('click', function(){ strip.scrollBy({left:180,behavior:'smooth'}); });
   })();
