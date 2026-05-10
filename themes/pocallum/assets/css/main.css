@@ -2697,3 +2697,46 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   border-color: var(--accent);
 }
 .back-top[hidden] { display: none; }
+
+/* ── Print ────────────────────────────────────────────────────────────────── */
+@media print {
+  :root {
+    --bg: #fff;
+    --bg2: #f5f5f5;
+    --fg: #111;
+    --mid: #555;
+    --line: #ccc;
+    --accent: #c33;
+  }
+
+  .site-header,
+  .site-footer,
+  .back-top,
+  .skip-link,
+  .read-progress,
+  .lightbox,
+  .nav-lang,
+  .foto-grid--home { display: none !important; }
+
+  body { font-size: 12pt; line-height: 1.6; }
+
+  h1 { font-size: 22pt; }
+  h2 { font-size: 16pt; }
+  h3 { font-size: 13pt; }
+
+  a { color: var(--fg); text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: var(--mid); }
+
+  .single-article,
+  .festival-detail { max-width: 100%; padding: 0; }
+
+  .single-article img,
+  .festival-header-img img { max-width: 100%; page-break-inside: avoid; }
+
+  .festival-meta,
+  .article-meta { border: none; padding: 0; margin-bottom: 1rem; }
+
+  .noticies-list,
+  .festivals-list,
+  .foto-grid { display: none !important; }
+}
