@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-10T23:41:44.810008Z",
+  "generated": "2026-05-11T02:10:04.697946Z",
   "period": {
-    "start": "2025-05-10",
-    "end": "2026-05-10"
+    "start": "2025-05-11",
+    "end": "2026-05-11"
   },
-  "total": 35,
+  "total": 78,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,24 +13,52 @@
     },
     {
       "date": "2026-05-10",
-      "count": 12
+      "count": 55
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 4
-    },
-    {
-      "path": "/ca",
-      "count": 3
+      "count": 15
     },
     {
       "path": "/galeria",
+      "count": 9
+    },
+    {
+      "path": "/serveis",
+      "count": 5
+    },
+    {
+      "path": "/ca",
+      "count": 4
+    },
+    {
+      "path": "/festivals",
       "count": 3
     },
     {
+      "path": "/noticies",
+      "count": 3
+    },
+    {
+      "path": "/qui-som",
+      "count": 3
+    },
+    {
+      "path": "/festivals/carnestoltes-nou-barris",
+      "count": 2
+    },
+    {
       "path": "/ca/galeria",
+      "count": 2
+    },
+    {
+      "path": "/contacte",
+      "count": 2
+    },
+    {
+      "path": "/blog",
       "count": 2
     },
     {
@@ -38,28 +66,72 @@
       "count": 2
     },
     {
-      "path": "/festivals",
-      "count": 2
-    },
-    {
-      "path": "/noticies",
-      "count": 2
-    },
-    {
       "path": "/en/blog",
-      "count": 2
-    },
-    {
-      "path": "/qui-som",
-      "count": 2
-    },
-    {
-      "path": "/serveis",
       "count": 2
     },
     {
       "path": "/en/festivals",
       "count": 2
+    },
+    {
+      "path": "/noticies/2025-11-retrats-portfolio",
+      "count": 1
+    },
+    {
+      "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
+      "count": 1
+    },
+    {
+      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2025-11-retrats-portfolio",
+      "count": 1
+    },
+    {
+      "path": "/ca/tags/jazz-i-am",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2026-03-movent-imatges-fixes",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
+      "count": 1
+    },
+    {
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 1
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 1
+    },
+    {
+      "path": "/tags/nau-bostik",
+      "count": 1
+    },
+    {
+      "path": "/noticies/2025-10-vanesa-aibar-estampa",
+      "count": 1
+    },
+    {
+      "path": "/noticies/2026-03-jazz-i-am-2026",
+      "count": 1
+    },
+    {
+      "path": "/es/2016/04",
+      "count": 1
+    },
+    {
+      "path": "/ca/contacte",
+      "count": 1
+    },
+    {
+      "path": "/es/contacto",
+      "count": 1
     },
     {
       "path": "/ca/tags/vilafranca-del-penedes",
@@ -74,15 +146,7 @@
       "count": 1
     },
     {
-      "path": "/contacte",
-      "count": 1
-    },
-    {
       "path": "/ca/blog",
-      "count": 1
-    },
-    {
-      "path": "/blog",
       "count": 1
     },
     {
@@ -99,35 +163,77 @@
     }
   ],
   "by_lang": {
-    "ca": 10,
-    "en": 4
+    "ca": 16,
+    "en": 5,
+    "es": 3
   },
   "by_section": {
-    "inici": 7,
-    "galeria": 5,
-    "festivals": 6,
-    "noticies": 3,
-    "blog": 4,
-    "qui-som": 2,
-    "serveis": 2,
-    "tags": 1,
+    "inici": 19,
+    "galeria": 11,
+    "serveis": 5,
+    "festivals": 11,
+    "noticies": 10,
+    "qui-som": 3,
+    "contacte": 3,
+    "blog": 5,
+    "servicios-fotograficos": 1,
+    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 1,
+    "tags": 3,
+    "2016": 1,
+    "contacto": 1,
     "cerca": 2,
     "movent-les-imatges-fixes": 1,
-    "contacte": 1,
     "admin": 1
   },
   "noticies_top": [
+    {
+      "path": "/noticies/2025-11-retrats-portfolio",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2025-11-retrats-portfolio",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2026-03-movent-imatges-fixes",
+      "count": 1
+    },
+    {
+      "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
+      "count": 1
+    },
+    {
+      "path": "/noticies/2025-10-vanesa-aibar-estampa",
+      "count": 1
+    },
+    {
+      "path": "/noticies/2026-03-jazz-i-am-2026",
+      "count": 1
+    },
     {
       "path": "/noticies/2026-03-no-fem-fotos-concerts",
       "count": 1
     }
   ],
-  "festivals_top": [],
+  "festivals_top": [
+    {
+      "path": "/festivals/carnestoltes-nou-barris",
+      "count": 2
+    },
+    {
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 1
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 1
+    }
+  ],
   "wizard_funnel": {
-    "wizard-s1": 0,
-    "wizard-s2": 1,
-    "wizard-s3": 0,
-    "wizard-s4": 0,
+    "wizard-s1": 2,
+    "wizard-s2": 2,
+    "wizard-s3": 1,
+    "wizard-s4": 1,
     "wizard-sent": 0
   },
   "browsers": [
@@ -242,12 +348,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 4
+      "count": 18
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 1
+      "count": 4
     },
     {
       "name": "blog.pocallum.cat",
