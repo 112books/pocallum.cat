@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11T18:51:22.355485Z",
+  "generated": "2026-05-11T21:58:05.314372Z",
   "period": {
     "start": "2025-05-11",
     "end": "2026-05-11"
@@ -240,22 +240,22 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 58
+      "count": 62
     },
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 43
+      "count": 45
+    },
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 3
     },
     {
       "name": "Firefox",
       "id": "Firefox",
       "count": 3
-    },
-    {
-      "name": "Desconegut",
-      "id": "Desconegut",
-      "count": 2
     }
   ],
   "systems": [
@@ -267,39 +267,39 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 22
+      "count": 26
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 5
+      "count": 6
     }
   ],
   "sizes": [
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 46
+      "count": 47
     },
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 32
+      "count": 34
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 26
+      "count": 30
     },
     {
       "name": "tablet",
@@ -311,7 +311,17 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 100
+      "count": 105
+    },
+    {
+      "name": "Sweden",
+      "id": "SE",
+      "count": 2
+    },
+    {
+      "name": "United States",
+      "id": "US",
+      "count": 2
     },
     {
       "name": "Czechia",
@@ -329,18 +339,8 @@
       "count": 1
     },
     {
-      "name": "Sweden",
-      "id": "SE",
-      "count": 1
-    },
-    {
       "name": "Singapore",
       "id": "SG",
-      "count": 1
-    },
-    {
-      "name": "United States",
-      "id": "US",
       "count": 1
     }
   ],
