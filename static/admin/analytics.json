@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-11T23:48:28.358473Z",
+  "generated": "2026-05-12T02:05:36.115396Z",
   "period": {
-    "start": "2025-05-11",
-    "end": "2026-05-11"
+    "start": "2025-05-12",
+    "end": "2026-05-12"
   },
-  "total": 78,
+  "total": 101,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -14,12 +14,20 @@
     {
       "date": "2026-05-10",
       "count": 55
+    },
+    {
+      "date": "2026-05-11",
+      "count": 21
+    },
+    {
+      "date": "2026-05-12",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 15
+      "count": 21
     },
     {
       "path": "/galeria",
@@ -31,7 +39,15 @@
     },
     {
       "path": "/ca",
+      "count": 5
+    },
+    {
+      "path": "/contacte",
       "count": 4
+    },
+    {
+      "path": "/blog",
+      "count": 3
     },
     {
       "path": "/festivals",
@@ -46,19 +62,19 @@
       "count": 3
     },
     {
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "count": 2
+    },
+    {
+      "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
+      "count": 2
+    },
+    {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 2
     },
     {
       "path": "/ca/galeria",
-      "count": 2
-    },
-    {
-      "path": "/contacte",
-      "count": 2
-    },
-    {
-      "path": "/blog",
       "count": 2
     },
     {
@@ -72,6 +88,42 @@
     {
       "path": "/en/festivals",
       "count": 2
+    },
+    {
+      "path": "/revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre",
+      "count": 1
+    },
+    {
+      "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
+      "count": 1
+    },
+    {
+      "path": "/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 1
+    },
+    {
+      "path": "/es/node/58/track?page=92",
+      "count": 1
+    },
+    {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 1
+    },
+    {
+      "path": "/on-veure-exposicions-de-fotografia-a-barcelona",
+      "count": 1
+    },
+    {
+      "path": "/serveis-fotografics-2/fotos-de-grups-musicals",
+      "count": 1
+    },
+    {
+      "path": "/es/probando-la-pelicula-adox-hr-50",
+      "count": 1
+    },
+    {
+      "path": "/es/guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona",
+      "count": 1
     },
     {
       "path": "/noticies/2025-11-retrats-portfolio",
@@ -163,19 +215,28 @@
     }
   ],
   "by_lang": {
-    "ca": 16,
-    "en": 5,
-    "es": 3
+    "ca": 17,
+    "es": 9,
+    "en": 5
   },
   "by_section": {
-    "inici": 19,
+    "inici": 26,
     "galeria": 11,
     "serveis": 5,
-    "festivals": 11,
+    "contacte": 5,
+    "blog": 6,
+    "festivals": 12,
     "noticies": 10,
     "qui-som": 3,
-    "contacte": 3,
-    "blog": 5,
+    "serveis-fotografics-2": 3,
+    "caffenol-una-tecnica-de-revelado-alternativa": 2,
+    "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 1,
+    "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 1,
+    "sessio-amb-la-ballarina-nahomi-itzel": 1,
+    "node": 1,
+    "on-veure-exposicions-de-fotografia-a-barcelona": 1,
+    "probando-la-pelicula-adox-hr-50": 1,
+    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 1,
     "servicios-fotograficos": 1,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 1,
     "tags": 3,
@@ -221,6 +282,10 @@
       "count": 2
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 1
+    },
+    {
       "path": "/festivals/ciutat-flamenco-barcelona",
       "count": 1
     },
@@ -231,10 +296,10 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 2,
-    "wizard-s2": 2,
-    "wizard-s3": 1,
-    "wizard-s4": 1,
-    "wizard-sent": 0
+    "wizard-s2": 4,
+    "wizard-s3": 3,
+    "wizard-s4": 3,
+    "wizard-sent": 2
   },
   "browsers": [
     {
@@ -245,7 +310,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 45
+      "count": 47
     },
     {
       "name": "Desconegut",
@@ -272,7 +337,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 7
+      "count": 9
     },
     {
       "name": "Android",
@@ -294,7 +359,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 34
+      "count": 36
     },
     {
       "name": "phone",
@@ -312,6 +377,11 @@
       "name": "Spain",
       "id": "ES",
       "count": 105
+    },
+    {
+      "name": "Argentina",
+      "id": "AR",
+      "count": 2
     },
     {
       "name": "Sweden",
@@ -348,16 +418,26 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 18
+      "count": 26
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 4
+      "count": 10
     },
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
+      "count": 2
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 1
+    },
+    {
+      "name": "112books.github.io",
+      "id": "112books.github.io",
       "count": 1
     }
   ]
