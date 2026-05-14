@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-13T23:55:52.315506Z",
+  "generated": "2026-05-14T02:29:15.415572Z",
   "period": {
-    "start": "2025-05-13",
-    "end": "2026-05-13"
+    "start": "2025-05-14",
+    "end": "2026-05-14"
   },
-  "total": 106,
+  "total": 119,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -22,16 +22,28 @@
     {
       "date": "2026-05-12",
       "count": 7
+    },
+    {
+      "date": "2026-05-13",
+      "count": 12
+    },
+    {
+      "date": "2026-05-14",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 21
+      "count": 24
     },
     {
       "path": "/galeria",
-      "count": 9
+      "count": 11
+    },
+    {
+      "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
+      "count": 5
     },
     {
       "path": "/serveis",
@@ -44,6 +56,14 @@
     {
       "path": "/contacte",
       "count": 4
+    },
+    {
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "count": 3
+    },
+    {
+      "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
+      "count": 3
     },
     {
       "path": "/blog",
@@ -62,6 +82,10 @@
       "count": 3
     },
     {
+      "path": "/serveis-fotografics-2/fotografia-desdeveniments",
+      "count": 2
+    },
+    {
       "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
       "count": 2
     },
@@ -71,18 +95,6 @@
     },
     {
       "path": "/es/probando-la-pelicula-adox-hr-50",
-      "count": 2
-    },
-    {
-      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
-      "count": 2
-    },
-    {
-      "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
-      "count": 2
-    },
-    {
-      "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 2
     },
     {
@@ -106,7 +118,11 @@
       "count": 2
     },
     {
-      "path": "/serveis-fotografics-2/fotografia-desdeveniments",
+      "path": "/en/photographic-services/photography-studio/books-models-and-artists",
+      "count": 1
+    },
+    {
+      "path": "/es/vijazz-2025-el-jazz-que-me-ha-hecho-volver-a-casa",
       "count": 1
     },
     {
@@ -219,15 +235,18 @@
     }
   ],
   "by_lang": {
+    "es": 17,
     "ca": 17,
-    "es": 12,
-    "en": 5
+    "en": 6
   },
   "by_section": {
-    "inici": 26,
-    "galeria": 11,
+    "inici": 29,
+    "galeria": 13,
+    "servicios-fotograficos": 5,
     "serveis": 5,
     "contacte": 5,
+    "serveis-fotografics-2": 6,
+    "caffenol-una-tecnica-de-revelado-alternativa": 3,
     "blog": 6,
     "festivals": 12,
     "noticies": 10,
@@ -235,9 +254,8 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "on-veure-exposicions-de-fotografia-a-barcelona": 2,
     "probando-la-pelicula-adox-hr-50": 2,
-    "serveis-fotografics-2": 4,
-    "caffenol-una-tecnica-de-revelado-alternativa": 2,
-    "servicios-fotograficos": 2,
+    "photographic-services": 1,
+    "vijazz-2025-el-jazz-que-me-ha-hecho-volver-a-casa": 1,
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 1,
     "sessio-amb-la-ballarina-nahomi-itzel": 1,
     "node": 1,
@@ -437,12 +455,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 29
+      "count": 31
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 15
+      "count": 22
     },
     {
       "name": "blog.pocallum.cat",
