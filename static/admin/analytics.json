@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-15T17:25:03.511077Z",
+  "generated": "2026-05-15T19:18:10.836590Z",
   "period": {
     "start": "2025-05-15",
     "end": "2026-05-15"
@@ -335,13 +335,13 @@
       "count": 73
     },
     {
-      "name": "Desconegut",
-      "id": "Desconegut",
-      "count": 4
-    },
-    {
       "name": "Firefox",
       "id": "Firefox",
+      "count": 6
+    },
+    {
+      "name": "Desconegut",
+      "id": "Desconegut",
       "count": 4
     }
   ],
@@ -359,7 +359,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 26
+      "count": 28
     },
     {
       "name": "Android",
@@ -391,7 +391,7 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 15
+      "count": 17
     }
   ],
   "locations": [
@@ -403,7 +403,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 14
+      "count": 16
     },
     {
       "name": "Argentina",
