@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-16T23:41:57.911515Z",
+  "generated": "2026-05-17T06:13:43.537832Z",
   "period": {
-    "start": "2025-05-16",
-    "end": "2026-05-16"
+    "start": "2025-05-17",
+    "end": "2026-05-17"
   },
-  "total": 161,
+  "total": 175,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -37,13 +37,17 @@
     },
     {
       "date": "2026-05-16",
-      "count": 2
+      "count": 15
+    },
+    {
+      "date": "2026-05-17",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 41
+      "count": 43
     },
     {
       "path": "/galeria",
@@ -51,22 +55,26 @@
     },
     {
       "path": "/serveis",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/ca",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
-      "count": 5
+      "count": 6
+    },
+    {
+      "path": "/contacte",
+      "count": 6
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 5
     },
     {
-      "path": "/contacte",
+      "path": "/festivals",
       "count": 5
     },
     {
@@ -74,7 +82,7 @@
       "count": 4
     },
     {
-      "path": "/festivals",
+      "path": "/blog",
       "count": 4
     },
     {
@@ -86,11 +94,11 @@
       "count": 3
     },
     {
-      "path": "/ca/galeria",
+      "path": "/festivals/carnestoltes-nou-barris",
       "count": 3
     },
     {
-      "path": "/blog",
+      "path": "/ca/galeria",
       "count": 3
     },
     {
@@ -110,11 +118,15 @@
       "count": 2
     },
     {
+      "path": "/es/guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona",
+      "count": 2
+    },
+    {
       "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
       "count": 2
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
+      "path": "/festivals/flamenco-de-barrio",
       "count": 2
     },
     {
@@ -130,12 +142,24 @@
       "count": 2
     },
     {
+      "path": "/cerca",
+      "count": 2
+    },
+    {
       "path": "/en/blog",
       "count": 2
     },
     {
       "path": "/en/festivals",
       "count": 2
+    },
+    {
+      "path": "/festivals/vijazz",
+      "count": 1
+    },
+    {
+      "path": "/es/practicas-de-revelado-de-placas-de-8x10",
+      "count": 1
     },
     {
       "path": "/en/content/photography-studio",
@@ -206,10 +230,6 @@
       "count": 1
     },
     {
-      "path": "/es/guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona",
-      "count": 1
-    },
-    {
       "path": "/noticies/2025-11-retrats-portfolio",
       "count": 1
     },
@@ -224,45 +244,31 @@
     {
       "path": "/ca/tags/jazz-i-am",
       "count": 1
-    },
-    {
-      "path": "/ca/noticies/2026-03-movent-imatges-fixes",
-      "count": 1
-    },
-    {
-      "path": "/festivals/ciutat-flamenco-barcelona",
-      "count": 1
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
-      "count": 1
-    },
-    {
-      "path": "/tags/nau-bostik",
-      "count": 1
     }
   ],
   "by_lang": {
-    "ca": 27,
-    "es": 19,
+    "ca": 28,
+    "es": 21,
     "en": 7
   },
   "by_section": {
-    "inici": 47,
+    "inici": 50,
     "galeria": 16,
-    "serveis": 7,
-    "serveis-fotografics-2": 8,
+    "serveis": 8,
+    "serveis-fotografics-2": 9,
+    "contacte": 8,
     "servicios-fotograficos": 5,
-    "contacte": 7,
+    "festivals": 19,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "festivals": 15,
+    "blog": 7,
     "qui-som": 5,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
-    "blog": 6,
     "noticies": 13,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
-    "cerca": 3,
+    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "cerca": 4,
+    "practicas-de-revelado-de-placas-de-8x10": 1,
     "content": 1,
     "lomography-grans-fotografies-amb-cameres-senzilles": 1,
     "tags": 4,
@@ -272,7 +278,6 @@
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 1,
     "sessio-amb-la-ballarina-nahomi-itzel": 1,
     "node": 1,
-    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 1,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 1,
     "2016": 1,
     "contacto": 1,
@@ -299,16 +304,20 @@
     {
       "path": "/ca/noticies/2025-11-retrats-portfolio",
       "count": 1
-    },
-    {
-      "path": "/ca/noticies/2026-03-movent-imatges-fixes",
-      "count": 1
     }
   ],
   "festivals_top": [
     {
       "path": "/festivals/carnestoltes-nou-barris",
+      "count": 3
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
       "count": 2
+    },
+    {
+      "path": "/festivals/vijazz",
+      "count": 1
     },
     {
       "path": "/festivals/picnic-de-blues",
@@ -320,14 +329,6 @@
     },
     {
       "path": "/festivals/festival-blues-barcelona",
-      "count": 1
-    },
-    {
-      "path": "/festivals/ciutat-flamenco-barcelona",
-      "count": 1
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
       "count": 1
     }
   ],
@@ -475,12 +476,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 44
+      "count": 46
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 26
+      "count": 28
     },
     {
       "name": "bing.com",
