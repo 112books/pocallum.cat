@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-18T23:56:49.808774Z",
+  "generated": "2026-05-19T06:41:15.173459Z",
   "period": {
-    "start": "2025-05-18",
-    "end": "2026-05-18"
+    "start": "2025-05-19",
+    "end": "2026-05-19"
   },
-  "total": 178,
+  "total": 179,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -42,12 +42,16 @@
     {
       "date": "2026-05-17",
       "count": 4
+    },
+    {
+      "date": "2026-05-18",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 44
+      "count": 45
     },
     {
       "path": "/galeria",
@@ -252,7 +256,7 @@
     "en": 7
   },
   "by_section": {
-    "inici": 51,
+    "inici": 52,
     "galeria": 16,
     "serveis": 8,
     "serveis-fotografics-2": 9,
@@ -482,7 +486,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 46
+      "count": 47
     },
     {
       "name": "Google",
