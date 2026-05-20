@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-20T10:19:56.213317Z",
+  "generated": "2026-05-20T13:31:46.137261Z",
   "period": {
     "start": "2025-05-20",
     "end": "2026-05-20"
@@ -359,7 +359,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 88
+      "count": 91
     },
     {
       "name": "Firefox",
@@ -389,31 +389,31 @@
       "count": 34
     },
     {
+      "name": "Linux",
+      "id": "Linux",
+      "count": 17
+    },
+    {
       "name": "Android",
       "id": "Android",
       "count": 15
-    },
-    {
-      "name": "Linux",
-      "id": "Linux",
-      "count": 14
     }
   ],
   "sizes": [
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 59
+      "count": 61
+    },
+    {
+      "name": "tablet",
+      "id": "tablet",
+      "count": 50
     },
     {
       "name": "desktophd",
       "id": "desktophd",
       "count": 50
-    },
-    {
-      "name": "tablet",
-      "id": "tablet",
-      "count": 49
     },
     {
       "name": "phone",
@@ -430,7 +430,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 21
+      "count": 23
     },
     {
       "name": "Argentina",
@@ -445,6 +445,11 @@
     {
       "name": "United Kingdom",
       "id": "GB",
+      "count": 2
+    },
+    {
+      "name": "Poland",
+      "id": "PL",
       "count": 2
     },
     {
@@ -490,11 +495,6 @@
     {
       "name": "Mexico",
       "id": "MX",
-      "count": 1
-    },
-    {
-      "name": "Netherlands",
-      "id": "NL",
       "count": 1
     }
   ],
