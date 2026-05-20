@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-19T23:54:56.986935Z",
+  "generated": "2026-05-20T02:27:57.216103Z",
   "period": {
-    "start": "2025-05-19",
-    "end": "2026-05-19"
+    "start": "2025-05-20",
+    "end": "2026-05-20"
   },
-  "total": 179,
+  "total": 183,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -46,6 +46,14 @@
     {
       "date": "2026-05-18",
       "count": 1
+    },
+    {
+      "date": "2026-05-19",
+      "count": 3
+    },
+    {
+      "date": "2026-05-20",
+      "count": 1
     }
   ],
   "hits": [
@@ -58,11 +66,11 @@
       "count": 13
     },
     {
-      "path": "/serveis",
-      "count": 7
+      "path": "/ca",
+      "count": 8
     },
     {
-      "path": "/ca",
+      "path": "/serveis",
       "count": 7
     },
     {
@@ -162,6 +170,18 @@
       "count": 2
     },
     {
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 1
+    },
+    {
+      "path": "/es/moviendo-las-imagenes-fijas",
+      "count": 1
+    },
+    {
+      "path": "/en/photography-services/photography-training",
+      "count": 1
+    },
+    {
       "path": "/es/dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones",
       "count": 1
     },
@@ -236,33 +256,21 @@
     {
       "path": "/serveis-fotografics-2/fotos-de-grups-musicals",
       "count": 1
-    },
-    {
-      "path": "/noticies/2025-11-retrats-portfolio",
-      "count": 1
-    },
-    {
-      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
-      "count": 1
-    },
-    {
-      "path": "/ca/noticies/2025-11-retrats-portfolio",
-      "count": 1
     }
   ],
   "by_lang": {
-    "ca": 28,
-    "es": 23,
-    "en": 7
+    "ca": 29,
+    "es": 24,
+    "en": 8
   },
   "by_section": {
-    "inici": 52,
+    "inici": 53,
     "galeria": 16,
     "serveis": 8,
     "serveis-fotografics-2": 9,
     "contacte": 8,
     "servicios-fotograficos": 5,
-    "festivals": 19,
+    "festivals": 20,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "blog": 7,
     "qui-som": 5,
@@ -273,6 +281,8 @@
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
     "cerca": 4,
+    "moviendo-las-imagenes-fijas": 1,
+    "photography-services": 1,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 1,
     "content": 1,
     "lomography-grans-fotografies-amb-cameres-senzilles": 1,
@@ -301,14 +311,6 @@
     {
       "path": "/ca/noticies/2025-05-mabe-kimono",
       "count": 1
-    },
-    {
-      "path": "/noticies/2025-11-retrats-portfolio",
-      "count": 1
-    },
-    {
-      "path": "/ca/noticies/2025-11-retrats-portfolio",
-      "count": 1
     }
   ],
   "festivals_top": [
@@ -319,6 +321,10 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 2
+    },
+    {
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 1
     },
     {
       "path": "/festivals/vijazz",
@@ -348,12 +354,12 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 102
+      "count": 103
     },
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 84
+      "count": 88
     },
     {
       "name": "Firefox",
@@ -370,17 +376,17 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 104
+      "count": 105
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 36
+      "count": 37
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 32
+      "count": 33
     },
     {
       "name": "Android",
@@ -390,7 +396,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 12
+      "count": 14
     }
   ],
   "sizes": [
@@ -405,14 +411,14 @@
       "count": 50
     },
     {
+      "name": "tablet",
+      "id": "tablet",
+      "count": 48
+    },
+    {
       "name": "phone",
       "id": "phone",
       "count": 47
-    },
-    {
-      "name": "tablet",
-      "id": "tablet",
-      "count": 43
     }
   ],
   "locations": [
@@ -424,7 +430,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 16
+      "count": 20
     },
     {
       "name": "Argentina",
@@ -496,12 +502,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 47
+      "count": 50
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 30
+      "count": 31
     },
     {
       "name": "bing.com",
