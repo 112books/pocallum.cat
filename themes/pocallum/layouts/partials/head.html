@@ -35,7 +35,7 @@
 
 {{/* Open Graph */}}
 <meta property="og:site_name"   content="Pocallum">
-<meta property="og:locale"      content="{{ .Language.Params.locale | default "ca_ES" }}">
+<meta property="og:locale"      content="{{ .Language.Params.ogLocale | default "ca_ES" }}">
 <meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}">

@@ -15,7 +15,7 @@
       <ul class="nav-links" role="list">
         {{ range .Site.Menus.main }}
         <li>
-          <a href="{{ .URL | relURL }}"
+          <a href="{{ .URL | relLangURL }}"
              class="nav-link{{ if $.IsMenuCurrent "main" . }} is-active{{ end }}{{ with .Params.highlight }} nav-link--cta{{ end }}">
             {{ .Name }}
           </a>

@@ -6,13 +6,13 @@ enableGitInfo   = false
 summaryLength   = 70
 buildFuture     = true
 
+defaultContentLanguage        = "ca"
+defaultContentLanguageInSubdir = false
+
 [sitemap]
   changefreq = "weekly"
   priority   = 0.5
   filename   = "sitemap.xml"
-
-defaultContentLanguage        = "ca"
-defaultContentLanguageInSubdir = false
 
 [pagination]
   pagerSize = 6
@@ -26,35 +26,35 @@ defaultContentLanguageInSubdir = false
 [languages]
 
   [languages.ca]
-    contentDir   = "content/ca"
-    languageName = "Català"
-    languageCode = "ca"
-    weight       = 1
-    title        = "Pocallum"
+    contentDir = "content/ca"
+    label      = "Català"
+    locale     = "ca"
+    weight     = 1
+    title      = "Pocallum"
     [languages.ca.params]
       description = "Fotografia de cultura. Jazz, blues, teatre, dansa i arts escèniques. Barcelona."
-      locale      = "ca_ES"
+      ogLocale    = "ca_ES"
 
   [languages.en]
-    contentDir   = "content/en"
-    languageName = "English"
-    languageCode = "en"
-    weight       = 2
-    title        = "Pocallum"
+    contentDir = "content/en"
+    label      = "English"
+    locale     = "en"
+    weight     = 2
+    title      = "Pocallum"
     [languages.en.params]
       description = "Cultural photography. Jazz, blues, theatre, dance and performing arts. Barcelona."
-      locale      = "en_GB"
+      ogLocale    = "en_GB"
 
   [languages.es]
-    contentDir   = "content/es"
-    languageName = "Castellano"
-    languageCode = "es"
-    weight       = 3
-    disabled     = true
-    title        = "Pocallum"
+    contentDir = "content/es"
+    label      = "Castellano"
+    locale     = "es"
+    weight     = 3
+    disabled   = true
+    title      = "Pocallum"
     [languages.es.params]
       description = "Fotografía cultural. Jazz, blues, teatro, danza y artes escénicas. Barcelona."
-      locale      = "es_ES"
+      ogLocale    = "es_ES"
 
 # ── Paràmetres globals ────────────────────────────────────────────────────────
 
