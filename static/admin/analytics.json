@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-20T23:05:07.245095Z",
+  "generated": "2026-05-21T02:28:47.450758Z",
   "period": {
-    "start": "2025-05-20",
-    "end": "2026-05-20"
+    "start": "2025-05-21",
+    "end": "2026-05-21"
   },
-  "total": 183,
+  "total": 193,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -53,13 +53,13 @@
     },
     {
       "date": "2026-05-20",
-      "count": 1
+      "count": 11
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 45
+      "count": 48
     },
     {
       "path": "/galeria",
@@ -72,6 +72,10 @@
     {
       "path": "/serveis",
       "count": 7
+    },
+    {
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 6
     },
     {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
@@ -98,6 +102,10 @@
       "count": 4
     },
     {
+      "path": "/noticies",
+      "count": 4
+    },
+    {
       "path": "/qui-som",
       "count": 4
     },
@@ -114,11 +122,11 @@
       "count": 3
     },
     {
-      "path": "/noticies",
-      "count": 3
+      "path": "/es/practicas-de-revelado-de-placas-de-8x10",
+      "count": 2
     },
     {
-      "path": "/es/practicas-de-revelado-de-placas-de-8x10",
+      "path": "/en/content/photography-studio",
       "count": 2
     },
     {
@@ -170,10 +178,6 @@
       "count": 2
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 1
-    },
-    {
       "path": "/es/moviendo-las-imagenes-fijas",
       "count": 1
     },
@@ -187,10 +191,6 @@
     },
     {
       "path": "/festivals/vijazz",
-      "count": 1
-    },
-    {
-      "path": "/en/content/photography-studio",
       "count": 1
     },
     {
@@ -261,22 +261,23 @@
   "by_lang": {
     "ca": 29,
     "es": 24,
-    "en": 8
+    "en": 9
   },
   "by_section": {
-    "inici": 53,
+    "inici": 56,
     "galeria": 16,
     "serveis": 8,
+    "festivals": 25,
     "serveis-fotografics-2": 9,
     "contacte": 8,
     "servicios-fotograficos": 5,
-    "festivals": 20,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "blog": 7,
+    "noticies": 14,
     "qui-som": 5,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
-    "noticies": 13,
     "practicas-de-revelado-de-placas-de-8x10": 2,
+    "content": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
@@ -284,7 +285,6 @@
     "moviendo-las-imagenes-fijas": 1,
     "photography-services": 1,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 1,
-    "content": 1,
     "lomography-grans-fotografies-amb-cameres-senzilles": 1,
     "tags": 4,
     "sesion-con-la-bailarina-nahomi-itzel": 1,
@@ -315,16 +315,16 @@
   ],
   "festivals_top": [
     {
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 6
+    },
+    {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 3
     },
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 2
-    },
-    {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 1
     },
     {
       "path": "/festivals/vijazz",
@@ -502,7 +502,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 50
+      "count": 59
     },
     {
       "name": "Google",
@@ -513,6 +513,11 @@
       "name": "bing.com",
       "id": "bing.com",
       "count": 3
+    },
+    {
+      "name": "112books.github.io",
+      "id": "112books.github.io",
+      "count": 2
     },
     {
       "name": "blog.pocallum.cat",
@@ -537,11 +542,6 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 1
-    },
-    {
-      "name": "112books.github.io",
-      "id": "112books.github.io",
       "count": 1
     }
   ]
