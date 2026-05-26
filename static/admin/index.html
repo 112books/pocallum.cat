@@ -186,6 +186,37 @@
       display: inline-block;
     }
     .btn-sm:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-sm.btn-live { border-color: #2a2a2a; color: var(--mid); }
+    .btn-sm.btn-live:hover { border-color: var(--green); color: var(--green); }
+    .btn-sm.btn-live.loading { opacity: .5; cursor: not-allowed; pointer-events: none; }
+
+    /* ── Token modal ─────────────────────────────────────────── */
+    #token-modal {
+      display: none;
+      position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,.85);
+      align-items: center; justify-content: center;
+    }
+    .token-box {
+      width: 380px; background: var(--bg2);
+      border: 1px solid var(--line); padding: 2rem;
+    }
+    .token-box h3 {
+      font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700;
+      margin-bottom: .4rem; letter-spacing: -.01em;
+    }
+    .token-box p { font-size: 11px; color: var(--mid); margin-bottom: 1.4rem; line-height: 1.7; }
+    .token-box p a { color: var(--accent); }
+    #token-input {
+      width: 100%; background: transparent; border: none;
+      border-bottom: 1px solid var(--line); padding: .5rem 0;
+      font-family: 'IBM Plex Sans Condensed', monospace; font-size: 13px;
+      color: var(--fg); outline: none; margin-bottom: 1.2rem; letter-spacing: .06em;
+    }
+    #token-input:focus { border-bottom-color: var(--accent); }
+    #token-input::placeholder { color: var(--mid); }
+    .token-actions { display: flex; gap: .6rem; align-items: center; }
+    #token-err { font-size: 11px; color: var(--warn); min-height: 1.2em; margin-top: .5rem; }
 
     /* ── Layout ─────────────────────────────────────────────── */
     .dash-body { padding: 2rem; max-width: 1100px; margin: 0 auto; }
@@ -391,6 +422,24 @@
   </form>
 </div>
 
+<!-- ══ TOKEN MODAL ═══════════════════════════════════════════ -->
+<div id="token-modal">
+  <form id="token-form" class="token-box" novalidate>
+    <h3>Token de GoatCounter</h3>
+    <p>
+      Ves a <a href="https://pocallum.goatcounter.com/settings/api" target="_blank" rel="noopener">GoatCounter → Settings → API</a>,
+      crea un token amb permís <em>Read stats</em> i enganxa'l aquí.<br>
+      Es guarda a la sessió del navegador, mai al codi.
+    </p>
+    <input id="token-input" type="password" placeholder="token_…" autocomplete="off" spellcheck="false">
+    <div class="token-actions">
+      <button type="submit" class="btn" style="font-size:11px;padding:.45rem 1.1rem">Actualitzar →</button>
+      <button type="button" class="btn-sm" id="token-cancel">Cancel·lar</button>
+    </div>
+    <div id="token-err"></div>
+  </form>
+</div>
+
 <!-- ══ DASHBOARD ════════════════════════════════════════════ -->
 <div id="dashboard">
 
@@ -400,6 +449,7 @@
       <div class="topbar-gen" id="topbar-gen">carregant…</div>
     </div>
     <div class="topbar-actions">
+      <button type="button" class="btn-sm btn-live" id="btn-refresh">↻ En viu</button>
       <a href="/" class="btn-sm">← Web</a>
       <a href="https://pocallum.goatcounter.com/" target="_blank" rel="noopener" class="btn-sm">GoatCounter ↗</a>
       <button type="button" class="btn-sm" id="btn-refresh">↺ Actualitzar</button>
@@ -1092,6 +1142,175 @@ function fmtPeriod(start, end) {
   const f = s => new Date(s+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'});
   return f(start)+' – '+f(end);
 }
+/* ══ REFRESH EN VIU ══════════════════════════════════════════ */
+const GC_TOKEN_KEY = 'gc_live_token';
+
+document.getElementById('btn-refresh').addEventListener('click', () => {
+  const token = sessionStorage.getItem(GC_TOKEN_KEY);
+  if (token) {
+    fetchLiveData(token);
+  } else {
+    document.getElementById('token-modal').style.display = 'flex';
+    document.getElementById('token-input').focus();
+  }
+});
+
+document.getElementById('token-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const token = document.getElementById('token-input').value.trim();
+  if (!token) return;
+  document.getElementById('token-err').textContent = '';
+  document.getElementById('token-modal').style.display = 'none';
+  document.getElementById('token-input').value = '';
+  sessionStorage.setItem(GC_TOKEN_KEY, token);
+  fetchLiveData(token);
+});
+
+document.getElementById('token-cancel').addEventListener('click', () => {
+  document.getElementById('token-modal').style.display = 'none';
+  document.getElementById('token-input').value = '';
+});
+
+async function fetchLiveData(token) {
+  const btn = document.getElementById('btn-refresh');
+  btn.textContent = '↻ …';
+  btn.classList.add('loading');
+  setBanner('loading', 'obtenint dades en viu de GoatCounter…');
+
+  const BASE  = CFG.gcUrl + '/api/v0';
+  const END   = isoToday();
+  const START = daysAgo(365);
+
+  async function gc(path) {
+    const sep = path.includes('?') ? '&' : '?';
+    const url = BASE + path + sep + 'start=' + START + '&end=' + END;
+    const r = await fetch(url, { headers: { 'Authorization': 'Bearer ' + token } });
+    if (r.status === 401 || r.status === 403) {
+      sessionStorage.removeItem(GC_TOKEN_KEY);
+      throw new Error('Token invàlid (401). Genera\'n un de nou a GoatCounter → Settings → API i torna a intentar-ho.');
+    }
+    if (!r.ok) throw new Error('Error API GoatCounter: ' + r.status + ' (' + path + ')');
+    return r.json();
+  }
+
+  try {
+    const [hits, total, browsers, systems, sizes, locations, refs] = await Promise.all([
+      gc('/stats/hits?limit=100'),
+      gc('/stats/total'),
+      gc('/stats/browsers?limit=10'),
+      gc('/stats/systems?limit=10'),
+      gc('/stats/sizes?limit=10'),
+      gc('/stats/locations?limit=15'),
+      gc('/stats/toprefs?limit=10'),
+    ]);
+
+    const data = processLiveData({ hits, total, browsers, systems, sizes, locations, refs }, START, END);
+    globalData = data;
+    clearBanner();
+    renderAll(data);
+
+    const now = new Date().toLocaleString('ca-ES', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+    document.getElementById('topbar-gen').innerHTML =
+      'En viu: <strong>' + now + '</strong> <span style="color:var(--green);font-size:9px;letter-spacing:.1em;margin-left:.2em">● LIVE</span>';
+
+  } catch (e) {
+    setBanner('error', e.message);
+  } finally {
+    btn.textContent = '↻ En viu';
+    btn.classList.remove('loading');
+  }
+}
+
+function processLiveData(raw, start, end) {
+  const LANGS = new Set(['ca','es','en','fr','de','it','pt']);
+
+  function extractLang(path) {
+    const parts = path.replace(/^\/|\/$/g,'').split('/').filter(Boolean);
+    if (parts.length && LANGS.has(parts[0])) return parts[0];
+    if (parts.length >= 2 && LANGS.has(parts[1])) return parts[1];
+    return null;
+  }
+
+  function extractSection(path) {
+    if (!path) return 'inici';
+    const parts = path.replace(/^\/|\/$/g,'').split('/').filter(Boolean);
+    if (!parts.length) return 'inici';
+    let idx = LANGS.has(parts[0]) ? 1 : 0;
+    if (idx === 0 && parts.length > 1 && LANGS.has(parts[1])) idx = 2;
+    return idx < parts.length ? parts[idx] : 'inici';
+  }
+
+  function normItems(src) {
+    if (!src) return [];
+    const list = Array.isArray(src) ? src : (src.stats || []);
+    return list.map(item => {
+      const name = item.name || item.browser || item.system || item.size || item.location || item.id || 'Desconegut';
+      let count = item.count || 0;
+      if (!count && item.stats) count = item.stats.reduce((s,d) => s + (d.daily||d.count||0), 0);
+      if (!count) count = item.total || 0;
+      return count > 0 ? { name, id: item.id || name, count } : null;
+    }).filter(Boolean).sort((a,b) => b.count - a.count);
+  }
+
+  const hitsList = (raw.hits && raw.hits.hits) || [];
+  const byLang = {}, bySection = {}, hitsByDay = {}, hitsPages = {}, eventsData = {};
+  const WIZARD_STEPS = ['wizard-s1','wizard-s2','wizard-s3','wizard-s4','wizard-sent'];
+  let total = 0;
+
+  hitsList.forEach(item => {
+    const path    = item.path || '';
+    const isEvent = item.event || false;
+
+    if (isEvent) {
+      (item.stats || []).forEach(s => {
+        if (s.daily) eventsData[path] = (eventsData[path] || 0) + s.daily;
+      });
+      return;
+    }
+
+    const lang    = extractLang(path);
+    const section = extractSection(path);
+    let pathTotal = 0;
+
+    (item.stats || []).forEach(s => {
+      const date  = (s.day || '').slice(0, 10);
+      const count = s.daily || 0;
+      if (!count) return;
+      total       += count;
+      pathTotal   += count;
+      if (lang) byLang[lang]       = (byLang[lang]    || 0) + count;
+      bySection[section]           = (bySection[section] || 0) + count;
+      if (date) hitsByDay[date]    = (hitsByDay[date]  || 0) + count;
+    });
+
+    if (pathTotal > 0) hitsPages[path] = (hitsPages[path] || 0) + pathTotal;
+  });
+
+  const hitsByDayList = Object.entries(hitsByDay).sort().map(([date,count]) => ({ date, count }));
+  const hitsTop = Object.entries(hitsPages)
+    .map(([path,count]) => ({ path, count }))
+    .sort((a,b) => b.count - a.count).slice(0, 50);
+
+  return {
+    generated:     new Date().toISOString(),
+    period:        { start, end },
+    total,
+    total_unique:  (raw.total && raw.total.total_unique) || 0,
+    hits_by_day:   hitsByDayList,
+    hits:          hitsTop,
+    by_lang:       byLang,
+    by_section:    bySection,
+    noticies_top:  hitsTop.filter(h => h.path.includes('/noticies/')).slice(0, 15),
+    festivals_top: hitsTop.filter(h => h.path.includes('/festivals/')).slice(0, 15),
+    wizard_funnel: Object.fromEntries(WIZARD_STEPS.map(k => [k, eventsData[k] || 0])),
+    browsers:      normItems(raw.browsers),
+    systems:       normItems(raw.systems),
+    sizes:         normItems(raw.sizes),
+    locations:     normItems(raw.locations),
+    refs:          normItems(raw.refs),
+  };
+}
+
 function setBanner(type, msg) {
   const el = document.getElementById('banner');
   el.className = 'banner banner-' + type;
