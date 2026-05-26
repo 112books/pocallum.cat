@@ -23,11 +23,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.159.0'
-          extended: true
+      - name: Install Hugo
+        run: |
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.159.0/hugo_extended_0.159.0_linux-amd64.tar.gz
+          tar -xzf hugo_extended_0.159.0_linux-amd64.tar.gz
+          sudo mv hugo /usr/local/bin/
 
       - name: Setup Pages
         id: pages
