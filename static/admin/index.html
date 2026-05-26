@@ -401,6 +401,8 @@
     </div>
     <div class="topbar-actions">
       <a href="/" class="btn-sm">← Web</a>
+      <a href="https://pocallum.goatcounter.com/" target="_blank" rel="noopener" class="btn-sm">GoatCounter ↗</a>
+      <button type="button" class="btn-sm" id="btn-refresh">↺ Actualitzar</button>
       <button type="button" class="btn-sm" id="btn-logout">Sortir ×</button>
     </div>
   </div>
@@ -529,6 +531,10 @@ document.getElementById('login-form').addEventListener('submit', async e => {
     document.getElementById('pwd').value = '';
     document.getElementById('pwd').focus();
   }
+});
+
+document.getElementById('btn-refresh').addEventListener('click', () => {
+  loadData();
 });
 
 document.getElementById('btn-logout').addEventListener('click', () => {
