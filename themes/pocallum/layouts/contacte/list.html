@@ -293,6 +293,12 @@
 
   nextBtn.addEventListener('click', function () { if (validate()) goTo(cur + 1); });
 
+  form.addEventListener('change', function (e) {
+    if (e.target.type === 'radio') {
+      setTimeout(function () { if (validate()) goTo(cur + 1); }, 150);
+    }
+  });
+
   form.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' && e.target.type === 'radio') { e.preventDefault(); if (validate()) goTo(cur + 1); }
   });
