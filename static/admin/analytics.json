@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-27T23:54:24.154637Z",
+  "generated": "2026-05-28T02:09:03.892483Z",
   "period": {
-    "start": "2025-05-27",
-    "end": "2026-05-27"
+    "start": "2025-05-28",
+    "end": "2026-05-28"
   },
-  "total": 275,
+  "total": 287,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -78,47 +78,55 @@
     {
       "date": "2026-05-26",
       "count": 3
+    },
+    {
+      "date": "2026-05-27",
+      "count": 11
+    },
+    {
+      "date": "2026-05-28",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 65
+      "count": 68
     },
     {
       "path": "/galeria",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/festivals",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/serveis",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/noticies",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/contacte",
-      "count": 9
+      "count": 10
+    },
+    {
+      "path": "/blog",
+      "count": 10
     },
     {
       "path": "/ca",
       "count": 9
     },
     {
-      "path": "/blog",
+      "path": "/qui-som",
       "count": 8
     },
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 7
-    },
-    {
-      "path": "/qui-som",
       "count": 7
     },
     {
@@ -230,6 +238,10 @@
       "count": 2
     },
     {
+      "path": "/legal/cookies",
+      "count": 1
+    },
+    {
       "path": "/festivals/erratik",
       "count": 1
     },
@@ -276,10 +288,6 @@
     {
       "path": "/lomography-grans-fotografies-amb-cameres-senzilles",
       "count": 1
-    },
-    {
-      "path": "/ca/tags/sprocket-rocket",
-      "count": 1
     }
   ],
   "by_lang": {
@@ -288,14 +296,14 @@
     "en": 13
   },
   "by_section": {
-    "inici": 75,
-    "galeria": 27,
-    "festivals": 41,
-    "serveis": 13,
-    "noticies": 20,
-    "contacte": 18,
-    "blog": 12,
-    "qui-som": 9,
+    "inici": 78,
+    "galeria": 28,
+    "festivals": 42,
+    "serveis": 14,
+    "noticies": 21,
+    "contacte": 19,
+    "blog": 14,
+    "qui-som": 10,
     "serveis-fotografics-2": 9,
     "servicios-fotograficos": 5,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
@@ -308,6 +316,7 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "legal": 1,
     "wp-admin": 1,
     "moviendo-las-imagenes-fijas": 1,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 1,
@@ -377,11 +386,11 @@
     }
   ],
   "wizard_funnel": {
-    "wizard-s1": 5,
-    "wizard-s2": 6,
-    "wizard-s3": 4,
-    "wizard-s4": 3,
-    "wizard-sent": 2
+    "wizard-s1": 6,
+    "wizard-s2": 7,
+    "wizard-s3": 5,
+    "wizard-s4": 4,
+    "wizard-sent": 3
   },
   "browsers": [
     {
@@ -535,12 +544,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 74
+      "count": 76
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 35
+      "count": 36
     },
     {
       "name": "bing.com",
@@ -553,13 +562,13 @@
       "count": 3
     },
     {
-      "name": "112books.github.io",
-      "id": "112books.github.io",
-      "count": 2
-    },
-    {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
+      "count": 3
+    },
+    {
+      "name": "112books.github.io",
+      "id": "112books.github.io",
       "count": 2
     },
     {
