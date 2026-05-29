@@ -1,4 +1,32 @@
 {{ define "main" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Joan Linux Martínez",
+  "alternateName": "Joan Linux",
+  "birthDate": "1972",
+  "birthPlace": { "@type": "City", "name": "Barcelona" },
+  "jobTitle": "{{ i18n "quisom_role" | default "Fotògraf · Editor · Activista cultural" }}",
+  "knowsAbout": [
+    "Jazz photography", "Concert photography", "Theatre photography",
+    "Dance photography", "Flamenco photography", "Blues photography",
+    "Performing arts photography", "Cultural events photography"
+  ],
+  "url": "{{ .Permalink }}",
+  "image": "{{ "images/joan-qui-som.jpg" | absURL }}",
+  "sameAs": [
+    "https://www.instagram.com/pocallum",
+    "https://blog.pocallum.cat",
+    "https://about.pocallum.cat"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Pocallum",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
 
 <section class="page-header">
   <div class="container">
