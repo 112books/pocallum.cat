@@ -34,9 +34,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build Hugo
-        env:
-          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
-        run: hugo --minify --baseURL "$HUGO_BASEURL"
+        run: hugo --minify --baseURL "https://pocallum.cat/"
 
       - name: Index with Pagefind
         run: npx pagefind --site public

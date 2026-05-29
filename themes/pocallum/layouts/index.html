@@ -2,9 +2,22 @@
 {{ $lp := $.Site.LanguagePrefix }}
 {{ $siteRoot := strings.TrimSuffix "/" site.BaseURL }}
 
+{{/* ── Llista d'imatges de galeria (necessària per hero i grid) ─────────── */}}
+{{ $galeria := where .Site.RegularPages "Type" "galeria" }}
+{{ if not $galeria }}
+  {{ range hugo.Sites }}
+    {{ if eq .Language.Lang "ca" }}
+      {{ $galeria = where .RegularPages "Type" "galeria" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{- $imgList := slice -}}
+{{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
+{{- $firstImg := index $imgList 0 | default "" -}}
+
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
 <section class="hero" id="js-hero">
-  <div class="hero-bg" id="js-hero-bg" aria-hidden="true"></div>
+  <div class="hero-bg{{ if $firstImg }} is-loaded{{ end }}" id="js-hero-bg" aria-hidden="true"{{ if $firstImg }} style="background-image:url('{{ $firstImg }}')"{{ end }}></div>
   <div class="hero-inner">
     <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>
     <h1 class="hero-title" id="js-hero-title">
@@ -22,18 +35,6 @@
   </div>
   <div class="hero-scroll" aria-hidden="true"></div>
 </section>
-{{/* Fotos: usa les del site CA si l'idioma actual no en té */}}
-{{ $galeria := where .Site.RegularPages "Type" "galeria" }}
-{{ if not $galeria }}
-  {{ range hugo.Sites }}
-    {{ if eq .Language.Lang "ca" }}
-      {{ $galeria = where .RegularPages "Type" "galeria" }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{- $imgList := slice -}}
-{{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
 <script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang | jsonify | safeJS }};</script>
 
 
