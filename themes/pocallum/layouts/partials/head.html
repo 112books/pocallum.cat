@@ -107,6 +107,21 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pocallum",
+  "url": "{{ .Site.BaseURL }}",
+  "inLanguage": "ca",
+  "description": {{ .Site.Params.description | jsonify }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}cerca/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 {{ else if and (eq .Type "noticies") (not .IsSection) }}
 <script type="application/ld+json">
 {
@@ -116,11 +131,21 @@
   "description": {{ $desc | jsonify }},
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
   "author": { "@type": "Person", "name": "Joan Linux Martínez" },
   "publisher": {
     "@type": "Organization",
     "name": "Pocallum",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ .Site.BaseURL }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
+      "width": 600,
+      "height": 60
+    }
   },
   "url": "{{ .Permalink }}"{{ with .Params.image }},
   "image": "{{ . | strings.TrimLeft "/" | absURL }}"{{ end }}
@@ -132,9 +157,15 @@
   "@context": "https://schema.org",
   "@type": "MusicFestival",
   "name": {{ .Title | jsonify }},
+  "startDate": "{{ .Date.Format "2006-01-02" }}",
   "location": {
     "@type": "Place",
-    "name": {{ .Params.lloc | default "" | jsonify }}
+    "name": {{ .Params.lloc | default "" | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": {{ .Params.lloc | default "Barcelona" | jsonify }},
+      "addressCountry": "ES"
+    }
   },
   "description": {{ $desc | jsonify }},
   "url": "{{ .Permalink }}"{{ with .Params.image }},
