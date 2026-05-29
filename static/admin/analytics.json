@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-28T22:27:00.945189Z",
+  "generated": "2026-05-29T00:03:18.099951Z",
   "period": {
-    "start": "2025-05-28",
-    "end": "2026-05-28"
+    "start": "2025-05-29",
+    "end": "2026-05-29"
   },
-  "total": 287,
+  "total": 292,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -85,13 +85,13 @@
     },
     {
       "date": "2026-05-28",
-      "count": 1
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 68
+      "count": 70
     },
     {
       "path": "/galeria",
@@ -106,24 +106,24 @@
       "count": 13
     },
     {
-      "path": "/noticies",
+      "path": "/contacte",
       "count": 11
     },
     {
-      "path": "/contacte",
-      "count": 10
+      "path": "/noticies",
+      "count": 11
     },
     {
       "path": "/blog",
       "count": 10
     },
     {
-      "path": "/ca",
+      "path": "/qui-som",
       "count": 9
     },
     {
-      "path": "/qui-som",
-      "count": 8
+      "path": "/ca",
+      "count": 9
     },
     {
       "path": "/festivals/calella-harmonica-festival",
@@ -131,7 +131,7 @@
     },
     {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
@@ -296,15 +296,15 @@
     "en": 13
   },
   "by_section": {
-    "inici": 78,
+    "inici": 80,
     "galeria": 28,
     "festivals": 42,
     "serveis": 14,
+    "contacte": 20,
     "noticies": 21,
-    "contacte": 19,
     "blog": 14,
-    "qui-som": 10,
-    "serveis-fotografics-2": 9,
+    "qui-som": 11,
+    "serveis-fotografics-2": 10,
     "servicios-fotograficos": 5,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "cerca": 6,
@@ -387,7 +387,7 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 6,
-    "wizard-s2": 7,
+    "wizard-s2": 8,
     "wizard-s3": 5,
     "wizard-s4": 4,
     "wizard-sent": 3
@@ -549,7 +549,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 76
+      "count": 78
     },
     {
       "name": "Google",
