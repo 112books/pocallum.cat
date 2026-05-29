@@ -11,7 +11,7 @@ Pocallum neix el 2010 com a projecte professional, però el treball ve de molt a
 
 ---
 
-## La mentalitat
+## Fotografia analògica o digital?
 
 Analògic és el punt de partida. El gra de la pel·lícula no falsifica: registra l'instant tal com era, amb la seva imperfecció i la seva veritat. Del 35mm al gran format 10×8". Hasselblad 500, Leica M, vista de camp.
 
@@ -21,7 +21,7 @@ El laboratori és a la **Nau Bostik**, al barri de la Segrera — on som residen
 
 ---
 
-## Com treballem
+## Com treballa Pocallum?
 
 No arriben, fan fotos i marxen. Es queden. El que passa abans que s'encenguin els focus, el nerviosisme de les proves de so, les converses al passadís, l'esgotament al final de la nit. Tot això és la foto.
 

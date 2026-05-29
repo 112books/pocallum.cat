@@ -52,6 +52,14 @@
 {{ end }}
 {{ end }}
 
+{{ with .Content }}
+<section class="section section--serveis-faq">
+  <div class="container container--narrow">
+    <div class="prose">{{ . }}</div>
+  </div>
+</section>
+{{ end }}
+
 <section class="section--serveis-final-cta">
   <div class="container container--narrow">
     <p class="serveis-final-cta__pre">{{ i18n "serveis_final_pre" | default "Cada projecte és diferent." }}</p>
