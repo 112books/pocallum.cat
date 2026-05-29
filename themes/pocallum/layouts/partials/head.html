@@ -77,21 +77,29 @@
   "email": "{{ .Site.Params.contactEmail }}",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
     "addressLocality": "Barcelona",
+    "postalCode": "08020",
     "addressRegion": "Catalunya",
     "addressCountry": "ES"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 41.3851,
-    "longitude": 2.1734
+    "latitude": 41.40879,
+    "longitude": 2.19004
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "20:00"
   },
   "areaServed": [
     { "@type": "City", "name": "Barcelona" },
     { "@type": "Country", "name": "Spain" }
   ],
   "knowsAbout": ["Jazz photography", "Concert photography", "Theatre photography", "Dance photography", "Flamenco photography", "Blues photography", "Performing arts photography", "Cultural events photography"],
-  "foundingDate": "2010",
+  "foundingDate": "2002",
   "priceRange": "€€",
   "sameAs": [
     "{{ .Site.Params.instagram }}",
