@@ -10,9 +10,7 @@ defaultContentLanguage        = "ca"
 defaultContentLanguageInSubdir = false
 
 [sitemap]
-  changefreq = "weekly"
-  priority   = 0.5
-  filename   = "sitemap.xml"
+  filename = "sitemap.xml"
 
 [pagination]
   pagerSize = 6
