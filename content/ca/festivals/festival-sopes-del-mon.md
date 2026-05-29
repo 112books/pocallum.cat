@@ -1,5 +1,6 @@
 ---
 title: "Festival de Sopes del Món"
+description: "Fotografies del Festival de Sopes del Món a Nou Barris. Gastronomia, cultures i comunitat. 2013–2023."
 date: 2030-01-01
 anys: "2013 – 2023"
 lloc: "Nou Barris, Barcelona"

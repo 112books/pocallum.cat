@@ -1,5 +1,6 @@
 ---
 title: "Calella Harmònica Festival"
+description: "Festival d'harmònica, blues i jazz a Calella, Maresme. Cobertura fotogràfica de la primera edició el 2025."
 date: 2025-09-14
 anys: "2025"
 lloc: "Calella"

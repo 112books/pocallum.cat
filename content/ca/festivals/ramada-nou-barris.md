@@ -1,5 +1,6 @@
 ---
 title: "Festa Fi del Ramadà a Nou Barris"
+description: "Fotografies de la Festa de Fi del Ramadà a Nou Barris 2023. Comunitat, cultura i celebració al barri."
 date: 2023-04-21
 anys: "2023"
 lloc: "Nou Barris, Barcelona"

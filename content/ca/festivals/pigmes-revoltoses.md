@@ -1,5 +1,6 @@
 ---
 title: "Festival Pigme@s Revoltos@s"
+description: "Festival Pigme@s Revoltos@s 2014 a Nou Barris. Música, activisme i cultura de base al barri."
 date: 2014-03-15
 anys: "2014"
 lloc: "Ateneu Popular 9 Barris + Casal de Barri Prosperitat, Nou Barris"

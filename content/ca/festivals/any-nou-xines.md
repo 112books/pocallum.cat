@@ -1,5 +1,6 @@
 ---
 title: "Any Nou Xinès a Barcelona"
+description: "Fotografies de la celebració de l'Any Nou Xinès a Barcelona. Cultura, color i comunitat al carrer des de 2017."
 date: 2026-03-01
 anys: "2017 – 2026"
 lloc: "Barcelona"

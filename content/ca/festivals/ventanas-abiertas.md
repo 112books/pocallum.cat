@@ -1,5 +1,6 @@
 ---
 title: "Ventanas Abiertas — Finestres Curioses"
+description: "Festival Ventanas Abiertas a l'Ateneu Popular de Nou Barris. Circ i creació artística comunitària. 2021–2023."
 date: 2023-06-21
 anys: "2021 – 2023"
 lloc: "Ateneu Popular de Nou Barris, Barcelona"

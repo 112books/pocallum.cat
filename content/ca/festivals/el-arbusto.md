@@ -1,5 +1,6 @@
 ---
 title: "El Arbusto — Concurs de Maquetes"
+description: "El Arbusto, concurs de maquetes de grups emergents al Casal de Barri Prosperitat, Nou Barris. 2011–2016."
 date: 2016-10-02
 anys: "2011 – 2016"
 lloc: "Casal de Barri Prosperitat, Nou Barris"

@@ -1,5 +1,6 @@
 ---
 title: "Barcelona Tattoo Expo · BAUM"
+description: "Cobertura fotogràfica de la Barcelona Tattoo Expo. Art del tatuatge i art urbà al BAUM des de 2008."
 date: 2023-10-07
 anys: "des de 2008"
 lloc: "Barcelona"

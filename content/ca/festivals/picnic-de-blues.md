@@ -1,5 +1,6 @@
 ---
 title: "Pícnic de Blues"
+description: "Pícnic de Blues al Parc Central de Nou Barris, Barcelona. Blues a l'aire lliure des de 2013."
 date: 2025-05-18
 anys: "2013 – 2025"
 lloc: "Parc Central de Nou Barris, Barcelona"

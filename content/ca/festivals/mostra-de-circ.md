@@ -1,5 +1,6 @@
 ---
 title: "Mostra de Circ — Intercanvi Internacional"
+description: "Mostra de Circ Intercanvi Internacional a La Prosperitat, Nou Barris. Fotografies de circ contemporani al carrer."
 date: 2025-08-06
 anys: "varies edicions"
 lloc: "Plaça Ángel Pestanya, La Prosperitat, Nou Barris"

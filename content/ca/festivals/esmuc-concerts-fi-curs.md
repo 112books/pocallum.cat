@@ -1,5 +1,6 @@
 ---
 title: "Concerts Finals de Curs ESMUC"
+description: "Fotografies dels concerts finals de curs de l'ESMUC 2024 a la Nau Bostik. Jazz i música clàssica en directe."
 date: 2030-01-02
 anys: "2024"
 lloc: "Nau Bostik / ESMUC, Barcelona"

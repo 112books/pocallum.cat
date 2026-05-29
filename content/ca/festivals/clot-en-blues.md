@@ -1,5 +1,6 @@
 ---
 title: "Clot amb Blues"
+description: "Festival de blues al barri del Clot, Barcelona. Música en directe i comunitat de barri des de 2023."
 date: 2025-09-28
 anys: "2023 – 2025"
 lloc: "El Clot, Barcelona"

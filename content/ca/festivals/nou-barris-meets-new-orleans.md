@@ -1,5 +1,6 @@
 ---
 title: "Nou Barris meets New Orleans"
+description: "Festival Nou Barris meets New Orleans a l'Ateneu Popular 9 Barris. Jazz, funk i blues de Nova Orleans en directe."
 date: 2025-05-17
 anys: "2020 – 2025"
 lloc: "Ateneu Popular 9 Barris, Nou Barris"

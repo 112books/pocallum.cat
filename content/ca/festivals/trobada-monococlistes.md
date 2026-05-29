@@ -1,5 +1,6 @@
 ---
 title: "Trobada de Monococlistes"
+description: "Fotografies de la Trobada de Monococlistes a Nou Barris. Circ i monocicle al carrer en tres edicions."
 date: 2017-04-08
 anys: "2011, 2015, 2017"
 lloc: "Nou Barris, Barcelona"

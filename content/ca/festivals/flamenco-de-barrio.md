@@ -1,5 +1,6 @@
 ---
 title: "Flamenco de Barrio"
+description: "Festival Flamenco de Barrio a Nou Barris, Barcelona. Flamenc de base i arrel al barri des de 2012."
 date: 2025-11-08
 anys: "2012 – 2025"
 lloc: "Nou Barris, Barcelona"
