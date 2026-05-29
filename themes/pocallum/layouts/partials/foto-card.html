@@ -1,10 +1,20 @@
 {{/* Paràmetres: . = pàgina de foto, index = posició per al lightbox */}}
-<figure class="foto-item" data-lb-src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" data-lb-alt="{{ .Title }}">
+{{- $alt := .Title -}}
+{{- if not $alt -}}
+  {{- $servei := .Params.servei | default "" -}}
+  {{- $any := "Fotografia de Pocallum" -}}
+  {{- if eq $servei "cultura" -}}{{- $any = "Fotografia de cultura en directe" -}}
+  {{- else if eq $servei "artistes" -}}{{- $any = "Retrat artístic — Pocallum" -}}
+  {{- else if eq $servei "empreses" -}}{{- $any = "Fotografia empreses culturals" -}}
+  {{- end -}}
+  {{- $alt = printf "%s — Pocallum (%d)" $any (.Date.Year) -}}
+{{- end -}}
+<figure class="foto-item" data-lb-src="{{ .Params.image | strings.TrimLeft "/" | relURL }}" data-lb-alt="{{ $alt }}">
   <a class="foto-item__link js-lb-trigger" href="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
      data-lb-index="{{ .Scratch.Get "index" }}"
-     aria-label="{{ i18n "foto_open" | default "Ampliar imatge" }}: {{ .Title }}">
+     aria-label="{{ i18n "foto_open" | default "Ampliar imatge" }}: {{ $alt }}">
     <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
-         alt="{{ with .Title }}{{ . }}{{ else }}{{ i18n "foto_alt_default" | default "Fotografia de Pocallum" }}{{ end }}"
+         alt="{{ $alt }}"
          loading="{{ .Scratch.Get "loading" | default "lazy" }}"
          decoding="async">
   </a>
