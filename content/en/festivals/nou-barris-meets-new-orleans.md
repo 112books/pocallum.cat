@@ -20,9 +20,9 @@ The Big Easy's Crew is the musical collective that has driven the proposal from 
 
 The 2022 and 2023 editions were hit by rain that disrupted most of what was planned. The concerts went ahead anyway.
 
-## Six editions, six volumes
+## Seven editions, seven volumes
 
-The festival counts like a discography: Volume 1, 2, 3... By 2025, six consecutive editions without a single gap. Six times the neighbourhood sounds different.
+The festival counts like a discography: Volume 1, 2, 3... By 2026, seven consecutive editions without a single gap. Seven times the neighbourhood sounds different.
 
 ## Editions documented on the blog
 

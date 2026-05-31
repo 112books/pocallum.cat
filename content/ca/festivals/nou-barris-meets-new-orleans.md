@@ -21,9 +21,9 @@ The Big Easy's Crew és el grup que aglutina la proposta musical des de la terce
 
 Les edicions 2022 i 2023 van rebre pluja de gairebé tot el que estava previst. Els concerts es van fer igualment.
 
-## Sis edicions, sis volums
+## Set edicions, set volums
 
-El festival porta el comptador com si fos una discografia: Volum 1, 2, 3... Fins al 2025, sis edicions seguides sense cap pausa. Sis vegades que el barri sona diferent.
+El festival porta el comptador com si fos una discografia: Volum 1, 2, 3... Fins al 2026, set edicions seguides sense cap pausa. Set vegades que el barri sona diferent.
 
 ## Edicions documentades al blog
 
