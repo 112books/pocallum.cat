@@ -29,6 +29,7 @@ El festival porta el comptador com si fos una discografia: Volum 1, 2, 3... Fins
 
 - [Nou Barris meets New Orleans — vol. 3 (2022)](https://blog.pocallum.cat/2022/05/21/nou-barris-meets-new-orleans/)
 - [Nou Barris meets New Orleans — vol. 4 (2023)](https://blog.pocallum.cat/2023/05/21/2023-05-20-nou-barris-meets-new-orleans/)
+- [Nou Barris meets New Orleans — vol. 5 (2024)](https://blog.pocallum.cat/2024/05/12/2024-05-12-nou-barris-meets-new-orleans-2024/)
 - [Nou Barris meets Nova Orleans — BKT Brass Band, vol. 6 (2025)](https://blog.pocallum.cat/2025/05/18/2025-0517-nou-barris-meets-nova-orleans-bkt-brass-band/)
 - [The Big Easy's Crew — As Big As It Gets, vol. 6 (2025)](https://blog.pocallum.cat/2025/05/18/2025-05-17-the-big-easys-crew-as-big-as-it-gets/)
 - [Nou Barris meets New Orleans — vol. 7 (2026)](https://blog.pocallum.cat/2026/05/31/2026-05-30-nou-barris-meets-new-orleans/)
