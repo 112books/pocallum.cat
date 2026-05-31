@@ -1,8 +1,8 @@
 ---
 title: "Nou Barris meets New Orleans"
 description: "Festival Nou Barris meets New Orleans a l'Ateneu Popular 9 Barris. Jazz, funk i blues de Nova Orleans en directe."
-date: 2025-05-17
-anys: "2020 – 2025"
+date: 2026-05-30
+anys: "2020 – 2026"
 lloc: "Ateneu Popular 9 Barris, Nou Barris"
 disciplina: "Jazz · Funk · Blues · Música de Nova Orleans"
 web: "https://ateneu9b.net/ca"
@@ -31,3 +31,4 @@ El festival porta el comptador com si fos una discografia: Volum 1, 2, 3... Fins
 - [Nou Barris meets New Orleans — vol. 4 (2023)](https://blog.pocallum.cat/2023/05/21/2023-05-20-nou-barris-meets-new-orleans/)
 - [Nou Barris meets Nova Orleans — BKT Brass Band, vol. 6 (2025)](https://blog.pocallum.cat/2025/05/18/2025-0517-nou-barris-meets-nova-orleans-bkt-brass-band/)
 - [The Big Easy's Crew — As Big As It Gets, vol. 6 (2025)](https://blog.pocallum.cat/2025/05/18/2025-05-17-the-big-easys-crew-as-big-as-it-gets/)
+- [Nou Barris meets New Orleans — vol. 7 (2026)](https://blog.pocallum.cat/2026/05/31/2026-05-30-nou-barris-meets-new-orleans/)
