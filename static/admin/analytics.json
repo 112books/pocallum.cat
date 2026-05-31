@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-30T23:53:23.938892Z",
+  "generated": "2026-05-31T02:34:29.185273Z",
   "period": {
-    "start": "2025-05-30",
-    "end": "2026-05-30"
+    "start": "2025-05-31",
+    "end": "2026-05-31"
   },
-  "total": 308,
+  "total": 311,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -93,13 +93,17 @@
     },
     {
       "date": "2026-05-30",
-      "count": 3
+      "count": 5
+    },
+    {
+      "date": "2026-05-31",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 74
+      "count": 76
     },
     {
       "path": "/galeria",
@@ -250,6 +254,10 @@
       "count": 2
     },
     {
+      "path": "/en/equip/adox-hr-50",
+      "count": 1
+    },
+    {
       "path": "/festivals/jornades-9-barris-acull",
       "count": 1
     },
@@ -292,19 +300,15 @@
     {
       "path": "/wp-admin/update-core.php",
       "count": 1
-    },
-    {
-      "path": "/en",
-      "count": 1
     }
   ],
   "by_lang": {
     "ca": 35,
     "es": 25,
-    "en": 14
+    "en": 15
   },
   "by_section": {
-    "inici": 84,
+    "inici": 86,
     "galeria": 29,
     "contacte": 23,
     "festivals": 45,
@@ -324,6 +328,7 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "equip": 1,
     "tags": 5,
     "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1,
     "legal": 1,
@@ -558,7 +563,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 81
+      "count": 82
     },
     {
       "name": "Google",
@@ -581,6 +586,11 @@
       "count": 3
     },
     {
+      "name": "www.bing.com",
+      "id": "www.bing.com",
+      "count": 2
+    },
+    {
       "name": "112books.github.io",
       "id": "112books.github.io",
       "count": 2
@@ -593,11 +603,6 @@
     {
       "name": "search.google.com",
       "id": "search.google.com",
-      "count": 1
-    },
-    {
-      "name": "www.bing.com",
-      "id": "www.bing.com",
       "count": 1
     },
     {
