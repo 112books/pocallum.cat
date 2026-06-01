@@ -1,5 +1,6 @@
 ---
 title: "9b in Black"
+description: "Blues, soul, funk and hip-hop festival at Ateneu Popular 9 Barris. Portrait of a neighbourhood scene with attitude. 2011–2013."
 date: 2013-03-27
 anys: "2011 – 2013"
 lloc: "Ateneu Popular 9 Barris + Casal de Barri Prosperitat, Nou Barris"

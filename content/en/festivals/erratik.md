@@ -1,5 +1,6 @@
 ---
 title: "Erràtik"
+description: "Itinerant urban arts, social circus and dance festival in Nou Barris. Photography coverage since 2022."
 date: 2022-05-27
 anys: "2022 –"
 lloc: "Itinerant — Nou Barris, Barcelona"

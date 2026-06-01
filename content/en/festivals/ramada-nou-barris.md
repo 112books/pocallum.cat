@@ -1,5 +1,6 @@
 ---
 title: "End of Ramadan Celebrations in Nou Barris"
+description: "Photography from the End of Ramadan celebration in Nou Barris 2023. Community, culture and celebration."
 date: 2023-04-21
 anys: "2023"
 lloc: "Nou Barris, Barcelona"

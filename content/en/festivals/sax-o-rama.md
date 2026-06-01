@@ -1,5 +1,6 @@
 ---
 title: "Sax-o-Rama"
+description: "Sax-o-Rama festival at La Paloma, Barcelona. Saxophone, blues and jazz live. 2025–2026."
 date: 2026-01-22
 anys: "2025 – 2026"
 lloc: "La Paloma, Barcelona"

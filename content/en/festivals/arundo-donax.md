@@ -1,5 +1,6 @@
 ---
 title: "Arundo Donax"
+description: "Festival dedicated to the musical cane in La Pobla de Híjar, Teruel. Pocallum photography coverage from 2013 to 2025."
 date: 2025-03-26
 anys: "2013 – 2025"
 lloc: "La Pobla de Híjar, Teruel"

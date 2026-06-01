@@ -1,5 +1,6 @@
 ---
 title: "VijazZ Festival"
+description: "VijazZ Festival in Vilafranca del Penedès. Live jazz photography in the Penedès region since 2013."
 date: 2025-07-14
 anys: "2013 – 2025"
 lloc: "Vilafranca del Penedès"

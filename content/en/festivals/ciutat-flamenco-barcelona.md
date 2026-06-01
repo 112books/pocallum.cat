@@ -1,5 +1,6 @@
 ---
 title: "Ciutat Flamenco Barcelona"
+description: "Photography from the Ciutat Flamenco Barcelona 2025 festival. Contemporary flamenco, dance and performing arts."
 date: 2025-11-08
 anys: "2025"
 lloc: "Barcelona"

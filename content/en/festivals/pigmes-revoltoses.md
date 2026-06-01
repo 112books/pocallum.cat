@@ -1,5 +1,6 @@
 ---
 title: "Pigme@s Revoltos@s Festival"
+description: "Pigme@s Revoltos@s 2014 festival in Nou Barris. Music, activism and grassroots culture in the neighbourhood."
 date: 2014-03-15
 anys: "2014"
 lloc: "Ateneu Popular 9 Barris + Casal de Barri Prosperitat, Nou Barris"

@@ -163,7 +163,7 @@
     "name": {{ .Params.lloc | default "" | jsonify }},
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": {{ .Params.lloc | default "Barcelona" | jsonify }},
+      "addressLocality": {{ .Params.city | default "Barcelona" | jsonify }},
       "addressCountry": "ES"
     }
   },

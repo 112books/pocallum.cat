@@ -1,5 +1,6 @@
 ---
 title: "Festival de Blues de Barcelona"
+description: "Festival de Blues de Barcelona in Nou Barris. The city's reference blues festival since 2008."
 date: 2030-01-09
 anys: "since 2008"
 lloc: "Nou Barris, Barcelona"

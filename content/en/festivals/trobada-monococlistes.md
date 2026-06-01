@@ -1,5 +1,6 @@
 ---
 title: "Monocyclists' Gathering"
+description: "Photography from the Monocyclists Meeting in Nou Barris. Circus and unicycle on the streets across three editions."
 date: 2017-04-08
 anys: "2011, 2015, 2017"
 lloc: "Nou Barris, Barcelona"

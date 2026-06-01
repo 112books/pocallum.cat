@@ -1,5 +1,6 @@
 ---
 title: "El Arbusto — Scale Model Competition"
+description: "El Arbusto, emerging band demo contest at Casal de Barri Prosperitat, Nou Barris. 2011–2016."
 date: 2016-10-02
 anys: "2011 – 2016"
 lloc: "Casal de Barri Prosperitat, Nou Barris"

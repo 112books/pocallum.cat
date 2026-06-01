@@ -1,5 +1,6 @@
 ---
 title: "Sopar d'Entitats del Casal de Barri Prosperitat"
+description: "Casal de Barri Prosperitat Entities Dinner, Nou Barris. Neighbourhood community culture. 2015–2025."
 date: 2025-10-03
 anys: "2015 – 2025"
 lloc: "Casal de Barri Prosperitat, Nou Barris"

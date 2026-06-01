@@ -1,5 +1,6 @@
 ---
 title: "Carnestoltes in Nou Barris"
+description: "Photography from the Nou Barris Carnival, Barcelona. Neighbourhood popular culture and street parades. 2016–2026."
 date: 2026-02-14
 anys: "2016 – 2026"
 lloc: "Nou Barris, Barcelona"

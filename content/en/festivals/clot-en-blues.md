@@ -1,5 +1,6 @@
 ---
 title: "Clot amb Blues"
+description: "Blues festival in the Clot neighbourhood, Barcelona. Live music and neighbourhood community since 2023."
 date: 2025-09-28
 anys: "2023 – 2025"
 lloc: "El Clot, Barcelona"

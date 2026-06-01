@@ -1,5 +1,6 @@
 ---
 title: "Circus Show — International Exchange"
+description: "International Circus Exchange Show at La Prosperitat, Nou Barris. Street contemporary circus photography."
 date: 2025-08-06
 anys: "various editions"
 lloc: "Plaça Ángel Pestanya, La Prosperitat, Nou Barris"

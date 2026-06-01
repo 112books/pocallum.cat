@@ -1,5 +1,6 @@
 ---
 title: "Jazz I Am"
+description: "Jazz I Am, Taller de Músics showcase in Barcelona. Photography of young and emerging jazz since 2016."
 date: 2030-01-04
 anys: "2016 – 2026"
 lloc: "Barcelona"

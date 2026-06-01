@@ -1,5 +1,6 @@
 ---
 title: "Chinese New Year in Barcelona"
+description: "Photography from Barcelona's Chinese New Year celebrations. Culture, colour and community on the streets since 2017."
 date: 2026-03-01
 anys: "2017 – 2026"
 lloc: "Barcelona"
