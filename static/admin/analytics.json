@@ -1,10 +1,10 @@
 {
-  "generated": "2026-05-31T23:57:48.192648Z",
+  "generated": "2026-06-01T03:47:12.496693Z",
   "period": {
-    "start": "2025-05-31",
-    "end": "2026-05-31"
+    "start": "2025-06-01",
+    "end": "2026-06-01"
   },
-  "total": 311,
+  "total": 326,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -97,37 +97,37 @@
     },
     {
       "date": "2026-05-31",
-      "count": 1
+      "count": 16
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 76
+      "count": 81
     },
     {
       "path": "/galeria",
       "count": 26
     },
     {
+      "path": "/festivals",
+      "count": 15
+    },
+    {
+      "path": "/serveis",
+      "count": 15
+    },
+    {
       "path": "/contacte",
       "count": 14
     },
     {
-      "path": "/festivals",
-      "count": 14
-    },
-    {
-      "path": "/serveis",
-      "count": 14
+      "path": "/blog",
+      "count": 12
     },
     {
       "path": "/noticies",
-      "count": 11
-    },
-    {
-      "path": "/blog",
-      "count": 10
+      "count": 12
     },
     {
       "path": "/qui-som",
@@ -150,6 +150,10 @@
       "count": 5
     },
     {
+      "path": "/cerca",
+      "count": 5
+    },
+    {
       "path": "/contacte/politica-de-ptivacitat-avis-legal",
       "count": 4
     },
@@ -162,8 +166,8 @@
       "count": 4
     },
     {
-      "path": "/cerca",
-      "count": 4
+      "path": "/en/content/photography-studio",
+      "count": 3
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -186,6 +190,10 @@
       "count": 3
     },
     {
+      "path": "/festivals/nou-barris-meets-new-orleans",
+      "count": 2
+    },
+    {
       "path": "/festivals/im-jazz",
       "count": 2
     },
@@ -199,10 +207,6 @@
     },
     {
       "path": "/es/practicas-de-revelado-de-placas-de-8x10",
-      "count": 2
-    },
-    {
-      "path": "/en/content/photography-studio",
       "count": 2
     },
     {
@@ -254,6 +258,10 @@
       "count": 2
     },
     {
+      "path": "/taller-de-tecniques-antigues-al-laboratori",
+      "count": 1
+    },
+    {
       "path": "/en/equip/adox-hr-50",
       "count": 1
     },
@@ -292,42 +300,35 @@
     {
       "path": "/festivals/mostra-de-circ",
       "count": 1
-    },
-    {
-      "path": "/ca/festivals/jornades-9-barris-acull",
-      "count": 1
-    },
-    {
-      "path": "/wp-admin/update-core.php",
-      "count": 1
     }
   ],
   "by_lang": {
     "ca": 35,
     "es": 25,
-    "en": 15
+    "en": 16
   },
   "by_section": {
-    "inici": 86,
+    "inici": 91,
     "galeria": 29,
+    "festivals": 48,
+    "serveis": 16,
     "contacte": 23,
-    "festivals": 45,
-    "serveis": 15,
-    "noticies": 21,
-    "blog": 14,
+    "blog": 16,
+    "noticies": 22,
     "qui-som": 11,
     "serveis-fotografics-2": 10,
     "servicios-fotograficos": 5,
+    "cerca": 7,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "cerca": 6,
+    "content": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "photography-services": 3,
     "practicas-de-revelado-de-placas-de-8x10": 2,
-    "content": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
     "tags": 5,
     "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1,
@@ -367,6 +368,10 @@
       "count": 3
     },
     {
+      "path": "/festivals/nou-barris-meets-new-orleans",
+      "count": 2
+    },
+    {
       "path": "/festivals/im-jazz",
       "count": 2
     },
@@ -392,10 +397,6 @@
     },
     {
       "path": "/festivals/mostra-de-circ",
-      "count": 1
-    },
-    {
-      "path": "/ca/festivals/jornades-9-barris-acull",
       "count": 1
     }
   ],
@@ -563,12 +564,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 82
+      "count": 85
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 38
+      "count": 39
     },
     {
       "name": "www.facebook.com",
@@ -601,13 +602,13 @@
       "count": 1
     },
     {
-      "name": "search.google.com",
-      "id": "search.google.com",
+      "name": "instagram.com",
+      "id": "instagram.com",
       "count": 1
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
+      "name": "search.google.com",
+      "id": "search.google.com",
       "count": 1
     }
   ]
