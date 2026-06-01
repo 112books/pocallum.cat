@@ -8,9 +8,10 @@ Web oficial de **Pocallum**, servei fotogràfic cultural de Joan Linux Martínez
 
 Migrat de WordPress a Hugo. El WordPress roman actiu fins al tall final del domini.
 
-- **Producció:** `https://pocallum.cat` → GitHub Pages (main)
+- **Producció:** `https://pocallum.cat` → GitHub Pages (main). Hosting definitiu, sense VPS.
 - **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026`
 - **Local:** `hugo server -D` → `http://localhost:1313`
+- **DNS:** gestionat des de Dinahosting (registres A → GitHub Pages). No hi ha servidor virtual actiu.
 - **Blog personal (extern, no tocar):** `https://blog.pocallum.cat`
 - **Biografia (extern, no tocar):** `https://about.pocallum.cat`
 

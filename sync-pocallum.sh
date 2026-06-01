@@ -14,11 +14,6 @@ BRANCH_PROD="main"
 REPO_STAGING="https://112books.github.io/pocallum.cat/"
 REPO_PROD="https://pocallum.cat/"
 
-# VPS Dinahosting — omplir quan estigui a punt
-SSH_USER=""
-SSH_HOST="pocallum.cat"
-SSH_PATH="/home/pocallum/www/"
-
 # ── Colors i helpers ─────────────────────────────────────────────────────
 RED='\033[0;31m'
 GRN='\033[0;32m'
@@ -47,13 +42,6 @@ require_clean() {
     echo ""
     git status --short
     echo ""
-    exit 1
-  fi
-}
-
-require_vps() {
-  if [[ -z "$SSH_USER" ]]; then
-    err "VPS no configurat. Edita SSH_USER a sync-pocallum.sh."
     exit 1
   fi
 }
@@ -146,11 +134,10 @@ deploy_prod_pages() {
   git push "$REMOTE" "$BRANCH_PROD" || exit 1
   ok "Deploy producció iniciat → GitHub Pages"
   dim "Segueix el progrés: https://github.com/112books/pocallum.cat/actions"
-  dim "(Quan el domini apunti a Dinahosting, usa l'opció 7 per al deploy final.)"
 }
 
 check_dns() {
-  print "Comprovant DNS de pocallum.cat..."
+  print "Comprovant DNS de pocallum.cat → GitHub Pages..."
   echo ""
   dim "IPs esperades de GitHub Pages:"
   dim "  185.199.108.153  185.199.109.153  185.199.110.153  185.199.111.153"
@@ -161,8 +148,7 @@ check_dns() {
   dim "CNAME www:"
   dig +short www.pocallum.cat CNAME || echo "  (dig no disponible)"
   echo ""
-  warn "Per activar el domini: configura els registres A a Dinahosting i afegeix"
-  warn "el Custom Domain 'pocallum.cat' a GitHub → Settings → Pages."
+  dim "Hosting: GitHub Pages (main). DNS gestionat des de Dinahosting."
 }
 
 nova_foto() {
@@ -202,7 +188,7 @@ echo " 4) Build local (amb drafts)"
 echo "───────────────────────────────────────"
 echo " 5) Deploy staging  →  GitHub Pages (develop + staticrypt)"
 echo " 6) Deploy producció → GitHub Pages (main)"
-echo " 7) Estat del DNS (comprova si pocallum.cat apunta a GitHub Pages)"
+echo " 7) Verifica DNS (comprova que pocallum.cat apunta a GitHub Pages)"
 echo "───────────────────────────────────────"
 echo " f) Nova fotografia de galeria"
 echo " n) Nova notícia"
