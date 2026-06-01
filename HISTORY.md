@@ -4,6 +4,21 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-06-01
+
+### Festival Nou Barris meets New Orleans — actualització + SEO
+
+**Contingut**
+- Nou Barris meets New Orleans: afegit vol. 5 (2024) i vol. 7 (2026) a la llista d'edicions documentades al blog
+- Text actualitzat de "Sis edicions, sis volums" a "Set edicions, set volums" (CA + EN)
+- Rang d'anys actualitzat a "2020 – 2026" i `date` a `2026-05-30` (CA + EN)
+
+**SEO**
+- Meta `description` afegida als 26 festivals en versió EN que no en tenien
+- Schema MusicFestival: corregit `addressLocality` — ara usa el camp `city` del frontmatter o "Barcelona" per defecte en lloc del camp `lloc` complet (que és el nom del venue)
+
+---
+
 ## 2026-05-10 (sessió 4)
 
 ### Header, menú blog i galeria portada amb animació slot machine
