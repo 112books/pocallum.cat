@@ -136,20 +136,6 @@ deploy_prod_pages() {
   dim "Segueix el progrés: https://github.com/112books/pocallum.cat/actions"
 }
 
-check_dns() {
-  print "Comprovant DNS de pocallum.cat → GitHub Pages..."
-  echo ""
-  dim "IPs esperades de GitHub Pages:"
-  dim "  185.199.108.153  185.199.109.153  185.199.110.153  185.199.111.153"
-  echo ""
-  dim "IPs actuals:"
-  dig +short pocallum.cat A | sort || echo "  (dig no disponible)"
-  echo ""
-  dim "CNAME www:"
-  dig +short www.pocallum.cat CNAME || echo "  (dig no disponible)"
-  echo ""
-  dim "Hosting: GitHub Pages (main). DNS gestionat des de Dinahosting."
-}
 
 nova_foto() {
   read -r -p "  Slug de la foto (ex: 2026-05-jazz-jamboree): " slug
@@ -188,7 +174,6 @@ echo " 4) Build local (amb drafts)"
 echo "───────────────────────────────────────"
 echo " 5) Deploy staging  →  GitHub Pages (develop + staticrypt)"
 echo " 6) Deploy producció → GitHub Pages (main)"
-echo " 7) Verifica DNS (comprova que pocallum.cat apunta a GitHub Pages)"
 echo "───────────────────────────────────────"
 echo " f) Nova fotografia de galeria"
 echo " n) Nova notícia"
@@ -206,7 +191,6 @@ case $opt in
   4) build_local ;;
   5) deploy_staging ;;
   6) deploy_prod_pages ;;
-  7) check_dns ;;
   f) nova_foto ;;
   n) nova_noticia ;;
   0) exit 0 ;;
