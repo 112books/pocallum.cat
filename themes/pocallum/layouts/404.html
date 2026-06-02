@@ -6,7 +6,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="noindex">
   <title>404 — {{ .Site.Title }}</title>
-  <link rel="icon" href="{{ "images/favicon.svg" | absURL }}" type="image/svg+xml">
+  <link rel="icon" href="{{ "images/logotip/pocallum-logo.png" | absURL }}" type="image/png">
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{ with .Site.Params.goatcounterSite }}
