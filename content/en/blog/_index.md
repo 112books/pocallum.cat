@@ -3,11 +3,11 @@ title: "Blog"
 description: "Photographic chronicle, as it happens. Since 2010."
 layout: "blog"
 stats:
-  - { num: "2,317",   label: "posts",      raw: 2317 }
-  - { num: "411,227", label: "words",      raw: 411227 }
-  - { num: "93",      label: "categories", raw: 93 }
-  - { num: "2,939",   label: "tags",       raw: 2939 }
-  - { num: "94",      label: "comments",   raw: 94 }
+  - { num: "2,327", label: "posts", raw: 2327 }
+  - { num: "123,716", label: "words", raw: 123716 }
+  - { num: "96", label: "categories", raw: 96 }
+  - { num: "3,009", label: "tags", raw: 3009 }
+  - { num: "71", label: "comments", raw: 71 }
 ---
 
 The blog is the soundtrack to what gets photographed. Some entries run long — context, names, dates, opinions. Others are four lines and an album, because it was late, because the work spoke for itself, because nothing needed adding.
