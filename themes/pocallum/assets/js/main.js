@@ -113,6 +113,38 @@
 })();
 
 
+/* ── Portada: 6 fotos aleatòries de tota la galeria ─────────────────────── */
+(function () {
+  var grid = document.getElementById('js-home-fotos');
+  if (!grid) return;
+
+  var galeria = ((window.__heroData || {}).galeria) || [];
+  if (!galeria.length) return;
+
+  var pool = galeria.slice();
+  for (var i = pool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = pool[i]; pool[i] = pool[j]; pool[j] = tmp;
+  }
+  var selected = pool.slice(0, 6);
+
+  var openLabel = document.documentElement.lang === 'en' ? 'Enlarge image' : 'Ampliar imatge';
+
+  selected.forEach(function (foto, i) {
+    var src = foto.img;
+    var alt = (foto.alt || '').replace(/"/g, '&quot;');
+    var fig = document.createElement('figure');
+    fig.className = 'foto-item';
+    fig.dataset.lbSrc = src;
+    fig.dataset.lbAlt = foto.alt || '';
+    fig.innerHTML =
+      '<a class="foto-item__link js-lb-trigger" href="' + src + '" data-lb-index="' + i + '" aria-label="' + openLabel + ': ' + alt + '">' +
+      '<img src="' + src + '" alt="' + alt + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '" decoding="async">' +
+      '</a>';
+    grid.appendChild(fig);
+  });
+})();
+
 /* ── Galeria shuffle + mosaic ────────────────────────────────────────────── */
 (function () {
   const SIZE_CLASSES = ['foto-item--wide', 'foto-item--tall', 'foto-item--big', 'foto-item--hero'];

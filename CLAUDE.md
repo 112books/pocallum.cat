@@ -122,6 +122,14 @@ pocallum.cat/
 
 Per activar el castellà quan toqui: afegir contingut a `content/es/`, omplir `es.yaml`, i afegir `languages.es` al menú de `hugo.toml`.
 
+### ⚠️ Regla de traducció obligatòria
+
+**Tot contingut nou (festivals, notícies, pàgines) s'ha de crear en CA i EN simultàniament.**
+
+- Festival CA → `content/ca/festivals/slug.md` + `content/en/festivals/slug.md`
+- Notícia CA → `content/ca/noticies/slug.md` + `content/en/noticies/slug.md`
+- El castellà no cal fins que s'activi l'idioma.
+
 ---
 
 ## Tipus de contingut

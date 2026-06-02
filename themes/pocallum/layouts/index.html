@@ -15,6 +15,22 @@
 {{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
 {{- $firstImg := index $imgList 0 | default "" -}}
 
+{{/* ── Dades de galeria per JS (selecció aleatòria a client) ──────────── */}}
+{{- $galeriaItems := slice -}}
+{{- range $galeria -}}
+  {{- $alt := .Title -}}
+  {{- if not $alt -}}
+    {{- $servei := .Params.servei | default "" -}}
+    {{- $baseAlt := "Fotografia de Pocallum" -}}
+    {{- if eq $servei "cultura" -}}{{- $baseAlt = "Fotografia de cultura en directe" -}}
+    {{- else if eq $servei "artistes" -}}{{- $baseAlt = "Retrat artístic — Pocallum" -}}
+    {{- else if eq $servei "empreses" -}}{{- $baseAlt = "Fotografia empreses culturals" -}}
+    {{- end -}}
+    {{- $alt = printf "%s — Pocallum (%d)" $baseAlt (.Date.Year) -}}
+  {{- end -}}
+  {{- $galeriaItems = $galeriaItems | append (dict "img" .Params.image "alt" $alt) -}}
+{{- end -}}
+
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
 <section class="hero" id="js-hero">
   <div class="hero-bg{{ if $firstImg }} is-loaded{{ end }}" id="js-hero-bg" aria-hidden="true"{{ if $firstImg }} style="background-image:url('{{ $firstImg }}')"{{ end }}></div>
@@ -35,20 +51,13 @@
   </div>
   <div class="hero-scroll" aria-hidden="true"></div>
 </section>
-<script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang | jsonify | safeJS }};</script>
+<script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang "galeria" $galeriaItems | jsonify | safeJS }};</script>
 
 
-{{/* ── Darreres fotografies ─────────────────────────────────────────────── */}}
-{{ $fotos := $galeria | first 6 }}
-{{ if $fotos }}
+{{/* ── Fotografies portada — selecció aleatòria via JS ─────────────────── */}}
+{{ if $galeria }}
 <section class="section section--fotos">
-  <div class="foto-grid foto-grid--home js-foto-grid js-shuffle">
-    {{ range $i, $foto := $fotos }}
-      {{ $foto.Scratch.Set "index" $i }}
-      {{ $foto.Scratch.Set "loading" "eager" }}
-      {{ partial "foto-card.html" $foto }}
-    {{ end }}
-  </div>
+  <div class="foto-grid foto-grid--home js-foto-grid" id="js-home-fotos"></div>
   <div class="section-cta">
     <a href="{{ "galeria/" | relLangURL }}" class="btn btn--ghost">
       {{ i18n "see_all_photos" | default "Tota la galeria" }} →
