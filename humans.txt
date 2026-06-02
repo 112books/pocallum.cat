@@ -1,0 +1,18 @@
+/* TEAM */
+Photographer & Editor: Joan Linux Martínez
+Contact: hola@pocallum.cat
+Location: Nau Bostik, Barcelona, Catalunya
+
+/* THANKS */
+Music, jazz, blues, flamenco, theatre, dance —
+and everyone who lets us photograph them.
+
+/* SITE */
+Last update: 2026-05
+Language: Catalan / English
+Technology: Hugo, GitHub Pages, GoatCounter, Pagefind
+Development: LinuxBCN.com — https://linuxbcn.com
+
+/* STANDARDS */
+HTML5, CSS custom properties, Vanilla JS
+WCAG 2.1 AA, GDPR compliant, no tracking cookies
