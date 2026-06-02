@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-01T22:56:15.170083Z",
+  "generated": "2026-06-02T00:08:39.112573Z",
   "period": {
-    "start": "2025-06-01",
-    "end": "2026-06-01"
+    "start": "2025-06-02",
+    "end": "2026-06-02"
   },
-  "total": 326,
+  "total": 346,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -98,28 +98,36 @@
     {
       "date": "2026-05-31",
       "count": 16
+    },
+    {
+      "date": "2026-06-01",
+      "count": 15
+    },
+    {
+      "date": "2026-06-02",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 81
+      "count": 87
     },
     {
       "path": "/galeria",
-      "count": 26
+      "count": 27
     },
     {
       "path": "/festivals",
-      "count": 15
+      "count": 18
     },
     {
       "path": "/serveis",
-      "count": 15
+      "count": 17
     },
     {
       "path": "/contacte",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/blog",
@@ -144,6 +152,10 @@
     {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
       "count": 7
+    },
+    {
+      "path": "/festivals/nou-barris-meets-new-orleans",
+      "count": 5
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
@@ -190,11 +202,11 @@
       "count": 3
     },
     {
-      "path": "/festivals/nou-barris-meets-new-orleans",
+      "path": "/festivals/im-jazz",
       "count": 2
     },
     {
-      "path": "/festivals/im-jazz",
+      "path": "/festivals/mostra-de-circ",
       "count": 2
     },
     {
@@ -258,6 +270,18 @@
       "count": 2
     },
     {
+      "path": "/festivals/esmuc-concerts-fi-curs",
+      "count": 1
+    },
+    {
+      "path": "/en/worldpinholeday-diana-f",
+      "count": 1
+    },
+    {
+      "path": "/en/festivals/nou-barris-meets-new-orleans",
+      "count": 1
+    },
+    {
       "path": "/taller-de-tecniques-antigues-al-laboratori",
       "count": 1
     },
@@ -284,35 +308,19 @@
     {
       "path": "/legal/cookies",
       "count": 1
-    },
-    {
-      "path": "/festivals/erratik",
-      "count": 1
-    },
-    {
-      "path": "/festivals/pigmes-revoltoses",
-      "count": 1
-    },
-    {
-      "path": "/festivals/el-arbusto",
-      "count": 1
-    },
-    {
-      "path": "/festivals/mostra-de-circ",
-      "count": 1
     }
   ],
   "by_lang": {
     "ca": 35,
     "es": 25,
-    "en": 16
+    "en": 18
   },
   "by_section": {
-    "inici": 91,
-    "galeria": 29,
-    "festivals": 48,
-    "serveis": 16,
-    "contacte": 23,
+    "inici": 97,
+    "galeria": 30,
+    "festivals": 57,
+    "serveis": 18,
+    "contacte": 24,
     "blog": 16,
     "noticies": 22,
     "qui-som": 11,
@@ -328,6 +336,7 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
     "tags": 5,
@@ -360,6 +369,10 @@
       "count": 7
     },
     {
+      "path": "/festivals/nou-barris-meets-new-orleans",
+      "count": 5
+    },
+    {
       "path": "/festivals/festival-blues-barcelona",
       "count": 3
     },
@@ -368,11 +381,11 @@
       "count": 3
     },
     {
-      "path": "/festivals/nou-barris-meets-new-orleans",
+      "path": "/festivals/im-jazz",
       "count": 2
     },
     {
-      "path": "/festivals/im-jazz",
+      "path": "/festivals/mostra-de-circ",
       "count": 2
     },
     {
@@ -380,23 +393,15 @@
       "count": 2
     },
     {
+      "path": "/festivals/esmuc-concerts-fi-curs",
+      "count": 1
+    },
+    {
+      "path": "/en/festivals/nou-barris-meets-new-orleans",
+      "count": 1
+    },
+    {
       "path": "/festivals/jornades-9-barris-acull",
-      "count": 1
-    },
-    {
-      "path": "/festivals/erratik",
-      "count": 1
-    },
-    {
-      "path": "/festivals/pigmes-revoltoses",
-      "count": 1
-    },
-    {
-      "path": "/festivals/el-arbusto",
-      "count": 1
-    },
-    {
-      "path": "/festivals/mostra-de-circ",
       "count": 1
     }
   ],
@@ -564,7 +569,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 85
+      "count": 88
     },
     {
       "name": "Google",
@@ -592,6 +597,11 @@
       "count": 2
     },
     {
+      "name": "about.pocallum.cat",
+      "id": "about.pocallum.cat",
+      "count": 2
+    },
+    {
       "name": "112books.github.io",
       "id": "112books.github.io",
       "count": 2
@@ -604,11 +614,6 @@
     {
       "name": "instagram.com",
       "id": "instagram.com",
-      "count": 1
-    },
-    {
-      "name": "search.google.com",
-      "id": "search.google.com",
       "count": 1
     }
   ]
