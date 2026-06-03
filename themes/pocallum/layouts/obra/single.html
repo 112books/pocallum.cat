@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<article class="obra-single container">
+
+  <div class="obra-single__layout">
+
+    {{ with .Params.image }}
+    <div class="obra-single__cover">
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+           alt="{{ $.Title }}"
+           loading="eager">
+    </div>
+    {{ end }}
+
+    <div class="obra-single__info">
+      <h1 class="obra-single__title">{{ .Title }}</h1>
+
+      {{ with .Params.subtitle }}
+      <p class="obra-single__subtitle">{{ . }}</p>
+      {{ end }}
+
+      {{ with .Params.any }}
+      <p class="obra-single__meta">
+        {{ . }}{{ with $.Params.rol }}&ensp;·&ensp;{{ . }}{{ end }}
+      </p>
+      {{ end }}
+
+      {{ with .Params.artista }}
+      <p class="obra-single__artista">{{ . }}</p>
+      {{ end }}
+
+      {{ with .Params.web }}
+      <p class="obra-single__editorial">
+        <a href="{{ . }}" target="_blank" rel="noopener">{{ $.Params.editorial | default . }}</a>
+      </p>
+      {{ else }}
+        {{ with .Params.editorial }}
+        <p class="obra-single__editorial">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Content }}
+      <div class="prose obra-single__body">
+        {{ . }}
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="obra-single__back">
+    <a href="{{ "obra/" | relLangURL }}">← {{ i18n "obra_title" }}</a>
+  </div>
+
+</article>
+
+{{ end }}

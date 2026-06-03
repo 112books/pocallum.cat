@@ -1,0 +1,62 @@
+{{ define "main" }}
+{{ $fotollibres := where .Pages "Params.tipus" "fotollibre" }}
+{{ $discs := where .Pages "Params.tipus" "disc" }}
+
+<div class="obra-list container">
+
+  <header class="obra-list__header">
+    <h1 class="obra-list__title">{{ i18n "obra_title" }}</h1>
+    <p class="obra-list__about">
+      {{ i18n "obra_about_link" }} → <a href="https://about.pocallum.cat" target="_blank" rel="noopener">about.pocallum.cat</a>
+    </p>
+  </header>
+
+  <section id="fotollibres" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_fotollibres" }}</h2>
+    {{ if $fotollibres }}
+    <div class="obra-grid">
+      {{ range $fotollibres.ByDate.Reverse }}
+      <a class="obra-card" href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="obra-card__cover">
+          <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+               alt="{{ $.Title }}"
+               loading="lazy">
+        </div>
+        {{ end }}
+        <div class="obra-card__info">
+          <h3 class="obra-card__title">{{ .Title }}</h3>
+          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <section id="discs" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_discs" }}</h2>
+    {{ if $discs }}
+    <div class="obra-grid">
+      {{ range $discs.ByDate.Reverse }}
+      <a class="obra-card" href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="obra-card__cover">
+          <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+               alt="{{ $.Title }}"
+               loading="lazy">
+        </div>
+        {{ end }}
+        <div class="obra-card__info">
+          <h3 class="obra-card__title">{{ .Title }}</h3>
+          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+</div>
+
+{{ end }}
