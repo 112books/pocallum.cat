@@ -18,9 +18,10 @@
 {{ $cita := cond (eq $lang "en") $grup.cita_en $grup.cita }}
 {{ $cta := cond (eq $lang "en") $grup.cta_en $grup.cta }}
 <section class="servei-chapter{{ if mod $i 2 }} servei-chapter--alt{{ end }}" id="servei-{{ add $i 1 }}">
-  {{ with $grup.image }}
+  {{ with index $grup "image" }}
+  {{- $fit := index $grup "image_fit" | default "cover" -}}
   <div class="servei-chapter__photo-wrap">
-    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" class="servei-chapter__photo" loading="lazy">
+    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" class="servei-chapter__photo servei-chapter__photo--{{ $fit }}" loading="lazy">
   </div>
   {{ end }}
   <div class="container">

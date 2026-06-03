@@ -683,6 +683,10 @@ h1, h2, h3, h4 {
   object-position: center top;
   display: block;
 }
+.servei-chapter__photo--contain {
+  object-fit: contain;
+  background: var(--bg);
+}
 .servei-chapter__cita {
   border-left: 3px solid var(--accent);
   padding: var(--space-3) var(--space-6);

@@ -34,6 +34,7 @@ grups:
   - titol: "Per a projectes editorials"
     titol_en: "For editorial projects"
     image: "/images/serveis/editorial.png"
+    image_fit: "contain"
     desc: "Del concepte a la impressió. Fotollibre, portada i identitat visual per a projectes que volen ser objectes, no només arxius."
     desc_en: "From concept to print. Photobook, cover and visual identity for projects that want to be objects, not just files."
     items:
