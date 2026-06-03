@@ -17,14 +17,16 @@
     <div class="obra-grid obra-grid--fotollibres">
       {{ range $fotollibres.ByDate.Reverse }}
       {{- $titol := .Title -}}
-      {{- $href := cond (ne .Params.web "") .Params.web .RelPermalink -}}
-      {{- $extern := ne .Params.web "" -}}
-      <a class="obra-card" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{- $prep := .Params.en_preparacio -}}
+      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
+      {{- $extern := and (not $prep) (ne .Params.web "") -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
                alt="{{ $titol }}"
                loading="lazy">
+          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
         </div>
         {{ end }}
         <div class="obra-card__info">
@@ -44,14 +46,16 @@
     <div class="obra-grid obra-grid--discs">
       {{ range $discs.ByDate.Reverse }}
       {{- $titol := .Title -}}
-      {{- $href := cond (ne .Params.web "") .Params.web .RelPermalink -}}
-      {{- $extern := ne .Params.web "" -}}
-      <a class="obra-card" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{- $prep := .Params.en_preparacio -}}
+      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
+      {{- $extern := and (not $prep) (ne .Params.web "") -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
                alt="{{ $titol }}"
                loading="lazy">
+          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
         </div>
         {{ end }}
         <div class="obra-card__info">

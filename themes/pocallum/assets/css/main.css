@@ -2767,6 +2767,33 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   line-height: 1.3;
 }
 
+.obra-card__cover {
+  position: relative;
+}
+
+.obra-card__badge {
+  position: absolute;
+  bottom: var(--space-2);
+  left: var(--space-2);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px var(--space-2);
+  line-height: 1.6;
+}
+
+.obra-card--prep {
+  opacity: 0.85;
+  cursor: default;
+}
+
+.obra-card--prep:hover .obra-card__title {
+  color: var(--fg);
+}
+
 .obra-single {
   display: grid;
   grid-template-columns: 160px 1fr;
