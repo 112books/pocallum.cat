@@ -1,7 +1,11 @@
 ---
 title: "Serveis fotogràfics"
-description: "Fotografia de cultura, artistes i empreses. A pressupost, sense tarifes tancades."
+description: "Fotografia i disseny per a músics, festivals, sales de concert i projectes editorials. Pressupostos a mida."
 ---
+
+Treballem amb músics, festivals, sales de concert i projectes editorials. Cada encàrrec és diferent, cada pressupost és a mida.
+
+El criteri visual és el mateix per a un quartet que debuta i per a un festival de deu anys d'història. Explica'ns el teu projecte.
 
 ## Quin tipus d'events documenta Pocallum?
 
