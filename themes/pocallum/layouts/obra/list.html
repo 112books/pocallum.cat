@@ -7,7 +7,7 @@
   <header class="obra-list__header">
     <h1 class="obra-list__title">{{ i18n "obra_title" }}</h1>
     <p class="obra-list__about">
-      {{ i18n "obra_about_link" }} → <a href="https://about.pocallum.cat" target="_blank" rel="noopener">about.pocallum.cat</a>
+      {{ i18n "obra_about_link" }} → <a href="https://about.pocallum.cat" target="_blank" rel="noopener noreferrer">about.pocallum.cat</a>
     </p>
   </header>
 
@@ -20,7 +20,7 @@
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $.Title }}"
+               alt="{{ .Title }}"
                loading="lazy">
         </div>
         {{ end }}
@@ -43,7 +43,7 @@
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $.Title }}"
+               alt="{{ .Title }}"
                loading="lazy">
         </div>
         {{ end }}
