@@ -19,8 +19,7 @@
       {{- $titol := .Title -}}
       {{- $prep := .Params.en_preparacio -}}
       {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      {{- $extern := and (not $prep) (ne .Params.web "") -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
@@ -48,8 +47,7 @@
       {{- $titol := .Title -}}
       {{- $prep := .Params.en_preparacio -}}
       {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      {{- $extern := and (not $prep) (ne .Params.web "") -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
