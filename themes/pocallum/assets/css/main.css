@@ -671,6 +671,18 @@ h1, h2, h3, h4 {
   transition: color 0.15s, border-color 0.15s;
 }
 .servei-chapter__cta-link:hover { color: var(--accent); border-color: var(--accent); }
+.servei-chapter__photo-wrap {
+  width: 100%;
+  overflow: hidden;
+  max-height: 480px;
+}
+.servei-chapter__photo {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 .servei-chapter__cita {
   border-left: 3px solid var(--accent);
   padding: var(--space-3) var(--space-6);

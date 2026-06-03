@@ -1,6 +1,7 @@
 grups:
   - titol: "Per a músics i bandes"
     titol_en: "For musicians and bands"
+    image: "/images/services/produccio.jpg"
     desc: "Directe, sessions de banda, portades de disc. Fotografia i disseny gràfic per a artistes que volen imatges que sonen com la seva música."
     desc_en: "Live shows, band sessions, album covers. Photography and graphic design for artists who want images that sound like their music."
     items:
@@ -18,6 +19,7 @@ grups:
 
   - titol: "Per a festivals i sales"
     titol_en: "For festivals and venues"
+    image: "/images/galeria/IMG_6484.jpg"
     desc: "Cobertura completa d'event. Arxiu visual reutilitzable per a comunicació, premsa i memòria de l'organització."
     desc_en: "Full event coverage. Reusable visual archive for communications, press, and organizational memory."
     items:
@@ -31,6 +33,7 @@ grups:
 
   - titol: "Per a projectes editorials"
     titol_en: "For editorial projects"
+    image: "/images/serveis/editorial.png"
     desc: "Del concepte a la impressió. Fotollibre, portada i identitat visual per a projectes que volen ser objectes, no només arxius."
     desc_en: "From concept to print. Photobook, cover and visual identity for projects that want to be objects, not just files."
     items:

@@ -18,6 +18,11 @@
 {{ $cita := cond (eq $lang "en") $grup.cita_en $grup.cita }}
 {{ $cta := cond (eq $lang "en") $grup.cta_en $grup.cta }}
 <section class="servei-chapter{{ if mod $i 2 }} servei-chapter--alt{{ end }}" id="servei-{{ add $i 1 }}">
+  {{ with $grup.image }}
+  <div class="servei-chapter__photo-wrap">
+    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" class="servei-chapter__photo" loading="lazy">
+  </div>
+  {{ end }}
   <div class="container">
     <div class="servei-chapter__head">
       <span class="servei-chapter__num">{{ printf "%02d" (add $i 1) }}</span>
