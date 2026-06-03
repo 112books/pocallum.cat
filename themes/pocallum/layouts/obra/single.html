@@ -7,7 +7,7 @@
     {{ with .Params.image }}
     <div class="obra-single__cover">
       <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-           alt="{{ .Title }}"
+           alt="{{ $.Title }}"
            loading="eager">
     </div>
     {{ end }}
