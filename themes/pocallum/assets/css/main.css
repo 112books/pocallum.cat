@@ -688,22 +688,17 @@ h1, h2, h3, h4 {
   background: var(--bg);
 }
 .servei-chapter__photo-wrap--collage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 320px 320px;
-  max-height: 640px;
-  overflow: hidden;
+  display: flex;
+  height: 360px;
+  background: var(--bg);
 }
 .servei-chapter__photo--collage-item {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  flex: 1;
+  min-width: 0;
+  object-fit: contain;
   object-position: center;
   display: block;
-}
-.servei-chapter__photo--collage-item:first-child {
-  grid-row: 1 / 3;
-  object-fit: contain;
+  height: 100%;
   background: var(--bg);
 }
 .servei-chapter__cita {
