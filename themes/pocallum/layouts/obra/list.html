@@ -11,28 +11,22 @@
     </p>
   </header>
 
-  <section id="discs" class="obra-section">
-    <h2 class="obra-section__heading">{{ i18n "obra_discs" }}</h2>
-    {{ if $discs }}
-    <div class="obra-grid obra-grid--discs">
-      {{ range $discs.ByDate.Reverse }}
-      {{- $titol := .Title -}}
-      {{- $prep := .Params.en_preparacio -}}
-      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      {{- $extern := and (not $prep) (ne .Params.web "") -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+  <section id="fotollibres" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_fotollibres" }}</h2>
+    {{ if $fotollibres }}
+    <div class="obra-grid">
+      {{ range $fotollibres.ByDate.Reverse }}
+      <a class="obra-card" href="{{ .RelPermalink }}">
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $titol }}"
+               alt="{{ $.Title }}"
                loading="lazy">
-          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
         </div>
         {{ end }}
         <div class="obra-card__info">
           <h3 class="obra-card__title">{{ .Title }}</h3>
-          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
-          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
+          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
         </div>
       </a>
       {{ end }}
@@ -40,28 +34,22 @@
     {{ end }}
   </section>
 
-  <section id="fotollibres" class="obra-section">
-    <h2 class="obra-section__heading">{{ i18n "obra_fotollibres" }}</h2>
-    {{ if $fotollibres }}
-    <div class="obra-grid obra-grid--fotollibres">
-      {{ range $fotollibres.ByDate.Reverse }}
-      {{- $titol := .Title -}}
-      {{- $prep := .Params.en_preparacio -}}
-      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      {{- $extern := and (not $prep) (ne .Params.web "") -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
+  <section id="discs" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_discs" }}</h2>
+    {{ if $discs }}
+    <div class="obra-grid">
+      {{ range $discs.ByDate.Reverse }}
+      <a class="obra-card" href="{{ .RelPermalink }}">
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $titol }}"
+               alt="{{ $.Title }}"
                loading="lazy">
-          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
         </div>
         {{ end }}
         <div class="obra-card__info">
           <h3 class="obra-card__title">{{ .Title }}</h3>
-          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
-          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
+          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
         </div>
       </a>
       {{ end }}

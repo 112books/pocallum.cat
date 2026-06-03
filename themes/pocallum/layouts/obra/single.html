@@ -29,20 +29,21 @@
       <p class="obra-single__artista">{{ . }}</p>
       {{ end }}
 
+      {{ with .Params.web }}
+      <p class="obra-single__editorial">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.editorial | default . }}</a>
+      </p>
+      {{ else }}
+        {{ with .Params.editorial }}
+        <p class="obra-single__editorial">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+
       {{ with .Content }}
       <div class="prose obra-single__body">
         {{ . }}
       </div>
       {{ end }}
-
-      {{ if .Params.en_preparacio }}
-      <p class="obra-single__prep">{{ i18n "obra_en_preparacio" | default "En preparació" }}</p>
-      {{ else if .Params.web }}
-      <a href="{{ .Params.web }}" class="btn btn--primary obra-single__cta" target="_blank" rel="noopener noreferrer">
-        {{ i18n "obra_veure" | default "Veure" }} a {{ .Params.editorial | default "112books" }} →
-      </a>
-      {{ end }}
-
     </div>
 
   </div>
