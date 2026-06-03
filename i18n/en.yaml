@@ -145,3 +145,12 @@ search_zero_results: "No results for [SEARCH_TERM]"
 e404_title:  "Someone exposed the film to light."
 e404_desc:   "This page does not exist. If you came from the old WordPress site, the URL has changed — but the photography is still here."
 e404_cta:    "Back to home"
+
+# Work
+obra_title: "Work"
+obra_fotollibres: "Photobooks"
+obra_discs: "Albums and covers"
+obra_tira_narrativa: "My own work informs the perspective I bring to commissions."
+obra_tira_link: "Photobooks · Covers · Posters"
+obra_veure: "View"
+obra_about_link: "About Joan Linux Martínez"
