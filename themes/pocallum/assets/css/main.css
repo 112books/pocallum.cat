@@ -605,6 +605,9 @@ h1, h2, h3, h4 {
 .servei-chapter--alt {
   background: var(--bg2);
 }
+.servei-chapter__photo-wrap + .container {
+  padding-top: var(--space-12);
+}
 .servei-chapter__head {
   display: grid;
   grid-template-columns: 3.5rem 1fr;
