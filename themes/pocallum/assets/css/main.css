@@ -687,6 +687,25 @@ h1, h2, h3, h4 {
   object-fit: contain;
   background: var(--bg);
 }
+.servei-chapter__photo-wrap--collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px 320px;
+  max-height: 640px;
+  overflow: hidden;
+}
+.servei-chapter__photo--collage-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.servei-chapter__photo--collage-item:first-child {
+  grid-row: 1 / 3;
+  object-fit: contain;
+  background: var(--bg);
+}
 .servei-chapter__cita {
   border-left: 3px solid var(--accent);
   padding: var(--space-3) var(--space-6);
