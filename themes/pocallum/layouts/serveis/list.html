@@ -33,7 +33,7 @@
     <blockquote class="servei-chapter__cita">{{ . }}</blockquote>
     {{ end }}
     <div class="servei-chapter__cta-bar">
-      <a href="{{ "contacte" | absLangURL }}" class="btn btn--primary">{{ $cta }}</a>
+      <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary">{{ $cta }}</a>
     </div>
   </div>
 </section>
@@ -52,7 +52,7 @@
   <div class="container container--narrow">
     <p class="serveis-final-cta__pre">{{ i18n "serveis_final_pre" | default "Cada projecte és diferent." }}</p>
     <h2 class="serveis-final-cta__title">{{ i18n "serveis_final_title" | default "Explica'ns el teu i ho fem possible." }}</h2>
-    <a href="{{ "contacte" | absLangURL }}" class="btn btn--primary btn--lg">
+    <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary btn--lg">
       {{ i18n "cta_contact" | default "Demana pressupost" }}
     </a>
   </div>
