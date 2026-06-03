@@ -2802,6 +2802,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   align-items: center;
   gap: var(--space-8);
   padding-block: var(--space-8);
+  margin-top: var(--space-16);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }

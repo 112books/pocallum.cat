@@ -7,7 +7,7 @@ rol: "fotografia"
 artista: ""
 editorial: ""
 web: ""
-image: "/images/obra/40-anys-blues.jpg"
+image: "/images/obra/40-anys-blues.png"
 destacat: true
 en_preparacio: true
 date: 2026-12-01

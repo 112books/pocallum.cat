@@ -67,8 +67,10 @@
 {{ end }}
 
 {{/* ── Tira d'obra — 4 cobertes destacades + link a /obra/ ────────────────── */}}
-{{- $obra := where (where .Site.RegularPages "Section" "obra") "Params.destacat" true -}}
-{{- $obra = $obra.ByDate.Reverse | first 4 -}}
+{{- $allObra := where (where .Site.RegularPages "Section" "obra") "Params.destacat" true -}}
+{{- $discs2 := where $allObra "Params.tipus" "disc" | first 2 -}}
+{{- $libs2 := where $allObra "Params.tipus" "fotollibre" | first 2 -}}
+{{- $obra := $discs2 | append $libs2 -}}
 {{ if $obra }}
 <div class="container">
   <div class="tira-obra">
