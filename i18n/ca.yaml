@@ -146,3 +146,12 @@ search_zero_results: "Cap resultat per a [SEARCH_TERM]"
 e404_title:  "Algú ha revelat el rodet a la llum."
 e404_desc:   "Aquesta pàgina no existeix. Si venies del WordPress antic, la URL ha canviat — però la fotografia és aquí."
 e404_cta:    "Tornar a l'inici"
+
+# Obra
+obra_title: "Obra"
+obra_fotollibres: "Fotollibres"
+obra_discs: "Discs i portades"
+obra_tira_narrativa: "L'obra pròpia informa la mirada amb què treballo per als altres."
+obra_tira_link: "Fotollibres · Portades · Cartells"
+obra_veure: "Veure"
+obra_about_link: "Sobre Joan Linux Martínez"
