@@ -20,7 +20,7 @@
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ .Title }}"
+               alt="{{ $.Title }}"
                loading="lazy">
         </div>
         {{ end }}
@@ -43,7 +43,7 @@
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ .Title }}"
+               alt="{{ $.Title }}"
                loading="lazy">
         </div>
         {{ end }}
