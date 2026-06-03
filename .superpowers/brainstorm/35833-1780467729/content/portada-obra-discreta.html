@@ -1,0 +1,52 @@
+<h2>Bloc Obra a la portada — tractament discret</h2>
+<p class="subtitle">Dues opcions de com mostrar-ho sense que domini la pàgina</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Tira de cobertes amb peu mínim</h3>
+      <p>Sense títol de secció. Les cobertes en una fila horitzontal, petites (60–80px d'alçada). Un sol text discret a la dreta: "Fotollibres · Portades · Cartells →". Com una signatura, no una secció.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#080808;color:#f0f0f0;padding:16px 24px;display:flex;align-items:center;gap:20px">
+          <div style="display:flex;gap:8px;align-items:center">
+            <div style="width:52px;height:52px;background:#1c1c1c;border:1px solid #333"></div>
+            <div style="width:52px;height:52px;background:#1c1c1c;border:1px solid #333"></div>
+            <div style="width:52px;height:52px;background:#1c1c1c;border:1px solid #333"></div>
+            <div style="width:52px;height:52px;background:#1c1c1c;border:1px solid #333"></div>
+          </div>
+          <span style="color:#777;font-size:13px;margin-left:auto">Fotollibres · Portades · Cartells <span style="color:#FF5500">→</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Una línia de text + link, sense imatges a portada</h3>
+      <p>Només text, entre serveis i notícies. "Fotollibres publicats, portades de disc i cartells — <u>Veure obra</u>". Les imatges esperen a /obra/. Molt discret, molt editorial.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#080808;color:#f0f0f0;padding:16px 24px;text-align:center">
+          <p style="color:#777;font-size:13px;margin:0">Fotollibres publicats, portades de disc i cartells — <span style="color:#FF5500;text-decoration:underline">Veure obra</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Dins del bloc de serveis, no a part</h3>
+      <p>No una secció separada a portada. A la pàgina de serveis (o al peu del hero), una referència creuada: "Joan treballa per encàrrec i publica obra pròpia → /obra/". L'obra no competeix amb els serveis, els reforça.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#111;color:#f0f0f0;padding:16px 24px;border-left:2px solid #FF5500">
+          <p style="color:#777;font-size:12px;margin:0 0 4px;text-transform:uppercase;letter-spacing:1px">Autor i fotògraf d'encàrrec</p>
+          <p style="font-size:13px;margin:0">Fotollibres, portades de disc i cartells — <span style="color:#FF5500">obra pròpia →</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:24px">Recomanació: <strong>A o C</strong> — la B és massa invisible per a un visitant que arriba per primer cop. La C és elegant si la portada ja és llarga. La A és el punt mig just.</p>
