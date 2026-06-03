@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-02T23:27:39.844293Z",
+  "generated": "2026-06-03T02:50:21.838038Z",
   "period": {
-    "start": "2025-06-02",
-    "end": "2026-06-02"
+    "start": "2025-06-03",
+    "end": "2026-06-03"
   },
-  "total": 346,
+  "total": 366,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -105,37 +105,41 @@
     },
     {
       "date": "2026-06-02",
-      "count": 5
+      "count": 24
+    },
+    {
+      "date": "2026-06-03",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 87
+      "count": 94
     },
     {
       "path": "/galeria",
-      "count": 27
+      "count": 28
     },
     {
       "path": "/festivals",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/serveis",
-      "count": 17
+      "count": 18
     },
     {
       "path": "/contacte",
-      "count": 15
-    },
-    {
-      "path": "/blog",
-      "count": 12
+      "count": 16
     },
     {
       "path": "/noticies",
-      "count": 12
+      "count": 14
+    },
+    {
+      "path": "/blog",
+      "count": 13
     },
     {
       "path": "/qui-som",
@@ -146,23 +150,23 @@
       "count": 9
     },
     {
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "count": 8
+    },
+    {
       "path": "/festivals/calella-harmonica-festival",
       "count": 7
     },
     {
-      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
-      "count": 7
-    },
-    {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 5
-    },
-    {
-      "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
-      "count": 5
+      "count": 6
     },
     {
       "path": "/cerca",
+      "count": 6
+    },
+    {
+      "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 5
     },
     {
@@ -202,6 +206,10 @@
       "count": 3
     },
     {
+      "path": "/noticies/2026-06-la-juganera",
+      "count": 2
+    },
+    {
       "path": "/festivals/im-jazz",
       "count": 2
     },
@@ -211,6 +219,10 @@
     },
     {
       "path": "/en/contacte",
+      "count": 2
+    },
+    {
+      "path": "/es/moviendo-las-imagenes-fijas",
       "count": 2
     },
     {
@@ -300,37 +312,30 @@
     {
       "path": "/en/photography-services/professional-headshots",
       "count": 1
-    },
-    {
-      "path": "/es/probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography",
-      "count": 1
-    },
-    {
-      "path": "/legal/cookies",
-      "count": 1
     }
   ],
   "by_lang": {
     "ca": 35,
-    "es": 25,
+    "es": 26,
     "en": 18
   },
   "by_section": {
-    "inici": 97,
-    "galeria": 30,
-    "festivals": 57,
-    "serveis": 18,
-    "contacte": 24,
-    "blog": 16,
-    "noticies": 22,
+    "inici": 104,
+    "galeria": 31,
+    "festivals": 59,
+    "serveis": 19,
+    "contacte": 25,
+    "noticies": 26,
+    "blog": 17,
     "qui-som": 11,
-    "serveis-fotografics-2": 10,
+    "serveis-fotografics-2": 11,
+    "cerca": 8,
     "servicios-fotograficos": 5,
-    "cerca": 7,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "content": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
+    "moviendo-las-imagenes-fijas": 2,
     "photography-services": 3,
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
@@ -343,7 +348,6 @@
     "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1,
     "legal": 1,
     "wp-admin": 1,
-    "moviendo-las-imagenes-fijas": 1,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 1,
     "lomography-grans-fotografies-amb-cameres-senzilles": 1,
     "sesion-con-la-bailarina-nahomi-itzel": 1,
@@ -359,6 +363,10 @@
   },
   "noticies_top": [
     {
+      "path": "/noticies/2026-06-la-juganera",
+      "count": 2
+    },
+    {
       "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
       "count": 2
     }
@@ -370,7 +378,7 @@
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 5
+      "count": 6
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -407,7 +415,7 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 6,
-    "wizard-s2": 10,
+    "wizard-s2": 11,
     "wizard-s3": 5,
     "wizard-s4": 4,
     "wizard-sent": 3
@@ -426,7 +434,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Firefox",
@@ -458,7 +466,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Chrome OS",
@@ -475,7 +483,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 112
+      "count": 113
     },
     {
       "name": "phone",
@@ -492,7 +500,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 331
+      "count": 332
     },
     {
       "name": "United States",
@@ -569,12 +577,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 88
+      "count": 91
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 39
+      "count": 40
     },
     {
       "name": "www.facebook.com",
@@ -582,13 +590,13 @@
       "count": 4
     },
     {
-      "name": "bing.com",
-      "id": "bing.com",
-      "count": 3
-    },
-    {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
+      "count": 4
+    },
+    {
+      "name": "bing.com",
+      "id": "bing.com",
       "count": 3
     },
     {
