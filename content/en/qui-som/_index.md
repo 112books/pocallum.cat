@@ -23,6 +23,8 @@ To learn more about Joan Linux and his work, visit [about.pocallum.cat](https://
 
 **[LinuxBCN](https://linuxbcn.com)** — Technology consultancy and free software.
 
+Full trajectory as an author, at [about.pocallum.cat →](https://about.pocallum.cat)
+
 ---
 
 ## Roots

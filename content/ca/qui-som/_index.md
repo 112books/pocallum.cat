@@ -59,6 +59,8 @@ Pocallum no és una illa. Forma part d'una xarxa de projectes que comparteixen v
 
 **[LinuxBCN](https://linuxbcn.com)** — Consultoria tecnològica i programari lliure.
 
+La trajectòria completa com a autor, a [about.pocallum.cat →](https://about.pocallum.cat)
+
 ---
 
 ## L'arrel
