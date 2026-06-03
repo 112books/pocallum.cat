@@ -2831,8 +2831,8 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 }
 
 .tira-obra__cobertes img {
-  width: 52px;
-  height: 52px;
+  width: 83px;
+  height: 83px;
   object-fit: cover;
   display: block;
   background: var(--bg2);
