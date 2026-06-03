@@ -14,19 +14,23 @@
   <section id="fotollibres" class="obra-section">
     <h2 class="obra-section__heading">{{ i18n "obra_fotollibres" }}</h2>
     {{ if $fotollibres }}
-    <div class="obra-grid">
+    <div class="obra-grid obra-grid--fotollibres">
       {{ range $fotollibres.ByDate.Reverse }}
-      <a class="obra-card" href="{{ .RelPermalink }}">
+      {{- $titol := .Title -}}
+      {{- $href := cond (ne .Params.web "") .Params.web .RelPermalink -}}
+      {{- $extern := ne .Params.web "" -}}
+      <a class="obra-card" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $.Title }}"
+               alt="{{ $titol }}"
                loading="lazy">
         </div>
         {{ end }}
         <div class="obra-card__info">
           <h3 class="obra-card__title">{{ .Title }}</h3>
-          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
+          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
+          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
         </div>
       </a>
       {{ end }}
@@ -37,23 +41,29 @@
   <section id="discs" class="obra-section">
     <h2 class="obra-section__heading">{{ i18n "obra_discs" }}</h2>
     {{ if $discs }}
-    <div class="obra-grid">
+    <div class="obra-grid obra-grid--discs">
       {{ range $discs.ByDate.Reverse }}
-      <a class="obra-card" href="{{ .RelPermalink }}">
+      {{- $titol := .Title -}}
+      {{- $href := cond (ne .Params.web "") .Params.web .RelPermalink -}}
+      {{- $extern := ne .Params.web "" -}}
+      <a class="obra-card" href="{{ $href }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-               alt="{{ $.Title }}"
+               alt="{{ $titol }}"
                loading="lazy">
         </div>
         {{ end }}
         <div class="obra-card__info">
           <h3 class="obra-card__title">{{ .Title }}</h3>
-          {{ with .Params.any }}<p class="obra-card__year">{{ . }}</p>{{ end }}
+          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
+          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
         </div>
       </a>
       {{ end }}
     </div>
+    {{ else }}
+    <p class="obra-section__empty">{{ i18n "obra_discs_aviat" | default "Aviat." }}</p>
     {{ end }}
   </section>
 
