@@ -66,6 +66,28 @@
 </section>
 {{ end }}
 
+{{/* ── Tira d'obra — 4 cobertes destacades + link a /obra/ ────────────────── */}}
+{{- $obra := where (where .Site.RegularPages "Section" "obra") "Params.destacat" true -}}
+{{- $obra = $obra.ByDate.Reverse | first 4 -}}
+{{ if $obra }}
+<div class="container">
+  <div class="tira-obra">
+    <div class="tira-obra__cobertes">
+      {{- range $obra -}}
+      {{- $titol := .Title -}}
+      {{ with .Params.image }}
+      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" loading="lazy" width="52" height="52">
+      {{ end }}
+      {{- end -}}
+    </div>
+    <div class="tira-obra__text">
+      <p class="tira-obra__narrativa">{{ i18n "obra_tira_narrativa" }}</p>
+      <a href="{{ "obra/" | relLangURL }}" class="tira-obra__link">{{ i18n "obra_tira_link" }} →</a>
+    </div>
+  </div>
+</div>
+{{ end }}
+
 {{/* ── Serveis — resum ─────────────────────────────────────────────────────── */}}
 {{ $serveis := hugo.Data.serveis }}
 {{ if $serveis }}
