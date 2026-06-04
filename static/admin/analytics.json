@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-03T23:27:02.797993Z",
+  "generated": "2026-06-04T02:45:35.040716Z",
   "period": {
-    "start": "2025-06-03",
-    "end": "2026-06-03"
+    "start": "2025-06-04",
+    "end": "2026-06-04"
   },
-  "total": 366,
+  "total": 416,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -109,53 +109,53 @@
     },
     {
       "date": "2026-06-03",
-      "count": 1
+      "count": 51
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 94
+      "count": 104
     },
     {
       "path": "/galeria",
-      "count": 28
+      "count": 34
     },
     {
       "path": "/festivals",
-      "count": 19
+      "count": 23
     },
     {
       "path": "/serveis",
-      "count": 18
+      "count": 22
     },
     {
       "path": "/contacte",
-      "count": 16
+      "count": 18
     },
     {
       "path": "/noticies",
-      "count": 14
+      "count": 17
     },
     {
       "path": "/blog",
-      "count": 13
+      "count": 14
     },
     {
       "path": "/qui-som",
-      "count": 9
+      "count": 11
     },
     {
       "path": "/ca",
       "count": 9
     },
     {
-      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "path": "/festivals/calella-harmonica-festival",
       "count": 8
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 7
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "count": 8
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
@@ -170,6 +170,14 @@
       "count": 5
     },
     {
+      "path": "/festivals/carnestoltes-nou-barris",
+      "count": 5
+    },
+    {
+      "path": "/obra",
+      "count": 4
+    },
+    {
       "path": "/contacte/politica-de-ptivacitat-avis-legal",
       "count": 4
     },
@@ -180,6 +188,18 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 4
+    },
+    {
+      "path": "/noticies/2026-06-la-juganera",
+      "count": 3
+    },
+    {
+      "path": "/festivals/im-jazz",
+      "count": 3
     },
     {
       "path": "/en/content/photography-studio",
@@ -194,10 +214,6 @@
       "count": 3
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
-      "count": 3
-    },
-    {
       "path": "/ca/contacte",
       "count": 3
     },
@@ -206,15 +222,11 @@
       "count": 3
     },
     {
-      "path": "/noticies/2026-06-la-juganera",
-      "count": 2
-    },
-    {
-      "path": "/festivals/im-jazz",
-      "count": 2
-    },
-    {
       "path": "/festivals/mostra-de-circ",
+      "count": 2
+    },
+    {
+      "path": "/en",
       "count": 2
     },
     {
@@ -258,10 +270,6 @@
       "count": 2
     },
     {
-      "path": "/festivals/flamenco-de-barrio",
-      "count": 2
-    },
-    {
       "path": "/ca/cerca",
       "count": 2
     },
@@ -282,55 +290,48 @@
       "count": 2
     },
     {
-      "path": "/festivals/esmuc-concerts-fi-curs",
+      "path": "/en/qui-som",
       "count": 1
     },
     {
-      "path": "/en/worldpinholeday-diana-f",
+      "path": "/noticies/2026-03-movent-imatges-fixes",
       "count": 1
     },
     {
-      "path": "/en/festivals/nou-barris-meets-new-orleans",
+      "path": "/obra/bernat-font-the-shout",
       "count": 1
     },
     {
-      "path": "/taller-de-tecniques-antigues-al-laboratori",
+      "path": "/tag/126th-jazz-avenue",
       "count": 1
     },
     {
-      "path": "/en/equip/adox-hr-50",
+      "path": "/hhh",
       "count": 1
     },
     {
-      "path": "/festivals/jornades-9-barris-acull",
-      "count": 1
-    },
-    {
-      "path": "/ca/tags/cris-lopezz",
-      "count": 1
-    },
-    {
-      "path": "/en/photography-services/professional-headshots",
+      "path": "/en/serveis",
       "count": 1
     }
   ],
   "by_lang": {
     "ca": 35,
     "es": 26,
-    "en": 18
+    "en": 21
   },
   "by_section": {
-    "inici": 104,
-    "galeria": 31,
-    "festivals": 59,
-    "serveis": 19,
-    "contacte": 25,
-    "noticies": 26,
-    "blog": 17,
-    "qui-som": 11,
+    "inici": 115,
+    "galeria": 37,
+    "festivals": 69,
+    "serveis": 24,
+    "contacte": 27,
+    "noticies": 31,
+    "blog": 18,
+    "qui-som": 14,
     "serveis-fotografics-2": 11,
     "cerca": 8,
     "servicios-fotograficos": 5,
+    "obra": 5,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "content": 3,
@@ -341,6 +342,8 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "tag": 1,
+    "hhh": 1,
     "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
@@ -364,58 +367,50 @@
   "noticies_top": [
     {
       "path": "/noticies/2026-06-la-juganera",
-      "count": 2
+      "count": 3
     },
     {
       "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
       "count": 2
+    },
+    {
+      "path": "/noticies/2026-03-movent-imatges-fixes",
+      "count": 1
     }
   ],
   "festivals_top": [
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 7
+      "count": 8
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 6
     },
     {
+      "path": "/festivals/carnestoltes-nou-barris",
+      "count": 5
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 4
+    },
+    {
+      "path": "/festivals/im-jazz",
+      "count": 3
+    },
+    {
       "path": "/festivals/festival-blues-barcelona",
       "count": 3
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
-      "count": 3
-    },
-    {
-      "path": "/festivals/im-jazz",
-      "count": 2
-    },
-    {
       "path": "/festivals/mostra-de-circ",
       "count": 2
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
-      "count": 2
-    },
-    {
-      "path": "/festivals/esmuc-concerts-fi-curs",
-      "count": 1
-    },
-    {
-      "path": "/en/festivals/nou-barris-meets-new-orleans",
-      "count": 1
-    },
-    {
-      "path": "/festivals/jornades-9-barris-acull",
-      "count": 1
     }
   ],
   "wizard_funnel": {
     "wizard-s1": 6,
-    "wizard-s2": 11,
+    "wizard-s2": 12,
     "wizard-s3": 5,
     "wizard-s4": 4,
     "wizard-sent": 3
@@ -577,7 +572,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 91
+      "count": 98
     },
     {
       "name": "Google",
@@ -585,13 +580,13 @@
       "count": 40
     },
     {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 4
-    },
-    {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
+      "count": 5
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
       "count": 4
     },
     {
