@@ -13,7 +13,6 @@
 {{ end }}
 {{- $imgList := slice -}}
 {{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
-{{- $firstImg := index $imgList 0 | default "" -}}
 
 {{/* ── Dades de galeria per JS (selecció aleatòria a client) ──────────── */}}
 {{- $galeriaItems := slice -}}
@@ -33,7 +32,7 @@
 
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
 <section class="hero" id="js-hero">
-  <div class="hero-bg{{ if $firstImg }} is-loaded{{ end }}" id="js-hero-bg" aria-hidden="true"{{ if $firstImg }} style="background-image:url('{{ $firstImg }}')"{{ end }}></div>
+  <div class="hero-bg" id="js-hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
     <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>
     <h1 class="hero-title" id="js-hero-title">
@@ -152,6 +151,40 @@
         {{ i18n "see_all_news" | default "Totes les notícies" }} →
       </a>
     </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Clients strip ───────────────────────────────────────────────────── */}}
+{{- $clients := hugo.Data.clients -}}
+{{ if $clients }}
+<section class="section section--clients">
+  <div class="container">
+    <p class="clients-label">{{ i18n "clients_label" | default "Hem treballat per:" }}</p>
+    <ul class="clients-list">
+      {{- range $clients.clients -}}
+      <li class="clients-item">
+        {{- if .web -}}
+        <a class="clients-link" href="{{ .web }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .nom }}">
+          {{- if .logo -}}
+          <img src="{{ .logo | strings.TrimLeft "/" | relURL }}" alt="{{ .nom }}" loading="lazy" width="120" height="40">
+          {{- else -}}
+          <span class="clients-name">{{ .nom }}</span>
+          {{- end -}}
+        </a>
+        {{- else -}}
+        <span class="clients-link clients-link--nolink">
+          {{- if .logo -}}
+          <img src="{{ .logo | strings.TrimLeft "/" | relURL }}" alt="{{ .nom }}" loading="lazy" width="120" height="40">
+          {{- else -}}
+          <span class="clients-name">{{ .nom }}</span>
+          {{- end -}}
+        </span>
+        {{- end -}}
+      </li>
+      {{- end -}}
+      <li class="clients-item clients-item--ellipsis" aria-hidden="true">…</li>
+    </ul>
   </div>
 </section>
 {{ end }}

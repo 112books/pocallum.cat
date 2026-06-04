@@ -239,6 +239,7 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   color: var(--mid);
   transition: color 0.15s;
+  white-space: nowrap;
 }
 .nav-link:hover,
 .nav-link.is-active { color: var(--fg); }
@@ -439,7 +440,8 @@ h1, h2, h3, h4 {
   padding: 6px;
   background: #fff;
 }
-.foto-grid--home .foto-item {
+.foto-grid--home .foto-item,
+.foto-grid--home .foto-item.img-loaded {
   padding: 6px;
   background: #fff;
   aspect-ratio: 3/2;
@@ -696,6 +698,14 @@ h1, h2, h3, h4 {
 .servei-chapter__photo--contain {
   object-fit: contain;
   background: var(--bg);
+}
+.servei-chapter__photo--adapt {
+  height: auto;
+  max-height: none;
+  object-fit: unset;
+}
+.servei-chapter__photo-wrap:has(.servei-chapter__photo--adapt) {
+  max-height: none;
 }
 .servei-chapter__photo-wrap--collage {
   display: flex;
@@ -2308,6 +2318,62 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   .festival-card { aspect-ratio: 3/2; }
 }
 
+/* ── Clients strip ─────────────────────────────────────────────────────────── */
+.section--clients {
+  padding: var(--space-10) 0;
+  border-top: 1px solid var(--line);
+}
+.clients-label {
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  opacity: 0.5;
+  margin-bottom: var(--space-6);
+}
+.clients-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4) var(--space-8);
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.clients-link:hover {
+  color: #777;
+}
+.clients-link img {
+  height: 28px;
+  width: auto;
+  display: block;
+  filter: grayscale(1) brightness(0.3);
+  transition: filter 0.2s;
+}
+.clients-link:hover img {
+  filter: grayscale(1) brightness(0.55);
+}
+.clients-name {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.clients-item--ellipsis {
+  font-family: var(--f-mono);
+  font-size: 0.9rem;
+  color: #333;
+  letter-spacing: 0.1em;
+}
+
 /* ── Footer ────────────────────────────────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--accent);
@@ -2331,6 +2397,9 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   font-family: var(--f-logo);
   font-size: 1.15rem;
   line-height: 1;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
 }
 .footer-logo-dot { color: var(--accent); }
 .footer-tagline {

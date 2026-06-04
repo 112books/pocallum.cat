@@ -20,6 +20,7 @@ grups:
   - titol: "Per a festivals i sales"
     titol_en: "For festivals and venues"
     image: "/images/galeria/MG_9379.jpg"
+    image_fit: "adapt"
     desc: "Cobertura completa d'event. Arxiu visual reutilitzable per a comunicació, premsa i memòria de l'organització."
     desc_en: "Full event coverage. Reusable visual archive for communications, press, and organizational memory."
     items:
