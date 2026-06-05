@@ -1,19 +1,19 @@
 {
-  "generated": "2026-06-04T21:23:59.509880Z",
+  "generated": "2026-06-05T02:32:09.538195Z",
   "period": {
-    "start": "2025-06-04",
-    "end": "2026-06-04"
+    "start": "2025-06-05",
+    "end": "2026-06-05"
   },
-  "total": 416,
+  "total": 433,
   "total_unique": 0,
   "hits_by_day": [
     {
       "date": "2026-05-09",
-      "count": 23
+      "count": 21
     },
     {
       "date": "2026-05-10",
-      "count": 55
+      "count": 54
     },
     {
       "date": "2026-05-11",
@@ -110,28 +110,36 @@
     {
       "date": "2026-06-03",
       "count": 51
+    },
+    {
+      "date": "2026-06-04",
+      "count": 18
+    },
+    {
+      "date": "2026-06-05",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 104
+      "count": 112
     },
     {
       "path": "/galeria",
-      "count": 34
+      "count": 36
+    },
+    {
+      "path": "/serveis",
+      "count": 26
     },
     {
       "path": "/festivals",
       "count": 23
     },
     {
-      "path": "/serveis",
-      "count": 22
-    },
-    {
       "path": "/contacte",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/noticies",
@@ -159,11 +167,11 @@
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/cerca",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
@@ -290,6 +298,18 @@
       "count": 2
     },
     {
+      "path": "/de-la-casualitat-a-la-creativitat-una-sessio-fotografica-amb-vestit-oriental",
+      "count": 1
+    },
+    {
+      "path": "/retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio",
+      "count": 1
+    },
+    {
+      "path": "/sessio-amb-eli",
+      "count": 1
+    },
+    {
       "path": "/en/qui-som",
       "count": 1
     },
@@ -300,18 +320,6 @@
     {
       "path": "/obra/bernat-font-the-shout",
       "count": 1
-    },
-    {
-      "path": "/tag/126th-jazz-avenue",
-      "count": 1
-    },
-    {
-      "path": "/hhh",
-      "count": 1
-    },
-    {
-      "path": "/en/serveis",
-      "count": 1
     }
   ],
   "by_lang": {
@@ -320,16 +328,16 @@
     "en": 21
   },
   "by_section": {
-    "inici": 115,
-    "galeria": 37,
-    "festivals": 69,
-    "serveis": 24,
-    "contacte": 27,
-    "noticies": 31,
+    "inici": 123,
+    "galeria": 39,
+    "serveis": 28,
+    "festivals": 70,
+    "contacte": 28,
+    "noticies": 30,
     "blog": 18,
     "qui-som": 14,
     "serveis-fotografics-2": 11,
-    "cerca": 8,
+    "cerca": 9,
     "servicios-fotograficos": 5,
     "obra": 5,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
@@ -342,6 +350,9 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 2,
+    "de-la-casualitat-a-la-creativitat-una-sessio-fotografica-amb-vestit-oriental": 1,
+    "retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio": 1,
+    "sessio-amb-eli": 1,
     "tag": 1,
     "hhh": 1,
     "worldpinholeday-diana-f": 1,
@@ -360,9 +371,7 @@
     "node": 1,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 1,
     "2016": 1,
-    "contacto": 1,
-    "movent-les-imatges-fixes": 1,
-    "admin": 1
+    "contacto": 1
   },
   "noticies_top": [
     {
@@ -385,7 +394,7 @@
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
@@ -410,7 +419,7 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 6,
-    "wizard-s2": 12,
+    "wizard-s2": 13,
     "wizard-s3": 5,
     "wizard-s4": 4,
     "wizard-sent": 3
@@ -419,7 +428,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 235
+      "count": 237
     },
     {
       "name": "Chrome",
@@ -441,12 +450,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 282
+      "count": 283
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 65
+      "count": 66
     },
     {
       "name": "Windows",
@@ -473,7 +482,7 @@
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 169
+      "count": 170
     },
     {
       "name": "desktop",
@@ -483,7 +492,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 95
+      "count": 96
     },
     {
       "name": "tablet",
@@ -495,7 +504,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 402
+      "count": 404
     },
     {
       "name": "United States",
@@ -572,12 +581,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 98
+      "count": 101
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 40
+      "count": 45
     },
     {
       "name": "blog.pocallum.cat",
