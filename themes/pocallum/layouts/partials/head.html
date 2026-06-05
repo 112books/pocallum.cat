@@ -31,7 +31,9 @@
 {{- end -}}
 
 {{/* Favicon */}}
-<link rel="icon" href="{{ "images/logotip/pocallum-logo.png" | absURL }}" type="image/png">
+<link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="32x32">
+<link rel="icon" href="{{ "favicon.ico" | absURL }}" sizes="16x16">
+<link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
 
 {{/* Hreflang per SEO multilingüe */}}
 {{ range .Translations }}
