@@ -1,11 +1,23 @@
 ---
 title: "Book artístic per a músics i artistes"
 description: "Sessió fotogràfica per a músics, bandes i artistes a Barcelona. Imatges per a premsa, xarxes socials, portades de disc i perfil professional."
+image: "/images/services/produccio.jpg"
 aliases:
   - /ca/serveis/books-artistics/
 ---
 
 La imatge d'un músic o artista és part del projecte. No és un complement. Quan la foto no explica el mateix que la música, alguna cosa falla. Nosaltres ho entenem des de dins: portem anys documentant directes, i sabem la diferència entre una foto de músic i una foto que sona.
+
+<div class="servei-page__imgs">
+  <img src="/images/galeria/DSCF0491.jpg" alt="Book artístic — músic">
+  <img src="/images/galeria/chiara-001.jpg" alt="Book artístic — artista">
+  <img src="/images/galeria/2021-02-05%20-%20Koko%20C%20-%20013.jpg" alt="Book artístic — Koko C">
+  <img src="/images/galeria/HD299-Marion-de-Acha-010.jpg" alt="Book artístic — Marion de Acha">
+  <img src="/images/galeria/2020-02-06-A-Katy-039.jpg" alt="Book artístic — Katy">
+  <img src="/images/galeria/IMG_0719.jpg" alt="Book artístic">
+  <img src="/images/galeria/L1470478-1.jpg" alt="Book artístic">
+  <img src="/images/galeria/2025-07-15%20-%20Horsman8x10%20-%20Foma100%20-%20Nadia%20Otshudi%20-%200001.jpg" alt="Book artístic — Nadia Otshudi">
+</div>
 
 ## Per a què serveix un book artístic?
 

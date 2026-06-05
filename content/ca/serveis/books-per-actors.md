@@ -1,6 +1,7 @@
 ---
 title: "Book fotogràfic per a actors i actrius"
 description: "Book d'actor professional a Barcelona. Fotografia de retrat i caràcter per a càstings, agències i perfils digitals. Sense estudi genèric, sense fons blanc."
+image: "/images/galeria/IMG_7371.jpg"
 aliases:
   - /serveis-fotografics-2/books-per-actors-i-actrius/
   - /es/servicios-fotograficos/books-para-actores-y-actrices/
@@ -8,6 +9,19 @@ aliases:
 ---
 
 El book és la teva carta de presentació. Directores de càsting, agències i productores el miren durant pocs segons: o els enganxa o no. Un fons blanc i llum de plató no t'explica. Nosaltres sí.
+
+<div class="servei-page__imgs">
+  <img src="/images/galeria/2025-12-11%20-%20Hassel%20-%20PanF+@80%20-%20Adria%20Bernal%20-%200010.jpg" alt="Book actoral — Adrià Bernal">
+  <img src="/images/galeria/photo_2023-05-05-15.47.57.jpeg" alt="Book actoral">
+  <img src="/images/galeria/2024-03-07-LM4-2-Ados-HR-50-Eli-Flamenca-A-010.jpg" alt="Book actoral — Eli">
+  <img src="/images/galeria/IMG_5450.jpg" alt="Book actoral">
+  <img src="/images/galeria/2023-12-03%20-%20Ariadna%20-%20LM4-2%20-%20HR50%20-%20B%20-%200086.jpg" alt="Book actoral — Ariadna">
+  <img src="/images/galeria/2023-11-03%20-%20Tierry%20Torniquet%20-%20Hasselblad%20500%20CM%20-%20PanF%20-%20005.jpg" alt="Book actoral — Tierry Torniquet">
+  <img src="/images/galeria/2024-07-04%20-%20M4-2%20-%20HR-50%20-%20Majo%20-%200029.jpg" alt="Book actoral — Majo">
+  <img src="/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg" alt="Book actoral — Berta Corts">
+  <img src="/images/galeria/IMG_4278.jpg" alt="Book actoral">
+  <img src="/images/galeria/HD486-013.jpg" alt="Book actoral">
+</div>
 
 ## Què inclou un book d'actor amb Pocallum?
 

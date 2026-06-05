@@ -1,6 +1,7 @@
 ---
 title: "Artist portfolio photography for musicians and artists"
 description: "Photography sessions for musicians, bands and artists in Barcelona. Images for press, social media, album covers and professional profiles."
+image: "/images/services/produccio.jpg"
 aliases:
   - /en/serveis/artistic-portfolios/
 ---

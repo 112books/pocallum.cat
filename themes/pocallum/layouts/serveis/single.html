@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ with .Params.image }}
+<div class="servei-page__hero">
+  <img src="{{ . }}" alt="{{ $.Title }}" class="servei-page__hero-img" loading="eager">
+</div>
+{{ end }}
+
+<header class="servei-page__header container">
+  <p class="page-eyebrow"><a href="{{ "serveis/" | relLangURL }}" class="page-eyebrow--link">{{ i18n "serveis_eyebrow" | default "El que fem" }}</a></p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-intro">{{ . }}</p>{{ end }}
+</header>
+
+<div class="servei-page__body prose container">
+  {{ .Content }}
+</div>
+
+{{ end }}

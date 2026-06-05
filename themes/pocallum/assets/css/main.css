@@ -425,6 +425,41 @@ h1, h2, h3, h4 {
   max-width: 40rem;
 }
 
+/* ── Servei single page ────────────────────────────────────────────────────── */
+.servei-page__hero {
+  width: 100%;
+  overflow: hidden;
+  max-height: clamp(320px, 38vw, 580px);
+}
+.servei-page__hero-img {
+  width: 100%;
+  height: clamp(320px, 38vw, 580px);
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.servei-page__header {
+  padding: var(--space-24) var(--space-8) var(--space-20);
+  border-bottom: 1px solid var(--line);
+}
+.servei-page__body {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-24);
+}
+.servei-page__imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin: var(--space-10) 0;
+}
+.servei-page__imgs img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 /* ── Foto grid ─────────────────────────────────────────────────────────────── */
 .section--fotos {
   padding-block: 0;
@@ -703,7 +738,7 @@ h1, h2, h3, h4 {
   height: auto;
   max-height: none;
   object-fit: unset;
-  margin-bottom: -25px;
+  margin-bottom: -65px;
 }
 .servei-chapter__photo-wrap:has(.servei-chapter__photo--adapt) {
   max-height: none;
