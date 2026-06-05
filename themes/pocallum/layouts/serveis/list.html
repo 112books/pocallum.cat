@@ -40,7 +40,7 @@
     </div>
     <ul class="servei-chapter__list">
       {{ range $items }}
-      <li class="servei-chapter__item">{{ . }}</li>
+      <li class="servei-chapter__item">{{ . | markdownify }}</li>
       {{ end }}
     </ul>
     {{ with $cita }}

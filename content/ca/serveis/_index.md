@@ -1,6 +1,8 @@
 ---
 title: "Serveis fotogràfics"
 description: "Fotografia i disseny per a músics, festivals, sales de concert i projectes editorials. Pressupostos a mida."
+aliases:
+  - /ca/serveis/
 ---
 
 Treballem amb músics, festivals, sales de concert i projectes editorials. Cada encàrrec és diferent, cada pressupost és a mida.
