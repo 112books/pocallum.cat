@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ with .Params.image }}
-<div class="servei-page__hero" style="background-image: url('{{ . }}')"></div>
+<div class="servei-page__hero" style="background-image: url('{{ . }}'){{ with $.Params.image_position }}; background-position: {{ . }}{{ end }}"></div>
 {{ end }}
 
 <header class="servei-page__header container">

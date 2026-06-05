@@ -431,7 +431,7 @@ h1, h2, h3, h4 {
   height: clamp(320px, 38vw, 580px);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 .servei-page__header {
