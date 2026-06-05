@@ -1,7 +1,7 @@
 ---
 title: "Book artístic per a músics i artistes"
 description: "Sessió fotogràfica per a músics, bandes i artistes a Barcelona. Imatges per a premsa, xarxes socials, portades de disc i perfil professional."
-image: "/images/services/produccio.jpg"
+image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
 aliases:
   - /ca/serveis/books-artistics/
 ---

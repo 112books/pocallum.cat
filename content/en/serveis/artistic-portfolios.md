@@ -1,7 +1,7 @@
 ---
 title: "Artist portfolio photography for musicians and artists"
 description: "Photography sessions for musicians, bands and artists in Barcelona. Images for press, social media, album covers and professional profiles."
-image: "/images/services/produccio.jpg"
+image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
 aliases:
   - /en/serveis/artistic-portfolios/
 ---
