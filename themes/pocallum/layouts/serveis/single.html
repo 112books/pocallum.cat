@@ -1,9 +1,7 @@
 {{ define "main" }}
 
 {{ with .Params.image }}
-<div class="servei-page__hero">
-  <img src="{{ . }}" alt="{{ $.Title }}" class="servei-page__hero-img" loading="eager">
-</div>
+<div class="servei-page__hero" style="background-image: url('{{ . }}')"></div>
 {{ end }}
 
 <header class="servei-page__header container">
