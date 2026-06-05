@@ -17,6 +17,12 @@ La imatge d'un músic o artista és part del projecte. No és un complement. Qua
   <img src="/images/galeria/IMG_0719.jpg" alt="Book artístic">
   <img src="/images/galeria/L1470478-1.jpg" alt="Book artístic">
   <img src="/images/galeria/2025-07-15%20-%20Horsman8x10%20-%20Foma100%20-%20Nadia%20Otshudi%20-%200001.jpg" alt="Book artístic — Nadia Otshudi">
+  <img src="/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg" alt="Book artístic — Berta Corts">
+  <img src="/images/galeria/2026-02-27%20-%20Rolleiflex%20%20-%20Foma400%20-%20Aixhia%20-A-%200003.jpg" alt="Book artístic — Aixhia">
+  <img src="/images/galeria/2022-02-26%20-%20Hoochie%20Coochie%20-%20L6%20-%20%200092.jpg" alt="Book artístic — Hoochie Coochie">
+  <img src="/images/galeria/PHOTO-2025-10-26-02-13-51-1.jpg" alt="Book artístic">
+  <img src="/images/galeria/IMG_5876.jpg" alt="Book artístic">
+  <img src="/images/galeria/IMG_4654.jpg" alt="Book artístic">
 </div>
 
 ## Per a què serveix un book artístic?

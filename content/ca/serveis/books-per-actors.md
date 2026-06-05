@@ -18,7 +18,7 @@ El book és la teva carta de presentació. Directores de càsting, agències i p
   <img src="/images/galeria/2023-12-03%20-%20Ariadna%20-%20LM4-2%20-%20HR50%20-%20B%20-%200086.jpg" alt="Book actoral — Ariadna">
   <img src="/images/galeria/2023-11-03%20-%20Tierry%20Torniquet%20-%20Hasselblad%20500%20CM%20-%20PanF%20-%20005.jpg" alt="Book actoral — Tierry Torniquet">
   <img src="/images/galeria/2024-07-04%20-%20M4-2%20-%20HR-50%20-%20Majo%20-%200029.jpg" alt="Book actoral — Majo">
-  <img src="/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg" alt="Book actoral — Berta Corts">
+
   <img src="/images/galeria/IMG_4278.jpg" alt="Book actoral">
   <img src="/images/galeria/HD486-013.jpg" alt="Book actoral">
 </div>
