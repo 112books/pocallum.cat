@@ -3,6 +3,8 @@ title: "Política de privacitat"
 description: "Política de privacitat i protecció de dades de pocallum.cat"
 date: 2026-05-01
 draft: false
+aliases:
+  - /contacte/politica-de-ptivacitat-avis-legal
 ---
 
 ## Responsable del tractament
