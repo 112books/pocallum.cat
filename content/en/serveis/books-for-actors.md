@@ -1,7 +1,7 @@
 ---
 title: "Actor portfolio photography"
 description: "Professional actor headshots and portfolio photography in Barcelona. Character-driven photography for castings, agencies and digital profiles."
-image: "/images/galeria/IMG_7371.jpg"
+image: "/images/galeria/IMG_2331.jpg"
 aliases:
   - /en/serveis/books-for-actors/
 ---

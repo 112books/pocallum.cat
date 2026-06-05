@@ -1,7 +1,7 @@
 ---
 title: "Book fotogràfic per a actors i actrius"
 description: "Book d'actor professional a Barcelona. Fotografia de retrat i caràcter per a càstings, agències i perfils digitals. Sense estudi genèric, sense fons blanc."
-image: "/images/galeria/IMG_7371.jpg"
+image: "/images/galeria/IMG_2331.jpg"
 aliases:
   - /serveis-fotografics-2/books-per-actors-i-actrius/
   - /es/servicios-fotograficos/books-para-actores-y-actrices/
