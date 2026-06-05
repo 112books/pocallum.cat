@@ -23,6 +23,7 @@ La imatge d'un músic o artista és part del projecte. No és un complement. Qua
   <img src="/images/galeria/PHOTO-2025-10-26-02-13-51-1.jpg" alt="Book artístic">
   <img src="/images/galeria/IMG_5876.jpg" alt="Book artístic">
   <img src="/images/galeria/IMG_4654.jpg" alt="Book artístic">
+  <img src="/images/galeria/IMG_1583.jpg" alt="Book artístic">
 </div>
 
 ## Per a què serveix un book artístic?

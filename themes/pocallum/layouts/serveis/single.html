@@ -16,4 +16,15 @@
   {{ .Content }}
 </div>
 
+<script>
+document.querySelectorAll('.servei-page__imgs').forEach(function(grid) {
+  var imgs = Array.from(grid.children);
+  for (var i = imgs.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    grid.appendChild(imgs[j]);
+    imgs.splice(j, 1);
+  }
+});
+</script>
+
 {{ end }}
