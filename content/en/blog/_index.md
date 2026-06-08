@@ -3,10 +3,10 @@ title: "Blog"
 description: "Photographic chronicle, as it happens. Since 2010."
 layout: "blog"
 stats:
-  - { num: "2,327", label: "posts", raw: 2327 }
-  - { num: "123,716", label: "words", raw: 123716 }
+  - { num: "2,329", label: "posts", raw: 2329 }
+  - { num: "124,531", label: "words", raw: 124531 }
   - { num: "96", label: "categories", raw: 96 }
-  - { num: "3,009", label: "tags", raw: 3009 }
+  - { num: "3,026", label: "tags", raw: 3026 }
   - { num: "71", label: "comments", raw: 71 }
 ---
 
