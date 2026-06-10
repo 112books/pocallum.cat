@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-09T23:11:24.003187Z",
+  "generated": "2026-06-10T02:32:32.723107Z",
   "period": {
-    "start": "2025-06-09",
-    "end": "2026-06-09"
+    "start": "2025-06-10",
+    "end": "2026-06-10"
   },
-  "total": 470,
+  "total": 480,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 50
+      "count": 48
     },
     {
       "date": "2026-05-11",
@@ -130,24 +130,28 @@
     {
       "date": "2026-06-08",
       "count": 8
+    },
+    {
+      "date": "2026-06-09",
+      "count": 12
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 124
+      "count": 129
     },
     {
       "path": "/galeria",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/serveis",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/festivals",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/contacte",
@@ -159,7 +163,7 @@
     },
     {
       "path": "/blog",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/qui-som",
@@ -282,6 +286,10 @@
       "count": 2
     },
     {
+      "path": "/festivals/picnic-de-blues",
+      "count": 2
+    },
+    {
       "path": "/ca/qui-som",
       "count": 2
     },
@@ -326,11 +334,7 @@
       "count": 2
     },
     {
-      "path": "/en/tag/andrew-moreno-en",
-      "count": 1
-    },
-    {
-      "path": "/festivals/any-nou-xines",
+      "path": "/galeria/img-6363",
       "count": 1
     }
   ],
@@ -340,13 +344,13 @@
     "en": 24
   },
   "by_section": {
-    "inici": 135,
-    "galeria": 42,
-    "serveis": 41,
-    "festivals": 75,
+    "inici": 140,
+    "galeria": 45,
+    "serveis": 42,
+    "festivals": 77,
     "contacte": 31,
-    "noticies": 31,
-    "blog": 18,
+    "noticies": 30,
+    "blog": 19,
     "qui-som": 15,
     "serveis-fotografics-2": 11,
     "cerca": 9,
@@ -370,7 +374,7 @@
     "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
-    "tags": 4,
+    "tags": 3,
     "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1,
     "legal": 1,
     "wp-admin": 1,
@@ -427,8 +431,8 @@
       "count": 2
     },
     {
-      "path": "/festivals/any-nou-xines",
-      "count": 1
+      "path": "/festivals/picnic-de-blues",
+      "count": 2
     }
   ],
   "wizard_funnel": {
@@ -595,12 +599,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 110
+      "count": 115
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 46
+      "count": 47
     },
     {
       "name": "blog.pocallum.cat",
