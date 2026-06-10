@@ -12,7 +12,7 @@ Un festival necessita imatges que funcionin l'endemà del concert, tres mesos de
   <img src="/images/galeria/MG_9379.jpg" alt="Cobertura de festival">
   <img src="/images/serveis/festivals-i-sales/BarcelonaTattooExpo015.jpg" alt="Barcelona Tattoo Expo">
   <img src="/images/serveis/festivals-i-sales/Django-Reinhardt-Festival.jpg" alt="Django Reinhardt Festival">
-  <img src="/images/serveis/festivals-i-sales/FestivalSopesMón2019.jpg" alt="Festival de Sopes del Món 2019">
+  <img src="/images/serveis/festivals-i-sales/FestivalSopesMon2019.jpg" alt="Festival de Sopes del Món 2019">
   <img src="/images/serveis/festivals-i-sales/visa-image.jpg" alt="visa pour image">
   <img src="/images/serveis/festivals-i-sales/OnlyTattooBcn.jpg" alt="Only Tattoo Barcelona">
   <img src="/images/serveis/festivals-i-sales/Festival-Sopes-del-Mon-Mundial-Bolognia.jpg" alt="Festival-Sopes del Mòn Mundial Bolognia">
