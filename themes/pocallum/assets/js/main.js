@@ -330,6 +330,17 @@
     });
   });
 
+  document.querySelectorAll('.servei-page__imgs').forEach(grid => {
+    const imgs = grid.querySelectorAll('img');
+    imgs.forEach((img, i) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        items = [...imgs].map(el => ({ dataset: { lbSrc: el.src, lbAlt: el.alt } }));
+        open(i);
+      });
+    });
+  });
+
   lbClose.addEventListener('click', close);
   lbPrev.addEventListener('click', () => show(current - 1));
   lbNext.addEventListener('click', () => show(current + 1));

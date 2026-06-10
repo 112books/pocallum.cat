@@ -1,0 +1,44 @@
+---
+title: "Concert and live music photography"
+description: "Live music photography in Barcelona. Concerts, festivals and shows documented without flash, in available light. For press, social media and tour archives."
+image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
+aliases:
+  - /en/serveis/live-music/
+---
+
+A concert can't be repeated. The light shifts every second, the musician moves, the moment ends. Either you're in the right spot at the right instant or you're not. We've spent fifteen years learning how to be there — in jazz clubs, outdoor festivals, big stages and small rooms where lighting is the last thing the organiser thought about.
+
+<div class="servei-page__imgs">
+  <img src="/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg" alt="Avishai Cohen live">
+  <img src="/images/serveis/concerts/Avishai-Cohen-vijazz.jpg" alt="Avishai Cohen at ViJazz">
+  <img src="/images/serveis/concerts/avishain-cohen.jpg" alt="Avishai Cohen">
+  <img src="/images/serveis/concerts/2020-06-18%20-%20Ignasi%20Terraza%20-%20Jamboree%20-%200015.jpg" alt="Ignasi Terraza at Jamboree">
+  <img src="/images/serveis/concerts/lluis-coloma.jpg" alt="Lluís Coloma live">
+  <img src="/images/serveis/concerts/sax-o-rama.jpg" alt="Sax-o-Rama live">
+  <img src="/images/serveis/concerts/barcelona-big-blues-band-noa-vd.jpg" alt="Barcelona Big Blues Band">
+  <img src="/images/serveis/concerts/festival-blues-bcn.jpg" alt="Barcelona Blues Festival">
+  <img src="/images/serveis/concerts/festival-blues-bcn2.jpg" alt="Barcelona Blues Festival">
+  <img src="/images/serveis/concerts/festival-blues-barcelona-3.jpg" alt="Barcelona Blues Festival">
+  <img src="/images/serveis/concerts/picnic-blues-nou-barris.jpg" alt="Picnic Blues Nou Barris">
+  <img src="/images/serveis/concerts/casal-rosperitat.jpg" alt="Concert at Casal de la Prosperitat">
+  <img src="/images/serveis/concerts/casal-pospe.jpg" alt="Concert live">
+  <img src="/images/serveis/concerts/IMG_8328.jpg" alt="Concert live">
+  <img src="/images/serveis/concerts/L1500171.jpg" alt="Concert live">
+</div>
+
+## What do we cover?
+
+- Club and venue concerts: from the Jamboree to independent venues across the region
+- Music festivals across all disciplines: jazz, blues, folk, electronic, classical
+- Album launch performances and special sessions
+- Tour coverage: sustained documentation of a project through the season
+
+## How do we work?
+
+No flash. Ever. Not as an aesthetic rule, but because disrupting the audience's experience is disrespectful to the stage. We work with existing light, however dark the room. The archive we deliver is edited and clean — ready for press, website, social media and tour press kits.
+
+## What does it cost?
+
+Depends on event duration, access and the number of final edited images. Write to us and we'll send a proposal within 48 hours.
+
+[Request a quote](/en/contacte/)

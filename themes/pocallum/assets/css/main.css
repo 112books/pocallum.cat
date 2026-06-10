@@ -1381,7 +1381,7 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 .prose ol { list-style: decimal; }
 .prose li { margin-bottom: var(--space-2); line-height: 1.7; }
 .prose a  { text-decoration: underline; text-underline-offset: 3px; }
-.prose a:hover { color: var(--mid); }
+.prose a:hover { color: var(--accent); }
 .prose strong { font-weight: 600; }
 
 /* ── Blog presentation ───────────────────────────────────────────────────────── */
