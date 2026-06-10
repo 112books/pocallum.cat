@@ -10,7 +10,6 @@ Un fotollibre no és un àlbum ni un catàleg d'imatges. És un objecte editoria
 
 <div class="servei-page__imgs">
   <img src="/images/obra/antropoformologies.jpg" alt="Fotollibre — Antropoformologies">
-  <img src="/images/obra/antropoformologies-i.jpg" alt="Fotollibre interior — Antropoformologies I">
   <img src="/images/obra/antropoformologies-ii.jpg" alt="Fotollibre interior — Antropoformologies II">
   <img src="/images/obra/antropoformologies-iii.jpg" alt="Fotollibre interior — Antropoformologies III">
   <img src="/images/obra/acarrejant.jpg" alt="Fotollibre — Acarrejant">

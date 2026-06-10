@@ -1,7 +1,7 @@
 ---
 title: "Portada i identitat visual"
 description: "Disseny gràfic de portades, cartells i identitat visual per a projectes musicals, editorials i de les arts escèniques. Del concepte al material final."
-image: "/images/obra/40-anys-blues.jpg"
+image: "/images/serveis/portada-identitat/sakura-koe.jpg"
 aliases:
   - /ca/serveis/portada-identitat/
 ---
@@ -9,12 +9,29 @@ aliases:
 La identitat visual d'un projecte artístic no és un logotip i una paleta de colors. És la manera com el projecte es mostra al món: la portada del disc, el cartell del concert, les imatges de xarxes, el dossier de premsa. Tot ha de parlar el mateix idioma.
 
 <div class="servei-page__imgs">
-  <img src="/images/obra/40-anys-blues.jpg" alt="Identitat visual — 40 anys de blues">
-  <img src="/images/obra/i-wanna-be-your-dog.jpg" alt="Disseny gràfic — I Wanna Be Your Dog">
-  <img src="/images/obra/tota-blues-cuando-tu-no-estas.jpg" alt="Portada — Tota Blues">
-  <img src="/images/obra/ivan-kovacevic-disc.jpg" alt="Portada — Ivan Kovacevic">
-  <img src="/images/obra/big-dani-saxplosion.jpg" alt="Portada — Big Dani Saxplosion">
-  <img src="/images/obra/joan-pau-cumellas-baggage.jpg" alt="Portada — Joan Pau Cumellas Baggage">
+  <img src="/images/serveis/portada-identitat/sakura-koe.jpg" alt="Portada — Sakura Koe">
+  <img src="/images/serveis/portada-identitat/Exposicio-40-anys-de-Blues-a-Barcelona-Cartell-gran.jpg" alt="Cartell — 40 anys de Blues a Barcelona">
+  <img src="/images/serveis/portada-identitat/El-naixement-duna-bestia-02.png" alt="El naixement d'una bèstia — disseny">
+  <img src="/images/serveis/portada-identitat/Antropomorfologies-II-Nahoemi-amb-focus-Maqueta-1584x2346cm-mare-covertes-1-scaled.png" alt="Maqueta — Antropoformologies II">
+  <img src="/images/serveis/portada-identitat/Arrencant-el-dia-01-1.png" alt="Arrencant el dia — procés">
+  <img src="/images/serveis/portada-identitat/Arrencant-el-dia-01-F.png" alt="Arrencant el dia — portada final">
+  <img src="/images/serveis/portada-identitat/Medatsu-Ki-001.png" alt="Medatsu Ki — portada">
+  <img src="/images/serveis/portada-identitat/Medatsu-Ki-004.png" alt="Medatsu Ki — interior">
+  <img src="/images/serveis/portada-identitat/Preses-Falses.png" alt="Preses Falses — portada">
+  <img src="/images/serveis/portada-identitat/La-sacsejada-interior-Antropoformologies-III-02.png" alt="La sacsejada interior — Antropoformologies III">
+  <img src="/images/serveis/portada-identitat/portada_llibrejovesprospe_baixa-722x1024-1.jpg" alt="Portada — Joves Prosperitat">
+  <img src="/images/serveis/portada-identitat/61rulX5YdxL._SL1499_.jpg" alt="Portada de disc">
+  <img src="/images/serveis/portada-identitat/cover_2.jpg" alt="Portada">
+  <img src="/images/serveis/portada-identitat/IMAGE-2026-04-15-130805.jpg" alt="Identitat visual">
+  <img src="/images/serveis/portada-identitat/lc-apx400-510pyro-2025-02-13.png" alt="Projecte editorial">
+  <img src="/images/serveis/portada-identitat/lc-foma100-2025-03-07.jpg" alt="Fotografia editorial">
+  <img src="/images/serveis/portada-identitat/Captura-de-pantalla-2025-12-27-a-les-10.50.22.png" alt="Disseny editorial">
+  <img src="/images/serveis/portada-identitat/Captura-de-pantalla-2025-12-27-a-les-10.50.42.png" alt="Disseny editorial">
+  <img src="/images/serveis/portada-identitat/Captura-de-pantalla-2025-12-27-a-les-10.50.56.png" alt="Disseny editorial">
+  <img src="/images/serveis/portada-identitat/Captura-de-pantalla-2026-02-07-a-les-19.07.54-1.png" alt="Disseny editorial">
+  <img src="/images/serveis/portada-identitat/Captura-de-pantalla-2026-02-07-a-les-19.08.12.png" alt="Disseny editorial">
+  <img src="/images/serveis/portada-identitat/conclusio.png" alt="Identitat visual — conclusió">
+  <img src="/images/serveis/portada-identitat/00.png" alt="Disseny gràfic">
 </div>
 
 ## Una peça o una identitat completa?

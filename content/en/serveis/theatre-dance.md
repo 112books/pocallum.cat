@@ -1,7 +1,7 @@
 ---
 title: "Theatre, dance and performing arts photography"
 description: "Photography for theatre, dance, circus and performance in Barcelona. No flash, no disruption. We know when to shoot without breaking the spell."
-image: "/images/galeria/_DSF5682.jpg"
+image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
   - /en/serveis/theatre-dance/
 ---
@@ -9,12 +9,30 @@ aliases:
 In the performing arts, the photographer is not the central element: the stage is. Our job is to document what's happening without becoming the main character — without breaking the performers' concentration or the audience's experience. And do it well, at the same time.
 
 <div class="servei-page__imgs">
-  <img src="/images/galeria/_DSF5682.jpg" alt="Performing arts — photography documentation">
-  <img src="/images/galeria/_DSF1046.jpg" alt="Live performance">
-  <img src="/images/galeria/_DSF3523-Edit.jpg" alt="Performance on stage">
-  <img src="/images/galeria/_DSF8624.jpg" alt="Theatre — photographic reportage">
-  <img src="/images/galeria/_DSF9498.jpg" alt="Dance live">
-  <img src="/images/galeria/MG_0651.jpg" alt="Performing arts">
+  <img src="/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg" alt="VOCES — Sufi Dance Performance, Chiara Salvati">
+  <img src="/images/serveis/teatre-dansa/be-water-laura-guiteras.jpg" alt="Be Water, by Laura Guiteras">
+  <img src="/images/serveis/teatre-dansa/teatre-bostikianes-amb-laura-guieres.jpg" alt="Bostikianes with Laura Guiteres">
+  <img src="/images/serveis/teatre-dansa/dansa-vertical-graffiti-ateneu-popular-9-barris.jpg" alt="Vertical dance over Graffiti, Ateneu Popular de 9 Barris">
+  <img src="/images/serveis/teatre-dansa/districte-flamenco.jpg" alt="Districte Flamenco">
+  <img src="/images/serveis/teatre-dansa/captura-y-fuga-jose-manuel-alvarez.jpg" alt="Captura y Fuga, José Manuel Álvarez">
+  <img src="/images/serveis/teatre-dansa/associacio-alquimistes-teatre-inclusiu.jpg" alt="Associació Alquimistes — inclusive theatre">
+  <img src="/images/serveis/teatre-dansa/burruezo-nur-camerata-virginia-joelle.jpg" alt="Burruezo & Nur Camerata and Virginia Joëlle">
+  <img src="/images/serveis/teatre-dansa/cia-teatre-estable-casa-real-pit-i-collons.jpg" alt="Cia. de Teatre Estable de la Casa Real">
+  <img src="/images/serveis/teatre-dansa/concert-palo-qsea-casal-barri-prosperitat.jpg" alt="Concert Palo Q'Sea at Casal de Barri de la Prosperitat">
+  <img src="/images/serveis/teatre-dansa/elena.jpg" alt="Elena">
+  <img src="/images/serveis/teatre-dansa/en-bangkok-tambien-hay-ratas.jpg" alt="En Bangkok también hay ratas">
+  <img src="/images/serveis/teatre-dansa/erratik.jpg" alt="Erràtik">
+  <img src="/images/serveis/teatre-dansa/julio-ruiz-la-familia.jpg" alt="Julio Ruiz — La Família">
+  <img src="/images/serveis/teatre-dansa/la-esclusa-teatre-casal-prosperitat.jpg" alt="La Esclusa — Theatre at Casal de Prosperitat">
+  <img src="/images/serveis/teatre-dansa/mirades-sobre-lacte-performatiu.webp" alt="Mirades sobre l'acte performatiu">
+  <img src="/images/serveis/teatre-dansa/no-es-pais-para-negras-projecte-vaca.jpg" alt="No es país para Negras, Projecte VACA">
+  <img src="/images/serveis/teatre-dansa/no-es-pais-para-negras.jpg" alt="No es país para negras">
+  <img src="/images/serveis/teatre-dansa/parad-de-pararme-casal-barri-prosperitat.jpg" alt="Parad de pararme, Casal de barri de Prosperitat">
+  <img src="/images/serveis/teatre-dansa/pez-en-raya.jpg" alt="Pez en Raya">
+  <img src="/images/serveis/teatre-dansa/pren-laire-espectacle-teatre.jpg" alt="Pren l'Aire — Theatre performance">
+  <img src="/images/serveis/teatre-dansa/resurrection-a-la-carte.jpg" alt="Resurrection a la cartè">
+  <img src="/images/serveis/teatre-dansa/the-rodriguez-sisters.jpg" alt="The Rodríguez Sisters">
+  <img src="/images/serveis/teatre-dansa/waterbowling-teatreliquid.jpg" alt="WaterBowling — Teatre Líquid">
 </div>
 
 ## Working conditions

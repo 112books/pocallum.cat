@@ -698,6 +698,17 @@ h1, h2, h3, h4 {
   left: 0;
   color: var(--accent);
 }
+.servei-chapter__item a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(240,240,240,0.3);
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.servei-chapter__item a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
 .servei-chapter__cta-bar {
   margin-top: var(--space-8);
   text-align: right;
