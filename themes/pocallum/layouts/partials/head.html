@@ -70,7 +70,7 @@
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Photographer"],
   "name": "Pocallum",
-  "description": "{{ i18n "site_tagline" | default "Fotografia de cultura" }}. Jazz, blues, teatre, dansa i arts escèniques a Barcelona. Des del 2010.",
+  "description": "Fotògraf de directes i música en viu a Barcelona. Retrat artístic, fotografia editorial i documentació d'arts escèniques. Jazz, blues, flamenc, teatre, dansa i festivals culturals. Fotografia analògica i digital. Des del 2002.",
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
   "image": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
@@ -97,9 +97,37 @@
   },
   "areaServed": [
     { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" },
     { "@type": "Country", "name": "Spain" }
   ],
-  "knowsAbout": ["Jazz photography", "Concert photography", "Theatre photography", "Dance photography", "Flamenco photography", "Blues photography", "Performing arts photography", "Cultural events photography"],
+  "knowsAbout": [
+    "Concert photography", "Live music photography", "Music photography",
+    "Jazz photography", "Blues photography", "Flamenco photography",
+    "Theatre photography", "Dance photography", "Performing arts photography",
+    "Cultural events photography", "Festival photography",
+    "Artist portrait photography", "Editorial photography",
+    "Analogue photography", "Film photography",
+    "Photobook design", "Album cover design"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serveis fotogràfics",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografia de concerts i directes" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sessió fotogràfica per a banda o artista" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Book fotogràfic per a actors i actrius" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cobertura fotogràfica per a festivals i sales" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografia de teatre, dansa i arts escèniques" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotollibre artístic" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portada i identitat visual" } }
+    ]
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Joan Linux Martínez",
+    "jobTitle": "Fotògraf",
+    "knowsAbout": ["Live music photography", "Concert photography", "Editorial photography", "Analogue photography"]
+  },
   "foundingDate": "2002",
   "priceRange": "€€",
   "sameAs": [
