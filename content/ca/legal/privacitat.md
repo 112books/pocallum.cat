@@ -42,6 +42,10 @@ Aquest web utilitza **GoatCounter** per mesurar el trànsit. GoatCounter és un 
 - No comparteix cap dada amb tercers
 - Compleix el RGPD sense necessitat de consentiment
 
+### Rendiment en cercadors
+
+Per a l'anàlisi del rendiment en cercadors, s'utilitza **Google Search Console**, un servei de Google LLC. Aquesta eina processa dades agregades sobre com el lloc apareix als resultats de cerca de Google (impressions, clics i posicions), però no col·loca cookies ni recull dades personals dels visitants. Les dades s'utilitzen exclusivament per millorar la visibilitat i el contingut del lloc web.
+
 ---
 
 ## Drets de les persones interessades
@@ -69,4 +73,4 @@ Les dades que ens facilites es tractaran amb absoluta confidencialitat i no se c
 
 Aquesta política pot actualitzar-se per adaptar-se a canvis normatius o de servei. La versió vigent sempre estarà disponible en aquesta pàgina.
 
-*Darrera actualització: maig de 2026*
+*Darrera actualització: juny de 2026*

@@ -24,7 +24,7 @@ jobs:
           BASE="https://${GC_ACCOUNT}.goatcounter.com/api/v0"
           AUTH="Authorization: Bearer ${GC_TOKEN}"
 
-          CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}")
+          CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}") || true
           if ! echo "${CHECK}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
             echo "::warning::Token GoatCounter invàlid o expirat — actualitza el secret GOATCOUNTER_TOKEN a GitHub → Settings → Secrets."
             echo "token_ok=false" >> "$GITHUB_OUTPUT"
