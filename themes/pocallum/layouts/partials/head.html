@@ -142,7 +142,7 @@
   "@type": "WebSite",
   "name": "Pocallum",
   "url": "{{ .Site.BaseURL }}",
-  "inLanguage": "ca",
+  "inLanguage": "{{ .Language.Lang }}",
   "description": {{ .Site.Params.description | jsonify }},
   "potentialAction": {
     "@type": "SearchAction",
@@ -200,6 +200,26 @@
   "url": "{{ .Permalink }}"{{ with .Params.image }},
   "image": "{{ . | strings.TrimLeft "/" | absURL }}"{{ end }}{{ with .Params.web }},
   "sameAs": {{ . | jsonify }}{{ end }}
+}
+</script>
+{{ end }}
+
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a | jsonify }}
+      }
+    }{{ end }}
+  ]
 }
 </script>
 {{ end }}

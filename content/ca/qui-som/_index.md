@@ -1,6 +1,16 @@
 ---
 title: "Qui som"
 description: "Pocallum és el projecte fotogràfic de Joan Linux Martínez. Fotografia cultural des del 2002. Jazz, blues, arts escèniques, dansa, teatre. Barcelona."
+faqs:
+  - q: "Fa Pocallum fotografia analògica o digital?"
+    a: |-
+      Analògic és el punt de partida. El gra de la pel·lícula no falsifica: registra l'instant tal com era, amb la seva imperfecció i la seva veritat. Del 35mm al gran format 10x8 polzades. Digital quan la situació ho exigeix: llum molt limitada, ritme de lliurament molt ràpid, volum alt, produccions que no assumeixen el cost analògic. Mai per comoditat. El laboratori és a la Nau Bostik, al barri de la Segrera.
+  - q: "Com treballa Pocallum?"
+    a: |-
+      No arriben, fan fotos i marxen. Es queden. El que passa abans que s'encenguin els focus, el nerviosisme de les proves de so, les converses al passadís, l'esgotament al final de la nit. Tot això és la foto. Proactius, no reactius. S'engresquen, suggereixen, proposen. No treballen amb tothom. Quan hi ha encaix, el resultat és millor per als dos costats.
+  - q: "Amb qui ha treballat Pocallum?"
+    a: |-
+      Entre els projectes i entitats amb qui hem col·laborat: Capibola Blues, Festival Blues BCN, Vijazz, Casal de Barri de la Prosperitat, Nau Bostik, Ateneu Popular 9 Barris, FAVB, Carrer, Cameras & Films, Lomography.
 ---
 
 ## Joan "Linux" Martínez i Serres
@@ -46,6 +56,12 @@ No treballen amb tothom. Quan hi ha encaix, el resultat és millor per als dos c
 | 2024 | *I Wanna Be Your Dog* · *aCarrejant* |
 | 2025 | *Anónimos, más allá de las apariencias* (amb Mario Ortiz) |
 | 2026 | Sèrie *Antropoformologies* (3 volums, dansa) |
+
+---
+
+## Amb qui hem treballat
+
+Capibola Blues · Festival Blues BCN · Vijazz · Casal de Barri de la Prosperitat · Nau Bostik · Ateneu Popular 9 Barris · FAVB · Carrer · Cameras & Films · Lomography
 
 ---
 
