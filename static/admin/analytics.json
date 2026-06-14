@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-14T19:09:32.860199Z",
+  "generated": "2026-06-14T21:00:14.249637Z",
   "period": {
     "start": "2025-06-14",
     "end": "2026-06-14"
@@ -468,7 +468,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Firefox",
@@ -500,7 +500,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 33
+      "count": 34
     },
     {
       "name": "Chrome OS",
@@ -512,7 +512,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 206
+      "count": 207
     },
     {
       "name": "desktophd",
@@ -534,7 +534,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 501
+      "count": 502
     },
     {
       "name": "United States",
