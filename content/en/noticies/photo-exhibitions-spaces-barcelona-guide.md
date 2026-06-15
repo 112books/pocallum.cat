@@ -43,6 +43,9 @@ Barcelona, a city of contrasts, offers a rich and diverse cultural panorama, esp
 - [MUHBA – Barcelona History Museum](https://www.barcelona.cat/museuhistoria/en)  
   Photography as a document of urban memory.
 
+- [Photographic Social Vision](https://www.fundacionpsv.org/en/photographic-social-vision/)  
+  Non-profit organisation committed to the social value of documentary photography and photojournalism.
+
 ## Galleries and civic centres
 
 - [Pati Llimona Civic Centre](https://patillimona.net/blog-category-exposicions/)  

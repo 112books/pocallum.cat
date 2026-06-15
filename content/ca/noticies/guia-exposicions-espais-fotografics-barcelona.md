@@ -45,6 +45,9 @@ Barcelona, ciutat de contrasts, ofereix un panorama cultural ric i divers, espec
 - [MUHBA – Museu d'Història de Barcelona](https://www.barcelona.cat/museuhistoria/ca)  
   Fotografia com a document de memòria urbana.
 
+- [Photographic Social Vision](https://www.fundacionpsv.org/ca/photographic-social-vision/)  
+  Entitat sense ànim de lucre compromesa amb el valor social de la fotografia documental i el fotoperiodisme.
+
 ## Galeries i centres cívics
 
 - [Centre Cívic Pati Llimona](https://patillimona.net/blog-category-exposicions/)  
