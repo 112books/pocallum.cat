@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-14T22:15:56.782061Z",
+  "generated": "2026-06-15T00:02:11.965719Z",
   "period": {
-    "start": "2025-06-14",
-    "end": "2026-06-14"
+    "start": "2025-06-15",
+    "end": "2026-06-15"
   },
-  "total": 517,
+  "total": 524,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-05-15",
-      "count": 36
+      "count": 32
     },
     {
       "date": "2026-05-16",
@@ -150,16 +150,20 @@
     {
       "date": "2026-06-13",
       "count": 4
+    },
+    {
+      "date": "2026-06-14",
+      "count": 11
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 141
+      "count": 144
     },
     {
       "path": "/galeria",
-      "count": 43
+      "count": 44
     },
     {
       "path": "/serveis",
@@ -179,7 +183,7 @@
     },
     {
       "path": "/blog",
-      "count": 17
+      "count": 19
     },
     {
       "path": "/qui-som",
@@ -218,6 +222,10 @@
       "count": 5
     },
     {
+      "path": "/legal/privacitat",
+      "count": 4
+    },
+    {
       "path": "/serveis/books-artistics",
       "count": 4
     },
@@ -248,10 +256,6 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 4
-    },
-    {
-      "path": "/legal/privacitat",
-      "count": 3
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -355,27 +359,27 @@
     }
   ],
   "by_lang": {
-    "ca": 31,
+    "ca": 28,
     "es": 23,
-    "en": 24
+    "en": 28
   },
   "by_section": {
-    "inici": 152,
-    "galeria": 48,
-    "serveis": 56,
+    "inici": 155,
+    "galeria": 49,
+    "serveis": 55,
     "festivals": 81,
     "contacte": 32,
-    "noticies": 28,
-    "blog": 21,
+    "noticies": 26,
+    "blog": 23,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
     "cerca": 10,
     "obra": 7,
     "servicios-fotograficos": 5,
+    "legal": 5,
     "content": 4,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "legal": 4,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "moviendo-las-imagenes-fijas": 2,
@@ -384,6 +388,9 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "testing-vintage-cameras": 1,
+    "flamenco-i-baixa-velocitat-3": 1,
+    "forced-tests-sample-photographs": 1,
     "lomography-great-photos-simple-camera": 1,
     "bran-new-calendar-of-9-barris-acull": 1,
     "tag": 2,
@@ -611,12 +618,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 124
+      "count": 128
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 48
+      "count": 49
     },
     {
       "name": "blog.pocallum.cat",
