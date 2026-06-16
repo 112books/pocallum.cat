@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-15T22:56:38.485150Z",
+  "generated": "2026-06-16T00:28:36.567401Z",
   "period": {
-    "start": "2025-06-15",
-    "end": "2026-06-15"
+    "start": "2025-06-16",
+    "end": "2026-06-16"
   },
-  "total": 524,
+  "total": 541,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-05-11",
@@ -33,11 +33,11 @@
     },
     {
       "date": "2026-05-15",
-      "count": 32
+      "count": 31
     },
     {
       "date": "2026-05-16",
-      "count": 15
+      "count": 14
     },
     {
       "date": "2026-05-17",
@@ -57,7 +57,7 @@
     },
     {
       "date": "2026-05-21",
-      "count": 23
+      "count": 21
     },
     {
       "date": "2026-05-22",
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-05-25",
-      "count": 13
+      "count": 12
     },
     {
       "date": "2026-05-26",
@@ -154,24 +154,28 @@
     {
       "date": "2026-06-14",
       "count": 11
+    },
+    {
+      "date": "2026-06-15",
+      "count": 21
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 144
+      "count": 148
     },
     {
       "path": "/galeria",
-      "count": 44
+      "count": 49
     },
     {
       "path": "/serveis",
-      "count": 37
+      "count": 38
     },
     {
       "path": "/festivals",
-      "count": 29
+      "count": 30
     },
     {
       "path": "/contacte",
@@ -179,11 +183,11 @@
     },
     {
       "path": "/noticies",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/blog",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/qui-som",
@@ -206,12 +210,16 @@
       "count": 8
     },
     {
+      "path": "/obra",
+      "count": 7
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
     },
     {
-      "path": "/obra",
-      "count": 6
+      "path": "/serveis/books-per-actors",
+      "count": 5
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
@@ -227,10 +235,6 @@
     },
     {
       "path": "/serveis/books-artistics",
-      "count": 4
-    },
-    {
-      "path": "/serveis/books-per-actors",
       "count": 4
     },
     {
@@ -259,6 +263,10 @@
     },
     {
       "path": "/noticies/2026-06-la-juganera",
+      "count": 3
+    },
+    {
+      "path": "/en",
       "count": 3
     },
     {
@@ -291,10 +299,6 @@
     },
     {
       "path": "/festivals/mostra-de-circ",
-      "count": 2
-    },
-    {
-      "path": "/en",
       "count": 2
     },
     {
@@ -338,6 +342,10 @@
       "count": 2
     },
     {
+      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
+      "count": 2
+    },
+    {
       "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
       "count": 2
     },
@@ -352,29 +360,25 @@
     {
       "path": "/ca/festivals",
       "count": 2
-    },
-    {
-      "path": "/en/blog",
-      "count": 2
     }
   ],
   "by_lang": {
-    "ca": 28,
-    "es": 23,
-    "en": 28
+    "ca": 26,
+    "es": 24,
+    "en": 33
   },
   "by_section": {
-    "inici": 155,
-    "galeria": 49,
-    "serveis": 55,
-    "festivals": 81,
+    "inici": 160,
+    "galeria": 54,
+    "serveis": 57,
+    "festivals": 80,
     "contacte": 32,
-    "noticies": 26,
-    "blog": 23,
+    "noticies": 29,
+    "blog": 24,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
     "cerca": 10,
-    "obra": 7,
+    "obra": 8,
     "servicios-fotograficos": 5,
     "legal": 5,
     "content": 4,
@@ -388,6 +392,9 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 2,
+    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 1,
+    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona%60": 1,
     "testing-vintage-cameras": 1,
     "flamenco-i-baixa-velocitat-3": 1,
     "forced-tests-sample-photographs": 1,
@@ -401,10 +408,8 @@
     "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
-    "tags": 2,
-    "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1,
-    "wp-admin": 1,
-    "lomography-grans-fotografies-amb-cameres-senzilles": 1
+    "tags": 1,
+    "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1
   },
   "noticies_top": [
     {
@@ -618,12 +623,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 128
+      "count": 133
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 49
+      "count": 50
     },
     {
       "name": "blog.pocallum.cat",
@@ -656,13 +661,13 @@
       "count": 2
     },
     {
-      "name": "duckduckgo.com",
-      "id": "duckduckgo.com",
-      "count": 1
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 2
     },
     {
-      "name": "ig",
-      "id": "ig",
+      "name": "duckduckgo.com",
+      "id": "duckduckgo.com",
       "count": 1
     }
   ]
