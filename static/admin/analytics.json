@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-16T22:48:17.044663Z",
+  "generated": "2026-06-17T00:09:47.005126Z",
   "period": {
-    "start": "2025-06-16",
-    "end": "2026-06-16"
+    "start": "2025-06-17",
+    "end": "2026-06-17"
   },
-  "total": 541,
+  "total": 548,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-05-25",
-      "count": 12
+      "count": 10
     },
     {
       "date": "2026-05-26",
@@ -158,20 +158,24 @@
     {
       "date": "2026-06-15",
       "count": 21
+    },
+    {
+      "date": "2026-06-16",
+      "count": 9
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 148
+      "count": 150
     },
     {
       "path": "/galeria",
-      "count": 49
+      "count": 50
     },
     {
       "path": "/serveis",
-      "count": 38
+      "count": 39
     },
     {
       "path": "/festivals",
@@ -183,7 +187,7 @@
     },
     {
       "path": "/noticies",
-      "count": 21
+      "count": 22
     },
     {
       "path": "/blog",
@@ -294,6 +298,14 @@
       "count": 3
     },
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 2
+    },
+    {
+      "path": "/serveis/concerts",
+      "count": 2
+    },
+    {
       "path": "/en/serveis",
       "count": 2
     },
@@ -352,33 +364,25 @@
     {
       "path": "/ca/cerca",
       "count": 2
-    },
-    {
-      "path": "/ca/blog",
-      "count": 2
-    },
-    {
-      "path": "/ca/festivals",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 26,
     "es": 24,
-    "en": 33
+    "en": 34
   },
   "by_section": {
-    "inici": 160,
-    "galeria": 54,
-    "serveis": 57,
-    "festivals": 80,
+    "inici": 162,
+    "galeria": 55,
+    "serveis": 59,
+    "festivals": 78,
     "contacte": 32,
-    "noticies": 29,
+    "noticies": 31,
     "blog": 24,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
     "cerca": 10,
-    "obra": 8,
+    "obra": 9,
     "servicios-fotograficos": 5,
     "legal": 5,
     "content": 4,
@@ -393,6 +397,7 @@
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 2,
+    "a-different-perspective-analog-photography-with-personality-and-mystery": 1,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 1,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona%60": 1,
     "testing-vintage-cameras": 1,
@@ -415,6 +420,10 @@
     {
       "path": "/noticies/2026-06-la-juganera",
       "count": 3
+    },
+    {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 2
     },
     {
       "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
@@ -623,12 +632,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 133
+      "count": 134
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 50
+      "count": 51
     },
     {
       "name": "blog.pocallum.cat",
