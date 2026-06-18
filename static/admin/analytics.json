@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-17T22:04:03.515103Z",
+  "generated": "2026-06-18T00:07:59.771790Z",
   "period": {
-    "start": "2025-06-17",
-    "end": "2026-06-17"
+    "start": "2025-06-18",
+    "end": "2026-06-18"
   },
-  "total": 548,
+  "total": 553,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -162,16 +162,24 @@
     {
       "date": "2026-06-16",
       "count": 9
+    },
+    {
+      "date": "2026-06-17",
+      "count": 4
+    },
+    {
+      "date": "2026-06-18",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 150
+      "count": 151
     },
     {
       "path": "/galeria",
-      "count": 50
+      "count": 51
     },
     {
       "path": "/serveis",
@@ -191,7 +199,7 @@
     },
     {
       "path": "/blog",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/qui-som",
@@ -302,6 +310,14 @@
       "count": 2
     },
     {
+      "path": "/en/lomography-great-photos-simple-camera",
+      "count": 2
+    },
+    {
+      "path": "/en/bran-new-calendar-of-9-barris-acull",
+      "count": 2
+    },
+    {
       "path": "/serveis/concerts",
       "count": 2
     },
@@ -356,29 +372,21 @@
     {
       "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
       "count": 2
-    },
-    {
-      "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
-      "count": 2
-    },
-    {
-      "path": "/ca/cerca",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 26,
     "es": 24,
-    "en": 34
+    "en": 36
   },
   "by_section": {
-    "inici": 162,
-    "galeria": 55,
+    "inici": 163,
+    "galeria": 56,
     "serveis": 59,
     "festivals": 78,
     "contacte": 32,
     "noticies": 31,
-    "blog": 24,
+    "blog": 25,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
     "cerca": 10,
@@ -390,6 +398,8 @@
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
+    "lomography-great-photos-simple-camera": 2,
+    "bran-new-calendar-of-9-barris-acull": 2,
     "moviendo-las-imagenes-fijas": 2,
     "photography-services": 3,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 2,
@@ -403,8 +413,6 @@
     "testing-vintage-cameras": 1,
     "flamenco-i-baixa-velocitat-3": 1,
     "forced-tests-sample-photographs": 1,
-    "lomography-great-photos-simple-camera": 1,
-    "bran-new-calendar-of-9-barris-acull": 1,
     "tag": 2,
     "de-la-casualitat-a-la-creativitat-una-sessio-fotografica-amb-vestit-oriental": 1,
     "retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio": 1,
@@ -423,10 +431,6 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 2
-    },
-    {
-      "path": "/ca/noticies/2026-03-no-fem-fotos-concerts",
       "count": 2
     }
   ],
@@ -479,7 +483,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 304
+      "count": 305
     },
     {
       "name": "Safari",
@@ -511,7 +515,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 69
+      "count": 70
     },
     {
       "name": "Android",
@@ -533,7 +537,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 227
+      "count": 228
     },
     {
       "name": "desktophd",
@@ -632,12 +636,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 134
+      "count": 136
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 51
+      "count": 52
     },
     {
       "name": "blog.pocallum.cat",
@@ -655,6 +659,11 @@
       "count": 3
     },
     {
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 3
+    },
+    {
       "name": "www.bing.com",
       "id": "www.bing.com",
       "count": 2
@@ -667,11 +676,6 @@
     {
       "name": "112books.github.io",
       "id": "112books.github.io",
-      "count": 2
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
       "count": 2
     },
     {
