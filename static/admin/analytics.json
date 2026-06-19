@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-18T23:42:35.039519Z",
+  "generated": "2026-06-19T02:58:53.828053Z",
   "period": {
-    "start": "2025-06-18",
-    "end": "2026-06-18"
+    "start": "2025-06-19",
+    "end": "2026-06-19"
   },
-  "total": 553,
+  "total": 560,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -169,17 +169,21 @@
     },
     {
       "date": "2026-06-18",
-      "count": 1
+      "count": 6
+    },
+    {
+      "date": "2026-06-19",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 151
+      "count": 153
     },
     {
       "path": "/galeria",
-      "count": 51
+      "count": 53
     },
     {
       "path": "/serveis",
@@ -231,7 +235,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 5
+      "count": 6
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
@@ -274,6 +278,10 @@
       "count": 4
     },
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 3
+    },
+    {
       "path": "/noticies/2026-06-la-juganera",
       "count": 3
     },
@@ -306,7 +314,7 @@
       "count": 3
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 2
     },
     {
@@ -368,24 +376,20 @@
     {
       "path": "/es/probando-la-pelicula-adox-hr-50",
       "count": 2
-    },
-    {
-      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 26,
     "es": 24,
-    "en": 36
+    "en": 37
   },
   "by_section": {
-    "inici": 163,
-    "galeria": 56,
-    "serveis": 59,
+    "inici": 165,
+    "galeria": 58,
+    "serveis": 60,
     "festivals": 78,
     "contacte": 32,
-    "noticies": 31,
+    "noticies": 33,
     "blog": 25,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
@@ -426,11 +430,15 @@
   },
   "noticies_top": [
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 3
+    },
+    {
       "path": "/noticies/2026-06-la-juganera",
       "count": 3
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 2
     }
   ],
@@ -641,12 +649,17 @@
     {
       "name": "Google",
       "id": "Google",
-      "count": 52
+      "count": 54
     },
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
       "count": 6
+    },
+    {
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 5
     },
     {
       "name": "www.facebook.com",
@@ -656,11 +669,6 @@
     {
       "name": "bing.com",
       "id": "bing.com",
-      "count": 3
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
       "count": 3
     },
     {
