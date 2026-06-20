@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20T17:15:52.688897Z",
+  "generated": "2026-06-20T19:09:57.884524Z",
   "period": {
     "start": "2025-06-20",
     "end": "2026-06-20"
@@ -492,7 +492,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 311
+      "count": 313
     },
     {
       "name": "Safari",
@@ -507,7 +507,7 @@
     {
       "name": "Firefox",
       "id": "Firefox",
-      "count": 16
+      "count": 17
     }
   ],
   "systems": [
@@ -524,7 +524,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 71
+      "count": 74
     },
     {
       "name": "Android",
@@ -546,7 +546,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 235
+      "count": 238
     },
     {
       "name": "desktophd",
@@ -573,7 +573,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Sweden",
@@ -584,6 +584,11 @@
       "name": "Indonesia",
       "id": "ID",
       "count": 4
+    },
+    {
+      "name": "Argentina",
+      "id": "AR",
+      "count": 3
     },
     {
       "name": "Germany",
@@ -606,11 +611,6 @@
       "count": 3
     },
     {
-      "name": "Argentina",
-      "id": "AR",
-      "count": 2
-    },
-    {
       "name": "Switzerland",
       "id": "CH",
       "count": 2
@@ -631,14 +631,14 @@
       "count": 2
     },
     {
-      "name": "Zimbabwe",
-      "id": "ZW",
+      "name": "Russia",
+      "id": "RU",
       "count": 2
     },
     {
-      "name": "United Arab Emirates",
-      "id": "AE",
-      "count": 1
+      "name": "Zimbabwe",
+      "id": "ZW",
+      "count": 2
     }
   ],
   "refs": [
