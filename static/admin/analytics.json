@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-20T21:04:45.708570Z",
+  "generated": "2026-06-21T00:04:13.579204Z",
   "period": {
-    "start": "2025-06-20",
-    "end": "2026-06-20"
+    "start": "2025-06-21",
+    "end": "2026-06-21"
   },
-  "total": 563,
+  "total": 567,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -89,7 +89,7 @@
     },
     {
       "date": "2026-05-29",
-      "count": 13
+      "count": 12
     },
     {
       "date": "2026-05-30",
@@ -174,12 +174,16 @@
     {
       "date": "2026-06-19",
       "count": 6
+    },
+    {
+      "date": "2026-06-20",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 154
+      "count": 157
     },
     {
       "path": "/galeria",
@@ -306,6 +310,10 @@
       "count": 3
     },
     {
+      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
+      "count": 3
+    },
+    {
       "path": "/ca/contacte",
       "count": 3
     },
@@ -372,19 +380,15 @@
     {
       "path": "/serveis-fotografics-2/fotografia-desdeveniments",
       "count": 2
-    },
-    {
-      "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 26,
-    "es": 24,
-    "en": 38
+    "es": 23,
+    "en": 40
   },
   "by_section": {
-    "inici": 166,
+    "inici": 169,
     "galeria": 59,
     "serveis": 60,
     "festivals": 78,
@@ -402,6 +406,7 @@
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
+    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "testing-vintage-cameras": 2,
     "lomography-great-photos-simple-camera": 2,
     "bran-new-calendar-of-9-barris-acull": 2,
@@ -411,7 +416,7 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
-    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 2,
+    "cambo-sc-first-test": 1,
     "provant-la-pelicula-kono-monolit-iso64": 1,
     "a-different-perspective-analog-photography-with-personality-and-mystery": 1,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 1,
@@ -426,8 +431,7 @@
     "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
     "equip": 1,
-    "tags": 1,
-    "probando-la-nueva-daguerreotype-achromat-2964-art-lens-de-lomography": 1
+    "tags": 1
   },
   "noticies_top": [
     {
@@ -492,7 +496,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 313
+      "count": 314
     },
     {
       "name": "Safari",
@@ -529,7 +533,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 49
+      "count": 50
     },
     {
       "name": "Linux",
@@ -556,7 +560,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 123
+      "count": 124
     },
     {
       "name": "tablet",
@@ -591,6 +595,11 @@
       "count": 3
     },
     {
+      "name": "Switzerland",
+      "id": "CH",
+      "count": 3
+    },
+    {
       "name": "Germany",
       "id": "DE",
       "count": 3
@@ -609,11 +618,6 @@
       "name": "Singapore",
       "id": "SG",
       "count": 3
-    },
-    {
-      "name": "Switzerland",
-      "id": "CH",
-      "count": 2
     },
     {
       "name": "France",
@@ -645,7 +649,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 138
+      "count": 142
     },
     {
       "name": "Google",
@@ -678,6 +682,11 @@
       "count": 2
     },
     {
+      "name": "Yandex",
+      "id": "Yandex",
+      "count": 2
+    },
+    {
       "name": "about.pocallum.cat",
       "id": "about.pocallum.cat",
       "count": 2
@@ -686,11 +695,6 @@
       "name": "112books.github.io",
       "id": "112books.github.io",
       "count": 2
-    },
-    {
-      "name": "duckduckgo.com",
-      "id": "duckduckgo.com",
-      "count": 1
     }
   ]
 }
