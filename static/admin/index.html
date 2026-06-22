@@ -227,7 +227,7 @@
     .banner-loading { color: var(--mid); font-size: 12px; }
 
     /* ── KPIs ───────────────────────────────────────────────── */
-    .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin-bottom: 2rem; list-style: none; background: var(--line); border: 1px solid var(--line); }
+    .kpis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; margin-bottom: 2rem; list-style: none; background: var(--line); border: 1px solid var(--line); }
     .kpi { background: var(--bg2); padding: 1.4rem 1.5rem; }
     .kpi dt {
       color: var(--mid);
@@ -392,6 +392,7 @@
 
     /* ── Responsive ─────────────────────────────────────────── */
     @media (max-width: 1080px) { .kpis { grid-template-columns: repeat(3, 1fr); } }
+
     @media (max-width: 860px) {
       .kpis { grid-template-columns: repeat(2, 1fr); }
       .grid-2 { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -452,7 +453,6 @@
       <button type="button" class="btn-sm btn-live" id="btn-refresh">↻ En viu</button>
       <a href="/" class="btn-sm">← Web</a>
       <a href="https://pocallum.goatcounter.com/" target="_blank" rel="noopener" class="btn-sm">GoatCounter ↗</a>
-      <button type="button" class="btn-sm" id="btn-refresh">↺ Actualitzar</button>
       <button type="button" class="btn-sm" id="btn-logout">Sortir ×</button>
     </div>
   </div>
@@ -467,6 +467,7 @@
       <div class="kpi"><dt>30 dies</dt><dd><div class="kpi-value" id="kpi-30d">—</div><div class="kpi-sub">últims 30 dies</div></dd></div>
       <div class="kpi"><dt>Total any</dt><dd><div class="kpi-value" id="kpi-total">—</div><div class="kpi-sub" id="sub-total"></div></dd></div>
       <div class="kpi"><dt>Mitjana/dia</dt><dd><div class="kpi-value" id="kpi-pps">—</div><div class="kpi-sub">visites diàries</div></dd></div>
+      <div class="kpi"><dt>Tendència 7d</dt><dd><div class="kpi-value" id="kpi-trend">—</div><div class="kpi-sub" id="sub-trend">vs 7 dies anteriors</div></dd></div>
     </dl>
 
     <!-- Tabs -->
@@ -512,6 +513,12 @@
 
       <h2 class="section-title">Funnel del formulari de pressupost</h2>
       <div id="wizard-funnel-wrap"></div>
+
+      <h2 class="section-title">Pàgines de servei més visitades</h2>
+      <div id="serveis-top-wrap" class="bars"></div>
+
+      <h2 class="section-title">Conversió estimada Serveis → Contacte</h2>
+      <div id="conversion-wrap"></div>
 
     </div>
 
@@ -662,6 +669,17 @@ function renderAll(data) {
   const mes30 = sumDays(hbd, daysAgo(30), today);
   const total = data.total || 0;
   const p     = data.period || {};
+  const prev7 = sumDays(hbd, daysAgo(14), daysAgo(8));
+  const trend = prev7 > 0 ? Math.round((set7 - prev7) / prev7 * 100) : null;
+  if (trend !== null) {
+    const sign = trend >= 0 ? '+' : '';
+    const el = document.getElementById('kpi-trend');
+    if (el) {
+      el.textContent = sign + trend + '%';
+      el.style.color = trend >= 0 ? 'var(--green)' : 'var(--warn)';
+    }
+    setText('sub-trend', 'vs ' + fmt(prev7) + ' visites (set. ant.)');
+  }
 
   setText('kpi-avui',  fmt(avui));
   setText('sub-avui',  avui === 1 ? '1 visita avui' : fmt(avui) + ' visites avui');
@@ -692,6 +710,8 @@ function renderAll(data) {
   renderInsightTemporal(data);
   renderInsightPagines(data);
   renderInsightDispositius(data);
+  renderServeisTop(data);
+  renderConversion(data);
 
   requestAnimationFrame(() => {
     document.querySelectorAll('[data-w]').forEach(el => {
@@ -835,6 +855,59 @@ function renderFestivals(data) {
     document.getElementById('festivals-wrap').innerHTML =
       '<span class="empty">Sense dades — les pàgines de festival apareixeran aquí.</span>';
   }
+}
+
+function renderServeisTop(data) {
+  const el = document.getElementById('serveis-top-wrap');
+  if (!el) return;
+  const hits = data.hits || [];
+  const items = hits
+    .filter(h => h.path && /\/serveis\/[^/]+/.test(h.path))
+    .map(h => {
+      const parts = h.path.replace(/\/$/, '').split('/').filter(Boolean);
+      const slug = parts[parts.length - 1];
+      const label = slug.replace(/-/g, ' ');
+      return { name: label, count: h.count, href: h.path };
+    })
+    .slice(0, 10);
+  if (!items.length) {
+    el.innerHTML = '<span class="empty">Sense dades de serveis individuals encara.</span>';
+    return;
+  }
+  renderBars('serveis-top-wrap', items, { withLinks: true, colorClass: 'green' });
+}
+
+function renderConversion(data) {
+  const el = document.getElementById('conversion-wrap');
+  if (!el) return;
+  const sec = data.by_section || {};
+  const serveisV = sec.serveis || 0;
+  const contacteV = sec.contacte || 0;
+  if (!serveisV) {
+    el.innerHTML = '<span class="empty">Sense dades de serveis per calcular la conversió.</span>';
+    return;
+  }
+  const rate = Math.round(contacteV / serveisV * 100);
+  const rateColor = rate >= 15 ? 'var(--green)' : rate >= 7 ? 'var(--fg)' : 'var(--warn)';
+  const rateLabel = rate >= 15 ? 'bon ratio' : rate >= 7 ? 'ratio acceptable' : 'ratio baix — millorar CTA?';
+  el.innerHTML = `
+    <div style="display:flex;gap:2rem;align-items:flex-end;flex-wrap:wrap;margin-bottom:1rem">
+      <div>
+        <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:.3rem">Visites a serveis</div>
+        <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:var(--fg);line-height:1">${fmt(serveisV)}</div>
+      </div>
+      <div style="color:var(--mid);font-size:1.5rem;padding-bottom:.3rem">→</div>
+      <div>
+        <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:.3rem">Visites a contacte</div>
+        <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:var(--fg);line-height:1">${fmt(contacteV)}</div>
+      </div>
+      <div style="color:var(--mid);font-size:1.5rem;padding-bottom:.3rem">=</div>
+      <div>
+        <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:.3rem">Taxa de conversió</div>
+        <div style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:${rateColor};line-height:1">${rate}%</div>
+        <div style="font-size:11px;color:var(--mid);margin-top:.2rem">${rateLabel}</div>
+      </div>
+    </div>`;
 }
 
 function renderWizardFunnel(data) {
@@ -988,15 +1061,40 @@ function renderBrowsersSystems(data) {
 function renderInsightTemporal(data) {
   const hbd = data.hits_by_day || [];
   if (!hbd.length) return;
-  const total7  = sumDays(hbd, daysAgo(7),  isoToday());
-  const total30 = sumDays(hbd, daysAgo(30), isoToday());
+  const today  = isoToday();
+  const total7  = sumDays(hbd, daysAgo(7),  today);
+  const prev7   = sumDays(hbd, daysAgo(14), daysAgo(8));
+  const total30 = sumDays(hbd, daysAgo(30), today);
   const avg7    = Math.round(total7 / 7);
   const max     = hbd.reduce((a,b) => a.count>b.count?a:b, hbd[0]);
-  const lines = [
-    'Mitjana dels últims 7 dies: <em>' + fmt(avg7) + ' visites/dia</em>.',
-    'El dia amb més trànsit va ser el <em>' + fmtDateShort(max.date) + '</em> amb <em>' + fmt(max.count) + ' visites</em>.',
-    total30 > 0 ? 'Aquest mes: <em>' + fmt(total30) + ' visites</em> en 30 dies.' : '',
-  ].filter(Boolean);
+
+  // Best day of week
+  const byDow = {};
+  hbd.forEach(d => {
+    const dow = new Date(d.date+'T12:00:00').getDay();
+    byDow[dow] = (byDow[dow]||[]);
+    byDow[dow].push(d.count);
+  });
+  const DOW = ['Diumenge','Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte'];
+  let bestDow = null, bestDowAvg = 0;
+  Object.entries(byDow).forEach(([dow, counts]) => {
+    const avg = counts.reduce((s,c)=>s+c,0)/counts.length;
+    if (avg > bestDowAvg) { bestDowAvg = avg; bestDow = parseInt(dow); }
+  });
+
+  const lines = [];
+
+  if (prev7 > 0) {
+    const change = Math.round((total7 - prev7) / prev7 * 100);
+    const dir = change >= 0 ? '↑' : '↓';
+    const col = change >= 0 ? 'var(--green)' : 'var(--warn)';
+    lines.push(`Respecte als 7 dies anteriors: <em style="color:${col}">${dir} ${Math.abs(change)}%</em> (${fmt(prev7)} → <em>${fmt(total7)}</em> visites).`);
+  }
+  lines.push(`Mitjana dels últims 7 dies: <em>${fmt(avg7)} visites/dia</em>.`);
+  lines.push(`Dia puntual amb més trànsit: <em>${fmtDateShort(max.date)}</em> amb <em>${fmt(max.count)} visites</em>.`);
+  if (bestDow !== null) lines.push(`Millor dia de la setmana: <em>${DOW[bestDow]}</em> (mitjana ${Math.round(bestDowAvg)} visites).`);
+  if (total30 > 0) lines.push(`Total 30 dies: <em>${fmt(total30)} visites</em>.`);
+
   showInsight('temporal', lines);
 }
 
@@ -1006,23 +1104,52 @@ function renderInsightPagines(data) {
   const lines = [];
   const byLang = Object.entries(data.by_lang||{}).sort((a,b)=>b[1]-a[1]);
   const bySec  = Object.entries(data.by_section||{}).sort((a,b)=>b[1]-a[1]);
+  const NAMES  = {ca:'Català',es:'Castellà',en:'Anglès',fr:'Francès',de:'Alemany',it:'Italià',pt:'Portuguès'};
+
+  // Language
   if (byLang.length) {
     const [lang, cnt] = byLang[0];
-    const NAMES = {ca:'Català',es:'Castellà',en:'Anglès',fr:'Francès',de:'Alemany',it:'Italià',pt:'Portuguès'};
-    lines.push('L\'idioma principal és el <em>' + (NAMES[lang]||lang) + '</em> (' + Math.round(cnt/total*100) + '% del trànsit).');
+    const pct = Math.round(cnt/total*100);
+    lines.push(`L'idioma principal és el <em>${NAMES[lang]||lang}</em> (${pct}% del trànsit).`);
+    if (byLang.length > 1) {
+      const [l2, c2] = byLang[1];
+      const p2 = Math.round(c2/total*100);
+      const trend2 = p2 >= 20 ? ' — <em style="color:var(--green)">bona tracció internacional</em>' : '';
+      lines.push(`Segon idioma: <em>${NAMES[l2]||l2}</em> ${p2}%${trend2}.`);
+    }
   }
+
+  // Top section
   if (bySec.length) {
     const [sec, cnt] = bySec[0];
-    const name = CFG.sectionNames[sec] || sec;
-    lines.push('La secció més visitada és <em>' + name + '</em> amb ' + fmt(cnt) + ' visites (' + Math.round(cnt/total*100) + '% del total).');
+    lines.push(`Secció més visitada: <em>${CFG.sectionNames[sec]||sec}</em> (${fmt(cnt)} visites, ${Math.round(cnt/total*100)}% del total).`);
   }
-  if (bySec.length > 1) {
-    const [sec2, cnt2] = bySec[1];
-    lines.push('La segueix <em>' + (CFG.sectionNames[sec2]||sec2) + '</em> amb ' + fmt(cnt2) + ' visites.');
+
+  // Serveis → Contacte conversion
+  const serveisV  = (data.by_section||{}).serveis  || 0;
+  const contacteV = (data.by_section||{}).contacte || 0;
+  if (serveisV > 0) {
+    const rate = Math.round(contacteV / serveisV * 100);
+    const quality = rate >= 15 ? '<em style="color:var(--green)">bon ratio</em>' : rate >= 7 ? 'ratio acceptable' : '<em style="color:var(--warn)">ratio baix — revisar CTA de les pàgines de servei</em>';
+    lines.push(`Conversió Serveis→Contacte: <em>${rate}%</em> (${fmt(contacteV)} contactes per ${fmt(serveisV)} visites a serveis) — ${quality}.`);
   }
+
+  // Best individual servei page
+  const hits = data.hits || [];
+  const topServei = hits.find(h => h.path && /\/serveis\/[^/]+/.test(h.path));
+  if (topServei) {
+    const slug = topServei.path.replace(/\/$/, '').split('/').pop().replace(/-/g,' ');
+    lines.push(`Servei més consultat: <em>${slug}</em> amb ${fmt(topServei.count)} visites.`);
+  }
+
+  // Refs
   if (!(data.refs||[]).length) {
-    lines.push('Sense referrers detectats: la majoria del trànsit és directe (marcadors, xarxes socials sense etiquetatge, navegació privada).');
+    lines.push('Sense referrers detectats: trànsit principalment directe (marcadors, xarxes socials, navegació privada).');
+  } else {
+    const topRef = data.refs[0];
+    lines.push(`Principal font de trànsit: <em>${topRef.name}</em> (${fmt(topRef.count)} visites).`);
   }
+
   showInsight('pagines', lines);
 }
 
