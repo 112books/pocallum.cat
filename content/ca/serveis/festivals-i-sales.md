@@ -1,9 +1,18 @@
 ---
-title: "Cobertura fotogràfica per a festivals i sales"
-description: "Reportatge fotogràfic per a festivals de música, arts escèniques i espais culturals. Arxiu visual professional per a comunicació, premsa i memòries anuals."
+title: "Cobertura fotogràfica per a festivals i sales de concert a Barcelona"
+description: "Reportatge fotogràfic per a festivals de música, arts escèniques i espais culturals a Barcelona. Arxiu visual professional per a comunicació, premsa i memòries anuals."
 image: "/images/galeria/MG_9379.jpg"
 aliases:
   - /ca/serveis/festivals-i-sales/
+faqs:
+  - q: "Quins festivals i sales de concert cobriu a Barcelona?"
+    a: "Hem documentat festivals de jazz i blues, fires de teatre, cicles de dansa i espais culturals de Barcelona i Catalunya. Entre d'altres: Festival de Blues de Barcelona, ViJazz Vilafranca, Clot en Blues, Pícnic de Blues, Flamenco de Barrio, Arundo Donax Festival, Mostra de Circ."
+  - q: "Que documenta una cobertura fotogràfica de festival?"
+    a: "Actuacions sobre l'escenari i moments entre bastidors. El públic, l'ambient i el territori. Les persones que fan possible l'event: equip, artistes, organitzadors. Moments de transició, de nit, de llum difícil."
+  - q: "Com s'organitza i lliura l'arxiu de fotografies d'un festival?"
+    a: "Les imatges es lliuren organitzades per jornada i edició, amb llicència d'ús professional sense restriccions. Pensades per ser reutilitzades: web, premsa, xarxes, sol·licituds de subvenció, memòries anuals."
+  - q: "Quin és el preu d'una cobertura fotogràfica de festival a Barcelona?"
+    a: "Depèn del nombre de jornades, l'accés i el volum d'imatges editades. Escriviu-nos i enviem proposta en 48 hores."
 ---
 
 Un festival necessita imatges que funcionin l'endemà del concert, tres mesos després per a la memòria anual, i cinc anys després per a la retrospectiva. No estem documentant un moment: estem construint un arxiu visual. Sabem la diferència.

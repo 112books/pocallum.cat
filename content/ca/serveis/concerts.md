@@ -1,9 +1,18 @@
 ---
-title: "Fotografia de concerts i directes"
-description: "Reportatge musical en viu a Barcelona. Concerts, festivals i directes documentats sense flash, amb llum existent. Per a premsa, xarxes i arxiu de gira."
+title: "Fotografia de concerts i directes a Barcelona"
+description: "Fotògrafs de concerts i directes a Barcelona. Jazz, blues, flamenc, teatre musical. Sense flash, amb llum existent. Per a premsa, xarxes i arxiu de gira."
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
 aliases:
   - /ca/serveis/concerts/
+faqs:
+  - q: "Quines situacions de concert cobriu a Barcelona?"
+    a: "Concerts en club o sala a Barcelona: des del Jamboree fins a sales independents de tot el territori. Festivals de música en totes les disciplines: jazz, blues, folk, electrònica, música clàssica. Presentacions de disc en directe i sessions especials. Cobertura de gira: documentació continuada d'un projecte al llarg de la temporada."
+  - q: "Com treballeu durant els concerts?"
+    a: "Sense flash. Sempre. No perquè sigui una regla estètica, sinó perquè interferir amb l'experiència del públic és una falta de respecte a l'escena. Treballem amb llum existent, per fosca que sigui. L'arxiu que lliurem és editat i net, reutilitzable per a premsa, web, xarxes i dossiers de gira."
+  - q: "Quin és el preu d'una cobertura de concert a Barcelona?"
+    a: "Depèn de la durada de l'event, l'accés i el nombre d'imatges editades finals. No hi ha tarifes tancades. Escriviu-nos i enviem proposta en 48 hores."
+  - q: "Feu fotografia de jazz i blues a Barcelona?"
+    a: "Sí. La fotografia de jazz i blues és el nostre nucli des del 2002. Hem documentat el Festival de Blues de Barcelona, ViJazz Vilafranca, Clot en Blues, Pícnic de Blues de Nou Barris i molts altres. Coneixem la música des de dins."
 ---
 
 Un concert no es pot repetir. La llum canvia cada segon, el músic es mou, el moment s'acaba. O hi eres en el punt exacte o no. Portem quinze anys aprenent a ser-hi — en clubs de jazz, en festivals a l'aire lliure, en escenaris grans i petits, en sales on la llum és l'última de les preocupacions de l'organitzador.

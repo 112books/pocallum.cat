@@ -1,6 +1,13 @@
 ---
-title: "Artist portfolio photography for musicians and artists"
+title: "Artist portfolio photography for musicians in Barcelona"
 description: "Photography sessions for musicians, bands and artists in Barcelona. Images for press, social media, album covers and professional profiles."
+faqs:
+  - q: "What is an artist portfolio session for musicians in Barcelona?"
+    a: "A 2 to 3-hour session in Barcelona (studio, street or concert venue). A selection of 25 edited photographs in high resolution. Unrestricted usage licence for all professional uses. Delivery within 5 working days. Optionally: analogue version on 35mm film or medium format."
+  - q: "Do you work with solo musicians and full bands?"
+    a: "Both. We work with solo artists and ensembles of any size in Barcelona. For groups we create collective sessions that capture the dynamic and energy of the ensemble — not a line of people facing a camera."
+  - q: "What does an artist portfolio session in Barcelona cost?"
+    a: "It depends on session length, number of people and whether you include advanced editing or an analogue version. Write to us and we'll send a proposal within 48 hours."
 image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
 aliases:
   - /en/serveis/artistic-portfolios/

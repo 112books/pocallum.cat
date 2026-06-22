@@ -1,6 +1,13 @@
 ---
-title: "Actor portfolio photography"
-description: "Professional actor headshots and portfolio photography in Barcelona. Character-driven photography for castings, agencies and digital profiles."
+title: "Actor portfolio photography in Barcelona"
+description: "Professional actor headshots and portfolio photography in Barcelona. Character-driven photography for castings, agencies and digital profiles. No generic studio, no white backgrounds."
+faqs:
+  - q: "What is included in an actor portfolio session in Barcelona?"
+    a: "A 2-hour session at locations in Barcelona. A selection of 20 edited photographs in high resolution. Unrestricted usage licence for castings, websites, social media and agencies. Delivery within 5 working days. Optionally: analogue version on 35mm film or medium format."
+  - q: "Who is the actor portfolio service for?"
+    a: "For actors and actresses at any stage of their career, based in Barcelona or Catalunya. Whether you need your first professional portfolio or want to refresh your image for a new agency or career phase."
+  - q: "What does an actor portfolio session in Barcelona cost?"
+    a: "We don't work with fixed rates. The quote depends on session length, number of locations and whether you include advanced editing or an analogue version. Write to us and we'll send a proposal within 48 hours."
 image: "/images/galeria/IMG_2331.jpg"
 aliases:
   - /en/serveis/books-for-actors/

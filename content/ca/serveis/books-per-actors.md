@@ -1,11 +1,20 @@
 ---
-title: "Book fotogràfic per a actors i actrius"
+title: "Book fotogràfic per a actors i actrius a Barcelona"
 description: "Book d'actor professional a Barcelona. Fotografia de retrat i caràcter per a càstings, agències i perfils digitals. Sense estudi genèric, sense fons blanc."
 image: "/images/galeria/IMG_2331.jpg"
 aliases:
   - /serveis-fotografics-2/books-per-actors-i-actrius/
   - /es/servicios-fotograficos/books-para-actores-y-actrices/
   - /ca/serveis/books-per-actors/
+faqs:
+  - q: "Què inclou un book d'actor professional a Barcelona?"
+    a: "Sessió de 2 hores a localitzacions de Barcelona. Selecció de 20 fotografies editades en alta resolució. Llicència d'ús sense restriccions per a càstings, webs, xarxes i agències. Entrega en 5 dies laborables. Opcionalment: versió analògica en pel·lícula 35mm o format mig."
+  - q: "Per a qui és el book d'actor de Pocallum?"
+    a: "Per a actors i actrius en qualsevol fase de la carrera, a Barcelona i Catalunya. Tant si necessites el primer book professional com si vols renovar imatge per a un canvi d'agència o una nova etapa."
+  - q: "Com és la sessió de book d'actor?"
+    a: "Primer parlem: ens expliques on ets, quins registres vols potenciar, si hi ha casting o projecte concret al darrere. A partir d'aquí decidim localitzacions, llum i estil a Barcelona. No hi ha un format únic — cada book s'adapta a qui el protagonitza."
+  - q: "Quin és el preu d'un book d'actor a Barcelona?"
+    a: "No treballem amb tarifes tancades. El pressupost depèn de la durada, el nombre de localitzacions i si incloeu edició avançada o versió analògica. Escriviu-nos i enviem proposta en 48 hores."
 ---
 
 El book és la teva carta de presentació. Directores de càsting, agències i productores el miren durant pocs segons: o els enganxa o no. Un fons blanc i llum de plató no t'explica. Nosaltres sí.

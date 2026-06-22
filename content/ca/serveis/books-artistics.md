@@ -1,9 +1,18 @@
 ---
-title: "Book artístic per a músics i artistes"
+title: "Book artístic per a músics i artistes a Barcelona"
 description: "Sessió fotogràfica per a músics, bandes i artistes a Barcelona. Imatges per a premsa, xarxes socials, portades de disc i perfil professional."
 image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
 aliases:
   - /ca/serveis/books-artistics/
+faqs:
+  - q: "Per a què serveix un book artístic per a músics?"
+    a: "Per a tot el que necessita una imatge que et representi: premsa i dossiers, perfil a Spotify i plataformes de streaming, xarxes socials, portada o contraportada de disc, cartells de concert, presentació a promotors i festivals."
+  - q: "Feu books artístics per a artistes solistes i bandes a Barcelona?"
+    a: "Treballem tant amb artistes solistes com amb formacions a Barcelona. Per a grups fem sessions col·lectives que mostren la dinàmica i l'energia del conjunt, no una fila de persones mirant a càmera."
+  - q: "Quin és el procés per fer un book artístic per a músics?"
+    a: "Parlem primer: ens expliques el projecte, el moment de la carrera, si hi ha disc, gira o llançament al darrere. Triem localitzacions i estètica a Barcelona en funció del so i del que vols comunicar. No hi ha un estil únic per a tothom."
+  - q: "Quin és el preu d'un book artístic a Barcelona?"
+    a: "Depèn de la durada, el nombre de persones i si incloeu edició avançada o versió analògica. Escriviu-nos i enviem proposta en 48 hores."
 ---
 
 La imatge d'un músic o artista és part del projecte. No és un complement. Quan la foto no explica el mateix que la música, alguna cosa falla. Nosaltres ho entenem des de dins: portem anys documentant directes, i sabem la diferència entre una foto de músic i una foto que sona.

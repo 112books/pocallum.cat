@@ -1,9 +1,16 @@
 ---
-title: "Portada i identitat visual"
-description: "Disseny gràfic de portades, cartells i identitat visual per a projectes musicals, editorials i de les arts escèniques. Del concepte al material final."
+title: "Portada i identitat visual per a projectes artístics a Barcelona"
+description: "Disseny gràfic de portades, cartells i identitat visual per a projectes musicals, editorials i de les arts escèniques a Barcelona. Del concepte al material final."
 image: "/images/serveis/portada-identitat/sakura-koe.jpg"
 aliases:
   - /ca/serveis/portada-identitat/
+faqs:
+  - q: "Feu una peça concreta o una identitat visual completa per a projectes artístics?"
+    a: "Les dues coses. Podem crear una peça concreta —un cartell, una portada de disc, una imatge per a la gira— o acompanyar un projecte de llarg recorregut amb una identitat visual coherent. Treballem en funció del que necessiteu, no en funció d'un pack tancat."
+  - q: "Per a quins projectes artístics dissenyeu identitat visual a Barcelona?"
+    a: "Discs, gires, espectacles de teatre i dansa, festivals, cicles de concerts, publicacions, institucions culturals. L'escala és la que sigui. Tenim experiència amb projectes de jazz, blues, flamenc, teatre contemporani i arts escèniques de tota mena."
+  - q: "Quin és el preu del disseny d'identitat visual per a artistes a Barcelona?"
+    a: "Depèn de l'abast: una peça o un sistema visual complet. Escriviu-nos amb detalls del projecte i enviem proposta en 48 hores."
 ---
 
 La identitat visual d'un projecte artístic no és un logotip i una paleta de colors. És la manera com el projecte es mostra al món: la portada del disc, el cartell del concert, les imatges de xarxes, el dossier de premsa. Tot ha de parlar el mateix idioma.

@@ -1,6 +1,15 @@
 ---
-title: "Theatre, dance and performing arts photography"
+title: "Theatre, dance and performing arts photography in Barcelona"
 description: "Photography for theatre, dance, circus and performance in Barcelona. No flash, no disruption. We know when to shoot without breaking the spell."
+faqs:
+  - q: "In what conditions do you work for theatre and dance photography in Barcelona?"
+    a: "Dark auditoriums, aggressive backlighting, constant movement and a single unrepeatable attempt. What others find challenging is our standard working environment. We have been doing this for years, always without flash."
+  - q: "What theatre and dance projects have you documented in Barcelona?"
+    a: "Theatre premieres, contemporary dance shows, new circus and visual arts performance across Barcelona and Catalunya. We work equally comfortably in large-format stages and alternative spaces of thirty people."
+  - q: "Do you photograph rehearsals, premieres or full tours?"
+    a: "All three. Dress rehearsals (fewer restrictions, better access), premieres (maximum emotional charge) or complete tours. Each format has its own logic and its own price."
+  - q: "What does theatre and dance photography in Barcelona cost?"
+    a: "It depends on the format, access and number of sessions. Write to us and we'll send a proposal within 48 hours."
 image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
   - /en/serveis/theatre-dance/

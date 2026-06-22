@@ -1,9 +1,18 @@
 ---
-title: "Concert and live music photography"
-description: "Live music photography in Barcelona. Concerts, festivals and shows documented without flash, in available light. For press, social media and tour archives."
+title: "Concert and live music photography in Barcelona"
+description: "Live music photography in Barcelona. Jazz, blues, flamenco. Concerts and festivals documented without flash, in available light. For press, social media and tour archives."
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
 aliases:
   - /en/serveis/live-music/
+faqs:
+  - q: "What types of concerts do you cover in Barcelona?"
+    a: "Club and venue concerts across Barcelona, from Jamboree to independent spaces throughout the region. Music festivals across all genres: jazz, blues, folk, electronic, classical. Album release concerts and special sessions. Tour coverage: ongoing documentation of a project throughout the season."
+  - q: "How do you work during concerts?"
+    a: "Without flash. Always. Not as an aesthetic rule, but because interfering with the audience's experience is disrespectful to the scene. We work with available light, however dark it is. The archive we deliver is edited and clean, reusable for press, web, social media and tour dossiers."
+  - q: "Do you specialise in jazz and blues photography in Barcelona?"
+    a: "Yes. Jazz and blues photography has been our core since 2002. We have documented the Festival de Blues de Barcelona, ViJazz Vilafranca, Clot en Blues, Pícnic de Blues de Nou Barris and many others. We know the music from the inside."
+  - q: "What does concert photography in Barcelona cost?"
+    a: "It depends on the duration of the event, access and the number of final edited images. We don't work with fixed rates. Contact us and we'll send a proposal within 48 hours."
 ---
 
 A concert can't be repeated. The light shifts every second, the musician moves, the moment ends. Either you're in the right spot at the right instant or you're not. We've spent fifteen years learning how to be there — in jazz clubs, outdoor festivals, big stages and small rooms where lighting is the last thing the organiser thought about.

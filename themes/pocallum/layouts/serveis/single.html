@@ -1,5 +1,26 @@
 {{ define "main" }}
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pocallum",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" }
+  ],
+  "serviceType": "Photography",
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{ partial "schema-faq.html" . }}
+
 {{ with .Params.image }}
 <div class="servei-page__hero" style="background-image: url('{{ . }}'){{ with $.Params.image_position }}; background-position: {{ . }}{{ end }}"></div>
 {{ end }}

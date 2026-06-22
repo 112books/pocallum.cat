@@ -1,9 +1,18 @@
 ---
-title: "Fotografia de teatre, dansa i arts escèniques"
+title: "Fotografia de teatre, dansa i arts escèniques a Barcelona"
 description: "Documentació fotogràfica de teatre, dansa, circ i performance a Barcelona. Sense flash, sense interferir. Sabem quan disparar sense trencar res."
 image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
   - /ca/serveis/teatre-dansa/
+faqs:
+  - q: "En quines condicions de llum treballeu en teatre i dansa a Barcelona?"
+    a: "Fosca de platea, retroil·luminació agressiva, moviment constant i un sol intent sense possibilitat de repetir. El que per a altri seria un problema, per a nosaltres és el treball habitual. Fa anys que hi som. Treballem sense flash en tots els casos."
+  - q: "Amb quins projectes de teatre i dansa heu treballat a Barcelona?"
+    a: "Hem documentat estrenes de teatre, espectacles de dansa contemporània, circ de nova creació i performance d'arts visuals a Barcelona i Catalunya. Treballem tan còmodament en un escenari de gran format com en un espai alternatiu de trenta persones."
+  - q: "Fotografieu assajos, estrenes o gires senceres?"
+    a: "Les tres modalitats. Podem documentar assajos generals (menys restriccions, millor accés), estrenes (màxima càrrega emocional) o gires completes. Cada modalitat té la seva lògica i el seu preu."
+  - q: "Quin és el preu de la fotografia de teatre i dansa a Barcelona?"
+    a: "Depèn del format, l'accés i el nombre de sessions. Escriviu-nos i enviem proposta en 48 hores."
 ---
 
 A les arts escèniques, el fotògraf no és l'element central: l'escena ho és. La nostra feina és documentar el que passa sense convertir-nos en protagonistes — sense trencar la concentració dels intèrprets ni l'experiència del públic. I fer-ho bé, al mateix temps.

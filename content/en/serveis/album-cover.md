@@ -1,6 +1,13 @@
 ---
-title: "Album cover photography and design"
+title: "Album cover photography and design in Barcelona"
 description: "Album cover photography and graphic design in Barcelona. From visual concept to print. Covers for jazz, blues, classical and electronic music."
+faqs:
+  - q: "Do you do photography, design or both for album covers?"
+    a: "We can do the photography, the graphic design or the full package. We have worked with our own photography, with the artist's existing archive and with concepts built from scratch. We don't put a nice photo on a template."
+  - q: "What musical styles have you made album covers for in Barcelona?"
+    a: "We have made covers for jazz, blues, classical, electronic and experimental musicians based in Barcelona and Catalunya. Some of these projects are on streaming platforms, in vinyl pressings and in collectible editions."
+  - q: "What does album cover design in Barcelona cost?"
+    a: "It depends on whether it's photography only, design only or both, and on project complexity. Write to us with details and we'll send a proposal within 48 hours."
 image: "/images/obra/joan-pau-cumellas-baggage.jpg"
 aliases:
   - /en/serveis/album-cover/

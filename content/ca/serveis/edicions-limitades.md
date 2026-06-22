@@ -1,9 +1,16 @@
 ---
-title: "Edicions limitades col·leccionables"
-description: "Convertim el material d'un festival, un esdeveniment o unes sessions de treball en un fotollibre tangible. Un objecte que es pot tocar, regalar o vendre. En col·laboració amb 112books.eu."
+title: "Edicions limitades col·leccionables de festivals i events culturals a Barcelona"
+description: "Convertim el material fotogràfic d'un festival, event o residència artística de Barcelona en un fotollibre tangible. Un objecte que es pot tocar, regalar o vendre. En col·laboració amb 112books.eu."
 image: "/images/obra/antropoformologies.jpg"
 aliases:
   - /ca/serveis/edicions-limitades/
+faqs:
+  - q: "Com funcionen les edicions limitades de fotollibre per a festivals de Barcelona?"
+    a: "Podem partir de dues situacions: cobertura de l'esdeveniment (assistim al festival, la residència o les sessions a Barcelona o Catalunya i ho documentem, i el material resultant és la base del fotollibre) o material existent (ja teniu les fotografies fetes i les convertim en un objecte editorial)."
+  - q: "Per a qui és el servei d'edicions limitades col·leccionables?"
+    a: "Festivals, espais culturals, companyies de teatre o dansa, músics amb un disc o una gira, artistes visuals, institucions. Qualsevol projecte que mereixi existir en paper."
+  - q: "Quin és el preu d'una edició limitada de fotollibre per a events culturals?"
+    a: "Depèn del format, el nombre d'imatges i la tirada. Escriviu-nos amb el vostre projecte i enviem proposta en 48 hores."
 ---
 
 Cobrim l'esdeveniment —o treballem a partir del material existent— i el resultat final és un fotollibre: un objecte editorial físic, amb pes i intenció.

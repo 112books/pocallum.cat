@@ -1,6 +1,13 @@
 ---
-title: "Band and artist photography session"
+title: "Band and artist photography session in Barcelona"
 description: "Band or solo artist photography session in Barcelona. Images for press, social media, album covers and promoter presentations. No generic aesthetics."
+faqs:
+  - q: "Do you work with solo artists and full bands in Barcelona?"
+    a: "Yes. We work with individual artists and ensembles of any size in Barcelona and Catalunya. For groups we don't line people up in front of a camera — we document the real dynamic, the energy, the relationship between members."
+  - q: "What is included in a band photography session?"
+    a: "A 2 to 3-hour session in Barcelona (concert venue, street, studio or agreed location). A selection of 20 edited photographs in high resolution. Unrestricted usage licence for all professional uses. Delivery within 5 working days. Optionally: analogue version on 35mm film or medium format."
+  - q: "What does a band or artist photography session in Barcelona cost?"
+    a: "It depends on the session length, the number of people and whether you include an analogue version. Write to us and we'll send a proposal within 48 hours."
 image: "/images/serveis/sessio-banda/Dusan-Jevtovic.jpg"
 aliases:
   - /en/serveis/band-session/
