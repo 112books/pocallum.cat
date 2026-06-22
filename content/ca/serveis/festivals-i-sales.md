@@ -4,6 +4,11 @@ description: "Reportatge fotogràfic per a festivals de música, arts escènique
 image: "/images/galeria/MG_9379.jpg"
 aliases:
   - /ca/serveis/festivals-i-sales/
+related:
+  - text: "Fotografia de concerts i directes"
+    url: "serveis/concerts/"
+  - text: "Edicions limitades col·leccionables"
+    url: "serveis/edicions-limitades/"
 faqs:
   - q: "Quins festivals i sales de concert cobriu a Barcelona?"
     a: "Hem documentat festivals de jazz i blues, fires de teatre, cicles de dansa i espais culturals de Barcelona i Catalunya. Entre d'altres: Festival de Blues de Barcelona, ViJazz Vilafranca, Clot en Blues, Pícnic de Blues, Flamenco de Barrio, Arundo Donax Festival, Mostra de Circ."

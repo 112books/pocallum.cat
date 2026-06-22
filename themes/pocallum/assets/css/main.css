@@ -440,8 +440,47 @@ h1, h2, h3, h4 {
 }
 .servei-page__body {
   padding-top: var(--space-12);
-  padding-bottom: var(--space-24);
+  padding-bottom: var(--space-12);
 }
+.servei-related {
+  padding-block: var(--space-10);
+  border-top: 1px solid var(--line);
+}
+.servei-related__label {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: var(--space-3);
+}
+.servei-related__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+}
+.servei-related__list a {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+.servei-related__list a:hover { color: var(--accent); }
+.servei-back {
+  padding-block: var(--space-8) var(--space-16);
+}
+.servei-back__link {
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--mid);
+  text-decoration: none;
+}
+.servei-back__link:hover { color: var(--fg); }
 .servei-page__imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

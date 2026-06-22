@@ -4,6 +4,11 @@ description: "Live music photography in Barcelona. Jazz, blues, flamenco. Concer
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
 aliases:
   - /en/serveis/live-music/
+related:
+  - text: "Event photography for festivals and venues"
+    url: "serveis/festivals-and-venues/"
+  - text: "Band and artist photography session"
+    url: "serveis/band-session/"
 faqs:
   - q: "What types of concerts do you cover in Barcelona?"
     a: "Club and venue concerts across Barcelona, from Jamboree to independent spaces throughout the region. Music festivals across all genres: jazz, blues, folk, electronic, classical. Album release concerts and special sessions. Tour coverage: ongoing documentation of a project throughout the season."

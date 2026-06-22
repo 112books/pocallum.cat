@@ -4,6 +4,11 @@ description: "Disseny gràfic de portades, cartells i identitat visual per a pro
 image: "/images/serveis/portada-identitat/sakura-koe.jpg"
 aliases:
   - /ca/serveis/portada-identitat/
+related:
+  - text: "Portada de disc — fotografia i disseny"
+    url: "serveis/portada-disc/"
+  - text: "Fotollibre artístic"
+    url: "serveis/fotollibre/"
 faqs:
   - q: "Feu una peça concreta o una identitat visual completa per a projectes artístics?"
     a: "Les dues coses. Podem crear una peça concreta —un cartell, una portada de disc, una imatge per a la gira— o acompanyar un projecte de llarg recorregut amb una identitat visual coherent. Treballem en funció del que necessiteu, no en funció d'un pack tancat."

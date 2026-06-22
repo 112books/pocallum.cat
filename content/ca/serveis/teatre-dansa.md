@@ -4,6 +4,11 @@ description: "Documentació fotogràfica de teatre, dansa, circ i performance a 
 image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
   - /ca/serveis/teatre-dansa/
+related:
+  - text: "Cobertura per a festivals i sales"
+    url: "serveis/festivals-i-sales/"
+  - text: "Fotografia de concerts i directes"
+    url: "serveis/concerts/"
 faqs:
   - q: "En quines condicions de llum treballeu en teatre i dansa a Barcelona?"
     a: "Fosca de platea, retroil·luminació agressiva, moviment constant i un sol intent sense possibilitat de repetir. El que per a altri seria un problema, per a nosaltres és el treball habitual. Fa anys que hi som. Treballem sense flash en tots els casos."

@@ -4,6 +4,11 @@ description: "Disseny i producció de fotollibre artístic a Barcelona. Del conc
 image: "/images/obra/antropoformologies.jpg"
 aliases:
   - /ca/serveis/fotollibre/
+related:
+  - text: "Edicions limitades col·leccionables"
+    url: "serveis/edicions-limitades/"
+  - text: "Portada i identitat visual per a artistes"
+    url: "serveis/portada-identitat/"
 faqs:
   - q: "Quines fases del fotollibre treballeu a Barcelona?"
     a: "Treballem totes les fases: selecció i edició d'imatges, disseny de la seqüència, maquetació, tria del paper i els acabats, i impressió. No subcontractem: ho fem tot des d'aquí a Barcelona, en sinergia amb 112books.eu, especialitzats en impressió d'art."

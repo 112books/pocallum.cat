@@ -4,6 +4,11 @@ description: "Sessió fotogràfica per a músics, bandes i artistes a Barcelona.
 image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
 aliases:
   - /ca/serveis/books-artistics/
+related:
+  - text: "Sessió fotogràfica per a banda o artista"
+    url: "serveis/sessio-banda/"
+  - text: "Portada de disc — fotografia i disseny"
+    url: "serveis/portada-disc/"
 faqs:
   - q: "Per a què serveix un book artístic per a músics?"
     a: "Per a tot el que necessita una imatge que et representi: premsa i dossiers, perfil a Spotify i plataformes de streaming, xarxes socials, portada o contraportada de disc, cartells de concert, presentació a promotors i festivals."

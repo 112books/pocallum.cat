@@ -46,4 +46,21 @@ document.querySelectorAll('.servei-page__imgs').forEach(function(grid) {
 });
 </script>
 
+{{ with .Params.related }}
+<section class="servei-related">
+  <div class="container">
+    <p class="servei-related__label">{{ i18n "serveis_related" | default "Pot interessar-te" }}</p>
+    <ul class="servei-related__list">
+      {{ range . }}
+      <li><a href="{{ .url | relLangURL }}">{{ .text }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+<div class="servei-back container">
+  <a href="{{ "serveis/" | relLangURL }}" class="servei-back__link">← {{ i18n "serveis_all" | default "Tots els serveis" }}</a>
+</div>
+
 {{ end }}

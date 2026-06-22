@@ -6,6 +6,11 @@ aliases:
   - /serveis-fotografics-2/books-per-actors-i-actrius/
   - /es/servicios-fotograficos/books-para-actores-y-actrices/
   - /ca/serveis/books-per-actors/
+related:
+  - text: "Book artístic per a músics i artistes"
+    url: "serveis/books-artistics/"
+  - text: "Sessió fotogràfica per a banda o artista"
+    url: "serveis/sessio-banda/"
 faqs:
   - q: "Què inclou un book d'actor professional a Barcelona?"
     a: "Sessió de 2 hores a localitzacions de Barcelona. Selecció de 20 fotografies editades en alta resolució. Llicència d'ús sense restriccions per a càstings, webs, xarxes i agències. Entrega en 5 dies laborables. Opcionalment: versió analògica en pel·lícula 35mm o format mig."

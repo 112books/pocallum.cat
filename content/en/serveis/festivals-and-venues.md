@@ -1,6 +1,11 @@
 ---
 title: "Event photography for festivals and cultural venues in Barcelona"
 description: "Professional photography for music festivals, performing arts and cultural spaces in Barcelona and Catalunya. A reusable visual archive for communications, press and annual reports."
+related:
+  - text: "Concert and live music photography"
+    url: "serveis/live-music/"
+  - text: "Limited collector's editions"
+    url: "serveis/limited-editions/"
 faqs:
   - q: "Which festivals and venues do you cover in Barcelona?"
     a: "We have documented jazz and blues festivals, theatre fairs, dance cycles and cultural spaces across Barcelona and Catalunya. Among others: Festival de Blues de Barcelona, ViJazz Vilafranca, Clot en Blues, Pícnic de Blues, Flamenco de Barrio, Arundo Donax Festival, Mostra de Circ."

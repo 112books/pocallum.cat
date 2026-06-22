@@ -4,6 +4,11 @@ description: "Fotografia i disseny gràfic per a portades de disc a Barcelona. D
 image: "/images/obra/joan-pau-cumellas-baggage.jpg"
 aliases:
   - /ca/serveis/portada-disc/
+related:
+  - text: "Sessió fotogràfica per a banda o artista"
+    url: "serveis/sessio-banda/"
+  - text: "Portada i identitat visual per a artistes"
+    url: "serveis/portada-identitat/"
 faqs:
   - q: "Feu la fotografia, el disseny o tots dos per a portades de disc?"
     a: "Podem fer la fotografia, el disseny gràfic o el paquet complet. Hem treballat amb material fotogràfic propi, amb arxius de l'artista i amb conceptes construïts des de zero. El que no fem és posar una foto bonica en una plantilla."

@@ -4,6 +4,11 @@ description: "Fotògrafs de concerts i directes a Barcelona. Jazz, blues, flamen
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
 aliases:
   - /ca/serveis/concerts/
+related:
+  - text: "Cobertura per a festivals i sales"
+    url: "serveis/festivals-i-sales/"
+  - text: "Sessió fotogràfica per a banda o artista"
+    url: "serveis/sessio-banda/"
 faqs:
   - q: "Quines situacions de concert cobriu a Barcelona?"
     a: "Concerts en club o sala a Barcelona: des del Jamboree fins a sales independents de tot el territori. Festivals de música en totes les disciplines: jazz, blues, folk, electrònica, música clàssica. Presentacions de disc en directe i sessions especials. Cobertura de gira: documentació continuada d'un projecte al llarg de la temporada."

@@ -1,6 +1,11 @@
 ---
 title: "Band and artist photography session in Barcelona"
 description: "Band or solo artist photography session in Barcelona. Images for press, social media, album covers and promoter presentations. No generic aesthetics."
+related:
+  - text: "Artist portfolio photography for musicians"
+    url: "serveis/artistic-portfolios/"
+  - text: "Album cover photography and design"
+    url: "serveis/album-cover/"
 faqs:
   - q: "Do you work with solo artists and full bands in Barcelona?"
     a: "Yes. We work with individual artists and ensembles of any size in Barcelona and Catalunya. For groups we don't line people up in front of a camera — we document the real dynamic, the energy, the relationship between members."

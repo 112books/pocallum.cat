@@ -1,6 +1,11 @@
 ---
 title: "Album cover photography and design in Barcelona"
 description: "Album cover photography and graphic design in Barcelona. From visual concept to print. Covers for jazz, blues, classical and electronic music."
+related:
+  - text: "Band and artist photography session"
+    url: "serveis/band-session/"
+  - text: "Visual identity and cover design"
+    url: "serveis/visual-identity/"
 faqs:
   - q: "Do you do photography, design or both for album covers?"
     a: "We can do the photography, the graphic design or the full package. We have worked with our own photography, with the artist's existing archive and with concepts built from scratch. We don't put a nice photo on a template."

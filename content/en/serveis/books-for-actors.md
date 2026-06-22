@@ -1,6 +1,11 @@
 ---
 title: "Actor portfolio photography in Barcelona"
 description: "Professional actor headshots and portfolio photography in Barcelona. Character-driven photography for castings, agencies and digital profiles. No generic studio, no white backgrounds."
+related:
+  - text: "Artist portfolio photography for musicians"
+    url: "serveis/artistic-portfolios/"
+  - text: "Band and artist photography session"
+    url: "serveis/band-session/"
 faqs:
   - q: "What is included in an actor portfolio session in Barcelona?"
     a: "A 2-hour session at locations in Barcelona. A selection of 20 edited photographs in high resolution. Unrestricted usage licence for castings, websites, social media and agencies. Delivery within 5 working days. Optionally: analogue version on 35mm film or medium format."

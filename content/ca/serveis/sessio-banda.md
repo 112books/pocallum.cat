@@ -4,6 +4,11 @@ description: "Sessió fotogràfica de banda o artista solista a Barcelona. Per a
 image: "/images/serveis/sessio-banda/Dusan-Jevtovic.jpg"
 aliases:
   - /ca/serveis/sessio-banda/
+related:
+  - text: "Book artístic per a músics i artistes"
+    url: "serveis/books-artistics/"
+  - text: "Portada de disc — fotografia i disseny"
+    url: "serveis/portada-disc/"
 faqs:
   - q: "Feu sessions fotogràfiques per a artistes solistes i bandes a Barcelona?"
     a: "Sí. Treballem amb artistes individuals i amb formacions de qualsevol mida a Barcelona i Catalunya. Per a grups no fem una fila de persones mirant a càmera: documentem la dinàmica real, l'energia, la relació entre els membres."

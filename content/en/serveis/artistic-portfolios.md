@@ -1,6 +1,11 @@
 ---
 title: "Artist portfolio photography for musicians in Barcelona"
 description: "Photography sessions for musicians, bands and artists in Barcelona. Images for press, social media, album covers and professional profiles."
+related:
+  - text: "Band and artist photography session"
+    url: "serveis/band-session/"
+  - text: "Album cover photography and design"
+    url: "serveis/album-cover/"
 faqs:
   - q: "What is an artist portfolio session for musicians in Barcelona?"
     a: "A 2 to 3-hour session in Barcelona (studio, street or concert venue). A selection of 25 edited photographs in high resolution. Unrestricted usage licence for all professional uses. Delivery within 5 working days. Optionally: analogue version on 35mm film or medium format."

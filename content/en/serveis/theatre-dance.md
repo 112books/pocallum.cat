@@ -1,6 +1,11 @@
 ---
 title: "Theatre, dance and performing arts photography in Barcelona"
 description: "Photography for theatre, dance, circus and performance in Barcelona. No flash, no disruption. We know when to shoot without breaking the spell."
+related:
+  - text: "Event photography for festivals and venues"
+    url: "serveis/festivals-and-venues/"
+  - text: "Concert and live music photography"
+    url: "serveis/live-music/"
 faqs:
   - q: "In what conditions do you work for theatre and dance photography in Barcelona?"
     a: "Dark auditoriums, aggressive backlighting, constant movement and a single unrepeatable attempt. What others find challenging is our standard working environment. We have been doing this for years, always without flash."
