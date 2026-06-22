@@ -4,6 +4,18 @@ description: "We turn material from a festival, event or working sessions into a
 image: "/images/obra/antropoformologies.jpg"
 aliases:
   - /en/serveis/limited-editions/
+related:
+  - text: "Artistic photobook"
+    url: "serveis/photobook/"
+  - text: "Event photography for festivals and venues"
+    url: "serveis/festivals-and-venues/"
+faqs:
+  - q: "How do limited collector's editions work for festivals and cultural events?"
+    a: "We can start from two situations: event coverage (we attend the festival, residency or sessions and document it, and the resulting material becomes the photobook) or existing material (you already have the photographs and we turn them into an editorial object)."
+  - q: "Who is the limited collector's editions service for?"
+    a: "Festivals, cultural spaces, theatre or dance companies, musicians with an album or tour, visual artists, institutions. Any project that deserves to exist on paper."
+  - q: "What does a limited edition photobook for a cultural event cost?"
+    a: "It depends on format, number of images and print run. Write to us with your project and we'll send a proposal within 48 hours."
 ---
 
 We cover the event —or work from existing material— and the final result is a photobook: a physical editorial object with weight and intent.

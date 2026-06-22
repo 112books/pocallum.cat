@@ -4,6 +4,18 @@ description: "Artistic photobook design and production in Barcelona. From concep
 image: "/images/obra/antropoformologies.jpg"
 aliases:
   - /en/serveis/photobook/
+related:
+  - text: "Limited collector's editions"
+    url: "serveis/limited-editions/"
+  - text: "Visual identity and cover design"
+    url: "serveis/visual-identity/"
+faqs:
+  - q: "What phases of photobook production do you handle in Barcelona?"
+    a: "All of them: image selection and editing, sequence design, layout, choice of paper and finishes, and printing. We don't subcontract — everything is done in-house in Barcelona, in collaboration with 112books.eu, specialists in art printing."
+  - q: "Who is the artistic photobook service for?"
+    a: "For photographers who want to publish their own work, musicians who want to turn a recording project into a physical object, or institutions who want a quality visual record. Scale doesn't matter — we do single-copy editions and collectible print runs."
+  - q: "What does an artistic photobook production in Barcelona cost?"
+    a: "It depends on design complexity, number of images and print edition. Write to us with your project and we'll send a proposal within 48 hours."
 ---
 
 A photobook is not an album or an image catalogue. It's an editorial object: it has weight, intention, a sequence that builds meaning. The difference between a folder of JPEGs and a photobook is the difference between having photographs and having a project.

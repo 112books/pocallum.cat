@@ -4,6 +4,18 @@ description: "Graphic design for covers, posters and visual identity for music, 
 image: "/images/serveis/portada-identitat/sakura-koe.jpg"
 aliases:
   - /en/serveis/visual-identity/
+related:
+  - text: "Album cover photography and design"
+    url: "serveis/album-cover/"
+  - text: "Artistic photobook"
+    url: "serveis/photobook/"
+faqs:
+  - q: "Do you design a single piece or a complete visual identity for artistic projects?"
+    a: "Both. We can create a single piece — a poster, an album cover, a tour image — or accompany a long-term project with a coherent visual identity. We work according to what you need, not a fixed package."
+  - q: "For which artistic projects do you design visual identity in Barcelona?"
+    a: "Albums, tours, theatre and dance shows, festivals, concert cycles, publications, cultural institutions. Any scale. We have experience with jazz, blues, flamenco, contemporary theatre and performing arts of all kinds."
+  - q: "What does visual identity design for artists in Barcelona cost?"
+    a: "It depends on scope: a single piece or a complete visual system. Write to us with your project details and we'll send a proposal within 48 hours."
 ---
 
 The visual identity of an artistic project isn't a logo and a colour palette. It's the way the project presents itself to the world: the album cover, the concert poster, the social media images, the press kit. Everything has to speak the same language.
