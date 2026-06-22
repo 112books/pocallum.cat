@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-21T21:05:04.932743Z",
+  "generated": "2026-06-22T02:48:32.198847Z",
   "period": {
-    "start": "2025-06-21",
-    "end": "2026-06-21"
+    "start": "2025-06-22",
+    "end": "2026-06-22"
   },
-  "total": 567,
+  "total": 571,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -89,11 +89,11 @@
     },
     {
       "date": "2026-05-29",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-05-30",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-05-31",
@@ -178,12 +178,16 @@
     {
       "date": "2026-06-20",
       "count": 5
+    },
+    {
+      "date": "2026-06-21",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 157
+      "count": 158
     },
     {
       "path": "/galeria",
@@ -242,16 +246,16 @@
       "count": 6
     },
     {
+      "path": "/legal/privacitat",
+      "count": 5
+    },
+    {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 5
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 5
-    },
-    {
-      "path": "/legal/privacitat",
-      "count": 4
     },
     {
       "path": "/serveis/books-artistics",
@@ -280,6 +284,10 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 4
+    },
+    {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 3
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -322,7 +330,7 @@
       "count": 3
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "path": "/en/from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress",
       "count": 2
     },
     {
@@ -376,50 +384,48 @@
     {
       "path": "/ca/qui-som",
       "count": 2
-    },
-    {
-      "path": "/serveis-fotografics-2/fotografia-desdeveniments",
-      "count": 2
     }
   ],
   "by_lang": {
-    "ca": 26,
+    "ca": 25,
     "es": 23,
-    "en": 40
+    "en": 43
   },
   "by_section": {
-    "inici": 169,
+    "inici": 170,
     "galeria": 59,
     "serveis": 60,
     "festivals": 78,
     "contacte": 32,
-    "noticies": 33,
+    "noticies": 34,
     "blog": 25,
     "qui-som": 16,
     "serveis-fotografics-2": 10,
     "cerca": 10,
     "obra": 9,
+    "legal": 5,
     "servicios-fotograficos": 5,
-    "legal": 4,
     "content": 4,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
     "testing-vintage-cameras": 2,
     "lomography-great-photos-simple-camera": 2,
     "bran-new-calendar-of-9-barris-acull": 2,
     "moviendo-las-imagenes-fijas": 2,
-    "photography-services": 3,
+    "photography-services": 2,
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 2,
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "photos-of-musical-groups": 1,
+    "example-of-a-session-with-traditional-photography": 1,
     "cambo-sc-first-test": 1,
     "provant-la-pelicula-kono-monolit-iso64": 1,
     "a-different-perspective-analog-photography-with-personality-and-mystery": 1,
-    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 1,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona%60": 1,
     "flamenco-i-baixa-velocitat-3": 1,
     "forced-tests-sample-photographs": 1,
@@ -430,10 +436,13 @@
     "hhh": 1,
     "worldpinholeday-diana-f": 1,
     "taller-de-tecniques-antigues-al-laboratori": 1,
-    "equip": 1,
-    "tags": 1
+    "equip": 1
   },
   "noticies_top": [
+    {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 3
+    },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
       "count": 3
@@ -441,10 +450,6 @@
     {
       "path": "/noticies/2026-06-la-juganera",
       "count": 3
-    },
-    {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 2
     }
   ],
   "festivals_top": [
@@ -649,12 +654,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 142
+      "count": 146
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 55
+      "count": 56
     },
     {
       "name": "blog.pocallum.cat",
