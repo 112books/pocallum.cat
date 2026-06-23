@@ -1,6 +1,6 @@
 ---
 title: "Parla amb nosaltres"
-description: "Demana un pressupost sense compromís per al teu projecte fotogràfic."
+description: "Contacta amb Pocallum, fotògrafs culturals a Barcelona. Pressupost personalitzat en 48 hores per a concerts, festivals, teatre i projectes artístics."
 aliases:
   - /ca/contacte/
 ---
