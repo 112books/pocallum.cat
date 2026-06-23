@@ -3,6 +3,8 @@ title: "Avís legal"
 description: "Avís legal i condicions d'ús del web pocallum.cat"
 date: 2026-05-01
 draft: false
+sitemap:
+  disable: true
 ---
 
 ## Titular del web

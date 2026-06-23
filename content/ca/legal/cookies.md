@@ -3,6 +3,8 @@ title: "Política de cookies"
 description: "Política de cookies de pocallum.cat — aquest web no usa cookies de seguiment"
 date: 2026-05-01
 draft: false
+sitemap:
+  disable: true
 ---
 
 ## Aquest web no utilitza cookies de seguiment
