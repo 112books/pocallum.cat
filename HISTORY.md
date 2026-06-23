@@ -4,6 +4,58 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-06-23 — Audit SEO complet + quick wins
+
+### Audit
+7 agents SEO especialitzats en paral·lel (Tècnic, Local, Schema, Sitemap, Performance, GEO/IA, SXO). Resultats a `docs/seo/FULL-AUDIT-REPORT.md` i `docs/seo/ACTION-PLAN.md`.
+
+Scores: Tècnic 78/100 · Local 54/100 · GEO/IA 74/100 · SXO 61/100 · Performance ~55/100.
+
+### Fixes aplicats
+
+**Template / On-page**
+- Capçaleres de serveis buides corregides: `.nom` → `.titol` a `index.html` i `contacte/list.html`
+- `og:type` corregit per a pàgines de secció: ara emeten `website` en lloc d'`article`
+- `hreflang x-default` corregit: ara apareix a totes les pàgines (CA i EN), sempre apuntant a CA
+- `disableHugoGeneratorInject = true` a `hugo.toml`
+
+**Contingut**
+- `/serveis/` CA+EN: title i description amb "Barcelona" i "a Barcelona"
+- Meta descriptions millorades (+ "Barcelona", + keywords) a `/contacte/`, `/festivals/`, `/galeria/`, `/noticies/` — CA i EN
+- `translationKey` afegit als 10 parells de serveis CA/EN (hreflang cross-links al sitemap)
+
+**Contingut editorial (landing pages)**
+- `/serveis/concerts/` CA+EN: de ~80 a 350+ paraules — credencials, lliuraments, alt text descriptiu
+- `/serveis/teatre-dansa/` CA+EN: de ~100 a 400+ paraules — companyies, espais, modalitats, lliuraments
+
+**IA / GEO**
+- RSL 1.0 afegit a `static/llms.txt`
+
+**Performance (CLS)**
+- Galeria: `.js-mosaic { opacity: 0 }` + `grid.style.opacity = '1'` post-shuffle — elimina layout shift visible
+- `foto-card.html`: `width="900" height="600"` per defecte (sobreescrivible per frontmatter)
+- `__heroData` inline script mogut al final del block `main` (allibera el parser HTML)
+
+**Sitemap**
+- `<changefreq>` i `<priority>` eliminats (Google els ignora des de 2023)
+- Hreflang self-tag condicionat: ara no s'emet en pàgines sense traducció
+
+### Pendent (proper sessió)
+- C1: Google Business Profile (acció manual, no de codi)
+- C3: Hero server-rendered (LCP -1.5–2s) — canvi de template + JS
+- A8: Dates futures al sitemap (festivals amb `date: 2030`)
+- A9: Testimonis de clients (requereix contingut de Joan)
+- A10: `og:image` fallback dinàmic per a seccions
+- M1: Ampliar `/serveis/festivals-i-sales/` CA+EN
+- M5: Schema LocalBusiness a `/contacte/` i `/serveis/`
+- M6: Schema festivals no musicals (`Festival` en lloc de `MusicFestival`)
+- M8: Bloc "Sobre l'autor" a les notícies
+- B3: Excloure pàgines legals del sitemap
+- B5: Canal YouTube (off-site, correlació alta amb citació IA)
+- B6: Uniformitzar dates 2002/2010 a `llms.txt`
+
+---
+
 ## 2026-06-01
 
 ### Festival Nou Barris meets New Orleans — actualització + SEO
