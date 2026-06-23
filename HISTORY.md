@@ -4,6 +4,41 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-06-24 — SEO fase 2: rendiment, schema i contingut
+
+### M1 — `/serveis/festivals-i-sales/` CA+EN
+De ~80 a 450+ paraules. Credencials des del 2002 (Blues de Barcelona, ViJazz, Nou Barris Meets New Orleans), cobertura en 5 capes, lliuraments amb volums típics (150–400 imatges), secció relació a llarg termini. Alt text descriptiu a les 24 imatges CA / 15 EN.
+
+### C3 — Hero LCP
+`<img id="js-hero-img">` sense src inicial (opacity:0). JS injecta imatge aleatòria i fa fade-in via `.is-loaded`. L'element `<img>` és candidat LCP (el `background-image` anterior no ho era). Revertit flash "imatge fixa → aleatòria" que apareixia en primera versió.
+
+### A8 — Dates festivals 2030
+6 CA + 6 EN festivals amb dates de pinning substituïdes per dates reals + `weight: 1–6`. Template `festivals/list.html` usa sort híbrid (pinned per weight, resta per date desc). Sitemap ja no mostra lastmod 2030.
+
+### A10 — og:image fallback seccions
+Pàgines de secció sense `image` explícita ara prenen la imatge de la primera pàgina filla en lloc del logo del lloc.
+
+### M5 — LocalBusiness schema a /serveis/ i /contacte/
+Schema `LocalBusiness + Photographer` condensat (NAP, areaServed, priceRange, sameAs amb Instagram + Facebook + blog) afegit a `head.html` per a totes les seccions de serveis i contacte.
+
+### M6 — Festival schema dinàmic
+Detecta disciplina (jazz, blues, flamenc, saxofon, harmònica, funk, soul, canya) → `MusicFestival`; circ, teatre, cultura comunitària, tatuatge → `Festival`.
+
+### M8 — Bloc "Sobre l'autor" a les notícies
+Bloc al peu de cada notícia: foto, nom, rol, bio ~55 paraules amb credencials verificables (2002, festivals específics). Strings a `ca.yaml` + `en.yaml`. Estils CSS `.author-bio`.
+
+### B3/B4/B8 — Items de backlog
+- B3: `sitemap: disable: true` a les 3 pàgines legals CA
+- B4: Eliminat `<link rel="shortcut icon">` deprecated
+- B8: Facebook afegit a `sameAs` del schema LocalBusiness de la portada
+
+### Pendent (proper sessió)
+- B7: Verificar coordenades geo a Google Maps (`41.40879, 2.19004` → Nau Bostik)
+- C1: Crear i verificar Google Business Profile (acció manual)
+- B5: Canal YouTube (off-site, alta correlació citació IA)
+
+---
+
 ## 2026-06-23 — Audit SEO complet + quick wins
 
 ### Audit
