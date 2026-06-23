@@ -50,9 +50,6 @@
   </div>
   <div class="hero-scroll" aria-hidden="true"></div>
 </section>
-<script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang "galeria" $galeriaItems | jsonify | safeJS }};</script>
-
-
 {{/* ── Fotografies portada — selecció aleatòria via JS ─────────────────── */}}
 {{ if $galeria }}
 <section class="section section--fotos">
@@ -189,4 +186,5 @@
 </section>
 {{ end }}
 
+<script>var __heroData={{ dict "images" $imgList "lang" .Site.Language.Lang "galeria" $galeriaItems | jsonify | safeJS }};</script>
 {{ end }}
