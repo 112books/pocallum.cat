@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-22T21:27:48.788303Z",
+  "generated": "2026-06-23T02:14:36.105857Z",
   "period": {
-    "start": "2025-06-22",
-    "end": "2026-06-22"
+    "start": "2025-06-23",
+    "end": "2026-06-23"
   },
-  "total": 571,
+  "total": 583,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -93,7 +93,7 @@
     },
     {
       "date": "2026-05-30",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-05-31",
@@ -182,24 +182,28 @@
     {
       "date": "2026-06-21",
       "count": 6
+    },
+    {
+      "date": "2026-06-22",
+      "count": 13
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 158
+      "count": 160
     },
     {
       "path": "/galeria",
-      "count": 54
+      "count": 55
     },
     {
       "path": "/serveis",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/festivals",
-      "count": 30
+      "count": 31
     },
     {
       "path": "/contacte",
@@ -207,11 +211,11 @@
     },
     {
       "path": "/noticies",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/blog",
-      "count": 21
+      "count": 22
     },
     {
       "path": "/qui-som",
@@ -220,6 +224,10 @@
     {
       "path": "/ca",
       "count": 9
+    },
+    {
+      "path": "/obra",
+      "count": 8
     },
     {
       "path": "/festivals/calella-harmonica-festival",
@@ -234,12 +242,12 @@
       "count": 8
     },
     {
-      "path": "/obra",
+      "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
     },
     {
-      "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 7
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 6
     },
     {
       "path": "/serveis/books-per-actors",
@@ -256,6 +264,10 @@
     {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 5
+    },
+    {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 4
     },
     {
       "path": "/serveis/books-artistics",
@@ -284,14 +296,6 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 4
-    },
-    {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 3
-    },
-    {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 3
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -389,20 +393,20 @@
   "by_lang": {
     "ca": 25,
     "es": 23,
-    "en": 43
+    "en": 45
   },
   "by_section": {
-    "inici": 170,
-    "galeria": 59,
-    "serveis": 60,
+    "inici": 172,
+    "galeria": 60,
+    "serveis": 61,
     "festivals": 78,
     "contacte": 32,
-    "noticies": 34,
-    "blog": 25,
+    "noticies": 39,
+    "blog": 26,
     "qui-som": 16,
+    "obra": 10,
     "serveis-fotografics-2": 10,
     "cerca": 10,
-    "obra": 9,
     "legal": 5,
     "servicios-fotograficos": 5,
     "content": 4,
@@ -421,6 +425,7 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "testing-adox-hr-50-film": 1,
     "photos-of-musical-groups": 1,
     "example-of-a-session-with-traditional-photography": 1,
     "cambo-sc-first-test": 1,
@@ -440,12 +445,12 @@
   },
   "noticies_top": [
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 3
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 6
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 3
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 4
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -654,12 +659,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 146
+      "count": 148
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 56
+      "count": 59
     },
     {
       "name": "blog.pocallum.cat",
