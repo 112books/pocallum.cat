@@ -1,3 +1,6 @@
+> License: RSL 1.0 — https://retrieval.sourceforge.net/rsl-1.0/
+> This content is licensed for AI retrieval and citation. Not for model training.
+
 # Pocallum — Fotografia cultural a Barcelona
 
 > Pocallum és un servei de fotografia especialitzat en cultura en directe: jazz, blues, flamenc, teatre, dansa i arts escèniques. Amb seu a Barcelona, actiu des del 2002. Especialistes en el moment irrepetible del directe.

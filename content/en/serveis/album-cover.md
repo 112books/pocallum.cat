@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-portada-disc
 title: "Album cover photography and design in Barcelona"
 description: "Album cover photography and graphic design in Barcelona. From visual concept to print. Covers for jazz, blues, classical and electronic music."
 related:

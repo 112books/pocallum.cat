@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-sessio-banda
 title: "Sessió fotogràfica per a banda o artista a Barcelona"
 description: "Sessió fotogràfica de banda o artista solista a Barcelona. Per a premsa, xarxes, portada de disc i presentació a promotors. Sense estètica genèrica."
 image: "/images/serveis/sessio-banda/Dusan-Jevtovic.jpg"

@@ -1,6 +1,6 @@
 ---
-title: "Serveis fotogràfics"
-description: "Fotografia i disseny per a músics, festivals, sales de concert i projectes editorials. Pressupostos a mida."
+title: "Serveis fotogràfics a Barcelona"
+description: "Fotografia cultural a Barcelona per a músics, festivals, sales de concert i projectes editorials. Pressupostos a mida."
 aliases:
   - /ca/serveis/
 faqs:

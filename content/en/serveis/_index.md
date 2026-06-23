@@ -1,6 +1,6 @@
 ---
-title: "Photography services"
-description: "Photography and design for musicians, festivals, concert venues and editorial projects. Custom quotes."
+title: "Photography services in Barcelona"
+description: "Cultural photography in Barcelona for musicians, festivals, concert venues and editorial projects. Custom quotes."
 faqs:
   - q: "What kind of events does Pocallum document?"
     a: |-

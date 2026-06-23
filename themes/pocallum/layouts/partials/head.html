@@ -39,9 +39,10 @@
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-{{ if eq .Language.Weight 1 }}
-<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
-{{ end }}
+{{/* x-default sempre apunta a la versió CA, en qualsevol idioma actiu */}}
+{{- $xdefault := .Permalink -}}
+{{- range .Translations -}}{{- if eq .Language.Weight 1 -}}{{- $xdefault = .Permalink -}}{{- end -}}{{- end -}}
+<link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
 
 {{/* RSS autodiscovery */}}
 {{ range .AlternativeOutputFormats }}
@@ -53,7 +54,7 @@
 <meta property="og:locale"      content="{{ .Language.Params.ogLocale | default "ca_ES" }}">
 <meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
-<meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:type"        content="{{ if or .IsHome .IsSection }}website{{ else }}article{{ end }}">
 <meta property="og:url"         content="{{ .Permalink }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 

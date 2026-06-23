@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-books-actors
 title: "Book fotogràfic per a actors i actrius a Barcelona"
 description: "Book d'actor professional a Barcelona. Fotografia de retrat i caràcter per a càstings, agències i perfils digitals. Sense estudi genèric, sense fons blanc."
 image: "/images/galeria/IMG_2331.jpg"

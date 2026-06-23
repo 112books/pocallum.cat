@@ -40,10 +40,10 @@
         <div class="wiz-cards" role="group" aria-label="{{ i18n "wiz_s1_title" | default "Tipus de projecte" }}">
           {{ range $i, $g := $serveis.grups }}
           <label class="wiz-card">
-            <input type="radio" name="servei" value="{{ if eq $lang "en" }}{{ $g.nom_en }}{{ else }}{{ $g.nom }}{{ end }}" required>
+            <input type="radio" name="servei" value="{{ if eq $lang "en" }}{{ $g.titol_en }}{{ else }}{{ $g.titol }}{{ end }}" required>
             <span class="wiz-card__num">{{ printf "%02d" (add $i 1) }}</span>
             <span class="wiz-card__body">
-              <span class="wiz-card__title">{{ if eq $lang "en" }}{{ $g.nom_en }}{{ else }}{{ $g.nom }}{{ end }}</span>
+              <span class="wiz-card__title">{{ if eq $lang "en" }}{{ $g.titol_en }}{{ else }}{{ $g.titol }}{{ end }}</span>
               <span class="wiz-card__desc">{{ if eq $lang "en" }}{{ $g.desc_en | truncate 90 "…" }}{{ else }}{{ $g.desc | truncate 90 "…" }}{{ end }}</span>
             </span>
             <span class="wiz-card__check" aria-hidden="true"></span>

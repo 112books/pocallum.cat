@@ -3,6 +3,7 @@ title   = "Pocallum"
 theme   = "pocallum"
 enableRobotsTXT = true
 enableGitInfo   = false
+disableHugoGeneratorInject = true
 summaryLength   = 70
 buildFuture     = true
 

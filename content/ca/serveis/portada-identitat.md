@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-portada-identitat
 title: "Portada i identitat visual per a projectes artístics a Barcelona"
 description: "Disseny gràfic de portades, cartells i identitat visual per a projectes musicals, editorials i de les arts escèniques a Barcelona. Del concepte al material final."
 image: "/images/serveis/portada-identitat/sakura-koe.jpg"

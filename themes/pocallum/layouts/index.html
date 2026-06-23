@@ -104,7 +104,7 @@
       <a href="{{ "serveis/" | relLangURL }}#servei-{{ add $i 1 }}" class="serveis-row">
         <span class="serveis-row__num">{{ printf "%02d" (add $i 1) }}</span>
         <div class="serveis-row__body">
-          <h3 class="serveis-row__title">{{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}</h3>
+          <h3 class="serveis-row__title">{{ if eq $lang "en" }}{{ $grup.titol_en }}{{ else }}{{ $grup.titol }}{{ end }}</h3>
           <p class="serveis-row__desc">{{ if eq $lang "en" }}{{ $grup.desc_en }}{{ else }}{{ $grup.desc }}{{ end }}</p>
         </div>
         <span class="serveis-row__arrow" aria-hidden="true">→</span>

@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-portada-identitat
 title: "Visual identity and cover design"
 description: "Graphic design for covers, posters and visual identity for music, publishing and performing arts projects. From concept to final materials."
 image: "/images/serveis/portada-identitat/sakura-koe.jpg"

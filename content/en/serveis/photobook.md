@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-fotollibre
 title: "Artistic photobook — concept, editing and printing"
 description: "Artistic photobook design and production in Barcelona. From concept to print, in collaboration with 112books.eu. Individual and collectible editions."
 image: "/images/obra/antropoformologies.jpg"

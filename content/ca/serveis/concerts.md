@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-concerts
 title: "Fotografia de concerts i directes a Barcelona"
 description: "Fotògrafs de concerts i directes a Barcelona. Jazz, blues, flamenc, teatre musical. Sense flash, amb llum existent. Per a premsa, xarxes i arxiu de gira."
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"

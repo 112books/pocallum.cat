@@ -1,4 +1,5 @@
 ---
+translationKey: serveis-festivals
 title: "Cobertura fotogràfica per a festivals i sales de concert a Barcelona"
 description: "Reportatge fotogràfic per a festivals de música, arts escèniques i espais culturals a Barcelona. Arxiu visual professional per a comunicació, premsa i memòries anuals."
 image: "/images/galeria/MG_9379.jpg"
