@@ -3,7 +3,11 @@
 {{- else if .Params.lead }}{{- $desc = .Params.lead -}}
 {{- else if .Summary }}{{- $desc = .Summary | truncate 160 -}}
 {{- end -}}
-{{- $ogImage := or .Params.image .Site.Params.defaultOgImage -}}
+{{- $ogImage := .Params.image -}}
+{{- if and (not $ogImage) .IsSection -}}
+  {{- with index .Pages 0 -}}{{- $ogImage = .Params.image -}}{{- end -}}
+{{- end -}}
+{{- $ogImage = or $ogImage .Site.Params.defaultOgImage -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">

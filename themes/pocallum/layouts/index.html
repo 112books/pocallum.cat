@@ -13,6 +13,7 @@
 {{ end }}
 {{- $imgList := slice -}}
 {{- range $galeria }}{{- with .Params.image }}{{- $imgList = $imgList | append . }}{{- end }}{{- end -}}
+{{- $heroImg := index $imgList 0 -}}
 
 {{/* ── Dades de galeria per JS (selecció aleatòria a client) ──────────── */}}
 {{- $galeriaItems := slice -}}
@@ -32,7 +33,11 @@
 
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
 <section class="hero" id="js-hero">
-  <div class="hero-bg" id="js-hero-bg" aria-hidden="true"></div>
+  <div class="hero-bg" id="js-hero-bg" aria-hidden="true">
+    {{- with $heroImg -}}
+    <img src="{{ . }}" class="hero-bg__img" fetchpriority="high" loading="eager" alt="" width="1600" height="1067">
+    {{- end -}}
+  </div>
   <div class="hero-inner">
     <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>
     <h1 class="hero-title" id="js-hero-title">

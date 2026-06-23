@@ -1,7 +1,8 @@
 ---
 title: "ESMUC End-of-Year Concerts"
 description: "Photography from ESMUC 2024 end-of-year concerts at Nau Bostik. Jazz and classical music live."
-date: 2030-01-02
+date: 2024-06-01
+weight: 5
 anys: "2024"
 lloc: "Nau Bostik / ESMUC, Barcelona"
 disciplina: "Jazz · Classical music"

@@ -1,7 +1,8 @@
 ---
 title: "Jornades Xarxa 9 Barris Acull"
 description: "Photography from the Jornades de la Xarxa 9 Barris Acull. Community culture and diversity in Nou Barris. 2017–2024."
-date: 2030-01-06
+date: 2024-11-01
+weight: 2
 anys: "2017 – 2024"
 lloc: "Nou Barris, Barcelona"
 disciplina: "Community culture"

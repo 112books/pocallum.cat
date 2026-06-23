@@ -40,15 +40,21 @@
     title.classList.remove('is-switching');
   }, 350);
 
-  // Image: pick random, preload, fade in
+  // Image: pick random, crossfade into server-rendered img
+  const heroImg = bg.querySelector('img');
   if (images.length > 0) {
     const src = images[Math.floor(Math.random() * images.length)];
-    const img = new Image();
-    img.onload = () => {
-      bg.style.backgroundImage = `url('${src}')`;
-      bg.classList.add('is-loaded');
+    if (heroImg && heroImg.src && heroImg.src.endsWith(src)) return; // already showing this one
+    const loader = new Image();
+    loader.onload = () => {
+      bg.classList.add('is-switching');
+      setTimeout(() => {
+        if (heroImg) { heroImg.src = src; }
+        else { bg.style.backgroundImage = `url('${src}')`; }
+        bg.classList.remove('is-switching');
+      }, 600);
     };
-    img.src = src;
+    loader.src = src;
   }
 })();
 

@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ $pages := .Pages.ByDate.Reverse }}
+{{- $pinned := where .Pages "Params.weight" "gt" 0 -}}
+{{- $pinned  = $pinned.ByParam "weight" -}}
+{{- $rest   := where (.Pages.ByDate.Reverse) "Params.weight" nil -}}
+{{- $pages  := $pinned | append $rest -}}
 
 <div class="festivals-wall">
   {{ range $i, $p := $pages }}
