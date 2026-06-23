@@ -9,12 +9,12 @@
     {{- if not .Lastmod.IsZero }}
     <lastmod>{{ .Lastmod.Format "2006-01-02" }}</lastmod>
     {{- end }}
-    <changefreq>{{- if .IsHome }}daily{{- else if eq .Type "noticies" }}weekly{{- else if eq .Type "festivals" }}monthly{{- else if eq .Type "galeria" }}monthly{{- else }}weekly{{- end }}</changefreq>
-    <priority>{{- if .IsHome }}1.0{{- else if eq .Type "serveis" }}0.9{{- else if eq .Type "contacte" }}0.9{{- else if eq .Type "festivals" }}0.8{{- else if eq .Type "noticies" }}0.7{{- else if eq .Type "galeria" }}0.6{{- else }}0.5{{- end }}</priority>
+    {{- if .Translations }}
     {{- range .Translations }}
     <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
     {{- end }}
     <xhtml:link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}"/>
+    {{- end }}
     {{- if .Translations }}
     {{- $defaultPerma := .Permalink }}
     {{- range .AllTranslations }}{{ if eq .Language.Lang "ca" }}{{ $defaultPerma = .Permalink }}{{ end }}{{ end }}
