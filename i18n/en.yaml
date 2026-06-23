@@ -161,3 +161,9 @@ contact_direct_label:   "Or write to us directly"
 
 serveis_related: "Related services"
 serveis_all:     "All services"
+
+# Author bio block in news articles
+author_bio_label:   "About the author"
+author_bio_name:    "Joan Linux Martínez"
+author_bio_role:    "Photographer"
+author_bio_text:    "Live music and performing arts photographer based in Barcelona since 2002. He has documented hundreds of concerts, theatre premieres and cultural festivals across Catalonia. He publishes photobooks and works regularly with the Festival de Blues de Barcelona, Jazz I Am, Nou Barris Meets New Orleans and many others."

@@ -34,9 +34,7 @@
 {{/* ── Hero ───────────────────────────────────────────────────────────────── */}}
 <section class="hero" id="js-hero">
   <div class="hero-bg" id="js-hero-bg" aria-hidden="true">
-    {{- with $heroImg -}}
-    <img src="{{ . }}" class="hero-bg__img" fetchpriority="high" loading="eager" alt="" width="1600" height="1067">
-    {{- end -}}
+    <img id="js-hero-img" class="hero-bg__img" src="" alt="" width="1600" height="1067" fetchpriority="high">
   </div>
   <div class="hero-inner">
     <p class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Fotografia cultural" }}</p>

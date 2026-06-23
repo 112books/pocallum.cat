@@ -40,19 +40,14 @@
     title.classList.remove('is-switching');
   }, 350);
 
-  // Image: pick random, crossfade into server-rendered img
+  // Image: pick random, set on img element (LCP candidate), fade in
   const heroImg = bg.querySelector('img');
   if (images.length > 0) {
     const src = images[Math.floor(Math.random() * images.length)];
-    if (heroImg && heroImg.src && heroImg.src.endsWith(src)) return; // already showing this one
     const loader = new Image();
     loader.onload = () => {
-      bg.classList.add('is-switching');
-      setTimeout(() => {
-        if (heroImg) { heroImg.src = src; }
-        else { bg.style.backgroundImage = `url('${src}')`; }
-        bg.classList.remove('is-switching');
-      }, 600);
+      if (heroImg) { heroImg.src = src; }
+      bg.classList.add('is-loaded');
     };
     loader.src = src;
   }

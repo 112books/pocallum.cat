@@ -68,6 +68,17 @@
   </div>
   {{ end }}
 
+  <div class="author-bio container">
+    <div class="author-bio__inner">
+      <img src="/images/joan-qui-som.jpg" alt="{{ i18n "author_bio_name" }}" class="author-bio__img" width="80" height="80" loading="lazy">
+      <div class="author-bio__text">
+        <p class="author-bio__label">{{ i18n "author_bio_label" }}</p>
+        <p class="author-bio__name">{{ i18n "author_bio_name" }} <span class="author-bio__role">— {{ i18n "author_bio_role" }}</span></p>
+        <p class="author-bio__desc">{{ i18n "author_bio_text" }}</p>
+      </div>
+    </div>
+  </div>
+
   {{ $allPages := .Parent.Pages.ByDate.Reverse }}
   {{ if gt (len $allPages) 1 }}
   <div class="article-nav-strip">

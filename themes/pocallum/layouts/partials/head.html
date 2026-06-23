@@ -186,10 +186,13 @@
 }
 </script>
 {{ else if and (eq .Type "festivals") (not .IsSection) }}
+{{- $disc := .Params.disciplina | default "" | lower -}}
+{{- $isMusic := or (strings.Contains $disc "jazz") (strings.Contains $disc "blues") (strings.Contains $disc "música") (strings.Contains $disc "music") (strings.Contains $disc "flamenc") (strings.Contains $disc "funk") (strings.Contains $disc "soul") (strings.Contains $disc "harmònica") (strings.Contains $disc "saxofon") (strings.Contains $disc "canya") -}}
+{{- $festType := cond $isMusic "MusicFestival" "Festival" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MusicFestival",
+  "@type": {{ $festType | jsonify }},
   "name": {{ .Title | jsonify }},
   "startDate": "{{ .Date.Format "2006-01-02" }}",
   "location": {
@@ -205,6 +208,35 @@
   "url": "{{ .Permalink }}"{{ with .Params.image }},
   "image": "{{ . | strings.TrimLeft "/" | absURL }}"{{ end }}{{ with .Params.web }},
   "sameAs": {{ . | jsonify }}{{ end }}
+}
+</script>
+{{ else if and .IsSection (or (eq .Type "serveis") (eq .Type "contacte")) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Photographer"],
+  "name": "Pocallum",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.contactPhone }}",
+  "email": "{{ .Site.Params.contactEmail }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
+    "addressLocality": "Barcelona",
+    "postalCode": "08020",
+    "addressRegion": "Catalunya",
+    "addressCountry": "ES"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" }
+  ],
+  "priceRange": "€€",
+  "sameAs": [
+    "{{ .Site.Params.instagram }}",
+    "{{ .Site.Params.facebook }}",
+    "{{ .Site.Params.blog }}"
+  ]
 }
 </script>
 {{ end }}
