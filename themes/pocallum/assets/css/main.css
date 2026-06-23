@@ -576,6 +576,7 @@ h1, h2, h3, h4 {
 .js-shuffle .foto-item img {
   animation: slot-spin 0.9s linear both;
 }
+.js-mosaic { opacity: 0; }
 
 /* ── Galeria mosaic ────────────────────────────────────────────────────────── */
 .foto-grid--galeria {

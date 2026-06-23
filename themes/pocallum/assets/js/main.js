@@ -189,6 +189,8 @@
       const img = el.querySelector('img');
       if (img) img.style.animationDelay = (Math.min(i, 25) * 70) + 'ms';
     });
+
+    if (isMosaic) grid.style.opacity = '1';
   });
 })();
 
