@@ -34,8 +34,9 @@ Bloc al peu de cada notícia: foto, nom, rol, bio ~55 paraules amb credencials v
 
 ### Pendent (proper sessió)
 - B7: Verificar coordenades geo a Google Maps (`41.40879, 2.19004` → Nau Bostik)
-- C1: Crear i verificar Google Business Profile (acció manual)
+- C1: Crear i verificar Google Business Profile (acció manual, màxim impacte local)
 - B5: Canal YouTube (off-site, alta correlació citació IA)
+- **Notorietat off-site**: doc complet a `docs/notorietat-directoris.md` — Habitissimo, Cronoshare, Behance, ANPF, Núvol, Barcelona Activa, European Jazz Network, strategy de notes de premsa via festivals
 
 ---
 
