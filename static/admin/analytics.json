@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T08:20:23.847201Z",
+  "generated": "2026-06-24T11:38:33.848749Z",
   "period": {
     "start": "2025-06-24",
     "end": "2026-06-24"
@@ -515,7 +515,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 297
+      "count": 298
     },
     {
       "name": "Desconegut",
@@ -532,7 +532,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 415
+      "count": 416
     },
     {
       "name": "iOS",
@@ -569,7 +569,7 @@
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 201
+      "count": 202
     },
     {
       "name": "phone",
@@ -586,7 +586,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 581
+      "count": 582
     },
     {
       "name": "United States",
