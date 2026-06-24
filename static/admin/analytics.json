@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T04:57:57.978502Z",
+  "generated": "2026-06-24T08:20:23.847201Z",
   "period": {
     "start": "2025-06-24",
     "end": "2026-06-24"
@@ -510,12 +510,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 350
+      "count": 351
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 296
+      "count": 297
     },
     {
       "name": "Desconegut",
@@ -537,12 +537,12 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 86
+      "count": 87
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 79
+      "count": 80
     },
     {
       "name": "Android",
@@ -564,7 +564,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 281
+      "count": 282
     },
     {
       "name": "desktophd",
@@ -574,7 +574,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 127
+      "count": 128
     },
     {
       "name": "tablet",
@@ -586,7 +586,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 580
+      "count": 581
     },
     {
       "name": "United States",
@@ -594,14 +594,14 @@
       "count": 45
     },
     {
-      "name": "Sweden",
-      "id": "SE",
+      "name": "Indonesia",
+      "id": "ID",
       "count": 6
     },
     {
-      "name": "Indonesia",
-      "id": "ID",
-      "count": 5
+      "name": "Sweden",
+      "id": "SE",
+      "count": 6
     },
     {
       "name": "Argentina",
