@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-24T23:59:15.124794Z",
+  "generated": "2026-06-25T07:34:16.129569Z",
   "period": {
-    "start": "2025-06-24",
-    "end": "2026-06-24"
+    "start": "2025-06-25",
+    "end": "2026-06-25"
   },
-  "total": 608,
+  "total": 620,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -93,7 +93,7 @@
     },
     {
       "date": "2026-05-30",
-      "count": 3
+      "count": 2
     },
     {
       "date": "2026-05-31",
@@ -193,45 +193,49 @@
     },
     {
       "date": "2026-06-24",
-      "count": 6
+      "count": 18
+    },
+    {
+      "date": "2026-06-25",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 163
+      "count": 168
     },
     {
       "path": "/galeria",
-      "count": 56
+      "count": 57
     },
     {
       "path": "/serveis",
-      "count": 42
+      "count": 43
     },
     {
       "path": "/festivals",
       "count": 32
     },
     {
+      "path": "/noticies",
+      "count": 25
+    },
+    {
       "path": "/contacte",
       "count": 24
     },
     {
-      "path": "/noticies",
+      "path": "/blog",
       "count": 24
     },
     {
-      "path": "/blog",
-      "count": 23
-    },
-    {
       "path": "/qui-som",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/obra",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/ca",
@@ -250,16 +254,16 @@
       "count": 8
     },
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 7
+    },
+    {
       "path": "/serveis/books-per-actors",
       "count": 7
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
-    },
-    {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 6
     },
     {
       "path": "/legal/privacitat",
@@ -404,15 +408,15 @@
     "en": 46
   },
   "by_section": {
-    "inici": 176,
-    "galeria": 61,
-    "serveis": 73,
+    "inici": 181,
+    "galeria": 62,
+    "serveis": 74,
     "festivals": 79,
+    "noticies": 43,
     "contacte": 33,
-    "noticies": 41,
-    "blog": 27,
-    "qui-som": 17,
-    "obra": 12,
+    "blog": 28,
+    "qui-som": 18,
+    "obra": 13,
     "serveis-fotografics-2": 10,
     "cerca": 10,
     "legal": 5,
@@ -433,6 +437,7 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "gypsy-wedding-bon-pastor-barcelona": 1,
     "testing-adox-hr-50-film": 1,
     "photos-of-musical-groups": 1,
     "example-of-a-session-with-traditional-photography": 1,
@@ -448,13 +453,12 @@
     "sessio-amb-eli": 1,
     "hhh": 1,
     "worldpinholeday-diana-f": 1,
-    "taller-de-tecniques-antigues-al-laboratori": 1,
-    "equip": 1
+    "taller-de-tecniques-antigues-al-laboratori": 1
   },
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 6
+      "count": 7
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -510,7 +514,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 353
+      "count": 355
     },
     {
       "name": "Safari",
@@ -542,7 +546,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 81
+      "count": 82
     },
     {
       "name": "Android",
@@ -552,7 +556,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 44
+      "count": 45
     },
     {
       "name": "Chrome OS",
@@ -564,7 +568,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 283
+      "count": 285
     },
     {
       "name": "desktophd",
@@ -586,7 +590,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 591
+      "count": 592
     },
     {
       "name": "United States",
@@ -629,6 +633,11 @@
       "count": 3
     },
     {
+      "name": "Russia",
+      "id": "RU",
+      "count": 3
+    },
+    {
       "name": "Singapore",
       "id": "SG",
       "count": 3
@@ -652,18 +661,13 @@
       "name": "Poland",
       "id": "PL",
       "count": 2
-    },
-    {
-      "name": "Russia",
-      "id": "RU",
-      "count": 2
     }
   ],
   "refs": [
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 150
+      "count": 154
     },
     {
       "name": "Google",
