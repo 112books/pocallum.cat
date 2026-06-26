@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-25T23:08:05.251782Z",
+  "generated": "2026-06-26T02:29:16.169917Z",
   "period": {
-    "start": "2025-06-25",
-    "end": "2026-06-25"
+    "start": "2025-06-26",
+    "end": "2026-06-26"
   },
-  "total": 620,
+  "total": 626,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -97,11 +97,11 @@
     },
     {
       "date": "2026-05-31",
-      "count": 16
+      "count": 15
     },
     {
       "date": "2026-06-01",
-      "count": 15
+      "count": 14
     },
     {
       "date": "2026-06-02",
@@ -197,17 +197,17 @@
     },
     {
       "date": "2026-06-25",
-      "count": 1
+      "count": 9
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 168
+      "count": 172
     },
     {
       "path": "/galeria",
-      "count": 57
+      "count": 58
     },
     {
       "path": "/serveis",
@@ -318,6 +318,10 @@
       "count": 4
     },
     {
+      "path": "/en/lomography-great-photos-simple-camera",
+      "count": 3
+    },
+    {
       "path": "/serveis/concerts",
       "count": 3
     },
@@ -355,10 +359,6 @@
     },
     {
       "path": "/en/testing-vintage-cameras",
-      "count": 2
-    },
-    {
-      "path": "/en/lomography-great-photos-simple-camera",
       "count": 2
     },
     {
@@ -405,18 +405,18 @@
   "by_lang": {
     "ca": 25,
     "es": 23,
-    "en": 46
+    "en": 47
   },
   "by_section": {
-    "inici": 181,
-    "galeria": 62,
+    "inici": 185,
+    "galeria": 63,
     "serveis": 74,
     "festivals": 79,
     "noticies": 43,
     "contacte": 33,
     "blog": 28,
     "qui-som": 18,
-    "obra": 13,
+    "obra": 14,
     "serveis-fotografics-2": 10,
     "cerca": 10,
     "legal": 5,
@@ -424,12 +424,12 @@
     "content": 4,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
+    "lomography-great-photos-simple-camera": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
     "testing-vintage-cameras": 2,
-    "lomography-great-photos-simple-camera": 2,
     "bran-new-calendar-of-9-barris-acull": 2,
     "moviendo-las-imagenes-fijas": 2,
     "photography-services": 2,
@@ -452,8 +452,7 @@
     "retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio": 1,
     "sessio-amb-eli": 1,
     "hhh": 1,
-    "worldpinholeday-diana-f": 1,
-    "taller-de-tecniques-antigues-al-laboratori": 1
+    "worldpinholeday-diana-f": 1
   },
   "noticies_top": [
     {
@@ -504,7 +503,7 @@
     }
   ],
   "wizard_funnel": {
-    "wizard-s1": 9,
+    "wizard-s1": 12,
     "wizard-s2": 15,
     "wizard-s3": 5,
     "wizard-s4": 4,
@@ -667,12 +666,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 154
+      "count": 159
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 59
+      "count": 60
     },
     {
       "name": "blog.pocallum.cat",
@@ -695,23 +694,23 @@
       "count": 3
     },
     {
+      "name": "Yandex",
+      "id": "Yandex",
+      "count": 3
+    },
+    {
+      "name": "about.pocallum.cat",
+      "id": "about.pocallum.cat",
+      "count": 3
+    },
+    {
       "name": "www.bing.com",
       "id": "www.bing.com",
       "count": 2
     },
     {
-      "name": "Yandex",
-      "id": "Yandex",
-      "count": 2
-    },
-    {
-      "name": "about.pocallum.cat",
-      "id": "about.pocallum.cat",
-      "count": 2
-    },
-    {
-      "name": "112books.github.io",
-      "id": "112books.github.io",
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
       "count": 2
     }
   ]
