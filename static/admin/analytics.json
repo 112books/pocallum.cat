@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-27T23:54:49.131463Z",
+  "generated": "2026-06-28T02:35:04.693884Z",
   "period": {
-    "start": "2025-06-27",
-    "end": "2026-06-27"
+    "start": "2025-06-28",
+    "end": "2026-06-28"
   },
-  "total": 631,
+  "total": 636,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -101,11 +101,11 @@
     },
     {
       "date": "2026-06-01",
-      "count": 14
+      "count": 13
     },
     {
       "date": "2026-06-02",
-      "count": 24
+      "count": 23
     },
     {
       "date": "2026-06-03",
@@ -205,17 +205,17 @@
     },
     {
       "date": "2026-06-27",
-      "count": 1
+      "count": 8
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 175
+      "count": 178
     },
     {
       "path": "/galeria",
-      "count": 58
+      "count": 59
     },
     {
       "path": "/serveis",
@@ -230,12 +230,12 @@
       "count": 25
     },
     {
-      "path": "/noticies",
+      "path": "/blog",
       "count": 25
     },
     {
-      "path": "/blog",
-      "count": 24
+      "path": "/noticies",
+      "count": 25
     },
     {
       "path": "/qui-som",
@@ -416,13 +416,13 @@
     "en": 47
   },
   "by_section": {
-    "inici": 188,
-    "galeria": 63,
+    "inici": 191,
+    "galeria": 64,
     "serveis": 74,
-    "festivals": 79,
+    "festivals": 78,
     "contacte": 34,
+    "blog": 29,
     "noticies": 43,
-    "blog": 28,
     "qui-som": 19,
     "obra": 14,
     "serveis-fotografics-2": 10,
@@ -445,6 +445,8 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "wp-content": 1,
+    "photographic-services": 1,
     "gypsy-wedding-bon-pastor-barcelona": 1,
     "testing-adox-hr-50-film": 1,
     "photos-of-musical-groups": 1,
@@ -459,8 +461,7 @@
     "de-la-casualitat-a-la-creativitat-una-sessio-fotografica-amb-vestit-oriental": 1,
     "retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio": 1,
     "sessio-amb-eli": 1,
-    "hhh": 1,
-    "worldpinholeday-diana-f": 1
+    "hhh": 1
   },
   "noticies_top": [
     {
@@ -674,7 +675,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 160
+      "count": 161
     },
     {
       "name": "Google",
@@ -712,13 +713,13 @@
       "count": 3
     },
     {
-      "name": "www.bing.com",
-      "id": "www.bing.com",
+      "name": "ig",
+      "id": "ig",
       "count": 2
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
+      "name": "www.bing.com",
+      "id": "www.bing.com",
       "count": 2
     }
   ]
