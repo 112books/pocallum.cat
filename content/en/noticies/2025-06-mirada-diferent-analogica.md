@@ -5,6 +5,7 @@ lead: "Sprocket Rocket and Adox HR-50 film at the Menorca salt flats: images tha
 image: "/images/noticies/mirada-diferent-analogica.jpg"
 equip: ["Lomography Sprocket Rocket", "Adox HR-50"]
 tags: ["Sprocket Rocket", "Adox HR-50", "Menorca", "analogue", "panoramic", "salt flats"]
+aliases: ["/lomography-great-photos-simple-camera"]
 draft: false
 ---
 
