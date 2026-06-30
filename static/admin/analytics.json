@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30T06:47:15.580421Z",
+  "generated": "2026-06-30T13:04:23.845336Z",
   "period": {
     "start": "2025-06-30",
     "end": "2026-06-30"
@@ -527,7 +527,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 404
+      "count": 414
     },
     {
       "name": "Safari",
@@ -552,19 +552,19 @@
       "count": 451
     },
     {
+      "name": "Windows",
+      "id": "Windows",
+      "count": 93
+    },
+    {
       "name": "iOS",
       "id": "iOS",
       "count": 89
     },
     {
-      "name": "Windows",
-      "id": "Windows",
-      "count": 86
-    },
-    {
       "name": "Android",
       "id": "Android",
-      "count": 77
+      "count": 80
     },
     {
       "name": "Linux",
@@ -581,7 +581,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 311
+      "count": 318
     },
     {
       "name": "desktophd",
@@ -591,7 +591,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 154
+      "count": 157
     },
     {
       "name": "tablet",
@@ -603,7 +603,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 640
+      "count": 644
     },
     {
       "name": "United States",
@@ -613,7 +613,7 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Germany",
@@ -626,8 +626,18 @@
       "count": 6
     },
     {
+      "name": "Ecuador",
+      "id": "EC",
+      "count": 4
+    },
+    {
       "name": "Malaysia",
       "id": "MY",
+      "count": 4
+    },
+    {
+      "name": "Singapore",
+      "id": "SG",
       "count": 4
     },
     {
@@ -651,8 +661,8 @@
       "count": 3
     },
     {
-      "name": "Singapore",
-      "id": "SG",
+      "name": "Vietnam",
+      "id": "VN",
       "count": 3
     },
     {
@@ -661,18 +671,8 @@
       "count": 2
     },
     {
-      "name": "Ecuador",
-      "id": "EC",
-      "count": 2
-    },
-    {
       "name": "France",
       "id": "FR",
-      "count": 2
-    },
-    {
-      "name": "United Kingdom",
-      "id": "GB",
       "count": 2
     }
   ],
