@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-29T23:54:08.827324Z",
+  "generated": "2026-06-30T02:29:41.626899Z",
   "period": {
-    "start": "2025-06-29",
-    "end": "2026-06-29"
+    "start": "2025-06-30",
+    "end": "2026-06-30"
   },
-  "total": 653,
+  "total": 670,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -93,7 +93,7 @@
     },
     {
       "date": "2026-05-30",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-05-31",
@@ -109,7 +109,7 @@
     },
     {
       "date": "2026-06-03",
-      "count": 50
+      "count": 46
     },
     {
       "date": "2026-06-04",
@@ -213,17 +213,17 @@
     },
     {
       "date": "2026-06-29",
-      "count": 3
+      "count": 23
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 184
+      "count": 190
     },
     {
       "path": "/galeria",
-      "count": 62
+      "count": 64
     },
     {
       "path": "/serveis",
@@ -231,15 +231,15 @@
     },
     {
       "path": "/festivals",
-      "count": 33
+      "count": 35
     },
     {
       "path": "/blog",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/noticies",
-      "count": 27
+      "count": 29
     },
     {
       "path": "/contacte",
@@ -262,16 +262,16 @@
       "count": 9
     },
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 8
+    },
+    {
       "path": "/festivals/calella-harmonica-festival",
       "count": 8
     },
     {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
       "count": 8
-    },
-    {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 7
     },
     {
       "path": "/serveis/books-per-actors",
@@ -326,6 +326,10 @@
       "count": 4
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 4
+    },
+    {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
     },
@@ -343,10 +347,6 @@
     },
     {
       "path": "/festivals/vijazz",
-      "count": 3
-    },
-    {
-      "path": "/festivals/festival-blues-barcelona",
       "count": 3
     },
     {
@@ -368,6 +368,10 @@
     {
       "path": "/ca/galeria",
       "count": 3
+    },
+    {
+      "path": "/en/gypsy-wedding-bon-pastor-barcelona",
+      "count": 2
     },
     {
       "path": "/en/testing-adox-hr-50-film",
@@ -412,38 +416,35 @@
     {
       "path": "/serveis/fotollibre",
       "count": 2
-    },
-    {
-      "path": "/en/serveis",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 25,
-    "es": 23,
-    "en": 49
+    "es": 24,
+    "en": 51
   },
   "by_section": {
-    "inici": 197,
-    "galeria": 67,
+    "inici": 203,
+    "galeria": 69,
     "serveis": 74,
-    "festivals": 79,
-    "blog": 32,
-    "noticies": 45,
+    "festivals": 85,
+    "blog": 33,
+    "noticies": 47,
     "contacte": 34,
-    "qui-som": 19,
-    "obra": 14,
+    "qui-som": 18,
+    "obra": 13,
     "cerca": 11,
     "serveis-fotografics-2": 10,
     "legal": 5,
     "servicios-fotograficos": 5,
-    "content": 4,
+    "content": 5,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "lomography-great-photos-simple-camera": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "gypsy-wedding-bon-pastor-barcelona": 2,
     "testing-adox-hr-50-film": 2,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
     "testing-vintage-cameras": 2,
@@ -454,10 +455,10 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "bienvenidos-pocallum": 1,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 1,
     "wp-content": 1,
     "photographic-services": 1,
-    "gypsy-wedding-bon-pastor-barcelona": 1,
     "photos-of-musical-groups": 1,
     "example-of-a-session-with-traditional-photography": 1,
     "cambo-sc-first-test": 1,
@@ -466,7 +467,7 @@
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona%60": 1,
     "flamenco-i-baixa-velocitat-3": 1,
     "forced-tests-sample-photographs": 1,
-    "tag": 2,
+    "tag": 1,
     "de-la-casualitat-a-la-creativitat-una-sessio-fotografica-amb-vestit-oriental": 1,
     "retrats-per-comencar-lany-amb-bona-cara-i-millor-portfolio": 1,
     "sessio-amb-eli": 1
@@ -474,7 +475,7 @@
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 7
+      "count": 8
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -503,15 +504,15 @@
       "count": 4
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 4
+    },
+    {
       "path": "/festivals/flamenco-de-barrio",
       "count": 4
     },
     {
       "path": "/festivals/vijazz",
-      "count": 3
-    },
-    {
-      "path": "/festivals/festival-blues-barcelona",
       "count": 3
     }
   ],
@@ -679,12 +680,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 165
+      "count": 171
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 62
+      "count": 64
     },
     {
       "name": "blog.pocallum.cat",
