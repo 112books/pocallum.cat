@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-01T23:03:12.882491Z",
+  "generated": "2026-07-02T02:25:22.993958Z",
   "period": {
-    "start": "2025-07-01",
-    "end": "2026-07-01"
+    "start": "2025-07-02",
+    "end": "2026-07-02"
   },
-  "total": 677,
+  "total": 698,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 43
+      "count": 45
     },
     {
       "date": "2026-05-11",
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-05-15",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-05-16",
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-05-25",
-      "count": 10
+      "count": 13
     },
     {
       "date": "2026-05-26",
@@ -105,7 +105,7 @@
     },
     {
       "date": "2026-06-02",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-06-03",
@@ -133,7 +133,7 @@
     },
     {
       "date": "2026-06-09",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-06-10",
@@ -153,15 +153,15 @@
     },
     {
       "date": "2026-06-14",
-      "count": 11
+      "count": 8
     },
     {
       "date": "2026-06-15",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-06-16",
-      "count": 9
+      "count": 7
     },
     {
       "date": "2026-06-17",
@@ -173,15 +173,15 @@
     },
     {
       "date": "2026-06-19",
-      "count": 6
-    },
-    {
-      "date": "2026-06-20",
       "count": 5
     },
     {
+      "date": "2026-06-20",
+      "count": 4
+    },
+    {
       "date": "2026-06-21",
-      "count": 6
+      "count": 4
     },
     {
       "date": "2026-06-22",
@@ -197,7 +197,7 @@
     },
     {
       "date": "2026-06-25",
-      "count": 9
+      "count": 7
     },
     {
       "date": "2026-06-26",
@@ -205,29 +205,37 @@
     },
     {
       "date": "2026-06-27",
-      "count": 8
+      "count": 6
     },
     {
       "date": "2026-06-28",
-      "count": 15
+      "count": 14
     },
     {
       "date": "2026-06-29",
-      "count": 23
+      "count": 20
     },
     {
       "date": "2026-06-30",
-      "count": 13
+      "count": 11
+    },
+    {
+      "date": "2026-07-01",
+      "count": 6
+    },
+    {
+      "date": "2026-07-02",
+      "count": 29
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 193
+      "count": 197
     },
     {
       "path": "/galeria",
-      "count": 64
+      "count": 66
     },
     {
       "path": "/serveis",
@@ -235,11 +243,11 @@
     },
     {
       "path": "/festivals",
-      "count": 36
+      "count": 37
     },
     {
       "path": "/blog",
-      "count": 30
+      "count": 31
     },
     {
       "path": "/noticies",
@@ -294,11 +302,19 @@
       "count": 5
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 5
+    },
+    {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 5
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
+      "count": 5
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
       "count": 5
     },
     {
@@ -322,6 +338,10 @@
       "count": 4
     },
     {
+      "path": "/festivals/vijazz",
+      "count": 4
+    },
+    {
       "path": "/en/content/photography-studio",
       "count": 4
     },
@@ -330,15 +350,7 @@
       "count": 4
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
-      "count": 4
-    },
-    {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
-      "count": 4
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
       "count": 4
     },
     {
@@ -350,7 +362,11 @@
       "count": 3
     },
     {
-      "path": "/festivals/vijazz",
+      "path": "/festivals/jornades-9-barris-acull",
+      "count": 3
+    },
+    {
+      "path": "/festivals/picnic-de-blues",
       "count": 3
     },
     {
@@ -394,6 +410,10 @@
       "count": 2
     },
     {
+      "path": "/festivals/sax-o-rama",
+      "count": 2
+    },
+    {
       "path": "/serveis/sessio-banda",
       "count": 2
     },
@@ -408,35 +428,23 @@
     {
       "path": "/serveis/portada-identitat",
       "count": 2
-    },
-    {
-      "path": "/serveis/teatre-dansa",
-      "count": 2
-    },
-    {
-      "path": "/serveis/festivals-i-sales",
-      "count": 2
-    },
-    {
-      "path": "/serveis/fotollibre",
-      "count": 2
     }
   ],
   "by_lang": {
     "ca": 26,
-    "es": 24,
-    "en": 51
+    "es": 22,
+    "en": 44
   },
   "by_section": {
-    "inici": 206,
-    "galeria": 68,
+    "inici": 210,
+    "galeria": 69,
     "serveis": 75,
-    "festivals": 85,
-    "blog": 34,
-    "noticies": 48,
+    "festivals": 109,
+    "blog": 35,
+    "noticies": 50,
     "contacte": 34,
     "qui-som": 18,
-    "obra": 13,
+    "obra": 11,
     "cerca": 11,
     "serveis-fotografics-2": 10,
     "legal": 5,
@@ -459,23 +467,13 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
+    "node": 2,
+    "22nd-blues-festival-captured-with-traditional-photography": 1,
+    "session-with-rita-herbas-mocatriz": 1,
+    "tags": 1,
     "restaurant-diapositives-dels-anys-50": 1,
     "21e-festival-de-blues-de-barcelona": 1,
-    "node": 1,
-    "no-fem-fotos-de-concerts-construim-relat-visual-per-a-musics": 1,
-    "tag": 1,
-    "bienvenidos-pocallum": 1,
-    "vijazz-2025-the-jazz-that-brought-me-back-home": 1,
-    "wp-content": 1,
-    "photographic-services": 1,
-    "photos-of-musical-groups": 1,
-    "example-of-a-session-with-traditional-photography": 1,
-    "cambo-sc-first-test": 1,
-    "provant-la-pelicula-kono-monolit-iso64": 1,
-    "a-different-perspective-analog-photography-with-personality-and-mystery": 1,
-    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona%60": 1,
-    "flamenco-i-baixa-velocitat-3": 1,
-    "forced-tests-sample-photographs": 1
+    "no-fem-fotos-de-concerts-construim-relat-visual-per-a-musics": 1
   },
   "noticies_top": [
     {
@@ -501,7 +499,15 @@
       "count": 7
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 5
+    },
+    {
       "path": "/festivals/carnestoltes-nou-barris",
+      "count": 5
+    },
+    {
+      "path": "/festivals/flamenco-de-barrio",
       "count": 5
     },
     {
@@ -509,16 +515,20 @@
       "count": 4
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
-      "count": 4
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
-      "count": 4
-    },
-    {
       "path": "/festivals/vijazz",
+      "count": 4
+    },
+    {
+      "path": "/festivals/jornades-9-barris-acull",
       "count": 3
+    },
+    {
+      "path": "/festivals/picnic-de-blues",
+      "count": 3
+    },
+    {
+      "path": "/festivals/sax-o-rama",
+      "count": 2
     }
   ],
   "wizard_funnel": {
@@ -532,7 +542,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 421
+      "count": 426
     },
     {
       "name": "Safari",
@@ -559,7 +569,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 96
+      "count": 98
     },
     {
       "name": "iOS",
@@ -569,7 +579,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 82
+      "count": 85
     },
     {
       "name": "Linux",
@@ -586,7 +596,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 324
+      "count": 326
     },
     {
       "name": "desktophd",
@@ -596,7 +606,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 159
+      "count": 162
     },
     {
       "name": "tablet",
@@ -629,6 +639,11 @@
       "name": "Sweden",
       "id": "SE",
       "count": 6
+    },
+    {
+      "name": "Colombia",
+      "id": "CO",
+      "count": 5
     },
     {
       "name": "Ecuador",
@@ -666,31 +681,26 @@
       "count": 3
     },
     {
-      "name": "Vietnam",
-      "id": "VN",
+      "name": "Taiwan",
+      "id": "TW",
       "count": 3
     },
     {
-      "name": "United Arab Emirates",
-      "id": "AE",
-      "count": 2
-    },
-    {
-      "name": "Brazil",
-      "id": "BR",
-      "count": 2
+      "name": "Vietnam",
+      "id": "VN",
+      "count": 3
     }
   ],
   "refs": [
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 179
+      "count": 186
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 65
+      "count": 66
     },
     {
       "name": "blog.pocallum.cat",
