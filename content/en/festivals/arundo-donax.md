@@ -11,7 +11,7 @@ tags: ["music", "wind-instruments", "lutherie", "aragon"]
 draft: false
 ---
 
-In La Pobla de Híjar, a small village in Lower Aragon, a biennial festival celebrates the musical reed — the *Arundo donax* plant used to make the reeds and mouthpieces for wind instruments across the world. From bagpipes and gaitas to saxophones, clarinets and oboes.
+In La Pobla de Híjar, a small village in Lower Aragon, a biennial festival celebrates the musical reed — the *Arundo donax* plant used to make the reeds for wind instruments across the world. From bagpipes to saxophones, clarinets and oboes.
 
 ---
 
