@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-02T23:09:29.610032Z",
+  "generated": "2026-07-03T02:00:22.088313Z",
   "period": {
-    "start": "2025-07-02",
-    "end": "2026-07-02"
+    "start": "2025-07-03",
+    "end": "2026-07-03"
   },
-  "total": 698,
+  "total": 709,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -209,7 +209,7 @@
     },
     {
       "date": "2026-06-28",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-06-29",
@@ -217,25 +217,29 @@
     },
     {
       "date": "2026-06-30",
-      "count": 11
+      "count": 8
     },
     {
       "date": "2026-07-01",
-      "count": 6
+      "count": 2
     },
     {
       "date": "2026-07-02",
-      "count": 29
+      "count": 43
+    },
+    {
+      "date": "2026-07-03",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 197
+      "count": 200
     },
     {
       "path": "/galeria",
-      "count": 66
+      "count": 67
     },
     {
       "path": "/serveis",
@@ -255,7 +259,7 @@
     },
     {
       "path": "/contacte",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/qui-som",
@@ -267,6 +271,10 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 10
+    },
+    {
+      "path": "/festivals/calella-harmonica-festival",
       "count": 9
     },
     {
@@ -279,10 +287,6 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 8
-    },
-    {
-      "path": "/festivals/calella-harmonica-festival",
       "count": 8
     },
     {
@@ -299,6 +303,10 @@
     },
     {
       "path": "/serveis/books-artistics",
+      "count": 5
+    },
+    {
+      "path": "/festivals/im-jazz",
       "count": 5
     },
     {
@@ -330,10 +338,6 @@
       "count": 4
     },
     {
-      "path": "/festivals/im-jazz",
-      "count": 4
-    },
-    {
       "path": "/en",
       "count": 4
     },
@@ -352,6 +356,10 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
+    },
+    {
+      "path": "/en/testing-vintage-cameras",
+      "count": 3
     },
     {
       "path": "/en/lomography-great-photos-simple-camera",
@@ -390,6 +398,14 @@
       "count": 3
     },
     {
+      "path": "/ca/node/16/track?order=Hora&page=2&sort=asc",
+      "count": 2
+    },
+    {
+      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "count": 2
+    },
+    {
       "path": "/en/gypsy-wedding-bon-pastor-barcelona",
       "count": 2
     },
@@ -399,10 +415,6 @@
     },
     {
       "path": "/en/from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress",
-      "count": 2
-    },
-    {
-      "path": "/en/testing-vintage-cameras",
       "count": 2
     },
     {
@@ -420,46 +432,40 @@
     {
       "path": "/serveis/portada-disc",
       "count": 2
-    },
-    {
-      "path": "/serveis/edicions-limitades",
-      "count": 2
-    },
-    {
-      "path": "/serveis/portada-identitat",
-      "count": 2
     }
   ],
   "by_lang": {
-    "ca": 26,
-    "es": 22,
-    "en": 44
+    "ca": 27,
+    "es": 27,
+    "en": 48
   },
   "by_section": {
-    "inici": 210,
-    "galeria": 69,
+    "inici": 213,
+    "galeria": 70,
     "serveis": 75,
-    "festivals": 109,
+    "festivals": 104,
     "blog": 35,
-    "noticies": 50,
-    "contacte": 34,
+    "noticies": 51,
+    "contacte": 35,
     "qui-som": 18,
     "obra": 11,
     "cerca": 11,
-    "serveis-fotografics-2": 10,
+    "serveis-fotografics-2": 11,
     "legal": 5,
-    "servicios-fotograficos": 5,
+    "servicios-fotograficos": 6,
     "content": 6,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
+    "testing-vintage-cameras": 3,
     "lomography-great-photos-simple-camera": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "node": 3,
+    "vijazz-2025-the-jazz-that-brought-me-back-home": 2,
     "gypsy-wedding-bon-pastor-barcelona": 2,
     "testing-adox-hr-50-film": 2,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
-    "testing-vintage-cameras": 2,
     "bran-new-calendar-of-9-barris-acull": 2,
     "moviendo-las-imagenes-fijas": 2,
     "photography-services": 2,
@@ -467,18 +473,17 @@
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
     "probando-la-pelicula-adox-hr-50": 2,
-    "node": 2,
-    "22nd-blues-festival-captured-with-traditional-photography": 1,
-    "session-with-rita-herbas-mocatriz": 1,
-    "tags": 1,
-    "restaurant-diapositives-dels-anys-50": 1,
-    "21e-festival-de-blues-de-barcelona": 1,
-    "no-fem-fotos-de-concerts-construim-relat-visual-per-a-musics": 1
+    "de-la-casualidad-a-la-creatividad-una-sesion-fotografica-con-vestido-oriental": 1,
+    "tag": 3,
+    "testing-washi-film": 1,
+    "photographic-services": 1,
+    "no-hacemos-fotos-de-conciertos-construimos-relato-visual-para-musicos": 1,
+    "tags": 3
   },
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 9
+      "count": 10
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -492,11 +497,15 @@
   "festivals_top": [
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 8
+      "count": 9
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
+    },
+    {
+      "path": "/festivals/im-jazz",
+      "count": 5
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -509,10 +518,6 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 5
-    },
-    {
-      "path": "/festivals/im-jazz",
-      "count": 4
     },
     {
       "path": "/festivals/vijazz",
@@ -542,7 +547,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 444
+      "count": 446
     },
     {
       "name": "Safari",
@@ -569,7 +574,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 112
+      "count": 114
     },
     {
       "name": "iOS",
@@ -596,7 +601,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 343
+      "count": 345
     },
     {
       "name": "desktophd",
@@ -646,6 +651,11 @@
       "count": 6
     },
     {
+      "name": "Venezuela",
+      "id": "VE",
+      "count": 6
+    },
+    {
       "name": "Ecuador",
       "id": "EC",
       "count": 5
@@ -656,18 +666,13 @@
       "count": 5
     },
     {
-      "name": "Venezuela",
-      "id": "VE",
+      "name": "Vietnam",
+      "id": "VN",
       "count": 5
     },
     {
       "name": "Malaysia",
       "id": "MY",
-      "count": 4
-    },
-    {
-      "name": "Vietnam",
-      "id": "VN",
       "count": 4
     },
     {
@@ -695,7 +700,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 186
+      "count": 207
     },
     {
       "name": "Google",
@@ -705,12 +710,12 @@
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
-      "count": 6
+      "count": 7
     },
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
-      "count": 5
+      "count": 6
     },
     {
       "name": "www.facebook.com",
