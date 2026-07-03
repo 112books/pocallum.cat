@@ -4,6 +4,27 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-07-03 — Guia d'espais i festivals fotogràfics: ampliació de contingut
+
+### La Virreina Centre de la Imatge
+Afegida a la secció "Espais expositius destacats" de `/noticies/guia-exposicions-espais-fotografics-barcelona/`, just després del MACBA. Espai municipal dedicat a la cultura visual i la imatge contemporània.
+
+### 4 nous festivals a la secció de Festivals
+Resultat d'una sessió de recerca activa sobre festivals a Catalunya, Balears, País Valencià i sud de França:
+
+- **Les Rencontres d'Arles** (Arles, juliol–setembre) — el festival de fotografia més influent d'Europa. Omissió clara que ja queda coberta.
+- **ValenciaPhoto** (València, juny–juliol) — 5a edició, festival de fotografia i debat amb temàtica mediterrània. Presència també a Arles.
+- **PHOF – Mallorca PhotoFest** (Mallorca, abril–agost 2026) — biennal promoguda per Art Palma Contemporani, hereu del Palma Photo (2001–2015). Primera edició.
+- **Raw Photo Fest Menorca** (Alaior, maig 2026) — trobada internacional de fotografia documental i de carrer organitzada per The Raw Society. Primera edició.
+
+### Descartats (amb criteri)
+- Experimental Photo Festival BCN — descartat per l'autor.
+- FUJIKINA — descartat per ser un event comercial de marca.
+- Certamen Villa de Andorra (Teruel) — és un concurs, no un festival; i és a Andorra de Teruel (Aragó), no el Principat.
+- L'Alguer i Principat d'Andorra — cap festival fotogràfic trobat.
+
+---
+
 ## 2026-06-24 — SEO fase 2: rendiment, schema i contingut
 
 ### M1 — `/serveis/festivals-i-sales/` CA+EN
