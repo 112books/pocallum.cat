@@ -119,6 +119,18 @@ Barcelona, ciutat de contrasts, ofereix un panorama cultural ric i divers, espec
 - [Visa pour l'Image (Perpinyà)](https://www.visapourlimage.com)  
   Festival internacional de fotoperiodisme de referència a Europa.
 
+- [Les Rencontres d'Arles](https://www.rencontres-arles.com)  
+  El festival de fotografia més influent d'Europa. Cada estiu transforma la ciutat d'Arles en un circuit expositiu gegant. A menys de tres hores de Barcelona.
+
+- [ValenciaPhoto](https://valenciaphoto.es)  
+  Festival internacional de fotografia i debat, ara en la seva cinquena edició. Explora la fotografia com a eina de diàleg cultural. Temàtica mediterrània, amb presència també a Les Rencontres d'Arles.
+
+- [PHOF – Mallorca PhotoFest](https://artpalmacontemporani.com)  
+  Festival biennal de fotografia i imatge de Mallorca, promogut per Art Palma Contemporani. Hereu del Palma Photo (2001–2015), amb exposicions, tallers i activitats per tota l'illa. Primera edició: abril–agost 2026.
+
+- [Raw Photo Fest Menorca](https://therawsociety.org/rawphotofest/)  
+  Trobada internacional de fotografia documental, de carrer i de viatges a Alaior. Primera edició el maig de 2026, organitzada per The Raw Society.
+
 ---
 
 *Aquesta guia pretén ser un recurs dinàmic. Si trobes a faltar algun espai, [escriu-nos](mailto:hola@pocallum.cat) i l'afegirem.*
