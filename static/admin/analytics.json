@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-03T12:00:23.529976Z",
+  "generated": "2026-07-03T16:18:54.092563Z",
   "period": {
     "start": "2025-07-03",
     "end": "2026-07-03"
@@ -547,12 +547,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 454
+      "count": 462
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 349
+      "count": 350
     },
     {
       "name": "Desconegut",
@@ -569,12 +569,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 494
+      "count": 495
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 120
+      "count": 128
     },
     {
       "name": "iOS",
@@ -601,7 +601,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 353
+      "count": 362
     },
     {
       "name": "desktophd",
@@ -623,7 +623,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 689
+      "count": 690
     },
     {
       "name": "United States",
@@ -633,7 +633,17 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 10
+      "count": 11
+    },
+    {
+      "name": "Ecuador",
+      "id": "EC",
+      "count": 8
+    },
+    {
+      "name": "Vietnam",
+      "id": "VN",
+      "count": 8
     },
     {
       "name": "Colombia",
@@ -646,13 +656,13 @@
       "count": 6
     },
     {
-      "name": "Ecuador",
-      "id": "EC",
+      "name": "Sweden",
+      "id": "SE",
       "count": 6
     },
     {
-      "name": "Sweden",
-      "id": "SE",
+      "name": "Singapore",
+      "id": "SG",
       "count": 6
     },
     {
@@ -661,24 +671,14 @@
       "count": 6
     },
     {
-      "name": "Vietnam",
-      "id": "VN",
-      "count": 6
+      "name": "Argentina",
+      "id": "AR",
+      "count": 5
     },
     {
       "name": "Malaysia",
       "id": "MY",
       "count": 5
-    },
-    {
-      "name": "Singapore",
-      "id": "SG",
-      "count": 5
-    },
-    {
-      "name": "Argentina",
-      "id": "AR",
-      "count": 4
     },
     {
       "name": "Brazil",
