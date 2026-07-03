@@ -30,6 +30,9 @@ Barcelona, ciutat de contrasts, ofereix un panorama cultural ric i divers, espec
 - [MACBA – Museu d'Art Contemporani de Barcelona](https://www.macba.cat/ca/exposicions/)  
   Fotografia dins l'art contemporani i pràctiques conceptuals.
 
+- [La Virreina Centre de la Imatge](https://ajuntament.barcelona.cat/lavirreina/ca)  
+  Espai municipal dedicat a la cultura visual i la imatge contemporània, amb una programació curatorial exigent i exposicions de fotografia de primer nivell.
+
 - [CaixaForum Barcelona](https://caixaforum.org/ca/barcelona/exposiciones)  
   Grans exposicions fotogràfiques de caràcter divulgatiu.
 
