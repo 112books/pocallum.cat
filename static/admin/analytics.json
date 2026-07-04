@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-04T04:27:51.380755Z",
+  "generated": "2026-07-04T07:37:12.911160Z",
   "period": {
     "start": "2025-07-04",
     "end": "2026-07-04"
@@ -553,12 +553,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 473
+      "count": 478
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 355
+      "count": 356
     },
     {
       "name": "Desconegut",
@@ -575,12 +575,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 495
+      "count": 496
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 139
+      "count": 143
     },
     {
       "name": "iOS",
@@ -595,7 +595,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 49
+      "count": 50
     },
     {
       "name": "Chrome OS",
@@ -607,7 +607,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 373
+      "count": 379
     },
     {
       "name": "desktophd",
@@ -634,17 +634,22 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 47
+      "count": 48
     },
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Colombia",
       "id": "CO",
       "count": 10
+    },
+    {
+      "name": "Venezuela",
+      "id": "VE",
+      "count": 9
     },
     {
       "name": "Vietnam",
@@ -657,13 +662,13 @@
       "count": 8
     },
     {
-      "name": "Venezuela",
-      "id": "VE",
-      "count": 8
-    },
-    {
       "name": "Germany",
       "id": "DE",
+      "count": 6
+    },
+    {
+      "name": "Malaysia",
+      "id": "MY",
       "count": 6
     },
     {
@@ -682,9 +687,9 @@
       "count": 5
     },
     {
-      "name": "Malaysia",
-      "id": "MY",
-      "count": 5
+      "name": "Russia",
+      "id": "RU",
+      "count": 4
     },
     {
       "name": "Brazil",
@@ -694,11 +699,6 @@
     {
       "name": "Switzerland",
       "id": "CH",
-      "count": 3
-    },
-    {
-      "name": "Netherlands",
-      "id": "NL",
       "count": 3
     }
   ],
