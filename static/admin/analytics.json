@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05T11:23:24.872784Z",
+  "generated": "2026-07-05T13:08:28.924057Z",
   "period": {
     "start": "2025-07-05",
     "end": "2026-07-05"
@@ -549,7 +549,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 497
+      "count": 502
     },
     {
       "name": "Safari",
@@ -576,7 +576,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 162
+      "count": 167
     },
     {
       "name": "iOS",
@@ -603,7 +603,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 409
+      "count": 414
     },
     {
       "name": "desktophd",
@@ -625,7 +625,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 707
+      "count": 710
     },
     {
       "name": "United States",
@@ -643,13 +643,13 @@
       "count": 12
     },
     {
-      "name": "Ecuador",
-      "id": "EC",
-      "count": 11
-    },
-    {
       "name": "Venezuela",
       "id": "VE",
+      "count": 12
+    },
+    {
+      "name": "Ecuador",
+      "id": "EC",
       "count": 11
     },
     {
@@ -668,6 +668,11 @@
       "count": 6
     },
     {
+      "name": "Bangladesh",
+      "id": "BD",
+      "count": 6
+    },
+    {
       "name": "Germany",
       "id": "DE",
       "count": 6
@@ -681,11 +686,6 @@
       "name": "Sweden",
       "id": "SE",
       "count": 6
-    },
-    {
-      "name": "Bangladesh",
-      "id": "BD",
-      "count": 5
     },
     {
       "name": "Brazil",
