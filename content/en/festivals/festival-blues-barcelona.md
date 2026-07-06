@@ -1,7 +1,8 @@
 ---
 title: "Festival de Blues de Barcelona"
 description: "Festival de Blues de Barcelona in Nou Barris. The city's reference blues festival since 2008."
-date: 2025-06-01
+date: 2026-07-06
+lastmod: 2026-07-06
 weight: 1
 anys: "since 2008"
 lloc: "Nou Barris, Barcelona"
@@ -31,6 +32,16 @@ Every edition is a lesson in patience and presence. The best comes when the musi
 In 2025 we weren't there — it coincided with Vijazz. But the festival continues, and so do we.
 
 ## Editions documented on the blog
+
+**2026 — 24th Festival**
+- [Organisation, collaborators and volunteers](https://blog.pocallum.cat/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris/)
+- [Friday 3 July — first night (Balta Bordoy & SirJo Cocchi, Ster Wax, Ubangi Stomp)](https://blog.pocallum.cat/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona/)
+- [Saturday 4 July — Quique Gómez, Lluís Coloma Musical Troupe 5, Kirk Fletcher](https://blog.pocallum.cat/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona/)
+- [Sunday 5 July — closing Jam Session at the Roquetes Amphitheatre](https://blog.pocallum.cat/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura/)
+
+![24th Festival de Blues de Barcelona](/images/festivals/bcnbluesfestival2024-01.jpg)
+
+![24th Festival de Blues de Barcelona — Nou Barris stage](/images/festivals/bcnbluesfestival2024-02.jpg)
 
 **2024 — 22nd Festival**
 - [22nd Blues Festival shot on traditional photography](https://blog.pocallum.cat/2024/07/13/22e-festival-de-blues-disparat-amb-fotografia-tradicional/)
