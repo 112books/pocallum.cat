@@ -3,10 +3,10 @@ title: "Blog"
 description: "Crònica fotogràfica tal com raja. Des del 2010."
 layout: "blog"
 stats:
-  - { num: "2.335", label: "posts", raw: 2335 }
-  - { num: "126.687", label: "paraules", raw: 126687 }
+  - { num: "2.338", label: "posts", raw: 2338 }
+  - { num: "128.134", label: "paraules", raw: 128134 }
   - { num: "96", label: "categories", raw: 96 }
-  - { num: "3.063", label: "etiquetes", raw: 3063 }
+  - { num: "3.085", label: "etiquetes", raw: 3085 }
   - { num: "71", label: "comentaris", raw: 71 }
 ---
 
