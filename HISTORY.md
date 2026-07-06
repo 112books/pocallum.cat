@@ -4,6 +4,37 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-07-06 — 24è Festival de Blues de Barcelona: notícia, galeria i fitxa
+
+### Notícia nova (CA + EN)
+- `content/ca/noticies/2026-07-festival-blues-barcelona.md`
+- `content/en/noticies/2026-07-festival-blues-barcelona.md`
+
+Crònica de les 3 jornades (3–5 juliol 2026): dues nits a la Seu del Districte de Nou Barris (Balta Bordoy & SirJo Cocchi, Ster Wax amb The Soulful Trio, Ubangi Stomp el divendres; Quique Gómez & His Vipers, Lluís Coloma Musical Troupe 5 i Kirk Fletcher el dissabte) i jam session de clausura al capvespre a l'Anfiteatre de Roquetes (traslladada des del Castell de Torre Baró per pesta porcina africana). Organitzador: Capibola Blues.
+
+Imatge de portada: `static/images/noticies/festival-blues-barcelona-2026.jpg` (descarregada de blog.pocallum.cat).
+
+### Fitxa festival actualitzada (CA + EN)
+- `content/ca/festivals/festival-blues-barcelona.md`
+- `content/en/festivals/festival-blues-barcelona.md`
+
+Afegit bloc **2026 — 24è Festival** amb les 4 entrades del blog (organització/voluntaris, divendres, dissabte, jam session). Dues fotos inline afegides al cos (`bcnbluesfestival2024-01/02`). `date` i `lastmod` actualitzats a 2026-07-06.
+
+Imatge de portada/fons actualitzada: `static/images/festivals/festival-blues-barcelona.jpg` substituïda per la nova foto de l'edició 2026.
+
+### 13 fitxes de galeria noves
+`content/ca/galeria/bcnbluesfestival2024-gal-01` a `gal-13` — fotografies individuals per artista amb dates per jornada:
+- 3 jul: Balta Bordoy (×2), Santi Ursul, Ster Wax, Homero / The Soulful Trio (×2), Fede Álvarez
+- 4 jul: Quique Gómez, Lluís Coloma (×2), Kirk Fletcher (×2)
+- 5 jul: foto general (gal-01)
+
+### Imatges estàtiques afegides
+- `static/images/festivals/bcnbluesfestival2024-01.jpg` + `…-02.jpg`
+- `static/images/galeria/bcnbluesfestival2024-gal-01` a `gal-13` (13 JPEGs)
+- `static/images/noticies/festival-blues-barcelona-2026.jpg`
+
+---
+
 ## 2026-07-03 — Guia d'espais i festivals fotogràfics: ampliació de contingut
 
 ### La Virreina Centre de la Imatge
