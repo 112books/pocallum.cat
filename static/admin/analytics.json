@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-05T23:57:50.400889Z",
+  "generated": "2026-07-06T02:56:04.141299Z",
   "period": {
-    "start": "2025-07-05",
-    "end": "2026-07-05"
+    "start": "2025-07-06",
+    "end": "2026-07-06"
   },
-  "total": 738,
+  "total": 761,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -153,7 +153,7 @@
     },
     {
       "date": "2026-06-14",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-06-15",
@@ -225,41 +225,49 @@
     },
     {
       "date": "2026-07-02",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-07-03",
-      "count": 18
+      "count": 21
     },
     {
       "date": "2026-07-04",
+      "count": 17
+    },
+    {
+      "date": "2026-07-05",
       "count": 23
+    },
+    {
+      "date": "2026-07-06",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 208
+      "count": 211
     },
     {
       "path": "/galeria",
-      "count": 69
+      "count": 70
     },
     {
       "path": "/serveis",
-      "count": 45
+      "count": 46
     },
     {
       "path": "/festivals",
-      "count": 38
+      "count": 41
     },
     {
       "path": "/blog",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/noticies",
-      "count": 29
+      "count": 30
     },
     {
       "path": "/contacte",
@@ -267,18 +275,22 @@
     },
     {
       "path": "/qui-som",
-      "count": 16
+      "count": 17
+    },
+    {
+      "path": "/obra",
+      "count": 13
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
       "count": 12
     },
     {
-      "path": "/obra",
-      "count": 12
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 9
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
+      "path": "/festivals/festival-blues-barcelona",
       "count": 9
     },
     {
@@ -302,8 +314,12 @@
       "count": 7
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
+      "path": "/festivals/carnestoltes-nou-barris",
       "count": 6
+    },
+    {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 5
     },
     {
       "path": "/legal/privacitat",
@@ -322,16 +338,8 @@
       "count": 5
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
-      "count": 5
-    },
-    {
       "path": "/festivals/flamenco-de-barrio",
       "count": 5
-    },
-    {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 4
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -360,6 +368,10 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
+    },
+    {
+      "path": "/en/node/191/track?page=2",
+      "count": 3
     },
     {
       "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
@@ -410,11 +422,19 @@
       "count": 3
     },
     {
+      "path": "/en/node/23/track?page=8",
+      "count": 2
+    },
+    {
       "path": "/es/tag/kimono-es",
       "count": 2
     },
     {
       "path": "/en/testing-film-kono-monolit-iso64",
+      "count": 2
+    },
+    {
+      "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
       "count": 2
     },
     {
@@ -424,42 +444,31 @@
     {
       "path": "/en/incoherencias-una-pequena-historia-del-absurdo-3",
       "count": 2
-    },
-    {
-      "path": "/es/servicios-fotograficos/servicios-y-tarifas",
-      "count": 2
-    },
-    {
-      "path": "/en/node/191/track?page=2",
-      "count": 2
-    },
-    {
-      "path": "/en/22nd-blues-festival-captured-with-traditional-photography",
-      "count": 2
     }
   ],
   "by_lang": {
-    "ca": 27,
-    "es": 28,
-    "en": 62
+    "ca": 29,
+    "en": 65,
+    "es": 31
   },
   "by_section": {
-    "inici": 221,
-    "galeria": 72,
-    "serveis": 77,
-    "festivals": 105,
-    "blog": 35,
-    "noticies": 53,
+    "inici": 224,
+    "galeria": 73,
+    "serveis": 78,
+    "festivals": 114,
+    "blog": 36,
+    "noticies": 55,
     "contacte": 35,
-    "qui-som": 18,
-    "obra": 12,
+    "qui-som": 19,
+    "obra": 13,
     "cerca": 11,
     "serveis-fotografics-2": 10,
     "legal": 5,
     "servicios-fotograficos": 7,
-    "content": 6,
+    "content": 9,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
+    "node": 9,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "testing-vintage-cameras": 3,
@@ -467,11 +476,11 @@
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
-    "tag": 5,
+    "tag": 2,
     "testing-film-kono-monolit-iso64": 2,
     "festival-ciutat-flamenco-barcelona-y-ole": 2,
     "incoherencias-una-pequena-historia-del-absurdo-3": 2,
-    "node": 6,
+    "un-bolo-con-mambo-mucho-de-mambo": 2,
     "22nd-blues-festival-captured-with-traditional-photography": 2,
     "testing-adox-hr-50-film": 2,
     "cambo-sc-first-test": 2,
@@ -483,8 +492,7 @@
     "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 2,
     "practicas-de-revelado-de-placas-de-8x10": 2,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
-    "probando-la-pelicula-adox-hr-50": 2,
-    "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 1
+    "probando-la-pelicula-adox-hr-50": 2
   },
   "noticies_top": [
     {
@@ -493,7 +501,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 4
+      "count": 5
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -506,19 +514,19 @@
       "count": 9
     },
     {
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 9
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
+      "path": "/festivals/carnestoltes-nou-barris",
       "count": 6
     },
     {
       "path": "/festivals/im-jazz",
-      "count": 5
-    },
-    {
-      "path": "/festivals/carnestoltes-nou-barris",
       "count": 5
     },
     {
@@ -549,7 +557,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 510
+      "count": 515
     },
     {
       "name": "Safari",
@@ -559,7 +567,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Firefox",
@@ -576,7 +584,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 174
+      "count": 179
     },
     {
       "name": "iOS",
@@ -591,7 +599,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 50
+      "count": 51
     },
     {
       "name": "Chrome OS",
@@ -603,7 +611,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 422
+      "count": 428
     },
     {
       "name": "desktophd",
@@ -625,7 +633,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 713
+      "count": 714
     },
     {
       "name": "United States",
@@ -640,17 +648,17 @@
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Vietnam",
@@ -688,13 +696,13 @@
       "count": 6
     },
     {
-      "name": "Brazil",
-      "id": "BR",
+      "name": "United Arab Emirates",
+      "id": "AE",
       "count": 4
     },
     {
-      "name": "Russia",
-      "id": "RU",
+      "name": "Brazil",
+      "id": "BR",
       "count": 4
     }
   ],
@@ -702,12 +710,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 258
+      "count": 275
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 67
+      "count": 71
     },
     {
       "name": "blog.pocallum.cat",
