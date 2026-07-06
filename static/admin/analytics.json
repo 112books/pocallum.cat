@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-06T18:04:39.691567Z",
+  "generated": "2026-07-06T20:46:30.886276Z",
   "period": {
     "start": "2025-07-06",
     "end": "2026-07-06"
@@ -557,34 +557,34 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 534
+      "count": 544
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 373
+      "count": 374
+    },
+    {
+      "name": "Firefox",
+      "id": "Firefox",
+      "count": 24
     },
     {
       "name": "Desconegut",
       "id": "Desconegut",
       "count": 22
-    },
-    {
-      "name": "Firefox",
-      "id": "Firefox",
-      "count": 20
     }
   ],
   "systems": [
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 510
+      "count": 513
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 194
+      "count": 206
     },
     {
       "name": "iOS",
@@ -611,12 +611,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 444
+      "count": 451
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 230
+      "count": 238
     },
     {
       "name": "phone",
@@ -633,12 +633,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 724
+      "count": 731
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 48
+      "count": 49
     },
     {
       "name": "Colombia",
@@ -658,7 +658,7 @@
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Vietnam",
@@ -668,12 +668,22 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Singapore",
       "id": "SG",
       "count": 9
+    },
+    {
+      "name": "Sweden",
+      "id": "SE",
+      "count": 8
+    },
+    {
+      "name": "United Arab Emirates",
+      "id": "AE",
+      "count": 7
     },
     {
       "name": "Argentina",
@@ -689,16 +699,6 @@
       "name": "Malaysia",
       "id": "MY",
       "count": 6
-    },
-    {
-      "name": "Sweden",
-      "id": "SE",
-      "count": 6
-    },
-    {
-      "name": "United Arab Emirates",
-      "id": "AE",
-      "count": 5
     },
     {
       "name": "Brazil",
