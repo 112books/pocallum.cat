@@ -505,6 +505,9 @@
       <div id="lang-kpi-wrap"></div>
       <div id="lang-wrap-2"></div>
 
+      <h2 class="section-title">Entrades del blog més llegides</h2>
+      <div id="blog-wrap" class="bars"></div>
+
       <h2 class="section-title">Notícies més llegides</h2>
       <div id="noticies-wrap" class="bars"></div>
 
@@ -698,6 +701,7 @@ function renderAll(data) {
   renderChart(data);
   renderLangKpi(data);
   renderLang(data);
+  renderBlogTop(data);
   renderNoticies(data);
   renderFestivals(data);
   renderWizardFunnel(data);
@@ -829,6 +833,20 @@ function renderLangKpi(data) {
       <div class="lang-kpi-num ${cls}">${pct}%</div>
       <div class="lang-kpi-sub">${fmt(count)} visites</div></div>`;
   }).join('') + '</div>';
+}
+
+function renderBlogTop(data) {
+  const items = (data.blog_top || []).map(h => {
+    const parts = h.path.replace(/\/$/, '').split('/').filter(Boolean);
+    const slug = parts[parts.length - 1] || h.path;
+    return { name: slug.replace(/-/g, ' '), count: h.count,
+             href: 'https://blog.pocallum.cat' + h.path };
+  });
+  renderBars('blog-wrap', items, { withLinks: true, colorClass: 'ink2' });
+  if (!items.length) {
+    document.getElementById('blog-wrap').innerHTML =
+      '<span class="empty">Sense dades — apareixeran aquí un cop el blog acumuli visites.</span>';
+  }
 }
 
 function renderNoticies(data) {

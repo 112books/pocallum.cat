@@ -118,6 +118,23 @@ def main():
         key=lambda x: x["count"], reverse=True
     )[:15]
 
+    # Top entrades del blog (pocallum-blog.goatcounter.com)
+    blog_hits_data = safe_get(raw, "blog_hits") or {}
+    blog_hits_list = safe_get(blog_hits_data, "hits") or []
+    blog_pages = {}
+    for path_item in blog_hits_list:
+        path = path_item.get("path", "")
+        if path_item.get("event", False):
+            continue
+        path_total = sum(s.get("daily", 0) for s in path_item.get("stats", []))
+        if path_total > 0:
+            blog_pages[path] = blog_pages.get(path, 0) + path_total
+    blog_top = sorted(
+        [{"path": k, "count": v} for k, v in blog_pages.items()
+         if k not in ('/', '') and not k.startswith('/wp-')],
+        key=lambda x: x["count"], reverse=True
+    )[:20]
+
     wizard_funnel = {k: events_data.get(k, 0) for k in WIZARD_STEPS}
 
     total_data   = safe_get(raw, "total_data") or {}
@@ -140,6 +157,7 @@ def main():
         "by_section":   by_section,
         "noticies_top":  noticies_top,
         "festivals_top": festivals_top,
+        "blog_top":      blog_top,
         "wizard_funnel": wizard_funnel,
         "browsers":     norm_items(browsers_raw),
         "systems":      norm_items(systems_raw),

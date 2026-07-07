@@ -17,7 +17,9 @@ jobs:
         id: fetch
         env:
           GC_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          GC_BLOG_TOKEN: ${{ secrets.GOATCOUNTER_BLOG_TOKEN }}
           GC_ACCOUNT: "pocallum"
+          GC_BLOG_ACCOUNT: "pocallum-blog"
         run: |
           END=$(date +%Y-%m-%d)
           START=$(date -d '365 days ago' +%Y-%m-%d)
@@ -34,8 +36,9 @@ jobs:
 
           fetch_json() {
             local url="$1"
+            local auth_header="$2"
             local result
-            result=$(curl -s --max-time 15 --retry 2 -H "${AUTH}" "${url}" 2>/dev/null) || true
+            result=$(curl -s --max-time 15 --retry 2 -H "${auth_header}" "${url}" 2>/dev/null) || true
             if echo "${result}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
               echo "${result}"
             else
@@ -43,13 +46,22 @@ jobs:
             fi
           }
 
-          fetch_json "${BASE}/stats/hits?start=${START}&end=${END}&limit=100"     > /tmp/hits.json
-          fetch_json "${BASE}/stats/total?start=${START}&end=${END}"              > /tmp/total.json
-          fetch_json "${BASE}/stats/browsers?start=${START}&end=${END}&limit=10"  > /tmp/browsers.json
-          fetch_json "${BASE}/stats/systems?start=${START}&end=${END}&limit=10"   > /tmp/systems.json
-          fetch_json "${BASE}/stats/sizes?start=${START}&end=${END}&limit=10"     > /tmp/sizes.json
-          fetch_json "${BASE}/stats/locations?start=${START}&end=${END}&limit=15" > /tmp/locations.json
-          fetch_json "${BASE}/stats/toprefs?start=${START}&end=${END}&limit=10"   > /tmp/refs.json
+          fetch_json "${BASE}/stats/hits?start=${START}&end=${END}&limit=100"     "${AUTH}" > /tmp/hits.json
+          fetch_json "${BASE}/stats/total?start=${START}&end=${END}"              "${AUTH}" > /tmp/total.json
+          fetch_json "${BASE}/stats/browsers?start=${START}&end=${END}&limit=10"  "${AUTH}" > /tmp/browsers.json
+          fetch_json "${BASE}/stats/systems?start=${START}&end=${END}&limit=10"   "${AUTH}" > /tmp/systems.json
+          fetch_json "${BASE}/stats/sizes?start=${START}&end=${END}&limit=10"     "${AUTH}" > /tmp/sizes.json
+          fetch_json "${BASE}/stats/locations?start=${START}&end=${END}&limit=15" "${AUTH}" > /tmp/locations.json
+          fetch_json "${BASE}/stats/toprefs?start=${START}&end=${END}&limit=10"   "${AUTH}" > /tmp/refs.json
+
+          # Blog GoatCounter (pocallum-blog.goatcounter.com)
+          if [ -n "${GC_BLOG_TOKEN}" ]; then
+            BLOG_BASE="https://${GC_BLOG_ACCOUNT}.goatcounter.com/api/v0"
+            BLOG_AUTH="Authorization: Bearer ${GC_BLOG_TOKEN}"
+            fetch_json "${BLOG_BASE}/stats/hits?start=${START}&end=${END}&limit=50" "${BLOG_AUTH}" > /tmp/blog_hits.json
+          else
+            echo "null" > /tmp/blog_hits.json
+          fi
 
           python3 scripts/build-analytics-json.py "${START}" "${END}"
 

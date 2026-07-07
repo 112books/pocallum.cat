@@ -32,6 +32,7 @@ data = {
     "sizes":      load("/tmp/sizes.json"),
     "locations":  load("/tmp/locations.json"),
     "refs":       load("/tmp/refs.json"),
+    "blog_hits":  load("/tmp/blog_hits.json"),
 }
 
 with open("/tmp/raw_all.json", "w") as f:
