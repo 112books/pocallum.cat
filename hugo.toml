@@ -67,6 +67,7 @@ defaultContentLanguageInSubdir = false
   blog            = "https://blog.pocallum.cat"
   about           = "https://about.pocallum.cat"
   goatcounterSite = "pocallum"
+  ga4Id           = "G-ZV007Q0CKG"
   # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
   formspreeContact  = "https://formspree.io/f/xnjgrpnn"
   defaultOgImage    = "/images/logotip/pocallum-logo.png"

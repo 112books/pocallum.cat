@@ -268,6 +268,19 @@
 <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js" integrity="sha384-2UjvVpptg4JlEVgJI2PdscrjOjPcil/4F1ZvIMJ81CShQnEDSlPI+l4PfogvTLYi" crossorigin="anonymous"></script>
 {{ end }}
 
+{{/* Google Analytics 4 — cross-domain amb blog.pocallum.cat */}}
+{{ with .Site.Params.ga4Id }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}', {
+    linker: { domains: ['pocallum.cat', 'blog.pocallum.cat'] }
+  });
+</script>
+{{ end }}
+
 {{/* JS */}}
 {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" defer></script>
