@@ -1,31 +1,31 @@
 {
-  "generated": "2026-07-06T23:58:55.465721Z",
+  "generated": "2026-07-07T03:24:10.895543Z",
   "period": {
-    "start": "2025-07-06",
-    "end": "2026-07-06"
+    "start": "2025-07-07",
+    "end": "2026-07-07"
   },
-  "total": 761,
+  "total": 787,
   "total_unique": 0,
   "hits_by_day": [
     {
       "date": "2026-05-09",
-      "count": 21
+      "count": 16
     },
     {
       "date": "2026-05-10",
-      "count": 45
+      "count": 39
     },
     {
       "date": "2026-05-11",
-      "count": 18
+      "count": 17
     },
     {
       "date": "2026-05-12",
-      "count": 7
+      "count": 5
     },
     {
       "date": "2026-05-13",
-      "count": 10
+      "count": 9
     },
     {
       "date": "2026-05-14",
@@ -33,15 +33,15 @@
     },
     {
       "date": "2026-05-15",
-      "count": 32
+      "count": 28
     },
     {
       "date": "2026-05-16",
-      "count": 14
+      "count": 13
     },
     {
       "date": "2026-05-17",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-05-18",
@@ -57,7 +57,7 @@
     },
     {
       "date": "2026-05-21",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-05-22",
@@ -69,7 +69,7 @@
     },
     {
       "date": "2026-05-24",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-05-25",
@@ -217,11 +217,11 @@
     },
     {
       "date": "2026-06-30",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-07-01",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-07-02",
@@ -229,29 +229,29 @@
     },
     {
       "date": "2026-07-03",
-      "count": 21
+      "count": 24
     },
     {
       "date": "2026-07-04",
-      "count": 17
+      "count": 20
     },
     {
       "date": "2026-07-05",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-07-06",
-      "count": 1
+      "count": 41
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 211
+      "count": 221
     },
     {
       "path": "/galeria",
-      "count": 70
+      "count": 73
     },
     {
       "path": "/serveis",
@@ -259,7 +259,7 @@
     },
     {
       "path": "/festivals",
-      "count": 41
+      "count": 44
     },
     {
       "path": "/blog",
@@ -286,11 +286,11 @@
       "count": 12
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 9
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 10
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
+      "path": "/festivals/calella-harmonica-festival",
       "count": 9
     },
     {
@@ -310,16 +310,20 @@
       "count": 8
     },
     {
+      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "count": 7
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 7
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 6
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 5
+      "path": "/festivals/carnestoltes-nou-barris",
+      "count": 6
     },
     {
       "path": "/legal/privacitat",
@@ -370,6 +374,10 @@
       "count": 4
     },
     {
+      "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
+      "count": 3
+    },
+    {
       "path": "/en/node/191/track?page=2",
       "count": 3
     },
@@ -402,6 +410,10 @@
       "count": 3
     },
     {
+      "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
+      "count": 3
+    },
+    {
       "path": "/on-veure-exposicions-de-fotografia-a-barcelona",
       "count": 3
     },
@@ -422,66 +434,60 @@
       "count": 3
     },
     {
-      "path": "/en/node/23/track?page=8",
+      "path": "/en/los-mambo-jambo-studio",
       "count": 2
     },
     {
-      "path": "/es/tag/kimono-es",
+      "path": "/en/mabe-with-kimono",
       "count": 2
     },
     {
-      "path": "/en/testing-film-kono-monolit-iso64",
-      "count": 2
-    },
-    {
-      "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
-      "count": 2
-    },
-    {
-      "path": "/es/festival-ciutat-flamenco-barcelona-y-ole",
-      "count": 2
-    },
-    {
-      "path": "/en/incoherencias-una-pequena-historia-del-absurdo-3",
+      "path": "/en/node/17/track?page=3",
       "count": 2
     }
   ],
   "by_lang": {
-    "ca": 29,
-    "en": 65,
-    "es": 31
+    "ca": 24,
+    "en": 78,
+    "es": 27
   },
   "by_section": {
-    "inici": 224,
-    "galeria": 73,
+    "inici": 234,
+    "galeria": 76,
     "serveis": 78,
-    "festivals": 114,
-    "blog": 36,
-    "noticies": 55,
+    "festivals": 112,
+    "blog": 32,
+    "noticies": 59,
     "contacte": 35,
-    "qui-som": 19,
+    "qui-som": 17,
     "obra": 13,
-    "cerca": 11,
+    "cerca": 9,
     "serveis-fotografics-2": 10,
     "legal": 5,
     "servicios-fotograficos": 7,
-    "content": 9,
+    "content": 14,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "node": 9,
+    "node": 16,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "testing-vintage-cameras": 3,
     "lomography-great-photos-simple-camera": 3,
+    "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "los-mambo-jambo-studio": 2,
+    "mabe-with-kimono": 2,
+    "session-irma": 2,
     "tag": 2,
     "testing-film-kono-monolit-iso64": 2,
+    "testing-argenti-nanotomic-film": 2,
     "festival-ciutat-flamenco-barcelona-y-ole": 2,
     "incoherencias-una-pequena-historia-del-absurdo-3": 2,
     "un-bolo-con-mambo-mucho-de-mambo": 2,
     "22nd-blues-festival-captured-with-traditional-photography": 2,
+    "21e-festival-de-blues-de-barcelona": 2,
     "testing-adox-hr-50-film": 2,
     "cambo-sc-first-test": 2,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
@@ -489,10 +495,7 @@
     "worldpinholeday-diana-f": 2,
     "moviendo-las-imagenes-fijas": 2,
     "photography-services": 2,
-    "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 2,
-    "practicas-de-revelado-de-placas-de-8x10": 2,
-    "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 2,
-    "probando-la-pelicula-adox-hr-50": 2
+    "dr-roland-f-beers-paper-devoloper-revelador-para-papel-fotografico-de-altas-prestaciones": 2
   },
   "noticies_top": [
     {
@@ -500,8 +503,12 @@
       "count": 12
     },
     {
+      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "count": 7
+    },
+    {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 5
+      "count": 6
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -510,11 +517,11 @@
   ],
   "festivals_top": [
     {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 9
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 10
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
+      "path": "/festivals/calella-harmonica-festival",
       "count": 9
     },
     {
@@ -557,7 +564,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 545
+      "count": 549
     },
     {
       "name": "Safari",
@@ -584,7 +591,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 207
+      "count": 211
     },
     {
       "name": "iOS",
@@ -611,7 +618,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 452
+      "count": 456
     },
     {
       "name": "desktophd",
@@ -653,7 +660,7 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Venezuela",
@@ -663,7 +670,7 @@
     {
       "name": "Vietnam",
       "id": "VN",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Bangladesh",
@@ -686,6 +693,11 @@
       "count": 7
     },
     {
+      "name": "Malaysia",
+      "id": "MY",
+      "count": 7
+    },
+    {
       "name": "Argentina",
       "id": "AR",
       "count": 6
@@ -693,11 +705,6 @@
     {
       "name": "Germany",
       "id": "DE",
-      "count": 6
-    },
-    {
-      "name": "Malaysia",
-      "id": "MY",
       "count": 6
     },
     {
@@ -710,27 +717,27 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 275
+      "count": 308
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 71
+      "count": 72
     },
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
+      "count": 9
+    },
+    {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
       "count": 7
     },
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
       "count": 6
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 4
     },
     {
       "name": "bing.com",
