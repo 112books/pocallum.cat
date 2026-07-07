@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T03:24:10.895543Z",
+  "generated": "2026-07-07T07:29:09.702609Z",
   "period": {
     "start": "2025-07-07",
     "end": "2026-07-07"
@@ -564,12 +564,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 549
+      "count": 556
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 379
+      "count": 380
     },
     {
       "name": "Firefox",
@@ -586,12 +586,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 514
+      "count": 515
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 211
+      "count": 218
     },
     {
       "name": "iOS",
@@ -618,12 +618,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 456
+      "count": 463
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 239
+      "count": 240
     },
     {
       "name": "phone",
@@ -640,12 +640,17 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 736
+      "count": 737
     },
     {
       "name": "United States",
       "id": "US",
       "count": 49
+    },
+    {
+      "name": "Indonesia",
+      "id": "ID",
+      "count": 18
     },
     {
       "name": "Colombia",
@@ -658,11 +663,6 @@
       "count": 17
     },
     {
-      "name": "Indonesia",
-      "id": "ID",
-      "count": 17
-    },
-    {
       "name": "Venezuela",
       "id": "VE",
       "count": 16
@@ -670,7 +670,7 @@
     {
       "name": "Vietnam",
       "id": "VN",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Bangladesh",
@@ -683,14 +683,14 @@
       "count": 9
     },
     {
-      "name": "Sweden",
-      "id": "SE",
+      "name": "United Arab Emirates",
+      "id": "AE",
       "count": 8
     },
     {
-      "name": "United Arab Emirates",
-      "id": "AE",
-      "count": 7
+      "name": "Sweden",
+      "id": "SE",
+      "count": 8
     },
     {
       "name": "Malaysia",
@@ -708,9 +708,9 @@
       "count": 6
     },
     {
-      "name": "Brazil",
-      "id": "BR",
-      "count": 4
+      "name": "Russia",
+      "id": "RU",
+      "count": 5
     }
   ],
   "refs": [
