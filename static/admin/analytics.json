@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07T07:29:09.702609Z",
+  "generated": "2026-07-07T10:45:47.511576Z",
   "period": {
     "start": "2025-07-07",
     "end": "2026-07-07"
@@ -553,6 +553,7 @@
       "count": 3
     }
   ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 12,
     "wizard-s2": 15,
@@ -564,7 +565,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 556
+      "count": 562
     },
     {
       "name": "Safari",
@@ -586,12 +587,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 515
+      "count": 517
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 218
+      "count": 220
     },
     {
       "name": "iOS",
@@ -601,7 +602,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 89
+      "count": 91
     },
     {
       "name": "Linux",
@@ -618,17 +619,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 463
+      "count": 466
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 240
+      "count": 241
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 181
+      "count": 183
     },
     {
       "name": "tablet",
@@ -640,7 +641,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 737
+      "count": 742
     },
     {
       "name": "United States",
