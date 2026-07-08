@@ -608,10 +608,14 @@ document.getElementById('btn-logout').addEventListener('click', () => {
 
 if (sessionStorage.getItem('gc_ok')) showDashboard();
 
+let autoRefreshTimer = null;
+
 function showDashboard() {
   document.getElementById('login').style.display = 'none';
   document.getElementById('dashboard').style.display = 'block';
   loadData();
+  if (autoRefreshTimer) clearInterval(autoRefreshTimer);
+  autoRefreshTimer = setInterval(loadData, 60 * 60 * 1000);
 }
 
 /* ══ TABS ═════════════════════════════════════════════════════ */
