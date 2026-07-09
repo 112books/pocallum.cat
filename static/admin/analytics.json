@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-08T23:59:55.030044Z",
+  "generated": "2026-07-09T03:33:55.492484Z",
   "period": {
-    "start": "2025-07-08",
-    "end": "2026-07-08"
+    "start": "2025-07-09",
+    "end": "2026-07-09"
   },
-  "total": 800,
+  "total": 822,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-05-25",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-05-26",
@@ -101,19 +101,19 @@
     },
     {
       "date": "2026-06-01",
-      "count": 14
+      "count": 13
     },
     {
       "date": "2026-06-02",
-      "count": 22
+      "count": 21
     },
     {
       "date": "2026-06-03",
-      "count": 46
+      "count": 45
     },
     {
       "date": "2026-06-04",
-      "count": 16
+      "count": 15
     },
     {
       "date": "2026-06-05",
@@ -129,7 +129,7 @@
     },
     {
       "date": "2026-06-08",
-      "count": 8
+      "count": 7
     },
     {
       "date": "2026-06-09",
@@ -137,7 +137,7 @@
     },
     {
       "date": "2026-06-10",
-      "count": 29
+      "count": 21
     },
     {
       "date": "2026-06-11",
@@ -145,7 +145,7 @@
     },
     {
       "date": "2026-06-12",
-      "count": 8
+      "count": 7
     },
     {
       "date": "2026-06-13",
@@ -153,7 +153,7 @@
     },
     {
       "date": "2026-06-14",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-06-15",
@@ -169,7 +169,7 @@
     },
     {
       "date": "2026-06-18",
-      "count": 6
+      "count": 5
     },
     {
       "date": "2026-06-19",
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-06-20",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-06-21",
@@ -189,7 +189,7 @@
     },
     {
       "date": "2026-06-23",
-      "count": 19
+      "count": 12
     },
     {
       "date": "2026-06-24",
@@ -205,7 +205,7 @@
     },
     {
       "date": "2026-06-27",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-06-28",
@@ -213,23 +213,23 @@
     },
     {
       "date": "2026-06-29",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-06-30",
-      "count": 9
+      "count": 7
     },
     {
       "date": "2026-07-01",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-07-02",
-      "count": 30
+      "count": 26
     },
     {
       "date": "2026-07-03",
-      "count": 25
+      "count": 27
     },
     {
       "date": "2026-07-04",
@@ -237,7 +237,7 @@
     },
     {
       "date": "2026-07-05",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-07-06",
@@ -249,32 +249,36 @@
     },
     {
       "date": "2026-07-08",
-      "count": 3
+      "count": 50
+    },
+    {
+      "date": "2026-07-09",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 223
+      "count": 225
     },
     {
       "path": "/galeria",
-      "count": 74
+      "count": 76
+    },
+    {
+      "path": "/festivals",
+      "count": 46
     },
     {
       "path": "/serveis",
       "count": 46
     },
     {
-      "path": "/festivals",
-      "count": 45
+      "path": "/noticies",
+      "count": 33
     },
     {
       "path": "/blog",
-      "count": 32
-    },
-    {
-      "path": "/noticies",
       "count": 32
     },
     {
@@ -284,6 +288,10 @@
     {
       "path": "/qui-som",
       "count": 17
+    },
+    {
+      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "count": 15
     },
     {
       "path": "/obra",
@@ -298,15 +306,11 @@
       "count": 12
     },
     {
-      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "path": "/cerca",
       "count": 10
     },
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 9
-    },
-    {
-      "path": "/cerca",
       "count": 9
     },
     {
@@ -334,6 +338,10 @@
       "count": 6
     },
     {
+      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "count": 5
+    },
+    {
       "path": "/legal/privacitat",
       "count": 5
     },
@@ -346,6 +354,10 @@
       "count": 5
     },
     {
+      "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
+      "count": 5
+    },
+    {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
       "count": 5
     },
@@ -354,7 +366,7 @@
       "count": 5
     },
     {
-      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "path": "/en/testing-vintage-cameras",
       "count": 4
     },
     {
@@ -378,10 +390,6 @@
       "count": 4
     },
     {
-      "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
-      "count": 4
-    },
-    {
       "path": "/sessio-amb-la-ballarina-nahomi-itzel",
       "count": 4
     },
@@ -390,7 +398,27 @@
       "count": 4
     },
     {
+      "path": "/es/estudio-fotografico-movil",
+      "count": 3
+    },
+    {
+      "path": "/en/los-mambo-jambo-studio",
+      "count": 3
+    },
+    {
+      "path": "/ca/node/16/track?order=Usuari&page=6&sort=asc",
+      "count": 3
+    },
+    {
+      "path": "/en/testing-film-kono-monolit-iso64",
+      "count": 3
+    },
+    {
       "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
+      "count": 3
+    },
+    {
+      "path": "/festivals/clot-en-blues",
       "count": 3
     },
     {
@@ -402,7 +430,11 @@
       "count": 3
     },
     {
-      "path": "/en/testing-vintage-cameras",
+      "path": "/en/testing-adox-hr-50-film",
+      "count": 3
+    },
+    {
+      "path": "/en/from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress",
       "count": 3
     },
     {
@@ -424,98 +456,74 @@
     {
       "path": "/on-veure-exposicions-de-fotografia-a-barcelona",
       "count": 3
-    },
-    {
-      "path": "/es/guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona",
-      "count": 3
-    },
-    {
-      "path": "/en/comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona",
-      "count": 3
-    },
-    {
-      "path": "/ca/contacte",
-      "count": 3
-    },
-    {
-      "path": "/ca/galeria",
-      "count": 3
-    },
-    {
-      "path": "/es/estudio-fotografico-movil",
-      "count": 2
-    },
-    {
-      "path": "/en/los-mambo-jambo-studio",
-      "count": 2
-    },
-    {
-      "path": "/en/customers/contact",
-      "count": 2
     }
   ],
   "by_lang": {
-    "ca": 24,
-    "en": 85,
-    "es": 26
+    "ca": 27,
+    "en": 91,
+    "es": 40
   },
   "by_section": {
-    "inici": 236,
-    "galeria": 77,
-    "serveis": 78,
-    "festivals": 109,
+    "inici": 238,
+    "galeria": 79,
+    "festivals": 103,
+    "serveis": 62,
+    "noticies": 70,
     "blog": 32,
-    "noticies": 64,
     "contacte": 33,
     "qui-som": 17,
     "obra": 13,
-    "cerca": 9,
+    "cerca": 10,
     "serveis-fotografics-2": 10,
-    "legal": 5,
+    "vijazz-2025-the-jazz-that-brought-me-back-home": 5,
+    "legal": 7,
+    "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 7,
-    "vijazz-2025-the-jazz-that-brought-me-back-home": 4,
-    "content": 14,
-    "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 4,
+    "testing-vintage-cameras": 4,
+    "content": 12,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "node": 18,
+    "estudio-fotografico-movil": 3,
+    "los-mambo-jambo-studio": 3,
+    "node": 27,
+    "testing-film-kono-monolit-iso64": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
-    "testing-vintage-cameras": 3,
+    "testing-adox-hr-50-film": 3,
+    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
     "lomography-great-photos-simple-camera": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
-    "estudio-fotografico-movil": 2,
-    "los-mambo-jambo-studio": 2,
+    "preses-falses-40-anys-de-blues-barcelona-2": 2,
+    "wp-content": 2,
+    "tag": 10,
+    "incoherencias-una-pequena-historia-del-absurdo-2": 2,
+    "mike-shannon-actor-photo-book-3": 2,
+    "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
+    "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2,
+    "provant-la-pellicula-washi": 2,
+    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
     "customers": 2,
+    "novetat-books-per-actors-i-actrius": 2,
     "mabe-with-kimono": 2,
+    "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2,
     "session-irma": 2,
     "category": 2,
-    "tag": 2,
-    "testing-film-kono-monolit-iso64": 2,
     "testing-argenti-nanotomic-film": 2,
     "festival-ciutat-flamenco-barcelona-y-ole": 2,
     "incoherencias-una-pequena-historia-del-absurdo-3": 2,
     "un-bolo-con-mambo-mucho-de-mambo": 2,
     "testing-washi-film": 2,
-    "22nd-blues-festival-captured-with-traditional-photography": 2,
-    "21e-festival-de-blues-de-barcelona": 2,
-    "photographic-services": 2,
-    "testing-adox-hr-50-film": 2,
-    "cambo-sc-first-test": 2,
-    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 2,
-    "bran-new-calendar-of-9-barris-acull": 2,
-    "sessio-amb-eli": 2,
-    "worldpinholeday-diana-f": 2
+    "22nd-blues-festival-captured-with-traditional-photography": 2
   },
   "noticies_top": [
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 12
+      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "count": 15
     },
     {
-      "path": "/noticies/2026-07-festival-blues-barcelona",
-      "count": 10
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 12
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -556,6 +564,10 @@
       "count": 4
     },
     {
+      "path": "/festivals/clot-en-blues",
+      "count": 3
+    },
+    {
       "path": "/festivals/jornades-9-barris-acull",
       "count": 3
     },
@@ -567,82 +579,82 @@
   "blog_top": [
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 2
+      "count": 3
     },
     {
       "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 2
-    },
-    {
-      "path": "/2026/02/14/2026-02-14-11e-aniversari-de-la-nau-bostik",
-      "count": 1
-    },
-    {
-      "path": "/2025/02/16/2025-02-15-10e-aniversari-i-calcotada-a-la-nau-bostik",
-      "count": 1
-    },
-    {
-      "path": "/2026/05/30/2026-05-29-la-juganera-a-la-nau-bostik",
-      "count": 1
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 1
+      "count": 3
     },
     {
       "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/tag/casal-de-barri-de-prosperitat/page/2",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2014/01/06/jardins-de-mossen-costa-i-llobeta-montjuic-barcelona",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2017/04/09/homedev108-leica-m6-jupiter-35-f2-8-fomapan-200",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2016/01/10/homedev63-lc-a-120-fomapan-100",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2013/04/27/les-nits-de-capibola-blues-amadeu-casas-i-august-tharrats-xavier-maureta",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2014/07/11/festival-de-blues-de-barcelona-bandes-emergents-jam-session",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2015/01/22/7278-lc-a120-cn100",
-      "count": 1
+      "count": 2
     },
     {
       "path": "/2015/12/20/teatre-no-es-pais-para-negras-del-projecte-vaca",
+      "count": 2
+    },
+    {
+      "path": "/2012/01/28/muradine",
       "count": 1
     },
     {
-      "path": "/tag/berta-cots",
+      "path": "/2012/01/28/the-brandery-barcelona-la-moda-urbana",
       "count": 1
     },
     {
-      "path": "/?s=Metal",
+      "path": "/tag/rene-robert",
+      "count": 1
+    },
+    {
+      "path": "/2016/10/02/3206",
+      "count": 1
+    },
+    {
+      "path": "/2025/10/30/2025-10-30-castanyada-diabolica-de-la-sagrera",
+      "count": 1
+    },
+    {
+      "path": "/2024/07",
       "count": 1
     }
   ],
@@ -657,7 +669,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 628
+      "count": 631
     },
     {
       "name": "Safari",
@@ -684,7 +696,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 271
+      "count": 274
     },
     {
       "name": "iOS",
@@ -711,7 +723,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 532
+      "count": 535
     },
     {
       "name": "desktophd",
@@ -773,7 +785,7 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 12
+      "count": 13
     },
     {
       "name": "United Arab Emirates",
@@ -810,7 +822,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 344
+      "count": 381
     },
     {
       "name": "Google",
@@ -833,6 +845,11 @@
       "count": 6
     },
     {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 4
+    },
+    {
       "name": "bing.com",
       "id": "bing.com",
       "count": 3
@@ -850,11 +867,6 @@
     {
       "name": "ig",
       "id": "ig",
-      "count": 2
-    },
-    {
-      "name": "www.bing.com",
-      "id": "www.bing.com",
       "count": 2
     }
   ]
