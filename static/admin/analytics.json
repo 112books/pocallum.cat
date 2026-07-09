@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T03:33:55.492484Z",
+  "generated": "2026-07-09T07:29:20.848793Z",
   "period": {
     "start": "2025-07-09",
     "end": "2026-07-09"
@@ -669,12 +669,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 631
+      "count": 635
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 393
+      "count": 395
     },
     {
       "name": "Firefox",
@@ -696,12 +696,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 274
+      "count": 278
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 106
+      "count": 108
     },
     {
       "name": "Android",
@@ -723,7 +723,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 535
+      "count": 539
     },
     {
       "name": "desktophd",
@@ -733,7 +733,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 185
+      "count": 187
     },
     {
       "name": "tablet",
@@ -745,12 +745,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 761
+      "count": 763
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 50
+      "count": 51
     },
     {
       "name": "Singapore",
@@ -765,7 +765,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Colombia",
@@ -773,14 +773,14 @@
       "count": 18
     },
     {
-      "name": "Vietnam",
-      "id": "VN",
+      "name": "Venezuela",
+      "id": "VE",
       "count": 17
     },
     {
-      "name": "Venezuela",
-      "id": "VE",
-      "count": 16
+      "name": "Vietnam",
+      "id": "VN",
+      "count": 17
     },
     {
       "name": "Bangladesh",
