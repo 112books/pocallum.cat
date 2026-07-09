@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09T10:55:39.006135Z",
+  "generated": "2026-07-09T13:43:00.140319Z",
   "period": {
     "start": "2025-07-09",
     "end": "2026-07-09"
@@ -576,88 +576,7 @@
       "count": 3
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 3
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 3
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 2
-    },
-    {
-      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
-      "count": 2
-    },
-    {
-      "path": "/tag/casal-de-barri-de-prosperitat/page/2",
-      "count": 2
-    },
-    {
-      "path": "/2014/01/06/jardins-de-mossen-costa-i-llobeta-montjuic-barcelona",
-      "count": 2
-    },
-    {
-      "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
-      "count": 2
-    },
-    {
-      "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
-      "count": 2
-    },
-    {
-      "path": "/2017/04/09/homedev108-leica-m6-jupiter-35-f2-8-fomapan-200",
-      "count": 2
-    },
-    {
-      "path": "/2016/01/10/homedev63-lc-a-120-fomapan-100",
-      "count": 2
-    },
-    {
-      "path": "/2013/04/27/les-nits-de-capibola-blues-amadeu-casas-i-august-tharrats-xavier-maureta",
-      "count": 2
-    },
-    {
-      "path": "/2014/07/11/festival-de-blues-de-barcelona-bandes-emergents-jam-session",
-      "count": 2
-    },
-    {
-      "path": "/2015/01/22/7278-lc-a120-cn100",
-      "count": 2
-    },
-    {
-      "path": "/2015/12/20/teatre-no-es-pais-para-negras-del-projecte-vaca",
-      "count": 2
-    },
-    {
-      "path": "/2012/01/28/muradine",
-      "count": 1
-    },
-    {
-      "path": "/2012/01/28/the-brandery-barcelona-la-moda-urbana",
-      "count": 1
-    },
-    {
-      "path": "/tag/rene-robert",
-      "count": 1
-    },
-    {
-      "path": "/2016/10/02/3206",
-      "count": 1
-    },
-    {
-      "path": "/2025/10/30/2025-10-30-castanyada-diabolica-de-la-sagrera",
-      "count": 1
-    },
-    {
-      "path": "/2024/07",
-      "count": 1
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 12,
     "wizard-s2": 15,
@@ -669,7 +588,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 639
+      "count": 644
     },
     {
       "name": "Safari",
@@ -691,12 +610,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 543
+      "count": 544
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 281
+      "count": 285
     },
     {
       "name": "iOS",
@@ -723,7 +642,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 543
+      "count": 547
     },
     {
       "name": "desktophd",
@@ -738,19 +657,19 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 106
+      "count": 107
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 764
+      "count": 765
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 51
+      "count": 52
     },
     {
       "name": "Singapore",
@@ -760,12 +679,12 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 27
+      "count": 28
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Venezuela",
@@ -798,14 +717,14 @@
       "count": 9
     },
     {
-      "name": "Sweden",
-      "id": "SE",
+      "name": "Argentina",
+      "id": "AR",
       "count": 8
     },
     {
-      "name": "Argentina",
-      "id": "AR",
-      "count": 7
+      "name": "Sweden",
+      "id": "SE",
+      "count": 8
     },
     {
       "name": "Brazil",
