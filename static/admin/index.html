@@ -469,6 +469,7 @@
       <div class="kpi"><dt>Total any</dt><dd><div class="kpi-value" id="kpi-total">—</div><div class="kpi-sub" id="sub-total"></div></dd></div>
       <div class="kpi"><dt>Mitjana/dia</dt><dd><div class="kpi-value" id="kpi-pps">—</div><div class="kpi-sub">visites diàries</div></dd></div>
       <div class="kpi"><dt>Tendència 7d</dt><dd><div class="kpi-value" id="kpi-trend">—</div><div class="kpi-sub" id="sub-trend">vs 7 dies anteriors</div></dd></div>
+      <div class="kpi"><dt>Temps mitjà</dt><dd><div class="kpi-value" id="kpi-avgtime">—</div><div class="kpi-sub">al lloc, per visita</div></dd></div>
     </dl>
 
     <!-- Tabs -->
@@ -705,6 +706,7 @@ function renderAll(data) {
   setText('sub-total', fmtPeriod(p.start, p.end));
   const daysWithData = hbd.filter(d => d.count > 0).length;
   setText('kpi-pps',   daysWithData > 0 ? (total / daysWithData).toFixed(1) : '—');
+  setText('kpi-avgtime', fmtDuration(data.avg_time_on_site_seconds));
 
   const gen = data.generated
     ? new Date(data.generated).toLocaleString('ca-ES', {day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})
@@ -1300,6 +1302,12 @@ function fmtPeriod(start, end) {
   const f = s => new Date(s+'T12:00:00').toLocaleDateString('ca-ES',{day:'numeric',month:'short',year:'numeric'});
   return f(start)+' – '+f(end);
 }
+function fmtDuration(sec) {
+  if (sec === null || sec === undefined) return '—';
+  if (sec < 60) return sec + 's';
+  const m = Math.floor(sec / 60), s = sec % 60;
+  return m + 'm ' + s + 's';
+}
 /* ══ REFRESH EN VIU ══════════════════════════════════════════ */
 const GC_TOKEN_KEY = 'gc_live_token';
 
@@ -1413,6 +1421,10 @@ function processLiveData(raw, start, end) {
   const hitsList = (raw.hits && raw.hits.hits) || [];
   const byLang = {}, bySection = {}, hitsByDay = {}, hitsPages = {}, eventsData = {};
   const WIZARD_STEPS = ['wizard-s1','wizard-s2','wizard-s3','wizard-s4','wizard-sent'];
+  const ENGAGE_BUCKET_SECONDS = {
+    'engage-0-10s': 5, 'engage-10-30s': 20, 'engage-30-60s': 45,
+    'engage-1-2m': 90, 'engage-2-5m': 210, 'engage-5-10m': 450, 'engage-10m-plus': 900,
+  };
   let total = 0;
 
   hitsList.forEach(item => {
@@ -1449,6 +1461,13 @@ function processLiveData(raw, start, end) {
     .map(([path,count]) => ({ path, count }))
     .sort((a,b) => b.count - a.count).slice(0, 50);
 
+  let engageHits = 0, engageWeighted = 0;
+  Object.entries(ENGAGE_BUCKET_SECONDS).forEach(([bucket, mid]) => {
+    const c = eventsData[bucket] || 0;
+    if (c) { engageHits += c; engageWeighted += c * mid; }
+  });
+  const avgTimeOnSiteSeconds = engageHits ? Math.round(engageWeighted / engageHits) : null;
+
   return {
     generated:     new Date().toISOString(),
     period:        { start, end },
@@ -1461,6 +1480,7 @@ function processLiveData(raw, start, end) {
     noticies_top:  hitsTop.filter(h => h.path.includes('/noticies/')).slice(0, 15),
     festivals_top: hitsTop.filter(h => h.path.includes('/festivals/')).slice(0, 15),
     wizard_funnel: Object.fromEntries(WIZARD_STEPS.map(k => [k, eventsData[k] || 0])),
+    avg_time_on_site_seconds: avgTimeOnSiteSeconds,
     browsers:      normItems(raw.browsers),
     systems:       normItems(raw.systems),
     sizes:         normItems(raw.sizes),

@@ -266,6 +266,31 @@
 {{/* GoatCounter — sense cookies, GDPR */}}
 {{ with .Site.Params.goatcounterSite }}
 <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js" integrity="sha384-2UjvVpptg4JlEVgJI2PdscrjOjPcil/4F1ZvIMJ81CShQnEDSlPI+l4PfogvTLYi" crossorigin="anonymous"></script>
+<script>
+(function () {
+  var start = Date.now();
+  var sent  = false;
+  var buckets = [
+    [10, 'engage-0-10s'], [30, 'engage-10-30s'], [60, 'engage-30-60s'],
+    [120, 'engage-1-2m'], [300, 'engage-2-5m'], [600, 'engage-5-10m'],
+    [Infinity, 'engage-10m-plus']
+  ];
+  function bucketFor(sec) {
+    for (var i = 0; i < buckets.length; i++) if (sec < buckets[i][0]) return buckets[i][1];
+    return 'engage-10m-plus';
+  }
+  function send() {
+    if (sent || !window.goatcounter || typeof window.goatcounter.count !== 'function') return;
+    sent = true;
+    var b = bucketFor(Math.round((Date.now() - start) / 1000));
+    window.goatcounter.count({ path: b, title: b, event: true });
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') send();
+  });
+  addEventListener('pagehide', send);
+})();
+</script>
 {{ end }}
 
 {{/* Google Analytics 4 — cross-domain amb blog.pocallum.cat */}}

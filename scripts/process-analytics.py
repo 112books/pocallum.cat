@@ -71,6 +71,16 @@ def main():
 
     WIZARD_STEPS = ['wizard-s1', 'wizard-s2', 'wizard-s3', 'wizard-s4', 'wizard-sent']
 
+    ENGAGE_BUCKET_SECONDS = {
+        'engage-0-10s':     5,
+        'engage-10-30s':    20,
+        'engage-30-60s':    45,
+        'engage-1-2m':      90,
+        'engage-2-5m':      210,
+        'engage-5-10m':     450,
+        'engage-10m-plus':  900,
+    }
+
     for path_item in hits_list:
         path     = path_item.get("path", "")
         is_event = path_item.get("event", False)
@@ -137,6 +147,15 @@ def main():
 
     wizard_funnel = {k: events_data.get(k, 0) for k in WIZARD_STEPS}
 
+    engage_hits = 0
+    engage_weighted = 0
+    for bucket, mid in ENGAGE_BUCKET_SECONDS.items():
+        c = events_data.get(bucket, 0)
+        if c:
+            engage_hits     += c
+            engage_weighted += c * mid
+    avg_time_on_site_seconds = round(engage_weighted / engage_hits) if engage_hits else None
+
     total_data   = safe_get(raw, "total_data") or {}
     total_unique = safe_get(total_data, "total_unique") or 0
 
@@ -159,6 +178,7 @@ def main():
         "festivals_top": festivals_top,
         "blog_top":      blog_top,
         "wizard_funnel": wizard_funnel,
+        "avg_time_on_site_seconds": avg_time_on_site_seconds,
         "browsers":     norm_items(browsers_raw),
         "systems":      norm_items(systems_raw),
         "sizes":        norm_items(sizes_raw),
