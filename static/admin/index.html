@@ -41,6 +41,7 @@
     gcUrl:        'https://pocallum.goatcounter.com',
     pwHash:       'ec689a6b20231cab576cd7604ab478777e3e23bd4e4822dbc841779afa57fbbf',
     dataUrl:      'analytics.json',
+    rawUrl:       'https://raw.githubusercontent.com/112books/pocallum.cat/main/static/admin/analytics.json',
     sectionNames: {
       "inici":     "Inici",
       "galeria":   "Galeria",
@@ -653,9 +654,17 @@ document.querySelectorAll('.group-btn').forEach(btn => {
 async function loadData() {
   setBanner('loading', 'carregant estadístiques…');
   try {
-    const r = await fetch(CFG.dataUrl + '?t=' + Date.now());
-    if (!r.ok) throw new Error('No s\'ha pogut carregar analytics.json (codi ' + r.status + ')');
-    const data = await r.json();
+    let data = null;
+    try {
+      const r = await fetch(CFG.rawUrl + '?t=' + Date.now());
+      if (r.ok) data = await r.json();
+    } catch (e) { /* raw.githubusercontent.com no disponible — cau al fitxer local */ }
+
+    if (!data || !data.generated) {
+      const r = await fetch(CFG.dataUrl + '?t=' + Date.now());
+      if (!r.ok) throw new Error('No s\'ha pogut carregar analytics.json (codi ' + r.status + ')');
+      data = await r.json();
+    }
     if (!data || !data.generated) throw new Error('analytics.json buit — el workflow encara no ha corregut');
     globalData = data;
     clearBanner();
