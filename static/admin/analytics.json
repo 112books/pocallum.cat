@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-09T23:58:02.255790Z",
+  "generated": "2026-07-10T02:48:21.685740Z",
   "period": {
-    "start": "2025-07-09",
-    "end": "2026-07-09"
+    "start": "2025-07-10",
+    "end": "2026-07-10"
   },
-  "total": 822,
+  "total": 839,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-06-20",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-06-21",
@@ -221,11 +221,11 @@
     },
     {
       "date": "2026-07-01",
-      "count": 3
+      "count": 2
     },
     {
       "date": "2026-07-02",
-      "count": 26
+      "count": 22
     },
     {
       "date": "2026-07-03",
@@ -233,33 +233,37 @@
     },
     {
       "date": "2026-07-04",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-07-05",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-07-06",
-      "count": 42
+      "count": 40
     },
     {
       "date": "2026-07-07",
-      "count": 18
+      "count": 17
     },
     {
       "date": "2026-07-08",
-      "count": 50
+      "count": 51
     },
     {
       "date": "2026-07-09",
-      "count": 6
+      "count": 24
+    },
+    {
+      "date": "2026-07-10",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 225
+      "count": 231
     },
     {
       "path": "/galeria",
@@ -286,12 +290,12 @@
       "count": 26
     },
     {
-      "path": "/qui-som",
-      "count": 17
+      "path": "/noticies/2026-07-festival-blues-barcelona",
+      "count": 19
     },
     {
-      "path": "/noticies/2026-07-festival-blues-barcelona",
-      "count": 15
+      "path": "/qui-som",
+      "count": 17
     },
     {
       "path": "/obra",
@@ -330,16 +334,16 @@
       "count": 7
     },
     {
+      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "count": 6
+    },
+    {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 6
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 6
-    },
-    {
-      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
-      "count": 5
     },
     {
       "path": "/legal/privacitat",
@@ -402,11 +406,23 @@
       "count": 3
     },
     {
+      "path": "/en/node/8/track?page=8",
+      "count": 3
+    },
+    {
       "path": "/en/los-mambo-jambo-studio",
       "count": 3
     },
     {
+      "path": "/novetat-books-per-actors-i-actrius",
+      "count": 3
+    },
+    {
       "path": "/ca/node/16/track?order=Usuari&page=6&sort=asc",
+      "count": 3
+    },
+    {
+      "path": "/en/category/sense-categoria-en",
       "count": 3
     },
     {
@@ -415,6 +431,14 @@
     },
     {
       "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
+      "count": 3
+    },
+    {
+      "path": "/en/incoherencias-una-pequena-historia-del-absurdo-3",
+      "count": 3
+    },
+    {
+      "path": "/es/servicios-fotograficos/servicios-y-tarifas",
       "count": 3
     },
     {
@@ -434,69 +458,54 @@
       "count": 3
     },
     {
-      "path": "/en/from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress",
-      "count": 3
-    },
-    {
-      "path": "/en/lomography-great-photos-simple-camera",
-      "count": 3
-    },
-    {
-      "path": "/serveis/concerts",
-      "count": 3
-    },
-    {
-      "path": "/festivals/jornades-9-barris-acull",
-      "count": 3
-    },
-    {
-      "path": "/festivals/picnic-de-blues",
-      "count": 3
-    },
-    {
-      "path": "/on-veure-exposicions-de-fotografia-a-barcelona",
+      "path": "/en/cambo-sc-first-test",
       "count": 3
     }
   ],
   "by_lang": {
     "ca": 27,
-    "en": 91,
-    "es": 40
+    "en": 96,
+    "es": 43
   },
   "by_section": {
-    "inici": 238,
+    "inici": 244,
     "galeria": 79,
     "festivals": 103,
     "serveis": 62,
-    "noticies": 70,
+    "noticies": 74,
     "blog": 32,
     "contacte": 33,
     "qui-som": 17,
     "obra": 13,
     "cerca": 10,
-    "serveis-fotografics-2": 10,
-    "vijazz-2025-the-jazz-that-brought-me-back-home": 5,
+    "serveis-fotografics-2": 8,
+    "vijazz-2025-the-jazz-that-brought-me-back-home": 6,
     "legal": 7,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
-    "servicios-fotograficos": 7,
+    "servicios-fotograficos": 8,
     "testing-vintage-cameras": 4,
-    "content": 12,
+    "content": 8,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "estudio-fotografico-movil": 3,
+    "node": 28,
     "los-mambo-jambo-studio": 3,
-    "node": 27,
+    "novetat-books-per-actors-i-actrius": 3,
+    "category": 3,
     "testing-film-kono-monolit-iso64": 3,
+    "incoherencias-una-pequena-historia-del-absurdo-3": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "testing-adox-hr-50-film": 3,
+    "cambo-sc-first-test": 3,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
     "lomography-great-photos-simple-camera": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "2025": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
-    "tag": 10,
+    "tag": 12,
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
@@ -504,22 +513,19 @@
     "provant-la-pellicula-washi": 2,
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
     "customers": 2,
-    "novetat-books-per-actors-i-actrius": 2,
+    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2,
+    "session-with-irene-ortola": 2,
     "mabe-with-kimono": 2,
     "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2,
     "session-irma": 2,
-    "category": 2,
     "testing-argenti-nanotomic-film": 2,
     "festival-ciutat-flamenco-barcelona-y-ole": 2,
-    "incoherencias-una-pequena-historia-del-absurdo-3": 2,
-    "un-bolo-con-mambo-mucho-de-mambo": 2,
-    "testing-washi-film": 2,
-    "22nd-blues-festival-captured-with-traditional-photography": 2
+    "un-bolo-con-mambo-mucho-de-mambo": 2
   },
   "noticies_top": [
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
-      "count": 15
+      "count": 19
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -566,24 +572,20 @@
     {
       "path": "/festivals/clot-en-blues",
       "count": 3
-    },
-    {
-      "path": "/festivals/jornades-9-barris-acull",
-      "count": 3
-    },
-    {
-      "path": "/festivals/picnic-de-blues",
-      "count": 3
     }
   ],
   "blog_top": [
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 4
+    },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
       "count": 3
     },
     {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 3
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 2
     },
     {
       "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
@@ -634,6 +636,14 @@
       "count": 2
     },
     {
+      "path": "/politica-de-cookies",
+      "count": 1
+    },
+    {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 1
+    },
+    {
       "path": "/2012/01/28/muradine",
       "count": 1
     },
@@ -643,18 +653,6 @@
     },
     {
       "path": "/tag/rene-robert",
-      "count": 1
-    },
-    {
-      "path": "/2016/10/02/3206",
-      "count": 1
-    },
-    {
-      "path": "/2025/10/30/2025-10-30-castanyada-diabolica-de-la-sagrera",
-      "count": 1
-    },
-    {
-      "path": "/2024/07",
       "count": 1
     }
   ],
@@ -669,7 +667,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 650
+      "count": 651
     },
     {
       "name": "Safari",
@@ -679,7 +677,7 @@
     {
       "name": "Firefox",
       "id": "Firefox",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Desconegut",
@@ -711,7 +709,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 51
+      "count": 53
     },
     {
       "name": "Chrome OS",
@@ -723,7 +721,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 552
+      "count": 554
     },
     {
       "name": "desktophd",
@@ -750,7 +748,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 52
+      "count": 53
     },
     {
       "name": "Singapore",
@@ -822,12 +820,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 381
+      "count": 404
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 72
+      "count": 73
     },
     {
       "name": "blog.pocallum.cat",
