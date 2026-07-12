@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-11T23:43:45.896957Z",
+  "generated": "2026-07-12T01:49:00.314011Z",
   "period": {
-    "start": "2025-07-11",
-    "end": "2026-07-11"
+    "start": "2025-07-12",
+    "end": "2026-07-12"
   },
-  "total": 843,
+  "total": 847,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-06-30",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-07-01",
@@ -225,11 +225,11 @@
     },
     {
       "date": "2026-07-02",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-07-03",
-      "count": 24
+      "count": 22
     },
     {
       "date": "2026-07-04",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 40
+      "count": 38
     },
     {
       "date": "2026-07-07",
@@ -253,17 +253,21 @@
     },
     {
       "date": "2026-07-09",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-07-10",
       "count": 11
+    },
+    {
+      "date": "2026-07-11",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 233
+      "count": 235
     },
     {
       "path": "/galeria",
@@ -406,6 +410,10 @@
       "count": 4
     },
     {
+      "path": "/es/2025/08",
+      "count": 3
+    },
+    {
       "path": "/es/estudio-fotografico-movil",
       "count": 3
     },
@@ -450,25 +458,21 @@
       "count": 3
     },
     {
+      "path": "/ca/node/16/track?order=Hora&page=2&sort=asc",
+      "count": 3
+    },
+    {
       "path": "/en/content/developing-8x10-plates",
-      "count": 3
-    },
-    {
-      "path": "/en/gypsy-wedding-bon-pastor-barcelona",
-      "count": 3
-    },
-    {
-      "path": "/en/testing-adox-hr-50-film",
       "count": 3
     }
   ],
   "by_lang": {
-    "ca": 27,
+    "ca": 28,
     "en": 98,
-    "es": 39
+    "es": 40
   },
   "by_section": {
-    "inici": 246,
+    "inici": 248,
     "galeria": 80,
     "festivals": 103,
     "serveis": 62,
@@ -483,11 +487,12 @@
     "legal": 7,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
-    "node": 27,
+    "node": 28,
     "testing-vintage-cameras": 4,
     "content": 11,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
+    "2025": 5,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "novetat-books-per-actors-i-actrius": 3,
@@ -502,7 +507,6 @@
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
-    "2025": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
     "tag": 12,
@@ -517,8 +521,7 @@
     "session-with-irene-ortola": 2,
     "mabe-with-kimono": 2,
     "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2,
-    "session-irma": 2,
-    "testing-argenti-nanotomic-film": 2
+    "session-irma": 2
   },
   "noticies_top": [
     {
@@ -575,10 +578,18 @@
   "blog_top": [
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 7
+    },
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
       "count": 6
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 5
+    },
+    {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
       "count": 4
     },
     {
@@ -586,16 +597,12 @@
       "count": 4
     },
     {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
       "count": 3
     },
     {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 2
+      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
+      "count": 3
     },
     {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
@@ -642,15 +649,11 @@
       "count": 2
     },
     {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
+      "path": "/2021/03/28/sandra-sas",
       "count": 1
     },
     {
-      "path": "/2016/12/13/sitges",
-      "count": 1
-    },
-    {
-      "path": "/2013/03/27/self-portrait-2",
+      "path": "/2011/09/26",
       "count": 1
     }
   ],
@@ -819,7 +822,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 423
+      "count": 429
     },
     {
       "name": "Google",
