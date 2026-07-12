@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12T16:46:56.960959Z",
+  "generated": "2026-07-12T17:52:05.764677Z",
   "period": {
     "start": "2025-07-12",
     "end": "2026-07-12"
@@ -575,7 +575,88 @@
       "count": 3
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 7
+    },
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 6
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 5
+    },
+    {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 4
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 4
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 3
+    },
+    {
+      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
+      "count": 3
+    },
+    {
+      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
+      "count": 2
+    },
+    {
+      "path": "/tag/casal-de-barri-de-prosperitat/page/2",
+      "count": 2
+    },
+    {
+      "path": "/2014/01/06/jardins-de-mossen-costa-i-llobeta-montjuic-barcelona",
+      "count": 2
+    },
+    {
+      "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
+      "count": 2
+    },
+    {
+      "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
+      "count": 2
+    },
+    {
+      "path": "/2017/04/09/homedev108-leica-m6-jupiter-35-f2-8-fomapan-200",
+      "count": 2
+    },
+    {
+      "path": "/2016/01/10/homedev63-lc-a-120-fomapan-100",
+      "count": 2
+    },
+    {
+      "path": "/2013/04/27/les-nits-de-capibola-blues-amadeu-casas-i-august-tharrats-xavier-maureta",
+      "count": 2
+    },
+    {
+      "path": "/2014/07/11/festival-de-blues-de-barcelona-bandes-emergents-jam-session",
+      "count": 2
+    },
+    {
+      "path": "/2015/01/22/7278-lc-a120-cn100",
+      "count": 2
+    },
+    {
+      "path": "/2015/12/20/teatre-no-es-pais-para-negras-del-projecte-vaca",
+      "count": 2
+    },
+    {
+      "path": "/2021/03/28/sandra-sas",
+      "count": 1
+    },
+    {
+      "path": "/2011/09/26",
+      "count": 1
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 14,
     "wizard-s2": 15,
@@ -593,7 +674,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 407
+      "count": 410
     },
     {
       "name": "Firefox",
@@ -620,7 +701,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 114
+      "count": 117
     },
     {
       "name": "Android",
@@ -652,7 +733,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 200
+      "count": 203
     },
     {
       "name": "tablet",
@@ -664,7 +745,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 796
+      "count": 799
     },
     {
       "name": "United States",
