@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-13T23:43:13.712442Z",
+  "generated": "2026-07-14T01:28:26.596542Z",
   "period": {
-    "start": "2025-07-13",
-    "end": "2026-07-13"
+    "start": "2025-07-14",
+    "end": "2026-07-14"
   },
-  "total": 868,
+  "total": 884,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -229,11 +229,11 @@
     },
     {
       "date": "2026-07-03",
-      "count": 19
+      "count": 18
     },
     {
       "date": "2026-07-04",
-      "count": 21
+      "count": 18
     },
     {
       "date": "2026-07-05",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 39
+      "count": 38
     },
     {
       "date": "2026-07-07",
@@ -249,11 +249,11 @@
     },
     {
       "date": "2026-07-08",
-      "count": 50
+      "count": 49
     },
     {
       "date": "2026-07-09",
-      "count": 25
+      "count": 24
     },
     {
       "date": "2026-07-10",
@@ -265,24 +265,32 @@
     },
     {
       "date": "2026-07-12",
-      "count": 22
+      "count": 23
+    },
+    {
+      "date": "2026-07-13",
+      "count": 21
+    },
+    {
+      "date": "2026-07-14",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 241
+      "count": 244
     },
     {
       "path": "/galeria",
-      "count": 80
-    },
-    {
-      "path": "/festivals",
-      "count": 46
+      "count": 82
     },
     {
       "path": "/serveis",
+      "count": 47
+    },
+    {
+      "path": "/festivals",
       "count": 46
     },
     {
@@ -303,11 +311,11 @@
     },
     {
       "path": "/qui-som",
-      "count": 17
+      "count": 18
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/obra",
@@ -322,6 +330,10 @@
       "count": 10
     },
     {
+      "path": "/serveis/books-per-actors",
+      "count": 9
+    },
+    {
       "path": "/festivals/calella-harmonica-festival",
       "count": 9
     },
@@ -330,12 +342,16 @@
       "count": 9
     },
     {
-      "path": "/serveis/books-per-actors",
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
       "count": 8
     },
     {
-      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
-      "count": 8
+      "path": "/en/node/191/track?page=2%60",
+      "count": 7
+    },
+    {
+      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "count": 7
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -346,7 +362,7 @@
       "count": 7
     },
     {
-      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "path": "/serveis/books-artistics",
       "count": 6
     },
     {
@@ -359,10 +375,6 @@
     },
     {
       "path": "/legal/privacitat",
-      "count": 5
-    },
-    {
-      "path": "/serveis/books-artistics",
       "count": 5
     },
     {
@@ -386,7 +398,15 @@
       "count": 5
     },
     {
+      "path": "/es/2025/08",
+      "count": 4
+    },
+    {
       "path": "/en/node/191/track?page=2",
+      "count": 4
+    },
+    {
+      "path": "/en/testing-adox-hr-50-film",
       "count": 4
     },
     {
@@ -412,10 +432,6 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
-    },
-    {
-      "path": "/es/2025/08",
-      "count": 3
     },
     {
       "path": "/es/estudio-fotografico-movil",
@@ -460,43 +476,36 @@
     {
       "path": "/en/incoherencias-una-pequena-historia-del-absurdo-3",
       "count": 3
-    },
-    {
-      "path": "/es/servicios-fotograficos/servicios-y-tarifas",
-      "count": 3
-    },
-    {
-      "path": "/festivals/clot-en-blues",
-      "count": 3
     }
   ],
   "by_lang": {
     "ca": 29,
-    "en": 104,
-    "es": 36
+    "en": 109,
+    "es": 37
   },
   "by_section": {
-    "inici": 254,
-    "galeria": 83,
+    "inici": 257,
+    "galeria": 85,
+    "serveis": 65,
     "festivals": 103,
-    "serveis": 62,
     "blog": 35,
-    "noticies": 80,
+    "noticies": 81,
     "contacte": 34,
-    "qui-som": 17,
+    "qui-som": 18,
     "obra": 13,
     "cerca": 10,
     "serveis-fotografics-2": 8,
-    "vijazz-2025-the-jazz-that-brought-me-back-home": 6,
+    "node": 35,
+    "vijazz-2025-the-jazz-that-brought-me-back-home": 7,
     "testing-vintage-cameras": 5,
     "legal": 7,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
-    "node": 30,
+    "2025": 6,
+    "testing-adox-hr-50-film": 4,
     "content": 12,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
-    "2025": 5,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "novetat-books-per-actors-i-actrius": 3,
@@ -504,7 +513,6 @@
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
-    "testing-adox-hr-50-film": 3,
     "cambo-sc-first-test": 3,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
     "lomography-great-photos-simple-camera": 3,
@@ -512,10 +520,11 @@
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "contact": 2,
     "photographic-services": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
-    "tag": 8,
+    "tag": 4,
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
@@ -524,10 +533,10 @@
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
     "customers": 2,
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2,
+    "french-mirinda": 2,
     "session-with-irene-ortola": 2,
     "mabe-with-kimono": 2,
-    "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2,
-    "session-irma": 2
+    "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2
   },
   "noticies_top": [
     {
@@ -536,7 +545,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -575,24 +584,24 @@
     {
       "path": "/festivals/vijazz",
       "count": 4
-    },
-    {
-      "path": "/festivals/clot-en-blues",
-      "count": 3
     }
   ],
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 40
+      "count": 51
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 7
+      "count": 8
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 6
+      "count": 7
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 5
     },
     {
       "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
@@ -600,10 +609,6 @@
     },
     {
       "path": "/2012/01/28/prospe-beach-2010",
-      "count": 4
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
       "count": 4
     },
     {
@@ -670,12 +675,12 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 8,
+  "avg_time_on_site_seconds": 12,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 715
+      "count": 716
     },
     {
       "name": "Safari",
@@ -707,7 +712,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 327
+      "count": 328
     },
     {
       "name": "iOS",
@@ -734,7 +739,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 616
+      "count": 617
     },
     {
       "name": "desktophd",
@@ -776,7 +781,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Venezuela",
@@ -833,7 +838,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 445
+      "count": 464
     },
     {
       "name": "Google",
@@ -861,14 +866,14 @@
       "count": 6
     },
     {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
+      "name": "bing.com",
+      "id": "bing.com",
       "count": 4
     },
     {
-      "name": "bing.com",
-      "id": "bing.com",
-      "count": 3
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 4
     },
     {
       "name": "Yandex",
