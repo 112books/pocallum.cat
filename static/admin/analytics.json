@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-14T23:42:32.650532Z",
+  "generated": "2026-07-15T01:24:56.812363Z",
   "period": {
-    "start": "2025-07-14",
-    "end": "2026-07-14"
+    "start": "2025-07-15",
+    "end": "2026-07-15"
   },
-  "total": 884,
+  "total": 905,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -233,7 +233,7 @@
     },
     {
       "date": "2026-07-04",
-      "count": 18
+      "count": 16
     },
     {
       "date": "2026-07-05",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 38
+      "count": 37
     },
     {
       "date": "2026-07-07",
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-07-10",
@@ -273,53 +273,53 @@
     },
     {
       "date": "2026-07-14",
-      "count": 1
+      "count": 24
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 244
+      "count": 247
     },
     {
       "path": "/galeria",
-      "count": 82
-    },
-    {
-      "path": "/serveis",
-      "count": 47
+      "count": 83
     },
     {
       "path": "/festivals",
-      "count": 46
+      "count": 48
+    },
+    {
+      "path": "/serveis",
+      "count": 48
     },
     {
       "path": "/blog",
-      "count": 35
+      "count": 37
     },
     {
       "path": "/noticies",
-      "count": 34
+      "count": 36
     },
     {
       "path": "/contacte",
-      "count": 27
+      "count": 28
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/qui-som",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 15
+      "count": 18
     },
     {
       "path": "/obra",
-      "count": 13
+      "count": 14
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -327,7 +327,7 @@
     },
     {
       "path": "/cerca",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/serveis/books-per-actors",
@@ -342,12 +342,12 @@
       "count": 9
     },
     {
-      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "path": "/en/node/191/track?page=2%60",
       "count": 8
     },
     {
-      "path": "/en/node/191/track?page=2%60",
-      "count": 7
+      "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
+      "count": 8
     },
     {
       "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
@@ -402,6 +402,10 @@
       "count": 4
     },
     {
+      "path": "/novetat-books-per-actors-i-actrius",
+      "count": 4
+    },
+    {
       "path": "/en/node/191/track?page=2",
       "count": 4
     },
@@ -446,10 +450,6 @@
       "count": 3
     },
     {
-      "path": "/novetat-books-per-actors-i-actrius",
-      "count": 3
-    },
-    {
       "path": "/en/node/156/track?page=6",
       "count": 3
     },
@@ -480,35 +480,35 @@
   ],
   "by_lang": {
     "ca": 29,
-    "en": 109,
+    "en": 112,
     "es": 37
   },
   "by_section": {
-    "inici": 257,
-    "galeria": 85,
-    "serveis": 65,
-    "festivals": 103,
-    "blog": 35,
-    "noticies": 81,
-    "contacte": 34,
-    "qui-som": 18,
-    "obra": 13,
-    "cerca": 10,
+    "inici": 260,
+    "galeria": 86,
+    "festivals": 105,
+    "serveis": 66,
+    "blog": 37,
+    "noticies": 87,
+    "contacte": 35,
+    "qui-som": 19,
+    "obra": 14,
+    "cerca": 11,
+    "node": 34,
     "serveis-fotografics-2": 8,
-    "node": 35,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 7,
     "testing-vintage-cameras": 5,
     "legal": 7,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
     "2025": 6,
+    "novetat-books-per-actors-i-actrius": 4,
     "testing-adox-hr-50-film": 4,
-    "content": 12,
+    "content": 16,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
-    "novetat-books-per-actors-i-actrius": 3,
     "category": 3,
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
@@ -535,17 +535,16 @@
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2,
     "french-mirinda": 2,
     "session-with-irene-ortola": 2,
-    "mabe-with-kimono": 2,
-    "vanesa-aibar-amb-la-collaboracio-destampa-al-festival-ciutat-flamenco": 2
+    "mabe-with-kimono": 2
   },
   "noticies_top": [
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 15
+      "count": 18
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -589,7 +588,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 51
+      "count": 59
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -604,6 +603,10 @@
       "count": 5
     },
     {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 5
+    },
+    {
       "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
       "count": 5
     },
@@ -612,12 +615,8 @@
       "count": 4
     },
     {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 4
-    },
-    {
       "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 3
+      "count": 4
     },
     {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
@@ -637,6 +636,10 @@
     },
     {
       "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
+      "count": 2
+    },
+    {
+      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
       "count": 2
     },
     {
@@ -661,10 +664,6 @@
     },
     {
       "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
-      "count": 2
-    },
-    {
-      "path": "/2017/04/09/homedev108-leica-m6-jupiter-35-f2-8-fomapan-200",
       "count": 2
     }
   ],
@@ -838,12 +837,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 464
+      "count": 476
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 77
+      "count": 79
     },
     {
       "name": "blog.pocallum.cat",
