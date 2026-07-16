@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-15T23:51:14.934735Z",
+  "generated": "2026-07-16T01:45:16.421429Z",
   "period": {
-    "start": "2025-07-15",
-    "end": "2026-07-15"
+    "start": "2025-07-16",
+    "end": "2026-07-16"
   },
-  "total": 905,
+  "total": 911,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -229,7 +229,7 @@
     },
     {
       "date": "2026-07-03",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-07-04",
@@ -237,11 +237,11 @@
     },
     {
       "date": "2026-07-05",
-      "count": 25
+      "count": 23
     },
     {
       "date": "2026-07-06",
-      "count": 37
+      "count": 36
     },
     {
       "date": "2026-07-07",
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 25
+      "count": 24
     },
     {
       "date": "2026-07-10",
@@ -265,21 +265,25 @@
     },
     {
       "date": "2026-07-12",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-07-13",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-07-14",
       "count": 24
+    },
+    {
+      "date": "2026-07-15",
+      "count": 9
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 247
+      "count": 251
     },
     {
       "path": "/galeria",
@@ -295,7 +299,7 @@
     },
     {
       "path": "/blog",
-      "count": 37
+      "count": 38
     },
     {
       "path": "/noticies",
@@ -310,12 +314,12 @@
       "count": 21
     },
     {
-      "path": "/qui-som",
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
       "count": 19
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 18
+      "path": "/qui-som",
+      "count": 19
     },
     {
       "path": "/obra",
@@ -438,6 +442,10 @@
       "count": 4
     },
     {
+      "path": "/en/content/20%C3%A8-festival-de-blues-de-barcelona",
+      "count": 3
+    },
+    {
       "path": "/es/estudio-fotografico-movil",
       "count": 3
     },
@@ -472,24 +480,20 @@
     {
       "path": "/ca/node/7/track?order=Refer%C3%A8ncia&page=14&sort=asc",
       "count": 3
-    },
-    {
-      "path": "/en/incoherencias-una-pequena-historia-del-absurdo-3",
-      "count": 3
     }
   ],
   "by_lang": {
     "ca": 29,
-    "en": 112,
-    "es": 37
+    "en": 109,
+    "es": 40
   },
   "by_section": {
-    "inici": 260,
+    "inici": 264,
     "galeria": 86,
     "festivals": 105,
     "serveis": 66,
-    "blog": 37,
-    "noticies": 87,
+    "blog": 38,
+    "noticies": 88,
     "contacte": 35,
     "qui-som": 19,
     "obra": 14,
@@ -504,7 +508,7 @@
     "2025": 6,
     "novetat-books-per-actors-i-actrius": 4,
     "testing-adox-hr-50-film": 4,
-    "content": 16,
+    "content": 17,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "estudio-fotografico-movil": 3,
@@ -512,6 +516,7 @@
     "category": 3,
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
+    "un-bolo-con-mambo-mucho-de-mambo": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "cambo-sc-first-test": 3,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
@@ -520,6 +525,7 @@
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "new-books-for-actors-and-actresses": 2,
     "contact": 2,
     "photographic-services": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
@@ -532,10 +538,7 @@
     "provant-la-pellicula-washi": 2,
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
     "customers": 2,
-    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2,
-    "french-mirinda": 2,
-    "session-with-irene-ortola": 2,
-    "mabe-with-kimono": 2
+    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2
   },
   "noticies_top": [
     {
@@ -544,7 +547,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -588,7 +591,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 59
+      "count": 61
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -597,6 +600,10 @@
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 7
+    },
+    {
+      "path": "/2012/01/28/prospe-beach-2010",
+      "count": 5
     },
     {
       "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
@@ -609,10 +616,6 @@
     {
       "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
       "count": 5
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 4
     },
     {
       "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
@@ -674,7 +677,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 12,
+  "avg_time_on_site_seconds": 16,
   "browsers": [
     {
       "name": "Chrome",
@@ -837,7 +840,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 476
+      "count": 485
     },
     {
       "name": "Google",
@@ -847,17 +850,17 @@
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
-      "count": 14
+      "count": 16
+    },
+    {
+      "name": "Blog",
+      "id": "Blog",
+      "count": 7
     },
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
       "count": 7
-    },
-    {
-      "name": "Blog",
-      "id": "Blog",
-      "count": 6
     },
     {
       "name": "pocallum-cat.translate.goog",
