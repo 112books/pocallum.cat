@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T19:57:16.773039Z",
+  "generated": "2026-07-16T20:52:40.974860Z",
   "period": {
     "start": "2025-07-16",
     "end": "2026-07-16"
@@ -588,88 +588,7 @@
       "count": 4
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 61
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 7
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 5
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 5
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 5
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 5
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 4
-    },
-    {
-      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
-      "count": 3
-    },
-    {
-      "path": "/2011/06/29/la-placa-angel-pestanya-ja-es-prepara-per-pro",
-      "count": 2
-    },
-    {
-      "path": "/2024/11/16/2024-11-15-sant-xibeco-el-persianas-los-influencers-muertos",
-      "count": 2
-    },
-    {
-      "path": "/2023/11/18/2023-11-18-sant-xibeco-i-santa-quinta-2023",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
-      "count": 2
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/07/2026-06-06-festes-de-prosperitat-segon-dissabte-agua-bendita-orquestes-angel-pestana",
-      "count": 2
-    },
-    {
-      "path": "/politica-de-cookies",
-      "count": 2
-    },
-    {
-      "path": "/tag/casal-de-barri-de-prosperitat/page/2",
-      "count": 2
-    },
-    {
-      "path": "/2014/01/06/jardins-de-mossen-costa-i-llobeta-montjuic-barcelona",
-      "count": 2
-    },
-    {
-      "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
-      "count": 2
-    },
-    {
-      "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
-      "count": 2
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 14,
     "wizard-s2": 15,
