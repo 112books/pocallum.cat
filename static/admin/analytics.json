@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-16T23:50:41.278755Z",
+  "generated": "2026-07-17T01:48:49.565716Z",
   "period": {
-    "start": "2025-07-16",
-    "end": "2026-07-16"
+    "start": "2025-07-17",
+    "end": "2026-07-17"
   },
-  "total": 911,
+  "total": 917,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -205,7 +205,7 @@
     },
     {
       "date": "2026-06-27",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-06-28",
@@ -237,7 +237,7 @@
     },
     {
       "date": "2026-07-05",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-07-06",
@@ -245,7 +245,7 @@
     },
     {
       "date": "2026-07-07",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-07-08",
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 24
+      "count": 23
     },
     {
       "date": "2026-07-10",
@@ -278,12 +278,16 @@
     {
       "date": "2026-07-15",
       "count": 9
+    },
+    {
+      "date": "2026-07-16",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 251
+      "count": 255
     },
     {
       "path": "/galeria",
@@ -315,7 +319,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/qui-som",
@@ -484,16 +488,16 @@
   ],
   "by_lang": {
     "ca": 29,
-    "en": 109,
+    "en": 110,
     "es": 40
   },
   "by_section": {
-    "inici": 264,
+    "inici": 268,
     "galeria": 86,
     "festivals": 105,
     "serveis": 66,
     "blog": 38,
-    "noticies": 88,
+    "noticies": 89,
     "contacte": 35,
     "qui-som": 19,
     "obra": 14,
@@ -517,6 +521,7 @@
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
     "un-bolo-con-mambo-mucho-de-mambo": 3,
+    "photographic-services": 5,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "cambo-sc-first-test": 3,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
@@ -527,7 +532,6 @@
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "new-books-for-actors-and-actresses": 2,
     "contact": 2,
-    "photographic-services": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
     "tag": 4,
@@ -537,8 +541,7 @@
     "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2,
     "provant-la-pellicula-washi": 2,
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
-    "customers": 2,
-    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 2
+    "customers": 2
   },
   "noticies_top": [
     {
@@ -547,7 +550,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -591,7 +594,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 61
+      "count": 63
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -671,7 +674,7 @@
     }
   ],
   "wizard_funnel": {
-    "wizard-s1": 14,
+    "wizard-s1": 15,
     "wizard-s2": 15,
     "wizard-s3": 5,
     "wizard-s4": 4,
@@ -840,7 +843,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 485
+      "count": 498
     },
     {
       "name": "Google",
