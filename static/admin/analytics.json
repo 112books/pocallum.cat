@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18T18:47:14.506428Z",
+  "generated": "2026-07-18T19:58:57.279714Z",
   "period": {
     "start": "2025-07-18",
     "end": "2026-07-18"
@@ -694,7 +694,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 767
+      "count": 768
     },
     {
       "name": "Safari",
@@ -726,7 +726,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 356
+      "count": 357
     },
     {
       "name": "iOS",
@@ -753,7 +753,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 658
+      "count": 659
     },
     {
       "name": "desktophd",
