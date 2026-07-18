@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-17T23:42:54.618783Z",
+  "generated": "2026-07-18T01:29:05.923865Z",
   "period": {
-    "start": "2025-07-17",
-    "end": "2026-07-17"
+    "start": "2025-07-18",
+    "end": "2026-07-18"
   },
-  "total": 917,
+  "total": 926,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -241,19 +241,19 @@
     },
     {
       "date": "2026-07-06",
-      "count": 36
+      "count": 34
     },
     {
       "date": "2026-07-07",
-      "count": 17
+      "count": 16
     },
     {
       "date": "2026-07-08",
-      "count": 49
+      "count": 46
     },
     {
       "date": "2026-07-09",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-07-10",
@@ -261,7 +261,7 @@
     },
     {
       "date": "2026-07-11",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-07-12",
@@ -269,7 +269,7 @@
     },
     {
       "date": "2026-07-13",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-07-14",
@@ -282,28 +282,36 @@
     {
       "date": "2026-07-16",
       "count": 6
+    },
+    {
+      "date": "2026-07-17",
+      "count": 7
+    },
+    {
+      "date": "2026-07-18",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 255
+      "count": 257
     },
     {
       "path": "/galeria",
-      "count": 83
+      "count": 85
+    },
+    {
+      "path": "/serveis",
+      "count": 49
     },
     {
       "path": "/festivals",
       "count": 48
     },
     {
-      "path": "/serveis",
-      "count": 48
-    },
-    {
       "path": "/blog",
-      "count": 38
+      "count": 39
     },
     {
       "path": "/noticies",
@@ -323,7 +331,7 @@
     },
     {
       "path": "/qui-som",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/obra",
@@ -335,7 +343,7 @@
     },
     {
       "path": "/cerca",
-      "count": 11
+      "count": 12
     },
     {
       "path": "/serveis/books-per-actors",
@@ -462,6 +470,10 @@
       "count": 3
     },
     {
+      "path": "/en/19th-barcelona-blues-festival-2021-tribute-amadeu-cases",
+      "count": 3
+    },
+    {
       "path": "/en/node/156/track?page=6",
       "count": 3
     },
@@ -480,29 +492,25 @@
     {
       "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
       "count": 3
-    },
-    {
-      "path": "/ca/node/7/track?order=Refer%C3%A8ncia&page=14&sort=asc",
-      "count": 3
     }
   ],
   "by_lang": {
-    "ca": 29,
-    "en": 110,
-    "es": 40
+    "ca": 27,
+    "en": 111,
+    "es": 42
   },
   "by_section": {
-    "inici": 268,
-    "galeria": 86,
+    "inici": 270,
+    "galeria": 88,
+    "serveis": 67,
     "festivals": 105,
-    "serveis": 66,
-    "blog": 38,
+    "blog": 39,
     "noticies": 89,
     "contacte": 35,
-    "qui-som": 19,
+    "qui-som": 20,
     "obra": 14,
-    "cerca": 11,
-    "node": 34,
+    "cerca": 12,
+    "node": 30,
     "serveis-fotografics-2": 8,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 7,
     "testing-vintage-cameras": 5,
@@ -517,6 +525,7 @@
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
+    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
     "category": 3,
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
@@ -532,16 +541,16 @@
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "new-books-for-actors-and-actresses": 2,
     "contact": 2,
+    "services-and-rates": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
-    "tag": 4,
+    "tag": 6,
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
     "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2,
     "provant-la-pellicula-washi": 2,
-    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2,
-    "customers": 2
+    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2
   },
   "noticies_top": [
     {
@@ -594,7 +603,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 63
+      "count": 65
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -680,7 +689,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 16,
+  "avg_time_on_site_seconds": 17,
   "browsers": [
     {
       "name": "Chrome",
@@ -843,7 +852,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 498
+      "count": 513
     },
     {
       "name": "Google",
@@ -856,6 +865,11 @@
       "count": 16
     },
     {
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 8
+    },
+    {
       "name": "Blog",
       "id": "Blog",
       "count": 7
@@ -864,11 +878,6 @@
       "name": "www.facebook.com",
       "id": "www.facebook.com",
       "count": 7
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
-      "count": 6
     },
     {
       "name": "bing.com",
