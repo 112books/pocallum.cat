@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-18T22:38:48.821709Z",
+  "generated": "2026-07-19T01:47:01.816603Z",
   "period": {
-    "start": "2025-07-18",
-    "end": "2026-07-18"
+    "start": "2025-07-19",
+    "end": "2026-07-19"
   },
-  "total": 926,
+  "total": 934,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -221,7 +221,7 @@
     },
     {
       "date": "2026-07-01",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-07-02",
@@ -241,11 +241,11 @@
     },
     {
       "date": "2026-07-06",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-07-07",
-      "count": 16
+      "count": 15
     },
     {
       "date": "2026-07-08",
@@ -285,29 +285,33 @@
     },
     {
       "date": "2026-07-17",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-07-18",
-      "count": 5
+      "count": 11
+    },
+    {
+      "date": "2026-07-19",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 257
+      "count": 258
     },
     {
       "path": "/galeria",
       "count": 85
     },
     {
-      "path": "/serveis",
+      "path": "/festivals",
       "count": 49
     },
     {
-      "path": "/festivals",
-      "count": 48
+      "path": "/serveis",
+      "count": 49
     },
     {
       "path": "/blog",
@@ -346,6 +350,10 @@
       "count": 12
     },
     {
+      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
+      "count": 9
+    },
+    {
       "path": "/serveis/books-per-actors",
       "count": 9
     },
@@ -366,10 +374,6 @@
       "count": 8
     },
     {
-      "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
-      "count": 7
-    },
-    {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 7
     },
@@ -386,6 +390,10 @@
       "count": 6
     },
     {
+      "path": "/en/testing-adox-hr-50-film",
+      "count": 5
+    },
+    {
       "path": "/en/testing-vintage-cameras",
       "count": 5
     },
@@ -399,6 +407,10 @@
     },
     {
       "path": "/festivals/im-jazz",
+      "count": 5
+    },
+    {
+      "path": "/festivals/vijazz",
       "count": 5
     },
     {
@@ -426,19 +438,11 @@
       "count": 4
     },
     {
-      "path": "/en/testing-adox-hr-50-film",
-      "count": 4
-    },
-    {
       "path": "/contacte/politica-de-ptivacitat-avis-legal",
       "count": 4
     },
     {
       "path": "/en",
-      "count": 4
-    },
-    {
-      "path": "/festivals/vijazz",
       "count": 4
     },
     {
@@ -452,6 +456,10 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
+    },
+    {
+      "path": "/en/contact",
+      "count": 3
     },
     {
       "path": "/en/content/20%C3%A8-festival-de-blues-de-barcelona",
@@ -488,41 +496,38 @@
     {
       "path": "/en/testing-film-kono-monolit-iso64",
       "count": 3
-    },
-    {
-      "path": "/ca/node/22/track?order=Refer%C3%A8ncia&page=8&sort=asc",
-      "count": 3
     }
   ],
   "by_lang": {
+    "en": 118,
     "ca": 27,
-    "en": 111,
-    "es": 42
+    "es": 40
   },
   "by_section": {
-    "inici": 270,
+    "inici": 271,
     "galeria": 88,
+    "festivals": 107,
     "serveis": 67,
-    "festivals": 105,
     "blog": 39,
     "noticies": 89,
     "contacte": 35,
     "qui-som": 20,
     "obra": 14,
     "cerca": 12,
+    "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
     "node": 30,
     "serveis-fotografics-2": 8,
-    "vijazz-2025-the-jazz-that-brought-me-back-home": 7,
+    "testing-adox-hr-50-film": 5,
     "testing-vintage-cameras": 5,
     "legal": 7,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
     "2025": 6,
     "novetat-books-per-actors-i-actrius": 4,
-    "testing-adox-hr-50-film": 4,
-    "content": 17,
+    "content": 20,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
+    "contact": 3,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
@@ -540,11 +545,10 @@
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "new-books-for-actors-and-actresses": 2,
-    "contact": 2,
     "services-and-rates": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
     "wp-content": 2,
-    "tag": 6,
+    "tag": 4,
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
@@ -592,18 +596,18 @@
       "count": 5
     },
     {
-      "path": "/festivals/flamenco-de-barrio",
+      "path": "/festivals/vijazz",
       "count": 5
     },
     {
-      "path": "/festivals/vijazz",
-      "count": 4
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 5
     }
   ],
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 65
+      "count": 68
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -630,12 +634,20 @@
       "count": 5
     },
     {
+      "path": "/politica-de-cookies",
+      "count": 4
+    },
+    {
       "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
       "count": 4
     },
     {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
       "count": 3
+    },
+    {
+      "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
+      "count": 2
     },
     {
       "path": "/2011/06/29/la-placa-angel-pestanya-ja-es-prepara-per-pro",
@@ -662,10 +674,6 @@
       "count": 2
     },
     {
-      "path": "/politica-de-cookies",
-      "count": 2
-    },
-    {
       "path": "/tag/casal-de-barri-de-prosperitat/page/2",
       "count": 2
     },
@@ -675,10 +683,6 @@
     },
     {
       "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
-      "count": 2
-    },
-    {
-      "path": "/2016/05/08/vermutsical-amb-rumbalmibar",
       "count": 2
     }
   ],
@@ -694,7 +698,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 769
+      "count": 770
     },
     {
       "name": "Safari",
@@ -726,7 +730,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 358
+      "count": 359
     },
     {
       "name": "iOS",
@@ -753,7 +757,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 660
+      "count": 661
     },
     {
       "name": "desktophd",
@@ -815,7 +819,7 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Sweden",
@@ -852,7 +856,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 513
+      "count": 521
     },
     {
       "name": "Google",
