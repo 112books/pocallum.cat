@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-19T22:41:31.409088Z",
+  "generated": "2026-07-20T02:03:23.219055Z",
   "period": {
-    "start": "2025-07-19",
-    "end": "2026-07-19"
+    "start": "2025-07-20",
+    "end": "2026-07-20"
   },
-  "total": 934,
+  "total": 936,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -293,13 +293,13 @@
     },
     {
       "date": "2026-07-19",
-      "count": 2
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 258
+      "count": 259
     },
     {
       "path": "/galeria",
@@ -438,6 +438,10 @@
       "count": 4
     },
     {
+      "path": "/en/from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress",
+      "count": 4
+    },
+    {
       "path": "/contacte/politica-de-ptivacitat-avis-legal",
       "count": 4
     },
@@ -492,19 +496,15 @@
     {
       "path": "/en/category/sense-categoria-en",
       "count": 3
-    },
-    {
-      "path": "/en/testing-film-kono-monolit-iso64",
-      "count": 3
     }
   ],
   "by_lang": {
-    "en": 118,
+    "en": 119,
     "ca": 27,
     "es": 40
   },
   "by_section": {
-    "inici": 271,
+    "inici": 272,
     "galeria": 88,
     "festivals": 107,
     "serveis": 67,
@@ -524,6 +524,7 @@
     "servicios-fotograficos": 8,
     "2025": 6,
     "novetat-books-per-actors-i-actrius": 4,
+    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
     "content": 20,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
@@ -538,7 +539,6 @@
     "photographic-services": 5,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "cambo-sc-first-test": 3,
-    "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 3,
     "lomography-great-photos-simple-camera": 3,
     "sessio-amb-eli": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
@@ -610,12 +610,12 @@
       "count": 68
     },
     {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 8
     },
     {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 7
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 8
     },
     {
       "path": "/2012/01/28/prospe-beach-2010",
@@ -698,7 +698,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 773
+      "count": 774
     },
     {
       "name": "Safari",
@@ -730,7 +730,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 362
+      "count": 363
     },
     {
       "name": "iOS",
@@ -757,7 +757,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 664
+      "count": 665
     },
     {
       "name": "desktophd",
@@ -809,7 +809,7 @@
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Vietnam",
@@ -856,7 +856,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 521
+      "count": 522
     },
     {
       "name": "Google",
@@ -866,17 +866,17 @@
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
-      "count": 16
+      "count": 17
+    },
+    {
+      "name": "Blog",
+      "id": "Blog",
+      "count": 8
     },
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
       "count": 8
-    },
-    {
-      "name": "Blog",
-      "id": "Blog",
-      "count": 7
     },
     {
       "name": "www.facebook.com",
