@@ -1,5 +1,7 @@
 ---
 title: "Pocallum — Cultural photography"
+aliases:
+  - /node/191/track
 description: "Cultural photography. Jazz, blues, theatre, dance and performing arts. Barcelona, since 2010."
 ---
 

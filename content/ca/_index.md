@@ -1,5 +1,7 @@
 ---
 title: "Pocallum — Fotografia de cultura"
+aliases:
+  - /es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro
 description: "Fotografia de cultura. Jazz, blues, teatre, dansa i arts escèniques. Barcelona, des del 2010."
 ---
 
