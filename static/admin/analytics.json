@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-20T23:47:39.572453Z",
+  "generated": "2026-07-21T04:59:53.676892Z",
   "period": {
-    "start": "2025-07-20",
-    "end": "2026-07-20"
+    "start": "2025-07-21",
+    "end": "2026-07-21"
   },
-  "total": 936,
+  "total": 946,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 46
+      "count": 44
     },
     {
       "date": "2026-07-09",
@@ -294,12 +294,16 @@
     {
       "date": "2026-07-19",
       "count": 4
+    },
+    {
+      "date": "2026-07-20",
+      "count": 12
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 259
+      "count": 260
     },
     {
       "path": "/galeria",
@@ -315,7 +319,7 @@
     },
     {
       "path": "/blog",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/noticies",
@@ -350,6 +354,10 @@
       "count": 12
     },
     {
+      "path": "/en/node/191/track?page=2%60",
+      "count": 9
+    },
+    {
       "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
       "count": 9
     },
@@ -366,7 +374,7 @@
       "count": 9
     },
     {
-      "path": "/en/node/191/track?page=2%60",
+      "path": "/en/node/191/track?page=2%60%60",
       "count": 8
     },
     {
@@ -462,6 +470,10 @@
       "count": 4
     },
     {
+      "path": "/en/content/developing-color-film-black-and-white-process",
+      "count": 3
+    },
+    {
       "path": "/en/contact",
       "count": 3
     },
@@ -488,34 +500,26 @@
     {
       "path": "/en/node/156/track?page=6",
       "count": 3
-    },
-    {
-      "path": "/ca/node/16/track?order=Usuari&page=6&sort=asc",
-      "count": 3
-    },
-    {
-      "path": "/en/category/sense-categoria-en",
-      "count": 3
     }
   ],
   "by_lang": {
-    "en": 119,
+    "en": 127,
     "ca": 27,
     "es": 40
   },
   "by_section": {
-    "inici": 272,
+    "inici": 273,
     "galeria": 88,
     "festivals": 107,
     "serveis": 67,
-    "blog": 39,
+    "blog": 40,
     "noticies": 89,
     "contacte": 35,
     "qui-som": 20,
     "obra": 14,
     "cerca": 12,
+    "node": 39,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
-    "node": 30,
     "serveis-fotografics-2": 8,
     "testing-adox-hr-50-film": 5,
     "testing-vintage-cameras": 5,
@@ -525,7 +529,7 @@
     "2025": 6,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
-    "content": 20,
+    "content": 21,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
@@ -553,8 +557,7 @@
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
     "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2,
-    "provant-la-pellicula-washi": 2,
-    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 2
+    "provant-la-pellicula-washi": 2
   },
   "noticies_top": [
     {
@@ -646,6 +649,10 @@
       "count": 3
     },
     {
+      "path": "/2026/07/20/revivint-la-vella-woody-cam",
+      "count": 2
+    },
+    {
       "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
       "count": 2
     },
@@ -674,15 +681,11 @@
       "count": 2
     },
     {
+      "path": "/2026/05/30/2026-05-29-la-juganera-a-la-nau-bostik",
+      "count": 2
+    },
+    {
       "path": "/tag/casal-de-barri-de-prosperitat/page/2",
-      "count": 2
-    },
-    {
-      "path": "/2014/01/06/jardins-de-mossen-costa-i-llobeta-montjuic-barcelona",
-      "count": 2
-    },
-    {
-      "path": "/2011/09/01/holga-cfn-120-primer-test-en-asa-100",
       "count": 2
     }
   ],
@@ -693,7 +696,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 17,
+  "avg_time_on_site_seconds": 14,
   "browsers": [
     {
       "name": "Chrome",
@@ -856,7 +859,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 522
+      "count": 551
     },
     {
       "name": "Google",
