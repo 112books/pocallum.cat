@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T12:12:46.044743Z",
+  "generated": "2026-07-24T14:45:04.714530Z",
   "period": {
     "start": "2025-07-24",
     "end": "2026-07-24"
@@ -771,28 +771,7 @@
       "count": 4
     }
   ],
-  "sizes": [
-    {
-      "name": "desktop",
-      "id": "desktop",
-      "count": 701
-    },
-    {
-      "name": "desktophd",
-      "id": "desktophd",
-      "count": 295
-    },
-    {
-      "name": "phone",
-      "id": "phone",
-      "count": 228
-    },
-    {
-      "name": "tablet",
-      "id": "tablet",
-      "count": 127
-    }
-  ],
+  "sizes": [],
   "locations": [
     {
       "name": "Spain",
