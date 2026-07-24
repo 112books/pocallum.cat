@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-23T23:52:27.710114Z",
+  "generated": "2026-07-24T01:48:54.654908Z",
   "period": {
-    "start": "2025-07-23",
-    "end": "2026-07-23"
+    "start": "2025-07-24",
+    "end": "2026-07-24"
   },
-  "total": 951,
+  "total": 958,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-05-11",
@@ -225,7 +225,7 @@
     },
     {
       "date": "2026-07-02",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-07-03",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 44
+      "count": 42
     },
     {
       "date": "2026-07-09",
@@ -306,12 +306,16 @@
     {
       "date": "2026-07-22",
       "count": 1
+    },
+    {
+      "date": "2026-07-23",
+      "count": 7
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 262
+      "count": 264
     },
     {
       "path": "/galeria",
@@ -319,7 +323,7 @@
     },
     {
       "path": "/festivals",
-      "count": 49
+      "count": 51
     },
     {
       "path": "/serveis",
@@ -327,7 +331,7 @@
     },
     {
       "path": "/blog",
-      "count": 40
+      "count": 41
     },
     {
       "path": "/noticies",
@@ -478,6 +482,10 @@
       "count": 4
     },
     {
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 4
+    },
+    {
       "path": "/en/content/developing-color-film-black-and-white-process",
       "count": 3
     },
@@ -504,10 +512,6 @@
     {
       "path": "/en/19th-barcelona-blues-festival-2021-tribute-amadeu-cases",
       "count": 3
-    },
-    {
-      "path": "/en/node/156/track?page=6",
-      "count": 3
     }
   ],
   "by_lang": {
@@ -516,11 +520,11 @@
     "es": 40
   },
   "by_section": {
-    "inici": 275,
+    "inici": 277,
     "galeria": 88,
-    "festivals": 107,
+    "festivals": 113,
     "serveis": 67,
-    "blog": 40,
+    "blog": 41,
     "noticies": 92,
     "contacte": 35,
     "qui-som": 20,
@@ -564,8 +568,7 @@
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
     "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
-    "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2,
-    "provant-la-pellicula-washi": 2
+    "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2
   },
   "noticies_top": [
     {
@@ -613,90 +616,13 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 5
+    },
+    {
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 4
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 69
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 7
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 6
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 5
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 5
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 5
-    },
-    {
-      "path": "/2026/07/20/revivint-la-vella-woody-cam",
-      "count": 4
-    },
-    {
-      "path": "/politica-de-cookies",
-      "count": 4
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 4
-    },
-    {
-      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
-      "count": 3
-    },
-    {
-      "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
-      "count": 2
-    },
-    {
-      "path": "/2011/06/29/la-placa-angel-pestanya-ja-es-prepara-per-pro",
-      "count": 2
-    },
-    {
-      "path": "/2024/11/16/2024-11-15-sant-xibeco-el-persianas-los-influencers-muertos",
-      "count": 2
-    },
-    {
-      "path": "/2023/11/18/2023-11-18-sant-xibeco-i-santa-quinta-2023",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
-      "count": 2
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/07/2026-06-06-festes-de-prosperitat-segon-dissabte-agua-bendita-orquestes-angel-pestana",
-      "count": 2
-    },
-    {
-      "path": "/2026/05/30/2026-05-29-la-juganera-a-la-nau-bostik",
-      "count": 2
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 16,
     "wizard-s2": 15,
@@ -867,7 +793,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 563
+      "count": 566
     },
     {
       "name": "Google",
