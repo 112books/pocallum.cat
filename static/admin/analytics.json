@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-25T23:52:02.880878Z",
+  "generated": "2026-07-26T01:52:04.077975Z",
   "period": {
-    "start": "2025-07-25",
-    "end": "2026-07-25"
+    "start": "2025-07-26",
+    "end": "2026-07-26"
   },
-  "total": 969,
+  "total": 972,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -317,13 +317,13 @@
     },
     {
       "date": "2026-07-25",
-      "count": 1
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 267
+      "count": 269
     },
     {
       "path": "/galeria",
@@ -375,7 +375,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/en/node/191/track?page=2%60",
@@ -528,10 +528,10 @@
     "es": 40
   },
   "by_section": {
-    "inici": 280,
+    "inici": 282,
     "galeria": 88,
     "festivals": 117,
-    "serveis": 68,
+    "serveis": 69,
     "blog": 41,
     "noticies": 93,
     "contacte": 36,
@@ -713,7 +713,7 @@
     }
   ],
   "wizard_funnel": {
-    "wizard-s1": 16,
+    "wizard-s1": 17,
     "wizard-s2": 16,
     "wizard-s3": 5,
     "wizard-s4": 4,
@@ -729,7 +729,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 496
+      "count": 497
     },
     {
       "name": "Firefox",
@@ -761,7 +761,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 147
+      "count": 148
     },
     {
       "name": "Android",
@@ -793,7 +793,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 243
+      "count": 244
     },
     {
       "name": "tablet",
@@ -882,7 +882,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 573
+      "count": 580
     },
     {
       "name": "Google",
@@ -922,7 +922,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Yandex",
