@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T05:53:13.263403Z",
+  "generated": "2026-07-27T09:32:09.404603Z",
   "period": {
     "start": "2025-07-27",
     "end": "2026-07-27"
@@ -634,7 +634,88 @@
       "count": 4
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 71
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 7
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 6
+    },
+    {
+      "path": "/?query-0-page=2",
+      "count": 6
+    },
+    {
+      "path": "/2012/01/28/prospe-beach-2010",
+      "count": 5
+    },
+    {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 5
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 4
+    },
+    {
+      "path": "/2026/07/20/revivint-la-vella-woody-cam",
+      "count": 4
+    },
+    {
+      "path": "/politica-de-cookies",
+      "count": 4
+    },
+    {
+      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
+      "count": 4
+    },
+    {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 3
+    },
+    {
+      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
+      "count": 3
+    },
+    {
+      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
+      "count": 3
+    },
+    {
+      "path": "/cerca",
+      "count": 3
+    },
+    {
+      "path": "/2026/03/12/2026-03-11-jazz-im-al-molino",
+      "count": 2
+    },
+    {
+      "path": "/tag/les-puigdomenech",
+      "count": 2
+    },
+    {
+      "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
+      "count": 2
+    },
+    {
+      "path": "/2026/04/08/superheadz-digital-harinezumila-magia-low-fi",
+      "count": 2
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -647,12 +728,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 834
+      "count": 841
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 497
+      "count": 499
     },
     {
       "name": "Firefox",
@@ -679,12 +760,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 375
+      "count": 382
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 148
+      "count": 150
     },
     {
       "name": "Android",
@@ -706,7 +787,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 714
+      "count": 721
     },
     {
       "name": "desktophd",
@@ -716,7 +797,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 246
+      "count": 248
     },
     {
       "name": "tablet",
@@ -728,7 +809,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 906
+      "count": 915
     },
     {
       "name": "United States",
