@@ -2114,6 +2114,41 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
   color: var(--accent);
 }
 
+/* ── Testimonis ────────────────────────────────────────────────────────────── */
+.section--testimonis { padding-block: var(--space-16); }
+.testimonis__label {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: var(--space-8);
+}
+.testimonis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: var(--space-12);
+}
+.testimoni {
+  margin: 0;
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--accent);
+}
+.testimoni__cita {
+  font-family: var(--f-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--fg);
+  margin-bottom: var(--space-4);
+}
+.testimoni__autor {
+  font-family: var(--f-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--mid);
+}
+.testimoni__entitat { color: var(--mid); opacity: 0.75; }
+
 /* ── CTA block ─────────────────────────────────────────────────────────────── */
 .section--serveis-cta { text-align: center; }
 .cta-block-title {

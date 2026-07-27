@@ -1,0 +1,17 @@
+{{ $lang := site.Language.Lang }}
+{{ $items := where hugo.Data.testimonis.testimonis "publicat" true }}
+{{ if $items }}
+<section class="section section--testimonis">
+  <div class="container container--narrow">
+    <p class="testimonis__label">{{ i18n "testimonis_label" | default "El que diuen de nosaltres" }}</p>
+    <div class="testimonis-grid">
+      {{ range $items }}
+      <blockquote class="testimoni">
+        <p class="testimoni__cita">&ldquo;{{ if eq $lang "en" }}{{ .cita_en }}{{ else }}{{ .cita_ca }}{{ end }}&rdquo;</p>
+        <footer class="testimoni__autor">{{ .nom }}{{ with .entitat }} <span class="testimoni__entitat">· {{ . }}</span>{{ end }}</footer>
+      </blockquote>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
