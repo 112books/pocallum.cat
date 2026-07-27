@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-26T23:52:25.992604Z",
+  "generated": "2026-07-27T01:59:54.936113Z",
   "period": {
-    "start": "2025-07-26",
-    "end": "2026-07-26"
+    "start": "2025-07-27",
+    "end": "2026-07-27"
   },
-  "total": 972,
+  "total": 973,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -318,6 +318,10 @@
     {
       "date": "2026-07-25",
       "count": 4
+    },
+    {
+      "date": "2026-07-26",
+      "count": 1
     }
   ],
   "hits": [
@@ -327,7 +331,7 @@
     },
     {
       "path": "/galeria",
-      "count": 85
+      "count": 86
     },
     {
       "path": "/festivals",
@@ -529,7 +533,7 @@
   },
   "by_section": {
     "inici": 282,
-    "galeria": 88,
+    "galeria": 89,
     "festivals": 117,
     "serveis": 69,
     "blog": 41,
@@ -664,6 +668,10 @@
       "count": 5
     },
     {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 4
+    },
+    {
       "path": "/2026/07/20/revivint-la-vella-woody-cam",
       "count": 4
     },
@@ -676,7 +684,19 @@
       "count": 4
     },
     {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 3
+    },
+    {
+      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
+      "count": 3
+    },
+    {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
+      "count": 3
+    },
+    {
+      "path": "/cerca",
       "count": 3
     },
     {
@@ -684,36 +704,20 @@
       "count": 2
     },
     {
+      "path": "/tag/les-puigdomenech",
+      "count": 2
+    },
+    {
       "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
       "count": 2
     },
     {
-      "path": "/2011/06/29/la-placa-angel-pestanya-ja-es-prepara-per-pro",
-      "count": 2
-    },
-    {
-      "path": "/2024/11/16/2024-11-15-sant-xibeco-el-persianas-los-influencers-muertos",
-      "count": 2
-    },
-    {
-      "path": "/2023/11/18/2023-11-18-sant-xibeco-i-santa-quinta-2023",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
-      "count": 2
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 2
-    },
-    {
-      "path": "/2026/06/07/2026-06-06-festes-de-prosperitat-segon-dissabte-agua-bendita-orquestes-angel-pestana",
+      "path": "/2026/04/08/superheadz-digital-harinezumila-magia-low-fi",
       "count": 2
     }
   ],
   "wizard_funnel": {
-    "wizard-s1": 17,
+    "wizard-s1": 18,
     "wizard-s2": 16,
     "wizard-s3": 5,
     "wizard-s4": 4,
@@ -882,7 +886,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 580
+      "count": 587
     },
     {
       "name": "Google",
@@ -895,6 +899,11 @@
       "count": 17
     },
     {
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 10
+    },
+    {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
       "count": 9
@@ -902,11 +911,6 @@
     {
       "name": "Blog",
       "id": "Blog",
-      "count": 8
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
       "count": 8
     },
     {
