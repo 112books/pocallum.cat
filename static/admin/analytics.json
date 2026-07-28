@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-27T23:55:29.011151Z",
+  "generated": "2026-07-28T01:42:44.577029Z",
   "period": {
-    "start": "2025-07-27",
-    "end": "2026-07-27"
+    "start": "2025-07-28",
+    "end": "2026-07-28"
   },
-  "total": 973,
+  "total": 986,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 42
+      "count": 40
     },
     {
       "date": "2026-07-09",
@@ -322,20 +322,24 @@
     {
       "date": "2026-07-26",
       "count": 1
+    },
+    {
+      "date": "2026-07-27",
+      "count": 15
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 269
+      "count": 275
     },
     {
       "path": "/galeria",
-      "count": 86
+      "count": 87
     },
     {
       "path": "/festivals",
-      "count": 53
+      "count": 54
     },
     {
       "path": "/serveis",
@@ -343,31 +347,31 @@
     },
     {
       "path": "/blog",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/noticies",
-      "count": 36
+      "count": 37
     },
     {
       "path": "/contacte",
-      "count": 29
+      "count": 30
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
       "count": 23
     },
     {
-      "path": "/qui-som",
-      "count": 21
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 22
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 20
+      "path": "/qui-som",
+      "count": 22
     },
     {
       "path": "/obra",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -532,15 +536,15 @@
     "es": 40
   },
   "by_section": {
-    "inici": 282,
-    "galeria": 89,
-    "festivals": 117,
+    "inici": 288,
+    "galeria": 90,
+    "festivals": 118,
     "serveis": 69,
-    "blog": 41,
-    "noticies": 93,
-    "contacte": 36,
-    "qui-som": 21,
-    "obra": 14,
+    "blog": 42,
+    "noticies": 96,
+    "contacte": 37,
+    "qui-som": 22,
+    "obra": 15,
     "cerca": 12,
     "node": 39,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -579,8 +583,7 @@
     "tag": 4,
     "incoherencias-una-pequena-historia-del-absurdo-2": 2,
     "mike-shannon-actor-photo-book-3": 2,
-    "pruebas-de-forzados-con-fotografias-de-ejemplo": 2,
-    "jazz-i-am-2026-quan-un-festival-petit-te-mes-a-dir-que-un-de-gran": 2
+    "pruebas-de-forzados-con-fotografias-de-ejemplo": 2
   },
   "noticies_top": [
     {
@@ -589,7 +592,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 20
+      "count": 22
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -640,6 +643,10 @@
       "count": 71
     },
     {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 29
+    },
+    {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 9
     },
@@ -668,10 +675,6 @@
       "count": 5
     },
     {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 4
-    },
-    {
       "path": "/2026/07/20/revivint-la-vella-woody-cam",
       "count": 4
     },
@@ -689,6 +692,10 @@
     },
     {
       "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
+      "count": 3
+    },
+    {
+      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
       "count": 3
     },
     {
@@ -710,10 +717,6 @@
     {
       "path": "/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes",
       "count": 2
-    },
-    {
-      "path": "/2026/04/08/superheadz-digital-harinezumila-magia-low-fi",
-      "count": 2
     }
   ],
   "wizard_funnel": {
@@ -723,7 +726,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 14,
+  "avg_time_on_site_seconds": 18,
   "browsers": [
     {
       "name": "Chrome",
@@ -886,17 +889,17 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 587
+      "count": 592
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 83
+      "count": 85
     },
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
-      "count": 17
+      "count": 19
     },
     {
       "name": "pocallum-cat.translate.goog",
@@ -929,8 +932,8 @@
       "count": 4
     },
     {
-      "name": "Yandex",
-      "id": "Yandex",
+      "name": "ig",
+      "id": "ig",
       "count": 3
     }
   ]
