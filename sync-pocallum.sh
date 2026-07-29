@@ -138,13 +138,94 @@ deploy_prod_pages() {
 
 
 nova_foto() {
-  read -r -p "  Slug de la foto (ex: 2026-05-jazz-jamboree): " slug
-  if [[ -z "$slug" ]]; then err "El slug no pot estar buit."; exit 1; fi
-  CURRENT=$(git branch --show-current)
-  LANG="ca"
-  hugo new content "${LANG}/galeria/${slug}.md"
-  ok "Creat: content/${LANG}/galeria/${slug}.md"
-  dim "Recorda afegir la imatge a: static/images/galeria/${slug}.jpg"
+  echo ""
+  print "Nova fotografia de galeria"
+  echo ""
+
+  # Detecta imatges sense Markdown associat
+  UNLINKED=()
+  for img in static/images/galeria/*.{jpg,jpeg,JPG,JPEG,png,PNG}; do
+    [[ -f "$img" ]] || continue
+    basename="${img##*/}"
+    name="${basename%.*}"
+    if ! grep -rl "\"$basename\"\|/$basename" content/ca/galeria/ &>/dev/null; then
+      UNLINKED+=("$basename")
+    fi
+  done
+
+  if [[ ${#UNLINKED[@]} -gt 0 ]]; then
+    echo "  Imatges sense fitxer Markdown:"
+    for i in "${!UNLINKED[@]}"; do
+      printf "    %d) %s\n" "$((i+1))" "${UNLINKED[$i]}"
+    done
+    echo "    m) Escriure manualment"
+    echo ""
+    read -r -p "  Tria (número o 'm'): " img_choice
+    if [[ "$img_choice" =~ ^[0-9]+$ ]] && \
+       [[ "$img_choice" -ge 1 ]] && \
+       [[ "$img_choice" -le ${#UNLINKED[@]} ]]; then
+      IMG_FILE="${UNLINKED[$((img_choice-1))]}"
+    else
+      read -r -p "  Nom del fitxer d'imatge (ex: irma.jpeg): " IMG_FILE
+    fi
+  else
+    read -r -p "  Nom del fitxer d'imatge (ex: irma.jpeg): " IMG_FILE
+  fi
+
+  [[ -z "$IMG_FILE" ]] && { err "Cal indicar la imatge."; exit 1; }
+
+  IMG_BASE="${IMG_FILE%.*}"
+  TARGET="content/ca/galeria/${IMG_BASE}.md"
+
+  if [[ -f "$TARGET" ]]; then
+    err "Ja existeix: $TARGET"; exit 1
+  fi
+
+  # Títol
+  DEFAULT_TITLE="$(echo "$IMG_BASE" | sed 's/[-_]/ /g' | \
+    awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2); print}')"
+  read -r -p "  Títol [${DEFAULT_TITLE}]: " FOTO_TITLE
+  [[ -z "$FOTO_TITLE" ]] && FOTO_TITLE="$DEFAULT_TITLE"
+
+  # Servei
+  echo ""
+  echo "  Servei:"
+  echo "    1) cultura  (concerts, festivals, arts escèniques)"
+  echo "    2) artistes  (books, retrats, perfil professional)"
+  echo "    3) empreses  (personal, instal·lacions, xarxes)"
+  read -r -p "  Tria [1]: " servei_choice
+  case "$servei_choice" in
+    2) SERVEI="artistes" ;;
+    3) SERVEI="empreses" ;;
+    *) SERVEI="cultura" ;;
+  esac
+
+  # Data
+  TODAY="$(date '+%Y-%m-%d')"
+  read -r -p "  Data [${TODAY}]: " FOTO_DATE
+  [[ -z "$FOTO_DATE" ]] && FOTO_DATE="$TODAY"
+
+  # Crea el fitxer directament (sense hugo new per evitar rutes duplicades)
+  cat > "$TARGET" <<EOF
+---
+title: "${FOTO_TITLE}"
+date: ${FOTO_DATE}
+servei: "${SERVEI}"
+image: "/images/galeria/${IMG_FILE}"
+draft: false
+---
+EOF
+
+  echo ""
+  ok "Creat: ${TARGET}"
+  dim "title:  ${FOTO_TITLE}"
+  dim "date:   ${FOTO_DATE}"
+  dim "servei: ${SERVEI}"
+  dim "image:  /images/galeria/${IMG_FILE}"
+
+  if [[ ! -f "static/images/galeria/${IMG_FILE}" ]]; then
+    warn "Recorda afegir la imatge a: static/images/galeria/${IMG_FILE}"
+  fi
 }
 
 nova_noticia() {
