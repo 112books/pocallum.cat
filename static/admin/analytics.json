@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-30T23:53:38.764031Z",
+  "generated": "2026-07-31T01:53:31.864436Z",
   "period": {
-    "start": "2025-07-30",
-    "end": "2026-07-30"
+    "start": "2025-07-31",
+    "end": "2026-07-31"
   },
-  "total": 992,
+  "total": 1002,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -334,12 +334,20 @@
     {
       "date": "2026-07-29",
       "count": 3
+    },
+    {
+      "date": "2026-07-30",
+      "count": 8
+    },
+    {
+      "date": "2026-07-31",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 278
+      "count": 283
     },
     {
       "path": "/galeria",
@@ -363,7 +371,11 @@
     },
     {
       "path": "/contacte",
-      "count": 30
+      "count": 31
+    },
+    {
+      "path": "/qui-som",
+      "count": 24
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -371,11 +383,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 22
-    },
-    {
-      "path": "/qui-som",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/obra",
@@ -390,12 +398,12 @@
       "count": 12
     },
     {
-      "path": "/serveis/books-per-actors",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 11
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 10
+      "path": "/serveis/books-per-actors",
+      "count": 11
     },
     {
       "path": "/en/node/191/track?page=2%60",
@@ -539,19 +547,19 @@
     }
   ],
   "by_lang": {
-    "en": 130,
+    "en": 131,
     "ca": 27,
     "es": 40
   },
   "by_section": {
-    "inici": 291,
+    "inici": 296,
     "galeria": 91,
     "festivals": 118,
     "serveis": 69,
     "blog": 42,
-    "noticies": 98,
-    "contacte": 37,
-    "qui-som": 22,
+    "noticies": 100,
+    "contacte": 38,
+    "qui-som": 24,
     "obra": 15,
     "cerca": 12,
     "node": 39,
@@ -600,11 +608,11 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -648,11 +656,11 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 73
+      "count": 74
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 30
+      "count": 33
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
@@ -734,17 +742,17 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 18,
+  "avg_time_on_site_seconds": 19,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 867
+      "count": 868
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 516
+      "count": 519
     },
     {
       "name": "Firefox",
@@ -771,12 +779,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 399
+      "count": 400
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 152
+      "count": 155
     },
     {
       "name": "Android",
@@ -798,7 +806,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 743
+      "count": 744
     },
     {
       "name": "desktophd",
@@ -808,7 +816,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 254
+      "count": 257
     },
     {
       "name": "tablet",
@@ -820,7 +828,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 949
+      "count": 952
     },
     {
       "name": "United States",
@@ -830,7 +838,7 @@
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Indonesia",
@@ -897,12 +905,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 598
+      "count": 602
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 89
+      "count": 93
     },
     {
       "name": "blog.pocallum.cat",
@@ -930,6 +938,11 @@
       "count": 6
     },
     {
+      "name": "ig",
+      "id": "ig",
+      "count": 5
+    },
+    {
       "name": "bing.com",
       "id": "bing.com",
       "count": 4
@@ -938,11 +951,6 @@
       "name": "chatgpt.com",
       "id": "chatgpt.com",
       "count": 4
-    },
-    {
-      "name": "ig",
-      "id": "ig",
-      "count": 3
     }
   ]
 }
