@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-01T23:48:42.167622Z",
+  "generated": "2026-08-02T01:51:13.694990Z",
   "period": {
-    "start": "2025-08-01",
-    "end": "2026-08-01"
+    "start": "2025-08-02",
+    "end": "2026-08-02"
   },
-  "total": 1003,
+  "total": 1004,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -342,12 +342,16 @@
     {
       "date": "2026-07-31",
       "count": 3
+    },
+    {
+      "date": "2026-08-01",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 284
+      "count": 285
     },
     {
       "path": "/galeria",
@@ -552,7 +556,7 @@
     "es": 40
   },
   "by_section": {
-    "inici": 297,
+    "inici": 298,
     "galeria": 91,
     "festivals": 118,
     "serveis": 69,
@@ -660,7 +664,7 @@
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 34
+      "count": 35
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
@@ -679,6 +683,10 @@
       "count": 7
     },
     {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 6
+    },
+    {
       "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
       "count": 6
     },
@@ -689,10 +697,6 @@
     {
       "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
       "count": 5
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 4
     },
     {
       "path": "/2026/07/20/revivint-la-vella-woody-cam",
@@ -747,7 +751,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 869
+      "count": 870
     },
     {
       "name": "Safari",
@@ -774,7 +778,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 702
+      "count": 703
     },
     {
       "name": "Windows",
@@ -806,7 +810,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 745
+      "count": 746
     },
     {
       "name": "desktophd",
@@ -838,7 +842,7 @@
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 40
+      "count": 41
     },
     {
       "name": "Indonesia",
@@ -905,7 +909,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 603
+      "count": 604
     },
     {
       "name": "Google",
