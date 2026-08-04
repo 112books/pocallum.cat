@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-03T22:59:19.038561Z",
+  "generated": "2026-08-04T00:09:49.447892Z",
   "period": {
-    "start": "2025-08-03",
-    "end": "2026-08-03"
+    "start": "2025-08-04",
+    "end": "2026-08-04"
   },
-  "total": 1009,
+  "total": 1015,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -350,12 +350,16 @@
     {
       "date": "2026-08-02",
       "count": 5
+    },
+    {
+      "date": "2026-08-03",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 287
+      "count": 290
     },
     {
       "path": "/galeria",
@@ -367,7 +371,7 @@
     },
     {
       "path": "/serveis",
-      "count": 49
+      "count": 50
     },
     {
       "path": "/blog",
@@ -379,7 +383,7 @@
     },
     {
       "path": "/contacte",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/qui-som",
@@ -402,12 +406,12 @@
       "count": 13
     },
     {
-      "path": "/cerca",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 12
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 11
+      "path": "/cerca",
+      "count": 12
     },
     {
       "path": "/serveis/books-per-actors",
@@ -555,18 +559,18 @@
     }
   ],
   "by_lang": {
-    "en": 131,
+    "en": 132,
     "ca": 27,
     "es": 40
   },
   "by_section": {
-    "inici": 300,
+    "inici": 303,
     "galeria": 92,
     "festivals": 120,
-    "serveis": 69,
+    "serveis": 70,
     "blog": 42,
-    "noticies": 100,
-    "contacte": 38,
+    "noticies": 101,
+    "contacte": 39,
     "qui-som": 24,
     "obra": 15,
     "cerca": 12,
@@ -620,7 +624,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 11
+      "count": 12
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -750,7 +754,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 19,
+  "avg_time_on_site_seconds": 21,
   "browsers": [
     {
       "name": "Chrome",
@@ -913,12 +917,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 608
+      "count": 612
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 93
+      "count": 98
     },
     {
       "name": "blog.pocallum.cat",
