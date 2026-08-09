@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-08T23:18:35.900166Z",
+  "generated": "2026-08-09T03:00:03.838027Z",
   "period": {
-    "start": "2025-08-08",
-    "end": "2026-08-08"
+    "start": "2025-08-09",
+    "end": "2026-08-09"
   },
-  "total": 1030,
+  "total": 1032,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "date": "2026-05-11",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-05-12",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 36
+      "count": 28
     },
     {
       "date": "2026-07-09",
@@ -370,12 +370,16 @@
     {
       "date": "2026-08-07",
       "count": 2
+    },
+    {
+      "date": "2026-08-08",
+      "count": 9
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 301
+      "count": 302
     },
     {
       "path": "/galeria",
@@ -575,12 +579,12 @@
     }
   ],
   "by_lang": {
-    "en": 133,
+    "en": 135,
     "ca": 27,
-    "es": 38
+    "es": 32
   },
   "by_section": {
-    "inici": 314,
+    "inici": 315,
     "galeria": 93,
     "festivals": 121,
     "serveis": 70,
@@ -617,17 +621,15 @@
     "cambo-sc-first-test": 3,
     "lomography-great-photos-simple-camera": 3,
     "sessio-amb-eli": 3,
+    "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
+    "tags": 6,
     "new-books-for-actors-and-actresses": 2,
     "services-and-rates": 2,
     "preses-falses-40-anys-de-blues-barcelona-2": 2,
-    "wp-content": 2,
-    "tag": 2,
-    "incoherencias-una-pequena-historia-del-absurdo-2": 2,
-    "mike-shannon-actor-photo-book-3": 2,
-    "pruebas-de-forzados-con-fotografias-de-ejemplo": 2
+    "wp-content": 2
   },
   "noticies_top": [
     {
@@ -681,88 +683,7 @@
       "count": 4
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 74
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 38
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 7
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 7
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 6
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 5
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 5
-    },
-    {
-      "path": "/2026/07/20/revivint-la-vella-woody-cam",
-      "count": 4
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 4
-    },
-    {
-      "path": "/politica-de-cookies",
-      "count": 4
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 4
-    },
-    {
-      "path": "/2014/04/21/ivan-kovacevic-5-spots-en-campari-milano",
-      "count": 3
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 3
-    },
-    {
-      "path": "/2026/03/21/2026-03-20-anton-jarls-kind-of-metal-al-jamboree",
-      "count": 3
-    },
-    {
-      "path": "/2026/04/08/superheadz-digital-harinezumila-magia-low-fi",
-      "count": 3
-    },
-    {
-      "path": "/2026/06/06/2026-06-05-festes-de-prosperitat-me-pirra-la-birra-fest-mocebares-prospe-oases",
-      "count": 3
-    },
-    {
-      "path": "/2026/05/30/2026-05-29-la-juganera-a-la-nau-bostik",
-      "count": 3
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -770,12 +691,12 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 32,
+  "avg_time_on_site_seconds": 30,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 941
+      "count": 942
     },
     {
       "name": "Safari",
@@ -802,7 +723,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 727
+      "count": 728
     },
     {
       "name": "Windows",
@@ -834,7 +755,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 811
+      "count": 812
     },
     {
       "name": "desktophd",
@@ -866,7 +787,7 @@
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 47
+      "count": 48
     },
     {
       "name": "Indonesia",
@@ -933,7 +854,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 624
+      "count": 656
     },
     {
       "name": "Google",
