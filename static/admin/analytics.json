@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-10T23:25:31.036487Z",
+  "generated": "2026-08-11T00:59:01.130073Z",
   "period": {
-    "start": "2025-08-10",
-    "end": "2026-08-10"
+    "start": "2025-08-11",
+    "end": "2026-08-11"
   },
-  "total": 1033,
+  "total": 1050,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 28
+      "count": 26
     },
     {
       "date": "2026-07-09",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-07-28",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-07-29",
@@ -378,16 +378,24 @@
     {
       "date": "2026-08-09",
       "count": 1
+    },
+    {
+      "date": "2026-08-10",
+      "count": 17
+    },
+    {
+      "date": "2026-08-11",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 303
+      "count": 307
     },
     {
       "path": "/galeria",
-      "count": 90
+      "count": 92
     },
     {
       "path": "/festivals",
@@ -395,7 +403,7 @@
     },
     {
       "path": "/serveis",
-      "count": 50
+      "count": 52
     },
     {
       "path": "/blog",
@@ -403,7 +411,7 @@
     },
     {
       "path": "/noticies",
-      "count": 38
+      "count": 39
     },
     {
       "path": "/contacte",
@@ -411,35 +419,35 @@
     },
     {
       "path": "/qui-som",
-      "count": 25
+      "count": 27
+    },
+    {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 24
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
       "count": 23
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 23
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 16
     },
     {
       "path": "/obra",
-      "count": 15
-    },
-    {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 13
+      "count": 16
     },
     {
       "path": "/festivals/festival-blues-barcelona",
       "count": 13
     },
     {
-      "path": "/cerca",
+      "path": "/serveis/books-per-actors",
       "count": 12
     },
     {
-      "path": "/serveis/books-per-actors",
-      "count": 11
+      "path": "/cerca",
+      "count": 12
     },
     {
       "path": "/en/node/191/track?page=2%60",
@@ -583,20 +591,20 @@
     }
   ],
   "by_lang": {
-    "en": 135,
+    "en": 138,
     "ca": 27,
     "es": 32
   },
   "by_section": {
-    "inici": 316,
-    "galeria": 93,
+    "inici": 320,
+    "galeria": 97,
     "festivals": 121,
-    "serveis": 70,
+    "serveis": 73,
     "blog": 42,
-    "noticies": 102,
+    "noticies": 107,
     "contacte": 41,
-    "qui-som": 25,
-    "obra": 15,
+    "qui-som": 27,
+    "obra": 16,
     "cerca": 12,
     "node": 41,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -632,21 +640,20 @@
     "tags": 6,
     "new-books-for-actors-and-actresses": 2,
     "services-and-rates": 2,
-    "preses-falses-40-anys-de-blues-barcelona-2": 2,
-    "wp-content": 2
+    "preses-falses-40-anys-de-blues-barcelona-2": 2
   },
   "noticies_top": [
+    {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 24
+    },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
       "count": 23
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 23
-    },
-    {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 13
+      "count": 16
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -741,6 +748,10 @@
       "count": 4
     },
     {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 4
+    },
+    {
       "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
       "count": 4
     },
@@ -757,15 +768,11 @@
       "count": 4
     },
     {
+      "path": "/2026/08/10/2026-07-29-anike-volant",
+      "count": 3
+    },
+    {
       "path": "/2014/04/21/ivan-kovacevic-5-spots-en-campari-milano",
-      "count": 3
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 3
-    },
-    {
-      "path": "/about",
       "count": 3
     }
   ],
@@ -786,7 +793,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 537
+      "count": 539
     },
     {
       "name": "Firefox",
@@ -818,7 +825,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 162
+      "count": 164
     },
     {
       "name": "Android",
@@ -850,7 +857,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 272
+      "count": 274
     },
     {
       "name": "tablet",
@@ -862,7 +869,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 981
+      "count": 983
     },
     {
       "name": "United States",
@@ -939,12 +946,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 658
+      "count": 671
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 104
+      "count": 108
     },
     {
       "name": "blog.pocallum.cat",
@@ -954,17 +961,22 @@
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
-      "count": 10
+      "count": 12
     },
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Blog",
       "id": "Blog",
       "count": 8
+    },
+    {
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
+      "count": 7
     },
     {
       "name": "www.facebook.com",
@@ -980,11 +992,6 @@
       "name": "about.pocallum.cat",
       "id": "about.pocallum.cat",
       "count": 5
-    },
-    {
-      "name": "bing.com",
-      "id": "bing.com",
-      "count": 4
     }
   ]
 }
