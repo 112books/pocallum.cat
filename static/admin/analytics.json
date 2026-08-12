@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T16:46:13.109221Z",
+  "generated": "2026-08-12T17:51:30.584384Z",
   "period": {
     "start": "2025-08-12",
     "end": "2026-08-12"
@@ -702,66 +702,30 @@
     "wizard-sent": 3
   },
   "avg_time_on_site_seconds": 29,
-  "browsers": [
+  "browsers": [],
+  "systems": [],
+  "sizes": [
     {
-      "name": "Chrome",
-      "id": "Chrome",
-      "count": 971
+      "name": "desktop",
+      "id": "desktop",
+      "count": 830
     },
     {
-      "name": "Safari",
-      "id": "Safari",
-      "count": 543
+      "name": "desktophd",
+      "id": "desktophd",
+      "count": 322
     },
     {
-      "name": "Firefox",
-      "id": "Firefox",
-      "count": 31
+      "name": "phone",
+      "id": "phone",
+      "count": 284
     },
     {
-      "name": "Desconegut",
-      "id": "Desconegut",
-      "count": 22
-    },
-    {
-      "name": "Edge",
-      "id": "Edge",
-      "count": 2
+      "name": "tablet",
+      "id": "tablet",
+      "count": 133
     }
   ],
-  "systems": [
-    {
-      "name": "macOS",
-      "id": "macOS",
-      "count": 742
-    },
-    {
-      "name": "Windows",
-      "id": "Windows",
-      "count": 424
-    },
-    {
-      "name": "iOS",
-      "id": "iOS",
-      "count": 167
-    },
-    {
-      "name": "Android",
-      "id": "Android",
-      "count": 139
-    },
-    {
-      "name": "Linux",
-      "id": "Linux",
-      "count": 93
-    },
-    {
-      "name": "Chrome OS",
-      "id": "Chrome OS",
-      "count": 4
-    }
-  ],
-  "sizes": [],
   "locations": [],
   "refs": [
     {
