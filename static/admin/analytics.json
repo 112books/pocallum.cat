@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T01:05:33.613177Z",
+  "generated": "2026-08-12T05:24:15.418709Z",
   "period": {
     "start": "2025-08-12",
     "end": "2026-08-12"
@@ -693,88 +693,7 @@
       "count": 4
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 74
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 38
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 7
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 7
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 5
-    },
-    {
-      "path": "/contact",
-      "count": 5
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 5
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 5
-    },
-    {
-      "path": "/cerca",
-      "count": 5
-    },
-    {
-      "path": "/en-us",
-      "count": 4
-    },
-    {
-      "path": "/2026/07/20/revivint-la-vella-woody-cam",
-      "count": 4
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 4
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 4
-    },
-    {
-      "path": "/politica-de-cookies",
-      "count": 4
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 4
-    },
-    {
-      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
-      "count": 4
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -787,7 +706,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 968
+      "count": 969
     },
     {
       "name": "Safari",
@@ -814,7 +733,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 741
+      "count": 742
     },
     {
       "name": "Windows",
@@ -846,7 +765,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 827
+      "count": 828
     },
     {
       "name": "desktophd",
@@ -878,7 +797,7 @@
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 58
+      "count": 59
     },
     {
       "name": "Indonesia",
