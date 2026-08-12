@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T14:14:05.958516Z",
+  "generated": "2026-08-12T15:51:14.201029Z",
   "period": {
     "start": "2025-08-12",
     "end": "2026-08-12"
@@ -810,38 +810,7 @@
       "count": 2
     }
   ],
-  "systems": [
-    {
-      "name": "macOS",
-      "id": "macOS",
-      "count": 742
-    },
-    {
-      "name": "Windows",
-      "id": "Windows",
-      "count": 424
-    },
-    {
-      "name": "iOS",
-      "id": "iOS",
-      "count": 167
-    },
-    {
-      "name": "Android",
-      "id": "Android",
-      "count": 139
-    },
-    {
-      "name": "Linux",
-      "id": "Linux",
-      "count": 93
-    },
-    {
-      "name": "Chrome OS",
-      "id": "Chrome OS",
-      "count": 4
-    }
-  ],
+  "systems": [],
   "sizes": [
     {
       "name": "desktop",
@@ -941,56 +910,5 @@
       "count": 10
     }
   ],
-  "refs": [
-    {
-      "name": "Desconegut",
-      "id": "Desconegut",
-      "count": 678
-    },
-    {
-      "name": "Google",
-      "id": "Google",
-      "count": 108
-    },
-    {
-      "name": "blog.pocallum.cat",
-      "id": "blog.pocallum.cat",
-      "count": 19
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
-      "count": 12
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 11
-    },
-    {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 9
-    },
-    {
-      "name": "Blog",
-      "id": "Blog",
-      "count": 8
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 6
-    },
-    {
-      "name": "ig",
-      "id": "ig",
-      "count": 5
-    },
-    {
-      "name": "about.pocallum.cat",
-      "id": "about.pocallum.cat",
-      "count": 5
-    }
-  ]
+  "refs": []
 }
