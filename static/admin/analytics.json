@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-11T23:29:54.293277Z",
+  "generated": "2026-08-12T01:05:33.613177Z",
   "period": {
-    "start": "2025-08-11",
-    "end": "2026-08-11"
+    "start": "2025-08-12",
+    "end": "2026-08-12"
   },
-  "total": 1050,
+  "total": 1055,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -109,7 +109,7 @@
     },
     {
       "date": "2026-06-03",
-      "count": 45
+      "count": 47
     },
     {
       "date": "2026-06-04",
@@ -129,7 +129,7 @@
     },
     {
       "date": "2026-06-08",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-06-09",
@@ -249,11 +249,11 @@
     },
     {
       "date": "2026-07-08",
-      "count": 26
+      "count": 24
     },
     {
       "date": "2026-07-09",
-      "count": 24
+      "count": 23
     },
     {
       "date": "2026-07-10",
@@ -273,7 +273,7 @@
     },
     {
       "date": "2026-07-14",
-      "count": 24
+      "count": 23
     },
     {
       "date": "2026-07-15",
@@ -385,13 +385,13 @@
     },
     {
       "date": "2026-08-11",
-      "count": 1
+      "count": 7
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 307
+      "count": 309
     },
     {
       "path": "/galeria",
@@ -423,7 +423,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -591,19 +591,19 @@
     }
   ],
   "by_lang": {
-    "en": 138,
+    "en": 142,
     "ca": 27,
-    "es": 32
+    "es": 30
   },
   "by_section": {
-    "inici": 320,
+    "inici": 322,
     "galeria": 97,
     "festivals": 121,
-    "serveis": 73,
+    "serveis": 76,
     "blog": 42,
-    "noticies": 107,
+    "noticies": 108,
     "contacte": 41,
-    "qui-som": 27,
+    "qui-som": 30,
     "obra": 16,
     "cerca": 12,
     "node": 41,
@@ -617,7 +617,7 @@
     "2025": 6,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
-    "content": 21,
+    "content": 19,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
@@ -639,13 +639,12 @@
     "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
     "tags": 6,
     "new-books-for-actors-and-actresses": 2,
-    "services-and-rates": 2,
-    "preses-falses-40-anys-de-blues-barcelona-2": 2
+    "services-and-rates": 2
   },
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -728,6 +727,10 @@
       "count": 7
     },
     {
+      "path": "/2026/08/10/2026-07-29-anike-volant",
+      "count": 5
+    },
+    {
       "path": "/contact",
       "count": 5
     },
@@ -742,6 +745,10 @@
     {
       "path": "/cerca",
       "count": 5
+    },
+    {
+      "path": "/en-us",
+      "count": 4
     },
     {
       "path": "/2026/07/20/revivint-la-vella-woody-cam",
@@ -766,14 +773,6 @@
     {
       "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
       "count": 4
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 3
-    },
-    {
-      "path": "/2014/04/21/ivan-kovacevic-5-spots-en-campari-milano",
-      "count": 3
     }
   ],
   "wizard_funnel": {
@@ -946,7 +945,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 671
+      "count": 678
     },
     {
       "name": "Google",
@@ -969,14 +968,14 @@
       "count": 11
     },
     {
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
+      "count": 9
+    },
+    {
       "name": "Blog",
       "id": "Blog",
       "count": 8
-    },
-    {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 7
     },
     {
       "name": "www.facebook.com",
