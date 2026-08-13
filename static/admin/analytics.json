@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-12T23:30:47.605491Z",
+  "generated": "2026-08-13T01:07:32.025384Z",
   "period": {
-    "start": "2025-08-12",
-    "end": "2026-08-12"
+    "start": "2025-08-13",
+    "end": "2026-08-13"
   },
-  "total": 1055,
+  "total": 1058,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -137,7 +137,7 @@
     },
     {
       "date": "2026-06-10",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-06-11",
@@ -225,7 +225,7 @@
     },
     {
       "date": "2026-07-02",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-07-03",
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-07-10",
@@ -261,7 +261,7 @@
     },
     {
       "date": "2026-07-11",
-      "count": 6
+      "count": 5
     },
     {
       "date": "2026-07-12",
@@ -386,12 +386,16 @@
     {
       "date": "2026-08-11",
       "count": 7
+    },
+    {
+      "date": "2026-08-12",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 309
+      "count": 310
     },
     {
       "path": "/galeria",
@@ -431,7 +435,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 16
+      "count": 17
     },
     {
       "path": "/obra",
@@ -591,17 +595,17 @@
     }
   ],
   "by_lang": {
-    "en": 142,
+    "en": 141,
     "ca": 27,
     "es": 30
   },
   "by_section": {
-    "inici": 322,
+    "inici": 323,
     "galeria": 97,
-    "festivals": 121,
+    "festivals": 124,
     "serveis": 76,
     "blog": 42,
-    "noticies": 108,
+    "noticies": 109,
     "contacte": 41,
     "qui-som": 30,
     "obra": 16,
@@ -614,7 +618,7 @@
     "legal": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
-    "2025": 6,
+    "2025": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
     "content": 19,
@@ -652,7 +656,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 16
+      "count": 17
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -715,12 +719,12 @@
       "count": 9
     },
     {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
       "count": 8
     },
     {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 7
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 8
     },
     {
       "path": "/?query-0-page=2",
@@ -782,7 +786,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 29,
+  "avg_time_on_site_seconds": 28,
   "browsers": [
     {
       "name": "Chrome",
@@ -945,12 +949,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 678
+      "count": 680
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 108
+      "count": 110
     },
     {
       "name": "blog.pocallum.cat",
