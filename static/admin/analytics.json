@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-13T23:31:05.373688Z",
+  "generated": "2026-08-14T01:06:19.826445Z",
   "period": {
-    "start": "2025-08-13",
-    "end": "2026-08-13"
+    "start": "2025-08-14",
+    "end": "2026-08-14"
   },
-  "total": 1058,
+  "total": 1122,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 40
+      "count": 38
     },
     {
       "date": "2026-05-11",
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-05-15",
-      "count": 28
+      "count": 27
     },
     {
       "date": "2026-05-16",
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-06-30",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-07-01",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-07-07",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 24
+      "count": 26
     },
     {
       "date": "2026-07-09",
@@ -257,15 +257,15 @@
     },
     {
       "date": "2026-07-10",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-07-11",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-07-12",
-      "count": 24
+      "count": 22
     },
     {
       "date": "2026-07-13",
@@ -277,7 +277,7 @@
     },
     {
       "date": "2026-07-15",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-07-16",
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-07-17",
-      "count": 6
+      "count": 5
     },
     {
       "date": "2026-07-18",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-07-28",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-07-29",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-08-02",
-      "count": 6
+      "count": 5
     },
     {
       "date": "2026-08-03",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-08-04",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-08-05",
@@ -373,7 +373,7 @@
     },
     {
       "date": "2026-08-08",
-      "count": 9
+      "count": 3
     },
     {
       "date": "2026-08-09",
@@ -381,7 +381,7 @@
     },
     {
       "date": "2026-08-10",
-      "count": 17
+      "count": 16
     },
     {
       "date": "2026-08-11",
@@ -390,12 +390,20 @@
     {
       "date": "2026-08-12",
       "count": 3
+    },
+    {
+      "date": "2026-08-13",
+      "count": 72
+    },
+    {
+      "date": "2026-08-14",
+      "count": 7
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 310
+      "count": 325
     },
     {
       "path": "/galeria",
@@ -446,12 +454,24 @@
       "count": 13
     },
     {
+      "path": "/en/legal/privacitat",
+      "count": 12
+    },
+    {
+      "path": "/en/legal/avis-legal",
+      "count": 12
+    },
+    {
       "path": "/serveis/books-per-actors",
       "count": 12
     },
     {
       "path": "/cerca",
       "count": 12
+    },
+    {
+      "path": "/obra/balkan-reunion",
+      "count": 11
     },
     {
       "path": "/en/node/191/track?page=2%60",
@@ -470,6 +490,10 @@
       "count": 9
     },
     {
+      "path": "/en/legal/cookies",
+      "count": 8
+    },
+    {
       "path": "/en/node/191/track?page=2%60%60",
       "count": 8
     },
@@ -484,6 +508,10 @@
     {
       "path": "/festivals/im-jazz",
       "count": 7
+    },
+    {
+      "path": "/en/obra/balkan-reunion",
+      "count": 6
     },
     {
       "path": "/serveis/books-artistics",
@@ -514,6 +542,10 @@
       "count": 5
     },
     {
+      "path": "/revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre",
+      "count": 5
+    },
+    {
       "path": "/es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro",
       "count": 5
     },
@@ -526,7 +558,15 @@
       "count": 5
     },
     {
+      "path": "/tags/112books",
+      "count": 4
+    },
+    {
       "path": "/es/2025/08",
+      "count": 4
+    },
+    {
+      "path": "/una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri",
       "count": 4
     },
     {
@@ -560,68 +600,39 @@
     {
       "path": "/es/caffenol-una-tecnica-de-revelado-alternativa",
       "count": 4
-    },
-    {
-      "path": "/festivals/ciutat-flamenco-barcelona",
-      "count": 4
-    },
-    {
-      "path": "/en/content/developing-color-film-black-and-white-process",
-      "count": 3
-    },
-    {
-      "path": "/en/contact",
-      "count": 3
-    },
-    {
-      "path": "/en/content/20%C3%A8-festival-de-blues-de-barcelona",
-      "count": 3
-    },
-    {
-      "path": "/es/estudio-fotografico-movil",
-      "count": 3
-    },
-    {
-      "path": "/en/node/8/track?page=8",
-      "count": 3
-    },
-    {
-      "path": "/en/los-mambo-jambo-studio",
-      "count": 3
-    },
-    {
-      "path": "/en/19th-barcelona-blues-festival-2021-tribute-amadeu-cases",
-      "count": 3
     }
   ],
   "by_lang": {
-    "en": 141,
-    "ca": 27,
+    "en": 170,
+    "ca": 24,
     "es": 30
   },
   "by_section": {
-    "inici": 323,
-    "galeria": 97,
+    "inici": 338,
+    "galeria": 92,
     "festivals": 124,
     "serveis": 76,
     "blog": 42,
     "noticies": 109,
     "contacte": 41,
     "qui-som": 30,
-    "obra": 16,
+    "obra": 33,
+    "legal": 37,
     "cerca": 12,
-    "node": 41,
+    "node": 42,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
     "serveis-fotografics-2": 8,
     "testing-adox-hr-50-film": 5,
     "testing-vintage-cameras": 5,
-    "legal": 5,
+    "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
+    "tags": 4,
     "2025": 4,
+    "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
-    "content": 19,
+    "content": 22,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
@@ -632,18 +643,15 @@
     "testing-film-kono-monolit-iso64": 3,
     "incoherencias-una-pequena-historia-del-absurdo-3": 3,
     "un-bolo-con-mambo-mucho-de-mambo": 3,
-    "photographic-services": 5,
+    "restaurant-diapositives-dels-anys-50": 3,
+    "photographic-services": 3,
     "gypsy-wedding-bon-pastor-barcelona": 3,
     "cambo-sc-first-test": 3,
     "lomography-great-photos-simple-camera": 3,
     "sessio-amb-eli": 3,
-    "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
     "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
-    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3,
-    "tags": 6,
-    "new-books-for-actors-and-actresses": 2,
-    "services-and-rates": 2
+    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3
   },
   "noticies_top": [
     {
@@ -691,10 +699,6 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 5
-    },
-    {
-      "path": "/festivals/ciutat-flamenco-barcelona",
-      "count": 4
     }
   ],
   "blog_top": [
@@ -704,7 +708,7 @@
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 38
+      "count": 39
     },
     {
       "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
@@ -727,15 +731,39 @@
       "count": 8
     },
     {
+      "path": "/contact",
+      "count": 7
+    },
+    {
       "path": "/?query-0-page=2",
       "count": 7
+    },
+    {
+      "path": "/cerca",
+      "count": 7
+    },
+    {
+      "path": "/category/camara/hasselblad-500cm/page/6",
+      "count": 6
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 6
+    },
+    {
+      "path": "/?query-0-page=10",
+      "count": 5
+    },
+    {
+      "path": "/2017/12/15/homedev171-hasselblad-500-cm-50mm-panf-50-badenas-reales",
+      "count": 5
     },
     {
       "path": "/2026/08/10/2026-07-29-anike-volant",
       "count": 5
     },
     {
-      "path": "/contact",
+      "path": "/about",
       "count": 5
     },
     {
@@ -747,35 +775,11 @@
       "count": 5
     },
     {
-      "path": "/cerca",
-      "count": 5
-    },
-    {
-      "path": "/en-us",
+      "path": "/?query-0-page=191",
       "count": 4
     },
     {
-      "path": "/2026/07/20/revivint-la-vella-woody-cam",
-      "count": 4
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 4
-    },
-    {
-      "path": "/2026/02/13/2026-02-12-bar-moebius-amb-tarantula-friends",
-      "count": 4
-    },
-    {
-      "path": "/politica-de-cookies",
-      "count": 4
-    },
-    {
-      "path": "/2012/12/07/lomo-9765-pentax-k1000-lomography-color-800-i",
-      "count": 4
-    },
-    {
-      "path": "/2013/12/08/caffenol-35-pentaxk1000-kodak-tmax-100-can-peguera",
+      "path": "/?query-0-page=188",
       "count": 4
     }
   ],
@@ -786,12 +790,12 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 28,
+  "avg_time_on_site_seconds": 18,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1090
+      "count": 1092
     },
     {
       "name": "Safari",
@@ -823,12 +827,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 436
+      "count": 437
     },
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 204
+      "count": 205
     },
     {
       "name": "iOS",
@@ -850,7 +854,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 943
+      "count": 945
     },
     {
       "name": "desktophd",
@@ -877,7 +881,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 214
+      "count": 216
     },
     {
       "name": "Singapore",
@@ -949,7 +953,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 680
+      "count": 803
     },
     {
       "name": "Google",
@@ -982,6 +986,11 @@
       "count": 8
     },
     {
+      "name": "bing.com",
+      "id": "bing.com",
+      "count": 8
+    },
+    {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
       "count": 6
@@ -989,11 +998,6 @@
     {
       "name": "ig",
       "id": "ig",
-      "count": 5
-    },
-    {
-      "name": "about.pocallum.cat",
-      "id": "about.pocallum.cat",
       "count": 5
     }
   ]
