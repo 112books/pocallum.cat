@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15T05:16:12.538273Z",
+  "generated": "2026-08-15T07:22:12.138263Z",
   "period": {
     "start": "2025-08-15",
     "end": "2026-08-15"
@@ -705,88 +705,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 74
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/contact",
-      "count": 7
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 7
-    },
-    {
-      "path": "/cerca",
-      "count": 7
-    },
-    {
-      "path": "/category/camara/hasselblad-500cm/page/6",
-      "count": 6
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 6
-    },
-    {
-      "path": "/?query-0-page=10",
-      "count": 5
-    },
-    {
-      "path": "/2017/12/15/homedev171-hasselblad-500-cm-50mm-panf-50-badenas-reales",
-      "count": 5
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 5
-    },
-    {
-      "path": "/about",
-      "count": 5
-    },
-    {
-      "path": "/2012/01/28/prospe-beach-2010",
-      "count": 5
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 5
-    },
-    {
-      "path": "/?query-0-page=191",
-      "count": 4
-    },
-    {
-      "path": "/?query-0-page=188",
-      "count": 4
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -799,7 +718,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1127
+      "count": 1137
     },
     {
       "name": "Safari",
@@ -846,7 +765,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 140
+      "count": 150
     },
     {
       "name": "Chrome OS",
@@ -873,14 +792,14 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 149
+      "count": 159
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1008
+      "count": 1018
     },
     {
       "name": "United States",
