@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-15T23:11:33.369090Z",
+  "generated": "2026-08-16T00:42:01.358512Z",
   "period": {
-    "start": "2025-08-15",
-    "end": "2026-08-15"
+    "start": "2025-08-16",
+    "end": "2026-08-16"
   },
-  "total": 1161,
+  "total": 1168,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -401,17 +401,17 @@
     },
     {
       "date": "2026-08-15",
-      "count": 1
+      "count": 8
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 328
+      "count": 329
     },
     {
       "path": "/galeria",
-      "count": 93
+      "count": 94
     },
     {
       "path": "/festivals",
@@ -423,11 +423,11 @@
     },
     {
       "path": "/blog",
-      "count": 42
+      "count": 43
     },
     {
       "path": "/noticies",
-      "count": 40
+      "count": 41
     },
     {
       "path": "/contacte",
@@ -435,7 +435,7 @@
     },
     {
       "path": "/qui-som",
-      "count": 27
+      "count": 28
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -451,18 +451,18 @@
     },
     {
       "path": "/en/legal/cookies",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/en/legal/avis-legal",
       "count": 19
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 17
+      "path": "/obra",
+      "count": 18
     },
     {
-      "path": "/obra",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 17
     },
     {
@@ -607,21 +607,21 @@
     }
   ],
   "by_lang": {
-    "en": 201,
+    "en": 202,
     "ca": 24,
     "es": 30
   },
   "by_section": {
-    "inici": 341,
-    "galeria": 93,
+    "inici": 342,
+    "galeria": 94,
     "festivals": 125,
     "serveis": 77,
-    "blog": 42,
-    "noticies": 110,
+    "blog": 43,
+    "noticies": 111,
     "contacte": 41,
-    "qui-som": 30,
-    "legal": 67,
-    "obra": 35,
+    "qui-som": 31,
+    "legal": 68,
+    "obra": 36,
     "cerca": 12,
     "node": 42,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -708,11 +708,15 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 74
+      "count": 75
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
       "count": 39
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 12
     },
     {
       "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
@@ -723,8 +727,20 @@
       "count": 11
     },
     {
+      "path": "/cerca",
+      "count": 10
+    },
+    {
+      "path": "/contact",
+      "count": 9
+    },
+    {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
       "count": 9
+    },
+    {
+      "path": "/category/camara",
+      "count": 8
     },
     {
       "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
@@ -735,7 +751,7 @@
       "count": 8
     },
     {
-      "path": "/contact",
+      "path": "/about",
       "count": 7
     },
     {
@@ -743,15 +759,7 @@
       "count": 7
     },
     {
-      "path": "/cerca",
-      "count": 7
-    },
-    {
       "path": "/category/camara/hasselblad-500cm/page/6",
-      "count": 6
-    },
-    {
-      "path": "/aviso-legal",
       "count": 6
     },
     {
@@ -767,10 +775,6 @@
       "count": 5
     },
     {
-      "path": "/about",
-      "count": 5
-    },
-    {
       "path": "/2012/01/28/prospe-beach-2010",
       "count": 5
     },
@@ -781,10 +785,6 @@
     {
       "path": "/?query-0-page=191",
       "count": 4
-    },
-    {
-      "path": "/?query-0-page=188",
-      "count": 4
     }
   ],
   "wizard_funnel": {
@@ -794,7 +794,7 @@
     "wizard-s4": 4,
     "wizard-sent": 3
   },
-  "avg_time_on_site_seconds": 18,
+  "avg_time_on_site_seconds": 19,
   "browsers": [
     {
       "name": "Chrome",
@@ -957,12 +957,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 841
+      "count": 842
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 110
+      "count": 112
     },
     {
       "name": "blog.pocallum.cat",
