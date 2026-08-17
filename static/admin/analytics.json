@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T07:43:23.230800Z",
+  "generated": "2026-08-17T08:31:54.283352Z",
   "period": {
     "start": "2025-08-17",
     "end": "2026-08-17"
@@ -709,7 +709,88 @@
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 77
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 39
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 12
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 11
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 11
+    },
+    {
+      "path": "/cerca",
+      "count": 10
+    },
+    {
+      "path": "/contact",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 9
+    },
+    {
+      "path": "/category/camara",
+      "count": 8
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 8
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 8
+    },
+    {
+      "path": "/about",
+      "count": 7
+    },
+    {
+      "path": "/?query-0-page=2",
+      "count": 7
+    },
+    {
+      "path": "/category/camara/hasselblad-500cm/page/6",
+      "count": 6
+    },
+    {
+      "path": "/2026/08/10/2026-07-29-anike-volant",
+      "count": 6
+    },
+    {
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 5
+    },
+    {
+      "path": "/?query-0-page=10",
+      "count": 5
+    },
+    {
+      "path": "/2017/12/15/homedev171-hasselblad-500-cm-50mm-panf-50-badenas-reales",
+      "count": 5
+    },
+    {
+      "path": "/2012/01/28/prospe-beach-2010",
+      "count": 5
+    },
+    {
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 5
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
