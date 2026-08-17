@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-16T23:11:05.142077Z",
+  "generated": "2026-08-17T00:40:13.363469Z",
   "period": {
-    "start": "2025-08-16",
-    "end": "2026-08-16"
+    "start": "2025-08-17",
+    "end": "2026-08-17"
   },
-  "total": 1169,
+  "total": 1173,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 38
+      "count": 37
     },
     {
       "date": "2026-05-11",
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-05-15",
-      "count": 27
+      "count": 26
     },
     {
       "date": "2026-05-16",
@@ -57,7 +57,7 @@
     },
     {
       "date": "2026-05-21",
-      "count": 19
+      "count": 18
     },
     {
       "date": "2026-05-22",
@@ -101,7 +101,7 @@
     },
     {
       "date": "2026-06-01",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-06-02",
@@ -373,7 +373,7 @@
     },
     {
       "date": "2026-08-08",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-08-09",
@@ -405,7 +405,7 @@
     },
     {
       "date": "2026-08-16",
-      "count": 1
+      "count": 6
     }
   ],
   "hits": [
@@ -443,7 +443,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/en/legal/privacitat",
@@ -459,7 +459,7 @@
     },
     {
       "path": "/en/legal/avis-legal",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/obra",
@@ -470,12 +470,12 @@
       "count": 17
     },
     {
-      "path": "/festivals/festival-blues-barcelona",
+      "path": "/serveis/books-per-actors",
       "count": 13
     },
     {
-      "path": "/serveis/books-per-actors",
-      "count": 12
+      "path": "/festivals/festival-blues-barcelona",
+      "count": 13
     },
     {
       "path": "/cerca",
@@ -546,6 +546,10 @@
       "count": 5
     },
     {
+      "path": "/en",
+      "count": 5
+    },
+    {
       "path": "/festivals/vijazz",
       "count": 5
     },
@@ -594,10 +598,6 @@
       "count": 4
     },
     {
-      "path": "/en",
-      "count": 4
-    },
-    {
       "path": "/en/content/photography-studio",
       "count": 4
     },
@@ -611,20 +611,20 @@
     }
   ],
   "by_lang": {
-    "en": 203,
-    "ca": 24,
+    "en": 208,
+    "ca": 21,
     "es": 30
   },
   "by_section": {
-    "inici": 342,
+    "inici": 343,
     "galeria": 94,
-    "festivals": 125,
-    "serveis": 77,
+    "festivals": 128,
+    "serveis": 78,
     "blog": 43,
-    "noticies": 111,
-    "contacte": 41,
+    "noticies": 112,
+    "contacte": 38,
     "qui-som": 31,
-    "legal": 69,
+    "legal": 70,
     "obra": 36,
     "cerca": 12,
     "node": 42,
@@ -664,7 +664,7 @@
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -712,7 +712,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 75
+      "count": 77
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
@@ -767,15 +767,19 @@
       "count": 6
     },
     {
+      "path": "/2026/08/10/2026-07-29-anike-volant",
+      "count": 6
+    },
+    {
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 5
+    },
+    {
       "path": "/?query-0-page=10",
       "count": 5
     },
     {
       "path": "/2017/12/15/homedev171-hasselblad-500-cm-50mm-panf-50-badenas-reales",
-      "count": 5
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
       "count": 5
     },
     {
@@ -785,10 +789,6 @@
     {
       "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
       "count": 5
-    },
-    {
-      "path": "/?query-0-page=191",
-      "count": 4
     }
   ],
   "wizard_funnel": {
@@ -961,17 +961,22 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 843
+      "count": 846
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 112
+      "count": 114
     },
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
       "count": 19
+    },
+    {
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
+      "count": 13
     },
     {
       "name": "pocallum-cat.translate.goog",
@@ -984,11 +989,6 @@
       "count": 11
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 10
-    },
-    {
       "name": "Blog",
       "id": "Blog",
       "count": 8
@@ -999,14 +999,14 @@
       "count": 8
     },
     {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
+      "name": "www.bing.com",
+      "id": "www.bing.com",
       "count": 6
     },
     {
-      "name": "ig",
-      "id": "ig",
-      "count": 5
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 6
     }
   ]
 }
