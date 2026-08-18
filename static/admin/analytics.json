@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-17T23:13:33.444549Z",
+  "generated": "2026-08-18T00:39:45.467139Z",
   "period": {
-    "start": "2025-08-17",
-    "end": "2026-08-17"
+    "start": "2025-08-18",
+    "end": "2026-08-18"
   },
-  "total": 1173,
+  "total": 1179,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -406,24 +406,28 @@
     {
       "date": "2026-08-16",
       "count": 6
+    },
+    {
+      "date": "2026-08-17",
+      "count": 6
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 329
+      "count": 331
     },
     {
       "path": "/galeria",
-      "count": 94
+      "count": 95
     },
     {
       "path": "/festivals",
-      "count": 57
+      "count": 58
     },
     {
       "path": "/serveis",
-      "count": 53
+      "count": 54
     },
     {
       "path": "/blog",
@@ -447,7 +451,7 @@
     },
     {
       "path": "/en/legal/privacitat",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -611,20 +615,20 @@
     }
   ],
   "by_lang": {
-    "en": 208,
+    "en": 209,
     "ca": 21,
     "es": 30
   },
   "by_section": {
-    "inici": 343,
-    "galeria": 94,
-    "festivals": 128,
-    "serveis": 78,
+    "inici": 345,
+    "galeria": 95,
+    "festivals": 129,
+    "serveis": 79,
     "blog": 43,
     "noticies": 112,
     "contacte": 38,
     "qui-som": 31,
-    "legal": 70,
+    "legal": 71,
     "obra": 36,
     "cerca": 12,
     "node": 42,
@@ -732,7 +736,7 @@
     },
     {
       "path": "/cerca",
-      "count": 10
+      "count": 11
     },
     {
       "path": "/contact",
@@ -751,6 +755,10 @@
       "count": 8
     },
     {
+      "path": "/?query-0-page=2",
+      "count": 8
+    },
+    {
       "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
       "count": 8
     },
@@ -759,8 +767,8 @@
       "count": 7
     },
     {
-      "path": "/?query-0-page=2",
-      "count": 7
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 6
     },
     {
       "path": "/category/camara/hasselblad-500cm/page/6",
@@ -771,23 +779,19 @@
       "count": 6
     },
     {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 5
-    },
-    {
       "path": "/?query-0-page=10",
       "count": 5
     },
     {
-      "path": "/2017/12/15/homedev171-hasselblad-500-cm-50mm-panf-50-badenas-reales",
+      "path": "/?query-0-page=191",
       "count": 5
     },
     {
-      "path": "/2012/01/28/prospe-beach-2010",
+      "path": "/?query-0-page=188",
       "count": 5
     },
     {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "path": "/?query-0-page=184",
       "count": 5
     }
   ],
@@ -961,12 +965,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 846
+      "count": 847
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 114
+      "count": 118
     },
     {
       "name": "blog.pocallum.cat",
@@ -999,13 +1003,13 @@
       "count": 8
     },
     {
-      "name": "www.bing.com",
-      "id": "www.bing.com",
-      "count": 6
+      "name": "about.pocallum.cat",
+      "id": "about.pocallum.cat",
+      "count": 7
     },
     {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
+      "name": "ig",
+      "id": "ig",
       "count": 6
     }
   ]
