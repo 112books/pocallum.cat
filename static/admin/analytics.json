@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-19T23:14:00.929246Z",
+  "generated": "2026-08-20T00:39:45.866889Z",
   "period": {
-    "start": "2025-08-19",
-    "end": "2026-08-19"
+    "start": "2025-08-20",
+    "end": "2026-08-20"
   },
   "total": 1183,
   "total_unique": 0,
@@ -727,12 +727,12 @@
       "count": 39
     },
     {
-      "path": "/aviso-legal",
-      "count": 12
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 13
     },
     {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 11
+      "path": "/aviso-legal",
+      "count": 12
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
@@ -751,6 +751,10 @@
       "count": 9
     },
     {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 8
+    },
+    {
       "path": "/category/camara",
       "count": 8
     },
@@ -767,11 +771,15 @@
       "count": 8
     },
     {
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 7
+    },
+    {
       "path": "/about",
       "count": 7
     },
     {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 6
     },
     {
@@ -788,14 +796,6 @@
     },
     {
       "path": "/?query-0-page=191",
-      "count": 5
-    },
-    {
-      "path": "/?query-0-page=188",
-      "count": 5
-    },
-    {
-      "path": "/?query-0-page=184",
       "count": 5
     }
   ],
