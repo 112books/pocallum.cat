@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-20T23:17:10.140769Z",
+  "generated": "2026-08-21T00:42:42.362446Z",
   "period": {
-    "start": "2025-08-20",
-    "end": "2026-08-20"
+    "start": "2025-08-21",
+    "end": "2026-08-21"
   },
-  "total": 1183,
+  "total": 1185,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-05-10",
-      "count": 37
+      "count": 36
     },
     {
       "date": "2026-05-11",
@@ -157,7 +157,7 @@
     },
     {
       "date": "2026-06-15",
-      "count": 20
+      "count": 19
     },
     {
       "date": "2026-06-16",
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-06-20",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-06-21",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 26
+      "count": 28
     },
     {
       "date": "2026-07-09",
@@ -414,16 +414,24 @@
     {
       "date": "2026-08-18",
       "count": 4
+    },
+    {
+      "date": "2026-08-20",
+      "count": 1
+    },
+    {
+      "date": "2026-08-21",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 332
+      "count": 333
     },
     {
       "path": "/galeria",
-      "count": 95
+      "count": 96
     },
     {
       "path": "/festivals",
@@ -624,8 +632,8 @@
     "es": 30
   },
   "by_section": {
-    "inici": 346,
-    "galeria": 95,
+    "inici": 347,
+    "galeria": 96,
     "festivals": 129,
     "serveis": 79,
     "blog": 43,
@@ -652,6 +660,7 @@
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
+    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 3,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
@@ -666,8 +675,7 @@
     "lomography-great-photos-simple-camera": 3,
     "sessio-amb-eli": 3,
     "on-veure-exposicions-de-fotografia-a-barcelona": 3,
-    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3,
-    "comprehensive-guide-to-photography-exhibitions-and-spaces-in-barcelona": 3
+    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3
   },
   "noticies_top": [
     {
@@ -743,16 +751,20 @@
       "count": 11
     },
     {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 10
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 10
+    },
+    {
       "path": "/contact",
       "count": 9
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
       "count": 9
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 8
     },
     {
       "path": "/category/camara",
@@ -777,10 +789,6 @@
     {
       "path": "/about",
       "count": 7
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 6
     },
     {
       "path": "/category/camara/hasselblad-500cm/page/6",
@@ -811,7 +819,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1160
+      "count": 1164
     },
     {
       "name": "Safari",
@@ -858,7 +866,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 164
+      "count": 168
     },
     {
       "name": "Chrome OS",
@@ -880,7 +888,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 304
+      "count": 308
     },
     {
       "name": "tablet",
@@ -892,7 +900,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1039
+      "count": 1043
     },
     {
       "name": "United States",
@@ -969,7 +977,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 849
+      "count": 850
     },
     {
       "name": "Google",
@@ -1007,14 +1015,14 @@
       "count": 8
     },
     {
-      "name": "about.pocallum.cat",
-      "id": "about.pocallum.cat",
+      "name": "ig",
+      "id": "ig",
       "count": 7
     },
     {
-      "name": "ig",
-      "id": "ig",
-      "count": 6
+      "name": "about.pocallum.cat",
+      "id": "about.pocallum.cat",
+      "count": 7
     }
   ]
 }
