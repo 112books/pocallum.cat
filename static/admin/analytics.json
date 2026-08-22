@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-21T23:14:13.124514Z",
+  "generated": "2026-08-22T00:39:53.379390Z",
   "period": {
-    "start": "2025-08-21",
-    "end": "2026-08-21"
+    "start": "2025-08-22",
+    "end": "2026-08-22"
   },
-  "total": 1185,
+  "total": 1187,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -421,7 +421,7 @@
     },
     {
       "date": "2026-08-21",
-      "count": 2
+      "count": 4
     }
   ],
   "hits": [
@@ -538,6 +538,10 @@
       "count": 7
     },
     {
+      "path": "/legal/privacitat",
+      "count": 6
+    },
+    {
       "path": "/serveis/books-artistics",
       "count": 6
     },
@@ -551,10 +555,6 @@
     },
     {
       "path": "/en/testing-vintage-cameras",
-      "count": 5
-    },
-    {
-      "path": "/legal/privacitat",
       "count": 5
     },
     {
@@ -598,6 +598,10 @@
       "count": 4
     },
     {
+      "path": "/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one",
+      "count": 4
+    },
+    {
       "path": "/una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri",
       "count": 4
     },
@@ -620,14 +624,10 @@
     {
       "path": "/contacte/politica-de-ptivacitat-avis-legal",
       "count": 4
-    },
-    {
-      "path": "/en/content/photography-studio",
-      "count": 4
     }
   ],
   "by_lang": {
-    "en": 211,
+    "en": 212,
     "ca": 21,
     "es": 30
   },
@@ -640,7 +640,7 @@
     "noticies": 112,
     "contacte": 39,
     "qui-som": 32,
-    "legal": 71,
+    "legal": 72,
     "obra": 36,
     "cerca": 12,
     "node": 43,
@@ -653,6 +653,7 @@
     "servicios-fotograficos": 8,
     "tags": 4,
     "2025": 4,
+    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
@@ -660,7 +661,6 @@
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
-    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 3,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
@@ -743,6 +743,10 @@
       "count": 12
     },
     {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 11
+    },
+    {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 11
     },
@@ -752,10 +756,6 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 10
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 10
     },
     {
@@ -977,7 +977,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 850
+      "count": 851
     },
     {
       "name": "Google",
