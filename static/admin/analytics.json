@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-22T23:11:17.200370Z",
+  "generated": "2026-08-23T00:43:25.452116Z",
   "period": {
-    "start": "2025-08-22",
-    "end": "2026-08-22"
+    "start": "2025-08-23",
+    "end": "2026-08-23"
   },
-  "total": 1187,
+  "total": 1194,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -422,6 +422,14 @@
     {
       "date": "2026-08-21",
       "count": 4
+    },
+    {
+      "date": "2026-08-22",
+      "count": 3
+    },
+    {
+      "date": "2026-08-23",
+      "count": 4
     }
   ],
   "hits": [
@@ -431,7 +439,7 @@
     },
     {
       "path": "/galeria",
-      "count": 96
+      "count": 98
     },
     {
       "path": "/festivals",
@@ -478,16 +486,16 @@
       "count": 20
     },
     {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 18
+    },
+    {
       "path": "/obra",
       "count": 18
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 17
-    },
-    {
       "path": "/serveis/books-per-actors",
-      "count": 13
+      "count": 14
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -527,6 +535,10 @@
     },
     {
       "path": "/en/obra/balkan-reunion",
+      "count": 7
+    },
+    {
+      "path": "/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one",
       "count": 7
     },
     {
@@ -598,10 +610,6 @@
       "count": 4
     },
     {
-      "path": "/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one",
-      "count": 4
-    },
-    {
       "path": "/una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri",
       "count": 4
     },
@@ -627,17 +635,17 @@
     }
   ],
   "by_lang": {
-    "en": 212,
+    "en": 216,
     "ca": 21,
     "es": 30
   },
   "by_section": {
     "inici": 347,
-    "galeria": 96,
+    "galeria": 98,
     "festivals": 129,
-    "serveis": 79,
+    "serveis": 80,
     "blog": 43,
-    "noticies": 112,
+    "noticies": 113,
     "contacte": 39,
     "qui-som": 32,
     "legal": 72,
@@ -646,6 +654,7 @@
     "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
     "serveis-fotografics-2": 8,
+    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 7,
     "testing-adox-hr-50-film": 5,
     "testing-vintage-cameras": 5,
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
@@ -653,7 +662,6 @@
     "servicios-fotograficos": 8,
     "tags": 4,
     "2025": 4,
-    "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
@@ -688,7 +696,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 17
+      "count": 18
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -739,12 +747,12 @@
       "count": 13
     },
     {
-      "path": "/aviso-legal",
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 12
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 11
+      "path": "/aviso-legal",
+      "count": 12
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
@@ -819,7 +827,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1174
+      "count": 1175
     },
     {
       "name": "Safari",
@@ -846,7 +854,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 767
+      "count": 768
     },
     {
       "name": "Windows",
@@ -893,7 +901,7 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 163
+      "count": 164
     }
   ],
   "locations": [
@@ -905,7 +913,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 256
+      "count": 257
     },
     {
       "name": "Singapore",
@@ -977,12 +985,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 851
+      "count": 855
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 118
+      "count": 120
     },
     {
       "name": "blog.pocallum.cat",
@@ -990,14 +998,14 @@
       "count": 19
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 14
-    },
-    {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
-      "count": 12
+      "count": 16
+    },
+    {
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
+      "count": 15
     },
     {
       "name": "www.facebook.com",
