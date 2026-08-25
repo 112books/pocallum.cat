@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-24T23:14:13.684191Z",
+  "generated": "2026-08-25T00:41:07.851585Z",
   "period": {
-    "start": "2025-08-24",
-    "end": "2026-08-24"
+    "start": "2025-08-25",
+    "end": "2026-08-25"
   },
-  "total": 1197,
+  "total": 1203,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -430,16 +430,24 @@
     {
       "date": "2026-08-23",
       "count": 7
+    },
+    {
+      "date": "2026-08-24",
+      "count": 5
+    },
+    {
+      "date": "2026-08-25",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 333
+      "count": 334
     },
     {
       "path": "/galeria",
-      "count": 98
+      "count": 99
     },
     {
       "path": "/festivals",
@@ -463,11 +471,11 @@
     },
     {
       "path": "/qui-som",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 26
+      "count": 27
     },
     {
       "path": "/en/legal/privacitat",
@@ -482,16 +490,16 @@
       "count": 21
     },
     {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 21
+    },
+    {
       "path": "/en/legal/avis-legal",
       "count": 20
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 20
-    },
-    {
       "path": "/obra",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/serveis/books-per-actors",
@@ -635,21 +643,21 @@
     }
   ],
   "by_lang": {
-    "en": 218,
+    "en": 219,
     "ca": 21,
     "es": 30
   },
   "by_section": {
-    "inici": 347,
-    "galeria": 98,
+    "inici": 348,
+    "galeria": 99,
     "festivals": 129,
     "serveis": 81,
     "blog": 43,
-    "noticies": 115,
+    "noticies": 117,
     "contacte": 39,
-    "qui-som": 32,
+    "qui-som": 33,
     "legal": 72,
-    "obra": 36,
+    "obra": 37,
     "cerca": 12,
     "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -688,7 +696,7 @@
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 26
+      "count": 27
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -696,7 +704,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -820,9 +828,9 @@
     "wizard-s2": 16,
     "wizard-s3": 5,
     "wizard-s4": 4,
-    "wizard-sent": 3
+    "wizard-sent": 0
   },
-  "avg_time_on_site_seconds": 19,
+  "avg_time_on_site_seconds": 30,
   "browsers": [
     {
       "name": "Chrome",
@@ -985,7 +993,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 857
+      "count": 859
     },
     {
       "name": "Google",
@@ -998,14 +1006,14 @@
       "count": 19
     },
     {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
       "count": 16
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 15
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 16
     },
     {
       "name": "www.facebook.com",
