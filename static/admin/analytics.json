@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-25T23:16:48.780095Z",
+  "generated": "2026-08-26T00:42:04.275165Z",
   "period": {
-    "start": "2025-08-25",
-    "end": "2026-08-25"
+    "start": "2025-08-26",
+    "end": "2026-08-26"
   },
-  "total": 1203,
+  "total": 1204,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "date": "2026-05-11",
-      "count": 18
+      "count": 17
     },
     {
       "date": "2026-05-12",
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-05-16",
-      "count": 13
+      "count": 12
     },
     {
       "date": "2026-05-17",
@@ -145,7 +145,7 @@
     },
     {
       "date": "2026-06-12",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-06-13",
@@ -397,7 +397,7 @@
     },
     {
       "date": "2026-08-14",
-      "count": 45
+      "count": 46
     },
     {
       "date": "2026-08-15",
@@ -405,7 +405,7 @@
     },
     {
       "date": "2026-08-16",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-08-17",
@@ -437,7 +437,7 @@
     },
     {
       "date": "2026-08-25",
-      "count": 1
+      "count": 3
     }
   ],
   "hits": [
@@ -486,11 +486,11 @@
       "count": 23
     },
     {
-      "path": "/en/legal/cookies",
-      "count": 21
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 22
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "path": "/en/legal/cookies",
       "count": 21
     },
     {
@@ -643,17 +643,17 @@
     }
   ],
   "by_lang": {
-    "en": 219,
+    "en": 223,
     "ca": 21,
-    "es": 30
+    "es": 27
   },
   "by_section": {
     "inici": 348,
     "galeria": 99,
     "festivals": 129,
-    "serveis": 81,
+    "serveis": 84,
     "blog": 43,
-    "noticies": 117,
+    "noticies": 118,
     "contacte": 39,
     "qui-som": 33,
     "legal": 72,
@@ -690,8 +690,7 @@
     "cambo-sc-first-test": 3,
     "lomography-great-photos-simple-camera": 3,
     "sessio-amb-eli": 3,
-    "on-veure-exposicions-de-fotografia-a-barcelona": 3,
-    "guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona": 3
+    "on-veure-exposicions-de-fotografia-a-barcelona": 3
   },
   "noticies_top": [
     {
@@ -704,7 +703,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 21
+      "count": 22
     },
     {
       "path": "/noticies/2026-06-la-juganera",
@@ -751,16 +750,20 @@
       "count": 39
     },
     {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 17
+    },
+    {
       "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
       "count": 13
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "path": "/aviso-legal",
       "count": 12
     },
     {
-      "path": "/aviso-legal",
-      "count": 12
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 11
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
@@ -769,10 +772,6 @@
     {
       "path": "/cerca",
       "count": 11
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 10
     },
     {
       "path": "/contact",
@@ -998,7 +997,7 @@
     {
       "name": "Google",
       "id": "Google",
-      "count": 124
+      "count": 126
     },
     {
       "name": "blog.pocallum.cat",
@@ -1008,7 +1007,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 16
+      "count": 17
     },
     {
       "name": "pocallum-cat.translate.goog",
