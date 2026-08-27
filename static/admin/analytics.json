@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T02:25:09.145185Z",
+  "generated": "2026-08-27T23:22:01.710719Z",
   "period": {
     "start": "2025-08-27",
     "end": "2026-08-27"
@@ -747,88 +747,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 78
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 17
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 11
-    },
-    {
-      "path": "/cerca",
-      "count": 11
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 8
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 7
-    },
-    {
-      "path": "/about",
-      "count": 7
-    },
-    {
-      "path": "/category/camara/hasselblad-500cm/page/6",
-      "count": 6
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 6
-    },
-    {
-      "path": "/?query-0-page=10",
-      "count": 5
-    },
-    {
-      "path": "/?query-0-page=191",
-      "count": 5
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -841,7 +760,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1197
+      "count": 1209
     },
     {
       "name": "Safari",
@@ -868,12 +787,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 771
+      "count": 773
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 452
+      "count": 460
     },
     {
       "name": "Linux",
@@ -883,7 +802,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 184
+      "count": 186
     },
     {
       "name": "iOS",
@@ -900,17 +819,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1007
+      "count": 1015
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 339
+      "count": 341
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 324
+      "count": 326
     },
     {
       "name": "tablet",
@@ -922,12 +841,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1062
+      "count": 1068
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 258
+      "count": 260
     },
     {
       "name": "Singapore",
@@ -942,7 +861,7 @@
     {
       "name": "Germany",
       "id": "DE",
-      "count": 38
+      "count": 40
     },
     {
       "name": "United Kingdom",
@@ -987,7 +906,7 @@
     {
       "name": "Malaysia",
       "id": "MY",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Netherlands",
