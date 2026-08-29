@@ -1,8 +1,8 @@
 {
-  "generated": "2026-08-28T07:58:41.764753Z",
+  "generated": "2026-08-29T02:36:44.106140Z",
   "period": {
-    "start": "2025-08-28",
-    "end": "2026-08-28"
+    "start": "2025-08-29",
+    "end": "2026-08-29"
   },
   "total": 1211,
   "total_unique": 0,
@@ -33,7 +33,7 @@
     },
     {
       "date": "2026-05-15",
-      "count": 25
+      "count": 24
     },
     {
       "date": "2026-05-16",
@@ -93,7 +93,7 @@
     },
     {
       "date": "2026-05-30",
-      "count": 3
+      "count": 2
     },
     {
       "date": "2026-05-31",
@@ -133,11 +133,11 @@
     },
     {
       "date": "2026-06-09",
-      "count": 10
+      "count": 9
     },
     {
       "date": "2026-06-10",
-      "count": 22
+      "count": 24
     },
     {
       "date": "2026-06-11",
@@ -189,7 +189,7 @@
     },
     {
       "date": "2026-06-23",
-      "count": 12
+      "count": 14
     },
     {
       "date": "2026-06-24",
@@ -213,7 +213,7 @@
     },
     {
       "date": "2026-06-29",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-06-30",
@@ -225,7 +225,7 @@
     },
     {
       "date": "2026-07-02",
-      "count": 26
+      "count": 24
     },
     {
       "date": "2026-07-03",
@@ -449,7 +449,7 @@
     },
     {
       "date": "2026-08-28",
-      "count": 2
+      "count": 4
     }
   ],
   "hits": [
@@ -662,8 +662,8 @@
   "by_section": {
     "inici": 350,
     "galeria": 100,
-    "festivals": 129,
-    "serveis": 86,
+    "festivals": 123,
+    "serveis": 92,
     "blog": 43,
     "noticies": 120,
     "contacte": 39,
@@ -751,88 +751,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 78
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 17
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 11
-    },
-    {
-      "path": "/cerca",
-      "count": 11
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 9
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 8
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 7
-    },
-    {
-      "path": "/about",
-      "count": 7
-    },
-    {
-      "path": "/category/camara/hasselblad-500cm/page/6",
-      "count": 6
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 6
-    },
-    {
-      "path": "/?query-0-page=10",
-      "count": 5
-    },
-    {
-      "path": "/?query-0-page=191",
-      "count": 5
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 16,
@@ -845,7 +764,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1213
+      "count": 1215
     },
     {
       "name": "Safari",
@@ -887,7 +806,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 190
+      "count": 192
     },
     {
       "name": "iOS",
@@ -914,7 +833,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 330
+      "count": 332
     },
     {
       "name": "tablet",
@@ -926,7 +845,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1072
+      "count": 1074
     },
     {
       "name": "United States",
@@ -1003,7 +922,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 863
+      "count": 865
     },
     {
       "name": "Google",
