@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-29T23:42:44.233765Z",
+  "generated": "2026-08-30T02:28:42.522241Z",
   "period": {
-    "start": "2025-08-29",
-    "end": "2026-08-29"
+    "start": "2025-08-30",
+    "end": "2026-08-30"
   },
-  "total": 1211,
+  "total": 1216,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -450,20 +450,24 @@
     {
       "date": "2026-08-28",
       "count": 4
+    },
+    {
+      "date": "2026-08-29",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 336
+      "count": 338
     },
     {
       "path": "/galeria",
-      "count": 100
+      "count": 101
     },
     {
       "path": "/festivals",
-      "count": 58
+      "count": 59
     },
     {
       "path": "/serveis",
@@ -511,7 +515,7 @@
     },
     {
       "path": "/obra",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/serveis/books-per-actors",
@@ -660,16 +664,16 @@
     "es": 27
   },
   "by_section": {
-    "inici": 350,
-    "galeria": 100,
-    "festivals": 123,
+    "inici": 352,
+    "galeria": 101,
+    "festivals": 124,
     "serveis": 92,
     "blog": 43,
     "noticies": 120,
     "contacte": 39,
     "qui-som": 33,
     "legal": 72,
-    "obra": 37,
+    "obra": 38,
     "cerca": 12,
     "node": 46,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -762,7 +766,7 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
@@ -1008,7 +1012,7 @@
     {
       "name": "Google",
       "id": "Google",
-      "count": 134
+      "count": 136
     },
     {
       "name": "blog.pocallum.cat",
@@ -1031,6 +1035,11 @@
       "count": 13
     },
     {
+      "name": "about.pocallum.cat",
+      "id": "about.pocallum.cat",
+      "count": 9
+    },
+    {
       "name": "Blog",
       "id": "Blog",
       "count": 8
@@ -1043,11 +1052,6 @@
     {
       "name": "ig",
       "id": "ig",
-      "count": 7
-    },
-    {
-      "name": "about.pocallum.cat",
-      "id": "about.pocallum.cat",
       "count": 7
     }
   ]
