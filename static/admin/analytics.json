@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-01T23:40:53.989145Z",
+  "generated": "2026-09-02T07:26:13.308219Z",
   "period": {
-    "start": "2025-09-01",
-    "end": "2026-09-01"
+    "start": "2025-09-02",
+    "end": "2026-09-02"
   },
-  "total": 1224,
+  "total": 1232,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -449,7 +449,7 @@
     },
     {
       "date": "2026-08-28",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-08-29",
@@ -465,13 +465,13 @@
     },
     {
       "date": "2026-09-01",
-      "count": 2
+      "count": 11
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 340
+      "count": 343
     },
     {
       "path": "/galeria",
@@ -483,7 +483,7 @@
     },
     {
       "path": "/serveis",
-      "count": 55
+      "count": 56
     },
     {
       "path": "/blog",
@@ -495,19 +495,19 @@
     },
     {
       "path": "/contacte",
-      "count": 36
+      "count": 37
+    },
+    {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 29
     },
     {
       "path": "/qui-som",
       "count": 29
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 28
-    },
-    {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 26
+      "count": 28
     },
     {
       "path": "/en/legal/privacitat",
@@ -671,18 +671,18 @@
     }
   ],
   "by_lang": {
-    "en": 233,
+    "en": 235,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 355,
+    "inici": 358,
     "galeria": 104,
     "festivals": 122,
-    "serveis": 94,
+    "serveis": 95,
     "blog": 43,
-    "noticies": 124,
-    "contacte": 40,
+    "noticies": 127,
+    "contacte": 41,
     "qui-som": 33,
     "legal": 72,
     "obra": 38,
@@ -721,11 +721,11 @@
   "noticies_top": [
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 26
+      "count": 28
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -777,7 +777,7 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
@@ -792,16 +792,16 @@
       "count": 12
     },
     {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 11
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 12
     },
     {
       "path": "/cerca",
-      "count": 11
+      "count": 12
     },
     {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 10
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 11
     },
     {
       "path": "/contact",
@@ -840,27 +840,27 @@
       "count": 6
     },
     {
-      "path": "/?query-0-page=10",
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
       "count": 5
     },
     {
-      "path": "/?query-0-page=191",
+      "path": "/?query-0-page=10",
       "count": 5
     }
   ],
   "wizard_funnel": {
     "wizard-s1": 18,
-    "wizard-s2": 17,
+    "wizard-s2": 18,
     "wizard-s3": 6,
     "wizard-s4": 5,
     "wizard-sent": 4
   },
-  "avg_time_on_site_seconds": 37,
+  "avg_time_on_site_seconds": 36,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1240
+      "count": 1241
     },
     {
       "name": "Safari",
@@ -887,7 +887,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 807
+      "count": 808
     },
     {
       "name": "Windows",
@@ -919,7 +919,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1044
+      "count": 1045
     },
     {
       "name": "desktophd",
@@ -1009,8 +1009,8 @@
       "count": 12
     },
     {
-      "name": "Netherlands",
-      "id": "NL",
+      "name": "Brazil",
+      "id": "BR",
       "count": 11
     }
   ],
@@ -1018,7 +1018,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 868
+      "count": 877
     },
     {
       "name": "Google",
