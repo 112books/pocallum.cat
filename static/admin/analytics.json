@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-03T23:41:41.945981Z",
+  "generated": "2026-09-04T02:01:57.833196Z",
   "period": {
-    "start": "2025-09-03",
-    "end": "2026-09-03"
+    "start": "2025-09-04",
+    "end": "2026-09-04"
   },
-  "total": 1238,
+  "total": 1240,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -470,12 +470,16 @@
     {
       "date": "2026-09-02",
       "count": 6
+    },
+    {
+      "date": "2026-09-03",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 345
+      "count": 346
     },
     {
       "path": "/galeria",
@@ -502,16 +506,16 @@
       "count": 37
     },
     {
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
+      "count": 29
+    },
+    {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
       "count": 29
     },
     {
       "path": "/qui-som",
       "count": 29
-    },
-    {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 28
     },
     {
       "path": "/en/legal/privacitat",
@@ -675,17 +679,17 @@
     }
   ],
   "by_lang": {
-    "en": 236,
+    "en": 237,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 361,
+    "inici": 362,
     "galeria": 104,
     "festivals": 122,
     "serveis": 98,
     "blog": 43,
-    "noticies": 127,
+    "noticies": 128,
     "contacte": 41,
     "qui-som": 33,
     "legal": 72,
@@ -724,12 +728,12 @@
   },
   "noticies_top": [
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 29
     },
     {
-      "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 28
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 29
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -781,7 +785,7 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 21
+      "count": 25
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -1027,7 +1031,7 @@
     {
       "name": "Google",
       "id": "Google",
-      "count": 141
+      "count": 144
     },
     {
       "name": "chatgpt.com",
