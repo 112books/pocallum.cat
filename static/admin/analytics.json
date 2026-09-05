@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-04T23:40:01.699658Z",
+  "generated": "2026-09-05T02:02:17.527655Z",
   "period": {
-    "start": "2025-09-04",
-    "end": "2026-09-04"
+    "start": "2025-09-05",
+    "end": "2026-09-05"
   },
-  "total": 1240,
+  "total": 1251,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -474,16 +474,20 @@
     {
       "date": "2026-09-03",
       "count": 2
+    },
+    {
+      "date": "2026-09-04",
+      "count": 11
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 346
+      "count": 351
     },
     {
       "path": "/galeria",
-      "count": 101
+      "count": 104
     },
     {
       "path": "/festivals",
@@ -495,15 +499,19 @@
     },
     {
       "path": "/blog",
-      "count": 43
+      "count": 44
     },
     {
       "path": "/noticies",
-      "count": 42
+      "count": 43
     },
     {
       "path": "/contacte",
       "count": 37
+    },
+    {
+      "path": "/qui-som",
+      "count": 30
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -511,10 +519,6 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 29
-    },
-    {
-      "path": "/qui-som",
       "count": 29
     },
     {
@@ -684,14 +688,14 @@
     "es": 27
   },
   "by_section": {
-    "inici": 362,
-    "galeria": 104,
+    "inici": 367,
+    "galeria": 107,
     "festivals": 122,
     "serveis": 98,
-    "blog": 43,
-    "noticies": 128,
+    "blog": 44,
+    "noticies": 129,
     "contacte": 41,
-    "qui-som": 33,
+    "qui-som": 34,
     "legal": 72,
     "obra": 38,
     "cerca": 12,
@@ -785,7 +789,7 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -1026,7 +1030,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 882
+      "count": 884
     },
     {
       "name": "Google",
@@ -1054,6 +1058,16 @@
       "count": 13
     },
     {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 10
+    },
+    {
+      "name": "ig",
+      "id": "ig",
+      "count": 9
+    },
+    {
       "name": "about.pocallum.cat",
       "id": "about.pocallum.cat",
       "count": 9
@@ -1062,16 +1076,6 @@
       "name": "Blog",
       "id": "Blog",
       "count": 8
-    },
-    {
-      "name": "bing.com",
-      "id": "bing.com",
-      "count": 8
-    },
-    {
-      "name": "ig",
-      "id": "ig",
-      "count": 7
     }
   ]
 }
