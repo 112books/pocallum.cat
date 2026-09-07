@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T13:08:55.831380Z",
+  "generated": "2026-09-07T21:50:47.682811Z",
   "period": {
     "start": "2025-09-07",
     "end": "2026-09-07"
@@ -790,88 +790,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 79
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 27
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 15
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/cerca",
-      "count": 13
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 9
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 8
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/about",
-      "count": 7
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 6
-    },
-    {
-      "path": "/category/camara/hasselblad-500cm/page/6",
-      "count": 6
-    },
-    {
-      "path": "/2026/08/10/2026-07-29-anike-volant",
-      "count": 6
-    },
-    {
-      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
-      "count": 6
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 18,
@@ -884,7 +803,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1275
+      "count": 1294
     },
     {
       "name": "Safari",
@@ -916,7 +835,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 482
+      "count": 488
     },
     {
       "name": "Linux",
@@ -926,7 +845,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 225
+      "count": 238
     },
     {
       "name": "iOS",
@@ -943,17 +862,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1053
+      "count": 1059
+    },
+    {
+      "name": "phone",
+      "id": "phone",
+      "count": 385
     },
     {
       "name": "desktophd",
       "id": "desktophd",
       "count": 375
-    },
-    {
-      "name": "phone",
-      "id": "phone",
-      "count": 372
     },
     {
       "name": "tablet",
@@ -965,7 +884,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1180
+      "count": 1199
     },
     {
       "name": "United States",
