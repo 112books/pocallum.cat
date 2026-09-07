@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-06T23:21:43.574936Z",
+  "generated": "2026-09-07T01:54:58.673404Z",
   "period": {
-    "start": "2025-09-06",
-    "end": "2026-09-06"
+    "start": "2025-09-07",
+    "end": "2026-09-07"
   },
-  "total": 1257,
+  "total": 1260,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -137,7 +137,7 @@
     },
     {
       "date": "2026-06-10",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-06-11",
@@ -189,7 +189,7 @@
     },
     {
       "date": "2026-06-23",
-      "count": 13
+      "count": 12
     },
     {
       "date": "2026-06-24",
@@ -465,7 +465,7 @@
     },
     {
       "date": "2026-09-01",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-09-02",
@@ -482,16 +482,24 @@
     {
       "date": "2026-09-05",
       "count": 6
+    },
+    {
+      "date": "2026-09-06",
+      "count": 4
+    },
+    {
+      "date": "2026-09-07",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 352
+      "count": 354
     },
     {
       "path": "/galeria",
-      "count": 105
+      "count": 106
     },
     {
       "path": "/festivals",
@@ -515,7 +523,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 30
+      "count": 32
     },
     {
       "path": "/qui-som",
@@ -614,6 +622,10 @@
       "count": 6
     },
     {
+      "path": "/en/serveis",
+      "count": 6
+    },
+    {
       "path": "/festivals/carnestoltes-nou-barris",
       "count": 6
     },
@@ -627,10 +639,6 @@
     },
     {
       "path": "/en/qui-som",
-      "count": 5
-    },
-    {
-      "path": "/en/serveis",
       "count": 5
     },
     {
@@ -687,17 +695,17 @@
     }
   ],
   "by_lang": {
-    "en": 244,
+    "en": 247,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 368,
-    "galeria": 108,
+    "inici": 370,
+    "galeria": 109,
     "festivals": 122,
-    "serveis": 96,
+    "serveis": 94,
     "blog": 44,
-    "noticies": 130,
+    "noticies": 132,
     "contacte": 45,
     "qui-som": 35,
     "legal": 72,
@@ -737,7 +745,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 30
+      "count": 32
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -785,7 +793,7 @@
   "blog_top": [
     {
       "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 78
+      "count": 79
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
@@ -804,6 +812,10 @@
       "count": 13
     },
     {
+      "path": "/cerca",
+      "count": 13
+    },
+    {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
       "count": 12
     },
@@ -813,10 +825,6 @@
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/cerca",
       "count": 12
     },
     {
@@ -860,8 +868,8 @@
       "count": 6
     },
     {
-      "path": "/?query-0-page=10",
-      "count": 5
+      "path": "/2026/06/28/2026-06-27-44a-la-cultura-va-de-festa",
+      "count": 6
     }
   ],
   "wizard_funnel": {
@@ -871,7 +879,7 @@
     "wizard-s4": 5,
     "wizard-sent": 4
   },
-  "avg_time_on_site_seconds": 36,
+  "avg_time_on_site_seconds": 40,
   "browsers": [
     {
       "name": "Chrome",
@@ -1034,12 +1042,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 884
+      "count": 886
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 148
+      "count": 153
     },
     {
       "name": "chatgpt.com",
@@ -1064,12 +1072,12 @@
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 10
+      "count": 11
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 9
+      "count": 10
     },
     {
       "name": "about.pocallum.cat",
