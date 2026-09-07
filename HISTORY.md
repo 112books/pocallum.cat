@@ -4,6 +4,14 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-07 — Redirect 301: URL morta amb tràfic
+
+Correcció de 404 detectada via analytics: la URL `/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one` tenia 7 visites sense pàgina de destí.
+
+Solució: afegit `aliases` al frontmatter de `content/en/noticies/2026-03-jazz-i-am-2026.md`. Hugo genera automàticament el redirect 301 cap a la URL canònica `/en/noticies/2026-03-jazz-i-am-2026/`.
+
+---
+
 ## 2026-07-06 — 24è Festival de Blues de Barcelona: notícia, galeria i fitxa
 
 ### Notícia nova (CA + EN)
