@@ -4,6 +4,18 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-08 — Certificat SSL Dinahosting: diagnosi i pla d'acció
+
+Sessió de diagnosi i decisió sobre l'avís de caducitat de certificat SSL rebut de Dinahosting.
+
+Situació analitzada: `pocallum.cat` és a GitHub Pages (cert Let's Encrypt gestionat per GitHub, automàtic). `blog.pocallum.cat` és a Dinahosting. El cert que caduca és el del hosting de Dinahosting, però el seu panel no pot validar `pocallum.cat` perquè el DNS apunta a GitHub Pages.
+
+Decisió: sol·licitar a Dinahosting un certificat Let's Encrypt únicament per al subdomini `blog.pocallum.cat`. Redactat el correu de sol·licitud en castellà explicant la problemàtica.
+
+`pocallum.cat` es queda a GitHub Pages. `blog.pocallum.cat` es queda a WordPress/Dinahosting per ara (eina adequada per a blog d'edició freqüent amb Yoast SEO). La migració del blog a Hugo es deixa com a projecte futur, sense urgència.
+
+---
+
 ## 2026-09-07 — Redirect 301: URL morta amb tràfic
 
 Correcció de 404 detectada via analytics: la URL `/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one` tenia 7 visites sense pàgina de destí.
