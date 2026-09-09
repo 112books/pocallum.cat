@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-08T22:10:23.675026Z",
+  "generated": "2026-09-09T00:52:08.577384Z",
   "period": {
-    "start": "2025-09-08",
-    "end": "2026-09-08"
+    "start": "2025-09-09",
+    "end": "2026-09-09"
   },
-  "total": 1273,
+  "total": 1289,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -490,20 +490,24 @@
     {
       "date": "2026-09-07",
       "count": 15
+    },
+    {
+      "date": "2026-09-08",
+      "count": 16
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 359
+      "count": 363
     },
     {
       "path": "/galeria",
-      "count": 109
+      "count": 111
     },
     {
       "path": "/festivals",
-      "count": 61
+      "count": 62
     },
     {
       "path": "/serveis",
@@ -511,27 +515,27 @@
     },
     {
       "path": "/blog",
-      "count": 44
+      "count": 47
     },
     {
       "path": "/noticies",
-      "count": 43
+      "count": 44
     },
     {
       "path": "/contacte",
-      "count": 37
+      "count": 38
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
       "count": 33
     },
     {
-      "path": "/qui-som",
-      "count": 30
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 31
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 29
+      "path": "/qui-som",
+      "count": 31
     },
     {
       "path": "/en/legal/privacitat",
@@ -634,6 +638,10 @@
       "count": 6
     },
     {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 6
+    },
+    {
       "path": "/en/testing-adox-hr-50-film",
       "count": 5
     },
@@ -659,10 +667,6 @@
     },
     {
       "path": "/es/servicios-fotograficos/books-para-actores-y-actrices",
-      "count": 5
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
       "count": 5
     },
     {
@@ -700,14 +704,14 @@
     "es": 27
   },
   "by_section": {
-    "inici": 375,
-    "galeria": 112,
-    "festivals": 124,
+    "inici": 379,
+    "galeria": 114,
+    "festivals": 126,
     "serveis": 94,
-    "blog": 44,
-    "noticies": 134,
-    "contacte": 45,
-    "qui-som": 35,
+    "blog": 47,
+    "noticies": 137,
+    "contacte": 46,
+    "qui-som": 36,
     "legal": 72,
     "obra": 39,
     "cerca": 12,
@@ -749,7 +753,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 29
+      "count": 31
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -782,21 +786,102 @@
       "count": 6
     },
     {
-      "path": "/festivals/vijazz",
-      "count": 5
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 6
     },
     {
-      "path": "/festivals/flamenco-de-barrio",
+      "path": "/festivals/vijazz",
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 79
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 39
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 27
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 15
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 13
+    },
+    {
+      "path": "/cerca",
+      "count": 13
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 12
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 12
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 12
+    },
+    {
+      "path": "/contact",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 9
+    },
+    {
+      "path": "/?query-0-page=2",
+      "count": 9
+    },
+    {
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 8
+    },
+    {
+      "path": "/category/camara",
+      "count": 8
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 8
+    },
+    {
+      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
+      "count": 7
+    },
+    {
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 7
+    },
+    {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 7
+    },
+    {
+      "path": "/about",
+      "count": 7
+    },
+    {
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "count": 6
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
-    "wizard-s2": 18,
+    "wizard-s2": 19,
     "wizard-s3": 6,
     "wizard-s4": 5,
-    "wizard-sent": 4
+    "wizard-sent": 5
   },
   "avg_time_on_site_seconds": 42,
   "browsers": [
@@ -961,12 +1046,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 888
+      "count": 896
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 157
+      "count": 161
     },
     {
       "name": "chatgpt.com",
@@ -986,12 +1071,12 @@
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 15
+      "count": 17
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 13
+      "count": 15
     },
     {
       "name": "www.facebook.com",
