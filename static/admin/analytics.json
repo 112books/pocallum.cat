@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T18:10:50.330510Z",
+  "generated": "2026-09-09T23:40:19.431065Z",
   "period": {
     "start": "2025-09-09",
     "end": "2026-09-09"
@@ -794,88 +794,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 79
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 27
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 15
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/cerca",
-      "count": 13
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 9
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 9
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 8
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 7
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 7
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 7
-    },
-    {
-      "path": "/about",
-      "count": 7
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 6
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 19,
@@ -888,12 +807,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1332
+      "count": 1336
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 626
+      "count": 628
     },
     {
       "name": "Firefox",
@@ -915,7 +834,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 836
+      "count": 838
     },
     {
       "name": "Windows",
@@ -925,7 +844,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 248
+      "count": 252
     },
     {
       "name": "Linux",
@@ -952,7 +871,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 397
+      "count": 401
     },
     {
       "name": "desktophd",
@@ -962,14 +881,14 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 179
+      "count": 181
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1235
+      "count": 1241
     },
     {
       "name": "United States",
