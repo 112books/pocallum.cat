@@ -4,6 +4,7 @@ date: 2026-06-15
 lead: "Recull dels millors espais de Barcelona i àrea metropolitana on veure regularment exposicions de fotografia, amb enllaços directes a la seva programació."
 image: "/images/noticies/2023-04-30-PinholeDay2023-HolgaWPC-0001.jpg"
 tags: ["fotografia", "Barcelona", "exposicions", "galeries", "cultura", "guia", "espais fotogràfics"]
+pinned: true
 draft: false
 aliases:
   - /es/guia-completa-de-exposiciones-y-espacios-fotograficos-en-barcelona

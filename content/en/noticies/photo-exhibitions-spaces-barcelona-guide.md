@@ -4,6 +4,7 @@ date: 2026-06-15
 lead: "A curated list of the best venues in Barcelona and the metropolitan area where you can regularly see photography exhibitions, with direct links to their current programming."
 image: "/images/noticies/2023-04-30-PinholeDay2023-HolgaWPC-0001.jpg"
 tags: ["photography", "Barcelona", "exhibitions", "galleries", "culture", "guide", "photo spaces"]
+pinned: true
 draft: false
 ---
 

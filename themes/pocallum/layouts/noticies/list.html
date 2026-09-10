@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ $pages := .Pages.ByDate.Reverse }}
+{{ $byDate := .Pages.ByDate.Reverse }}
+{{ $pinned := where $byDate "Params.pinned" true }}
+{{ $rest := where $byDate "Params.pinned" "ne" true }}
+{{ $pages := $pinned | append $rest }}
 
 <section class="page-header">
   <div class="container">
