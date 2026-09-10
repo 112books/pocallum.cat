@@ -187,6 +187,28 @@ Tres grups. No creen pàgines individuals, es renderitzen a `/serveis/`.
 
 ---
 
+## Testimonis (data/testimonis.yaml)
+
+Surten a `/contacte/` (sota "O escriu-nos directament") i `/qui-som/` (sota el bloc autor), CA i EN. Render via `partials/testimonis.html`, filtra per `publicat: true`.
+
+**Afegir-ne un de nou:**
+1. Obtenir permís explícit de la persona abans de publicar cap cita (encara que vingui d'un WhatsApp o mail informal).
+2. Afegir entrada a `data/testimonis.yaml`:
+   ```yaml
+   - nom: "Nom Cognom"
+     entitat: "Organització (opcional)"
+     publicat: true
+     cita_ca: "Text en català."
+     cita_en: "English translation."
+   ```
+3. `hugo --minify` per verificar build, commit, push.
+
+**Deixar-ne un en espera** (pendent de confirmació o de rebre el text): `publicat: false`, camps `cita_ca`/`cita_en` buits. No surt enlloc fins que es completi i es passi a `true`.
+
+⚠️ Mai publicar una cita sense permís explícit, encara que la font sigui pública (missatge privat, xarxa social, etc.).
+
+---
+
 ## Sistema visual
 
 ### Paleta
