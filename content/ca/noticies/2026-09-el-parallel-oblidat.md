@@ -19,23 +19,23 @@ Aquí només en veieu un tastet, però al nostre blog podreu llegir la crònica 
 
 👉 [Llegeix la crònica completa al blog](https://blog.pocallum.cat/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar/)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.05.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164505.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.09.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164509.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.16.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164516.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.17.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164517.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.19.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164519.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.20.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164520.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.21.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164521.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.22.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164522.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.23.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164523.jpeg)
 
-![](/images/noticies/2026-09-el-parallel-oblidat/photo_2026-09-10 16.45.26.jpeg)
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164526.jpeg)
 
