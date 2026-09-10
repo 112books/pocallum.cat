@@ -166,9 +166,16 @@ title: "Títol de la notícia"
 date: 2026-01-01
 lead: "Resum curt, màxim 160 caràcters."
 image: "/images/noticies/nom-fitxer.jpg"
+tags: ["tag1", "tag2"]
+pinned: true   # opcional — veure "Notícia fixada" més avall
 draft: false
 ---
 ```
+
+Imatges addicionals al cos (galeria d'una crònica): carpeta `static/images/noticies/{slug}/` + `![](/images/noticies/{slug}/nom.jpg)` al Markdown. **Els noms de fitxer no poden portar espais** — trenca la sintaxi `![]()` i la imatge no renderitza. Usar guions.
+
+#### Notícia fixada (pinned)
+`pinned: true` al frontmatter (CA **i** EN) fa que una notícia surti sempre primera — tant a `/noticies/` com al bloc de notícies de la portada — independentment de la data. Lògica a `themes/pocallum/layouts/noticies/list.html` i `themes/pocallum/layouts/index.html` (`where ... "Params.pinned" true` + `append` per anteposar-les a la resta ordenada per data). Actualment pinnada: "Guia d'exposicions i espais fotogràfics a Barcelona".
 
 ### Pàgines estàtiques
 `serveis/`, `qui-som/`, `contacte/` → `_index.md` amb contingut Markdown.
