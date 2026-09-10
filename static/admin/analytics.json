@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-09T23:40:19.431065Z",
+  "generated": "2026-09-10T02:08:08.891815Z",
   "period": {
-    "start": "2025-09-09",
-    "end": "2026-09-09"
+    "start": "2025-09-10",
+    "end": "2026-09-10"
   },
-  "total": 1289,
+  "total": 1297,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -494,16 +494,24 @@
     {
       "date": "2026-09-08",
       "count": 16
+    },
+    {
+      "date": "2026-09-09",
+      "count": 6
+    },
+    {
+      "date": "2026-09-10",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 363
+      "count": 367
     },
     {
       "path": "/galeria",
-      "count": 111
+      "count": 112
     },
     {
       "path": "/festivals",
@@ -519,7 +527,7 @@
     },
     {
       "path": "/noticies",
-      "count": 44
+      "count": 45
     },
     {
       "path": "/contacte",
@@ -527,11 +535,11 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/qui-som",
@@ -699,17 +707,17 @@
     }
   ],
   "by_lang": {
-    "en": 248,
+    "en": 249,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 379,
-    "galeria": 114,
+    "inici": 383,
+    "galeria": 115,
     "festivals": 126,
     "serveis": 94,
     "blog": 47,
-    "noticies": 137,
+    "noticies": 140,
     "contacte": 46,
     "qui-som": 36,
     "legal": 72,
@@ -749,11 +757,11 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -794,7 +802,88 @@
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 79
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 39
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 27
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 15
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 13
+    },
+    {
+      "path": "/cerca",
+      "count": 13
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 12
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 12
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 12
+    },
+    {
+      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
+      "count": 9
+    },
+    {
+      "path": "/contact",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 9
+    },
+    {
+      "path": "/?query-0-page=2",
+      "count": 9
+    },
+    {
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 8
+    },
+    {
+      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
+      "count": 8
+    },
+    {
+      "path": "/category/camara",
+      "count": 8
+    },
+    {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 8
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 8
+    },
+    {
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "count": 7
+    },
+    {
+      "path": "/about",
+      "count": 7
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 19,
@@ -802,7 +891,7 @@
     "wizard-s4": 5,
     "wizard-sent": 5
   },
-  "avg_time_on_site_seconds": 42,
+  "avg_time_on_site_seconds": 41,
   "browsers": [
     {
       "name": "Chrome",
@@ -965,12 +1054,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 896
+      "count": 900
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 161
+      "count": 163
     },
     {
       "name": "chatgpt.com",
@@ -980,22 +1069,22 @@
     {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
-      "count": 19
+      "count": 20
     },
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
-      "count": 18
+      "count": 20
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 17
+      "count": 18
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 15
+      "count": 16
     },
     {
       "name": "www.facebook.com",
