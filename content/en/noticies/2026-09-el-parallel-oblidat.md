@@ -7,13 +7,13 @@ tags: ["MASiMAS", "Festival MASiMAS 2026", "Paral·lel", "Barcelona", "Merche Ma
 draft: false
 ---
 
-Last September 6th I had the pleasure of attending the closing night of Festival MASiMAS, commissioned to capture the memory of the golden days of cabaret in El Paral·lel.
+Last September 6th I had the pleasure of attending the closing night of [Festival MASiMAS](https://masimasfestival.com), commissioned to capture the memory of the golden days of cabaret in El Paral·lel.
 
-As it happened, the venue was Sala Paral·lel 62, with the sumptuous Barcelona Big Blues Band —a jaw-dropping lineup—. And as if that weren't enough, Agustí Burniel on vocals, Ster Wax, and pianist Andreu Rox. Pure luxury!
+As it happened, the venue was [Sala Paral·lel 62](https://paral-lel62.cat), with the sumptuous [Barcelona Big Blues Band](https://barcelonabigbluesband.com) —a jaw-dropping lineup—. And as if that weren't enough, [Agustí Burniel](https://www.instagram.com/agustiburriel/) on vocals, [Ster Wax](https://www.instagram.com/sterwax/), and pianist Andreu Rox. Pure luxury!
 
-But the party was, above all, to honour the recently departed queen of El Paral·lel and its cabaret nights, Merche Mar. So alongside sensational live music, we also got to enjoy the very best of burlesque.
+But the party was, above all, to honour the recently departed queen of El Paral·lel and its cabaret nights, [Merche Mar](https://ca.wikipedia.org/wiki/Merche_Mar). So alongside sensational live music, we also got to enjoy the very best of burlesque.
 
-The Rhythm & Boobs team handled the stage show, with performers Vivi Velours, Adelaide Vasaturo, Ruby Monroe, Venedita Von Däsh, Dito Castro, Ella Muah and Lulú Txispún, Sven VonWhatever as host, and Diana Zafra and Míriam Corominas as Stage Kittens.
+The [Rhythm & Boobs](https://www.instagram.com/rhythm.and.boobs/) team handled the stage show, with performers [Vivi Velours](https://www.instagram.com/vivi_velours/), [Adelaide Vasaturo](https://www.instagram.com/adelaidevasaturo/), [Ruby Monroe](https://www.instagram.com/rubymonroe_official/), [Venedita Von Däsh](https://www.instagram.com/veneditavondash/), [Dito Castro](https://www.instagram.com/ditocastroart/), [Ella Muah](https://www.instagram.com/ellamuah.art/) and [Lulú Txispún](https://www.instagram.com/lulutxispun/), [Sven VonWhatever](https://www.instagram.com/mrvonwhatever/) as host, and Diana Zafra and Míriam Corominas as Stage Kittens.
 
 Here you only get a taste, but on our blog you can read the full chronicle and see, besides the show's photographs, the "meanwhile": the photos from the setup and the final rehearsal.
 
