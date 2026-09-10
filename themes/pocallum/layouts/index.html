@@ -116,7 +116,10 @@
 {{ end }}
 
 {{/* ── Notícies recents ─────────────────────────────────────────────────── */}}
-{{ $noticies := where .Site.RegularPages "Type" "noticies" | first 3 }}
+{{ $noticiesAll := where .Site.RegularPages "Type" "noticies" }}
+{{ $noticiesPinned := where $noticiesAll "Params.pinned" true }}
+{{ $noticiesRest := where $noticiesAll "Params.pinned" "ne" true }}
+{{ $noticies := $noticiesPinned | append $noticiesRest | first 3 }}
 {{ if $noticies }}
 <section class="section section--noticies-preview">
   <div class="container">
