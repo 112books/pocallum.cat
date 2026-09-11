@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-10T19:21:14.105033Z",
+  "generated": "2026-09-11T00:40:48.361907Z",
   "period": {
-    "start": "2025-09-10",
-    "end": "2026-09-10"
+    "start": "2025-09-11",
+    "end": "2026-09-11"
   },
-  "total": 1297,
+  "total": 1313,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -501,21 +501,21 @@
     },
     {
       "date": "2026-09-10",
-      "count": 2
+      "count": 18
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 367
+      "count": 372
     },
     {
       "path": "/galeria",
-      "count": 112
+      "count": 117
     },
     {
       "path": "/festivals",
-      "count": 62
+      "count": 63
     },
     {
       "path": "/serveis",
@@ -523,11 +523,11 @@
     },
     {
       "path": "/blog",
-      "count": 47
+      "count": 48
     },
     {
       "path": "/noticies",
-      "count": 45
+      "count": 47
     },
     {
       "path": "/contacte",
@@ -567,7 +567,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 17
+      "count": 18
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -602,6 +602,10 @@
       "count": 8
     },
     {
+      "path": "/en",
+      "count": 8
+    },
+    {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
       "count": 8
     },
@@ -623,10 +627,6 @@
     },
     {
       "path": "/festivals/im-jazz",
-      "count": 7
-    },
-    {
-      "path": "/en",
       "count": 7
     },
     {
@@ -707,17 +707,17 @@
     }
   ],
   "by_lang": {
-    "en": 249,
+    "en": 250,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 383,
-    "galeria": 115,
-    "festivals": 126,
-    "serveis": 94,
-    "blog": 47,
-    "noticies": 140,
+    "inici": 389,
+    "galeria": 120,
+    "festivals": 127,
+    "serveis": 95,
+    "blog": 48,
+    "noticies": 142,
     "contacte": 46,
     "qui-som": 36,
     "legal": 72,
@@ -802,88 +802,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 79
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 27
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 15
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/cerca",
-      "count": 13
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 9
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 9
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 9
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 8
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 8
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 7
-    },
-    {
-      "path": "/about",
-      "count": 7
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 19,
@@ -1054,12 +973,17 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 900
+      "count": 906
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 163
+      "count": 165
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 21
     },
     {
       "name": "chatgpt.com",
@@ -1077,14 +1001,9 @@
       "count": 20
     },
     {
-      "name": "l.instagram.com",
-      "id": "l.instagram.com",
-      "count": 18
-    },
-    {
       "name": "ig",
       "id": "ig",
-      "count": 16
+      "count": 19
     },
     {
       "name": "www.facebook.com",
