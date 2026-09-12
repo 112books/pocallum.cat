@@ -74,9 +74,9 @@ else
       continue
     fi
     echo "Processant: $dir"
-    find "$full_dir" -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) | sort | while read -r f; do
+    while IFS= read -r f; do
       convert_file "$f"
-    done
+    done < <(find "$full_dir" -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) | sort)
   done
 fi
 
