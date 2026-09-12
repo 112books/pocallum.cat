@@ -308,6 +308,10 @@ hugo --minify
 
 # Deploy complet (menú interactiu)
 ./sync-pocallum.sh
+
+# Convertir una foto nova a WebP (cal fer-ho ABANS de commitear)
+./scripts/convert-images.sh static/images/galeria/nova-foto.jpg
+# (també funciona amb festivals/ i noticies/)
 ```
 
 ---
