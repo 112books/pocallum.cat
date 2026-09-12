@@ -4,6 +4,41 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-12 — WebP image pipeline complet
+
+Implementació completa del pipeline WebP per a totes les imatges de contingut.
+
+**Script de conversió**
+- `scripts/convert-images.sh` — converteix JPEGs a WebP (full + 800px + 1600px, q85)
+- Idempotent, suporta `--force` i argument de fitxer individual
+- Dep: ImageMagick (`brew install imagemagick`)
+
+**Partial `picture.html`**
+- Nou partial que substitueix tots els `<img>` de contingut
+- Genera `<picture>` amb `<source type="image/webp">` i srcset responsive
+- Fallback JPEG automàtic per a navegadors antics
+- El lightbox continua apuntant al JPEG original (màxima qualitat)
+
+**Templates actualitzats**
+- `partials/foto-card.html` — galeria
+- `festivals/single.html` + `festivals/list.html`
+- `noticies/single.html` + `noticies/list.html`
+- `index.html` — secció notícies preview
+
+**JS: `toWebP()`**
+- Funció `toWebP()` a `main.js` per al hero, grid de portada i switcher de notícies
+- El `data-lb-src` del lightbox continua sent JPEG
+
+**Conversió d'imatges**
+- 1066 fitxers WebP generats (235 JPEGs × 3 variants)
+- Reducció estimada de pes per visita: 35-45%
+
+**Fitxers de referència**
+- Spec: `docs/superpowers/specs/2026-09-12-webp-pipeline-design.md`
+- Pla: `docs/superpowers/plans/2026-09-12-webp-pipeline.md`
+
+---
+
 ## 2026-09-12 — Manteniment: .gitignore i tracking d'hores
 
 Sessió curta de manteniment.
