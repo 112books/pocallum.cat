@@ -1,3 +1,8 @@
+/* ── Utilitat WebP ───────────────────────────────────────────────────────── */
+function toWebP(url) {
+  return url ? url.replace(/\.(jpg|jpeg)$/i, '.webp') : url;
+}
+
 /* ── Hero: imatge aleatòria + frase aleatòria ────────────────────────────── */
 (function () {
   const bg    = document.getElementById('js-hero-bg');
@@ -46,10 +51,10 @@
     const src = images[Math.floor(Math.random() * images.length)];
     const loader = new Image();
     loader.onload = () => {
-      if (heroImg) { heroImg.src = src; }
+      if (heroImg) { heroImg.src = toWebP(src); }
       bg.classList.add('is-loaded');
     };
-    loader.src = src;
+    loader.src = toWebP(src);
   }
 })();
 
@@ -140,7 +145,7 @@
     fig.dataset.lbAlt = foto.alt || '';
     fig.innerHTML =
       '<a class="foto-item__link js-lb-trigger" href="' + src + '" data-lb-index="' + i + '" aria-label="' + openLabel + ': ' + alt + '">' +
-      '<img src="' + src + '" alt="' + alt + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '" decoding="async">' +
+      '<img src="' + toWebP(src) + '" alt="' + alt + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '" decoding="async">' +
       '</a>';
     grid.appendChild(fig);
   });
@@ -241,10 +246,8 @@
       titleEl.textContent = t.dataset.title;
       if (leadEl) leadEl.textContent = t.dataset.lead;
 
-      const img = imgWrap.querySelector('img');
       if (t.dataset.img) {
-        if (img) { img.src = t.dataset.img; img.alt = t.dataset.title || ''; }
-        else { imgWrap.innerHTML = `<img src="${t.dataset.img}" alt="">`; }
+        imgWrap.innerHTML = `<img src="${toWebP(t.dataset.img)}" alt="${t.dataset.title || ''}">`;
       } else {
         imgWrap.innerHTML = '';
       }
