@@ -13,11 +13,12 @@
   <a class="foto-item__link js-lb-trigger" href="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
      data-lb-index="{{ .Scratch.Get "index" }}"
      aria-label="{{ i18n "foto_open" | default "Ampliar imatge" }}: {{ $alt }}">
-    <img src="{{ .Params.image | strings.TrimLeft "/" | relURL }}"
-         alt="{{ $alt }}"
-         width="{{ .Params.width | default 900 }}"
-         height="{{ .Params.height | default 600 }}"
-         loading="{{ .Scratch.Get "loading" | default "lazy" }}"
-         decoding="async">
+    {{ partial "picture.html" (dict
+      "src"     .Params.image
+      "alt"     $alt
+      "width"   (.Params.width  | default 900)
+      "height"  (.Params.height | default 600)
+      "loading" (.Scratch.Get "loading" | default "lazy")
+    ) }}
   </a>
 </figure>
