@@ -19,7 +19,12 @@
   <a class="noticies-featured" id="js-nf-link" href="{{ $first.RelPermalink }}">
     <div class="noticies-featured__img" id="js-nf-img">
       {{ with $first.Params.image }}
-      <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $first.Title }}" id="js-nf-imgel">
+      {{ partial "picture.html" (dict
+        "src"     .
+        "alt"     $first.Title
+        "loading" "eager"
+        "id"      "js-nf-imgel"
+      ) }}
       {{ end }}
     </div>
     <div class="noticies-featured__info">
@@ -53,7 +58,7 @@
           <time class="noticies-thumb__ts">{{ $p.Date.Format "Jan '06" | upper }}</time>
           <div class="noticies-thumb__img">
             {{ with $p.Params.image }}
-            <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
+            {{ partial "picture.html" (dict "src" . "alt" "" "loading" "lazy") }}
             {{ end }}
           </div>
           <span class="noticies-thumb__title">{{ $p.Title }}</span>
