@@ -4,6 +4,15 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-12 — Manteniment: .gitignore i tracking d'hores
+
+Sessió curta de manteniment.
+
+- Verificat l'estat del repo i del workflow d'analytics
+- Afegit `.taques/` al `.gitignore` (directori de tracking de temps, no ha d'anar al repo)
+
+---
+
 ## 2026-09-08 — Certificat SSL Dinahosting: diagnosi i pla d'acció
 
 Sessió de diagnosi i decisió sobre l'avís de caducitat de certificat SSL rebut de Dinahosting.
