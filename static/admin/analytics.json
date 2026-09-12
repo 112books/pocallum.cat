@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-11T20:41:50.785446Z",
+  "generated": "2026-09-12T00:48:02.973120Z",
   "period": {
-    "start": "2025-09-11",
-    "end": "2026-09-11"
+    "start": "2025-09-12",
+    "end": "2026-09-12"
   },
-  "total": 1313,
+  "total": 1319,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -137,7 +137,7 @@
     },
     {
       "date": "2026-06-10",
-      "count": 22
+      "count": 21
     },
     {
       "date": "2026-06-11",
@@ -161,7 +161,7 @@
     },
     {
       "date": "2026-06-16",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-06-17",
@@ -189,7 +189,7 @@
     },
     {
       "date": "2026-06-23",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-06-24",
@@ -377,7 +377,7 @@
     },
     {
       "date": "2026-08-09",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-08-10",
@@ -489,7 +489,7 @@
     },
     {
       "date": "2026-09-07",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-09-08",
@@ -502,16 +502,24 @@
     {
       "date": "2026-09-10",
       "count": 18
+    },
+    {
+      "date": "2026-09-11",
+      "count": 6
+    },
+    {
+      "date": "2026-09-12",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 372
+      "count": 374
     },
     {
       "path": "/galeria",
-      "count": 117
+      "count": 119
     },
     {
       "path": "/festivals",
@@ -554,11 +562,11 @@
       "count": 23
     },
     {
-      "path": "/en/legal/cookies",
-      "count": 21
+      "path": "/obra",
+      "count": 22
     },
     {
-      "path": "/obra",
+      "path": "/en/legal/cookies",
       "count": 21
     },
     {
@@ -582,15 +590,15 @@
       "count": 11
     },
     {
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 10
+    },
+    {
       "path": "/en/node/191/track?page=2%60",
       "count": 9
     },
     {
       "path": "/en/vijazz-2025-the-jazz-that-brought-me-back-home",
-      "count": 9
-    },
-    {
-      "path": "/festivals/calella-harmonica-festival",
       "count": 9
     },
     {
@@ -707,21 +715,21 @@
     }
   ],
   "by_lang": {
-    "en": 250,
+    "en": 253,
     "ca": 21,
     "es": 27
   },
   "by_section": {
-    "inici": 389,
-    "galeria": 120,
-    "festivals": 127,
-    "serveis": 95,
+    "inici": 391,
+    "galeria": 122,
+    "festivals": 131,
+    "serveis": 92,
     "blog": 48,
     "noticies": 142,
     "contacte": 46,
     "qui-som": 36,
     "legal": 72,
-    "obra": 39,
+    "obra": 40,
     "cerca": 12,
     "node": 46,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -779,7 +787,7 @@
     },
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 9
+      "count": 10
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
@@ -802,88 +810,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 79
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 39
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 27
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 15
-    },
-    {
-      "path": "/cerca",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 13
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 10
-    },
-    {
-      "path": "/contact",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 9
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 9
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 8
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 8
-    },
-    {
-      "path": "/2026/08/15/2026-08-12-laura-a-32-oc",
-      "count": 8
-    },
-    {
-      "path": "/category/camara",
-      "count": 8
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 8
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 8
-    },
-    {
-      "path": "/about",
-      "count": 7
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 19,
@@ -891,12 +818,12 @@
     "wizard-s4": 5,
     "wizard-sent": 5
   },
-  "avg_time_on_site_seconds": 41,
+  "avg_time_on_site_seconds": 40,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1360
+      "count": 1362
     },
     {
       "name": "Safari",
@@ -933,7 +860,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 273
+      "count": 275
     },
     {
       "name": "Linux",
@@ -960,7 +887,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 434
+      "count": 436
     },
     {
       "name": "desktophd",
@@ -1025,6 +952,11 @@
       "count": 20
     },
     {
+      "name": "France",
+      "id": "FR",
+      "count": 19
+    },
+    {
       "name": "Vietnam",
       "id": "VN",
       "count": 19
@@ -1033,11 +965,6 @@
       "name": "Bangladesh",
       "id": "BD",
       "count": 18
-    },
-    {
-      "name": "France",
-      "id": "FR",
-      "count": 17
     },
     {
       "name": "Netherlands",
@@ -1054,7 +981,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 906
+      "count": 911
     },
     {
       "name": "Google",
@@ -1089,17 +1016,17 @@
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
-      "count": 13
+      "count": 15
     },
     {
       "name": "about.pocallum.cat",
       "id": "about.pocallum.cat",
-      "count": 9
+      "count": 12
     },
     {
-      "name": "Blog",
-      "id": "Blog",
-      "count": 8
+      "name": "www.bing.com",
+      "id": "www.bing.com",
+      "count": 11
     }
   ]
 }
