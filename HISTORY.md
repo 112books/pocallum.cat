@@ -4,6 +4,12 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-13 — Filtre antispam Formspree a Dinahosting
+
+Sessió curta. Emails de `formspree.io` (recordatoris de curs) anaven a spam. Creat filtre des del Panel de Control de Dinahosting per whitelistar el domini `formspree.io`. El formulari de `pocallum.cat` és Tally.so i no estava afectat.
+
+---
+
 ## 2026-09-12 — WebP image pipeline complet
 
 Implementació completa del pipeline WebP per a totes les imatges de contingut.
