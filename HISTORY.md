@@ -4,6 +4,17 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-14 — Redirect de la notícia Jazz I Am
+
+Aplicada i validada la correcció de la URL morta detectada a analytics:
+
+- `/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one/`
+- Redirect cap a `/en/noticies/2026-03-jazz-i-am-2026/`
+
+L’alias del frontmatter anglès s’ha definit sense el prefix `/en`, perquè Hugo ja l’afegeix per a aquest idioma. Amb el prefix duplicat es generava erròniament `/en/en/...`. Build de producció validada amb `hugo --minify`.
+
+---
+
 ## 2026-09-13 — Filtre antispam Formspree a Dinahosting
 
 Sessió curta. Emails de `formspree.io` (recordatoris de curs) anaven a spam. Creat filtre des del Panel de Control de Dinahosting per whitelistar el domini `formspree.io`. El formulari de `pocallum.cat` és Tally.so i no estava afectat.
