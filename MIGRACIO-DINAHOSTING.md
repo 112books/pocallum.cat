@@ -18,10 +18,11 @@ Moure `pocallum.cat` (el lloc pare) de GitHub Pages a **Dinahosting**, deixant-h
 Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ~/www/
 ├── pocallum/          ← pocallum.cat (pare, NOU)
-├── staging/           ← staging.pocallum.cat (pare, NOU; protegit)
 └── blog/              ← blog.pocallum.cat (JA EXISTEIX)
     └── wp-content/    ← imatges WordPress (INTOCABLES)
 ```
+
+- **L'staging del pare es manté a GitHub Pages** (branca `develop` + staticrypt) — model Opció B de l'staging del blog. Sols `pocallum.cat` va a Dinahosting.
 
 - **Git queda només per control de versions** i testing local previ (`hugo server -D`). Ni GH Pages ni cap deploy via GitHub.
 - **SSL simplificat:** amb tot el DNS apuntant a Dinahosting, Let's Encrypt es valida i renova directament al panell.
@@ -85,8 +86,8 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 3. **Convertir `static/_headers`** → es queda com a documentació per GH Pages (staging mentre visqui) però no s'usa a Dina. (O eliminar al final.)
 4. **Adaptar `sync-pocallum.sh`:** substituir els deploys de GH Pages per rsync a Dinahosting (model de `sync-blog.sh`):
    - prod → `rsync -rlzv --delete --no-perms public/ pocallum@vl28359.dinaserver.com:/home/pocallum/www/pocallum/`
-   - staging → rsync a `~/www/staging/`
-   - mantindre `server_local`, `build_local`, `nova_foto`, `nova_noticia`
+   - staging → es manté a GitHub Pages (sense rsync)
+   - mantindre `server_local`, `build_local`, `nova_foto`, `nova_noticia`, i el `deploy_staging` de GH Pages
 5. **Verificar build local:** `hugo --minify` sense errors.
 
 ### Fase 2 — Workflows del repo pare
@@ -97,24 +98,20 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
    - exclusions: `.well-known/` (per si la validació ACME del panell usa http-01)
    - trigger: push a `main` + `workflow_dispatch`
    - treure `actions/configure-pages`, `upload-pages-artifact`, `deploy-pages` i els permisos `pages: write`, `id-token: write`
-2. **`deploy-staging.yml`** → substituir staticrypt/gh-pages-staging per rsync:
-   - build Hugo v0.159 amb `--baseURL "https://staging.pocallum.cat/"` + `--buildDrafts`
-   - rsync `--delete --no-perms` a `~/www/staging/`
-   - afegir secrets de Dinahosting (reusar els mateixos, `DINAHOSTING_PATH` del staging `~/www/staging`)
-   - trigger: push a `develop` + `workflow_dispatch`
+2. **`deploy-staging.yml`** → **SENSE CANVIS.** L'staging del pare es queda a GitHub Pages (staticrypt + `gh-pages-staging`), com l'staging del blog (Opció B). Els secrets i el workflow actuals es mantenen.
 3. **`fetch-analytics.yml` i `update-blog-stats.yml`:** sense canvis (comitten al repo, no despleguen).
 
 ### Fase 3 — Servidor Dinahosting (requereix vistiplau)
 
 1. **SSH al servidor:** `ssh -i ~/.ssh/pocallum_blog pocallum@vl28359.dinaserver.com` (o via panell).
-2. **Crear docroots:**
+2. **Crear docroot:**
    ```bash
-   mkdir -p ~/www/pocallum ~/www/staging
+   mkdir -p ~/www/pocallum
    ```
-3. **Donar d'alta els llocs al panell de Dinahosting** (feina de l'usuari o amb suport):
+3. **Donar d'alta el lloc al panell de Dinahosting** (feina de l'usuari o amb suport):
    - `pocallum.cat` → docroot `~/www/pocallum/`
-   - `staging.pocallum.cat` → docroot `~/www/staging/`
-4. **Protegir staging amb htpasswd** (al panell o bé `.htaccess` al docroot de staging + fitxer `.htpasswd` fora del docroot, p.ex. `~/private/.htpasswd`).
+   - *(l'staging es queda a GitHub Pages, sense vhost ni docroot a Dinahosting)*
+4. **Protegir staging:** no aplica (l'staging es queda a GitHub Pages amb staticrypt).
 5. **Primer rsync manual del build** (des del repo pare, local):
    ```bash
    hugo --minify --baseURL "https://pocallum.cat/" && rsync -rlvz --delete --no-perms public/ pocallum@vl28359.dinaserver.com:/home/pocallum/www/pocallum/
@@ -130,7 +127,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 - Apuntar a `82.98.166.123`:
   - `pocallum.cat` (A)
   - `www.pocallum.cat` (A)
-  - `staging.pocallum.cat` (A, nou)
+  - *(no hi ha `staging.pocallum.cat` a Dinahosting: l'staging es queda a GitHub Pages)*
 - `blog.pocallum.cat` ja hi apunta: no tocar.
 - **Propagació 15-30 min.** Fer-ho de matí amb marge.
 - Rollback immediat: tornar els registres als 185.199.x.x de GitHub Pages.
@@ -152,7 +149,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 - **Formulari Formspree** (`/contacte/`): testejar enviament.
 - **GoatCounter:** `/admin/` carrega i l'estadística s'hi veu; `gc.zgo.at` al CSP no bloquejada.
 - **Blog:** re-crawlar el sitemap (`scripts/qa-urls.py` del blog contra `https://blog.pocallum.cat/`) → 200 a totes les URLs.
-- **Staging:** `https://staging.pocallum.cat/` demana contrasenya i mostra el site amb drafts.
+- **Staging:** `https://112books.github.io/pocallum.cat/` demana contrasenya (staticrypt) i mostra el site amb drafts.
 - **Bilingüe:** `/en/` respon igual que `/ca/`.
 
 ### Fase 7 — Neteges GitHub (NOMÉS després de la verificació completa)
@@ -160,7 +157,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 1. GitHub → `112books/pocallum.cat` → Settings → Pages → **treure el custom domain** `pocallum.cat`.
 2. Si `gh-pages-staging` ja no cal: esborrar la branca.
 3. Treure (o comentar) `static/CNAME` i netejar `static/_headers` si no es fa servir més.
-4. Marquar que `deploy-prod.yml` i `deploy-staging.yml` ja no fan servir components de Pages.
+4. Marquar que `deploy-prod.yml` ja no fa servir components de Pages (l'staging sí, es manté).
 5. Actualitzar `CLAUDE.md` i `AGENTS.md` del pare (eliminar "GitHub Pages" de l'arquitectura).
 
 ### Fase 8 — CMS (final, decidida per l'usuari)
@@ -173,9 +170,9 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ## Decisions pendents (abans d'executar)
 
-1. **Staging del blog:** Opció A — migrar ara a `staging.blog.pocallum.cat` (+ subdomini, docroot, cert) | **Opció B (recomanada)** — deixar-lo a GitHub Pages; les imatges hotlinken de producció i és la xarxa de seguretat; unificar-lo en una fase dedicada més endavant.
-2. **Nom del staging del pare:** `staging.pocallum.cat` (defecte) o un altre.
-3. **Docroots:** confirmar `~/www/pocallum/` i `~/www/staging/`.
+1. **Staging del blog:** ✔ **Decidit (16/09):** Opció B — es queda a GitHub Pages; les imatges hotlinken de producció i és la xarxa de seguretat. Unificar-lo en una fase dedicada més endavant.
+2. **Staging del pare:** ✔ **Decidit (16/09):** es queda a GitHub Pages (mateix model que l'staging del blog). Sense `staging.pocallum.cat` a Dinahosting.
+3. **Docroot:** confirmat `~/www/pocallum/`.
 4. **Accés de l'usuari (necessari abans de Fase 4-5):** panell DNS del registrador de `pocallum.cat`, panell de Dinahosting, GitHub Settings del repo pare.
 
 ---
@@ -184,9 +181,9 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 | Què | On |
 |-----|-----|
-| Canviar registres A de `pocallum.cat`, `www`, `staging` | panell DNS del registrador |
+| Canviar registres A de `pocallum.cat` i `www` | panell DNS del registrador |
 | Activar Let's Encrypt + Forçar HTTPS | panell de Dinahosting (o suport) |
-| Donar d'alta els llocs `pocallum.cat` i `staging.pocallum.cat` al panell | panell de Dinahosting |
+| Donar d'alta el lloc `pocallum.cat` al panell | panell de Dinahosting |
 | Secrets al GitHub del repo pare (Fase 1) | GitHub Settings |
 
 ---
