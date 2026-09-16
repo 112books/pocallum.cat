@@ -15,6 +15,36 @@ Escriure una/unes notícia nova al web amb els concerts coberts de:
 
 ---
 
+## 2026-09-16 (tarda) — Cerca trencada per la CSP, auditoria de seguretat i neteja del servidor
+
+**🔍 Cerca (`/cerca/`) no trobava res — causa arrel: CSP sense `'wasm-unsafe-eval'`**
+- Símptoma: la UI de Pagefind es queda penjada a «Cercant…» per sempre, 0 resultats. Reproduït en producció i en local (Chrome headless + CDP).
+- Diagnosi: el worker de Pagefind (`/pagefind/pagefind-worker.js`) fa `WebAssembly.instantiate()` del seu índex; la CSP del `.htaccess` no permetia WASM → `CompileError` dins el worker (invisible a la UI, que fa polling infinit). L'índex sempre ha estat ben desplegat (495 pàgines ca + 259 en).
+- Fix: `'wasm-unsafe-eval'` afegit a `script-src` a `static/.htaccess` (font de veritat, desplegada per rsync) i al `~/www/.htaccess` del servidor (ja en viu). `static/_headers` (referència GH Pages) sincronitzat.
+- **Lliçó edge cache**: Dinahosting té un caché edge per variant de compressió que servia els fitxers `immutable` amb la CSP VELLA encara que l'origin ja la tenia nova (curl sense `Accept-Encoding` → CSP nova; amb `gzip/br` → CSP vella, `age:` creixent). Sense purga HTTP (PURGE→405, BAN→501). **Cal buidar el caché des del panell de Dinahosting.**
+- Prevenció: fitxers de `/pagefind/` (noms estables: `pagefind.js`, `pagefind-worker.js`, `wasm.*.pagefind`, `*.pf_meta|pf_fragment|pf_index`, `pagefind-entry.json`) ara amb `Cache-Control: public, max-age=3600` en comptes d'`immutable` 1 any (regla `FilesMatch` específica DESPRÉS de la general css/js per sobreescrivir-la). Els css/js amb hash del tema segueixen immutable.
+- **Pendent:** purga del caché edge des del panell (fet aquest pas, la cerca funciona: verificat end-to-end en local amb la CSP nova → «96 resultats trobats per jazz»). Visitants que hagin usat la cerca durant el període trencat tenen el worker a la caché `immutable` del navegador → un refresh fort un cop; a partir d'ara ja no passa (cache 1h).
+
+**🔒 Header injection (CRLF) al formulari — commit `4be5c46`**
+- El camp `nom` entrava a la capçalera `Reply-To` sense netejar `\r\n` →possible injectar capçaleres (probablement explotable per spam). Test en viu amb `\r\nBcc:` retornava 200.
+- Fix a `static/formulari.php`: funció `h()` (elimina `\r`, `\n`, `\0`) aplicada a tots els camps que van a capçaleres (`subject`, `to`, `From`, `Reply-To`). `php -l` OK, desplegat i retestejat.
+
+**📧 Ofuscació d'email completada — commit `936c8b2`**
+- Eliminat tot l'email en clar del build: FAQ de serveis (CA+EN, prosa + JSON-LD), avis legal i privacitat (CA+EN), notícies (CA+EN), `contacte/_index.md` (filtrava a l'RSS global), fallback JS del wizard (`mailto:` literal → redirecció a `/contacte/`).
+- `main.js` refinat: el desxifrador `[data-contact]` només omple `textContent` si hi ha `[data-contact-text]` o element buit.
+
+**🧹 `~/arxiu-imatges` esborrat (2,3 GB)**
+- Baixat via rsync per revisar-lo (antic `wp-content/uploads` 2010–2026), confirmat amb el propietari i esborrat del servidor i de local. `~/www` (2 GB) intacte.
+
+**🛡️ Auditoria de seguretat externa: 100/100, grau A**
+- Headers (CSP, HSTS, XFO, nosniff, Referrer-Policy, Permissions-Policy), TLS 1.3, redirect HTTPS, fitxers sensibles inaccessibles: tot PASS.
+- Queden pendents d'accessibilitat de la mateixa auditoria: **4 controls sense nom accessible** i **4 enllaços amb text genèric** (WCAG 2.2 AA).
+- Troballes pròpies pendents de decidir: `/admin/` (Sveltia CMS) públic amb `config.yml` exposat (sense secrets — el PAT viu al navegador); residuals a la CSP (`frame-src tally.so` sense ús, `connect-src`/`img-src` de vimeo — vimeo sí que s'usa a notícies via iframe de `player.vimeo.com`); `formulari.php` sense rate-limit ni CSRF (mitigat pel honeypot).
+
+**CMS operatiu:** `https://pocallum.cat/admin/` amb Sveltia + PAT fine-grained de GitHub (Contents RW) — verificat funcionant.
+
+---
+
 ## 2026-09-16 — Landing del blog a /el-blog/, GA4 for a, humans.txt i robots.txt
 
 **Landing del blog /blog/ → /el-blog/**

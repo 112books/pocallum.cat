@@ -67,6 +67,12 @@ La pàgina de presentació del blog viu a **`/el-blog/`** (`content/ca/el-blog/`
 ### ⚠️ robots.txt: el controla el panell de Dinahosting, NO el rsync
 El rsync puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell** el regenera/sobreescriu. Per canviar el contingut en viu cal editar el camp del panell (SEO Toolkit → robots.txt) i clicar **Subir** a ruta `www`. Veure `HISTORY.md` (16/09/2026) i `MIGRACIO-DINAHOSTING.md`.
 
+### ⚠️ CSP: `'wasm-unsafe-eval'` és obligatori (Pagefind) + caché edge de Dinahosting
+- La cerca del lloc (Pagefind, `/cerca/`) compila **WebAssembly** dins un Web Worker. Si `script-src` de la CSP no porta `'wasm-unsafe-eval'`, el navegador bloqueja `WebAssembly.instantiate()` i la UI queda penjada per sempre a «Cercant…» (0 resultats, sense error visible). Passava a producció des de la migració a Dinahosting.
+- `script-src` ha de ser: `'self' 'unsafe-inline' 'wasm-unsafe-eval' gc.zgo.at`.
+- **Dinahosting té un caché edge** (per variant `Accept-Encoding`) davant d'Apache: els fitxers estàtics amb `immutable` els serveix amb els headers VELLS encara que l'origen ja els hagi canviat (compressió br/gzip → resposta caché; sense `Accept-Encoding` → origen). **Després de canviar headers o fitxers estàtics cal buidar el caché des del panell** (Administració del domini → eina de caché/rendiment), o l'edge serveix versions obsoletes fins al seu TTL.
+- Per això els fitxers de `/pagefind/` (noms ESTABLES, no hash) tenen `Cache-Control: public, max-age=3600` en comptes d'immutable: evita que l'edge i els navegadors guardin CSP o fitxers obsolets durant un any. La regla és al `static/.htaccess` (font de veritat, es desplega per rsync; `static/_headers` és la referència de GitHub Pages).
+
 ---
 
 ## Estructura de directoris
