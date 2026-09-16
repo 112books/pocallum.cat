@@ -11,11 +11,29 @@ Escriure una/unes notícia nova al web amb els concerts coberts de:
 - **MASiMAS Balkan Reunion** (Festival MASiMAS 2026)
 - **Recordant el Paral·lel** (Merche Mar Emporium / Parallel 62)
 
-Font: documentats al blog. Referències:
-- https://blog.pocallum.cat/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar/
-- tags del blog: `festival-masimas`, `masimas-2026`, `parallel`, `parallel-62`, `parallel-barcelona`
+**✔ FET (16/09/2026):** `content/ca/noticies/2026-07-masimas-balkan-reunion.md` + `content/en/` i `content/ca/noticies/2026-09-el-parallel-oblidat.md` + `content/en/` creats.
 
-Format: seguir el patró de `content/ca/noticies/` (frontmatter amb date, lead, image, equip, tags) i crear la versió EN a `content/en/noticies/`.
+---
+
+## 2026-09-16 — Landing del blog a /el-blog/, GA4 for a, humans.txt i robots.txt
+
+**Landing del blog /blog/ → /el-blog/**
+- La pàgina de presentació del blog es mou de `/blog/` a `/el-blog/` (CA + EN) — commit `db0ac79`.
+- El directori del layout s'ha de dir EXACTAMENT com la secció: `themes/pocallum/layouts/blog/` → `themes/pocallum/layouts/el-blog/`. El camp `layout:` del frontmatter no és suficient.
+- Menús (CA + EN) actualitzats a `/el-blog/`. `/blog/` ara es bloqueja a `robots.txt` (`Disallow: /blog/`).
+
+**Google Analytics 4 eliminat — commit `84c074d`**
+- Fora `ga4Id = "G-ZV007Q0CKG"` (GA4 cross-domain amb blog) de `hugo.toml` i tot el bloc `{{ with .Site.Params.ga4Id }}...{{ end }}` de `themes/pocallum/layouts/partials/head.html` (línies 296-307).
+- Motiu: era codi mort — el CSP de `static/.htaccess` no inclou `googletagmanager.com` i Brave el bloqueja de sèrie. GoatCounter (pròpies estadístiques) es manté.
+
+**humans.txt actualitzat — commit `cba96c2`**
+- `Technology: GitHub Pages` → `Dinahosting`; `Last update: 2026-05` → `2026-09`.
+
+**⚠️ robots.txt: el controla el panell de Dinahosting, NO el rsync**
+- El rsync puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell** el regenera/sobreescriu amb `User-agent: *` (o el contingut del seu camp).
+- Evidència: marca `# SIGNAT-PROVA-20260916` afegida al `static/robots.txt` (commit `bf986ba`), desplegada i → **no va aparèixer en viu**; el `Last-Modified` quedava al moment del darrer toc del panell.
+- Flux del panell: SEO Toolkit → robots.txt → editar el camp amb el contingut DESITJAT i clicar **Subir** (puja el text del camp a la ruta marcada, `www`). El botó **Restaurar** torna a la versió generada per ell.
+- La marca de prova es treu de `static/robots.txt` (commit `cb9cee4`), però el contingut en viu segueix depenent del panell.
 
 ---
 

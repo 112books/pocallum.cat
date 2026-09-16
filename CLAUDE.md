@@ -12,7 +12,7 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 - **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026` — per testejos i com a backup del desplegament.
 - **Local:** `hugo server -D` → `http://localhost:1313` (una instància per cada màquina on es treballa)
 - **DNS:** gestionat des de Dinahosting (registres A → `82.98.166.123`). Server marca **Forçar HTTPS** activat al panell.
-- **Blog personal (a Dinahosting, no tocar):** `https://blog.pocallum.cat` — vhost propi a `~/www/blog/`, *orgullosament* Hugo estàtic (ja no WordPress). Exclòs del rsync.
+- **Blog personal (a Dinahosting, no tocar):** `https://blog.pocallum.cat` — vhost propi a `~/www/blog/`, *orgullosament* Hugo estàtic (ja no WordPress). Exclòs del rsync. Al web pare s'enllaça des de la landing `/el-blog/` (no `/blog/`).
 - **Biografia (extern, no tocar):** `https://about.pocallum.cat`
 
 ---
@@ -27,7 +27,7 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
 | Formulari | Wizard natiu 4 passos → Formspree (`formspreeContact`) |
-| Analytics | GoatCounter (sense cookies, GDPR) |
+| Analytics | GoatCounter (sense cookies, GDPR) — GA4 eliminat (16/09/2026) |
 | DNS/Domini | Dinahosting |
 
 **Fonts (totes autoallotjades a `static/fonts/`):**
@@ -60,6 +60,12 @@ git push origin main        # activa GitHub Action → rsync a Dinahosting (~/ww
 ```
 
 > El workflow de producció (`.github/workflows/deploy-prod.yml`) fa build Hugo + Pagefind i sincronitza `public/` a `~/www` amb rsync (`--delete`), **excloent** `blog/`, `.well-known/` i `cgi-bin/` (vhost i sistema del compte). No canvia permisos (SSH restringit). Document de referència: `MIGRACIO-DINAHOSTING.md`.
+
+### ⚠️ Landing del blog a `/el-blog/` — no a `/blog/`
+La pàgina de presentació del blog viu a **`/el-blog/`** (`content/ca/el-blog/` + `content/en/el-blog/`), amb CTA que enllacen a `https://blog.pocallum.cat`. El layout viu a `themes/pocallum/layouts/el-blog/list.html` **amb el nom exacte de la secció** (Hugo no fa servir el camp `layout:` del frontmatter aquí). `/blog/` està blocat per `robots.txt` (`Disallow: /blog/`) per no competir amb el blog real.
+
+### ⚠️ robots.txt: el controla el panell de Dinahosting, NO el rsync
+El rsync puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell** el regenera/sobreescriu. Per canviar el contingut en viu cal editar el camp del panell (SEO Toolkit → robots.txt) i clicar **Subir** a ruta `www`. Veure `HISTORY.md` (16/09/2026) i `MIGRACIO-DINAHOSTING.md`.
 
 ---
 

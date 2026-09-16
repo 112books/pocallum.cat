@@ -36,9 +36,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 | Entorn | Branca | URL | Deploy |
 |--------|--------|-----|--------|
-| Producció | `main` | `https://pocallum.cat/` | GitHub Pages (`deploy-prod.yml`, actions/configure-pages) |
+| Producció | `main` | `https://pocallum.cat/` | Dinahosting `~/www` (`deploy-prod.yml`, rsync) |
 | Staging | `develop` | `https://112books.github.io/pocallum.cat/` (staticrypt, pwd `LinuxBCN2026`) | `gh-pages-staging` (`deploy-staging.yml`) |
 | Local | — | `localhost:1313` | `hugo server -D` |
+
+> **Estat (16/09/2026):** migració a Dinahosting **completada a producció**. El document de pla es manté com a registre històric i referència d'operacions; la secció § Fase 7 (neteges GitHub) i § Rollback ja no apliquen per defecte.
 
 - **Hugo v0.159.0 extended** · `hugo --minify --baseURL "https://pocallum.cat/"` + **Pagefind** (només prod).
 - **Multilingüe:** `ca` (default), `en` actives; `es` desactivada.
@@ -204,6 +206,13 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 2. **Formularis amb SMTP propi (proposta):** estudiar que el formulari de contacte (wizard natiu → Formspree) s'enviï des de l'SMTP de Dinahosting del mateix domini, per no dependre d'un tercer i reduir el risc de caure en spam.
    - Nota detectada a la revisió: la documentació legal (`content/ca/legal/privacitat.md`, `cookies.md`) i `CLAUDE.md`/`AGENTS.md` encara diuen que el contacte és Tally.so, però el formulari real és el wizard natiu → Formspree. Cal actualitzar-ho quan es toqui.
 3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
+
+### ⚠️ robots.txt — el controla el SEO Toolkit del panell, NO el rsync (16/09/2026)
+
+- El deploy puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell de Dinahosting** el regenera/sobreescriu (per defecte: `User-agent: *`).
+- **Per canviar el contingut en viu** cal: panell → SEO Toolkit → robots.txt → editar el camp amb el contingut desitjat → botó **Subir** → ruta `www`. El botó **Restaurar** torna a la versió automàtica.
+- Evidència del control pel panell: la marca `# SIGNAT-PROVA-20260916` afegida a `static/robots.txt` (commit `bf986ba`) es va desplegar però **no va aparèixer en viu**; el `Last-Modified` de la resposta corresponia al moment del darrer toc del panell, no del deploy.
+- **Conseqüències:** (a) `robots.txt` del repo és "font de veritat" només documental; (b) els canvis de `robots.txt` requereixen editar el panell (o demanar a Dinahosting desactivar la generació automàtica); (c) els blocs a `/admin/`, `/stats/`, `/blog/` només tenen efecte real si són al panell.
 
 ---
 
