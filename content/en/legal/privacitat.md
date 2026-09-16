@@ -12,7 +12,7 @@ sitemap:
 - **Controller:** Joan Linux Martínez i Serres
 - **Tax ID (NIF):** 38121766W
 - **Address:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
-- **Contact:** hola@pocallum.cat
+- **Contact:** <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"></a>
 
 ---
 
@@ -59,7 +59,7 @@ You have the right to:
 - **Obtain portability** of your data
 - **Request restriction** of processing
 
-To exercise these rights, write to hola@pocallum.cat. If you believe that the processing of your data does not comply with applicable law, you may lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).
+To exercise these rights, write to <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"></a>. If you believe that the processing of your data does not comply with applicable law, you may lodge a complaint with the Spanish Data Protection Agency (www.aepd.es).
 
 ---
 

@@ -115,4 +115,4 @@ Barcelona, a city of contrasts, offers a rich and diverse cultural panorama, esp
 
 ---
 
-*This guide is meant to be a dynamic resource. If you think a space is missing, [write to us](mailto:hola@pocallum.cat) and we will add it.*
+*This guide is meant to be a dynamic resource. If you think a space is missing, <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174">write to us</a> and we will add it.*

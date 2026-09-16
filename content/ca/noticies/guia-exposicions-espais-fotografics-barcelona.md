@@ -134,4 +134,4 @@ Barcelona, ciutat de contrasts, ofereix un panorama cultural ric i divers, espec
 
 ---
 
-*Aquesta guia pretén ser un recurs dinàmic. Si trobes a faltar algun espai, [escriu-nos](mailto:hola@pocallum.cat) i l'afegirem.*
+*Aquesta guia pretén ser un recurs dinàmic. Si trobes a faltar algun espai, <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174">escriu-nos</a> i l'afegirem.*
