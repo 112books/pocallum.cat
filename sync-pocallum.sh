@@ -11,8 +11,11 @@ REMOTE="origin"
 BUILD_DIR="public"
 BRANCH_STAGING="develop"
 BRANCH_PROD="main"
-REPO_STAGING="https://112books.github.io/pocallum.cat/"
+REPO_STAGING="https://staging.pocallum.cat/"
 REPO_PROD="https://pocallum.cat/"
+SERVER="pocallum@vl28359.dinaserver.com"
+DOCROOT_VIA="/home/pocallum/www/pocallum/"
+DOCROOT_STAGING="/home/pocallum/www/staging/"
 
 # ── Colors i helpers ─────────────────────────────────────────────────────
 RED='\033[0;31m'
@@ -101,17 +104,20 @@ deploy_staging() {
     warn "No estàs a '${BRANCH_STAGING}'. Canviant..."
     git checkout "$BRANCH_STAGING"
   fi
-  print "Build staging..."
-  hugo --minify --baseURL "$REPO_STAGING" --buildDrafts
-  ok "Build correcte"
-  print "Pujant a GitHub (branca ${BRANCH_STAGING})..."
-  dim "El GitHub Action s'encarregarà del deploy + staticrypt (password: LinuxBCN2026)."
-  git push "$REMOTE" "$BRANCH_STAGING" || exit 1
-  ok "Deploy staging iniciat → ${REPO_STAGING}"
-  dim "Segueix el progrés: https://github.com/112books/pocallum.cat/actions"
+  print "Build staging (baseURL ${REPO_STAGING})..."
+  hugo --minify --baseURL "$REPO_STAGING" --buildDrafts || exit 1
+  ok "Build correcte → ./${BUILD_DIR}/"
+
+  print "Pujant a Dinahosting (${SERVER} → ${DOCROOT_STAGING})..."
+  rsync -rlzv --delete -e "ssh -o BatchMode=yes" \
+    --exclude='.well-known/' \
+    --no-perms \
+    "${BUILD_DIR}/" "${SERVER}:${DOCROOT_STAGING}" || exit 1
+  ok "Deploy staging complet → https://staging.pocallum.cat/"
+  dim "El lloc està protegit amb htpasswd (configurat al servidor/panell)."
 }
 
-deploy_prod_pages() {
+deploy_prod() {
   require_clean
   CURRENT=$(git branch --show-current)
   if [[ "$CURRENT" != "$BRANCH_PROD" ]]; then
@@ -129,11 +135,18 @@ deploy_prod_pages() {
       exit 1
     fi
   fi
-  print "Pujant a GitHub (branca ${BRANCH_PROD})..."
-  dim "El GitHub Action construirà i desplegarà a GitHub Pages."
-  git push "$REMOTE" "$BRANCH_PROD" || exit 1
-  ok "Deploy producció iniciat → GitHub Pages"
-  dim "Segueix el progrés: https://github.com/112books/pocallum.cat/actions"
+  print "Build de producció (baseURL ${REPO_PROD})..."
+  hugo --minify --baseURL "$REPO_PROD" || exit 1
+  ok "Build correcte → ./${BUILD_DIR}/"
+
+  print "Pujant a Dinahosting (${SERVER} → ${DOCROOT_VIA})..."
+  rsync -rlzv --delete -e "ssh -o BatchMode=yes" \
+    --exclude='wp-content/' \
+    --exclude='.well-known/' \
+    --no-perms \
+    "${BUILD_DIR}/" "${SERVER}:${DOCROOT_VIA}" || exit 1
+  ok "Deploy producció complet → https://pocallum.cat/"
+  dim "wp-content/ i .well-known/ es conserven al servidor."
 }
 
 
@@ -253,8 +266,8 @@ echo " 2) Sync  (commit + pull --rebase + push)"
 echo " 3) Servidor local  →  localhost:1313"
 echo " 4) Build local (amb drafts)"
 echo "───────────────────────────────────────"
-echo " 5) Deploy staging  →  GitHub Pages (develop + staticrypt)"
-echo " 6) Deploy producció → GitHub Pages (main)"
+echo " 5) Deploy staging  →  Dinahosting (rsync, staging.pocallum.cat)"
+echo " 6) Deploy producció → Dinahosting (rsync, pocallum.cat)"
 echo "───────────────────────────────────────"
 echo " f) Nova fotografia de galeria"
 echo " n) Nova notícia"
@@ -271,7 +284,7 @@ case $opt in
   3) server_local ;;
   4) build_local ;;
   5) deploy_staging ;;
-  6) deploy_prod_pages ;;
+  6) deploy_prod ;;
   f) nova_foto ;;
   n) nova_noticia ;;
   0) exit 0 ;;
