@@ -22,5 +22,3 @@ Allow: /
 
 User-agent: Googlebot-Image
 Allow: /images/
-
-# SIGNAT-PROVA-20260916
