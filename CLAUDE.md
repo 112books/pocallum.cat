@@ -6,13 +6,13 @@
 
 Web oficial de **Pocallum**, servei fotogràfic cultural de Joan Linux Martínez. Especialitzat en jazz, blues, música, teatre, dansa i arts escèniques. Construït amb Hugo (static site generator), tema custom i continguts en Markdown.
 
-Migrat de WordPress a Hugo. El WordPress roman actiu fins al tall final del domini.
+Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el web viu a **Dinahosting**, no a GitHub Pages.
 
-- **Producció:** `https://pocallum.cat` → GitHub Pages (main). Hosting definitiu, sense VPS.
-- **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026`
-- **Local:** `hugo server -D` → `http://localhost:1313`
-- **DNS:** gestionat des de Dinahosting (registres A → GitHub Pages). No hi ha servidor virtual actiu.
-- **Blog personal (extern, no tocar):** `https://blog.pocallum.cat`
+- **Producció:** `https://pocallum.cat` → Dinahosting (servidor `vl28359.dinaserver.com`, docroot `~/www`). Deploy per GitHub Action (`deploy-prod.yml`) amb rsync des de la branca `main`.
+- **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026` — per testejos i com a backup del desplegament.
+- **Local:** `hugo server -D` → `http://localhost:1313` (una instància per cada màquina on es treballa)
+- **DNS:** gestionat des de Dinahosting (registres A → `82.98.166.123`). Server marca **Forçar HTTPS** activat al panell.
+- **Blog personal (a Dinahosting, no tocar):** `https://blog.pocallum.cat` — vhost propi a `~/www/blog/`, *orgullosament* Hugo estàtic (ja no WordPress). Exclòs del rsync.
 - **Biografia (extern, no tocar):** `https://about.pocallum.cat`
 
 ---
@@ -26,7 +26,7 @@ Migrat de WordPress a Hugo. El WordPress roman actiu fins al tall final del domi
 | CSS | Vanilla CSS amb custom properties (cap framework) |
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Tally.so (embed iframe, wizard 4 passos) |
+| Formulari | Wizard natiu 4 passos → Formspree (`formspreeContact`) |
 | Analytics | GoatCounter (sense cookies, GDPR) |
 | DNS/Domini | Dinahosting |
 
@@ -56,19 +56,10 @@ git push origin develop     # activa GitHub Action → GitHub Pages + staticrypt
 ```bash
 git checkout main
 git merge develop
-git push origin main        # activa GitHub Action → GitHub Pages
+git push origin main        # activa GitHub Action → rsync a Dinahosting (~/www)
 ```
 
-### ⚠️ Ordre obligatori en canvis de domini (lliçó apresa)
-
-El workflow usa `actions/configure-pages` que llegeix el custom domain de GitHub Settings **en el moment de la build**. Si el DNS canvia abans que el custom domain estigui configurat a GitHub, la build es fa amb la URL de github.io i el CSS/imatges no carreguen.
-
-**Ordre correcte per a migracions de domini:**
-1. GitHub → Settings → Pages → Custom domain → escriu el domini → Save
-2. Verifica que el CNAME file existeix a `static/CNAME`
-3. Fes un push a main i comprova que el workflow acaba correctament
-4. Comprova que el HTML generat té paths correctes (no `/repositori/css/...`)
-5. *Llavors* canvia els DNS a Dinahosting
+> El workflow de producció (`.github/workflows/deploy-prod.yml`) fa build Hugo + Pagefind i sincronitza `public/` a `~/www` amb rsync (`--delete`), **excloent** `blog/`, `.well-known/` i `cgi-bin/` (vhost i sistema del compte). No canvia permisos (SSH restringit). Document de referència: `MIGRACIO-DINAHOSTING.md`.
 
 ---
 
@@ -285,10 +276,10 @@ hugo --minify
 
 ## Pendent d'implementar
 
-- **Secció Festivals** — content type, plantilles, CSS, 5 fitxers inicials (vijazz, blues-bcn, arundo-donax, im-jazz, flamenco-barrio)
-- **Copy serveis** — actualitzar `data/serveis.yaml` amb el text aprovat (veure spec)
-- **Formulari pressupost** — crear wizard 4 passos a tally.so + afegir ID a `hugo.toml`
-- **Logo** — exportar `pocallum-logo.png` amb fons transparent (ara funciona amb mix-blend-mode)
+- **CMS d'edició (Sveltia CMS)** — replicar el que ja funciona a `blog.pocallum.cat`: `static/admin/` (Sveltia) per editar continguts des del navegador, amb GitHub com a backend. ⚠️ A pocallum.cat el path `/admin/` ja està ocupat pel **dashboard d'estadístiques** (GoatCounter) — cal decidir on es mou el dashboard (o com conviuen) abans d'implementar el CMS. Veure `MIGRACIO-DINAHOSTING.md` → "Pendents post-migració".
+- **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel* (veure `HISTORY.md` → secció PENDENT, 16/09/2026). Patró: `content/ca/noticies/` + versió EN.
+- **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`).
+- **Imatges no usades** — avaluar esborrar `~/arxiu-imatges` (~2.3 GB) al servidor, un cop confirmat que res no les referència (veure `MIGRACIO-DINAHOSTING.md`).
 
 Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-design.md`
 
@@ -299,9 +290,8 @@ Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-des
 - Newsletter / mailing list
 - Botiga o e-commerce amb mercandatge propi
 - Castellà activat
-- Blog integrat (`blog.pocallum.cat` és independent) <--- compte al passar a producció!
+- Blog integrat (`blog.pocallum.cat` és independent, viu a Dinahosting) <--- compte amb el rsync: exclou `blog/`!
 - Formació fotogràfica (→ Llumàtics)
-- Backend per publicar notícies, festivals, fotos a galeria.
 
 ## graphify
 
