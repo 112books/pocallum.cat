@@ -118,7 +118,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.ca.menus.main]]
   name   = "Blog"
-  url    = "/blog/"
+  url    = "/el-blog/"
   weight = 6
 
 [[languages.ca.menus.main]]
@@ -160,7 +160,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.en.menus.main]]
   name   = "Blog"
-  url    = "/blog/"
+  url    = "/el-blog/"
   weight = 6
 
 [[languages.en.menus.main]]
