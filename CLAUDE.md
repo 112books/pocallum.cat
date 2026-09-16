@@ -26,7 +26,7 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 | CSS | Vanilla CSS amb custom properties (cap framework) |
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Wizard natiu 4 passos → Formspree (`formspreeContact`) |
+| Formulari | Wizard natiu 4 passos → `static/formulari.php` (php `mail()` Dinahosting) |
 | Analytics | GoatCounter (sense cookies, GDPR) — GA4 eliminat (16/09/2026) |
 | DNS/Domini | Dinahosting |
 
@@ -317,8 +317,8 @@ hugo --minify
 
 - **Dashboard d'estadístiques (GoatCounter)** — implementat a `static/stats/` → `https://pocallum.cat/stats/` (documentat a la secció "Dashboard d'estadístiques").
 - **CMS d'edició (Sveltia CMS)** — implementat a `static/admin/` → `https://pocallum.cat/admin/`. Login amb **PAT** de GitHub (no cal OAuth App). Backend: repo `112books/pocallum.cat`, branca `main`. La CSP global del site no s'aplica aquí (`.htaccess` propi dins `static/admin/` que n'amplia els permisos). Veure `MIGRACIO-DINAHOSTING.md` → Fase 8.
-- **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel* (veure `HISTORY.md` → secció PENDENT, 16/09/2026). Patró: `content/ca/noticies/` + versió EN.
-- **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`).
+- **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel*. **✔ FET (16/09):** `content/ca/noticies/2026-07-masimas-balkan-reunion.md` + `content/en/` i `content/ca/noticies/2026-09-el-parallel-oblidat.md` + `content/en/`.
+- **Formulari amb SMTP propi** — **✔ FET (16/09):** `static/formulari.php` (php `mail()`) + endpoint a `hugo.toml` (`contactEndpoint = "/formulari.php"`) + docs legals actualitzats. Veure `MIGRACIO-DINAHOSTING.md`.
 - **Imatges no usades** — avaluar esborrar `~/arxiu-imatges` (~2.3 GB) al servidor, un cop confirmat que res no les referència (veure `MIGRACIO-DINAHOSTING.md`).
 
 Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-design.md`

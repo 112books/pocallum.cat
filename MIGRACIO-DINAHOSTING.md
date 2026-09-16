@@ -5,7 +5,7 @@
 > **No executar cap fase sense el vistiplau explícit de l'usuari**, especialment les que toquen DNS, SSL, GitHub Settings o el servidor.
 
 - **Data del pla:** 2026-09-16
-- **Termini crític:** el certificat de `blog.pocallum.cat` caduca el **2026-09-22**. S'ha de completar la migració (fins a SSL) abans d'aquesta data, o el blog quedarà sense HTTPS vàlid.
+- **Termini crític:** ~~el certificat de `blog.pocallum.cat` caduca el 2026-09-22~~ **✔ RESOLT (16/09):** Let's Encrypt activat/renovat des del panell de Dinahosting pel subdomini `blog.pocallum.cat`.
 - **Autor del pla:** sessió amb l'usuari (Joan), repo `blog.pocallum.cat` → document originat aquí, còpia de referència allà.
 
 ---
@@ -137,7 +137,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ### Fase 5 — SSL/HTTPS (panell Dinahosting, amb suport si cal)
 
 1. **Activar Let's Encrypt per `pocallum.cat`** (+ `www.pocallum.cat`) al panell. Ara la validació funcionarà perquè el DNS ja apunta a Dinahosting.
-2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — fer-ho a la mateixa sessió.
+2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — **✔ FET pel panell de Dinahosting (16/09).**
 3. **Activar el redirect HTTP→HTTPS al proxy/panell** (Forçar HTTPS) per als dos dominis. **NO al `.htaccess`.**
 4. **Verificar:**
    - `curl -I https://pocallum.cat/` → 200, cert vàlid (issuer Let's Encrypt), no caducat
@@ -202,9 +202,8 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ## Pendents post-migració (anotat 16/09)
 
-1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap) i tancar els punts pendents de la Fase 5 (cert del blog, caduca 22/09).
-2. **Formularis amb SMTP propi (proposta):** estudiar que el formulari de contacte (wizard natiu → Formspree) s'enviï des de l'SMTP de Dinahosting del mateix domini, per no dependre d'un tercer i reduir el risc de caure en spam.
-   - Nota detectada a la revisió: la documentació legal (`content/ca/legal/privacitat.md`, `cookies.md`) i `CLAUDE.md`/`AGENTS.md` encara diuen que el contacte és Tally.so, però el formulari real és el wizard natiu → Formspree. Cal actualitzar-ho quan es toqui.
+1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap). El punt SSL de la Fase 5 queda **resolt** amb Let's Encrypt des del panell (16/09).
+2. **Formularis amb SMTP propi** — **✔ FET (16/09):** creat `static/formulari.php` que rep el POST del wizard i l'envia amb php `mail()` (sense credencials, MTA del hosting). Contracte JSON `{"ok":true}` mantingut. Endpoint: `hugo.toml` → `contactEndpoint = "/formulari.php"`. Formspree eliminat. Docs legals (`privacitat.md`, `cookies.md`) actualitzats a formulari propi.
 3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
 
 ### ⚠️ robots.txt — el controla el SEO Toolkit del panell, NO el rsync (16/09/2026)

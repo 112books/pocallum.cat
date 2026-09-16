@@ -48,6 +48,19 @@ L’alias del frontmatter anglès s’ha definit sense el prefix `/en`, perquè 
 
 ---
 
+## 2026-09-16 — Formulari de contacte: Formspree → PHP mail() propi
+
+**Canvi:** el formulari de contacte (wizard natiu 4 passos) ja no depèn de Formspree. Ara envia des del mateix hosting.
+
+- Creat `static/formulari.php` — rep el POST del wizard, valida (honeypot `_gotcha` + email obligatori) i envia amb php `mail()` (sense credencials, MTA de Dinahosting). Retorna JSON `{"ok":true}` per mantenir el contracte del JS.
+- `hugo.toml`: `formspreeContact` eliminat → `contactEndpoint = "/formulari.php"`.
+- `themes/pocallum/layouts/contacte/list.html`: l'`action` del form apunta ara a `contactEndpoint`.
+- **Docs legals actualitzats** (`privacitat.md`, `cookies.md`, CA+EN): del Tally.so/Formspree (que ja no s'usaven) a "formulari propi del lloc, dades enviades per email des del nostre allotjament".
+- Compte amb la CSP: el fetch a `/formulari.php` és same-origin → permès per `connect-src 'self'`.
+- Veure també secció "robots.txt — el controla el panell" d'aquesta data.
+
+---
+
 ## 2026-09-13 — Filtre antispam Formspree a Dinahosting
 
 Sessió curta. Emails de `formspree.io` (recordatoris de curs) anaven a spam. Creat filtre des del Panel de Control de Dinahosting per whitelistar el domini `formspree.io`. El formulari de `pocallum.cat` és Tally.so i no estava afectat.

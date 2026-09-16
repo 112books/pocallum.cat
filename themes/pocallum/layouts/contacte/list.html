@@ -26,7 +26,7 @@
       <span class="wiz-step-counter" id="js-step-counter" aria-live="polite">01 / 04</span>
     </div>
 
-    <form id="js-wizard"{{ with .Site.Params.formspreeContact }} action="{{ . }}"{{ end }} method="POST" novalidate>
+    <form id="js-wizard"{{ with .Site.Params.contactEndpoint }} action="{{ . }}"{{ end }} method="POST" novalidate>
 
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <input type="hidden" name="_subject" value="{{ i18n "wiz_email_subject" | default "Nou pressupost — pocallum.cat" }}">

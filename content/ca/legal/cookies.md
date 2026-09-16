@@ -35,7 +35,7 @@ El teu navegador pot generar cookies tècniques pròpies necessàries per al fun
 
 ## Eines de tercers
 
-**Tally.so** (formulari de contacte): si interactues amb el formulari de contacte, Tally.so pot usar galetes tècniques pròpies per al correcte funcionament de l'eina. Consulta la [política de cookies de Tally](https://tally.so/help/privacy-policy) per a més informació.
+**Formulari de contacte (propi del lloc):** el formulari de contacte funciona sense galetes de tercers. Les dades s'envien directament per correu electrònic des del nostre allotjament.
 
 ---
 

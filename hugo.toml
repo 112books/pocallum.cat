@@ -69,7 +69,8 @@ defaultContentLanguageInSubdir = false
   goatcounterSite = "pocallum"
 
   # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
-  formspreeContact  = "https://formspree.io/f/xnjgrpnn"
+  # Contact form: enviament des del mateix hosting (static/formulari.php, mail()).
+  contactEndpoint = "/formulari.php"
   defaultOgImage    = "/images/logotip/pocallum-logo.png"
 
 [taxonomies]

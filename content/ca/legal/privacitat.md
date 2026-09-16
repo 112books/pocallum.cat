@@ -28,7 +28,7 @@ Quan envies un missatge a través del formulari de contacte, recollim les dades 
 - Adreça electrònica
 - Contingut del missatge
 
-El formulari de contacte utilitza la plataforma **Tally.so** (Tally Software SRL, Bèlgica). Tally actua com a encarregat del tractament en els termes del seu [Acord de processament de dades](https://tally.so/help/dpa). Les dades enviades es guarden als servidors de Tally.
+El formulari de contacte és propi del lloc web i les dades s'envien per correu electrònic als servidors del nostre proveïdor d'allotjament (Dinahosting), sense intermediaris de tercers.
 
 - **Finalitat:** respondre a les teves consultes i gestionar la relació comercial que se'n pugui derivar
 - **Base legal:** consentiment (art. 6.1.a RGPD) i interès legítim en respondre consultes (art. 6.1.f RGPD)

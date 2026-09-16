@@ -26,7 +26,7 @@ When you send a message through the contact form, we collect the data you provid
 - Email address
 - Message content
 
-The contact form uses **Tally.so** (Tally Software SRL, Belgium). Tally acts as a data processor under the terms of their [Data Processing Agreement](https://tally.so/help/dpa). Submitted data is stored on Tally's servers.
+The contact form is native to this website and data is sent by email to our hosting provider's servers (Dinahosting), with no third-party intermediaries.
 
 - **Purpose:** to respond to your enquiries and manage any resulting professional relationship
 - **Legal basis:** consent (art. 6.1.a GDPR) and legitimate interest in responding to enquiries (art. 6.1.f GDPR)
