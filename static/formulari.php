@@ -7,6 +7,11 @@ function e($s) {
     return trim(strip_tags((string)$s));
 }
 
+function h($s) {
+    // Sanititza valors que van dins de capçaleres de correu (injecció CRLF).
+    return str_replace(["\r", "\n", "\0"], '', (string)$s);
+}
+
 $gotcha = isset($_POST['_gotcha']) ? $_POST['_gotcha'] : '';
 if ($gotcha !== '') {
     http_response_code(200);
@@ -31,8 +36,8 @@ if ($nom === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) 
     exit;
 }
 
-$subject  = preg_replace('/[\r\n]+/', ' ', $subject);
-$to       = 'hola@pocallum.cat';
+$subject  = h(preg_replace('/[\r\n]+/', ' ', $subject));
+$to       = h('hola@pocallum.cat');
 
 $body = wordwrap(
     "Servei:      $servei\n" .
@@ -47,8 +52,8 @@ $body = wordwrap(
     76
 );
 
-$headers  = "From: Pocallum <hola@pocallum.cat>\r\n";
-$headers .= "Reply-To: $nom <$email>\r\n";
+$headers  = "From: Pocallum <" . $to . ">\r\n";
+$headers .= "Reply-To: " . h($nom) . " <" . h($email) . ">\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
