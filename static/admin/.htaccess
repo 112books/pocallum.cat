@@ -1,0 +1,11 @@
+# ──────────────────────────────────────────────────────────────
+#  Pocallum — CSP específica per al CMS (Sveltia) a /admin/
+#  Sobreescriu la CSP global del site només en aquest directori
+#  (que és estricta i bloquejaria Sveltia).
+#  ⚠️ Aquest directori NO ha de ser indexat (ja està a robots.txt)
+# ──────────────────────────────────────────────────────────────
+
+<IfModule mod_headers.c>
+  Header unset Content-Security-Policy
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://unpkg.com; connect-src 'self' blob: data: https://unpkg.com https://api.github.com https://www.githubstatus.com; style-src 'self' 'unsafe-inline' https://unpkg.com; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' blob: data: https://avatars.githubusercontent.com https://*.githubusercontent.com; frame-src 'self' blob:; frame-ancestors 'self'; manifest-src blob:"
+</IfModule>

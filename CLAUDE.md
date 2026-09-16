@@ -253,13 +253,13 @@ A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (
 
 ---
 
-## Dashboard d'estadístiques (`/admin/`)
+## Dashboard d'estadístiques (`/stats/`)
 
-Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IBM Plex, tema fosc). **Mai canviar el link del footer a una URL externa** — sempre apunta a `/admin/`.
+Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IBM Plex, tema fosc). **Mai canviar el link del footer a una URL externa** — sempre apunta a `/stats/`.
 
 ### Arquitectura
-- `static/admin/index.html` — dashboard HTML (autocontingut, protegit per contrasenya SHA-256)
-- `static/admin/analytics.json` — dades generades automàticament cada hora per GitHub Actions
+- `static/stats/index.html` — dashboard HTML (autocontingut, protegit per contrasenya SHA-256)
+- `static/stats/analytics.json` — dades generades automàticament cada hora per GitHub Actions
 - `scripts/build-analytics-json.py` + `scripts/process-analytics.py` — scripts que criden l'API de GoatCounter
 - `.github/workflows/fetch-analytics.yml` — workflow que s'executa cada hora (`cron: '0 * * * *'`)
 
@@ -272,7 +272,7 @@ Per generar-lo: `pocallum.goatcounter.com` → Settings → API tokens → New t
 **Si `analytics.json` té zeros**, el secret falta o és invàlid. Solució: regenerar el token a GoatCounter i afegir-lo a GitHub Secrets, després llançar manualment el workflow (Actions → Fetch GoatCounter Analytics → Run workflow).
 
 ### Contrasenya del dashboard
-Hash SHA-256 configurat a `static/admin/index.html` → variable `pwHash`. Per canviar la contrasenya:
+Hash SHA-256 configurat a `static/stats/index.html` → variable `pwHash`. Per canviar la contrasenya:
 ```bash
 echo -n "nova_contrasenya" | shasum -a 256
 ```
@@ -309,7 +309,8 @@ hugo --minify
 
 ## Pendent d'implementar
 
-- **CMS d'edició (Sveltia CMS)** — replicar el que ja funciona a `blog.pocallum.cat`: `static/admin/` (Sveltia) per editar continguts des del navegador, amb GitHub com a backend. ⚠️ A pocallum.cat el path `/admin/` ja està ocupat pel **dashboard d'estadístiques** (GoatCounter) — cal decidir on es mou el dashboard (o com conviuen) abans d'implementar el CMS. Veure `MIGRACIO-DINAHOSTING.md` → "Pendents post-migració".
+- **Dashboard d'estadístiques (GoatCounter)** — implementat a `static/stats/` → `https://pocallum.cat/stats/` (documentat a la secció "Dashboard d'estadístiques").
+- **CMS d'edició (Sveltia CMS)** — implementat a `static/admin/` → `https://pocallum.cat/admin/`. Login amb **PAT** de GitHub (no cal OAuth App). Backend: repo `112books/pocallum.cat`, branca `main`. La CSP global del site no s'aplica aquí (`.htaccess` propi dins `static/admin/` que n'amplia els permisos). Veure `MIGRACIO-DINAHOSTING.md` → Fase 8.
 - **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel* (veure `HISTORY.md` → secció PENDENT, 16/09/2026). Patró: `content/ca/noticies/` + versió EN.
 - **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`).
 - **Imatges no usades** — avaluar esborrar `~/arxiu-imatges` (~2.3 GB) al servidor, un cop confirmat que res no les referència (veure `MIGRACIO-DINAHOSTING.md`).

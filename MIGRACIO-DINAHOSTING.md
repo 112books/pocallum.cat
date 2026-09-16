@@ -162,8 +162,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ### Fase 8 — CMS (final, decidida per l'usuari)
 
-- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), OAuth GitHub (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET`), URL `https://pocallum.cat/admin/`.
-- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push.
+- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), URL `https://pocallum.cat/admin/`.
+- **Login amb PAT de GitHub** (Settings → Developer settings → Personal access tokens → Fine-grained, permís `Contents: Read/Write` sobre `112books/pocallum.cat`) — **no cal OAuth App** (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET` no fan falta amb Sveltia v2).
+- El **dashboard d'estadístiques** va passar de `static/admin/` a `static/stats/` → `https://pocallum.cat/stats/` per alliberar `/admin/` per al CMS.
+- CSP: la global del site bloquejaria Sveltia (unpkg.com, api.github.com) → `static/admin/.htaccess` fa `Header unset` + `Header set` amb la CSP ampliada, només per a `/admin/` (Apache sobreescriu la del pare). `robots.txt` ja bloqueja `/admin/` i `/stats/`.
+- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push (`deploy-prod.yml`, branca `main`).
 - Replicar el model ja documentat al CLAUDE.md del blog (§ Pla CMS).
 
 ---
