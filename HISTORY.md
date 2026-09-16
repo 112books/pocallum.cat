@@ -4,6 +4,21 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## PENDENT — Notícia festivals (anotat 16/09/2026)
+
+Escriure una/unes notícia nova al web amb els concerts coberts de:
+
+- **MASiMAS Balkan Reunion** (Festival MASiMAS 2026)
+- **Recordant el Paral·lel** (Merche Mar Emporium / Parallel 62)
+
+Font: documentats al blog. Referències:
+- https://blog.pocallum.cat/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar/
+- tags del blog: `festival-masimas`, `masimas-2026`, `parallel`, `parallel-62`, `parallel-barcelona`
+
+Format: seguir el patró de `content/ca/noticies/` (frontmatter amb date, lead, image, equip, tags) i crear la versió EN a `content/en/noticies/`.
+
+---
+
 ## 2026-09-14 — Redirect de la notícia Jazz I Am
 
 Aplicada i validada la correcció de la URL morta detectada a analytics:
