@@ -38,17 +38,22 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_DINAHOSTING }}
           REMOTE_HOST: ${{ secrets.DINAHOSTING_HOST }}
           REMOTE_USER: ${{ secrets.DINAHOSTING_USER }}
-          REMOTE_PATH: ${{ secrets.DINAHOSTING_PATH }}   # ~/www/pocallum
+          REMOTE_PATH: ${{ secrets.DINAHOSTING_PATH }}   # ~/www (docroot de pocallum.cat)
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H "$REMOTE_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
-          # Rsync: substitueix tot el contingut excepte .well-known/ (validació ACME).
+          # Rsync: substitueix tot el contingut del docroot ~/www excepte:
+          #   - blog/       → vhost propi (blog.pocallum.cat), INTOCABLE
+          #   - .well-known/ → validació ACME del panell
+          #   - cgi-bin/    → sistema del compte
           # --no-perms: no pot canviar permisos del docroot arrel (SSH amb permisos restringits).
           rsync -rlzv --delete \
+            --exclude='blog/' \
             --exclude='.well-known/' \
+            --exclude='cgi-bin/' \
             --no-perms \
             public/ \
             "${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}/"
