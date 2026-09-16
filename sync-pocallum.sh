@@ -14,7 +14,7 @@ BRANCH_PROD="main"
 REPO_STAGING="https://112books.github.io/pocallum.cat/"
 REPO_PROD="https://pocallum.cat/"
 SERVER="pocallum@vl28359.dinaserver.com"
-DOCROOT_VIA="/home/pocallum/www/pocallum/"
+DOCROOT_VIA="/home/pocallum/www/"
 
 # ── Colors i helpers ─────────────────────────────────────────────────────
 RED='\033[0;31m'
@@ -137,12 +137,14 @@ deploy_prod() {
 
   print "Pujant a Dinahosting (${SERVER} → ${DOCROOT_VIA})..."
   rsync -rlzv --delete -e "ssh -o BatchMode=yes" \
+    --exclude='blog/' \
     --exclude='wp-content/' \
     --exclude='.well-known/' \
+    --exclude='cgi-bin/' \
     --no-perms \
     "${BUILD_DIR}/" "${SERVER}:${DOCROOT_VIA}" || exit 1
   ok "Deploy producció complet → https://pocallum.cat/"
-  dim "wp-content/ i .well-known/ es conserven al servidor."
+  dim "blog/ i .well-known/ es conserven al servidor (docroot ~/www)."
 }
 
 

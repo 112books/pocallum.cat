@@ -195,6 +195,15 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ---
 
+## Pendents post-migració (anotat 16/09)
+
+1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap) i tancar els punts pendents de la Fase 5 (cert del blog, caduca 22/09).
+2. **Formularis amb SMTP propi (proposta):** estudiar que el formulari de contacte (wizard natiu → Formspree) s'enviï des de l'SMTP de Dinahosting del mateix domini, per no dependre d'un tercer i reduir el risc de caure en spam.
+   - Nota detectada a la revisió: la documentació legal (`content/ca/legal/privacitat.md`, `cookies.md`) i `CLAUDE.md`/`AGENTS.md` encara diuen que el contacte és Tally.so, però el formulari real és el wizard natiu → Formspree. Cal actualitzar-ho quan es toqui.
+3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
+
+---
+
 ## Fora d'abast
 
 - `about.pocallum.cat` (site extern del mateix usuari) — no es toca.
