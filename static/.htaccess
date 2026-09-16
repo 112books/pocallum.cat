@@ -1,0 +1,18 @@
+# ──────────────────────────────────────────────────────────────
+#  Pocallum — headers de seguretat (Dinahosting / Apache)
+#  Convertit des de static/_headers (que era per GitHub Pages).
+#  ⚠️ NO posar cap redirect HTTP→HTTPS aquí: el proxy de
+#  Dinahosting ho gestiona des del panell (Forçar HTTPS).
+#  Un redirect a .htaccess provocaria un loop infinit.
+# ──────────────────────────────────────────────────────────────
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "DENY"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Strict-Transport-Security "max-age=31536000"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' gc.zgo.at; connect-src 'self' *.goatcounter.com; frame-src tally.so *.tally.so; img-src 'self' data:; style-src 'self'; font-src 'self'"
+</IfModule>

@@ -1,4 +1,4 @@
-name: Deploy → Staging (GitHub Pages)
+name: Deploy → Staging (Dinahosting)
 
 on:
   push:
@@ -6,14 +6,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: "pages-staging"
+  group: "dinahosting-staging"
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,35 +27,27 @@ jobs:
           tar -xzf hugo_extended_0.159.0_linux-amd64.tar.gz
           sudo mv hugo /usr/local/bin/
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install staticrypt
-        run: npm install staticrypt
-
       - name: Build Hugo (staging, amb drafts)
         run: |
           hugo --minify \
-               --baseURL "https://112books.github.io/pocallum.cat/" \
+               --baseURL "https://staging.pocallum.cat/" \
                --buildDrafts
 
-      - name: Protect with staticrypt
+      - name: Deploy a Dinahosting via rsync
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_DINAHOSTING }}
+          REMOTE_HOST: ${{ secrets.DINAHOSTING_HOST }}
+          REMOTE_USER: ${{ secrets.DINAHOSTING_USER }}
+          REMOTE_PATH: ${{ secrets.DINAHOSTING_PATH_STAGING }}   # ~/www/staging
         run: |
-          shopt -s globstar
-          html_files=(public/**/*.html)
-          if [ ${#html_files[@]} -gt 0 ]; then
-            npx staticrypt "${html_files[@]}" \
-              --password "${{ secrets.SITE_PASSWORD }}" \
-              --config .staticrypt.json \
-              --directory public
-          fi
-        shell: bash
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "$REMOTE_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Deploy to GitHub Pages (branca gh-pages-staging)
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages-staging
+          # Rsync: substitueix tot el contingut excepte .well-known/.
+          rsync -rlzv --delete \
+            --exclude='.well-known/' \
+            --no-perms \
+            public/ \
+            "${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_PATH}/"
