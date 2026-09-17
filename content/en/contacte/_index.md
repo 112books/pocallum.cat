@@ -1,4 +1,4 @@
 ---
 title: "Talk to us"
-description: "Request a no-commitment quote for your photography project."
+description: "Contact Pocallum, cultural photographers in Barcelona. Personalised quote within 48 hours for concerts, festivals, theatre and artistic projects."
 ---

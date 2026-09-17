@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{ $fotollibres := where .Pages "Params.tipus" "fotollibre" }}
+{{ $discs := where .Pages "Params.tipus" "disc" }}
+
+<div class="obra-list container">
+
+  <header class="obra-list__header">
+    <h1 class="obra-list__title">{{ i18n "obra_title" }}</h1>
+    <p class="obra-list__about">
+      {{ i18n "obra_about_link" }} → <a href="https://about.pocallum.cat" target="_blank" rel="noopener noreferrer">about.pocallum.cat</a>
+    </p>
+  </header>
+
+  <section id="discs" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_discs" }}</h2>
+    {{ if $discs }}
+    <div class="obra-grid obra-grid--discs">
+      {{ range $discs.ByDate.Reverse }}
+      {{- $titol := .Title -}}
+      {{- $prep := .Params.en_preparacio -}}
+      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
+        {{ with .Params.image }}
+        <div class="obra-card__cover">
+          <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+               alt="{{ $titol }}"
+               loading="lazy">
+          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
+        </div>
+        {{ end }}
+        <div class="obra-card__info">
+          <h3 class="obra-card__title">{{ .Title }}</h3>
+          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
+          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <section id="fotollibres" class="obra-section">
+    <h2 class="obra-section__heading">{{ i18n "obra_fotollibres" }}</h2>
+    {{ if $fotollibres }}
+    <div class="obra-grid obra-grid--fotollibres">
+      {{ range $fotollibres.ByDate.Reverse }}
+      {{- $titol := .Title -}}
+      {{- $prep := .Params.en_preparacio -}}
+      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
+        {{ with .Params.image }}
+        <div class="obra-card__cover">
+          <img src="{{ . | strings.TrimLeft "/" | relURL }}"
+               alt="{{ $titol }}"
+               loading="lazy">
+          {{ if $prep }}<span class="obra-card__badge">{{ i18n "obra_en_preparacio" | default "En preparació" }}</span>{{ end }}
+        </div>
+        {{ end }}
+        <div class="obra-card__info">
+          <h3 class="obra-card__title">{{ .Title }}</h3>
+          {{- $sub := .Params.subtitle | default (printf "%v" .Params.any) -}}
+          {{ with $sub }}<p class="obra-card__sub">{{ . }}</p>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+</div>
+
+{{ end }}

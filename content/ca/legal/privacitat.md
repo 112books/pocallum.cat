@@ -3,6 +3,10 @@ title: "Política de privacitat"
 description: "Política de privacitat i protecció de dades de pocallum.cat"
 date: 2026-05-01
 draft: false
+sitemap:
+  disable: true
+aliases:
+  - /contacte/politica-de-ptivacitat-avis-legal
 ---
 
 ## Responsable del tractament
@@ -10,7 +14,7 @@ draft: false
 - **Responsable:** Joan Linux Martínez i Serres
 - **NIF:** 38121766W
 - **Adreça:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
-- **Contacte:** hola@pocallum.cat
+- **Contacte:** <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"></a>
 
 ---
 
@@ -22,13 +26,13 @@ Quan envies un missatge a través del formulari de contacte, recollim les dades 
 
 - Nom
 - Adreça electrònica
-- Contingut del missatge
+- Servei que t'interessa i descripció del projecte
 
-El formulari de contacte utilitza la plataforma **Tally.so** (Tally Software SRL, Bèlgica). Tally actua com a encarregat del tractament en els termes del seu [Acord de processament de dades](https://tally.so/help/dpa). Les dades enviades es guarden als servidors de Tally.
+El formulari de contacte s'envia a un **endpoint propi** allotjat al nostre hosting (Dinahosting, Espanya, dins de l'EEE). No s'utilitzen plataformes de formularis de tercers. Les dades rebudes es registren en un fitxer intern en format Markdown emmagatzemat al nostre servidor, amb accés restringit.
 
-- **Finalitat:** respondre a les teves consultes i gestionar la relació comercial que se'n pugui derivar
+- **Finalitat:** respondre a les teves consultes i gestionar la relació comercial que se'n pugui derivar. **Les teves dades només s'utilitzen per contactar-te directament sobre la teva sol·licitud. No s'utilitzen per a newsletters ni es cedeixen ni venen a tercers.**
 - **Base legal:** consentiment (art. 6.1.a RGPD) i interès legítim en respondre consultes (art. 6.1.f RGPD)
-- **Conservació:** mentre la relació professional estigui vigent i fins al termini prescriptiu de les obligacions derivades
+- **Conservació:** 24 mesos des de la darrera comunicació si no queda tancat cap encàrrec; passat aquest termini, les dades s'eliminen. Un cop iniciada una relació professional, es conserven mentre la relació estigui vigent i fins al termini prescriptiu de les obligacions derivades.
 
 ### Analítica web
 
@@ -39,6 +43,10 @@ Aquest web utilitza **GoatCounter** per mesurar el trànsit. GoatCounter és un 
 - No utilitza empremta digital (*fingerprinting*)
 - No comparteix cap dada amb tercers
 - Compleix el RGPD sense necessitat de consentiment
+
+### Rendiment en cercadors
+
+Per a l'anàlisi del rendiment en cercadors, s'utilitza **Google Search Console**, un servei de Google LLC. Aquesta eina processa dades agregades sobre com el lloc apareix als resultats de cerca de Google (impressions, clics i posicions), però no col·loca cookies ni recull dades personals dels visitants. Les dades s'utilitzen exclusivament per millorar la visibilitat i el contingut del lloc web.
 
 ---
 
@@ -53,7 +61,7 @@ Tens dret a:
 - **Obtenir la portabilitat** de les teves dades
 - **Sol·licitar la limitació** del tractament
 
-Per exercir-los, escriu a hola@pocallum.cat. Si consideres que el tractament de les teves dades no s'ajusta a la normativa, pots presentar una reclamació davant l'Agència Española de Protecció de Dades (www.aepd.es).
+Per exercir-los, escriu a <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"></a>. Si consideres que el tractament de les teves dades no s'ajusta a la normativa, pots presentar una reclamació davant l'Agència Española de Protecció de Dades (www.aepd.es).
 
 ---
 
@@ -67,4 +75,4 @@ Les dades que ens facilites es tractaran amb absoluta confidencialitat i no se c
 
 Aquesta política pot actualitzar-se per adaptar-se a canvis normatius o de servei. La versió vigent sempre estarà disponible en aquesta pàgina.
 
-*Darrera actualització: maig de 2026*
+*Darrera actualització: setembre de 2026*

@@ -2,9 +2,9 @@
   <div class="footer-inner">
 
     <div class="footer-brand">
-      <p class="footer-logo">pocallum<span class="footer-logo-dot">.</span>cat</p>
+      <a href="{{ "/" | relLangURL }}" class="footer-logo">pocallum<span class="footer-logo-dot">.</span>cat</a>
       <p class="footer-tagline">{{ i18n "footer_tagline" | default "Fotografia de cultura" }}</p>
-      <a href="mailto:{{ .Site.Params.contactEmail }}" class="footer-email">{{ .Site.Params.contactEmail }}</a>
+      <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174" class="footer-email"></a>
       <p class="footer-location">{{ .Site.Params.location }}</p>
     </div>
 

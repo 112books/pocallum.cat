@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ $pages := .Pages.ByDate.Reverse }}
+{{- $pinned := where .Pages "Params.weight" "gt" 0 -}}
+{{- $pinned  = $pinned.ByParam "weight" -}}
+{{- $rest   := where (.Pages.ByDate.Reverse) "Params.weight" nil -}}
+{{- $pages  := $pinned | append $rest -}}
 
 <div class="festivals-wall">
   {{ range $i, $p := $pages }}
@@ -7,9 +10,13 @@
      href="{{ $p.RelPermalink }}">
     <div class="festival-card__bg">
       {{ with $p.Params.image }}
-      <img src="{{ . | strings.TrimLeft "/" | relURL }}"
-           alt="{{ $p.Title }}"
-           loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
+      {{- $loading := "lazy" -}}
+      {{- if eq $i 0 -}}{{- $loading = "eager" -}}{{- end -}}
+      {{ partial "picture.html" (dict
+        "src"     .
+        "alt"     $p.Title
+        "loading" $loading
+      ) }}
       {{ end }}
     </div>
     <div class="festival-card__overlay"></div>

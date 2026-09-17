@@ -1,0 +1,241 @@
+backend:
+  name: github
+  repo: 112books/pocallum.cat
+  branch: main
+
+# Media folder per a uploads del CMS (ímages noves a static/images/ → URL /images/,
+# mateixa ubicació on ja viuen totes les imatges del site perquè les miniatures es resolguin bé).
+media_folder: "static/images"
+public_folder: "/images"
+
+# Slug automàtic a partir del títol; l'usuari pot sobreescriure'l
+slug:
+  encoding: "unicode"
+  clean_replacements:
+    - /[^a-zA-Z0-9àèéíòóùüçñ·-]/g
+    - /--/g
+
+collections:
+  # ──────────────────────────────────────────────
+  # Notícies — Català
+  # ──────────────────────────────────────────────
+  - name: "noticies-ca"
+    label: "Notícies (CA)"
+    folder: "content/ca/noticies"
+    create: true
+    delete: true
+    path: "{{year}}-{{month}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Títol", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
+      - { label: "Entradeta (lead)", name: "lead", widget: "text", required: false, hint: "Resum breu per al llistat i meta description" }
+      - { label: "Imatge principal", name: "image", widget: "image", required: false, hint: "Puja una imatge nova (va a /images/) o enganxa el path d'una existent (/images/…)" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
+      - { label: "Fixat al llistat", name: "pinned", widget: "boolean", default: false, required: false, hint: "Només per a contingut prioritari (ex. Guia d'exposicions)" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Contingut", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Notícies — Anglès
+  # ──────────────────────────────────────────────
+  - name: "noticies-en"
+    label: "Notícies (EN)"
+    folder: "content/en/noticies"
+    create: true
+    delete: true
+    path: "{{year}}-{{month}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false, hint: "Short summary for listing and meta description" }
+      - { label: "Main image", name: "image", widget: "image", required: false, hint: "Upload a new image (goes to /images/) or paste an existing /images/… path" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
+      - { label: "Pinned in listing", name: "pinned", widget: "boolean", default: false, required: false, hint: "Only for priority content (e.g. Guia d'exposicions)" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Serveis — Català
+  # ──────────────────────────────────────────────
+  - name: "serveis-ca"
+    label: "Serveis (CA)"
+    folder: "content/ca/serveis"
+    create: true
+    delete: true
+    slug: "{{fields.translationKey}}" 
+    summary: "{{title}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Clau de traducció (no canviar)", name: "translationKey", widget: "string", hint: "Uneix la versió CA amb la EN — no la canviïs un cop creada", pattern: ["^[a-z0-9A-Zàèéíòóùüñ-]+$", "Sense espais. Ex. serveis-concerts"] }
+      - { label: "Títol", name: "title", widget: "string" }
+      - { label: "Descripció", name: "description", widget: "text", required: false }
+      - { label: "Imatge", name: "image", widget: "image", required: false }
+      - { label: "Aliases", name: "aliases", widget: "list", allow_add: true, required: false, hint: "URLs antigues que han de redirigir. Ex. /ca/serveis/concerts/" }
+      - { label: "Enllaçats (relacionats)", name: "related", widget: "list", collapsed: false, required: false, fields: [{ label: "Text", name: "text", widget: "string" }, { label: "URL", name: "url", widget: "string" }] }
+      - { label: "Preguntes freqüents (faqs)", name: "faqs", widget: "list", collapsed: true, required: false, fields: [{ label: "Pregunta", name: "q", widget: "string" }, { label: "Resposta", name: "a", widget: "text" }] }
+      - { label: "Contingut", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Serveis — Anglès
+  # ──────────────────────────────────────────────
+  - name: "serveis-en"
+    label: "Serveis (EN)"
+    folder: "content/en/serveis"
+    create: true
+    delete: true
+    slug: "{{fields.translationKey}}"
+    summary: "{{title}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Translation key (do not change)", name: "translationKey", widget: "string", hint: "Links the EN version to the CA one — do not change after creation", pattern: ["^[a-z0-9A-Zàèéíòóùüñ-]+$", "No spaces. E.g. serveis-concerts"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Aliases", name: "aliases", widget: "list", allow_add: true, required: false, hint: "Old URLs that must redirect. E.g. /en/services/live-music/" }
+      - { label: "Related links", name: "related", widget: "list", collapsed: false, required: false, fields: [{ label: "Text", name: "text", widget: "string" }, { label: "URL", name: "url", widget: "string" }] }
+      - { label: "FAQ", name: "faqs", widget: "list", collapsed: true, required: false, fields: [{ label: "Question", name: "q", widget: "string" }, { label: "Answer", name: "a", widget: "text" }] }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Festivals — Català
+  # ──────────────────────────────────────────────
+  - name: "festivals-ca"
+    label: "Festivals (CA)"
+    folder: "content/ca/festivals"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "date"]
+    fields:
+      - { label: "Nom del festival", name: "title", widget: "string" }
+      - { label: "Descripció", name: "description", widget: "text", required: false }
+      - { label: "Data (última edició)", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
+      - { label: "Anys coberts", name: "anys", widget: "string", required: false, hint: "Ex. 2013 – 2025" }
+      - { label: "Lloc", name: "lloc", widget: "string", required: false }
+      - { label: "Disciplina", name: "disciplina", widget: "string", required: false }
+      - { label: "Web del festival", name: "web", widget: "string", required: false }
+      - { label: "Imatge", name: "image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Contingut", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Festivals — Anglès
+  # ──────────────────────────────────────────────
+  - name: "festivals-en"
+    label: "Festivals (EN)"
+    folder: "content/en/festivals"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "date"]
+    fields:
+      - { label: "Festival name", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Date (last edition)", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
+      - { label: "Years covered", name: "anys", widget: "string", required: false, hint: "E.g. 2013 – 2025" }
+      - { label: "Venue", name: "lloc", widget: "string", required: false }
+      - { label: "Discipline", name: "disciplina", widget: "string", required: false }
+      - { label: "Festival website", name: "web", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Pàgines fixes — Català
+  # ──────────────────────────────────────────────
+  - name: "pagines-ca"
+    label: "Pàgines fixes (CA)"
+    files:
+      - file: "content/ca/qui-som/_index.md"
+        name: "qui-som"
+        label: "Qui som"
+        fields:
+          - { label: "Títol", name: "title", widget: "string" }
+          - { label: "Descripció", name: "description", widget: "text", required: false }
+          - { label: "Preguntes freqüents", name: "faqs", widget: "list", collapsed: true, fields: [{ label: "Pregunta", name: "q", widget: "string" }, { label: "Resposta", name: "a", widget: "text" }] }
+      - file: "content/ca/contacte/_index.md"
+        name: "contacte"
+        label: "Contacte"
+        fields:
+          - { label: "Títol", name: "title", widget: "string" }
+          - { label: "Descripció", name: "description", widget: "text", required: false }
+          - { label: "Contingut", name: "body", widget: "markdown" }
+      - file: "content/ca/noticies/_index.md"
+        name: "noticies-index"
+        label: "Índex de Notícies"
+        fields:
+          - { label: "Títol", name: "title", widget: "string" }
+          - { label: "Descripció", name: "description", widget: "text", required: false }
+      - file: "content/ca/serveis/_index.md"
+        name: "serveis-index"
+        label: "Índex de Serveis"
+        fields:
+          - { label: "Títol", name: "title", widget: "string" }
+          - { label: "Descripció", name: "description", widget: "text", required: false }
+          - { label: "Contingut", name: "body", widget: "markdown" }
+      - file: "content/ca/festivals/_index.md"
+        name: "festivals-index"
+        label: "Índex de Festivals"
+        fields:
+          - { label: "Títol", name: "title", widget: "string" }
+          - { label: "Descripció", name: "description", widget: "text", required: false }
+          - { label: "Contingut", name: "body", widget: "markdown" }
+
+  # ──────────────────────────────────────────────
+  # Pàgines fixes — Anglès
+  # ──────────────────────────────────────────────
+  - name: "pagines-en"
+    label: "Pàgines fixes (EN)"
+    files:
+      - file: "content/en/qui-som/_index.md"
+        name: "about"
+        label: "About / Qui som"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "FAQ", name: "faqs", widget: "list", collapsed: true, fields: [{ label: "Question", name: "q", widget: "string" }, { label: "Answer", name: "a", widget: "text" }] }
+      - file: "content/en/contacte/_index.md"
+        name: "contact"
+        label: "Contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - file: "content/en/noticies/_index.md"
+        name: "news-index"
+        label: "News index"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+      - file: "content/en/serveis/_index.md"
+        name: "services-index"
+        label: "Services index"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - file: "content/en/festivals/_index.md"
+        name: "festivals-index"
+        label: "Festivals index"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Content", name: "body", widget: "markdown" }

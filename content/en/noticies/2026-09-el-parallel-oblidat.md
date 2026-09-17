@@ -1,0 +1,41 @@
+---
+title: "El Paral·lel oblidat"
+date: 2026-09-06
+lead: "On September 6, a photography session in El Paral·lel as part of Festival MASiMAS 2026, in tribute to Merche Mar."
+image: "/images/noticies/2026-09-el-parallel-oblidat.jpeg"
+tags: ["MASiMAS", "Festival MASiMAS 2026", "Paral·lel", "Barcelona", "Merche Mar", "photography"]
+draft: false
+---
+
+Last September 6th I had the pleasure of attending the closing night of [Festival MASiMAS](https://masimasfestival.com), commissioned to capture the memory of the golden days of cabaret in El Paral·lel.
+
+As it happened, the venue was [Sala Paral·lel 62](https://paral-lel62.cat), with the sumptuous [Barcelona Big Blues Band](https://barcelonabigbluesband.com) —a jaw-dropping lineup—. And as if that weren't enough, [Agustí Burniel](https://www.instagram.com/agustiburriel/) on vocals, [Ster Wax](https://www.instagram.com/sterwax/), and pianist Andreu Rox. Pure luxury!
+
+But the party was, above all, to honour the recently departed queen of El Paral·lel and its cabaret nights, [Merche Mar](https://ca.wikipedia.org/wiki/Merche_Mar). So alongside sensational live music, we also got to enjoy the very best of burlesque.
+
+The [Rhythm & Boobs](https://www.instagram.com/rhythm.and.boobs/) team handled the stage show, with performers [Vivi Velours](https://www.instagram.com/vivi_velours/), [Adelaide Vasaturo](https://www.instagram.com/adelaidevasaturo/), [Ruby Monroe](https://www.instagram.com/rubymonroe_official/), [Venedita Von Däsh](https://www.instagram.com/veneditavondash/), [Dito Castro](https://www.instagram.com/ditocastroart/), [Ella Muah](https://www.instagram.com/ellamuah.art/) and [Lulú Txispún](https://www.instagram.com/lulutxispun/), [Sven VonWhatever](https://www.instagram.com/mrvonwhatever/) as host, and Diana Zafra and Míriam Corominas as Stage Kittens.
+
+Here you only get a taste, but on our blog you can read the full chronicle and see, besides the show's photographs, the "meanwhile": the photos from the setup and the final rehearsal.
+
+👉 [Read the full chronicle on the blog](https://blog.pocallum.cat/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar/)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164505.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164509.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164516.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164517.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164519.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164520.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164521.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164522.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164523.jpeg)
+
+![](/images/noticies/2026-09-el-parallel-oblidat/photo-20260910-164526.jpeg)
+

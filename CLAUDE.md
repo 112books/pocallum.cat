@@ -12,7 +12,7 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 - **Staging:** GitHub Pages protegit amb staticrypt (branca `develop`), password: `LinuxBCN2026` — per testejos i com a backup del desplegament.
 - **Local:** `hugo server -D` → `http://localhost:1313` (una instància per cada màquina on es treballa)
 - **DNS:** gestionat des de Dinahosting (registres A → `82.98.166.123`). Server marca **Forçar HTTPS** activat al panell.
-- **Blog personal (a Dinahosting, no tocar):** `https://blog.pocallum.cat` — vhost propi a `~/www/blog/`, *orgullosament* Hugo estàtic (ja no WordPress). Exclòs del rsync.
+- **Blog personal (a Dinahosting, no tocar):** `https://blog.pocallum.cat` — vhost propi a `~/www/blog/`, *orgullosament* Hugo estàtic (ja no WordPress). Exclòs del rsync. Al web pare s'enllaça des de la landing `/el-blog/` (no `/blog/`).
 - **Biografia (extern, no tocar):** `https://about.pocallum.cat`
 
 ---
@@ -26,8 +26,8 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 | CSS | Vanilla CSS amb custom properties (cap framework) |
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Wizard natiu 4 passos → Formspree (`formspreeContact`) |
-| Analytics | GoatCounter (sense cookies, GDPR) |
+| Formulari | Wizard natiu 4 passos → endpoint propi `static/formulari.php` (filtre anti-spam i registre de leads a `~/leads`, sense tercers) |
+| Analytics | GoatCounter (sense cookies, GDPR) — GA4 eliminat (16/09/2026) |
 | DNS/Domini | Dinahosting |
 
 **Fonts (totes autoallotjades a `static/fonts/`):**
@@ -60,6 +60,18 @@ git push origin main        # activa GitHub Action → rsync a Dinahosting (~/ww
 ```
 
 > El workflow de producció (`.github/workflows/deploy-prod.yml`) fa build Hugo + Pagefind i sincronitza `public/` a `~/www` amb rsync (`--delete`), **excloent** `blog/`, `.well-known/` i `cgi-bin/` (vhost i sistema del compte). No canvia permisos (SSH restringit). Document de referència: `MIGRACIO-DINAHOSTING.md`.
+
+### ⚠️ Landing del blog a `/el-blog/` — no a `/blog/`
+La pàgina de presentació del blog viu a **`/el-blog/`** (`content/ca/el-blog/` + `content/en/el-blog/`), amb CTA que enllacen a `https://blog.pocallum.cat`. El layout viu a `themes/pocallum/layouts/el-blog/list.html` **amb el nom exacte de la secció** (Hugo no fa servir el camp `layout:` del frontmatter aquí). `/blog/` està blocat per `robots.txt` (`Disallow: /blog/`) per no competir amb el blog real.
+
+### ⚠️ robots.txt: el controla el panell de Dinahosting, NO el rsync
+El rsync puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell** el regenera/sobreescriu. Per canviar el contingut en viu cal editar el camp del panell (SEO Toolkit → robots.txt) i clicar **Subir** a ruta `www`. Veure `HISTORY.md` (16/09/2026) i `MIGRACIO-DINAHOSTING.md`.
+
+### ⚠️ CSP: `'wasm-unsafe-eval'` és obligatori (Pagefind) + caché edge de Dinahosting
+- La cerca del lloc (Pagefind, `/cerca/`) compila **WebAssembly** dins un Web Worker. Si `script-src` de la CSP no porta `'wasm-unsafe-eval'`, el navegador bloqueja `WebAssembly.instantiate()` i la UI queda penjada per sempre a «Cercant…» (0 resultats, sense error visible). Passava a producció des de la migració a Dinahosting.
+- `script-src` ha de ser: `'self' 'unsafe-inline' 'wasm-unsafe-eval' gc.zgo.at`.
+- **Dinahosting té Varnish (caché edge)** davant d'Apache, configurat des del panell (preset «WordPress», TTL 15 min): els fitxers estàtics amb `immutable` els serveix amb els headers VELLS encara que l'origen ja els hagi canviat (compressió br/gzip → resposta caché; sense `Accept-Encoding` → origen). **Després de canviar headers o fitxers estàtics cal buidar el caché des del panell** (Administració del domini → Varnish Caché), o l'edge serveix versions obsoletes fins al seu TTL.
+- Per això els fitxers de `/pagefind/` (noms ESTABLES, no hash) tenen `Cache-Control: public, max-age=3600` en comptes d'immutable: evita que l'edge i els navegadors guardin CSP o fitxers obsolets durant un any. La regla és al `static/.htaccess` (font de veritat, es desplega per rsync; `static/_headers` és la referència de GitHub Pages).
 
 ---
 
@@ -157,9 +169,16 @@ title: "Títol de la notícia"
 date: 2026-01-01
 lead: "Resum curt, màxim 160 caràcters."
 image: "/images/noticies/nom-fitxer.jpg"
+tags: ["tag1", "tag2"]
+pinned: true   # opcional — veure "Notícia fixada" més avall
 draft: false
 ---
 ```
+
+Imatges addicionals al cos (galeria d'una crònica): carpeta `static/images/noticies/{slug}/` + `![](/images/noticies/{slug}/nom.jpg)` al Markdown. **Els noms de fitxer no poden portar espais** — trenca la sintaxi `![]()` i la imatge no renderitza. Usar guions.
+
+#### Notícia fixada (pinned)
+`pinned: true` al frontmatter (CA **i** EN) fa que una notícia surti sempre primera — tant a `/noticies/` com al bloc de notícies de la portada — independentment de la data. Lògica a `themes/pocallum/layouts/noticies/list.html` i `themes/pocallum/layouts/index.html` (`where ... "Params.pinned" true` + `append` per anteposar-les a la resta ordenada per data). Actualment pinnada: "Guia d'exposicions i espais fotogràfics a Barcelona".
 
 ### Pàgines estàtiques
 `serveis/`, `qui-som/`, `contacte/` → `_index.md` amb contingut Markdown.
@@ -175,6 +194,28 @@ Tres grups. No creen pàgines individuals, es renderitzen a `/serveis/`.
 **Empreses:** fotografia de personal i instal·lacions, fotografies per a xarxes socials
 
 **No s'ofereix:** formació (→ Llumàtics), fotografia de producte, fotografia gastronòmica.
+
+---
+
+## Testimonis (data/testimonis.yaml)
+
+Surten a `/contacte/` (sota "O escriu-nos directament") i `/qui-som/` (sota el bloc autor), CA i EN. Render via `partials/testimonis.html`, filtra per `publicat: true`.
+
+**Afegir-ne un de nou:**
+1. Obtenir permís explícit de la persona abans de publicar cap cita (encara que vingui d'un WhatsApp o mail informal).
+2. Afegir entrada a `data/testimonis.yaml`:
+   ```yaml
+   - nom: "Nom Cognom"
+     entitat: "Organització (opcional)"
+     publicat: true
+     cita_ca: "Text en català."
+     cita_en: "English translation."
+   ```
+3. `hugo --minify` per verificar build, commit, push.
+
+**Deixar-ne un en espera** (pendent de confirmació o de rebre el text): `publicat: false`, camps `cita_ca`/`cita_en` buits. No surt enlloc fins que es completi i es passi a `true`.
+
+⚠️ Mai publicar una cita sense permís explícit, encara que la font sigui pública (missatge privat, xarxa social, etc.).
 
 ---
 
@@ -224,15 +265,23 @@ A la portada, les darreres 8 fotografies s'mostren en ordre cronològic invers (
 
 ---
 
-## Dashboard d'estadístiques (`/admin/`)
+## Dashboard d'estadístiques (`/stats/`)
 
-Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IBM Plex, tema fosc). **Mai canviar el link del footer a una URL externa** — sempre apunta a `/admin/`.
+Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IBM Plex, tema fosc). **Mai canviar el link del footer a una URL externa** — sempre apunta a `/stats/`.
 
 ### Arquitectura
-- `static/admin/index.html` — dashboard HTML (autocontingut, protegit per contrasenya SHA-256)
-- `static/admin/analytics.json` — dades generades automàticament cada hora per GitHub Actions
+- `static/stats/index.html` — dashboard HTML (autocontingut, protegit per contrasenya SHA-256)
+- `static/stats/analytics.json` — dades generades automàticament cada hora per GitHub Actions
 - `scripts/build-analytics-json.py` + `scripts/process-analytics.py` — scripts que criden l'API de GoatCounter
 - `.github/workflows/fetch-analytics.yml` — workflow que s'executa cada hora (`cron: '0 * * * *'`)
+
+### Pestanya Missatges (leads del formulari)
+El dashboard té una pestanya "Missatges" que llegeix els leads del formulari via l'endpoint privat `static/missatges.php` (GET llista de leads amb `estat: nous|llegit|fet`; POST per marcar `estat: llegit`). Funciona amb la **mateixa contrasenya del dashboard** com a token: al login es guarda a `sessionStorage` (`MSG_TOKEN_KEY='poc_msg_token'`) i s'envia com a capçalera `X-Auth-Token` en cada fetch.
+
+- L'endpoint llegeix `~/leads/20YY-MM/*.md` al servidor (registre de leads del formulari) — mai exposa el contingut cru; retorna JSON estructurat i ordenat per `data`.
+- Auth server-side: es compara el SHA-256 del token rebut amb l'hash públic guardat a `~/leads/.control/.missatges-token-hash` (és el mateix `pwHash` del dashboard) — 401 sense token o amb token invàlid.
+- **NO usar `Authorization: Bearer`** per a `missatges.php`: Dinahosting/PHP-FPM no exposa `HTTP_AUTHORIZATION` al servidor; només funciona `X-Auth-Token` (arriba com `HTTP_X_AUTH_TOKEN`).
+- El lead s'identifica pel frontmatter `id:`, NO pel nom del fitxer (es diuen `data-YYYYMMDD-HHMMSS-slug.md`).
 
 ### Secret requerit a GitHub
 El workflow necessita el secret `GOATCOUNTER_TOKEN` al repo (Settings → Secrets and variables → Actions).
@@ -243,7 +292,7 @@ Per generar-lo: `pocallum.goatcounter.com` → Settings → API tokens → New t
 **Si `analytics.json` té zeros**, el secret falta o és invàlid. Solució: regenerar el token a GoatCounter i afegir-lo a GitHub Secrets, després llançar manualment el workflow (Actions → Fetch GoatCounter Analytics → Run workflow).
 
 ### Contrasenya del dashboard
-Hash SHA-256 configurat a `static/admin/index.html` → variable `pwHash`. Per canviar la contrasenya:
+Hash SHA-256 configurat a `static/stats/index.html` → variable `pwHash`. Per canviar la contrasenya:
 ```bash
 echo -n "nova_contrasenya" | shasum -a 256
 ```
@@ -270,15 +319,20 @@ hugo --minify
 
 # Deploy complet (menú interactiu)
 ./sync-pocallum.sh
+
+# Convertir una foto nova a WebP (cal fer-ho ABANS de commitear)
+./scripts/convert-images.sh static/images/galeria/nova-foto.jpg
+# (també funciona amb festivals/ i noticies/)
 ```
 
 ---
 
 ## Pendent d'implementar
 
-- **CMS d'edició (Sveltia CMS)** — replicar el que ja funciona a `blog.pocallum.cat`: `static/admin/` (Sveltia) per editar continguts des del navegador, amb GitHub com a backend. ⚠️ A pocallum.cat el path `/admin/` ja està ocupat pel **dashboard d'estadístiques** (GoatCounter) — cal decidir on es mou el dashboard (o com conviuen) abans d'implementar el CMS. Veure `MIGRACIO-DINAHOSTING.md` → "Pendents post-migració".
-- **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel* (veure `HISTORY.md` → secció PENDENT, 16/09/2026). Patró: `content/ca/noticies/` + versió EN.
-- **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`).
+- **Dashboard d'estadístiques (GoatCounter)** — implementat a `static/stats/` → `https://pocallum.cat/stats/` (documentat a la secció "Dashboard d'estadístiques"). ⚠️ A `/admin/` hi viu el **CMS Sveltia** (no hi van les estadístiques).
+- **CMS d'edició (Sveltia CMS)** — implementat a `static/admin/` → `https://pocallum.cat/admin/`. Login amb **PAT** de GitHub (no cal OAuth App). Backend: repo `112books/pocallum.cat`, branca `main`. La CSP global del site no s'aplica aquí (`.htaccess` propi dins `static/admin/` que n'amplia els permisos). Veure `MIGRACIO-DINAHOSTING.md` → Fase 8.
+- **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel*. **✔ FET (16/09):** `content/ca/noticies/2026-07-masimas-balkan-reunion.md` + `content/en/` i `content/ca/noticies/2026-09-el-parallel-oblidat.md` + `content/en/`.
+- **Formulari amb SMTP propi** — **✔ FET (17/09):** endpoint propi `static/formulari.php` amb filtre anti-spam en capes (honeypot, `_ts`, rate-limit per IP, correu temporal), registre de leads a `~/leads` en Markdown, notificació per mail, headers `no-store` contra el cache del proxy i consentiment RGPD al wizard. Endpoint a `hugo.toml` (`contactFormEndpoint`). Veure `MIGRACIO-DINAHOSTING.md` → secció "Formulari de contacte (leads)".
 - **Imatges no usades** — avaluar esborrar `~/arxiu-imatges` (~2.3 GB) al servidor, un cop confirmat que res no les referència (veure `MIGRACIO-DINAHOSTING.md`).
 
 Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-design.md`
@@ -302,3 +356,14 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+
+---
+
+## Control horari
+
+Skill actiu: `gestor-hores` — registra automàticament el temps de treball per sessió.
+
+- Logs a `.taques/pocallum.cat/YYYY-MM-DD.md` (creat automàticament)
+- Comandes: `/time-log [tasca] [hores]`, `/time-report [periode]`, `/time-config [hores] [tarifa]`
+- No modificar manualment els fitxers `.taques/` — són append-only

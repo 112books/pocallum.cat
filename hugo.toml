@@ -3,6 +3,7 @@ title   = "Pocallum"
 theme   = "pocallum"
 enableRobotsTXT = true
 enableGitInfo   = false
+disableHugoGeneratorInject = true
 summaryLength   = 70
 buildFuture     = true
 
@@ -66,8 +67,9 @@ defaultContentLanguageInSubdir = false
   blog            = "https://blog.pocallum.cat"
   about           = "https://about.pocallum.cat"
   goatcounterSite = "pocallum"
-  # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
-  formspreeContact  = "https://formspree.io/f/xnjgrpnn"
+
+  # Contact form: enviament des del mateix hosting (static/formulari.php, mail()).
+  contactFormEndpoint = "https://pocallum.cat/formulari.php"
   defaultOgImage    = "/images/logotip/pocallum-logo.png"
 
 [taxonomies]
@@ -105,24 +107,29 @@ defaultContentLanguageInSubdir = false
   weight = 3
 
 [[languages.ca.menus.main]]
-  name   = "Notícies"
-  url    = "/noticies/"
+  name   = "Obra"
+  url    = "/obra/"
   weight = 4
 
 [[languages.ca.menus.main]]
-  name   = "Blog"
-  url    = "/blog/"
+  name   = "Notícies"
+  url    = "/noticies/"
   weight = 5
+
+[[languages.ca.menus.main]]
+  name   = "Blog"
+  url    = "/el-blog/"
+  weight = 6
 
 [[languages.ca.menus.main]]
   name   = "Qui som"
   url    = "/qui-som/"
-  weight = 6
+  weight = 7
 
 [[languages.ca.menus.main]]
   name   = "Contacte"
   url    = "/contacte/"
-  weight = 7
+  weight = 8
   [languages.ca.menus.main.params]
     highlight = true
 
@@ -142,23 +149,28 @@ defaultContentLanguageInSubdir = false
   weight = 3
 
 [[languages.en.menus.main]]
-  name   = "News"
-  url    = "/noticies/"
+  name   = "Work"
+  url    = "/obra/"
   weight = 4
 
 [[languages.en.menus.main]]
-  name   = "Blog"
-  url    = "/blog/"
+  name   = "News"
+  url    = "/noticies/"
   weight = 5
+
+[[languages.en.menus.main]]
+  name   = "Blog"
+  url    = "/el-blog/"
+  weight = 6
 
 [[languages.en.menus.main]]
   name   = "About"
   url    = "/qui-som/"
-  weight = 6
+  weight = 7
 
 [[languages.en.menus.main]]
   name   = "Contact"
   url    = "/contacte/"
-  weight = 7
+  weight = 8
   [languages.en.menus.main.params]
     highlight = true

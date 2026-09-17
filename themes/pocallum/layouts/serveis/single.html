@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Pocallum",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" }
+  ],
+  "serviceType": "Photography",
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{ partial "schema-faq.html" . }}
+
+{{ with .Params.image }}
+<div class="servei-page__hero" style="background-image: url('{{ . }}'){{ with $.Params.image_position }}; background-position: {{ . }}{{ end }}"></div>
+{{ end }}
+
+<header class="servei-page__header container">
+  <p class="page-eyebrow"><a href="{{ "serveis/" | relLangURL }}" class="page-eyebrow--link">{{ i18n "serveis_eyebrow" | default "El que fem" }}</a></p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-intro">{{ . }}</p>{{ end }}
+</header>
+
+<div class="servei-page__body prose container">
+  {{ .Content }}
+</div>
+
+<script>
+document.querySelectorAll('.servei-page__imgs').forEach(function(grid) {
+  var imgs = Array.from(grid.children);
+  for (var i = imgs.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    grid.appendChild(imgs[j]);
+    imgs.splice(j, 1);
+  }
+});
+</script>
+
+{{ with .Params.related }}
+<section class="servei-related">
+  <div class="container">
+    <p class="servei-related__label">{{ i18n "serveis_related" | default "Pot interessar-te" }}</p>
+    <ul class="servei-related__list">
+      {{ range . }}
+      <li><a href="{{ .url | relLangURL }}">{{ .text }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+<div class="servei-back container">
+  <a href="{{ "serveis/" | relLangURL }}" class="servei-back__link">← {{ i18n "serveis_all" | default "Tots els serveis" }}</a>
+</div>
+
+{{ end }}

@@ -1,0 +1,37 @@
+{{/*
+  Partial: picture.html
+  Paràmetres:
+    src      — path JPEG (ex: /images/galeria/foto.jpg)
+    alt      — text alternatiu
+    loading  — "lazy" (per defecte) o "eager"
+    width    — amplada px (opcional)
+    height   — alçada px (opcional)
+    class    — classe CSS (opcional)
+    id       — id HTML (opcional)
+*/}}
+{{- $src     := .src -}}
+{{- $alt     := .alt     | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $width   := .width   | default 0 -}}
+{{- $height  := .height  | default 0 -}}
+{{- $class   := .class   | default "" -}}
+{{- $id      := .id      | default "" -}}
+{{/* Deriva paths WebP a partir del JPEG */}}
+{{- $base    := $src | replaceRE `(?i)\.(jpg|jpeg)$` "" -}}
+{{- $srcJpeg := $src             | strings.TrimLeft "/" | relURL -}}
+{{- $srcWebp := printf "%s.webp"      $base | strings.TrimLeft "/" | relURL -}}
+{{- $src800  := printf "%s-800.webp"  $base | strings.TrimLeft "/" | relURL -}}
+{{- $src1600 := printf "%s-1600.webp" $base | strings.TrimLeft "/" | relURL -}}
+<picture>
+  <source type="image/webp"
+          srcset="{{ $src800 }} 800w, {{ $src1600 }} 1600w, {{ $srcWebp }} 2400w"
+          sizes="(max-width: 800px) 800px, (max-width: 1600px) 1600px, 100vw">
+  <img src="{{ $srcJpeg }}"
+       alt="{{ $alt }}"
+       {{- with $width }} width="{{ . }}"{{ end }}
+       {{- with $height }} height="{{ . }}"{{ end }}
+       {{- with $class }} class="{{ . }}"{{ end }}
+       {{- with $id }} id="{{ . }}"{{ end }}
+       loading="{{ $loading }}"
+       decoding="async">
+</picture>

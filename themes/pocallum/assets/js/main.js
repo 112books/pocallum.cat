@@ -1,3 +1,32 @@
+/* ── Utilitat WebP ───────────────────────────────────────────────────────── */
+function toWebP(url) {
+  return url ? url.replace(/\.(jpg|jpeg)$/i, '.webp') : url;
+}
+
+/* ── Anti-spam: contactes codificats (hex), desxifrats al client ────────── */
+function fromHex(s) {
+  const hex = String(s || '').replace(/\s+/g, '');
+  let out = '';
+  for (let i = 0; i + 1 < hex.length; i += 2) {
+    out += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+  }
+  return out;
+}
+(function () {
+  document.querySelectorAll('[data-contact]').forEach(el => {
+    const raw  = fromHex(el.dataset.contact);
+    const kind = el.dataset.kind || 'mailto';
+    if (el.tagName === 'A') {
+      el.href = kind === 'tel'
+        ? 'tel:' + raw.replace(/[^\d+]/g, '')
+        : 'mailto:' + raw;
+    }
+    const target = el.querySelector('[data-contact-text]');
+    if (target) target.textContent = raw;
+    else if (!el.textContent.trim()) el.textContent = raw;
+  });
+})();
+
 /* ── Hero: imatge aleatòria + frase aleatòria ────────────────────────────── */
 (function () {
   const bg    = document.getElementById('js-hero-bg');
@@ -40,15 +69,16 @@
     title.classList.remove('is-switching');
   }, 350);
 
-  // Image: pick random, preload, fade in
+  // Image: pick random, set on img element (LCP candidate), fade in
+  const heroImg = bg.querySelector('img');
   if (images.length > 0) {
     const src = images[Math.floor(Math.random() * images.length)];
-    const img = new Image();
-    img.onload = () => {
-      bg.style.backgroundImage = `url('${src}')`;
+    const loader = new Image();
+    loader.onload = () => {
+      if (heroImg) { heroImg.src = toWebP(src); }
       bg.classList.add('is-loaded');
     };
-    img.src = src;
+    loader.src = toWebP(src);
   }
 })();
 
@@ -139,7 +169,7 @@
     fig.dataset.lbAlt = foto.alt || '';
     fig.innerHTML =
       '<a class="foto-item__link js-lb-trigger" href="' + src + '" data-lb-index="' + i + '" aria-label="' + openLabel + ': ' + alt + '">' +
-      '<img src="' + src + '" alt="' + alt + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '" decoding="async">' +
+      '<img src="' + toWebP(src) + '" alt="' + alt + '" loading="' + (i < 2 ? 'eager' : 'lazy') + '" decoding="async">' +
       '</a>';
     grid.appendChild(fig);
   });
@@ -182,13 +212,15 @@
       });
     }
 
-    // Slot machine: each photo's img spins in with staggered delay (random order)
+    // Slot machine: each photo spins in with staggered delay (random order)
     fisherYates([...items]).forEach((el, i) => {
       el.style.removeProperty('--_rot');
       el.style.animationDelay = '';
       const img = el.querySelector('img');
-      if (img) img.style.animationDelay = (i * 70) + 'ms';
+      if (img) img.style.animationDelay = (Math.min(i, 25) * 70) + 'ms';
     });
+
+    if (isMosaic) grid.style.opacity = '1';
   });
 })();
 
@@ -238,10 +270,8 @@
       titleEl.textContent = t.dataset.title;
       if (leadEl) leadEl.textContent = t.dataset.lead;
 
-      const img = imgWrap.querySelector('img');
       if (t.dataset.img) {
-        if (img) { img.src = t.dataset.img; img.alt = t.dataset.title || ''; }
-        else { imgWrap.innerHTML = `<img src="${t.dataset.img}" alt="">`; }
+        imgWrap.innerHTML = `<img src="${toWebP(t.dataset.img)}" alt="${t.dataset.title || ''}">`;
       } else {
         imgWrap.innerHTML = '';
       }
@@ -327,6 +357,17 @@
       const gallery = item.closest('.article-gallery');
       items = [...gallery.querySelectorAll('.gallery-item')];
       open(items.indexOf(item));
+    });
+  });
+
+  document.querySelectorAll('.servei-page__imgs').forEach(grid => {
+    const imgs = grid.querySelectorAll('img');
+    imgs.forEach((img, i) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        items = [...imgs].map(el => ({ dataset: { lbSrc: el.src, lbAlt: el.alt } }));
+        open(i);
+      });
     });
   });
 

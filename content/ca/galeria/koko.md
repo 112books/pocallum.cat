@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Koko"
 date: 2021-07-09
 servei: "cultura"
 image: "/images/galeria/koko.jpg"

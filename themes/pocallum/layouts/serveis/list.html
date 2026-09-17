@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "schema-faq.html" . }}
 {{ $serveis := hugo.Data.serveis }}
 {{ $lang := site.Language.Lang }}
 
@@ -12,40 +13,42 @@
 
 {{ if $serveis }}
 {{ range $i, $grup := $serveis.grups }}
+{{ $titol := cond (eq $lang "en") $grup.titol_en $grup.titol }}
+{{ $desc := cond (eq $lang "en") $grup.desc_en $grup.desc }}
+{{ $items := cond (eq $lang "en") $grup.items_en $grup.items }}
+{{ $cita := cond (eq $lang "en") $grup.cita_en $grup.cita }}
+{{ $cta := cond (eq $lang "en") $grup.cta_en $grup.cta }}
 <section class="servei-chapter{{ if mod $i 2 }} servei-chapter--alt{{ end }}" id="servei-{{ add $i 1 }}">
-  <div class="container">
-    <div class="servei-chapter__head">
-      <span class="servei-chapter__num">{{ printf "%02d" (add $i 1) }}</span>
-      <h2 class="servei-chapter__title">
-        {{ if eq $lang "en" }}{{ $grup.nom_en }}{{ else }}{{ $grup.nom }}{{ end }}
-      </h2>
-      <p class="servei-chapter__desc">
-        {{ if eq $lang "en" }}{{ $grup.desc_en }}{{ else }}{{ $grup.desc }}{{ end }}
-      </p>
-    </div>
-    <ul class="servei-chapter__list">
-      {{ range $grup.items }}
-      <li class="servei-chapter__item">
-        <span class="servei-chapter__item-title">
-          {{ if eq $lang "en" }}{{ .nom_en }}{{ else }}{{ .nom }}{{ end }}
-        </span>
-        <span class="servei-chapter__item-desc">
-          {{ if eq $lang "en" }}{{ .desc_en }}{{ else }}{{ .desc }}{{ end }}
-        </span>
-      </li>
-      {{ end }}
-    </ul>
+  {{- $imgs := index $grup "images" -}}
+  {{- $img := index $grup "image" -}}
+  {{ if $imgs }}
+  <div class="servei-chapter__photo-wrap servei-chapter__photo-wrap--collage">
+    {{ range $imgs }}
+    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" class="servei-chapter__photo--collage-item" loading="lazy">
+    {{ end }}
   </div>
-  {{ with $grup.image }}
+  {{ else if $img }}
+  {{- $fit := index $grup "image_fit" | default "cover" -}}
   <div class="servei-chapter__photo-wrap">
-    <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" class="servei-chapter__photo" loading="lazy">
+    <img src="{{ $img | strings.TrimLeft "/" | relURL }}" alt="{{ $titol }}" class="servei-chapter__photo servei-chapter__photo--{{ $fit }}" loading="lazy">
   </div>
   {{ end }}
   <div class="container">
+    <div class="servei-chapter__head">
+      <span class="servei-chapter__num">{{ printf "%02d" (add $i 1) }}</span>
+      <h2 class="servei-chapter__title">{{ $titol }}</h2>
+      <p class="servei-chapter__desc">{{ $desc }}</p>
+    </div>
+    <ul class="servei-chapter__list">
+      {{ range $items }}
+      <li class="servei-chapter__item">{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+    {{ with $cita }}
+    <blockquote class="servei-chapter__cita">{{ . }}</blockquote>
+    {{ end }}
     <div class="servei-chapter__cta-bar">
-      <a href="{{ "contacte/" | relLangURL }}" class="servei-chapter__cta-link">
-        {{ i18n "serveis_chapter_cta" | default "Parlem-ne →" }}
-      </a>
+      <a href="{{ "contacte/" | relLangURL }}" class="btn btn--primary">{{ $cta }}</a>
     </div>
   </div>
 </section>

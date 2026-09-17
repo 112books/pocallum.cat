@@ -1,0 +1,101 @@
+<h2>Pàgina /obra/ — layout de la galeria</h2>
+<p class="subtitle">Fotollibres i discs com a objectes visuals. Una sola pàgina amb dos apartats, o dues pàgines separades?</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Una sola pàgina /obra/ — dos apartats amb ancoratge</h3>
+      <p>Un títol de pàgina, dos blocs: <strong>Fotollibres</strong> i <strong>Discs i portades</strong>. Navegació per ancoratge (#fotollibres / #discs). No cal submenu.</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#080808;color:#f0f0f0;padding:20px;font-size:12px">
+          <p style="color:#FF5500;font-size:10px;letter-spacing:2px;margin:0 0 4px">OBRA</p>
+          <p style="font-size:22px;font-weight:700;margin:0 0 20px">Fotollibres i portades</p>
+          <p style="color:#777;font-size:11px;text-transform:uppercase;letter-spacing:2px;margin:0 0 12px;border-bottom:1px solid #1c1c1c;padding-bottom:8px">Fotollibres</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px">
+            <div style="background:#111;padding:10px">
+              <div style="width:100%;height:80px;background:#1c1c1c;margin-bottom:8px"></div>
+              <p style="margin:0;font-size:11px;font-weight:600">Preses Falses</p>
+              <p style="margin:0;color:#777;font-size:10px">2022 · 112books</p>
+            </div>
+            <div style="background:#111;padding:10px">
+              <div style="width:100%;height:80px;background:#1c1c1c;margin-bottom:8px"></div>
+              <p style="margin:0;font-size:11px;font-weight:600">I Wanna Be Your Dog</p>
+              <p style="margin:0;color:#777;font-size:10px">2024 · 112books</p>
+            </div>
+            <div style="background:#111;padding:10px">
+              <div style="width:100%;height:80px;background:#1c1c1c;margin-bottom:8px"></div>
+              <p style="margin:0;font-size:11px;font-weight:600">aCarrejant</p>
+              <p style="margin:0;color:#777;font-size:10px">2024 · 112books</p>
+            </div>
+          </div>
+          <p style="color:#777;font-size:11px;text-transform:uppercase;letter-spacing:2px;margin:0 0 12px;border-bottom:1px solid #1c1c1c;padding-bottom:8px">Discs i portades</p>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+            <div style="background:#111;padding:8px">
+              <div style="width:100%;height:60px;background:#1c1c1c;margin-bottom:6px"></div>
+              <p style="margin:0;font-size:10px;font-weight:600">Big Dani Pérez</p>
+              <p style="margin:0;color:#777;font-size:9px">fotografia · 2023</p>
+            </div>
+            <div style="background:#111;padding:8px">
+              <div style="width:100%;height:60px;background:#1c1c1c;margin-bottom:6px"></div>
+              <p style="margin:0;font-size:10px;font-weight:600">Bernat Font</p>
+              <p style="margin:0;color:#777;font-size:9px">disseny · 2022</p>
+            </div>
+            <div style="background:#111;padding:8px;opacity:0.4">
+              <div style="width:100%;height:60px;background:#1c1c1c;margin-bottom:6px"></div>
+              <p style="margin:0;font-size:9px;color:#555">+ disc</p>
+            </div>
+            <div style="background:#111;padding:8px;opacity:0.4">
+              <div style="width:100%;height:60px;background:#1c1c1c;margin-bottom:6px"></div>
+              <p style="margin:0;font-size:9px;color:#555">+ disc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Dues pàgines separades: /obra/fotollibres/ i /obra/discs/</h3>
+      <p>Cada tipus d'obra té la seva URL i el seu SEO propi. La pàgina /obra/ és un landing amb dos blocs que deriven a cada sub-secció. Més navegació però millor indexació per cerques del tipus "fotollibres jazz barcelona".</p>
+      <div class="mockup" style="margin-top:12px">
+        <div class="mockup-body" style="background:#080808;color:#f0f0f0;padding:16px;font-size:12px">
+          <p style="margin:0 0 12px;color:#aaa">/obra/ → landing amb 2 blocs</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="background:#111;padding:12px;border-top:2px solid #FF5500">
+              <p style="margin:0 0 4px;font-weight:700;font-size:13px">Fotollibres</p>
+              <p style="margin:0;color:#777;font-size:10px">5 títols · 112books</p>
+              <p style="margin:8px 0 0;color:#FF5500;font-size:11px">/obra/fotollibres/ →</p>
+            </div>
+            <div style="background:#111;padding:12px;border-top:2px solid #FF5500">
+              <p style="margin:0 0 4px;font-weight:700;font-size:13px">Discs i portades</p>
+              <p style="margin:0;color:#777;font-size:10px">N títols · diversos artistes</p>
+              <p style="margin:8px 0 0;color:#FF5500;font-size:11px">/obra/discs/ →</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px">
+  <h3>Pàgina individual d'obra (igual per fotollibres i discs)</h3>
+  <div class="mockup">
+    <div class="mockup-body" style="background:#080808;color:#f0f0f0;padding:20px;font-size:12px;display:grid;grid-template-columns:160px 1fr;gap:24px">
+      <div style="background:#1c1c1c;height:160px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px">coberta</div>
+      <div>
+        <p style="color:#777;font-size:10px;text-transform:uppercase;letter-spacing:2px;margin:0 0 4px">Fotollibre · 2022</p>
+        <p style="font-size:18px;font-weight:700;margin:0 0 4px">Preses Falses</p>
+        <p style="color:#777;font-size:11px;margin:0 0 12px">40 anys de Blues a Barcelona</p>
+        <p style="font-size:12px;color:#aaa;margin:0 0 12px;max-width:320px">Descripció breu. Rol (fotografia / disseny / edició). Editat per 112books.</p>
+        <a style="color:#FF5500;font-size:12px">Disponible a 112books.eu →</a>
+      </div>
+    </div>
+  </div>
+  <p class="subtitle" style="margin-top:8px">Format igual per discs: coberta + artista + any + rol + link a plataforma si n'hi ha.</p>
+</div>
+
+<p class="subtitle" style="margin-top:20px">Recomanació: <strong>A</strong> per ara — menys complexitat, i si creix molt sempre es pot separar. Clica o respon al terminal.</p>

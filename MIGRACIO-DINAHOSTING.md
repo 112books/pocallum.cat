@@ -5,7 +5,7 @@
 > **No executar cap fase sense el vistiplau explícit de l'usuari**, especialment les que toquen DNS, SSL, GitHub Settings o el servidor.
 
 - **Data del pla:** 2026-09-16
-- **Termini crític:** el certificat de `blog.pocallum.cat` caduca el **2026-09-22**. S'ha de completar la migració (fins a SSL) abans d'aquesta data, o el blog quedarà sense HTTPS vàlid.
+- **Termini crític:** ~~el certificat de `blog.pocallum.cat` caduca el 2026-09-22~~ **✔ RESOLT (16/09):** Let's Encrypt activat/renovat des del panell de Dinahosting pel subdomini `blog.pocallum.cat`.
 - **Autor del pla:** sessió amb l'usuari (Joan), repo `blog.pocallum.cat` → document originat aquí, còpia de referència allà.
 
 ---
@@ -36,9 +36,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 | Entorn | Branca | URL | Deploy |
 |--------|--------|-----|--------|
-| Producció | `main` | `https://pocallum.cat/` | GitHub Pages (`deploy-prod.yml`, actions/configure-pages) |
+| Producció | `main` | `https://pocallum.cat/` | Dinahosting `~/www` (`deploy-prod.yml`, rsync) |
 | Staging | `develop` | `https://112books.github.io/pocallum.cat/` (staticrypt, pwd `LinuxBCN2026`) | `gh-pages-staging` (`deploy-staging.yml`) |
 | Local | — | `localhost:1313` | `hugo server -D` |
+
+> **Estat (16/09/2026):** migració a Dinahosting **completada a producció**. El document de pla es manté com a registre històric i referència d'operacions; la secció § Fase 7 (neteges GitHub) i § Rollback ja no apliquen per defecte.
 
 - **Hugo v0.159.0 extended** · `hugo --minify --baseURL "https://pocallum.cat/"` + **Pagefind** (només prod).
 - **Multilingüe:** `ca` (default), `en` actives; `es` desactivada.
@@ -135,7 +137,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ### Fase 5 — SSL/HTTPS (panell Dinahosting, amb suport si cal)
 
 1. **Activar Let's Encrypt per `pocallum.cat`** (+ `www.pocallum.cat`) al panell. Ara la validació funcionarà perquè el DNS ja apunta a Dinahosting.
-2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — fer-ho a la mateixa sessió.
+2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — **✔ FET pel panell de Dinahosting (16/09).**
 3. **Activar el redirect HTTP→HTTPS al proxy/panell** (Forçar HTTPS) per als dos dominis. **NO al `.htaccess`.**
 4. **Verificar:**
    - `curl -I https://pocallum.cat/` → 200, cert vàlid (issuer Let's Encrypt), no caducat
@@ -146,7 +148,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ### Fase 6 — Verificació completa
 
 - **Pare (QA 1:1):** home, galeria, festivals, notícies, serveis, qui-som, contacte, cerca (Pagefind), 404 (ErrorDocument), web fonts (Syne/Inter/IBM Plex), imatges de `static/images/`, `robots.txt`, `sitemap.xml` → tot 200 sobre `https://pocallum.cat/`.
-- **Formulari Formspree** (`/contacte/`): testejar enviament.
+- **Formulari de contacte** (`/contacte/`): testejar enviament contra l'endpoint propi (`/formulari.php`).
 - **GoatCounter:** `/admin/` carrega i l'estadística s'hi veu; `gc.zgo.at` al CSP no bloquejada.
 - **Blog:** re-crawlar el sitemap (`scripts/qa-urls.py` del blog contra `https://blog.pocallum.cat/`) → 200 a totes les URLs.
 - **Staging:** `https://112books.github.io/pocallum.cat/` demana contrasenya (staticrypt) i mostra el site amb drafts.
@@ -162,8 +164,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ### Fase 8 — CMS (final, decidida per l'usuari)
 
-- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), OAuth GitHub (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET`), URL `https://pocallum.cat/admin/`.
-- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push.
+- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), URL `https://pocallum.cat/admin/`.
+- **Login amb PAT de GitHub** (Settings → Developer settings → Personal access tokens → Fine-grained, permís `Contents: Read/Write` sobre `112books/pocallum.cat`) — **no cal OAuth App** (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET` no fan falta amb Sveltia v2).
+- El **dashboard d'estadístiques** va passar de `static/admin/` a `static/stats/` → `https://pocallum.cat/stats/` per alliberar `/admin/` per al CMS.
+- CSP: la global del site bloquejaria Sveltia (unpkg.com, api.github.com) → `static/admin/.htaccess` fa `Header unset` + `Header set` amb la CSP ampliada, només per a `/admin/` (Apache sobreescriu la del pare). `robots.txt` ja bloqueja `/admin/` i `/stats/`.
+- Media uploads a `static/images/` (commitat al repo) — `media_folder: "static/images"`, `public_folder: "/images"` (les imatges del lloc viuen a `/images/`). Deploy automàtic a Dinahosting en push (`deploy-prod.yml`, branca `main`). Canviat de `static/media/` (17/09) perquè no existia i les miniatures del CMS no resolien; veure `HISTORY.md`.
 - Replicar el model ja documentat al CLAUDE.md del blog (§ Pla CMS).
 
 ---
@@ -197,10 +202,63 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ## Pendents post-migració (anotat 16/09)
 
-1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap) i tancar els punts pendents de la Fase 5 (cert del blog, caduca 22/09).
-2. **Formularis amb SMTP propi (proposta):** estudiar que el formulari de contacte (wizard natiu → Formspree) s'enviï des de l'SMTP de Dinahosting del mateix domini, per no dependre d'un tercer i reduir el risc de caure en spam.
-   - Nota detectada a la revisió: la documentació legal (`content/ca/legal/privacitat.md`, `cookies.md`) i `CLAUDE.md`/`AGENTS.md` encara diuen que el contacte és Tally.so, però el formulari real és el wizard natiu → Formspree. Cal actualitzar-ho quan es toqui.
+1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap). El punt SSL de la Fase 5 queda **resolt** amb Let's Encrypt des del panell (16/09).
+2. **Formularis amb SMTP propi:** ✅ **Implementat (17/09/2026)** — vegeu la secció "Formulari de contacte (leads)" més avall. El contacte ja no depèn de cap tercer: envia des de l'endpoint propi de Dinahosting (`static/formulari.php`, php `mail()`) i registra els leads al servidor. Formspree eliminat; docs legals actualitzats.
 3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
+
+### ⚠️ robots.txt — el controla el SEO Toolkit del panell, NO el rsync (16/09/2026)
+
+- El deploy puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell de Dinahosting** el regenera/sobreescriu (per defecte: `User-agent: *`).
+- **Per canviar el contingut en viu** cal: panell → SEO Toolkit → robots.txt → editar el camp amb el contingut desitjat → botó **Subir** → ruta `www`. El botó **Restaurar** torna a la versió automàtica.
+- Evidència del control pel panell: la marca `# SIGNAT-PROVA-20260916` afegida a `static/robots.txt` (commit `bf986ba`) es va desplegar però **no va aparèixer en viu**; el `Last-Modified` de la resposta corresponia al moment del darrer toc del panell, no del deploy.
+- **Conseqüències:** (a) `robots.txt` del repo és "font de veritat" només documental; (b) els canvis de `robots.txt` requereixen editar el panell (o demanar a Dinahosting desactivar la generació automàtica); (c) els blocs a `/admin/`, `/stats/`, `/blog/` només tenen efecte real si són al panell.
+
+---
+
+## Formulari de contacte (leads) — implementat 17/09/2026
+
+El wizard natiu de `/contacte/` ja no envia a Formspree: ho fa a un **endpoint propi** `https://pocallum.cat/formulari.php`, allotjat a Dinahosting. Cap dada no surt del servidor — els leads es registren en Markdown a `~/leads/` i es notifica per mail a `hola@pocallum.cat`.
+
+### Endpoint
+- Fitxer: `static/formulari.php` → rsync el desplega a `~/www/formulari.php`.
+- Contracte: resposta JSON `{"ok": true|false}`. El wizard fa `fetch()` amb `Accept: application/json`; davant d'un error no-2xx/JSON mal format mostra el missatge d'error del detall de contacte directe.
+- Entrada (POST):
+  - camps visibles del wizard (`nom`, `email`, `telefon`, `servei`, `projecte`, `quan`, `lloc`, `via`)
+  - `_subject`, `_language`, `_consent` (checkbox de privacitat, ha de ser `1`)
+  - camp ocult `_ts` (epoch ms, emplenat per JS en carregar el wizard)
+  - camp honeypot `_gotcha` (ha d'arribar buit)
+
+### Filtre anti-spam (capes)
+1. `_gotcha` omplert → 200 `{ok:true}` silenciós sense registrar.
+2. `_ts` massa recent (<4 s) → rebutjat (bots) / massa gran (tamper).
+3. Rate-limit per IP: màx. 5 enviaments/60 min. Fa servir fitxers md5 a `~/leads/.control/` (mode 770, grup `pocallumgrp` — www-data hi escriu). Superat → 429.
+4. Validesa de email; blocatge de dominis temporals (`$DISPOSABLE`); heurística de massa URLs.
+5. Límits de longitud per camp.
+
+### Registre (RGPD)
+- Líder fitxer: `~/leads/YYYY-MM/YYYY-MM-DD-HHMMSS-nom-slug.md` (frontmatter: `id`, `data`, `estat: nou`, `consentiment: si`, `email`, `nom`, `servei`, `via`, `idioma`).
+- **Consentiment requerit** — sense `_consent=1` el servidor retorna **422** i no registra res.
+- **Retenció: 24 mesos** des de la data del lead. Passat el termini s'ha d'eliminar (documentat a les polítiques legals).
+- Finalitat: només contacte directe per fer un pressupost. Ni newsletter, ni cessió a tercers (documentat a `privacitat.md`).
+
+### Cache del proxy Dinahosting (⚠️)
+El proxy de Dinahosting cacheja respostes POST de la mateixa URL. Per això `formulari.php` i el `.htaccess` fan servir:
+- `Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"` (dins `<FilesMatch "formulari\.php$">`)
+- `Header set Pragma "no-cache"`
+
+Mantenir aquests headers al `.htaccess` — si es treuen, les proves tornen a servir respostes cachejades (falsos `{ok:true}` sense registrar).
+
+### Error log
+Problemes de `.htaccess`/500 es veuen a `~/logs/apache.error.log` del servidor. El 17/09: un `</IfModule>` sobrant al `.htaccess` va donar 500 a totes les peticions `formulari.php` — l'error portava `<IfModule> without matching`.
+
+### Consulta de leads des del dashboard (missatges.php) — implementat 17/09/2026
+El dashboard de `/stats/` té una pestanya **"Missatges"** que llista els leads del formulari:
+- Endpoint privat `static/missatges.php` → `~/www/missatges.php` (fora del docroot només de lectura de `~/leads/`).
+- **GET** llista els leads (parseja frontmatter + `_cos`, ordena per `data` desc, comptador de `nous`). **POST** `{id, estat}` marca `llegit`/`fet` al fitxer.
+- **Auth:** capçalera `X-Auth-Token` = contrasenya del dashboard. El servidor la compara (SHA-256 + `hash_equals`) contra `~/leads/.control/.missatges-token-hash` (conté el mateix `pwHash` públic del dashboard, 660). ⚠️ **No usar `Authorization`** — Dinahosting/PHP-FPM no l'exposa a `$_SERVER`.
+- El lead s'identifica pel frontmatter `id:`, **no** pel nom del fitxer (`data-YYYYMMDD-HHMMSS-slug.md`).
+- Rate-limit 20 request/h per IP; headers no-store (`FilesMatch "missatges\.php$"` al `.htaccess`).
+- Bugs de producció resolts (17/09): `X-Auth-Token` en lloc de `Authorization`; cerca per `id` de frontmatter en lloc de prefix del fitxer.
 
 ---
 
@@ -208,5 +266,5 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 - `about.pocallum.cat` (site extern del mateix usuari) — no es toca.
 - El contingut del blog i les imatges de `wp-content/`.
-- Els serveis tercers que ja funcionen (Formspree, GoatCounter, Tally) — només verificació.
+- Els serveis tercers que ja funcionen (GoatCounter) — només verificació.
 - Migrar l'staging del blog (decisió pendent, Opció B de moment).

@@ -3,7 +3,11 @@
 {{- else if .Params.lead }}{{- $desc = .Params.lead -}}
 {{- else if .Summary }}{{- $desc = .Summary | truncate 160 -}}
 {{- end -}}
-{{- $ogImage := or .Params.image .Site.Params.defaultOgImage -}}
+{{- $ogImage := .Params.image -}}
+{{- if and (not $ogImage) .IsSection -}}
+  {{- with index .Pages 0 -}}{{- $ogImage = .Params.image -}}{{- end -}}
+{{- end -}}
+{{- $ogImage = or $ogImage .Site.Params.defaultOgImage -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -31,16 +35,17 @@
 {{- end -}}
 
 {{/* Favicon */}}
-<link rel="icon" href="{{ "images/logotip/pocallum-logo.png" | absURL }}" type="image/png">
+<link rel="icon" href="{{ "favicon.ico?v=2" | absURL }}" sizes="32x32" type="image/x-icon">
 
 {{/* Hreflang per SEO multilingüe */}}
 {{ range .Translations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-{{ if eq .Language.Weight 1 }}
-<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
-{{ end }}
+{{/* x-default sempre apunta a la versió CA, en qualsevol idioma actiu */}}
+{{- $xdefault := .Permalink -}}
+{{- range .Translations -}}{{- if eq .Language.Weight 1 -}}{{- $xdefault = .Permalink -}}{{- end -}}{{- end -}}
+<link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
 
 {{/* RSS autodiscovery */}}
 {{ range .AlternativeOutputFormats }}
@@ -52,7 +57,7 @@
 <meta property="og:locale"      content="{{ .Language.Params.ogLocale | default "ca_ES" }}">
 <meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
-<meta property="og:type"        content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:type"        content="{{ if or .IsHome .IsSection }}website{{ else }}article{{ end }}">
 <meta property="og:url"         content="{{ .Permalink }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 
@@ -69,12 +74,11 @@
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Photographer"],
   "name": "Pocallum",
-  "description": "{{ i18n "site_tagline" | default "Fotografia de cultura" }}. Jazz, blues, teatre, dansa i arts escèniques a Barcelona. Des del 2010.",
+  "description": "Fotògraf de directes i música en viu a Barcelona. Retrat artístic, fotografia editorial i documentació d'arts escèniques. Jazz, blues, flamenc, teatre, dansa i festivals culturals. Fotografia analògica i digital. Des del 2002.",
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
   "image": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
   "telephone": "{{ .Site.Params.contactPhone }}",
-  "email": "{{ .Site.Params.contactEmail }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
@@ -96,13 +100,42 @@
   },
   "areaServed": [
     { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" },
     { "@type": "Country", "name": "Spain" }
   ],
-  "knowsAbout": ["Jazz photography", "Concert photography", "Theatre photography", "Dance photography", "Flamenco photography", "Blues photography", "Performing arts photography", "Cultural events photography"],
+  "knowsAbout": [
+    "Concert photography", "Live music photography", "Music photography",
+    "Jazz photography", "Blues photography", "Flamenco photography",
+    "Theatre photography", "Dance photography", "Performing arts photography",
+    "Cultural events photography", "Festival photography",
+    "Artist portrait photography", "Editorial photography",
+    "Analogue photography", "Film photography",
+    "Photobook design", "Album cover design"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serveis fotogràfics",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografia de concerts i directes" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sessió fotogràfica per a banda o artista" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Book fotogràfic per a actors i actrius" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cobertura fotogràfica per a festivals i sales" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografia de teatre, dansa i arts escèniques" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotollibre artístic" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portada i identitat visual" } }
+    ]
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Joan Linux Martínez",
+    "jobTitle": "Fotògraf",
+    "knowsAbout": ["Live music photography", "Concert photography", "Editorial photography", "Analogue photography"]
+  },
   "foundingDate": "2002",
   "priceRange": "€€",
   "sameAs": [
     "{{ .Site.Params.instagram }}",
+    "{{ .Site.Params.facebook }}",
     "{{ .Site.Params.blog }}"
   ]
 }
@@ -113,7 +146,7 @@
   "@type": "WebSite",
   "name": "Pocallum",
   "url": "{{ .Site.BaseURL }}",
-  "inLanguage": "ca",
+  "inLanguage": "{{ .Language.Lang }}",
   "description": {{ .Site.Params.description | jsonify }},
   "potentialAction": {
     "@type": "SearchAction",
@@ -152,10 +185,13 @@
 }
 </script>
 {{ else if and (eq .Type "festivals") (not .IsSection) }}
+{{- $disc := .Params.disciplina | default "" | lower -}}
+{{- $isMusic := or (strings.Contains $disc "jazz") (strings.Contains $disc "blues") (strings.Contains $disc "música") (strings.Contains $disc "music") (strings.Contains $disc "flamenc") (strings.Contains $disc "funk") (strings.Contains $disc "soul") (strings.Contains $disc "harmònica") (strings.Contains $disc "saxofon") (strings.Contains $disc "canya") -}}
+{{- $festType := cond $isMusic "MusicFestival" "Festival" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MusicFestival",
+  "@type": {{ $festType | jsonify }},
   "name": {{ .Title | jsonify }},
   "startDate": "{{ .Date.Format "2006-01-02" }}",
   "location": {
@@ -173,6 +209,54 @@
   "sameAs": {{ . | jsonify }}{{ end }}
 }
 </script>
+{{ else if and .IsSection (or (eq .Type "serveis") (eq .Type "contacte")) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "Photographer"],
+  "name": "Pocallum",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ .Site.Params.contactPhone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
+    "addressLocality": "Barcelona",
+    "postalCode": "08020",
+    "addressRegion": "Catalunya",
+    "addressCountry": "ES"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Catalunya" }
+  ],
+  "priceRange": "€€",
+  "sameAs": [
+    "{{ .Site.Params.instagram }}",
+    "{{ .Site.Params.facebook }}",
+    "{{ .Site.Params.blog }}"
+  ]
+}
+</script>
+{{ end }}
+
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.a | jsonify }}
+      }
+    }{{ end }}
+  ]
+}
+</script>
 {{ end }}
 
 {{ partial "schema-breadcrumb.html" . }}
@@ -180,7 +264,33 @@
 {{/* GoatCounter — sense cookies, GDPR */}}
 {{ with .Site.Params.goatcounterSite }}
 <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js" integrity="sha384-2UjvVpptg4JlEVgJI2PdscrjOjPcil/4F1ZvIMJ81CShQnEDSlPI+l4PfogvTLYi" crossorigin="anonymous"></script>
+<script>
+(function () {
+  var start = Date.now();
+  var sent  = false;
+  var buckets = [
+    [10, 'engage-0-10s'], [30, 'engage-10-30s'], [60, 'engage-30-60s'],
+    [120, 'engage-1-2m'], [300, 'engage-2-5m'], [600, 'engage-5-10m'],
+    [Infinity, 'engage-10m-plus']
+  ];
+  function bucketFor(sec) {
+    for (var i = 0; i < buckets.length; i++) if (sec < buckets[i][0]) return buckets[i][1];
+    return 'engage-10m-plus';
+  }
+  function send() {
+    if (sent || !window.goatcounter || typeof window.goatcounter.count !== 'function') return;
+    sent = true;
+    var b = bucketFor(Math.round((Date.now() - start) / 1000));
+    window.goatcounter.count({ path: b, title: b, event: true });
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') send();
+  });
+  addEventListener('pagehide', send);
+})();
+</script>
 {{ end }}
+
 
 {{/* JS */}}
 {{ $js := resources.Get "js/main.js" | minify | fingerprint }}

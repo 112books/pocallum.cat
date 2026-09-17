@@ -1,0 +1,12 @@
+testimonis:
+  - nom: "Sonia Vallejo"
+    entitat: "Taller de Músics"
+    publicat: true
+    cita_ca: "Bon dia Joan! Per cert, que no et vaig dir res del recull de l'any passat. El tinc guardat al nostre clipping. Moltíssimes gràcies, molt bones les teves fotografies."
+    cita_en: "Good morning Joan! By the way, I never told you about last year's feature — I still have it saved in our clipping folder. Thank you so much, your photographs are excellent."
+
+  - nom: "Margherita"
+    entitat: "BGKO"
+    publicat: false
+    cita_ca: ""
+    cita_en: ""

@@ -4,10 +4,12 @@
 
   <div class="festival-single__hero">
     {{ with .Params.image }}
-    <img class="festival-single__hero-img"
-         src="{{ . | strings.TrimLeft "/" | relURL }}"
-         alt="{{ $.Title }}"
-         loading="eager">
+    {{ partial "picture.html" (dict
+      "src"     .
+      "alt"     $.Title
+      "loading" "eager"
+      "class"   "festival-single__hero-img"
+    ) }}
     {{ end }}
     <div class="festival-single__hero-overlay"></div>
     <div class="festival-single__hero-name">
@@ -57,7 +59,7 @@
            {{ if $isCurrent }}aria-current="page"{{ end }}>
           <div class="festival-thumb__img">
             {{ with .Params.image }}
-            <img src="{{ . | strings.TrimLeft "/" | relURL }}" alt="" loading="lazy">
+            {{ partial "picture.html" (dict "src" . "alt" "" "loading" "lazy") }}
             {{ end }}
           </div>
           <span class="festival-thumb__title">{{ .Title }}</span>
