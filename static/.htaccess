@@ -14,5 +14,11 @@ ErrorDocument 404 /404.html
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   Header set Strict-Transport-Security "max-age=31536000"
   Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' gc.zgo.at; connect-src 'self' *.goatcounter.com; frame-src tally.so *.tally.so; img-src 'self' data:; style-src 'self'; font-src 'self'"
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' gc.zgo.at; connect-src 'self' *.goatcounter.com; frame-src 'none'; form-action 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'"
+
+  # L'endpoint del formulari no es pot cachejar (proxy Dinahosting)
+  <FilesMatch "formulari\.php$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+  </FilesMatch>
 </IfModule>

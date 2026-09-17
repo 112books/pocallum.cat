@@ -26,7 +26,7 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 | CSS | Vanilla CSS amb custom properties (cap framework) |
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
 | Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Wizard natiu 4 passos → Formspree (`formspreeContact`) |
+| Formulari | Wizard natiu 4 passos → endpoint propi `static/formulari.php` (filtre anti-spam i registre de leads a `~/leads`, sense tercers) |
 | Analytics | GoatCounter (sense cookies, GDPR) |
 | DNS/Domini | Dinahosting |
 
@@ -311,7 +311,7 @@ hugo --minify
 
 - **CMS d'edició (Sveltia CMS)** — replicar el que ja funciona a `blog.pocallum.cat`: `static/admin/` (Sveltia) per editar continguts des del navegador, amb GitHub com a backend. ⚠️ A pocallum.cat el path `/admin/` ja està ocupat pel **dashboard d'estadístiques** (GoatCounter) — cal decidir on es mou el dashboard (o com conviuen) abans d'implementar el CMS. Veure `MIGRACIO-DINAHOSTING.md` → "Pendents post-migració".
 - **Tasca pendent de notícies** — redactar notícia dels festivals *MASiMAS Balkan Reunion* i *Recordant el Paral·lel* (veure `HISTORY.md` → secció PENDENT, 16/09/2026). Patró: `content/ca/noticies/` + versió EN.
-- **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`).
+- **Formulari amb SMTP propi** — substituir Formspree per l'enviament via SMTP del compte Dinahosting (veure `MIGRACIO-DINAHOSTING.md`). ✅ **Implementat 17/09/2026**: `static/formulari.php` (filtre anti-spam en capes, registre de leads a `~/leads` en Markdown, notificació per mail, headers `no-store` contra el cache del proxy) + `.htaccess` actualitzat. Veure secció "Formulari de contacte (leads)" de `MIGRACIO-DINAHOSTING.md`.
 - **Imatges no usades** — avaluar esborrar `~/arxiu-imatges` (~2.3 GB) al servidor, un cop confirmat que res no les referència (veure `MIGRACIO-DINAHOSTING.md`).
 
 Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-design.md`

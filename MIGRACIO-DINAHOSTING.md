@@ -146,7 +146,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ### Fase 6 — Verificació completa
 
 - **Pare (QA 1:1):** home, galeria, festivals, notícies, serveis, qui-som, contacte, cerca (Pagefind), 404 (ErrorDocument), web fonts (Syne/Inter/IBM Plex), imatges de `static/images/`, `robots.txt`, `sitemap.xml` → tot 200 sobre `https://pocallum.cat/`.
-- **Formulari Formspree** (`/contacte/`): testejar enviament.
+- **Formulari de contacte** (`/contacte/`): testejar enviament contra l'endpoint propi (`/formulari.php`).
 - **GoatCounter:** `/admin/` carrega i l'estadística s'hi veu; `gc.zgo.at` al CSP no bloquejada.
 - **Blog:** re-crawlar el sitemap (`scripts/qa-urls.py` del blog contra `https://blog.pocallum.cat/`) → 200 a totes les URLs.
 - **Staging:** `https://112books.github.io/pocallum.cat/` demana contrasenya (staticrypt) i mostra el site amb drafts.
@@ -198,9 +198,46 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ## Pendents post-migració (anotat 16/09)
 
 1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap) i tancar els punts pendents de la Fase 5 (cert del blog, caduca 22/09).
-2. **Formularis amb SMTP propi (proposta):** estudiar que el formulari de contacte (wizard natiu → Formspree) s'enviï des de l'SMTP de Dinahosting del mateix domini, per no dependre d'un tercer i reduir el risc de caure en spam.
-   - Nota detectada a la revisió: la documentació legal (`content/ca/legal/privacitat.md`, `cookies.md`) i `CLAUDE.md`/`AGENTS.md` encara diuen que el contacte és Tally.so, però el formulari real és el wizard natiu → Formspree. Cal actualitzar-ho quan es toqui.
+2. **Formularis amb SMTP propi:** ✅ **Implementat (17/09/2026)** — vegeu la secció "Formulari de contacte (leads)" més avall. El contacte ja no depèn de cap tercer: envia des de l'endpoint propi de Dinahosting i registra els leads al servidor.
 3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
+
+---
+
+## Formulari de contacte (leads) — implementat 17/09/2026
+
+El wizard natiu de `/contacte/` ja no envia a Formspree: ho fa a un **endpoint propi** `https://pocallum.cat/formulari.php`, allotjat a Dinahosting. Cap dada no surt del servidor — els leads es registren en Markdown a `~/leads/` i es notifica per mail a `hola@pocallum.cat`.
+
+### Endpoint
+- Fitxer: `static/formulari.php` → rsync el desplega a `~/www/formulari.php`.
+- Contracte: resposta JSON `{"ok": true|false}`. El wizard fa `fetch()` amb `Accept: application/json`; davant d'un error no-2xx/JSON mal format mostra el missatge d'error del detall de contacte directe.
+- Entrada (POST):
+  - camps visibles del wizard (`nom`, `email`, `telefon`, `servei`, `projecte`, `quan`, `lloc`, `via`)
+  - `_subject`, `_language`, `_consent` (checkbox de privacitat, ha de ser `1`)
+  - camp ocult `_ts` (epoch ms, emplenat per JS en carregar el wizard)
+  - camp honeypot `_gotcha` (ha d'arribar buit)
+
+### Filtre anti-spam (capes)
+1. `_gotcha` omplert → 200 `{ok:true}` silenciós sense registrar.
+2. `_ts` massa recent (<4 s) → rebutjat (bots) / massa gran (tamper).
+3. Rate-limit per IP: màx. 5 enviaments/60 min. Fa servir fitxers md5 a `~/leads/.control/` (mode 770, grup `pocallumgrp` — www-data hi escriu). Superat → 429.
+4. Validesa de email; blocatge de dominis temporals (`$DISPOSABLE`); heurística de massa URLs.
+5. Límits de longitud per camp.
+
+### Registre (RGPD)
+- Líder fitxer: `~/leads/YYYY-MM/YYYY-MM-DD-HHMMSS-nom-slug.md` (frontmatter: `id`, `data`, `estat: nou`, `consentiment: si`, `email`, `nom`, `servei`, `via`, `idioma`).
+- **Consentiment requerit** — sense `_consent=1` el servidor retorna **422** i no registra res.
+- **Retenció: 24 mesos** des de la data del lead. Passat el termini s'ha d'eliminar (documentat a les polítiques legals).
+- Finalitat: només contacte directe per fer un pressupost. Ni newsletter, ni cessió a tercers (documentat a `privacitat.md`).
+
+### Cache del proxy Dinahosting (⚠️)
+El proxy de Dinahosting cacheja respostes POST de la mateixa URL. Per això `formulari.php` i el `.htaccess` fan servir:
+- `Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"` (dins `<FilesMatch "formulari\.php$">`)
+- `Header set Pragma "no-cache"`
+
+Mantenir aquests headers al `.htaccess` — si es treuen, les proves tornen a servir respostes cachejades (falsos `{ok:true}` sense registrar).
+
+### Error log
+Problemes de `.htaccess`/500 es veuen a `~/logs/apache.error.log` del servidor. El 17/09: un `</IfModule>` sobrant al `.htaccess` va donar 500 a totes les peticions `formulari.php` — l'error portava `<IfModule> without matching`.
 
 ---
 
@@ -208,5 +245,5 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 - `about.pocallum.cat` (site extern del mateix usuari) — no es toca.
 - El contingut del blog i les imatges de `wp-content/`.
-- Els serveis tercers que ja funcionen (Formspree, GoatCounter, Tally) — només verificació.
+- Els serveis tercers que ja funcionen (GoatCounter) — només verificació.
 - Migrar l'staging del blog (decisió pendent, Opció B de moment).

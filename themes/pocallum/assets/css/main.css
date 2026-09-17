@@ -1967,6 +1967,64 @@ a.noticies-thumb { display: block; text-decoration: none; color: inherit; }
 .wiz-textarea::placeholder { color: var(--mid); opacity: 0.5; }
 .wiz--invalid { border-color: #e55 !important; }
 
+/* ── Consentiment — Pas 3 ──────────────────────────────────────────────────── */
+.wiz-field--consent { margin-top: var(--space-4); }
+.wiz-consent {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  cursor: pointer;
+  max-width: 100%;
+}
+.wiz-consent input.wiz-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.wiz-consent__box {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  background: #0e0e0e;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.15s, background 0.15s;
+}
+input.wiz-checkbox:focus-visible + .wiz-consent__box {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb, 255 120 0) / 0.25);
+}
+input.wiz-checkbox:checked + .wiz-consent__box {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+input.wiz-checkbox:checked + .wiz-consent__box::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #0e0e0e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.wiz-consent__text {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--mid);
+}
+.wiz-consent__text a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.wiz-consent__text a:hover { text-decoration-thickness: 2px; }
+
 /* ── Resum — Pas 4 ──────────────────────────────────────────────────────────── */
 .wiz-summary {
   border: 1px solid var(--line);

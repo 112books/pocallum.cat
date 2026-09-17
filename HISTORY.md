@@ -4,6 +4,26 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-17 — Formulari de contacte propi (fi de Formspree)
+
+Sessió llarga. El wizard de `/contacte/` deixa d'enviar a Formspree i passa a l'endpoint propi `static/formulari.php`, allotjat a Dinahosting. Resposta JSON `{ok:bool}`, filtres anti-spam en capes (honeypot, `_ts` ≥4 s, rate-limit 5/60 min per IP, validació email + dominis temporals + heurística URLs), registre de leads en Markdown a `~/leads/` i notificació per mail. Aprovació explícita de l'usuari: leads al servidor, sense tercers, casella de consentiment no premarcada (obligatòria), retenció 24 mesos, finalitat només contacte directe.
+
+- **Risc trobat:** el proxy de Dinahosting cacheja respostes POST per URL — primeres proves amb `formulari.php` retornaven sempre el mateix `{ok:true}` del cau. Resolt amb headers `no-store`/`no-cache`/`must-revalidate` + `Pragma: no-cache` (al PHP i al `.htaccess` dins `<FilesMatch formulari\.php$>`).
+- **Incident 500:** un `</IfModule>` sobrant al `.htaccess` va provocar 500 a totes les peticions del formulari (log: `<IfModule> without matching section`). Corregit, verificat end-to-end: 422 sense consentiment, 200 silenciós (honeypot/temporal), 200 + registre `.md` per enviament real. Lleads de prova netejats del servidor.
+- **Legals:** `privacitat.md` i `cookies.md` (CA+EN) actualitzats — endpoint propi, retenció 24 mesos, finalitat clara, sense Tally.so ni tercers.
+- **Docs:** `CLAUDE.md`, `AGENTS.md`/`AGENTS.en.md` i `MIGRACIO-DINAHOSTING.md` actualitzats (nova secció "Formulari de contacte (leads)").
+- Nota: durant les proves es van enviar 2 correus reals a `hola@pocallum.cat` (subject "Nou pressupost — pocallum.cat", Reply-To dels tests) — descartables.
+
+---
+
+## PENDENT — Llegibilitat resultats de cerca (anotat 17/09/2026)
+
+Als resultats de la cerca (Pagefind) cal posar un **fons semi-transparent** perquè es llegeixin bé sobre el fons de la pàgina, amb **marges dret i esquerra**.
+
+- Espera aprovació explícita del disseny abans d'implementar (regla del projecte).
+
+---
+
 ## PENDENT — Notícia festivals (anotat 16/09/2026)
 
 Escriure una/unes notícia nova al web amb els concerts coberts de:

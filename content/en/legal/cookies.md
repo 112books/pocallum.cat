@@ -35,8 +35,8 @@ Your browser may generate its own technical cookies necessary for basic navigati
 
 ## Third-party tools
 
-**Tally.so** (contact form): if you interact with the contact form, Tally.so may use its own technical cookies for the proper functioning of the tool. See [Tally's cookie policy](https://tally.so/help/privacy-policy) for more information.
+The contact form is handled by our own endpoint on our hosting, with no external form services. There are no third-party tools that generate cookies when you interact with the website.
 
 ---
 
-*Last updated: May 2026*
+*Last updated: September 2026*

@@ -68,8 +68,7 @@ defaultContentLanguageInSubdir = false
   about           = "https://about.pocallum.cat"
   goatcounterSite = "pocallum"
   ga4Id           = "G-ZV007Q0CKG"
-  # tallyFormContact = ""  # no utilitzat — substituït pel wizard natiu
-  formspreeContact  = "https://formspree.io/f/xnjgrpnn"
+  contactFormEndpoint = "https://pocallum.cat/formulari.php"
   defaultOgImage    = "/images/logotip/pocallum-logo.png"
 
 [taxonomies]

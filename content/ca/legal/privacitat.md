@@ -26,13 +26,13 @@ Quan envies un missatge a través del formulari de contacte, recollim les dades 
 
 - Nom
 - Adreça electrònica
-- Contingut del missatge
+- Servei que t'interessa i descripció del projecte
 
-El formulari de contacte utilitza la plataforma **Tally.so** (Tally Software SRL, Bèlgica). Tally actua com a encarregat del tractament en els termes del seu [Acord de processament de dades](https://tally.so/help/dpa). Les dades enviades es guarden als servidors de Tally.
+El formulari de contacte s'envia a un **endpoint propi** allotjat al nostre hosting (Dinahosting, Espanya, dins de l'EEE). No s'utilitzen plataformes de formularis de tercers. Les dades rebudes es registren en un fitxer intern en format Markdown emmagatzemat al nostre servidor, amb accés restringit.
 
-- **Finalitat:** respondre a les teves consultes i gestionar la relació comercial que se'n pugui derivar
+- **Finalitat:** respondre a les teves consultes i gestionar la relació comercial que se'n pugui derivar. **Les teves dades només s'utilitzen per contactar-te directament sobre la teva sol·licitud. No s'utilitzen per a newsletters ni es cedeixen ni venen a tercers.**
 - **Base legal:** consentiment (art. 6.1.a RGPD) i interès legítim en respondre consultes (art. 6.1.f RGPD)
-- **Conservació:** mentre la relació professional estigui vigent i fins al termini prescriptiu de les obligacions derivades
+- **Conservació:** 24 mesos des de la darrera comunicació si no queda tancat cap encàrrec; passat aquest termini, les dades s'eliminen. Un cop iniciada una relació professional, es conserven mentre la relació estigui vigent i fins al termini prescriptiu de les obligacions derivades.
 
 ### Analítica web
 
@@ -75,4 +75,4 @@ Les dades que ens facilites es tractaran amb absoluta confidencialitat i no se c
 
 Aquesta política pot actualitzar-se per adaptar-se a canvis normatius o de servei. La versió vigent sempre estarà disponible en aquesta pàgina.
 
-*Darrera actualització: juny de 2026*
+*Darrera actualització: setembre de 2026*

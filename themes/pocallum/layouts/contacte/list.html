@@ -26,9 +26,10 @@
       <span class="wiz-step-counter" id="js-step-counter" aria-live="polite">01 / 04</span>
     </div>
 
-    <form id="js-wizard"{{ with .Site.Params.formspreeContact }} action="{{ . }}"{{ end }} method="POST" novalidate>
+    <form id="js-wizard"{{ with .Site.Params.contactFormEndpoint }} action="{{ . }}"{{ end }} method="POST" novalidate>
 
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_ts" id="js-wiz-ts" value="0">
       <input type="hidden" name="_subject" value="{{ i18n "wiz_email_subject" | default "Nou pressupost — pocallum.cat" }}">
       <input type="hidden" name="_language" value="{{ $lang }}">
 
@@ -110,6 +111,13 @@
               <option>{{ i18n "wiz_via_other" | default "Altra via" }}</option>
             </select>
           </div>
+        </div>
+        <div class="wiz-field wiz-field--consent">
+          <label class="wiz-consent" for="f-consent">
+            <input class="wiz-checkbox" type="checkbox" id="f-consent" name="_consent" value="1" required>
+            <span class="wiz-consent__box" aria-hidden="true"></span>
+            <span class="wiz-consent__text">{{ i18n "wiz_consent_text" | default "He llegit i accepto la política de privacitat. Les meves dades només s'utilitzaran per contactar-me directament sobre aquest pressupost, no s'enviaran a tercers ni s'usaran per a newsletter." }} <a href="{{ "legal/privacitat/" | relLangURL }}" target="_blank" rel="noopener">{{ i18n "wiz_consent_link" | default "Política de privacitat" }}</a></span>
+          </label>
         </div>
       </div>
 
@@ -198,8 +206,11 @@
   var sendBtn   = document.getElementById('js-wiz-send');
   var successEl = document.getElementById('js-wiz-success');
   var wrapEl    = document.getElementById('js-progress-wrap');
+  var tsInput   = document.getElementById('js-wiz-ts');
   var N         = panels.length;
   var cur       = 0;
+
+  tsInput.value = String(Date.now());
 
   function gcTrack(path) {
     if (window.goatcounter && window.goatcounter.count) {
@@ -255,7 +266,7 @@
       }
     }
 
-    var fields = p.querySelectorAll('input[required]:not([type="radio"]), textarea[required]');
+    var fields = p.querySelectorAll('input[required]:not([type="radio"]):not([type="checkbox"]), textarea[required]');
     for (var i = 0; i < fields.length; i++) {
       var f = fields[i];
       if (!f.value.trim() || (f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value))) {
@@ -263,6 +274,13 @@
         f.focus();
         return false;
       }
+    }
+
+    var consent = p.querySelector('input[type="checkbox"][required]');
+    if (consent && !consent.checked) {
+      consent.closest('.wiz-field--consent').classList.add('wiz--shake');
+      consent.focus();
+      return false;
     }
     return true;
   }
@@ -284,6 +302,7 @@
     var email   = (form.querySelector('[name="email"]') || {}).value || '';
     var tel     = (form.querySelector('[name="telefon"]') || {}).value || '';
     var via     = (form.querySelector('[name="via"]') || {}).value || '';
+    var consent = (form.querySelector('[name="_consent"]') || {}).checked ? '{{ i18n "wiz_sum_consent" | default "Consentiment de privacitat" }} ✓' : '';
 
     document.getElementById('js-summary').innerHTML =
       row('{{ i18n "wiz_sum_servei" | default "Servei" }}', servei) +
@@ -293,7 +312,8 @@
       row('{{ i18n "wiz_sum_nom" | default "Nom" }}', nom) +
       row('Email', email) +
       row('{{ i18n "wiz_sum_tel" | default "Tel." }}', tel) +
-      row('{{ i18n "wiz_sum_via" | default "Via" }}', via);
+      row('{{ i18n "wiz_sum_via" | default "Via" }}', via) +
+      row(consent ? '{{ i18n "wiz_sum_consent" | default "Consentiment de privacitat" }}' : '', consent);
   }
 
   form.addEventListener('input', function (e) { e.target.classList.remove('wiz--invalid'); });

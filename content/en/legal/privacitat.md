@@ -24,13 +24,13 @@ When you send a message through the contact form, we collect the data you provid
 
 - Name
 - Email address
-- Message content
+- The service you are interested in and a description of the project
 
-The contact form uses **Tally.so** (Tally Software SRL, Belgium). Tally acts as a data processor under the terms of their [Data Processing Agreement](https://tally.so/help/dpa). Submitted data is stored on Tally's servers.
+The contact form is handled by our **own endpoint** hosted on our web hosting (Dinahosting, Spain, within the EEA). No third-party form platforms are used. Received data is recorded in an internal Markdown file stored on our server, with restricted access.
 
-- **Purpose:** to respond to your enquiries and manage any resulting professional relationship
+- **Purpose:** to respond to your enquiries and manage any resulting professional relationship. **Your data is only used to contact you directly about your request. It is not used for newsletters and is never shared with or sold to third parties.**
 - **Legal basis:** consent (art. 6.1.a GDPR) and legitimate interest in responding to enquiries (art. 6.1.f GDPR)
-- **Retention:** for the duration of the professional relationship and until the limitation period for any obligations arising from it
+- **Retention:** 24 months from the last communication when no assignment is finalised; after that period the data is deleted. Once a professional relationship begins, data is kept for the duration of the relationship and until the limitation period for any obligations arising from it.
 
 ### Web analytics
 
@@ -73,4 +73,4 @@ The data you provide will be treated with absolute confidentiality and will not 
 
 This policy may be updated to reflect regulatory or service changes. The current version will always be available on this page.
 
-*Last updated: June 2026*
+*Last updated: September 2026*
