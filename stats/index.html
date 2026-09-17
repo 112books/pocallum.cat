@@ -524,6 +524,11 @@
       </div>
       <div class="chart-wrap"><canvas id="chart-canvas"></canvas></div>
       <div class="chart-summary" id="chart-summary"></div>
+
+      <h2 class="section-title">Visites per dia de la setmana <span id="dow-period" style="text-transform:none;letter-spacing:.04em"></span></h2>
+      <div id="dow-wrap" class="bars"></div>
+      <div class="chart-summary" id="dow-summary"></div>
+
       <div id="insight-temporal" class="insight" style="display:none">
         <span class="label">// observació</span>
         <div id="insight-temporal-body"></div>
@@ -688,7 +693,7 @@ document.querySelectorAll('.period-btn').forEach(btn => {
     chartPeriodDays = parseInt(btn.dataset.days, 10);
     document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    if (globalData) renderChart(globalData);
+    if (globalData) { renderChart(globalData); renderWeekday(globalData); }
   });
 });
 document.querySelectorAll('.group-btn').forEach(btn => {
@@ -763,6 +768,7 @@ function renderAll(data) {
   document.getElementById('topbar-gen').innerHTML = 'Actualitzat: <strong>' + gen + '</strong>';
 
   renderChart(data);
+  renderWeekday(data);
   renderLangKpi(data);
   renderLang(data);
   renderBlogTop(data);
@@ -876,6 +882,38 @@ function groupHits(days, groupBy) {
     label: groupBy==='week' ? 'S.'+fmtDateShort(k) : fmtMonth(k),
     count: buckets[k],
   }));
+}
+
+/* ══ DIES DE LA SETMANA ══════════════════════════════════════ */
+function renderWeekday(data) {
+  const el = document.getElementById('dow-wrap');
+  if (!el) return;
+  const hbd = (data.hits_by_day || []).filter(d => d.date >= daysAgo(chartPeriodDays));
+  if (!hbd.length) { el.innerHTML = '<span class="empty">sense dades</span>'; return; }
+
+  const DIES = ['Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte','Diumenge'];
+  const counts = new Array(7).fill(0);
+  hbd.forEach(d => {
+    const idx = (new Date(d.date + 'T12:00:00').getDay() + 6) % 7;
+    counts[idx] += d.count || 0;
+  });
+
+  const PERIODES = {7:'últims 7 dies', 30:'últims 30 dies', 90:'últims 3 mesos', 365:'últim any'};
+  const perLbl = document.getElementById('dow-period');
+  if (perLbl) perLbl.textContent = '· ' + (PERIODES[chartPeriodDays] || ('últims ' + chartPeriodDays + ' dies'));
+
+  const items = DIES.map((name, i) => ({ name, count: counts[i] }));
+  renderBars('dow-wrap', items, { alwaysPct: true });
+
+  const total = counts.reduce((s,c) => s+c, 0) || 1;
+  let pic = 0;
+  counts.forEach((c, i) => { if (c > counts[pic]) pic = i; });
+  const pctPic = Math.round(counts[pic]/total*100);
+  const sum = document.getElementById('dow-summary');
+  if (sum) {
+    sum.innerHTML = 'Total: <strong>' + fmt(total) + '</strong> · ' +
+      'Dia amb més impacte: <span class="hl">' + DIES[pic] + '</span> (<strong>' + pctPic + '%</strong> de les visites, ' + fmt(counts[pic]) + ')';
+  }
 }
 
 /* ══ CONTINGUT TAB ═══════════════════════════════════════════ */
@@ -1283,7 +1321,7 @@ function renderBars(containerId, items, opts = {}) {
     el.innerHTML = '<span class="empty">sense dades</span>';
     return;
   }
-  const max   = items[0].count || 1;
+  const max   = Math.max(...items.map(i => i.count || 0)) || 1;
   const total = items.reduce((s,i) => s+i.count, 0) || 1;
   el.className = 'bars';
   el.innerHTML = '';
@@ -1308,7 +1346,7 @@ function renderBars(containerId, items, opts = {}) {
     fill.className = 'bar-fill' + (opts.colorClass ? ' '+opts.colorClass : '');
     fill.style.width = '0%';
     fill.dataset.w = pct;
-    if (gpct > 12) {
+    if (gpct > 12 || opts.alwaysPct) {
       const sp = document.createElement('span'); sp.className = 'bar-pct'; sp.textContent = gpct+'%';
       fill.appendChild(sp);
     }
