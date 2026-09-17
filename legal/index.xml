@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Pocallum — Legals</title><link>https://112books.github.io/pocallum.cat/legal/</link><description>Fotografia de cultura. Jazz, blues, teatre, dansa i arts escèniques. Barcelona.</description><language>ca</language><lastBuildDate>Wed, 16 Sep 2026 10:01:05 +0000</lastBuildDate><atom:link href="https://112books.github.io/pocallum.cat/legal/" rel="self" type="application/rss+xml"/><item><title>Avís legal</title><link>https://112books.github.io/pocallum.cat/legal/avis-legal/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid isPermaLink="true">https://112books.github.io/pocallum.cat/legal/avis-legal/</guid><description>&lt;h2 id="titular-del-web"&gt;Titular del web&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Pocallum — Legals</title><link>https://112books.github.io/pocallum.cat/legal/</link><description>Fotografia de cultura. Jazz, blues, teatre, dansa i arts escèniques. Barcelona.</description><language>ca</language><lastBuildDate>Thu, 17 Sep 2026 09:25:26 +0000</lastBuildDate><atom:link href="https://112books.github.io/pocallum.cat/legal/" rel="self" type="application/rss+xml"/><item><title>Avís legal</title><link>https://112books.github.io/pocallum.cat/legal/avis-legal/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid isPermaLink="true">https://112books.github.io/pocallum.cat/legal/avis-legal/</guid><description>&lt;h2 id="titular-del-web"&gt;Titular del web&lt;/h2&gt;
 &lt;p&gt;En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSICE):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Titular:&lt;/strong&gt; Joan Linux Martínez i Serres&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NIF:&lt;/strong&gt; 38121766W&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Domicili:&lt;/strong&gt; Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Correu electrònic:&lt;/strong&gt; &lt;a href="mailto:hola@pocallum.cat"&gt;hola@pocallum.cat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Correu electrònic:&lt;/strong&gt; &lt;a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Web:&lt;/strong&gt; &lt;a href="https://pocallum.cat"&gt;https://pocallum.cat&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -26,7 +26,7 @@
 &lt;li&gt;&lt;strong&gt;Responsable:&lt;/strong&gt; Joan Linux Martínez i Serres&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NIF:&lt;/strong&gt; 38121766W&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Adreça:&lt;/strong&gt; Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Contacte:&lt;/strong&gt; &lt;a href="mailto:hola@pocallum.cat"&gt;hola@pocallum.cat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contacte:&lt;/strong&gt; &lt;a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id="quines-dades-recollim"&gt;Quines dades recollim&lt;/h2&gt;
@@ -35,6 +35,6 @@
 &lt;ul&gt;
 &lt;li&gt;Nom&lt;/li&gt;
 &lt;li&gt;Adreça electrònica&lt;/li&gt;
-&lt;li&gt;Contingut del missatge&lt;/li&gt;
+&lt;li&gt;Servei que t&amp;rsquo;interessa i descripció del projecte&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;El formulari de contacte utilitza la plataforma &lt;strong&gt;Tally.so&lt;/strong&gt; (Tally Software SRL, Bèlgica). Tally actua com a encarregat del tractament en els termes del seu &lt;a href="https://tally.so/help/dpa"&gt;Acord de processament de dades&lt;/a&gt;. Les dades enviades es guarden als servidors de Tally.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;El formulari de contacte s&amp;rsquo;envia a un &lt;strong&gt;endpoint propi&lt;/strong&gt; allotjat al nostre hosting (Dinahosting, Espanya, dins de l&amp;rsquo;EEE). No s&amp;rsquo;utilitzen plataformes de formularis de tercers. Les dades rebudes es registren en un fitxer intern en format Markdown emmagatzemat al nostre servidor, amb accés restringit.&lt;/p&gt;</description></item></channel></rss>

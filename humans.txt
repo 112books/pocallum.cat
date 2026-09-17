@@ -8,9 +8,9 @@ Music, jazz, blues, flamenco, theatre, dance —
 and everyone who lets us photograph them.
 
 /* SITE */
-Last update: 2026-05
+Last update: 2026-09
 Language: Catalan / English
-Technology: Hugo, GitHub Pages, GoatCounter, Pagefind
+Technology: Hugo, Dinahosting, GoatCounter, Pagefind
 Development: LinuxBCN.com — https://linuxbcn.com
 
 /* STANDARDS */
