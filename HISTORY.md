@@ -4,6 +4,19 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-17 (migdia) — Accessibilitat WCAG arreglada + visites per dia de la setmana al dashboard
+
+**♿ Accessibilitat: 0 controls sense nom accessible — commit `a70cd580`**
+- L'auditoria externa donava 79/100 amb dos fails WCAG 2.2 AA: 4 enllaços sense nom accessible i 4 amb text genèric. Eren els mateixos 4: les imatges-enllaç de les targetes de notícies de la portada i l'email ofuscat del peu.
+- Fix: `aria-label` amb el títol a l'enllaç d'imatge de `index.html`; text de reserva dins `<span data-contact-text>` a tots els enllaços d'email ofuscat buits (peu, contacte ×2, avis legal CA/EN, privacitat CA/EN) — el JS substitueix el span per l'email real, sense JS hi ha nom accessible i l'adreça no es filtra als scrapers.
+- Creades les claus i18n `contact_email_label` / `contact_tel_label`. Corregit també `renderBars` del dashboard (max calculat sobre tots els items, no el primer).
+- Verificat amb parser propi: 0 enllaços sense nom a portada, contacte, legal, notícies i EN; el desxiframent JS segueix funcionant.
+
+**📊 Dashboard: bloc «Visites per dia de la setmana» — commit `7bf58a4d`**
+- Nova secció a la pestanya Temporal, sota la gràfica: barres Dilluns→Diumenge amb el percentatge sobre el total del període sempre visible, més línia de resum («Dia amb més impacte: X (N% de les visites)»).
+- Reacciona al període seleccionat (7d/30d/3m/1a), calculat al client des de `hits_by_day` — sense canvis al pipeline d'analytics.
+- Verificat en navegador (bypass del login via CDP): ordre, percentatges i amplades correctes.
+
 ## 2026-09-17 (tarda) — Miniatures CMS arreglades + pestanya Missatges al dashboard
 
 Sessió de continuïtat. Dos blocs: fix de les miniatures del CMS Sveltia a `/admin/` i nova pestanya "Missatges" al dashboard de `/stats/` que llegeix el registre de leads del formulari.
