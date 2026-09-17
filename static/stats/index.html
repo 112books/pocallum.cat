@@ -1581,7 +1581,7 @@ async function loadMissatges() {
   try {
     const r = await fetch('/missatges.php', {
       method: 'GET',
-      headers: { 'Authorization': 'Bearer ' + token },
+      headers: { 'X-Auth-Token': token },
       cache: 'no-store',
     });
 
@@ -1654,7 +1654,7 @@ async function marcarLlegit(id) {
     const r = await fetch('/missatges.php', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer ' + token,
+        'X-Auth-Token': token,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ id, estat: 'llegit' }),

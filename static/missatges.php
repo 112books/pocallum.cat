@@ -7,10 +7,15 @@
  * contra el SHA-256 guardat a /home/pocallum/leads/.control/.missatges-token-hash
  * (NUNCA el token en clar, i el fitxer no es desplega mai al repo).
  *
- *  GET  /missatges.php?t=…         → llista completa de leads (JSON)
+ *  GET  /missatges.php           → llista completa de leads (JSON)
  *  POST /missatges.php (id+estat)  → marca un lead com llegit/fet
  *
- * Auth: Header `Authorization: Bearer <token>` (o ?token=… com a fallback).
+ * Auth: Header `X-Auth-Token: <token>` (o `Authorization: Bearer <token>` com a
+ * fallback; a Dinahosting/PHP-FPM no sempre s'exposa, per això s'usen ambdós).
+ *
+ * NOTA: el token únic que accepta el servidor és la contrasenya del dashboard
+ * /stats/: el fitxer .missatges-token-hash conté el seu SHA-256 (pwHash públic,
+ * inútil per preimage; servir preimage de SHA-256 és inviable).
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -64,7 +69,9 @@ if ($fh) {
 
 /* ─── Auth: el servidor només guarda el SHA-256 del token ────────────────── */
 $token = '';
-if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
+if (isset($_SERVER['HTTP_X_AUTH_TOKEN']) && $_SERVER['HTTP_X_AUTH_TOKEN'] !== '') {
+    $token = $_SERVER['HTTP_X_AUTH_TOKEN'];
+} elseif (isset($_SERVER['HTTP_AUTHORIZATION'])) {
     $auth  = $_SERVER['HTTP_AUTHORIZATION'];
     $token = preg_match('/^Bearer\s+(.+)$/i', $auth, $m) ? trim($m[1]) : '';
 }
