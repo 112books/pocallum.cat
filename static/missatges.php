@@ -147,13 +147,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($id === '' || !in_array($new, array('llegit', 'fet'), true)) {
         rj(422, false);
     }
-    if (!preg_match('/^[0-9]+$/', $id)) {
+    if (!preg_match('/^[a-zA-Z0-9-]+$/', $id)) {
         rj(422, false);
     }
     $dirs = glob(LEADS_ROOT . '/20[0-9][0-9]-[0-9][0-9]', GLOB_ONLYDIR) ?: array();
     foreach ($dirs as $dir) {
         foreach (glob($dir . '/*.md') ?: array() as $file) {
-            if (strpos(basename($file), $id) !== 0) {
+            $lead = parseLead($file);
+            if (!$lead || ($lead['id'] ?? '') !== $id) {
                 continue;
             }
             $raw = (string)@file_get_contents($file);
