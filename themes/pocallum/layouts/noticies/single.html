@@ -81,7 +81,8 @@
     </div>
   </div>
 
-  {{ $allPages := .Parent.Pages.ByDate.Reverse }}
+  {{ $byDate := .Parent.Pages.ByDate.Reverse }}
+  {{ $allPages := where $byDate "Params.pinned" true | append (where $byDate "Params.pinned" "ne" true) }}
   {{ if gt (len $allPages) 1 }}
   <div class="article-nav-strip">
     <div class="noticies-strip-wrap">

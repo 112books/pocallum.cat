@@ -31,11 +31,59 @@ Escriure una/unes notícia nova al web amb els concerts coberts de:
 - **MASiMAS Balkan Reunion** (Festival MASiMAS 2026)
 - **Recordant el Paral·lel** (Merche Mar Emporium / Parallel 62)
 
-Font: documentats al blog. Referències:
-- https://blog.pocallum.cat/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar/
-- tags del blog: `festival-masimas`, `masimas-2026`, `parallel`, `parallel-62`, `parallel-barcelona`
+**✔ FET (16/09/2026):** `content/ca/noticies/2026-07-masimas-balkan-reunion.md` + `content/en/` i `content/ca/noticies/2026-09-el-parallel-oblidat.md` + `content/en/` creats.
 
-Format: seguir el patró de `content/ca/noticies/` (frontmatter amb date, lead, image, equip, tags) i crear la versió EN a `content/en/noticies/`.
+---
+
+## 2026-09-16 (tarda) — Cerca trencada per la CSP, auditoria de seguretat i neteja del servidor
+
+**🔍 Cerca (`/cerca/`) no trobava res — causa arrel: CSP sense `'wasm-unsafe-eval'`**
+- Símptoma: la UI de Pagefind es queda penjada a «Cercant…» per sempre, 0 resultats. Reproduït en producció i en local (Chrome headless + CDP).
+- Diagnosi: el worker de Pagefind (`/pagefind/pagefind-worker.js`) fa `WebAssembly.instantiate()` del seu índex; la CSP del `.htaccess` no permetia WASM → `CompileError` dins el worker (invisible a la UI, que fa polling infinit). L'índex sempre ha estat ben desplegat (495 pàgines ca + 259 en).
+- Fix: `'wasm-unsafe-eval'` afegit a `script-src` a `static/.htaccess` (font de veritat, desplegada per rsync) i al `~/www/.htaccess` del servidor (ja en viu). `static/_headers` (referència GH Pages) sincronitzat.
+- **Lliçó edge cache**: Dinahosting té un caché edge per variant de compressió que servia els fitxers `immutable` amb la CSP VELLA encara que l'origin ja la tenia nova (curl sense `Accept-Encoding` → CSP nova; amb `gzip/br` → CSP vella, `age:` creixent). Sense purga HTTP (PURGE→405, BAN→501). **Cal buidar el caché des del panell de Dinahosting.**
+- Prevenció: fitxers de `/pagefind/` (noms estables: `pagefind.js`, `pagefind-worker.js`, `wasm.*.pagefind`, `*.pf_meta|pf_fragment|pf_index`, `pagefind-entry.json`) ara amb `Cache-Control: public, max-age=3600` en comptes d'`immutable` 1 any (regla `FilesMatch` específica DESPRÉS de la general css/js per sobreescrivir-la). Els css/js amb hash del tema segueixen immutable.
+- **✔ Resolt (16/09, tarda):** purga del caché Varnish feta des del panell de Dinahosting (l'edge és **Varnish**, preset «WordPress», TTL 15 min — gestionable a Administració del domini → caché). Commit `54848d1` desplegat (deploy ✓ 36s) i **verificació final en producció** amb navegador verge: «96 resultats trobats per jazz». L'entry.json i els pf_meta coincideixen post-deploy. Visitants que hagin usat la cerca durant el període trencat tenen el worker a la caché `immutable` del navegador → un refresh fort un cop; a partir d'ara ja no passa (cache 1h).
+
+**🔒 Header injection (CRLF) al formulari — commit `4be5c46`**
+- El camp `nom` entrava a la capçalera `Reply-To` sense netejar `\r\n` →possible injectar capçaleres (probablement explotable per spam). Test en viu amb `\r\nBcc:` retornava 200.
+- Fix a `static/formulari.php`: funció `h()` (elimina `\r`, `\n`, `\0`) aplicada a tots els camps que van a capçaleres (`subject`, `to`, `From`, `Reply-To`). `php -l` OK, desplegat i retestejat.
+
+**📧 Ofuscació d'email completada — commit `936c8b2`**
+- Eliminat tot l'email en clar del build: FAQ de serveis (CA+EN, prosa + JSON-LD), avis legal i privacitat (CA+EN), notícies (CA+EN), `contacte/_index.md` (filtrava a l'RSS global), fallback JS del wizard (`mailto:` literal → redirecció a `/contacte/`).
+- `main.js` refinat: el desxifrador `[data-contact]` només omple `textContent` si hi ha `[data-contact-text]` o element buit.
+
+**🧹 `~/arxiu-imatges` esborrat (2,3 GB)**
+- Baixat via rsync per revisar-lo (antic `wp-content/uploads` 2010–2026), confirmat amb el propietari i esborrat del servidor i de local. `~/www` (2 GB) intacte.
+
+**🛡️ Auditoria de seguretat externa: 100/100, grau A**
+- Headers (CSP, HSTS, XFO, nosniff, Referrer-Policy, Permissions-Policy), TLS 1.3, redirect HTTPS, fitxers sensibles inaccessibles: tot PASS.
+- Queden pendents d'accessibilitat de la mateixa auditoria: **4 controls sense nom accessible** i **4 enllaços amb text genèric** (WCAG 2.2 AA).
+- Troballes pròpies pendents de decidir: `/admin/` (Sveltia CMS) públic amb `config.yml` exposat (sense secrets — el PAT viu al navegador); residuals a la CSP (`frame-src tally.so` sense ús, `connect-src`/`img-src` de vimeo — vimeo sí que s'usa a notícies via iframe de `player.vimeo.com`); `formulari.php` sense rate-limit ni CSRF (mitigat pel honeypot).
+
+**CMS operatiu:** `https://pocallum.cat/admin/` amb Sveltia + PAT fine-grained de GitHub (Contents RW) — verificat funcionant.
+
+---
+
+## 2026-09-16 — Landing del blog a /el-blog/, GA4 for a, humans.txt i robots.txt
+
+**Landing del blog /blog/ → /el-blog/**
+- La pàgina de presentació del blog es mou de `/blog/` a `/el-blog/` (CA + EN) — commit `db0ac79`.
+- El directori del layout s'ha de dir EXACTAMENT com la secció: `themes/pocallum/layouts/blog/` → `themes/pocallum/layouts/el-blog/`. El camp `layout:` del frontmatter no és suficient.
+- Menús (CA + EN) actualitzats a `/el-blog/`. `/blog/` ara es bloqueja a `robots.txt` (`Disallow: /blog/`).
+
+**Google Analytics 4 eliminat — commit `84c074d`**
+- Fora `ga4Id = "G-ZV007Q0CKG"` (GA4 cross-domain amb blog) de `hugo.toml` i tot el bloc `{{ with .Site.Params.ga4Id }}...{{ end }}` de `themes/pocallum/layouts/partials/head.html` (línies 296-307).
+- Motiu: era codi mort — el CSP de `static/.htaccess` no inclou `googletagmanager.com` i Brave el bloqueja de sèrie. GoatCounter (pròpies estadístiques) es manté.
+
+**humans.txt actualitzat — commit `cba96c2`**
+- `Technology: GitHub Pages` → `Dinahosting`; `Last update: 2026-05` → `2026-09`.
+
+**⚠️ robots.txt: el controla el panell de Dinahosting, NO el rsync**
+- El rsync puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell** el regenera/sobreescriu amb `User-agent: *` (o el contingut del seu camp).
+- Evidència: marca `# SIGNAT-PROVA-20260916` afegida al `static/robots.txt` (commit `bf986ba`), desplegada i → **no va aparèixer en viu**; el `Last-Modified` quedava al moment del darrer toc del panell.
+- Flux del panell: SEO Toolkit → robots.txt → editar el camp amb el contingut DESITJAT i clicar **Subir** (puja el text del camp a la ruta marcada, `www`). El botó **Restaurar** torna a la versió generada per ell.
+- La marca de prova es treu de `static/robots.txt` (commit `cb9cee4`), però el contingut en viu segueix depenent del panell.
 
 ---
 
@@ -47,6 +95,19 @@ Aplicada i validada la correcció de la URL morta detectada a analytics:
 - Redirect cap a `/en/noticies/2026-03-jazz-i-am-2026/`
 
 L’alias del frontmatter anglès s’ha definit sense el prefix `/en`, perquè Hugo ja l’afegeix per a aquest idioma. Amb el prefix duplicat es generava erròniament `/en/en/...`. Build de producció validada amb `hugo --minify`.
+
+---
+
+## 2026-09-16 — Formulari de contacte: Formspree → PHP mail() propi
+
+**Canvi:** el formulari de contacte (wizard natiu 4 passos) ja no depèn de Formspree. Ara envia des del mateix hosting.
+
+- Creat `static/formulari.php` — rep el POST del wizard, valida (honeypot `_gotcha` + email obligatori) i envia amb php `mail()` (sense credencials, MTA de Dinahosting). Retorna JSON `{"ok":true}` per mantenir el contracte del JS.
+- `hugo.toml`: `formspreeContact` eliminat → `contactEndpoint = "/formulari.php"`.
+- `themes/pocallum/layouts/contacte/list.html`: l'`action` del form apunta ara a `contactEndpoint`.
+- **Docs legals actualitzats** (`privacitat.md`, `cookies.md`, CA+EN): del Tally.so/Formspree (que ja no s'usaven) a "formulari propi del lloc, dades enviades per email des del nostre allotjament".
+- Compte amb la CSP: el fetch a `/formulari.php` és same-origin → permès per `connect-src 'self'`.
+- Veure també secció "robots.txt — el controla el panell" d'aquesta data.
 
 ---
 

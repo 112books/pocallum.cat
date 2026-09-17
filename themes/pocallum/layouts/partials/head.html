@@ -79,7 +79,6 @@
   "logo": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
   "image": "{{ "images/logotip/pocallum-logo.png" | absURL }}",
   "telephone": "{{ .Site.Params.contactPhone }}",
-  "email": "{{ .Site.Params.contactEmail }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
@@ -218,7 +217,6 @@
   "name": "Pocallum",
   "url": "{{ .Site.BaseURL }}",
   "telephone": "{{ .Site.Params.contactPhone }}",
-  "email": "{{ .Site.Params.contactEmail }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
@@ -293,18 +291,6 @@
 </script>
 {{ end }}
 
-{{/* Google Analytics 4 — cross-domain amb blog.pocallum.cat */}}
-{{ with .Site.Params.ga4Id }}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ . }}', {
-    linker: { domains: ['pocallum.cat', 'blog.pocallum.cat'] }
-  });
-</script>
-{{ end }}
 
 {{/* JS */}}
 {{ $js := resources.Get "js/main.js" | minify | fingerprint }}

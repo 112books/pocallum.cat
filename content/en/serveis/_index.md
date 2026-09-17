@@ -10,7 +10,7 @@ faqs:
       Both, depending on the project. Analogue is the starting point: 35mm film, medium format and large format up to 10x8 inches. Digital is used when light is very limited, turnaround is urgent or volume requires it. Never for convenience. Our darkroom is at Nau Bostik, in the Segrera neighbourhood of Barcelona.
   - q: "How does the quoting process work?"
     a: |-
-      We don't work with fixed rates because every project is different. The process: tell us about your project by email (hola@pocallum.cat) or via the contact form; within 48 hours we send a personalised proposal. If there's a fit, we start. If not, we'll say so clearly.
+      We don't work with fixed rates because every project is different. The process: tell us about your project via the contact form; within 48 hours we send a personalised proposal. If there's a fit, we start. If not, we'll say so clearly.
   - q: "Does Pocallum work outside Barcelona?"
     a: |-
       Yes. Our base is Barcelona and Catalonia, but we travel when the project warrants it. We have documented festivals and productions in Madrid, Andalusia, Valencia and abroad. Travel is included in the quote.
@@ -30,7 +30,7 @@ Both, depending on the project. Analogue is the starting point: 35mm film, mediu
 
 ## How does the quoting process work?
 
-We don't work with fixed rates because every project is different. The process: tell us about your project by email (hola@pocallum.cat) or via the contact form; within 48 hours we send a personalised proposal. If there's a fit, we start. If not, we'll say so clearly.
+We don't work with fixed rates because every project is different. The process: tell us about your project via the contact form; within 48 hours we send a personalised proposal. If there's a fit, we start. If not, we'll say so clearly.
 
 ## Does Pocallum work outside Barcelona?
 

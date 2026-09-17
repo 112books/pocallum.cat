@@ -67,7 +67,8 @@ defaultContentLanguageInSubdir = false
   blog            = "https://blog.pocallum.cat"
   about           = "https://about.pocallum.cat"
   goatcounterSite = "pocallum"
-  ga4Id           = "G-ZV007Q0CKG"
+
+  # Contact form: enviament des del mateix hosting (static/formulari.php, mail()).
   contactFormEndpoint = "https://pocallum.cat/formulari.php"
   defaultOgImage    = "/images/logotip/pocallum-logo.png"
 
@@ -117,7 +118,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.ca.menus.main]]
   name   = "Blog"
-  url    = "/blog/"
+  url    = "/el-blog/"
   weight = 6
 
 [[languages.ca.menus.main]]
@@ -159,7 +160,7 @@ defaultContentLanguageInSubdir = false
 
 [[languages.en.menus.main]]
   name   = "Blog"
-  url    = "/blog/"
+  url    = "/el-blog/"
   weight = 6
 
 [[languages.en.menus.main]]

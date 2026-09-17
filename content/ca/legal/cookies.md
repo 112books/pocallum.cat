@@ -35,7 +35,7 @@ El teu navegador pot generar cookies tècniques pròpies necessàries per al fun
 
 ## Eines de tercers
 
-El formulari de contacte s'envia a un endpoint propi del nostre hosting, sense serveis externs de formularis. No hi ha cap eina de tercers que generi cookies en interactuar amb el web.
+**Formulari de contacte (propi del lloc):** el formulari s'envia a un endpoint propi del nostre hosting, sense serveis externs de formularis. No hi ha cap eina de tercers que generi cookies en interactuar amb el web.
 
 ---
 

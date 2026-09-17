@@ -5,7 +5,7 @@
 > **No executar cap fase sense el vistiplau explícit de l'usuari**, especialment les que toquen DNS, SSL, GitHub Settings o el servidor.
 
 - **Data del pla:** 2026-09-16
-- **Termini crític:** el certificat de `blog.pocallum.cat` caduca el **2026-09-22**. S'ha de completar la migració (fins a SSL) abans d'aquesta data, o el blog quedarà sense HTTPS vàlid.
+- **Termini crític:** ~~el certificat de `blog.pocallum.cat` caduca el 2026-09-22~~ **✔ RESOLT (16/09):** Let's Encrypt activat/renovat des del panell de Dinahosting pel subdomini `blog.pocallum.cat`.
 - **Autor del pla:** sessió amb l'usuari (Joan), repo `blog.pocallum.cat` → document originat aquí, còpia de referència allà.
 
 ---
@@ -36,9 +36,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 | Entorn | Branca | URL | Deploy |
 |--------|--------|-----|--------|
-| Producció | `main` | `https://pocallum.cat/` | GitHub Pages (`deploy-prod.yml`, actions/configure-pages) |
+| Producció | `main` | `https://pocallum.cat/` | Dinahosting `~/www` (`deploy-prod.yml`, rsync) |
 | Staging | `develop` | `https://112books.github.io/pocallum.cat/` (staticrypt, pwd `LinuxBCN2026`) | `gh-pages-staging` (`deploy-staging.yml`) |
 | Local | — | `localhost:1313` | `hugo server -D` |
+
+> **Estat (16/09/2026):** migració a Dinahosting **completada a producció**. El document de pla es manté com a registre històric i referència d'operacions; la secció § Fase 7 (neteges GitHub) i § Rollback ja no apliquen per defecte.
 
 - **Hugo v0.159.0 extended** · `hugo --minify --baseURL "https://pocallum.cat/"` + **Pagefind** (només prod).
 - **Multilingüe:** `ca` (default), `en` actives; `es` desactivada.
@@ -135,7 +137,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 ### Fase 5 — SSL/HTTPS (panell Dinahosting, amb suport si cal)
 
 1. **Activar Let's Encrypt per `pocallum.cat`** (+ `www.pocallum.cat`) al panell. Ara la validació funcionarà perquè el DNS ja apunta a Dinahosting.
-2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — fer-ho a la mateixa sessió.
+2. **Renovar/activar el de `blog.pocallum.cat`** (caduca 22/09) — **✔ FET pel panell de Dinahosting (16/09).**
 3. **Activar el redirect HTTP→HTTPS al proxy/panell** (Forçar HTTPS) per als dos dominis. **NO al `.htaccess`.**
 4. **Verificar:**
    - `curl -I https://pocallum.cat/` → 200, cert vàlid (issuer Let's Encrypt), no caducat
@@ -162,8 +164,11 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ### Fase 8 — CMS (final, decidida per l'usuari)
 
-- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), OAuth GitHub (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET`), URL `https://pocallum.cat/admin/`.
-- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push.
+- Sveltia CMS per `pocallum.cat`: `static/admin/index.html` + `config.yml` (repo, branca `main`), URL `https://pocallum.cat/admin/`.
+- **Login amb PAT de GitHub** (Settings → Developer settings → Personal access tokens → Fine-grained, permís `Contents: Read/Write` sobre `112books/pocallum.cat`) — **no cal OAuth App** (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET` no fan falta amb Sveltia v2).
+- El **dashboard d'estadístiques** va passar de `static/admin/` a `static/stats/` → `https://pocallum.cat/stats/` per alliberar `/admin/` per al CMS.
+- CSP: la global del site bloquejaria Sveltia (unpkg.com, api.github.com) → `static/admin/.htaccess` fa `Header unset` + `Header set` amb la CSP ampliada, només per a `/admin/` (Apache sobreescriu la del pare). `robots.txt` ja bloqueja `/admin/` i `/stats/`.
+- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push (`deploy-prod.yml`, branca `main`).
 - Replicar el model ja documentat al CLAUDE.md del blog (§ Pla CMS).
 
 ---
@@ -197,9 +202,16 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 
 ## Pendents post-migració (anotat 16/09)
 
-1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap) i tancar els punts pendents de la Fase 5 (cert del blog, caduca 22/09).
-2. **Formularis amb SMTP propi:** ✅ **Implementat (17/09/2026)** — vegeu la secció "Formulari de contacte (leads)" més avall. El contacte ja no depèn de cap tercer: envia des de l'endpoint propi de Dinahosting i registra els leads al servidor.
+1. **Revisió final de QA (Fase 6 complets):** repassar que tot rutlli a producció (galeria, festivals, notícies, serveis, qui-som, contacte, cerca, bilingüe, blog, GoatCounter, 404, web fonts, imatges, robots.txt, sitemap). El punt SSL de la Fase 5 queda **resolt** amb Let's Encrypt des del panell (16/09).
+2. **Formularis amb SMTP propi:** ✅ **Implementat (17/09/2026)** — vegeu la secció "Formulari de contacte (leads)" més avall. El contacte ja no depèn de cap tercer: envia des de l'endpoint propi de Dinahosting (`static/formulari.php`, php `mail()`) i registra els leads al servidor. Formspree eliminat; docs legals actualitzats.
 3. **Avaluar esborrar les imatges no usades (2.3G a `~/arxiu-imatges/`):** abans d'esborrar res s'ha de comprovar que (a) cap altre lloc les referenciï (CSS, feeds, sitemap, el site pare), i (b) les originals estiguin garantides a Google Fotos/Vimeo (el material fotogràfic no viu només a les carpetes del servidor). És una decisió de l'usuari amb verificació prèvia.
+
+### ⚠️ robots.txt — el controla el SEO Toolkit del panell, NO el rsync (16/09/2026)
+
+- El deploy puja `static/robots.txt` al docroot, però el **SEO Toolkit del panell de Dinahosting** el regenera/sobreescriu (per defecte: `User-agent: *`).
+- **Per canviar el contingut en viu** cal: panell → SEO Toolkit → robots.txt → editar el camp amb el contingut desitjat → botó **Subir** → ruta `www`. El botó **Restaurar** torna a la versió automàtica.
+- Evidència del control pel panell: la marca `# SIGNAT-PROVA-20260916` afegida a `static/robots.txt` (commit `bf986ba`) es va desplegar però **no va aparèixer en viu**; el `Last-Modified` de la resposta corresponia al moment del darrer toc del panell, no del deploy.
+- **Conseqüències:** (a) `robots.txt` del repo és "font de veritat" només documental; (b) els canvis de `robots.txt` requereixen editar el panell (o demanar a Dinahosting desactivar la generació automàtica); (c) els blocs a `/admin/`, `/stats/`, `/blog/` només tenen efecte real si són al panell.
 
 ---
 

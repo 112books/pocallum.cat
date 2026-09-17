@@ -3,6 +3,30 @@ function toWebP(url) {
   return url ? url.replace(/\.(jpg|jpeg)$/i, '.webp') : url;
 }
 
+/* ── Anti-spam: contactes codificats (hex), desxifrats al client ────────── */
+function fromHex(s) {
+  const hex = String(s || '').replace(/\s+/g, '');
+  let out = '';
+  for (let i = 0; i + 1 < hex.length; i += 2) {
+    out += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+  }
+  return out;
+}
+(function () {
+  document.querySelectorAll('[data-contact]').forEach(el => {
+    const raw  = fromHex(el.dataset.contact);
+    const kind = el.dataset.kind || 'mailto';
+    if (el.tagName === 'A') {
+      el.href = kind === 'tel'
+        ? 'tel:' + raw.replace(/[^\d+]/g, '')
+        : 'mailto:' + raw;
+    }
+    const target = el.querySelector('[data-contact-text]');
+    if (target) target.textContent = raw;
+    else if (!el.textContent.trim()) el.textContent = raw;
+  });
+})();
+
 /* ── Hero: imatge aleatòria + frase aleatòria ────────────────────────────── */
 (function () {
   const bg    = document.getElementById('js-hero-bg');
