@@ -17,6 +17,9 @@ Registre de sessions de treball i canvis rellevants.
 - Reacciona al període seleccionat (7d/30d/3m/1a), calculat al client des de `hits_by_day` — sense canvis al pipeline d'analytics.
 - Verificat en navegador (bypass del login via CDP): ordre, percentatges i amplades correctes.
 
+**🖼️ Galeria: 2 retrats de Kaori — commit `5df71ef4`**
+- `Kaori-2011-IMG_0850.jpg` (2011-08-03, apaïsada) i `Kaori-2016-IMG_4278.jpg` (2016-06-28, vertical) de l'escriptori → `static/images/galeria/` amb la convenció de data-EXIF + nom, pipeline WebP (800/1600), i dues entrades `servei: "artistes"` a `content/ca/galeria/`. Detalls i variants webp verificats en viu (200).
+
 ## 2026-09-17 (tarda) — Miniatures CMS arreglades + pestanya Missatges al dashboard
 
 Sessió de continuïtat. Dos blocs: fix de les miniatures del CMS Sveltia a `/admin/` i nova pestanya "Missatges" al dashboard de `/stats/` que llegeix el registre de leads del formulari.
