@@ -40,6 +40,22 @@ Sessió de continuïtat. Dos blocs: fix de les miniatures del CMS Sveltia a `/ad
 
 ---
 
+## 2026-09-17 (vespre) — Fix: estils del dashboard `/stats/` no carregaven (CSP)
+
+El dashboard es veia sense estils. Causa: en moure'l de `/admin/` a `/stats/` (commit `84a296c`) va quedar sota la **CSP global estricta** del site (`style-src 'self'`), que bloqueja els 2 blocs `<style>` inline de `index.html`; i `script-src` no permetia `cdn.jsdelivr.net`, que és on es carrega **Chart.js** → gràfiques trencades. Abans vivia a `/admin/`, que té un `.htaccess` propi amb CSP ampliada.
+
+- **Fix:** creat `static/stats/.htaccess` que fa `Header unset Content-Security-Policy` + `Header set` amb una CSP específica per al directori (mateix patró que `/admin/.htaccess`):
+  - `style-src 'self' 'unsafe-inline'` → permet els blocs d'estil inline del dashboard.
+  - `script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net` → permet Chart.js i els scripts inline.
+  - `connect-src 'self' *.goatcounter.com https://raw.githubusercontent.com` → API en viu de GoatCounter + fallback de `analytics.json`.
+  - `font-src 'self'`, `img-src 'self' data:`.
+- **Verificació:** build local OK (`public/stats/.htaccess` present); deploy `deploy-prod.yml` ✓ 43s; header CSP nou servit a producció per a totes les variants de compressió (`identity`/`gzip`, `age: 0`). El primer curl tornava la CSP vella pel caché edge de Varnish, que es refresca sol.
+- Commit `56b0158`.
+
+**Sync i neteja (canvis fets des de fora):** `git pull --ff-only` va incorporar 6 commits externs (accessibilitat WCAG, retrats de Kaori a la galeria, visites per dia de la setmana al dashboard). `develop` fusionada amb `main` i pujada (arbre idèntic). Esborrada la branca `feat/comunicacio-narrativa` (ja totalment fusionada i eliminada al remot) i el seu worktree; tret el **gitlink accidental** `.worktrees/feat-comunicacio-narrativa` que estava versionat tot i haver-hi `.worktrees/` al `.gitignore` (commit `01ee24c`).
+
+---
+
 ## 2026-09-17 — Formulari de contacte propi (fi de Formspree)
 
 Sessió llarga. El wizard de `/contacte/` deixa d'enviar a Formspree i passa a l'endpoint propi `static/formulari.php`, allotjat a Dinahosting. Resposta JSON `{ok:bool}`, filtres anti-spam en capes (honeypot, `_ts` ≥4 s, rate-limit 5/60 min per IP, validació email + dominis temporals + heurística URLs), registre de leads en Markdown a `~/leads/` i notificació per mail. Aprovació explícita de l'usuari: leads al servidor, sense tercers, casella de consentiment no premarcada (obligatòria), retenció 24 mesos, finalitat només contacte directe.
