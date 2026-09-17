@@ -19,6 +19,8 @@ Registre de sessions de treball i canvis rellevants.
 
 **🖼️ Galeria: 2 retrats de Kaori — commit `5df71ef4`**
 - `Kaori-2011-IMG_0850.jpg` (2011-08-03, apaïsada) i `Kaori-2016-IMG_4278.jpg` (2016-06-28, vertical) de l'escriptori → `static/images/galeria/` amb la convenció de data-EXIF + nom, pipeline WebP (800/1600), i dues entrades `servei: "artistes"` a `content/ca/galeria/`. Detalls i variants webp verificats en viu (200).
+- Nota: el grid de la galeria fa shuffle aleatori (Fisher-Yates, `js-shuffle` de main.js) en UNA sola pàgina sense paginació — les dues fotos hi són sempre, només canvia la posició a cada càrrega.
+- L'auditoria d'accessibilitat que encara marcava 4 fails era una còpia caché de Varnish: verificat amb parser propi contra la variant edge que serveix el test — 58 controls, 0 sense nom. L'HTML en viu (last-modified del deploy) ja porta `aria-label` a les imatges de notícies i el span de reserva als emails ofuscat.
 
 ## 2026-09-17 (tarda) — Miniatures CMS arreglades + pestanya Missatges al dashboard
 
