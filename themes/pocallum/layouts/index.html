@@ -131,7 +131,7 @@
       {{ range $noticies }}
       <article class="noticia-card">
         {{ if .Params.image }}
-        <a href="{{ .RelPermalink }}" class="noticia-card__img-wrap" tabindex="-1">
+        <a href="{{ .RelPermalink }}" class="noticia-card__img-wrap" tabindex="-1" aria-label="{{ .Title }}">
           {{ partial "picture.html" (dict "src" .Params.image "alt" "" "loading" "lazy") }}
         </a>
         {{ end }}

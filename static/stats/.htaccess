@@ -1,0 +1,12 @@
+# ──────────────────────────────────────────────────────────────
+#  Pocallum — CSP específica per al dashboard a /stats/
+#  Sobreescriu la CSP global del site només en aquest directori
+#  (que és estricta i bloquejaria els estils inline i els CDN
+#  que fa servir el dashboard).
+#  ⚠️ Aquest directori NO ha de ser indexat (ja està a robots.txt)
+# ──────────────────────────────────────────────────────────────
+
+<IfModule mod_headers.c>
+  Header unset Content-Security-Policy
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' *.goatcounter.com https://raw.githubusercontent.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:"
+</IfModule>

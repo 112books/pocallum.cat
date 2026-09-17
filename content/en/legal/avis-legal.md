@@ -14,7 +14,7 @@ In compliance with Spanish Law 34/2002 of 11 July on Information Society Service
 - **Owner:** Joan Linux Martínez i Serres
 - **Tax ID (NIF):** 38121766W
 - **Address:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
-- **Email:** <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"></a>
+- **Email:** <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"><span data-contact-text>Email address</span></a>
 - **Website:** https://pocallum.cat
 
 ---
