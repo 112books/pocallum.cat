@@ -162,6 +162,8 @@ clients_label:      "We've worked with:"
 
 contact_direct_label:   "Or write to us directly"
 contact_review_label:   "Leave us a review on Google"
+contact_email_label:    "Email address"
+contact_tel_label:      "Phone"
 
 testimonis_label: "What people say about us"
 
