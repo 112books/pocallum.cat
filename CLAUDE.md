@@ -275,6 +275,14 @@ Dashboard custom integrat al lloc, amb l'estètica de pocallum (colors, Syne, IB
 - `scripts/build-analytics-json.py` + `scripts/process-analytics.py` — scripts que criden l'API de GoatCounter
 - `.github/workflows/fetch-analytics.yml` — workflow que s'executa cada hora (`cron: '0 * * * *'`)
 
+### Pestanya Missatges (leads del formulari)
+El dashboard té una pestanya "Missatges" que llegeix els leads del formulari via l'endpoint privat `static/missatges.php` (GET llista de leads amb `estat: nous|llegit|fet`; POST per marcar `estat: llegit`). Funciona amb la **mateixa contrasenya del dashboard** com a token: al login es guarda a `sessionStorage` (`MSG_TOKEN_KEY='poc_msg_token'`) i s'envia com a capçalera `X-Auth-Token` en cada fetch.
+
+- L'endpoint llegeix `~/leads/20YY-MM/*.md` al servidor (registre de leads del formulari) — mai exposa el contingut cru; retorna JSON estructurat i ordenat per `data`.
+- Auth server-side: es compara el SHA-256 del token rebut amb l'hash públic guardat a `~/leads/.control/.missatges-token-hash` (és el mateix `pwHash` del dashboard) — 401 sense token o amb token invàlid.
+- **NO usar `Authorization: Bearer`** per a `missatges.php`: Dinahosting/PHP-FPM no exposa `HTTP_AUTHORIZATION` al servidor; només funciona `X-Auth-Token` (arriba com `HTTP_X_AUTH_TOKEN`).
+- El lead s'identifica pel frontmatter `id:`, NO pel nom del fitxer (es diuen `data-YYYYMMDD-HHMMSS-slug.md`).
+
 ### Secret requerit a GitHub
 El workflow necessita el secret `GOATCOUNTER_TOKEN` al repo (Settings → Secrets and variables → Actions).
 Per generar-lo: `pocallum.goatcounter.com` → Settings → API tokens → New token → Read stats ✓

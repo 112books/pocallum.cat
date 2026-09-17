@@ -168,7 +168,7 @@ Dinahosting · vl28359.dinaserver.com · 82.98.166.123 (SSH user: pocallum)
 - **Login amb PAT de GitHub** (Settings → Developer settings → Personal access tokens → Fine-grained, permís `Contents: Read/Write` sobre `112books/pocallum.cat`) — **no cal OAuth App** (`OAUTH_CLIENT_ID`/`OAUTH_CLIENT_SECRET` no fan falta amb Sveltia v2).
 - El **dashboard d'estadístiques** va passar de `static/admin/` a `static/stats/` → `https://pocallum.cat/stats/` per alliberar `/admin/` per al CMS.
 - CSP: la global del site bloquejaria Sveltia (unpkg.com, api.github.com) → `static/admin/.htaccess` fa `Header unset` + `Header set` amb la CSP ampliada, només per a `/admin/` (Apache sobreescriu la del pare). `robots.txt` ja bloqueja `/admin/` i `/stats/`.
-- Media uploads a `static/media/` (commitat al repo). Deploy automàtic a Dinahosting en push (`deploy-prod.yml`, branca `main`).
+- Media uploads a `static/images/` (commitat al repo) — `media_folder: "static/images"`, `public_folder: "/images"` (les imatges del lloc viuen a `/images/`). Deploy automàtic a Dinahosting en push (`deploy-prod.yml`, branca `main`). Canviat de `static/media/` (17/09) perquè no existia i les miniatures del CMS no resolien; veure `HISTORY.md`.
 - Replicar el model ja documentat al CLAUDE.md del blog (§ Pla CMS).
 
 ---
@@ -250,6 +250,15 @@ Mantenir aquests headers al `.htaccess` — si es treuen, les proves tornen a se
 
 ### Error log
 Problemes de `.htaccess`/500 es veuen a `~/logs/apache.error.log` del servidor. El 17/09: un `</IfModule>` sobrant al `.htaccess` va donar 500 a totes les peticions `formulari.php` — l'error portava `<IfModule> without matching`.
+
+### Consulta de leads des del dashboard (missatges.php) — implementat 17/09/2026
+El dashboard de `/stats/` té una pestanya **"Missatges"** que llista els leads del formulari:
+- Endpoint privat `static/missatges.php` → `~/www/missatges.php` (fora del docroot només de lectura de `~/leads/`).
+- **GET** llista els leads (parseja frontmatter + `_cos`, ordena per `data` desc, comptador de `nous`). **POST** `{id, estat}` marca `llegit`/`fet` al fitxer.
+- **Auth:** capçalera `X-Auth-Token` = contrasenya del dashboard. El servidor la compara (SHA-256 + `hash_equals`) contra `~/leads/.control/.missatges-token-hash` (conté el mateix `pwHash` públic del dashboard, 660). ⚠️ **No usar `Authorization`** — Dinahosting/PHP-FPM no l'exposa a `$_SERVER`.
+- El lead s'identifica pel frontmatter `id:`, **no** pel nom del fitxer (`data-YYYYMMDD-HHMMSS-slug.md`).
+- Rate-limit 20 request/h per IP; headers no-store (`FilesMatch "missatges\.php$"` al `.htaccess`).
+- Bugs de producció resolts (17/09): `X-Auth-Token` en lloc de `Authorization`; cerca per `id` de frontmatter en lloc de prefix del fitxer.
 
 ---
 

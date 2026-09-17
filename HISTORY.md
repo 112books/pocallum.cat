@@ -4,6 +4,24 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-17 (tarda) — Miniatures CMS arreglades + pestanya Missatges al dashboard
+
+Sessió de continuïtat. Dos blocs: fix de les miniatures del CMS Sveltia a `/admin/` i nova pestanya "Missatges" al dashboard de `/stats/` que llegeix el registre de leads del formulari.
+
+- **Miniatures CMS — causa arrel:** els camps `image:` del contingut apunten a `/images/...`, però el `config.yml` de Sveltia tenia `media_folder: "static/media"` / `public_folder: "/media"` → els fitxers carregats pel CMS i els resolts pel lloc no es trobaven → cap miniatura als llistats. Fix: alinear a la ubicació real — `media_folder: "static/images"`, `public_folder: "/images"` (els hints CA/EN dels camps d'imatge també actualitzats de `/media/` a `/images/`). Com que la CSP de `/admin/` ja permetia `*.githubusercontent.com`, les miniatures es carreguen de GitHub directament. Commit `f8d1a75`.
+- **Pestanya Missatges a `/stats/`:** nova pestanya que llista els leads del formulari (nous/llegits/fets) amb botó per marcar-los com a llegits, tot sense sortir del dashboard. El login del dashboard guarda la contrasenya a `sessionStorage` i s'envia com a `X-Auth-Token`.
+- **Endpoint privat `static/missatges.php`:** GET llista els leads (parseja frontmatter + `_cos`, ordena per data desc, comptador de nous), POST marca `llegit`/`fet` modificant la línia `estat:` al fitxer. Auth server-side estricta, rate-limit 20/h per IP, headers no-store contra la cache de Dinahosting.
+- **Auth sense secret extra:** l'endpoint accepta com a token la dues vegades sha256 de la contrasenya del dashboard; el servidor en guarda el hash públic (`hash_equals`), inútil per preimatge. Ambdues capes (server-side 401 + client-side al dashboard) usen la mateixa contrasenya.
+- **Trags de producció resolts sobre la marxa:**
+  - Dinahosting/PHP-FPM **no** exposa `Authorization` a `$_SERVER` → capçalera custom `X-Auth-Token` (commit `195364b`).
+  - Els fitxers de leads es diuen `data-YYYYMMDD-HHMMSS-slug.md` → la cerca per prefix de nom del fitxer fallava; ara cada MD es parseja i es cerca pel frontmatter `id:` (commit `5779c21`).
+- **Verificació end-to-end a producció:** 401 sense token, 401 amb el hash sol (cal la contrasenya real), 200 + llista de leads amb token, POST `llegit` 200 i fitxer actualitzat. Token de prova esborrat, `pwHash` real restaurat, lead de prova i fitxers de rate-limit netejats del servidor.
+- **Config secrets al servidor:** `~/leads/.control/.missatges-token-hash` (mode 660) conté el `pwHash` — és l'única credencial que necessita l'endpoint, i és pública sense risc (preimage resistance).
+- **Canvi d'uploads CMS pels editors:** els fitxers pujats des de `/admin/` ara van a `static/images/` (no a `/media/`).
+- Commits: `f8d1a75`, `195364b`, `5779c21`.
+
+---
+
 ## 2026-09-17 — Formulari de contacte propi (fi de Formspree)
 
 Sessió llarga. El wizard de `/contacte/` deixa d'enviar a Formspree i passa a l'endpoint propi `static/formulari.php`, allotjat a Dinahosting. Resposta JSON `{ok:bool}`, filtres anti-spam en capes (honeypot, `_ts` ≥4 s, rate-limit 5/60 min per IP, validació email + dominis temporals + heurística URLs), registre de leads en Markdown a `~/leads/` i notificació per mail. Aprovació explícita de l'usuari: leads al servidor, sense tercers, casella de consentiment no premarcada (obligatòria), retenció 24 mesos, finalitat només contacte directe.
