@@ -378,6 +378,35 @@
     .funnel-pending { color: var(--mid); font-size: 12px; font-style: italic; background: var(--bg2); border: 1px solid var(--line); padding: 1rem 1.2rem; line-height: 1.7; }
     .funnel-pending em { color: var(--fg); font-style: normal; }
 
+    /* ── Missatges del formulari ────────────────────────────── */
+    .msg-inline-token { display: flex; gap: .6rem; align-items: flex-end; flex-wrap: wrap; }
+    .msg-inline-token label {
+      display: block; font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: .3rem;
+    }
+    .msg-token-field {
+      width: 320px; background: transparent; border: none; border-bottom: 1px solid var(--line);
+      padding: .4rem 0; font-family: 'IBM Plex Sans Condensed', monospace; font-size: 13px;
+      color: var(--fg); outline: none;
+    }
+    .msg-token-field:focus { border-bottom-color: var(--accent); }
+    .msg-toolbar { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .msg-counts { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: baseline; }
+    .msg-count big { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--fg); }
+    .msg-count.nous big { color: var(--accent); }
+    .msg-count small { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--mid); }
+    .lead-card { border: 1px solid var(--line); background: var(--bg2); padding: 1rem 1.25rem; margin-bottom: .8rem; }
+    .lead-head { display: flex; gap: .8rem; align-items: baseline; flex-wrap: wrap; margin-bottom: .5rem; }
+    .lead-estat { font-size: 9px; letter-spacing: .12em; text-transform: uppercase; padding: .12rem .45rem; border: 1px solid var(--line); color: var(--mid); }
+    .lead-estat.nou { border-color: var(--accent2); color: var(--accent); }
+    .lead-estat.llegit, .lead-estat.fet { border-color: #2c4a30; color: var(--green); }
+    .lead-nom { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--fg); }
+    .lead-meta { font-size: 11px; color: var(--mid); display: flex; gap: .5rem 1.25rem; flex-wrap: wrap; margin-bottom: .6rem; }
+    .lead-meta b { color: var(--fg); font-weight: 700; }
+    .lead-body { font-size: 13px; color: #d8d8d8; white-space: pre-wrap; line-height: 1.7; margin-bottom: .8rem; }
+    .lead-actions { display: flex; gap: .5rem; }
+    .lead-actions .status-done { font-size: 10px; color: var(--green); letter-spacing: .1em; align-self: center; }
+
     /* ── Lang prominent ─────────────────────────────────────── */
     .lang-kpi { display: flex; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 1.5rem; }
     .lang-kpi-item { flex: 1; background: var(--bg2); padding: 1rem 1.25rem; }
@@ -478,6 +507,7 @@
       <button class="tab-btn" onclick="showTab('contingut',this)">Contingut</button>
       <button class="tab-btn" onclick="showTab('pagines',this)">Pàgines</button>
       <button class="tab-btn" onclick="showTab('dispositius',this)">Dispositius</button>
+      <button class="tab-btn" onclick="showTab('missatges',this); loadMissatges()">Missatges</button>
     </div>
 
     <!-- TAB: Temporal -->
@@ -571,6 +601,23 @@
       </div>
     </div>
 
+    <!-- TAB: Missatges -->
+    <div id="tab-missatges" class="tab-panel">
+      <div class="msg-toolbar" id="msg-token-bar" style="display:none">
+        <div>
+          <label for="msg-token-input" class="msg-token-label" style="display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin-bottom:.3rem">Token de missatges</label>
+          <input id="msg-token-input" type="password" class="msg-token-field" placeholder="contrasenya del dashboard" autocomplete="off" spellcheck="false">
+        </div>
+        <button type="button" class="btn-sm" onclick="setMsgToken()">Desa i carrega</button>
+      </div>
+      <div id="msg-status" class="empty" style="display:none"></div>
+      <div class="msg-counts" id="msg-counts" style="display:none">
+        <div class="msg-count nous"><small>nous</small> <big id="msg-nous">0</big></div>
+        <div class="msg-count"><small>total</small> <big id="msg-total">0</big></div>
+      </div>
+      <div id="msg-list"></div>
+    </div>
+
   </main>
 </div>
 
@@ -589,6 +636,7 @@ document.getElementById('login-form').addEventListener('submit', async e => {
   const h = await sha256(v);
   if (h === CFG.pwHash) {
     sessionStorage.setItem('gc_ok', '1');
+    sessionStorage.setItem(MSG_TOKEN_KEY, v);
     showDashboard();
   } else {
     document.getElementById('login-err').textContent = 'contrasenya incorrecta';
@@ -603,6 +651,7 @@ document.getElementById('btn-refresh').addEventListener('click', () => {
 
 document.getElementById('btn-logout').addEventListener('click', () => {
   sessionStorage.removeItem('gc_ok');
+  sessionStorage.removeItem(MSG_TOKEN_KEY);
   if (visitsChart) { visitsChart.destroy(); visitsChart = null; }
   globalData = null;
   document.getElementById('dashboard').style.display = 'none';
@@ -1497,6 +1546,124 @@ function setBanner(type, msg) {
 function clearBanner() {
   const el = document.getElementById('banner');
   el.className = ''; el.textContent = '';
+}
+
+/* ══ MISSATGES (leads del formulari) ═════════════════════════ */
+const MSG_TOKEN_KEY = 'poc_msg_token';
+
+function setMsgToken() {
+  const v = document.getElementById('msg-token-input').value;
+  if (!v) return;
+  sessionStorage.setItem(MSG_TOKEN_KEY, v);
+  document.getElementById('msg-token-input').value = '';
+  document.getElementById('msg-token-bar').style.display = 'none';
+  loadMissatges();
+}
+
+async function loadMissatges() {
+  const list  = document.getElementById('msg-list');
+  const status = document.getElementById('msg-status');
+  const counts = document.getElementById('msg-counts');
+
+  const clear = () => { status.style.display = 'none'; counts.style.display = 'none'; };
+
+  let token = sessionStorage.getItem(MSG_TOKEN_KEY);
+  if (!token) {
+    document.getElementById('msg-token-bar').style.display = 'flex';
+    list.innerHTML = '<span class="empty">Introdueix la contrasenya del dashboard per veure els missatges.</span>';
+    clear();
+    return;
+  }
+
+  clear();
+  list.innerHTML = '<span class="empty">carregant missatges…</span>';
+
+  try {
+    const r = await fetch('/missatges.php', {
+      method: 'GET',
+      headers: { 'Authorization': 'Bearer ' + token },
+      cache: 'no-store',
+    });
+
+    if (r.status === 401) {
+      sessionStorage.removeItem(MSG_TOKEN_KEY);
+      document.getElementById('msg-token-bar').style.display = 'flex';
+      list.innerHTML = '<span class="empty">Token invàlid — torna a introduir la contrasenya.</span>';
+      return;
+    }
+    if (r.status === 429) {
+      list.innerHTML = '<span class="empty">Massa intents — espera una estona i torna-ho a provar.</span>';
+      return;
+    }
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+
+    const data = await r.json();
+    if (!data.ok) throw new Error('Resposta del servidor invàlida');
+
+    counts.style.display = 'flex';
+    document.getElementById('msg-nous').textContent = data.nous || 0;
+    document.getElementById('msg-total').textContent = data.leads.length;
+
+    if (!data.leads.length) {
+      list.innerHTML = '<span class="empty">No hi ha missatges encara.</span>';
+      return;
+    }
+
+    list.innerHTML = data.leads.map(lead => renderLead(lead)).join('');
+  } catch (e) {
+    status.style.display = 'block';
+    status.textContent = 'Error carregant missatges: ' + e.message;
+    list.innerHTML = '';
+  }
+}
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function renderLead(lead) {
+  const estat = lead.estat || 'nou';
+  const meta = [];
+  if (lead.email) meta.push('email <b>' + esc(lead.email) + '</b>');
+  if (lead.servei) meta.push('servei <b>' + esc(lead.servei) + '</b>');
+  if (lead.idioma) meta.push('idioma <b>' + esc(lead.idioma) + '</b>');
+  if (lead.via) meta.push('via <b>' + esc(lead.via) + '</b>');
+  if (lead.data) meta.push('data <b>' + esc(lead.data) + '</b>');
+
+  const body = (lead._cos || '').replace(/^##\s*.*$/m, '').trim();
+
+  return `<div class="lead-card">
+    <div class="lead-head">
+      <span class="lead-estat ${estat === 'nou' ? 'nou' : estat}">${esc(estat)}</span>
+      <span class="lead-nom">${esc(lead.nom || '(sense nom)')}</span>
+    </div>
+    <div class="lead-meta">${meta.join(' · ')}</div>
+    <div class="lead-body">${esc(body)}</div>
+    <div class="lead-actions">
+      ${estat === 'nou' ? `<button type="button" class="btn-sm" onclick="marcarLlegit('${esc(lead.id)}')">marcar llegit →</button>` : '<span class="status-done">· gestionat</span>'}
+    </div>
+  </div>`;
+}
+
+async function marcarLlegit(id) {
+  let token = sessionStorage.getItem(MSG_TOKEN_KEY);
+  if (!token) return;
+  try {
+    const r = await fetch('/missatges.php', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ id, estat: 'llegit' }),
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    loadMissatges();
+  } catch (e) {
+    window.alert('No s\'ha pogut actualitzar: ' + e.message);
+  }
 }
 </script>
 </body>

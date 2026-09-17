@@ -3,10 +3,10 @@ backend:
   repo: 112books/pocallum.cat
   branch: main
 
-# Media folder per a uploads del CMS (ímages noves a static/media/ → URL /media/).
-# Les imatges existents del site (static/images/) es poden referenciar manualment.
-media_folder: "static/media"
-public_folder: "/media"
+# Media folder per a uploads del CMS (ímages noves a static/images/ → URL /images/,
+# mateixa ubicació on ja viuen totes les imatges del site perquè les miniatures es resolguin bé).
+media_folder: "static/images"
+public_folder: "/images"
 
 # Slug automàtic a partir del títol; l'usuari pot sobreescriure'l
 slug:
@@ -33,7 +33,7 @@ collections:
       - { label: "Títol", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
       - { label: "Entradeta (lead)", name: "lead", widget: "text", required: false, hint: "Resum breu per al llistat i meta description" }
-      - { label: "Imatge principal", name: "image", widget: "image", required: false, hint: "Puja una imatge nova (va a /media/) o enganxa el path d'una existent (/images/…)" }
+      - { label: "Imatge principal", name: "image", widget: "image", required: false, hint: "Puja una imatge nova (va a /images/) o enganxa el path d'una existent (/images/…)" }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
       - { label: "Fixat al llistat", name: "pinned", widget: "boolean", default: false, required: false, hint: "Només per a contingut prioritari (ex. Guia d'exposicions)" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
@@ -56,7 +56,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: true, time_format: false }
       - { label: "Lead", name: "lead", widget: "text", required: false, hint: "Short summary for listing and meta description" }
-      - { label: "Main image", name: "image", widget: "image", required: false, hint: "Upload a new image (goes to /media/) or paste an existing /images/… path" }
+      - { label: "Main image", name: "image", widget: "image", required: false, hint: "Upload a new image (goes to /images/) or paste an existing /images/… path" }
       - { label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
       - { label: "Pinned in listing", name: "pinned", widget: "boolean", default: false, required: false, hint: "Only for priority content (e.g. Guia d'exposicions)" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }

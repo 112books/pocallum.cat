@@ -19,8 +19,8 @@ ErrorDocument 404 /404.html
   # Vimeo: les notícies incorporen vídeos de player.vimeo.com.
   Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' gc.zgo.at; connect-src 'self' *.goatcounter.com https://vimeo.com https://*.vimeo.com; frame-src https://player.vimeo.com; form-action 'self'; img-src 'self' data: https://i.vimeocdn.com; style-src 'self'; font-src 'self'"
 
-  # L'endpoint del formulari no es pot cachejar (proxy Dinahosting)
-  <FilesMatch "formulari\.php$">
+  # Els endpoints PHP (formulari + missatges) no es poden cachejar (proxy Dinahosting)
+  <FilesMatch "(formulari|missatges)\.php$">
     Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
     Header set Pragma "no-cache"
   </FilesMatch>
