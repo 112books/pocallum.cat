@@ -4,6 +4,15 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-09-21 — Eliminació workflow update-blog-stats obsolet
+
+**Diagnosi i neteja — commit `b28c9d7`**
+- El workflow "Update Blog Stats" fallava cada dilluns amb 404 al cridar `https://blog.pocallum.cat/wp-json/wp/v2/posts`. Causa arrel: el blog va ser migrat a Hugo estàtic i ja no hi ha cap API de WordPress.
+- A més, el workflow intentava escriure a `content/ca/blog/` i `content/en/blog/`, paths que no existeixen (la landing del blog viu a `content/ca/el-blog/`).
+- Eliminats `.github/workflows/update-blog-stats.yml` i `scripts/update-blog-stats.py` — sense utilitat futura.
+
+---
+
 ## 2026-09-17 (migdia) — Accessibilitat WCAG arreglada + visites per dia de la setmana al dashboard
 
 **♿ Accessibilitat: 0 controls sense nom accessible — commit `a70cd580`**
