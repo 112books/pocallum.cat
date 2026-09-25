@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-24T21:54:00.070755Z",
+  "generated": "2026-09-25T00:09:26.778701Z",
   "period": {
-    "start": "2025-09-24",
-    "end": "2026-09-24"
+    "start": "2025-09-25",
+    "end": "2026-09-25"
   },
-  "total": 1501,
+  "total": 1507,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -217,15 +217,15 @@
     },
     {
       "date": "2026-06-30",
-      "count": 9
+      "count": 8
     },
     {
       "date": "2026-07-01",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-07-02",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-07-03",
@@ -261,7 +261,7 @@
     },
     {
       "date": "2026-07-11",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-07-12",
@@ -373,7 +373,7 @@
     },
     {
       "date": "2026-08-08",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-08-09",
@@ -554,16 +554,20 @@
     {
       "date": "2026-09-23",
       "count": 21
+    },
+    {
+      "date": "2026-09-24",
+      "count": 7
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 433
+      "count": 436
     },
     {
       "path": "/galeria",
-      "count": 152
+      "count": 153
     },
     {
       "path": "/festivals",
@@ -662,6 +666,10 @@
       "count": 8
     },
     {
+      "path": "/serveis/books-artistics",
+      "count": 8
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 8
     },
@@ -679,10 +687,6 @@
     },
     {
       "path": "/legal/privacitat",
-      "count": 7
-    },
-    {
-      "path": "/serveis/books-artistics",
       "count": 7
     },
     {
@@ -726,6 +730,10 @@
       "count": 5
     },
     {
+      "path": "/serveis/sessio-banda",
+      "count": 5
+    },
+    {
       "path": "/serveis/fotollibre",
       "count": 5
     },
@@ -752,22 +760,18 @@
     {
       "path": "/en/node/23/track",
       "count": 4
-    },
-    {
-      "path": "/tags/112books",
-      "count": 4
     }
   ],
   "by_lang": {
-    "en": 253,
-    "ca": 21,
+    "en": 256,
+    "ca": 18,
     "es": 27
   },
   "by_section": {
-    "inici": 453,
-    "galeria": 158,
+    "inici": 456,
+    "galeria": 159,
     "festivals": 139,
-    "serveis": 120,
+    "serveis": 122,
     "noticies": 155,
     "blog": 50,
     "contacte": 55,
@@ -776,7 +780,7 @@
     "legal": 73,
     "el-blog": 18,
     "cerca": 18,
-    "node": 46,
+    "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
     "serveis-fotografics-2": 8,
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 7,
@@ -785,7 +789,7 @@
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
-    "tags": 4,
+    "tags": 7,
     "2025": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
@@ -852,7 +856,88 @@
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 85
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 42
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 28
+    },
+    {
+      "path": "/cerca",
+      "count": 21
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
+      "count": 19
+    },
+    {
+      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
+      "count": 18
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 16
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 16
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
+      "count": 14
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 14
+    },
+    {
+      "path": "/contact",
+      "count": 13
+    },
+    {
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "count": 12
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 12
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 12
+    },
+    {
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 10
+    },
+    {
+      "path": "/about",
+      "count": 10
+    },
+    {
+      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
+      "count": 10
+    },
+    {
+      "path": "/blog.pocallum.cat",
+      "count": 9
+    },
+    {
+      "path": "/?query-0-page=2",
+      "count": 9
+    },
+    {
+      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
+      "count": 9
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 23,
@@ -865,7 +950,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1871
+      "count": 1873
     },
     {
       "name": "Safari",
@@ -897,7 +982,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 579
+      "count": 581
     },
     {
       "name": "Android",
@@ -924,7 +1009,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1541
+      "count": 1543
     },
     {
       "name": "phone",
@@ -956,7 +1041,7 @@
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 64
+      "count": 66
     },
     {
       "name": "Singapore",
@@ -1023,12 +1108,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1307
+      "count": 1327
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 186
+      "count": 188
     },
     {
       "name": "l.instagram.com",
