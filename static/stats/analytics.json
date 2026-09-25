@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T15:40:33.019791Z",
+  "generated": "2026-09-25T22:57:31.318184Z",
   "period": {
     "start": "2025-09-25",
     "end": "2026-09-25"
@@ -856,88 +856,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 85
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 42
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 28
-    },
-    {
-      "path": "/cerca",
-      "count": 21
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 19
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 18
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/contact",
-      "count": 13
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
-    },
-    {
-      "path": "/about",
-      "count": 10
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 10
-    },
-    {
-      "path": "/blog.pocallum.cat",
-      "count": 9
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 9
-    },
-    {
-      "path": "/2026/07/05/2026-07-03-05-24e-festival-de-blues-de-barcelona-organitzacio-colaboradors-amics-i-voluntaris",
-      "count": 9
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 23,
@@ -950,12 +869,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1897
+      "count": 1899
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 836
+      "count": 838
     },
     {
       "name": "Firefox",
@@ -977,7 +896,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1342
+      "count": 1344
     },
     {
       "name": "Windows",
@@ -987,7 +906,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 368
+      "count": 370
     },
     {
       "name": "iOS",
@@ -1014,12 +933,12 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 589
+      "count": 591
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 482
+      "count": 484
     },
     {
       "name": "tablet",
@@ -1031,7 +950,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1646
+      "count": 1650
     },
     {
       "name": "United States",
