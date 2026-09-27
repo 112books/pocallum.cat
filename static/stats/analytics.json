@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T19:56:01.817892Z",
+  "generated": "2026-09-27T22:43:16.092234Z",
   "period": {
     "start": "2025-09-27",
     "end": "2026-09-27"
@@ -961,7 +961,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1910
+      "count": 1913
     },
     {
       "name": "Safari",
@@ -1008,7 +1008,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 256
+      "count": 259
     },
     {
       "name": "Chrome OS",
@@ -1035,7 +1035,7 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 184
+      "count": 187
     }
   ],
   "locations": [
@@ -1075,14 +1075,14 @@
       "count": 38
     },
     {
-      "name": "United Kingdom",
-      "id": "GB",
+      "name": "Colombia",
+      "id": "CO",
       "count": 37
     },
     {
-      "name": "Colombia",
-      "id": "CO",
-      "count": 36
+      "name": "United Kingdom",
+      "id": "GB",
+      "count": 37
     },
     {
       "name": "Ecuador",
@@ -1095,14 +1095,14 @@
       "count": 33
     },
     {
+      "name": "Pakistan",
+      "id": "PK",
+      "count": 27
+    },
+    {
       "name": "Vietnam",
       "id": "VN",
       "count": 26
-    },
-    {
-      "name": "Pakistan",
-      "id": "PK",
-      "count": 25
     },
     {
       "name": "France",
