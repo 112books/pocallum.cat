@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-26T18:51:32.902974Z",
+  "generated": "2026-09-27T00:03:17.479650Z",
   "period": {
-    "start": "2025-09-26",
-    "end": "2026-09-26"
+    "start": "2025-09-27",
+    "end": "2026-09-27"
   },
-  "total": 1521,
+  "total": 1525,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -562,16 +562,24 @@
     {
       "date": "2026-09-25",
       "count": 15
+    },
+    {
+      "date": "2026-09-26",
+      "count": 3
+    },
+    {
+      "date": "2026-09-27",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 438
+      "count": 440
     },
     {
       "path": "/galeria",
-      "count": 155
+      "count": 156
     },
     {
       "path": "/festivals",
@@ -595,7 +603,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/qui-som",
@@ -767,16 +775,16 @@
     }
   ],
   "by_lang": {
-    "en": 262,
+    "en": 263,
     "ca": 18,
     "es": 27
   },
   "by_section": {
-    "inici": 458,
-    "galeria": 162,
+    "inici": 460,
+    "galeria": 163,
     "festivals": 141,
     "serveis": 126,
-    "noticies": 156,
+    "noticies": 157,
     "blog": 50,
     "contacte": 55,
     "qui-som": 42,
@@ -814,7 +822,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -859,88 +867,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 85
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 42
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 28
-    },
-    {
-      "path": "/cerca",
-      "count": 22
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 19
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 18
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/contact",
-      "count": 13
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
-    },
-    {
-      "path": "/about",
-      "count": 10
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 10
-    },
-    {
-      "path": "/arxiu",
-      "count": 9
-    },
-    {
-      "path": "/blog.pocallum.cat",
-      "count": 9
-    },
-    {
-      "path": "/?query-0-page=2",
-      "count": 9
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 23,
@@ -953,7 +880,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1901
+      "count": 1903
     },
     {
       "name": "Safari",
@@ -1000,7 +927,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 254
+      "count": 256
     },
     {
       "name": "Chrome OS",
@@ -1012,7 +939,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1561
+      "count": 1563
     },
     {
       "name": "phone",
@@ -1039,7 +966,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 278
+      "count": 280
     },
     {
       "name": "Brazil",
@@ -1111,7 +1038,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1335
+      "count": 1338
     },
     {
       "name": "Google",
@@ -1124,14 +1051,19 @@
       "count": 31
     },
     {
+      "name": "chatgpt.com",
+      "id": "chatgpt.com",
+      "count": 31
+    },
+    {
       "name": "ig",
       "id": "ig",
       "count": 30
     },
     {
-      "name": "chatgpt.com",
-      "id": "chatgpt.com",
-      "count": 30
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 22
     },
     {
       "name": "blog.pocallum.cat",
@@ -1139,19 +1071,14 @@
       "count": 20
     },
     {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
-      "count": 20
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 17
     },
     {
       "name": "about.pocallum.cat",
       "id": "about.pocallum.cat",
       "count": 17
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 15
     },
     {
       "name": "www.bing.com",
