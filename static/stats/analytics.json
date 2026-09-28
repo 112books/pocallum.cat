@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-27T22:43:16.092234Z",
+  "generated": "2026-09-28T01:18:44.258658Z",
   "period": {
-    "start": "2025-09-27",
-    "end": "2026-09-27"
+    "start": "2025-09-28",
+    "end": "2026-09-28"
   },
-  "total": 1525,
+  "total": 1537,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -569,17 +569,21 @@
     },
     {
       "date": "2026-09-27",
-      "count": 1
+      "count": 10
+    },
+    {
+      "date": "2026-09-28",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 440
+      "count": 444
     },
     {
       "path": "/galeria",
-      "count": 156
+      "count": 159
     },
     {
       "path": "/festivals",
@@ -587,11 +591,11 @@
     },
     {
       "path": "/serveis",
-      "count": 65
+      "count": 66
     },
     {
       "path": "/noticies",
-      "count": 54
+      "count": 55
     },
     {
       "path": "/blog",
@@ -615,7 +619,7 @@
     },
     {
       "path": "/obra",
-      "count": 28
+      "count": 29
     },
     {
       "path": "/en/legal/privacitat",
@@ -714,6 +718,10 @@
       "count": 7
     },
     {
+      "path": "/serveis/fotollibre",
+      "count": 6
+    },
+    {
       "path": "/en/qui-som",
       "count": 6
     },
@@ -754,10 +762,6 @@
       "count": 5
     },
     {
-      "path": "/serveis/fotollibre",
-      "count": 5
-    },
-    {
       "path": "/festivals/vijazz",
       "count": 5
     },
@@ -780,15 +784,15 @@
     "es": 27
   },
   "by_section": {
-    "inici": 460,
-    "galeria": 163,
-    "festivals": 141,
-    "serveis": 126,
-    "noticies": 157,
+    "inici": 464,
+    "galeria": 166,
+    "festivals": 142,
+    "serveis": 128,
+    "noticies": 158,
     "blog": 50,
     "contacte": 55,
     "qui-som": 42,
-    "obra": 50,
+    "obra": 51,
     "legal": 73,
     "el-blog": 18,
     "cerca": 18,
@@ -867,88 +871,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 85
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 42
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 28
-    },
-    {
-      "path": "/cerca",
-      "count": 22
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 20
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 18
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 16
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/contact",
-      "count": 13
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 12
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
-    },
-    {
-      "path": "/about",
-      "count": 10
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 10
-    },
-    {
-      "path": "/arxiu",
-      "count": 9
-    },
-    {
-      "path": "/blog.pocallum.cat",
-      "count": 9
-    },
-    {
-      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
-      "count": 9
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 23,
@@ -961,7 +884,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1913
+      "count": 1918
     },
     {
       "name": "Safari",
@@ -1008,7 +931,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 259
+      "count": 264
     },
     {
       "name": "Chrome OS",
@@ -1035,7 +958,7 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 187
+      "count": 192
     }
   ],
   "locations": [
@@ -1052,7 +975,7 @@
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 68
+      "count": 69
     },
     {
       "name": "Singapore",
@@ -1097,7 +1020,7 @@
     {
       "name": "Pakistan",
       "id": "PK",
-      "count": 27
+      "count": 29
     },
     {
       "name": "Vietnam",
@@ -1119,12 +1042,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1338
+      "count": 1350
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 190
+      "count": 194
     },
     {
       "name": "l.instagram.com",
