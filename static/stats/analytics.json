@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T00:53:56.814655Z",
+  "generated": "2026-09-30T06:10:09.404230Z",
   "period": {
     "start": "2025-09-30",
     "end": "2026-09-30"
@@ -879,88 +879,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 86
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 42
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 28
-    },
-    {
-      "path": "/cerca",
-      "count": 25
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 23
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 21
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 19
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 17
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/contact",
-      "count": 14
-    },
-    {
-      "path": "/arxiu",
-      "count": 13
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 13
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 13
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/04/2026-09-04-lanomala",
-      "count": 11
-    },
-    {
-      "path": "/about",
-      "count": 11
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 10
-    },
-    {
-      "path": "/blog.pocallum.cat",
-      "count": 9
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 25,
@@ -973,7 +892,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1938
+      "count": 1942
     },
     {
       "name": "Safari",
@@ -1005,12 +924,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 598
+      "count": 599
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 379
+      "count": 382
     },
     {
       "name": "iOS",
@@ -1037,7 +956,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 610
+      "count": 613
     },
     {
       "name": "desktophd",
@@ -1047,14 +966,14 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 197
+      "count": 198
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1702
+      "count": 1705
     },
     {
       "name": "United States",
