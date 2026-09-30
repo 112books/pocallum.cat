@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-29T21:10:08.546517Z",
+  "generated": "2026-09-30T00:53:56.814655Z",
   "period": {
-    "start": "2025-09-29",
-    "end": "2026-09-29"
+    "start": "2025-09-30",
+    "end": "2026-09-30"
   },
-  "total": 1546,
+  "total": 1555,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "date": "2026-05-27",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-05-28",
@@ -221,7 +221,7 @@
     },
     {
       "date": "2026-07-01",
-      "count": 4
+      "count": 2
     },
     {
       "date": "2026-07-02",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 36
+      "count": 35
     },
     {
       "date": "2026-07-07",
@@ -289,7 +289,7 @@
     },
     {
       "date": "2026-07-18",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-07-19",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-07-28",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-07-29",
@@ -373,7 +373,7 @@
     },
     {
       "date": "2026-08-08",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-08-09",
@@ -501,7 +501,7 @@
     },
     {
       "date": "2026-09-10",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-09-11",
@@ -525,11 +525,11 @@
     },
     {
       "date": "2026-09-16",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-09-17",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-09-18",
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-09-24",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-09-25",
@@ -574,16 +574,24 @@
     {
       "date": "2026-09-28",
       "count": 12
+    },
+    {
+      "date": "2026-09-29",
+      "count": 8
+    },
+    {
+      "date": "2026-09-30",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 448
+      "count": 450
     },
     {
       "path": "/galeria",
-      "count": 159
+      "count": 160
     },
     {
       "path": "/festivals",
@@ -595,7 +603,7 @@
     },
     {
       "path": "/noticies",
-      "count": 55
+      "count": 56
     },
     {
       "path": "/blog",
@@ -603,11 +611,11 @@
     },
     {
       "path": "/contacte",
-      "count": 48
+      "count": 49
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/qui-som",
@@ -643,7 +651,7 @@
     },
     {
       "path": "/el-blog",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/cerca",
@@ -686,6 +694,10 @@
       "count": 8
     },
     {
+      "path": "/legal/privacitat",
+      "count": 8
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 8
     },
@@ -703,10 +715,6 @@
     },
     {
       "path": "/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one",
-      "count": 7
-    },
-    {
-      "path": "/legal/privacitat",
       "count": 7
     },
     {
@@ -779,22 +787,22 @@
     }
   ],
   "by_lang": {
-    "en": 264,
+    "en": 259,
     "ca": 18,
     "es": 27
   },
   "by_section": {
-    "inici": 468,
-    "galeria": 166,
+    "inici": 470,
+    "galeria": 167,
     "festivals": 142,
     "serveis": 129,
-    "noticies": 160,
+    "noticies": 165,
     "blog": 50,
-    "contacte": 56,
+    "contacte": 57,
     "qui-som": 42,
     "obra": 52,
-    "legal": 73,
-    "el-blog": 18,
+    "legal": 78,
+    "el-blog": 19,
     "cerca": 18,
     "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -805,12 +813,12 @@
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 8,
-    "tags": 7,
+    "tags": 4,
     "2025": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
-    "content": 19,
+    "content": 16,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
@@ -826,7 +834,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -886,23 +894,23 @@
     },
     {
       "path": "/cerca",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 18
+      "count": 21
     },
     {
       "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 18
+      "count": 19
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 16
+      "count": 17
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -914,34 +922,34 @@
     },
     {
       "path": "/contact",
+      "count": 14
+    },
+    {
+      "path": "/arxiu",
       "count": 13
     },
     {
       "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/aviso-legal",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 12
     },
     {
-      "path": "/arxiu",
+      "path": "/2026/09/04/2026-09-04-lanomala",
+      "count": 11
+    },
+    {
+      "path": "/about",
       "count": 11
     },
     {
       "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
-    },
-    {
-      "path": "/2026/09/04/2026-09-04-lanomala",
-      "count": 10
-    },
-    {
-      "path": "/about",
       "count": 10
     },
     {
@@ -955,7 +963,7 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 18,
-    "wizard-s2": 24,
+    "wizard-s2": 25,
     "wizard-s3": 8,
     "wizard-s4": 6,
     "wizard-sent": 6
@@ -970,7 +978,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 868
+      "count": 870
     },
     {
       "name": "Firefox",
@@ -992,7 +1000,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1373
+      "count": 1375
     },
     {
       "name": "Windows",
@@ -1024,7 +1032,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1594
+      "count": 1596
     },
     {
       "name": "phone",
@@ -1046,7 +1054,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1700
+      "count": 1702
     },
     {
       "name": "United States",
@@ -1123,12 +1131,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1354
+      "count": 1362
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 202
+      "count": 206
     },
     {
       "name": "l.instagram.com",
