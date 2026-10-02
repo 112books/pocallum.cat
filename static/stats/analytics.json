@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-01T20:41:16.778187Z",
+  "generated": "2026-10-02T00:20:45.880246Z",
   "period": {
-    "start": "2025-10-01",
-    "end": "2026-10-01"
+    "start": "2025-10-02",
+    "end": "2026-10-02"
   },
-  "total": 1558,
+  "total": 1563,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -582,12 +582,16 @@
     {
       "date": "2026-09-30",
       "count": 5
+    },
+    {
+      "date": "2026-10-01",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 451
+      "count": 454
     },
     {
       "path": "/galeria",
@@ -623,7 +627,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 34
+      "count": 35
     },
     {
       "path": "/obra",
@@ -638,12 +642,12 @@
       "count": 25
     },
     {
-      "path": "/en/legal/cookies",
+      "path": "/el-blog",
       "count": 21
     },
     {
-      "path": "/el-blog",
-      "count": 20
+      "path": "/en/legal/cookies",
+      "count": 21
     },
     {
       "path": "/en/legal/avis-legal",
@@ -792,17 +796,17 @@
     "es": 27
   },
   "by_section": {
-    "inici": 471,
+    "inici": 474,
     "galeria": 167,
     "festivals": 142,
     "serveis": 129,
-    "noticies": 166,
+    "noticies": 167,
     "blog": 50,
     "contacte": 57,
     "qui-som": 42,
     "obra": 52,
     "legal": 78,
-    "el-blog": 20,
+    "el-blog": 21,
     "cerca": 18,
     "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -838,7 +842,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 34
+      "count": 35
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -894,11 +898,11 @@
     },
     {
       "path": "/cerca",
-      "count": 25
+      "count": 26
     },
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 23
+      "count": 24
     },
     {
       "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
@@ -968,7 +972,7 @@
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 41,
+  "avg_time_on_site_seconds": 42,
   "browsers": [
     {
       "name": "Chrome",
@@ -1131,12 +1135,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1363
+      "count": 1364
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 208
+      "count": 210
     },
     {
       "name": "l.instagram.com",
@@ -1154,14 +1158,14 @@
       "count": 31
     },
     {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
+      "name": "blog.pocallum.cat",
+      "id": "blog.pocallum.cat",
       "count": 22
     },
     {
-      "name": "blog.pocallum.cat",
-      "id": "blog.pocallum.cat",
-      "count": 20
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 22
     },
     {
       "name": "www.facebook.com",
