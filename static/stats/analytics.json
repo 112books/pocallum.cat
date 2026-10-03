@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-02T22:41:42.846028Z",
+  "generated": "2026-10-03T01:34:04.415790Z",
   "period": {
-    "start": "2025-10-02",
-    "end": "2026-10-02"
+    "start": "2025-10-03",
+    "end": "2026-10-03"
   },
-  "total": 1563,
+  "total": 1573,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -197,7 +197,7 @@
     },
     {
       "date": "2026-06-25",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-06-26",
@@ -225,7 +225,7 @@
     },
     {
       "date": "2026-07-02",
-      "count": 22
+      "count": 21
     },
     {
       "date": "2026-07-03",
@@ -233,7 +233,7 @@
     },
     {
       "date": "2026-07-04",
-      "count": 14
+      "count": 13
     },
     {
       "date": "2026-07-05",
@@ -241,7 +241,7 @@
     },
     {
       "date": "2026-07-06",
-      "count": 35
+      "count": 34
     },
     {
       "date": "2026-07-07",
@@ -253,7 +253,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-07-10",
@@ -265,7 +265,7 @@
     },
     {
       "date": "2026-07-12",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-07-13",
@@ -401,7 +401,7 @@
     },
     {
       "date": "2026-08-15",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-08-16",
@@ -573,11 +573,11 @@
     },
     {
       "date": "2026-09-28",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-09-29",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-09-30",
@@ -586,12 +586,16 @@
     {
       "date": "2026-10-01",
       "count": 5
+    },
+    {
+      "date": "2026-10-02",
+      "count": 11
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 454
+      "count": 458
     },
     {
       "path": "/galeria",
@@ -599,7 +603,7 @@
     },
     {
       "path": "/festivals",
-      "count": 74
+      "count": 75
     },
     {
       "path": "/serveis",
@@ -622,16 +626,16 @@
       "count": 42
     },
     {
+      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
+      "count": 37
+    },
+    {
       "path": "/qui-som",
       "count": 36
     },
     {
-      "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 35
-    },
-    {
       "path": "/obra",
-      "count": 30
+      "count": 31
     },
     {
       "path": "/en/legal/privacitat",
@@ -791,20 +795,20 @@
     }
   ],
   "by_lang": {
-    "en": 259,
+    "en": 256,
     "ca": 18,
-    "es": 27
+    "es": 24
   },
   "by_section": {
-    "inici": 474,
+    "inici": 478,
     "galeria": 167,
-    "festivals": 142,
+    "festivals": 147,
     "serveis": 129,
-    "noticies": 167,
+    "noticies": 169,
     "blog": 50,
     "contacte": 57,
     "qui-som": 42,
-    "obra": 52,
+    "obra": 57,
     "legal": 78,
     "el-blog": 21,
     "cerca": 18,
@@ -816,13 +820,13 @@
     "testing-vintage-cameras": 5,
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
-    "servicios-fotograficos": 8,
+    "servicios-fotograficos": 5,
     "tags": 4,
     "2025": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
-    "content": 16,
+    "content": 13,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "contact": 3,
@@ -842,7 +846,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 35
+      "count": 37
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -898,11 +902,11 @@
     },
     {
       "path": "/cerca",
-      "count": 26
+      "count": 27
     },
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 24
+      "count": 25
     },
     {
       "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
@@ -910,7 +914,7 @@
     },
     {
       "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
@@ -921,16 +925,16 @@
       "count": 16
     },
     {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
       "path": "/contact",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/arxiu",
-      "count": 13
+      "count": 14
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 14
     },
     {
       "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
@@ -941,20 +945,20 @@
       "count": 13
     },
     {
+      "path": "/about",
+      "count": 13
+    },
+    {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 12
     },
     {
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 11
+    },
+    {
       "path": "/2026/09/04/2026-09-04-lanomala",
       "count": 11
-    },
-    {
-      "path": "/about",
-      "count": 11
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 10
     },
     {
       "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
@@ -1135,7 +1139,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1364
+      "count": 1373
     },
     {
       "name": "Google",
