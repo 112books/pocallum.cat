@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T01:34:04.415790Z",
+  "generated": "2026-10-03T07:18:22.211548Z",
   "period": {
     "start": "2025-10-03",
     "end": "2026-10-03"
@@ -981,12 +981,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 1953
+      "count": 1959
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 894
+      "count": 897
     },
     {
       "name": "Firefox",
@@ -996,7 +996,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 26
+      "count": 30
     },
     {
       "name": "Edge",
@@ -1008,17 +1008,17 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1393
+      "count": 1396
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 606
+      "count": 608
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 384
+      "count": 388
     },
     {
       "name": "iOS",
@@ -1031,6 +1031,11 @@
       "count": 264
     },
     {
+      "name": "Desconegut",
+      "id": "Desconegut",
+      "count": 4
+    },
+    {
       "name": "Chrome OS",
       "id": "Chrome OS",
       "count": 4
@@ -1040,17 +1045,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1612
+      "count": 1614
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 623
+      "count": 627
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 501
+      "count": 508
     },
     {
       "name": "tablet",
@@ -1062,12 +1067,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1734
+      "count": 1737
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 287
+      "count": 291
     },
     {
       "name": "Brazil",
@@ -1087,7 +1092,7 @@
     {
       "name": "Germany",
       "id": "DE",
-      "count": 40
+      "count": 44
     },
     {
       "name": "Bangladesh",
@@ -1132,7 +1137,7 @@
     {
       "name": "Sweden",
       "id": "SE",
-      "count": 24
+      "count": 25
     }
   ],
   "refs": [
