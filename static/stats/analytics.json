@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-05T16:40:28.083195Z",
+  "generated": "2026-10-06T02:46:25.894057Z",
   "period": {
-    "start": "2025-10-05",
-    "end": "2026-10-05"
+    "start": "2025-10-06",
+    "end": "2026-10-06"
   },
-  "total": 1588,
+  "total": 1595,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -598,16 +598,24 @@
     {
       "date": "2026-10-04",
       "count": 5
+    },
+    {
+      "date": "2026-10-05",
+      "count": 6
+    },
+    {
+      "date": "2026-10-06",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 463
+      "count": 466
     },
     {
       "path": "/galeria",
-      "count": 161
+      "count": 162
     },
     {
       "path": "/festivals",
@@ -655,7 +663,7 @@
     },
     {
       "path": "/el-blog",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/en/legal/cookies",
@@ -742,6 +750,10 @@
       "count": 7
     },
     {
+      "path": "/en/serveis/artistic-portfolios",
+      "count": 6
+    },
+    {
       "path": "/serveis/fotollibre",
       "count": 6
     },
@@ -760,10 +772,6 @@
     {
       "path": "/festivals/flamenco-de-barrio",
       "count": 6
-    },
-    {
-      "path": "/en/serveis/artistic-portfolios",
-      "count": 5
     },
     {
       "path": "/festivals/barcelona-tattoo-expo",
@@ -803,22 +811,22 @@
     }
   ],
   "by_lang": {
-    "en": 255,
+    "en": 257,
     "ca": 18,
     "es": 21
   },
   "by_section": {
-    "inici": 483,
-    "galeria": 169,
+    "inici": 486,
+    "galeria": 170,
     "festivals": 150,
-    "serveis": 133,
+    "serveis": 134,
     "noticies": 175,
     "blog": 50,
     "contacte": 57,
     "qui-som": 42,
-    "obra": 57,
+    "obra": 58,
     "legal": 78,
-    "el-blog": 22,
+    "el-blog": 23,
     "cerca": 18,
     "node": 43,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -897,88 +905,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 86
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 43
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 29
-    },
-    {
-      "path": "/cerca",
-      "count": 29
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 27
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 23
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 20
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 19
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/contact",
-      "count": 15
-    },
-    {
-      "path": "/arxiu",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 13
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 13
-    },
-    {
-      "path": "/about",
-      "count": 13
-    },
-    {
-      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
-      "count": 12
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 11
-    },
-    {
-      "path": "/2026/09/04/2026-09-04-lanomala",
-      "count": 11
-    },
-    {
-      "path": "/2026/07/06/2026-07-03a05-24-festival-de-blues-de-barcelona",
-      "count": 10
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 25,
@@ -996,12 +923,12 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 907
+      "count": 915
     },
     {
       "name": "Firefox",
       "id": "Firefox",
-      "count": 57
+      "count": 75
     },
     {
       "name": "Desconegut",
@@ -1018,12 +945,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1404
+      "count": 1406
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 624
+      "count": 642
     },
     {
       "name": "Android",
@@ -1033,7 +960,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 289
+      "count": 295
     },
     {
       "name": "Linux",
@@ -1055,17 +982,17 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1632
+      "count": 1650
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 640
+      "count": 646
     },
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 512
+      "count": 514
     },
     {
       "name": "tablet",
@@ -1077,7 +1004,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1766
+      "count": 1774
     },
     {
       "name": "United States",
@@ -1103,6 +1030,11 @@
       "name": "Germany",
       "id": "DE",
       "count": 44
+    },
+    {
+      "name": "Netherlands",
+      "id": "NL",
+      "count": 40
     },
     {
       "name": "Bangladesh",
@@ -1143,18 +1075,13 @@
       "name": "Vietnam",
       "id": "VN",
       "count": 26
-    },
-    {
-      "name": "Sweden",
-      "id": "SE",
-      "count": 25
     }
   ],
   "refs": [
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1385
+      "count": 1391
     },
     {
       "name": "Google",
@@ -1167,13 +1094,13 @@
       "count": 32
     },
     {
-      "name": "ig",
-      "id": "ig",
-      "count": 31
-    },
-    {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
+      "count": 32
+    },
+    {
+      "name": "ig",
+      "id": "ig",
       "count": 31
     },
     {
