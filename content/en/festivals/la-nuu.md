@@ -1,5 +1,5 @@
 ---
-title: "La Nuu, International Photography Festival of Rubí"
+title: "La Nuu"
 description: "La Nuu, international photography festival in Rubí. Contemporary photography in the streets, on giant banners, with guided tours."
 date: 2026-10-03
 anys: "2025 – 2026"
@@ -10,6 +10,8 @@ image: "/images/festivals/la-nuu.jpg"
 tags: ["photography", "rubi", "contemporary-photography", "street-art"]
 draft: false
 ---
+
+## International Photography Festival of Rubí
 
 The contemporary photography festival of Rubí, [La Nuu](https://www.lanuu.cat/), frees photography from enclosed spaces and spreads it through the streets of the city. There are no rooms or display cases: the works are printed on giant banners and hung on squares and façades. The result is a festival you walk through on foot, one that lets you look at contemporary photography with the same freedom with which you look at the city.
 

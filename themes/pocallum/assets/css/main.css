@@ -2455,6 +2455,17 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   padding-bottom: var(--space-32);
 }
 
+/* Subtítol: primer H2 del cos (ex. "La Nuu" → "Festival Internacional de Fotografia de Rubí") */
+.festival-single__body .prose > h2:first-child {
+  margin-top: 0;
+  margin-bottom: var(--space-8);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.35;
+  color: var(--mid);
+}
+
 /* ── Festival nav strip (bottom of single) ─────────────────────────────────── */
 .festival-nav-strip {
   border-top: 1px solid var(--line);
