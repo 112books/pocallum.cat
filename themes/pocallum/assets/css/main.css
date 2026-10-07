@@ -2255,12 +2255,12 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   object-fit: cover;
   transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               filter 0.6s ease;
-  filter: brightness(0.22) saturate(0.4);
+  filter: brightness(0.5) saturate(0.6);
   will-change: transform, filter;
 }
 .festival-card:hover .festival-card__bg img {
   transform: scale(1.08);
-  filter: brightness(0.6) saturate(1);
+  filter: brightness(0.82) saturate(1);
 }
 
 /* No image: dark gradient fill */

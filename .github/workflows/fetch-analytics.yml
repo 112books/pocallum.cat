@@ -29,9 +29,9 @@ jobs:
 
           CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}") || true
           if ! echo "${CHECK}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
-            echo "::warning::Token GoatCounter invàlid o expirat — actualitza el secret GOATCOUNTER_TOKEN a GitHub → Settings → Secrets."
+            echo "::error::Token GoatCounter invàlid o expirat — actualitza el secret GOATCOUNTER_TOKEN a GitHub → Settings → Secrets."
             echo "token_ok=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            exit 1
           fi
           echo "token_ok=true" >> "$GITHUB_OUTPUT"
 
