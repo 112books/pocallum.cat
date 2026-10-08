@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-07T20:21:53.325643Z",
+  "generated": "2026-10-08T00:34:55.772909Z",
   "period": {
-    "start": "2025-10-07",
-    "end": "2026-10-07"
+    "start": "2025-10-08",
+    "end": "2026-10-08"
   },
-  "total": 1618,
+  "total": 1644,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -609,21 +609,21 @@
     },
     {
       "date": "2026-10-07",
-      "count": 2
+      "count": 28
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 470
+      "count": 479
     },
     {
       "path": "/galeria",
-      "count": 164
+      "count": 173
     },
     {
       "path": "/festivals",
-      "count": 77
+      "count": 82
     },
     {
       "path": "/serveis",
@@ -643,7 +643,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 43
+      "count": 44
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -658,16 +658,16 @@
       "count": 32
     },
     {
+      "path": "/el-blog",
+      "count": 25
+    },
+    {
       "path": "/en/legal/privacitat",
       "count": 25
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
       "count": 25
-    },
-    {
-      "path": "/el-blog",
-      "count": 24
     },
     {
       "path": "/en/legal/cookies",
@@ -746,6 +746,10 @@
       "count": 7
     },
     {
+      "path": "/festivals/barcelona-tattoo-expo",
+      "count": 7
+    },
+    {
       "path": "/en/serveis",
       "count": 7
     },
@@ -755,10 +759,6 @@
     },
     {
       "path": "/en/serveis/artistic-portfolios",
-      "count": 6
-    },
-    {
-      "path": "/festivals/barcelona-tattoo-expo",
       "count": 6
     },
     {
@@ -815,22 +815,22 @@
     }
   ],
   "by_lang": {
-    "en": 258,
+    "en": 259,
     "ca": 15,
     "es": 21
   },
   "by_section": {
-    "inici": 491,
-    "galeria": 172,
-    "festivals": 152,
+    "inici": 500,
+    "galeria": 181,
+    "festivals": 158,
     "serveis": 137,
-    "noticies": 179,
+    "noticies": 180,
     "contacte": 58,
     "blog": 50,
     "qui-som": 43,
     "obra": 59,
+    "el-blog": 25,
     "legal": 83,
-    "el-blog": 24,
     "cerca": 19,
     "node": 40,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
@@ -860,7 +860,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 43
+      "count": 44
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -893,12 +893,12 @@
       "count": 8
     },
     {
-      "path": "/festivals/im-jazz",
+      "path": "/festivals/barcelona-tattoo-expo",
       "count": 7
     },
     {
-      "path": "/festivals/barcelona-tattoo-expo",
-      "count": 6
+      "path": "/festivals/im-jazz",
+      "count": 7
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
@@ -923,11 +923,11 @@
       "count": 43
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 29
+      "path": "/cerca",
+      "count": 30
     },
     {
-      "path": "/cerca",
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 29
     },
     {
@@ -951,15 +951,19 @@
       "count": 16
     },
     {
+      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
+      "count": 15
+    },
+    {
+      "path": "/arxiu",
+      "count": 15
+    },
+    {
       "path": "/contact",
       "count": 15
     },
     {
-      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
-      "count": 14
-    },
-    {
-      "path": "/arxiu",
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
       "count": 14
     },
     {
@@ -971,7 +975,7 @@
       "count": 14
     },
     {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
       "count": 13
     },
     {
@@ -979,16 +983,12 @@
       "count": 13
     },
     {
-      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
-      "count": 12
-    },
-    {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 12
+      "count": 13
     },
     {
       "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
-      "count": 11
+      "count": 12
     },
     {
       "path": "/2026/09/04/2026-09-04-lanomala",
@@ -1007,7 +1007,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2018
+      "count": 2020
     },
     {
       "name": "Safari",
@@ -1039,7 +1039,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 649
+      "count": 651
     },
     {
       "name": "Android",
@@ -1086,7 +1086,7 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 203
+      "count": 205
     }
   ],
   "locations": [
@@ -1170,27 +1170,27 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1416
+      "count": 1425
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 220
+      "count": 222
+    },
+    {
+      "name": "ig",
+      "id": "ig",
+      "count": 38
+    },
+    {
+      "name": "l.instagram.com",
+      "id": "l.instagram.com",
+      "count": 38
     },
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
       "count": 33
-    },
-    {
-      "name": "l.instagram.com",
-      "id": "l.instagram.com",
-      "count": 32
-    },
-    {
-      "name": "ig",
-      "id": "ig",
-      "count": 31
     },
     {
       "name": "blog.pocallum.cat",
