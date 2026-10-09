@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-08T20:21:35.422446Z",
+  "generated": "2026-10-09T00:50:09.813278Z",
   "period": {
-    "start": "2025-10-08",
-    "end": "2026-10-08"
+    "start": "2025-10-09",
+    "end": "2026-10-09"
   },
-  "total": 1644,
+  "total": 1652,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -229,7 +229,7 @@
     },
     {
       "date": "2026-07-03",
-      "count": 15
+      "count": 14
     },
     {
       "date": "2026-07-04",
@@ -237,11 +237,11 @@
     },
     {
       "date": "2026-07-05",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-07-06",
-      "count": 33
+      "count": 32
     },
     {
       "date": "2026-07-07",
@@ -465,7 +465,7 @@
     },
     {
       "date": "2026-09-01",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-09-02",
@@ -581,7 +581,7 @@
     },
     {
       "date": "2026-09-30",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-10-01",
@@ -610,20 +610,28 @@
     {
       "date": "2026-10-07",
       "count": 28
+    },
+    {
+      "date": "2026-10-08",
+      "count": 8
+    },
+    {
+      "date": "2026-10-09",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 479
+      "count": 481
     },
     {
       "path": "/galeria",
-      "count": 173
+      "count": 175
     },
     {
       "path": "/festivals",
-      "count": 82
+      "count": 83
     },
     {
       "path": "/serveis",
@@ -655,7 +663,7 @@
     },
     {
       "path": "/obra",
-      "count": 32
+      "count": 33
     },
     {
       "path": "/el-blog",
@@ -683,7 +691,7 @@
     },
     {
       "path": "/cerca",
-      "count": 19
+      "count": 20
     },
     {
       "path": "/festivals/festival-blues-barcelona",
@@ -734,6 +742,10 @@
       "count": 8
     },
     {
+      "path": "/festivals/im-jazz",
+      "count": 8
+    },
+    {
       "path": "/serveis-fotografics-2/books-per-actors-i-actrius",
       "count": 8
     },
@@ -751,10 +763,6 @@
     },
     {
       "path": "/en/serveis",
-      "count": 7
-    },
-    {
-      "path": "/festivals/im-jazz",
       "count": 7
     },
     {
@@ -815,24 +823,24 @@
     }
   ],
   "by_lang": {
-    "en": 259,
-    "ca": 15,
+    "en": 262,
+    "ca": 12,
     "es": 21
   },
   "by_section": {
-    "inici": 500,
-    "galeria": 181,
-    "festivals": 158,
-    "serveis": 137,
+    "inici": 502,
+    "galeria": 183,
+    "festivals": 160,
+    "serveis": 140,
     "noticies": 180,
     "contacte": 58,
     "blog": 50,
     "qui-som": 43,
-    "obra": 59,
+    "obra": 60,
     "el-blog": 25,
     "legal": 83,
-    "cerca": 19,
-    "node": 40,
+    "cerca": 20,
+    "node": 37,
     "vijazz-2025-the-jazz-that-brought-me-back-home": 9,
     "serveis-fotografics-2": 8,
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": 7,
@@ -893,11 +901,11 @@
       "count": 8
     },
     {
-      "path": "/festivals/barcelona-tattoo-expo",
-      "count": 7
+      "path": "/festivals/im-jazz",
+      "count": 8
     },
     {
-      "path": "/festivals/im-jazz",
+      "path": "/festivals/barcelona-tattoo-expo",
       "count": 7
     },
     {
@@ -923,12 +931,12 @@
       "count": 43
     },
     {
-      "path": "/cerca",
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 30
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 29
+      "path": "/cerca",
+      "count": 30
     },
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
@@ -991,7 +999,7 @@
       "count": 12
     },
     {
-      "path": "/2026/09/04/2026-09-04-lanomala",
+      "path": "/page/2",
       "count": 11
     }
   ],
@@ -1012,7 +1020,7 @@
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 958
+      "count": 960
     },
     {
       "name": "Firefox",
@@ -1049,7 +1057,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 336
+      "count": 338
     },
     {
       "name": "Linux",
@@ -1076,7 +1084,7 @@
     {
       "name": "phone",
       "id": "phone",
-      "count": 695
+      "count": 697
     },
     {
       "name": "desktophd",
@@ -1093,7 +1101,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1842
+      "count": 1844
     },
     {
       "name": "United States",
@@ -1170,12 +1178,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1425
+      "count": 1431
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 222
+      "count": 226
     },
     {
       "name": "ig",
