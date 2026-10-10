@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-09T23:42:17.442892Z",
+  "generated": "2026-10-10T03:23:14.844293Z",
   "period": {
-    "start": "2025-10-09",
-    "end": "2026-10-09"
+    "start": "2025-10-10",
+    "end": "2026-10-10"
   },
-  "total": 1652,
+  "total": 1664,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -617,25 +617,25 @@
     },
     {
       "date": "2026-10-09",
-      "count": 1
+      "count": 13
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 481
+      "count": 485
     },
     {
       "path": "/galeria",
-      "count": 175
+      "count": 178
     },
     {
       "path": "/festivals",
-      "count": 83
+      "count": 84
     },
     {
       "path": "/serveis",
-      "count": 69
+      "count": 71
     },
     {
       "path": "/noticies",
@@ -643,7 +643,7 @@
     },
     {
       "path": "/contacte",
-      "count": 50
+      "count": 51
     },
     {
       "path": "/blog",
@@ -651,7 +651,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 44
+      "count": 45
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -823,17 +823,17 @@
     }
   ],
   "by_lang": {
-    "en": 262,
+    "en": 263,
     "ca": 12,
     "es": 21
   },
   "by_section": {
-    "inici": 502,
-    "galeria": 183,
-    "festivals": 160,
-    "serveis": 140,
-    "noticies": 180,
-    "contacte": 58,
+    "inici": 506,
+    "galeria": 186,
+    "festivals": 161,
+    "serveis": 142,
+    "noticies": 181,
+    "contacte": 59,
     "blog": 50,
     "qui-som": 43,
     "obra": 60,
@@ -868,7 +868,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 44
+      "count": 45
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -931,11 +931,11 @@
       "count": 43
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 30
+      "path": "/cerca",
+      "count": 31
     },
     {
-      "path": "/cerca",
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
       "count": 30
     },
     {
@@ -995,12 +995,12 @@
       "count": 13
     },
     {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "path": "/page/2",
       "count": 12
     },
     {
-      "path": "/page/2",
-      "count": 11
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 12
     }
   ],
   "wizard_funnel": {
@@ -1178,17 +1178,17 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1431
+      "count": 1436
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 226
+      "count": 230
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 38
+      "count": 39
     },
     {
       "name": "l.instagram.com",
