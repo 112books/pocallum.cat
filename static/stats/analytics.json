@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-10T23:58:54.110962Z",
+  "generated": "2026-10-11T04:21:03.039376Z",
   "period": {
-    "start": "2025-10-10",
-    "end": "2026-10-10"
+    "start": "2025-10-11",
+    "end": "2026-10-11"
   },
-  "total": 1664,
+  "total": 1668,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -618,12 +618,16 @@
     {
       "date": "2026-10-09",
       "count": 13
+    },
+    {
+      "date": "2026-10-10",
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 485
+      "count": 487
     },
     {
       "path": "/galeria",
@@ -667,7 +671,7 @@
     },
     {
       "path": "/el-blog",
-      "count": 25
+      "count": 27
     },
     {
       "path": "/en/legal/privacitat",
@@ -828,7 +832,7 @@
     "es": 21
   },
   "by_section": {
-    "inici": 506,
+    "inici": 508,
     "galeria": 186,
     "festivals": 161,
     "serveis": 142,
@@ -837,7 +841,7 @@
     "blog": 50,
     "qui-som": 43,
     "obra": 60,
-    "el-blog": 25,
+    "el-blog": 27,
     "legal": 83,
     "cerca": 20,
     "node": 37,
@@ -1178,7 +1182,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1436
+      "count": 1437
     },
     {
       "name": "Google",
@@ -1188,12 +1192,12 @@
     {
       "name": "ig",
       "id": "ig",
-      "count": 39
+      "count": 40
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 38
+      "count": 39
     },
     {
       "name": "chatgpt.com",
@@ -1221,8 +1225,8 @@
       "count": 17
     },
     {
-      "name": "www.bing.com",
-      "id": "www.bing.com",
+      "name": "Yahoo",
+      "id": "Yahoo",
       "count": 13
     }
   ]
