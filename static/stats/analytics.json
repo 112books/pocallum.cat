@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T04:34:35.911345Z",
+  "generated": "2026-10-13T12:20:24.635210Z",
   "period": {
     "start": "2025-10-13",
     "end": "2026-10-13"
@@ -1027,12 +1027,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2059
+      "count": 2070
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 976
+      "count": 978
     },
     {
       "name": "Firefox",
@@ -1059,17 +1059,17 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1445
+      "count": 1447
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 668
+      "count": 670
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 413
+      "count": 422
     },
     {
       "name": "iOS",
@@ -1096,12 +1096,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1689
+      "count": 1692
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 712
+      "count": 721
     },
     {
       "name": "desktophd",
@@ -1111,14 +1111,14 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 209
+      "count": 210
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1881
+      "count": 1892
     },
     {
       "name": "United States",
@@ -1153,7 +1153,7 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Colombia",
@@ -1178,7 +1178,7 @@
     {
       "name": "France",
       "id": "FR",
-      "count": 29
+      "count": 30
     },
     {
       "name": "Pakistan",
