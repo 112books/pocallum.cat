@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-13T23:31:08.604149Z",
+  "generated": "2026-10-14T02:44:08.715953Z",
   "period": {
-    "start": "2025-10-13",
-    "end": "2026-10-13"
+    "start": "2025-10-14",
+    "end": "2026-10-14"
   },
-  "total": 1671,
+  "total": 1680,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -630,20 +630,28 @@
     {
       "date": "2026-10-12",
       "count": 2
+    },
+    {
+      "date": "2026-10-13",
+      "count": 8
+    },
+    {
+      "date": "2026-10-14",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 489
+      "count": 492
     },
     {
       "path": "/galeria",
-      "count": 179
+      "count": 180
     },
     {
       "path": "/festivals",
-      "count": 84
+      "count": 85
     },
     {
       "path": "/serveis",
@@ -667,7 +675,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/qui-som",
@@ -690,11 +698,11 @@
       "count": 25
     },
     {
-      "path": "/en/legal/cookies",
-      "count": 21
+      "path": "/serveis/books-per-actors",
+      "count": 22
     },
     {
-      "path": "/serveis/books-per-actors",
+      "path": "/en/legal/cookies",
       "count": 21
     },
     {
@@ -707,7 +715,7 @@
     },
     {
       "path": "/festivals/festival-blues-barcelona",
-      "count": 16
+      "count": 17
     },
     {
       "path": "/obra/balkan-reunion",
@@ -750,6 +758,10 @@
       "count": 8
     },
     {
+      "path": "/festivals/barcelona-tattoo-expo",
+      "count": 8
+    },
+    {
       "path": "/festivals/nou-barris-meets-new-orleans",
       "count": 8
     },
@@ -767,10 +779,6 @@
     },
     {
       "path": "/en/jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one",
-      "count": 7
-    },
-    {
-      "path": "/festivals/barcelona-tattoo-expo",
       "count": 7
     },
     {
@@ -840,11 +848,11 @@
     "es": 21
   },
   "by_section": {
-    "inici": 510,
-    "galeria": 187,
-    "festivals": 161,
-    "serveis": 142,
-    "noticies": 181,
+    "inici": 513,
+    "galeria": 188,
+    "festivals": 164,
+    "serveis": 143,
+    "noticies": 182,
     "contacte": 59,
     "blog": 50,
     "qui-som": 43,
@@ -884,7 +892,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -902,11 +910,15 @@
   "festivals_top": [
     {
       "path": "/festivals/festival-blues-barcelona",
-      "count": 16
+      "count": 17
     },
     {
       "path": "/festivals/calella-harmonica-festival",
       "count": 10
+    },
+    {
+      "path": "/festivals/barcelona-tattoo-expo",
+      "count": 8
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
@@ -915,10 +927,6 @@
     {
       "path": "/festivals/im-jazz",
       "count": 8
-    },
-    {
-      "path": "/festivals/barcelona-tattoo-expo",
-      "count": 7
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
@@ -933,7 +941,88 @@
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 86
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 43
+    },
+    {
+      "path": "/cerca",
+      "count": 32
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 30
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
+      "count": 28
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
+      "count": 24
+    },
+    {
+      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
+      "count": 20
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 19
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 16
+    },
+    {
+      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
+      "count": 15
+    },
+    {
+      "path": "/arxiu",
+      "count": 15
+    },
+    {
+      "path": "/contact",
+      "count": 15
+    },
+    {
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "count": 14
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 14
+    },
+    {
+      "path": "/about",
+      "count": 14
+    },
+    {
+      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
+      "count": 14
+    },
+    {
+      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
+      "count": 13
+    },
+    {
+      "path": "/aviso-legal",
+      "count": 13
+    },
+    {
+      "path": "/page/2",
+      "count": 12
+    },
+    {
+      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "count": 12
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 25,
@@ -1114,22 +1203,22 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1444
+      "count": 1452
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 230
+      "count": 232
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 40
+      "count": 41
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 39
+      "count": 40
     },
     {
       "name": "chatgpt.com",
