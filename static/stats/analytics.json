@@ -1,15 +1,15 @@
 {
-  "generated": "2026-10-15T20:43:07.413483Z",
+  "generated": "2026-10-16T02:16:49.996078Z",
   "period": {
-    "start": "2025-10-15",
-    "end": "2026-10-15"
+    "start": "2025-10-16",
+    "end": "2026-10-16"
   },
-  "total": 1688,
+  "total": 1698,
   "total_unique": 0,
   "hits_by_day": [
     {
       "date": "2026-05-09",
-      "count": 16
+      "count": 18
     },
     {
       "date": "2026-05-10",
@@ -229,11 +229,11 @@
     },
     {
       "date": "2026-07-03",
-      "count": 14
+      "count": 13
     },
     {
       "date": "2026-07-04",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-07-05",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 27
+      "count": 26
     },
     {
       "date": "2026-07-09",
@@ -561,7 +561,7 @@
     },
     {
       "date": "2026-09-25",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-09-26",
@@ -638,16 +638,24 @@
     {
       "date": "2026-10-14",
       "count": 9
+    },
+    {
+      "date": "2026-10-15",
+      "count": 7
+    },
+    {
+      "date": "2026-10-16",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 495
+      "count": 496
     },
     {
       "path": "/galeria",
-      "count": 180
+      "count": 181
     },
     {
       "path": "/festivals",
@@ -655,15 +663,15 @@
     },
     {
       "path": "/serveis",
-      "count": 72
+      "count": 73
     },
     {
       "path": "/noticies",
-      "count": 57
+      "count": 58
     },
     {
       "path": "/contacte",
-      "count": 52
+      "count": 53
     },
     {
       "path": "/blog",
@@ -671,7 +679,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 45
+      "count": 46
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -679,11 +687,11 @@
     },
     {
       "path": "/qui-som",
-      "count": 38
+      "count": 39
     },
     {
       "path": "/obra",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/el-blog",
@@ -730,6 +738,10 @@
       "count": 10
     },
     {
+      "path": "/en/galeria",
+      "count": 9
+    },
+    {
       "path": "/en/node/191/track?page=2%60",
       "count": 9
     },
@@ -748,10 +760,6 @@
     {
       "path": "/ca",
       "count": 9
-    },
-    {
-      "path": "/en/galeria",
-      "count": 8
     },
     {
       "path": "/en/node/191/track?page=2%60%60",
@@ -843,20 +851,20 @@
     }
   ],
   "by_lang": {
-    "en": 263,
+    "en": 266,
     "ca": 12,
     "es": 21
   },
   "by_section": {
-    "inici": 516,
-    "galeria": 188,
-    "festivals": 164,
-    "serveis": 145,
-    "noticies": 183,
-    "contacte": 60,
+    "inici": 517,
+    "galeria": 190,
+    "festivals": 168,
+    "serveis": 146,
+    "noticies": 185,
+    "contacte": 61,
     "blog": 50,
-    "qui-som": 44,
-    "obra": 60,
+    "qui-som": 45,
+    "obra": 61,
     "el-blog": 27,
     "legal": 83,
     "cerca": 20,
@@ -882,13 +890,12 @@
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
     "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
-    "category": 3,
-    "testing-film-kono-monolit-iso64": 3
+    "category": 3
   },
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 45
+      "count": 46
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -948,11 +955,11 @@
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 43
+      "count": 45
     },
     {
       "path": "/cerca",
-      "count": 32
+      "count": 33
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -1025,22 +1032,22 @@
   ],
   "wizard_funnel": {
     "wizard-s1": 18,
-    "wizard-s2": 26,
+    "wizard-s2": 27,
     "wizard-s3": 8,
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 42,
+  "avg_time_on_site_seconds": 41,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2101
+      "count": 2105
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 993
+      "count": 999
     },
     {
       "name": "Firefox",
@@ -1072,7 +1079,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 697
+      "count": 701
     },
     {
       "name": "Android",
@@ -1082,7 +1089,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 349
+      "count": 355
     },
     {
       "name": "Linux",
@@ -1104,12 +1111,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1725
+      "count": 1729
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 725
+      "count": 731
     },
     {
       "name": "desktophd",
@@ -1126,7 +1133,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1926
+      "count": 1932
     },
     {
       "name": "United States",
@@ -1136,12 +1143,12 @@
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 78
+      "count": 79
     },
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 62
+      "count": 63
     },
     {
       "name": "Indonesia",
@@ -1171,7 +1178,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 37
+      "count": 39
     },
     {
       "name": "United Kingdom",
@@ -1203,12 +1210,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1463
+      "count": 1472
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 232
+      "count": 235
     },
     {
       "name": "ig",
