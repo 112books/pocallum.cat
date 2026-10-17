@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-16T23:08:19.593489Z",
+  "generated": "2026-10-17T07:19:11.520858Z",
   "period": {
-    "start": "2025-10-16",
-    "end": "2026-10-16"
+    "start": "2025-10-17",
+    "end": "2026-10-17"
   },
-  "total": 1698,
+  "total": 1703,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -645,17 +645,21 @@
     },
     {
       "date": "2026-10-16",
-      "count": 3
+      "count": 6
+    },
+    {
+      "date": "2026-10-17",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 496
+      "count": 499
     },
     {
       "path": "/galeria",
-      "count": 181
+      "count": 182
     },
     {
       "path": "/festivals",
@@ -726,11 +730,11 @@
       "count": 17
     },
     {
-      "path": "/obra/balkan-reunion",
-      "count": 12
+      "path": "/en",
+      "count": 13
     },
     {
-      "path": "/en",
+      "path": "/obra/balkan-reunion",
       "count": 12
     },
     {
@@ -851,13 +855,13 @@
     }
   ],
   "by_lang": {
-    "en": 266,
+    "en": 267,
     "ca": 12,
     "es": 21
   },
   "by_section": {
-    "inici": 517,
-    "galeria": 190,
+    "inici": 521,
+    "galeria": 191,
     "festivals": 168,
     "serveis": 146,
     "noticies": 185,
@@ -1042,12 +1046,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2125
+      "count": 2132
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 999
+      "count": 1001
     },
     {
       "name": "Firefox",
@@ -1079,7 +1083,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 713
+      "count": 716
     },
     {
       "name": "Android",
@@ -1089,12 +1093,12 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 355
+      "count": 357
     },
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 266
+      "count": 270
     },
     {
       "name": "Desconegut",
@@ -1111,12 +1115,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1738
+      "count": 1744
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 738
+      "count": 740
     },
     {
       "name": "desktophd",
@@ -1126,19 +1130,19 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 217
+      "count": 218
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1939
+      "count": 1941
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 307
+      "count": 309
     },
     {
       "name": "Brazil",
@@ -1161,6 +1165,11 @@
       "count": 48
     },
     {
+      "name": "Netherlands",
+      "id": "NL",
+      "count": 42
+    },
+    {
       "name": "Colombia",
       "id": "CO",
       "count": 41
@@ -1173,11 +1182,6 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 40
-    },
-    {
-      "name": "Netherlands",
-      "id": "NL",
       "count": 40
     },
     {
@@ -1210,7 +1214,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1472
+      "count": 1489
     },
     {
       "name": "Google",
