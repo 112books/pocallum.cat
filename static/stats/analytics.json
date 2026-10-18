@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-17T23:38:24.043610Z",
+  "generated": "2026-10-18T02:09:21.815899Z",
   "period": {
-    "start": "2025-10-17",
-    "end": "2026-10-17"
+    "start": "2025-10-18",
+    "end": "2026-10-18"
   },
-  "total": 1703,
+  "total": 1707,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -233,7 +233,7 @@
     },
     {
       "date": "2026-07-04",
-      "count": 11
+      "count": 10
     },
     {
       "date": "2026-07-05",
@@ -249,11 +249,11 @@
     },
     {
       "date": "2026-07-08",
-      "count": 26
+      "count": 25
     },
     {
       "date": "2026-07-09",
-      "count": 19
+      "count": 18
     },
     {
       "date": "2026-07-10",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-07-28",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-07-29",
@@ -381,7 +381,7 @@
     },
     {
       "date": "2026-08-10",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-08-11",
@@ -649,13 +649,13 @@
     },
     {
       "date": "2026-10-17",
-      "count": 2
+      "count": 7
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 499
+      "count": 502
     },
     {
       "path": "/galeria",
@@ -855,15 +855,15 @@
     }
   ],
   "by_lang": {
-    "en": 267,
+    "en": 265,
     "ca": 12,
     "es": 21
   },
   "by_section": {
-    "inici": 521,
-    "galeria": 191,
+    "inici": 524,
+    "galeria": 194,
     "festivals": 168,
-    "serveis": 146,
+    "serveis": 147,
     "noticies": 185,
     "contacte": 61,
     "blog": 50,
@@ -893,8 +893,7 @@
     "services-and-rates": 3,
     "estudio-fotografico-movil": 3,
     "los-mambo-jambo-studio": 3,
-    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3,
-    "category": 3
+    "19th-barcelona-blues-festival-2021-tribute-amadeu-cases": 3
   },
   "noticies_top": [
     {
@@ -963,7 +962,7 @@
     },
     {
       "path": "/cerca",
-      "count": 33
+      "count": 34
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -1214,12 +1213,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1489
+      "count": 1495
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 235
+      "count": 237
     },
     {
       "name": "ig",
@@ -1234,7 +1233,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 35
+      "count": 36
     },
     {
       "name": "pocallum-cat.translate.goog",
