@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-18T22:03:52.783837Z",
+  "generated": "2026-10-19T00:36:31.541596Z",
   "period": {
-    "start": "2025-10-18",
-    "end": "2026-10-18"
+    "start": "2025-10-19",
+    "end": "2026-10-19"
   },
-  "total": 1707,
+  "total": 1712,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -650,12 +650,16 @@
     {
       "date": "2026-10-17",
       "count": 7
+    },
+    {
+      "date": "2026-10-18",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 502
+      "count": 505
     },
     {
       "path": "/galeria",
@@ -687,7 +691,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/qui-som",
@@ -711,7 +715,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 22
+      "count": 23
     },
     {
       "path": "/en/legal/cookies",
@@ -860,11 +864,11 @@
     "es": 21
   },
   "by_section": {
-    "inici": 524,
+    "inici": 527,
     "galeria": 194,
     "festivals": 168,
-    "serveis": 147,
-    "noticies": 185,
+    "serveis": 148,
+    "noticies": 186,
     "contacte": 61,
     "blog": 50,
     "qui-som": 45,
@@ -902,7 +906,7 @@
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/noticies/2026-07-festival-blues-barcelona",
@@ -962,7 +966,7 @@
     },
     {
       "path": "/cerca",
-      "count": 34
+      "count": 35
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -978,7 +982,7 @@
     },
     {
       "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
@@ -1001,6 +1005,10 @@
       "count": 15
     },
     {
+      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
+      "count": 14
+    },
+    {
       "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
       "count": 14
     },
@@ -1015,10 +1023,6 @@
     {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 14
-    },
-    {
-      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
-      "count": 13
     },
     {
       "path": "/aviso-legal",
@@ -1045,7 +1049,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2183
+      "count": 2191
     },
     {
       "name": "Safari",
@@ -1082,7 +1086,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 759
+      "count": 767
     },
     {
       "name": "Android",
@@ -1114,7 +1118,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1787
+      "count": 1795
     },
     {
       "name": "phone",
@@ -1141,7 +1145,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 313
+      "count": 315
     },
     {
       "name": "Brazil",
@@ -1164,14 +1168,14 @@
       "count": 48
     },
     {
+      "name": "Ecuador",
+      "id": "EC",
+      "count": 48
+    },
+    {
       "name": "Colombia",
       "id": "CO",
       "count": 47
-    },
-    {
-      "name": "Ecuador",
-      "id": "EC",
-      "count": 45
     },
     {
       "name": "Netherlands",
@@ -1213,7 +1217,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1495
+      "count": 1550
     },
     {
       "name": "Google",
@@ -1233,7 +1237,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 36
+      "count": 37
     },
     {
       "name": "pocallum-cat.translate.goog",
@@ -1241,14 +1245,14 @@
       "count": 24
     },
     {
+      "name": "www.facebook.com",
+      "id": "www.facebook.com",
+      "count": 23
+    },
+    {
       "name": "blog.pocallum.cat",
       "id": "blog.pocallum.cat",
       "count": 22
-    },
-    {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 21
     },
     {
       "name": "about.pocallum.cat",
