@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T15:28:40.264619Z",
+  "generated": "2026-10-20T19:47:20.692499Z",
   "period": {
     "start": "2025-10-20",
     "end": "2026-10-20"
@@ -963,88 +963,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 86
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 45
-    },
-    {
-      "path": "/cerca",
-      "count": 35
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 30
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 28
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 24
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 21
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 19
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
-      "count": 15
-    },
-    {
-      "path": "/arxiu",
-      "count": 15
-    },
-    {
-      "path": "/contact",
-      "count": 15
-    },
-    {
-      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
-      "count": 14
-    },
-    {
-      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
-      "count": 14
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/about",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 14
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 13
-    },
-    {
-      "path": "/2026/10/18/2026-10-17-14a-revelat-maneres-descapar",
-      "count": 12
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 27,
@@ -1057,7 +976,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2360
+      "count": 2401
     },
     {
       "name": "Safari",
@@ -1094,12 +1013,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 923
+      "count": 962
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 452
+      "count": 454
     },
     {
       "name": "iOS",
@@ -1126,12 +1045,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1947
+      "count": 1986
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 778
+      "count": 780
     },
     {
       "name": "desktophd",
@@ -1148,22 +1067,22 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1996
+      "count": 1998
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 349
+      "count": 355
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 121
+      "count": 122
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 67
+      "count": 74
     },
     {
       "name": "Singapore",
@@ -1173,22 +1092,27 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 58
+      "count": 59
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 55
+      "count": 57
     },
     {
       "name": "Germany",
       "id": "DE",
-      "count": 50
+      "count": 51
     },
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 44
+      "count": 46
+    },
+    {
+      "name": "United Kingdom",
+      "id": "GB",
+      "count": 42
     },
     {
       "name": "Netherlands",
@@ -1196,29 +1120,24 @@
       "count": 42
     },
     {
-      "name": "United Kingdom",
-      "id": "GB",
-      "count": 41
-    },
-    {
       "name": "Venezuela",
       "id": "VE",
-      "count": 41
+      "count": 42
     },
     {
       "name": "France",
       "id": "FR",
-      "count": 37
+      "count": 38
+    },
+    {
+      "name": "Argentina",
+      "id": "AR",
+      "count": 31
     },
     {
       "name": "Vietnam",
       "id": "VN",
       "count": 30
-    },
-    {
-      "name": "Argentina",
-      "id": "AR",
-      "count": 29
     }
   ],
   "refs": [
