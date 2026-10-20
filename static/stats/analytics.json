@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T00:54:43.777321Z",
+  "generated": "2026-10-20T10:39:32.786145Z",
   "period": {
     "start": "2025-10-20",
     "end": "2026-10-20"
@@ -1057,12 +1057,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2242
+      "count": 2316
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1022
+      "count": 1032
     },
     {
       "name": "Firefox",
@@ -1089,12 +1089,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1462
+      "count": 1472
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 805
+      "count": 879
     },
     {
       "name": "Android",
@@ -1126,7 +1126,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1832
+      "count": 1903
     },
     {
       "name": "phone",
@@ -1141,34 +1141,39 @@
     {
       "name": "tablet",
       "id": "tablet",
-      "count": 218
+      "count": 231
     }
   ],
   "locations": [
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1981
+      "count": 1991
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 323
+      "count": 342
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 101
+      "count": 112
     },
     {
       "name": "Singapore",
       "id": "SG",
-      "count": 64
+      "count": 66
+    },
+    {
+      "name": "Colombia",
+      "id": "CO",
+      "count": 61
     },
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 56
+      "count": 58
     },
     {
       "name": "Ecuador",
@@ -1176,14 +1181,14 @@
       "count": 52
     },
     {
-      "name": "Colombia",
-      "id": "CO",
-      "count": 51
-    },
-    {
       "name": "Germany",
       "id": "DE",
-      "count": 49
+      "count": 50
+    },
+    {
+      "name": "Bangladesh",
+      "id": "BD",
+      "count": 43
     },
     {
       "name": "Netherlands",
@@ -1191,24 +1196,19 @@
       "count": 42
     },
     {
-      "name": "Bangladesh",
-      "id": "BD",
-      "count": 41
-    },
-    {
       "name": "United Kingdom",
       "id": "GB",
-      "count": 40
+      "count": 41
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 37
+      "count": 40
     },
     {
       "name": "France",
       "id": "FR",
-      "count": 32
+      "count": 34
     },
     {
       "name": "Pakistan",
@@ -1218,7 +1218,7 @@
     {
       "name": "Vietnam",
       "id": "VN",
-      "count": 27
+      "count": 29
     }
   ],
   "refs": [
