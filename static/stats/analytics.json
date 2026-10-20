@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-19T21:58:33.887146Z",
+  "generated": "2026-10-20T00:54:43.777321Z",
   "period": {
-    "start": "2025-10-19",
-    "end": "2026-10-19"
+    "start": "2025-10-20",
+    "end": "2026-10-20"
   },
-  "total": 1712,
+  "total": 1731,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -654,20 +654,28 @@
     {
       "date": "2026-10-18",
       "count": 5
+    },
+    {
+      "date": "2026-10-19",
+      "count": 14
+    },
+    {
+      "date": "2026-10-20",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 505
+      "count": 509
     },
     {
       "path": "/galeria",
-      "count": 182
+      "count": 188
     },
     {
       "path": "/festivals",
-      "count": 85
+      "count": 87
     },
     {
       "path": "/serveis",
@@ -675,7 +683,7 @@
     },
     {
       "path": "/noticies",
-      "count": 58
+      "count": 59
     },
     {
       "path": "/contacte",
@@ -695,7 +703,7 @@
     },
     {
       "path": "/qui-som",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/obra",
@@ -703,7 +711,7 @@
     },
     {
       "path": "/el-blog",
-      "count": 27
+      "count": 30
     },
     {
       "path": "/en/legal/privacitat",
@@ -806,6 +814,10 @@
       "count": 7
     },
     {
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 7
+    },
+    {
       "path": "/en/serveis/artistic-portfolios",
       "count": 6
     },
@@ -819,10 +831,6 @@
     },
     {
       "path": "/festivals/carnestoltes-nou-barris",
-      "count": 6
-    },
-    {
-      "path": "/festivals/flamenco-de-barrio",
       "count": 6
     },
     {
@@ -864,16 +872,16 @@
     "es": 21
   },
   "by_section": {
-    "inici": 527,
-    "galeria": 194,
-    "festivals": 168,
+    "inici": 531,
+    "galeria": 200,
+    "festivals": 172,
     "serveis": 148,
-    "noticies": 186,
+    "noticies": 187,
     "contacte": 61,
     "blog": 50,
-    "qui-som": 45,
+    "qui-som": 46,
     "obra": 61,
-    "el-blog": 27,
+    "el-blog": 30,
     "legal": 83,
     "cerca": 20,
     "node": 37,
@@ -943,11 +951,11 @@
       "count": 8
     },
     {
-      "path": "/festivals/carnestoltes-nou-barris",
-      "count": 6
+      "path": "/festivals/flamenco-de-barrio",
+      "count": 7
     },
     {
-      "path": "/festivals/flamenco-de-barrio",
+      "path": "/festivals/carnestoltes-nou-barris",
       "count": 6
     },
     {
@@ -1005,6 +1013,10 @@
       "count": 15
     },
     {
+      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
+      "count": 14
+    },
+    {
       "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
       "count": 14
     },
@@ -1029,11 +1041,7 @@
       "count": 13
     },
     {
-      "path": "/page/2",
-      "count": 12
-    },
-    {
-      "path": "/2026/09/06/visa-pour-limage-2026-una-jornada-de-fotoperiodisme-a-perpinya",
+      "path": "/2026/10/18/2026-10-17-14a-revelat-maneres-descapar",
       "count": 12
     }
   ],
@@ -1049,12 +1057,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2235
+      "count": 2242
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1017
+      "count": 1022
     },
     {
       "name": "Firefox",
@@ -1086,17 +1094,17 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 802
+      "count": 805
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 448
+      "count": 452
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 373
+      "count": 378
     },
     {
       "name": "Linux",
@@ -1118,12 +1126,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 1829
+      "count": 1832
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 767
+      "count": 776
     },
     {
       "name": "desktophd",
@@ -1140,7 +1148,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 1972
+      "count": 1981
     },
     {
       "name": "United States",
@@ -1150,7 +1158,7 @@
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 100
+      "count": 101
     },
     {
       "name": "Singapore",
@@ -1160,7 +1168,7 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 55
+      "count": 56
     },
     {
       "name": "Ecuador",
@@ -1190,7 +1198,7 @@
     {
       "name": "United Kingdom",
       "id": "GB",
-      "count": 39
+      "count": 40
     },
     {
       "name": "Venezuela",
@@ -1217,22 +1225,22 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1552
+      "count": 1584
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 237
+      "count": 239
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 41
+      "count": 45
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 40
+      "count": 44
     },
     {
       "name": "chatgpt.com",
@@ -1242,7 +1250,7 @@
     {
       "name": "pocallum-cat.translate.goog",
       "id": "pocallum-cat.translate.goog",
-      "count": 24
+      "count": 28
     },
     {
       "name": "www.facebook.com",
