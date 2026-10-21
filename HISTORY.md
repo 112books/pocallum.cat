@@ -4,6 +4,24 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-10-21 — Propostes i missatges per als artistes del Ciutat Flamenco 2026
+
+**📄 Documents de venda de fotografies — `docs/artistes/ciutat-flamenco-2026/`**
+- Nova carpeta amb `_plantilla-ca.md` (text definitiu de Joan) i `_plantilla-es.md`, `_build.py` que genera MD + PDF (pandoc + WeasyPrint: Syne, IBM Plex, Chicago, accent #FF5500) i `missatges/`.
+- Quatre documents: Adrián Gómez («Cara A y Cara B»), Daniela Martín Heras («A la sombra de un poeta»), Marina Walpercin («De tu libertad») i Esperanza Garrido («Firmamento»). Tots el 18/10/2026 a la Nau Bostik (Ciutat Flamenco, Taller de Músics).
+- Condicions: 200 € (10 fotografies editades) i 350 € (fins a 100). Previsualització en galeria privada de Google Fotos a 1.000 px; l'alta resolució només amb l'opció confirmada. IVA no inclòs. Signatura amb el malnom «Pocallum» i https://pocallum.cat.
+- Versió castellana completa per a Adrián (`adrian-gomez-es.md` / `.pdf`).
+
+**💬 Missatges per Instagram — `missatges/`**
+- Text pla (sense markdown) i per sota de 1.000 caràcters, el límit d'Instagram.
+- To càlid per a Marina Walpercin (ella havia escrit primer); to formal amb vós per a la resta, que és contacte a porta freda i no hi ha confiança.
+- Versió castellana del DM i del peu de foto per a Adrián.
+- Cada missatge enllaça el passi de l'actuació al blog: post de *Districte Flamenco* (els tres primers) i post de *Firmamento*.
+
+**Pendent:** confirmar si l'opció de 200 € són 10 o 50 fotografies — el missatge que ja es va enviar a Marina diu 50 i la resta de material diu 10.
+
+---
+
 ## 2026-09-21 — Eliminació workflow update-blog-stats obsolet
 
 **Diagnosi i neteja — commit `b28c9d7`**
