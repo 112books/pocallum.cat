@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-20T22:49:36.066349Z",
+  "generated": "2026-10-21T01:08:09.321305Z",
   "period": {
-    "start": "2025-10-20",
-    "end": "2026-10-20"
+    "start": "2025-10-21",
+    "end": "2026-10-21"
   },
-  "total": 1731,
+  "total": 1745,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -661,29 +661,29 @@
     },
     {
       "date": "2026-10-20",
-      "count": 5
+      "count": 19
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 509
+      "count": 513
     },
     {
       "path": "/galeria",
-      "count": 188
+      "count": 189
     },
     {
       "path": "/festivals",
-      "count": 87
+      "count": 89
     },
     {
       "path": "/serveis",
-      "count": 73
+      "count": 74
     },
     {
       "path": "/noticies",
-      "count": 59
+      "count": 60
     },
     {
       "path": "/contacte",
@@ -703,15 +703,15 @@
     },
     {
       "path": "/qui-som",
-      "count": 40
+      "count": 41
     },
     {
       "path": "/obra",
-      "count": 34
+      "count": 35
     },
     {
       "path": "/el-blog",
-      "count": 30
+      "count": 31
     },
     {
       "path": "/en/legal/privacitat",
@@ -723,7 +723,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 23
+      "count": 24
     },
     {
       "path": "/en/legal/cookies",
@@ -838,6 +838,10 @@
       "count": 5
     },
     {
+      "path": "/festivals/clot-en-blues",
+      "count": 5
+    },
+    {
       "path": "/en/testing-adox-hr-50-film",
       "count": 5
     },
@@ -860,10 +864,6 @@
     {
       "path": "/legal/cookies",
       "count": 5
-    },
-    {
-      "path": "/festivals/vijazz",
-      "count": 5
     }
   ],
   "by_lang": {
@@ -872,16 +872,16 @@
     "es": 21
   },
   "by_section": {
-    "inici": 531,
-    "galeria": 200,
-    "festivals": 172,
-    "serveis": 148,
-    "noticies": 187,
+    "inici": 535,
+    "galeria": 201,
+    "festivals": 175,
+    "serveis": 150,
+    "noticies": 188,
     "contacte": 61,
     "blog": 50,
-    "qui-som": 46,
-    "obra": 61,
-    "el-blog": 30,
+    "qui-som": 47,
+    "obra": 62,
+    "el-blog": 31,
     "legal": 83,
     "cerca": 20,
     "node": 37,
@@ -959,7 +959,7 @@
       "count": 6
     },
     {
-      "path": "/festivals/vijazz",
+      "path": "/festivals/clot-en-blues",
       "count": 5
     }
   ],
@@ -974,7 +974,7 @@
     },
     {
       "path": "/cerca",
-      "count": 35
+      "count": 36
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -990,11 +990,23 @@
     },
     {
       "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 21
+      "count": 22
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
       "count": 19
+    },
+    {
+      "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
+      "count": 16
+    },
+    {
+      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
+      "count": 16
+    },
+    {
+      "path": "/arxiu",
+      "count": 16
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
@@ -1005,19 +1017,19 @@
       "count": 15
     },
     {
-      "path": "/arxiu",
-      "count": 15
-    },
-    {
       "path": "/contact",
       "count": 15
     },
     {
-      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
-      "count": 14
+      "path": "/about",
+      "count": 15
     },
     {
       "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
+      "count": 14
+    },
+    {
+      "path": "/page/2",
       "count": 14
     },
     {
@@ -1029,20 +1041,8 @@
       "count": 14
     },
     {
-      "path": "/about",
-      "count": 14
-    },
-    {
       "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 14
-    },
-    {
-      "path": "/aviso-legal",
-      "count": 13
-    },
-    {
-      "path": "/2026/10/18/2026-10-17-14a-revelat-maneres-descapar",
-      "count": 12
     }
   ],
   "wizard_funnel": {
@@ -1057,12 +1057,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2434
+      "count": 2456
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1035
+      "count": 1036
     },
     {
       "name": "Firefox",
@@ -1094,7 +1094,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 995
+      "count": 1017
     },
     {
       "name": "Android",
@@ -1104,7 +1104,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 380
+      "count": 381
     },
     {
       "name": "Linux",
@@ -1126,12 +1126,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2019
+      "count": 2041
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 780
+      "count": 781
     },
     {
       "name": "desktophd",
@@ -1148,22 +1148,22 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2002
+      "count": 2003
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 364
+      "count": 366
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 130
+      "count": 134
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 79
+      "count": 82
     },
     {
       "name": "Singapore",
@@ -1173,7 +1173,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 59
+      "count": 60
     },
     {
       "name": "Indonesia",
@@ -1213,34 +1213,34 @@
     {
       "name": "Argentina",
       "id": "AR",
-      "count": 31
+      "count": 32
     },
     {
       "name": "Vietnam",
       "id": "VN",
-      "count": 30
+      "count": 31
     }
   ],
   "refs": [
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1584
+      "count": 1795
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 239
+      "count": 243
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 45
+      "count": 46
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 44
+      "count": 45
     },
     {
       "name": "chatgpt.com",
