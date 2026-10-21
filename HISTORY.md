@@ -17,6 +17,7 @@ Registre de sessions de treball i canvis rellevants.
 - To càlid per a Marina Walpercin (ella havia escrit primer); to formal amb vós per a la resta, que és contacte a porta freda i no hi ha confiança.
 - Versió castellana del DM i del peu de foto per a Adrián.
 - Cada missatge enllaça el passi de l'actuació al blog: post de *Districte Flamenco* (els tres primers) i post de *Firmamento*.
+- Correcció preparada per a Marina Walpercin (`missatges/marina-walpercin-correccio.md`): el DM que se li va enviar deia 50 fotografies i l'opció de 200 € és de 10.
 
 **Decidit:** l'opció de 200 € és de **10 fotografies editades** (confirmat). Queda pendent aclarir-ho amb Marina Walpercin, que va rebre un missatge amb 50.
 
