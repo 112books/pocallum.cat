@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T01:08:09.321305Z",
+  "generated": "2026-10-21T12:34:52.516689Z",
   "period": {
     "start": "2025-10-21",
     "end": "2026-10-21"
@@ -1057,12 +1057,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2456
+      "count": 2505
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1036
+      "count": 1039
     },
     {
       "name": "Firefox",
@@ -1094,7 +1094,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1017
+      "count": 1066
     },
     {
       "name": "Android",
@@ -1104,7 +1104,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 381
+      "count": 384
     },
     {
       "name": "Linux",
@@ -1126,12 +1126,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2041
+      "count": 2090
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 781
+      "count": 784
     },
     {
       "name": "desktophd",
@@ -1148,22 +1148,22 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2003
+      "count": 2006
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 366
+      "count": 371
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 134
+      "count": 140
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 82
+      "count": 92
     },
     {
       "name": "Singapore",
@@ -1173,7 +1173,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 60
+      "count": 63
     },
     {
       "name": "Indonesia",
@@ -1188,12 +1188,12 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 46
+      "count": 47
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 43
+      "count": 47
     },
     {
       "name": "United Kingdom",
@@ -1208,17 +1208,17 @@
     {
       "name": "France",
       "id": "FR",
-      "count": 38
+      "count": 39
     },
     {
       "name": "Argentina",
       "id": "AR",
-      "count": 32
+      "count": 34
     },
     {
       "name": "Vietnam",
       "id": "VN",
-      "count": 31
+      "count": 32
     }
   ],
   "refs": [
