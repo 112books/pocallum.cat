@@ -62,11 +62,25 @@ def main():
     hits_data = safe_get(raw, "hits_data") or {}
     hits_list = safe_get(hits_data, "hits") or []
 
+    # Guard: si /stats/hits ha fallat (null o buit) no sobreescriguis
+    # un analytics.json que ja tenia pàgines.
+    if not hits_list and os.path.exists(output_file):
+        try:
+            with open(output_file) as f:
+                previous = json.load(f)
+            if previous.get("hits"):
+                print("WARN: /stats/hits buit; es conserva l'analytics.json existent")
+                return
+        except (json.JSONDecodeError, OSError):
+            pass
+
     by_lang     = {}
     by_section  = {}
     total       = 0
     hits_by_day = {}
     hits_pages  = {}
+    pages_daily    = {}
+    sections_daily = {}
     events_data = {}
 
     WIZARD_STEPS = ['wizard-s1', 'wizard-s2', 'wizard-s3', 'wizard-s4', 'wizard-sent']
@@ -108,6 +122,10 @@ def main():
             by_section[section] = by_section.get(section, 0) + count
             if date:
                 hits_by_day[date] = hits_by_day.get(date, 0) + count
+                pages_daily.setdefault(path, {})
+                pages_daily[path][date] = pages_daily[path].get(date, 0) + count
+                sections_daily.setdefault(section, {})
+                sections_daily[section][date] = sections_daily[section].get(date, 0) + count
 
         if path_total > 0:
             hits_pages[path] = hits_pages.get(path, 0) + path_total
@@ -117,6 +135,14 @@ def main():
         [{"path": k, "count": v} for k, v in hits_pages.items()],
         key=lambda x: x["count"], reverse=True
     )[:50]
+
+    def sort_daily(daily_map):
+        return {
+            key: dict(sorted(series.items()))
+            for key, series in sorted(
+                daily_map.items(), key=lambda kv: sum(kv[1].values()), reverse=True
+            )
+        }
 
     noticies_top = sorted(
         [h for h in hits_top if '/noticies/' in h['path']],
@@ -174,6 +200,8 @@ def main():
         "hits":         hits_top,
         "by_lang":      by_lang,
         "by_section":   by_section,
+        "pages_daily":    sort_daily(pages_daily),
+        "sections_daily": sort_daily(sections_daily),
         "noticies_top":  noticies_top,
         "festivals_top": festivals_top,
         "blog_top":      blog_top,
