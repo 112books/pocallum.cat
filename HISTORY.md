@@ -18,7 +18,7 @@ Registre de sessions de treball i canvis rellevants.
 - Versió castellana del DM i del peu de foto per a Adrián.
 - Cada missatge enllaça el passi de l'actuació al blog: post de *Districte Flamenco* (els tres primers) i post de *Firmamento*.
 
-**Pendent:** confirmar si l'opció de 200 € són 10 o 50 fotografies — el missatge que ja es va enviar a Marina diu 50 i la resta de material diu 10.
+**Decidit:** l'opció de 200 € és de **10 fotografies editades** (confirmat). Queda pendent aclarir-ho amb Marina Walpercin, que va rebre un missatge amb 50.
 
 ---
 
