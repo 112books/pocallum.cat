@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-21T21:02:22.334261Z",
+  "generated": "2026-10-22T00:19:07.261451Z",
   "period": {
-    "start": "2025-10-21",
-    "end": "2026-10-21"
+    "start": "2025-10-22",
+    "end": "2026-10-22"
   },
-  "total": 1745,
+  "total": 1746,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -662,6 +662,10 @@
     {
       "date": "2026-10-20",
       "count": 19
+    },
+    {
+      "date": "2026-10-21",
+      "count": 1
     }
   ],
   "hits": [
@@ -695,7 +699,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 46
+      "count": 47
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -867,7 +871,7 @@
     }
   ],
   "by_lang": {
-    "en": 265,
+    "en": 266,
     "ca": 12,
     "es": 21
   },
@@ -876,7 +880,7 @@
     "galeria": 201,
     "festivals": 175,
     "serveis": 150,
-    "noticies": 188,
+    "noticies": 189,
     "contacte": 61,
     "blog": 50,
     "qui-som": 47,
@@ -1449,7 +1453,8 @@
       "2026-10-04": 1,
       "2026-10-07": 1,
       "2026-10-09": 1,
-      "2026-10-16": 1
+      "2026-10-16": 1,
+      "2026-10-21": 1
     },
     "/noticies/guia-exposicions-espais-fotografics-barcelona": {
       "2026-06-15": 1,
@@ -2450,7 +2455,8 @@
       "2026-10-16": 1,
       "2026-10-18": 1,
       "2026-10-19": 1,
-      "2026-10-20": 1
+      "2026-10-20": 1,
+      "2026-10-21": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -2975,7 +2981,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 46
+      "count": 47
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -3035,7 +3041,7 @@
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 45
+      "count": 46
     },
     {
       "path": "/cerca",
@@ -3058,12 +3064,12 @@
       "count": 22
     },
     {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 19
+      "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
+      "count": 20
     },
     {
-      "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
-      "count": 16
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 19
     },
     {
       "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
@@ -3122,7 +3128,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2512
+      "count": 2513
     },
     {
       "name": "Safari",
@@ -3159,7 +3165,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1073
+      "count": 1074
     },
     {
       "name": "Android",
@@ -3191,7 +3197,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2095
+      "count": 2096
     },
     {
       "name": "phone",
@@ -3223,7 +3229,7 @@
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 140
+      "count": 141
     },
     {
       "name": "Colombia",
@@ -3290,12 +3296,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1795
+      "count": 1852
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 243
+      "count": 246
     },
     {
       "name": "ig",
