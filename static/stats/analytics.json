@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T05:30:45.629151Z",
+  "generated": "2026-10-25T10:23:53.564290Z",
   "period": {
     "start": "2025-10-25",
     "end": "2026-10-25"
@@ -3181,12 +3181,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2725
+      "count": 2783
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1046
+      "count": 1049
     },
     {
       "name": "Firefox",
@@ -3213,12 +3213,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1478
+      "count": 1481
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1273
+      "count": 1331
     },
     {
       "name": "Android",
@@ -3250,7 +3250,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2289
+      "count": 2350
     },
     {
       "name": "phone",
@@ -3272,27 +3272,27 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2030
+      "count": 2033
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 405
+      "count": 416
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 179
+      "count": 195
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 113
+      "count": 121
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 83
+      "count": 93
     },
     {
       "name": "Singapore",
@@ -3302,12 +3302,12 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 61
+      "count": 62
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 57
+      "count": 59
     },
     {
       "name": "Germany",
@@ -3322,17 +3322,17 @@
     {
       "name": "Argentina",
       "id": "AR",
-      "count": 45
+      "count": 46
+    },
+    {
+      "name": "France",
+      "id": "FR",
+      "count": 44
     },
     {
       "name": "United Kingdom",
       "id": "GB",
       "count": 44
-    },
-    {
-      "name": "France",
-      "id": "FR",
-      "count": 43
     },
     {
       "name": "Netherlands",
