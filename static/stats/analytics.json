@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-24T22:07:05.836339Z",
+  "generated": "2026-10-25T00:41:05.991934Z",
   "period": {
-    "start": "2025-10-24",
-    "end": "2026-10-24"
+    "start": "2025-10-25",
+    "end": "2026-10-25"
   },
-  "total": 1759,
+  "total": 1767,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -673,21 +673,21 @@
     },
     {
       "date": "2026-10-24",
-      "count": 1
+      "count": 9
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 515
+      "count": 518
     },
     {
       "path": "/galeria",
-      "count": 191
+      "count": 192
     },
     {
       "path": "/festivals",
-      "count": 90
+      "count": 91
     },
     {
       "path": "/serveis",
@@ -695,7 +695,7 @@
     },
     {
       "path": "/noticies",
-      "count": 60
+      "count": 61
     },
     {
       "path": "/contacte",
@@ -719,11 +719,11 @@
     },
     {
       "path": "/obra",
-      "count": 36
+      "count": 37
     },
     {
       "path": "/el-blog",
-      "count": 32
+      "count": 33
     },
     {
       "path": "/en/legal/privacitat",
@@ -884,16 +884,16 @@
     "es": 21
   },
   "by_section": {
-    "inici": 537,
-    "galeria": 203,
-    "festivals": 181,
+    "inici": 540,
+    "galeria": 204,
+    "festivals": 182,
     "serveis": 152,
-    "noticies": 189,
+    "noticies": 190,
     "contacte": 62,
     "blog": 50,
     "qui-som": 48,
-    "obra": 63,
-    "el-blog": 32,
+    "obra": 64,
+    "el-blog": 33,
     "legal": 83,
     "cerca": 20,
     "node": 34,
@@ -1075,7 +1075,8 @@
       "2026-10-18": 3,
       "2026-10-19": 3,
       "2026-10-20": 5,
-      "2026-10-22": 2
+      "2026-10-22": 2,
+      "2026-10-24": 3
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1173,7 +1174,8 @@
       "2026-10-16": 1,
       "2026-10-19": 4,
       "2026-10-20": 3,
-      "2026-10-22": 2
+      "2026-10-22": 2,
+      "2026-10-24": 1
     },
     "/festivals": {
       "2026-05-09": 2,
@@ -1238,7 +1240,8 @@
       "2026-10-13": 1,
       "2026-10-19": 2,
       "2026-10-20": 2,
-      "2026-10-22": 1
+      "2026-10-22": 1,
+      "2026-10-24": 1
     },
     "/serveis": {
       "2026-05-09": 2,
@@ -1338,7 +1341,8 @@
       "2026-10-06": 1,
       "2026-10-15": 1,
       "2026-10-19": 1,
-      "2026-10-20": 1
+      "2026-10-20": 1,
+      "2026-10-24": 1
     },
     "/contacte": {
       "2026-05-10": 2,
@@ -1571,7 +1575,8 @@
       "2026-10-08": 1,
       "2026-10-15": 1,
       "2026-10-20": 1,
-      "2026-10-22": 1
+      "2026-10-22": 1,
+      "2026-10-24": 1
     },
     "/el-blog": {
       "2026-09-16": 3,
@@ -1590,7 +1595,8 @@
       "2026-10-10": 2,
       "2026-10-19": 1,
       "2026-10-20": 3,
-      "2026-10-22": 1
+      "2026-10-22": 1,
+      "2026-10-24": 1
     },
     "/en/legal/privacitat": {
       "2026-08-13": 12,
@@ -2276,7 +2282,8 @@
       "2026-10-18": 3,
       "2026-10-19": 3,
       "2026-10-20": 5,
-      "2026-10-22": 2
+      "2026-10-22": 2,
+      "2026-10-24": 3
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2380,7 +2387,8 @@
       "2026-10-17": 1,
       "2026-10-19": 4,
       "2026-10-20": 3,
-      "2026-10-22": 2
+      "2026-10-22": 2,
+      "2026-10-24": 1
     },
     "noticies": {
       "2026-05-09": 1,
@@ -2477,7 +2485,8 @@
       "2026-10-18": 1,
       "2026-10-19": 1,
       "2026-10-20": 1,
-      "2026-10-21": 1
+      "2026-10-21": 1,
+      "2026-10-24": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -2556,7 +2565,8 @@
       "2026-10-16": 1,
       "2026-10-19": 4,
       "2026-10-20": 3,
-      "2026-10-22": 3
+      "2026-10-22": 3,
+      "2026-10-24": 1
     },
     "serveis": {
       "2026-05-09": 2,
@@ -2690,7 +2700,8 @@
       "2026-10-08": 1,
       "2026-10-15": 1,
       "2026-10-20": 1,
-      "2026-10-22": 1
+      "2026-10-22": 1,
+      "2026-10-24": 1
     },
     "contacte": {
       "2026-05-10": 2,
@@ -2856,7 +2867,8 @@
       "2026-10-10": 2,
       "2026-10-19": 1,
       "2026-10-20": 3,
-      "2026-10-22": 1
+      "2026-10-22": 1,
+      "2026-10-24": 1
     },
     "cerca": {
       "2026-05-09": 1,
@@ -3063,88 +3075,7 @@
       "count": 5
     }
   ],
-  "blog_top": [
-    {
-      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
-      "count": 86
-    },
-    {
-      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 46
-    },
-    {
-      "path": "/cerca",
-      "count": 36
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 30
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
-      "count": 28
-    },
-    {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 24
-    },
-    {
-      "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
-      "count": 22
-    },
-    {
-      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
-      "count": 22
-    },
-    {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
-      "count": 19
-    },
-    {
-      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
-      "count": 16
-    },
-    {
-      "path": "/arxiu",
-      "count": 16
-    },
-    {
-      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
-      "count": 16
-    },
-    {
-      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
-      "count": 15
-    },
-    {
-      "path": "/contact",
-      "count": 15
-    },
-    {
-      "path": "/about",
-      "count": 15
-    },
-    {
-      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
-      "count": 14
-    },
-    {
-      "path": "/page/2",
-      "count": 14
-    },
-    {
-      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
-      "count": 14
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
-      "count": 14
-    }
-  ],
+  "blog_top": [],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 27,
@@ -3152,12 +3083,12 @@
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 42,
+  "avg_time_on_site_seconds": 41,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2654
+      "count": 2680
     },
     {
       "name": "Safari",
@@ -3194,7 +3125,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1202
+      "count": 1228
     },
     {
       "name": "Android",
@@ -3226,7 +3157,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2218
+      "count": 2244
     },
     {
       "name": "phone",
@@ -3253,22 +3184,22 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 396
+      "count": 398
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 162
+      "count": 168
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 108
+      "count": 110
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 71
+      "count": 74
     },
     {
       "name": "Singapore",
@@ -3278,12 +3209,12 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 60
+      "count": 61
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 54
+      "count": 55
     },
     {
       "name": "Germany",
@@ -3296,8 +3227,18 @@
       "count": 48
     },
     {
+      "name": "Argentina",
+      "id": "AR",
+      "count": 43
+    },
+    {
       "name": "United Kingdom",
       "id": "GB",
+      "count": 43
+    },
+    {
+      "name": "France",
+      "id": "FR",
       "count": 42
     },
     {
@@ -3306,26 +3247,16 @@
       "count": 42
     },
     {
-      "name": "Argentina",
-      "id": "AR",
-      "count": 41
-    },
-    {
-      "name": "France",
-      "id": "FR",
-      "count": 41
-    },
-    {
       "name": "Vietnam",
       "id": "VN",
-      "count": 34
+      "count": 35
     }
   ],
   "refs": [
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 1866
+      "count": 1998
     },
     {
       "name": "Google",
@@ -3335,12 +3266,12 @@
     {
       "name": "ig",
       "id": "ig",
-      "count": 46
+      "count": 49
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 45
+      "count": 49
     },
     {
       "name": "chatgpt.com",
