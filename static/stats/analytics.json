@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T10:23:53.564290Z",
+  "generated": "2026-10-25T17:58:41.492089Z",
   "period": {
     "start": "2025-10-25",
     "end": "2026-10-25"
@@ -3181,12 +3181,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2783
+      "count": 2824
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1049
+      "count": 1054
     },
     {
       "name": "Firefox",
@@ -3218,17 +3218,17 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1331
+      "count": 1365
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 463
+      "count": 470
     },
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 390
+      "count": 395
     },
     {
       "name": "Linux",
@@ -3250,12 +3250,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2350
+      "count": 2384
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 799
+      "count": 811
     },
     {
       "name": "desktophd",
@@ -3272,27 +3272,27 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2033
+      "count": 2045
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 416
+      "count": 422
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 195
+      "count": 206
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 121
+      "count": 125
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 93
+      "count": 95
     },
     {
       "name": "Singapore",
@@ -3302,12 +3302,12 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 62
+      "count": 63
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 59
+      "count": 61
     },
     {
       "name": "Germany",
@@ -3317,7 +3317,7 @@
     {
       "name": "Bangladesh",
       "id": "BD",
-      "count": 48
+      "count": 49
     },
     {
       "name": "Argentina",
