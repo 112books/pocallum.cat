@@ -4,6 +4,26 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-10-27 — Ciutat Flamenco 2026: fitxa, notícia i galeria
+
+**🎭 Fitxa del festival — commit `7aeef75a`**
+- `content/{ca,en}/festivals/ciutat-flamenco-barcelona.md`: `anys: "2025 – 2026"`, `date: 2026-10-24`, secció nova «2026: hi hem tornat» (majoria d'espectacles vistos: Nau Bostik, SAT!, Ateneu Popular de Nou Barris, Tradicionàrius) i 6 enllaços nous a les cròniques del blog.
+
+**📰 Notícia `2026-10-ciutat-flamenco-2026` (CA+EN) — mateix commit**
+- Destaca Ana Morales («Más que baile», 22/10, SAT!) i Jordi Latorre («Después del diluvio electrónico», 23/10), amb foto, vídeo Vimeo (`vimeo-embed`), fitxa artística i enllaç a la crònica. La resta (Esperanza Garrido, Districte Flamenco, Ciutat Batalla, Yoel Vargas) en llista breu.
+- Imatges copiades del repo local del blog (`../blog.pocallum.cat/static/media/`) a `static/images/noticies/2026-10-ciutat-flamenco/` amb noms descriptius. No fixada (`pinned`).
+- El web ciutatflamenco.com retorna 403 a curl → a l'EN s'enllacen les pàgines `/ca/` del festival (les `/en/` no s'han pogut verificar).
+
+**🖼️ Galeria — commits `ee6c93e1`, `184d88cb`, `d02ac6ac`, `ddd8194b`**
+- 5 fotos principals dels posts del blog (Esperanza Garrido, Ana Morales, Jordi Latorre, Ciutat Batalla, Yoel Vargas) + 6 de Districte Flamenco (2 per artista: Daniela Martín Heras, Adrián Gómez, Marina Walpercin). Totes `servei: "cultura"`, prefix `ciutat-flamenco-2026-`.
+- Les fotos de «Cara A y Cara B» d'Adrián Gómez mostren la ballarina **Lucía Fernández** → títol: «Lucía Fernández a «Cara A y Cara B», d'Adrián Gómez».
+- La foto genèrica de Districte Flamenco es va treure de la galeria (sobrava amb les 2 per artista); continua a la notícia (còpia pròpia).
+- Districte Flamenco datat el **18/10** (diumenge, segons la crònica), encara que alguns fitxers originals deien 19.
+
+**Nota:** l'script `scripts/convert-images.sh` només accepta un fitxer per crida → cal un bucle per a diverses imatges.
+
+---
+
 ## 2026-10-21 — Propostes i missatges per als artistes del Ciutat Flamenco 2026
 
 **📄 Documents de venda de fotografies — `docs/artistes/ciutat-flamenco-2026/`**
