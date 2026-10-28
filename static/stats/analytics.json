@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T03:05:02.681356Z",
+  "generated": "2026-10-28T10:09:37.010797Z",
   "period": {
     "start": "2025-10-28",
     "end": "2026-10-28"
@@ -3145,7 +3145,88 @@
       "count": 5
     }
   ],
-  "blog_top": [],
+  "blog_top": [
+    {
+      "path": "/2026/07/11/2026-07-11-prospe-beach-again",
+      "count": 86
+    },
+    {
+      "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
+      "count": 47
+    },
+    {
+      "path": "/cerca",
+      "count": 37
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 30
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
+      "count": 28
+    },
+    {
+      "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
+      "count": 25
+    },
+    {
+      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
+      "count": 25
+    },
+    {
+      "path": "/2026/09/07/2026-09-06-festival-masimas-2026-el-parallel-oblidat-recordant-a-merche-mar",
+      "count": 22
+    },
+    {
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 19
+    },
+    {
+      "path": "/arxiu",
+      "count": 18
+    },
+    {
+      "path": "/page/2",
+      "count": 17
+    },
+    {
+      "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
+      "count": 17
+    },
+    {
+      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
+      "count": 16
+    },
+    {
+      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
+      "count": 16
+    },
+    {
+      "path": "/contact",
+      "count": 15
+    },
+    {
+      "path": "/about",
+      "count": 15
+    },
+    {
+      "path": "/2026/10/18/2026-10-19-ciutat-flamenco-esperanza-garrido-firmamento",
+      "count": 14
+    },
+    {
+      "path": "/2026/09/30/2026-09-29-una-cr%C3%B2nica-per-a-9barrisimatge-andr%C3%A9s-naya-i-els-seus-dos-llibres",
+      "count": 14
+    },
+    {
+      "path": "/2026/09/01/2026-08-26-aiguestortes-de-dellui-a-lestany-llong-fugint-de-la-calor-estival",
+      "count": 14
+    },
+    {
+      "path": "/2026/07/31/2026-07-30-primeres-proves-per-al-repte-retrats-lents-de-112-revelats",
+      "count": 14
+    }
+  ],
   "wizard_funnel": {
     "wizard-s1": 18,
     "wizard-s2": 27,
@@ -3158,7 +3239,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2895
+      "count": 2916
     },
     {
       "name": "Safari",
@@ -3195,12 +3276,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1403
+      "count": 1422
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 500
+      "count": 502
     },
     {
       "name": "iOS",
@@ -3227,12 +3308,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2429
+      "count": 2448
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 873
+      "count": 875
     },
     {
       "name": "desktophd",
@@ -3249,12 +3330,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2140
+      "count": 2155
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 430
+      "count": 434
     },
     {
       "name": "Brazil",
@@ -3309,7 +3390,7 @@
     {
       "name": "United Kingdom",
       "id": "GB",
-      "count": 45
+      "count": 46
     },
     {
       "name": "Netherlands",
