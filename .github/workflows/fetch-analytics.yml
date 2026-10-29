@@ -8,6 +8,11 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    # Evita que una execució endarrerida xoqui amb la de la hora següent
+    # (dues feines fent commit i push a main alhora).
+    concurrency:
+      group: fetch-analytics
+      cancel-in-progress: false
     permissions:
       contents: write
       actions: write
@@ -27,24 +32,60 @@ jobs:
           BASE="https://${GC_ACCOUNT}.goatcounter.com/api/v0"
           AUTH="Authorization: Bearer ${GC_TOKEN}"
 
-          CHECK=$(curl -s --max-time 10 -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}") || true
-          if ! echo "${CHECK}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
-            echo "::error::Token GoatCounter invàlid o expirat — actualitza el secret GOATCOUNTER_TOKEN a GitHub → Settings → Secrets."
+          # Comprovació del token amb reintents. Un timeout, un 429 o un 5xx de
+          # GoatCounter torna una pàgina HTML d'error; abans això es confonia amb
+          # un 401 i el job fallava dient "token invàlid" tot i que el token era
+          # bo (passava ~1 cop al dia amb la resta d'execucions correctes).
+          probe_code() {
+            local code
+            code=$(curl -s -o /tmp/probe_body -w '%{http_code}' --max-time 20 \
+                        -H "${AUTH}" "${BASE}/stats/total?start=${END}&end=${END}" 2>/dev/null) || true
+            echo "${code:-000}"
+          }
+
+          TOKEN_OK=false
+          CODE="000"
+          for attempt in 1 2 3 4; do
+            CODE=$(probe_code)
+            if [ "${CODE}" = "200" ] && python3 -c "import json;json.load(open('/tmp/probe_body'))" 2>/dev/null; then
+              TOKEN_OK=true
+              break
+            fi
+            case "${CODE}" in
+              401|403)
+                echo "::error::GoatCounter ha rebutjat el token (HTTP ${CODE}). El secret GOATCOUNTER_TOKEN és invàlid, ha expirat o no té permís de lectura — regenera'l a pocallum.goatcounter.com → API i actualitza'l a GitHub → Settings → Secrets."
+                echo "token_ok=false" >> "$GITHUB_OUTPUT"
+                exit 1
+                ;;
+            esac
+            echo "::warning::GoatCounter no ha respost correctament (HTTP ${CODE}, intent ${attempt}/4)"
+            sleep $(( attempt * 5 ))
+          done
+
+          if [ "${TOKEN_OK}" != "true" ]; then
+            echo "::error::GoatCounter no ha respost després de 4 intents (últim HTTP ${CODE}). Sembla una caiguda o un bloqueig temporal de l'API, no un problema del token: no cal tocar cap secret. Es tornarà a provar a la propera hora."
             echo "token_ok=false" >> "$GITHUB_OUTPUT"
             exit 1
           fi
           echo "token_ok=true" >> "$GITHUB_OUTPUT"
 
+          # Descarrega un endpoint i torna JSON, o "null" si no hi ha manera.
+          # Els avisos van a stderr per no embrutar el JSON que es redirigeix.
           fetch_json() {
             local url="$1"
             local auth_header="$2"
-            local result
-            result=$(curl -s --max-time 15 --retry 2 -H "${auth_header}" "${url}" 2>/dev/null) || true
-            if echo "${result}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
-              echo "${result}"
-            else
-              echo "null"
-            fi
+            local attempt code
+            for attempt in 1 2 3; do
+              code=$(curl -s -o /tmp/fetch_body -w '%{http_code}' --max-time 25 \
+                          -H "${auth_header}" "${url}" 2>/dev/null) || true
+              if [ "${code}" = "200" ] && python3 -c "import json;json.load(open('/tmp/fetch_body'))" 2>/dev/null; then
+                cat /tmp/fetch_body
+                return 0
+              fi
+              sleep $(( attempt * 3 ))
+            done
+            echo "::warning::No s'ha pogut descarregar ${url} (HTTP ${code:-000})" >&2
+            echo "null"
           }
 
           fetch_json "${BASE}/stats/hits?start=${START}&end=${END}&limit=100"     "${AUTH}" > /tmp/hits.json
@@ -64,6 +105,15 @@ jobs:
             echo "null" > /tmp/blog_hits.json
           fi
 
+          # Si fallen les dades essencials no publiquem res: un analytics.json
+          # amb zeros buidaria el dashboard i a sobre es desplegaria a producció.
+          for essential in hits total; do
+            if [ ! -s "/tmp/${essential}.json" ] || [ "$(cat /tmp/${essential}.json)" = "null" ]; then
+              echo "::error::No s'han pogut descarregar les dades essencials de GoatCounter (/tmp/${essential}.json). No es publica analytics.json aquesta hora."
+              exit 1
+            fi
+          done
+
           python3 scripts/build-analytics-json.py "${START}" "${END}"
 
       - name: Process analytics
@@ -79,6 +129,15 @@ jobs:
         id: commit
         if: steps.fetch.outputs.token_ok == 'true'
         run: |
+          # Xarxa de seguretat: un analytics.json a zero sobre un que tenia
+          # visites és una caiguda de GoatCounter, no un web sense públic.
+          NEW_TOTAL=$(python3 -c "import json;print(json.load(open('static/stats/analytics.json')).get('total',0))" 2>/dev/null || echo 0)
+          OLD_TOTAL=$(git show HEAD:static/stats/analytics.json 2>/dev/null | python3 -c "import sys,json;print(json.load(sys.stdin).get('total',0))" 2>/dev/null || echo 0)
+          if [ "${NEW_TOTAL:-0}" = "0" ] && [ "${OLD_TOTAL:-0}" != "0" ]; then
+            echo "::error::Les dades noves són a zero però les publicades tenien ${OLD_TOTAL} visites — no es fa commit ni desplegament."
+            exit 1
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add static/stats/analytics.json
