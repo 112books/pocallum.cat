@@ -4,6 +4,15 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-10-30 — Guia d'exposicions: títol, festival Panoràmic i tags
+
+**📰 Guia d'exposicions, Festivals i espais fotogràfics a Barcelona**
+- `content/ca/noticies/guia-exposicions-espais-fotografics-barcelona.md` i `content/en/noticies/photo-exhibitions-spaces-barcelona-guide.md`: títol actualitzat per incloure Festivals; entrada de Panoràmic (Granollers) apuntant ara a l'URL canònic https://festivalpanoramic.cat (abans panoramicgranollers.cat).
+- Tags ampliats a ambdues versions: festivals, arts visuals/visual arts, cultura visual/visual culture, tallers/workshops, conferències/conferences, xerrades/talks (més els existents).
+- Build Hugo verificat sense errors; canvis commitats i pujats a `main` (deploy automàtic a producció).
+
+---
+
 ## 2026-10-27 — Ciutat Flamenco 2026: fitxa, notícia i galeria
 
 **🎭 Fitxa del festival — commit `7aeef75a`**
