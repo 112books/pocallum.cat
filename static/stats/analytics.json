@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-29T23:46:47.169210Z",
+  "generated": "2026-10-30T03:33:58.381987Z",
   "period": {
-    "start": "2025-10-29",
-    "end": "2026-10-29"
+    "start": "2025-10-30",
+    "end": "2026-10-30"
   },
-  "total": 1843,
+  "total": 1848,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -694,12 +694,20 @@
     {
       "date": "2026-10-28",
       "count": 12
+    },
+    {
+      "date": "2026-10-29",
+      "count": 4
+    },
+    {
+      "date": "2026-10-30",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 542
+      "count": 544
     },
     {
       "path": "/galeria",
@@ -727,7 +735,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 47
+      "count": 48
     },
     {
       "path": "/qui-som",
@@ -747,7 +755,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 26
+      "count": 27
     },
     {
       "path": "/en/legal/privacitat",
@@ -786,6 +794,10 @@
       "count": 11
     },
     {
+      "path": "/serveis/books-artistics",
+      "count": 10
+    },
+    {
       "path": "/festivals/ciutat-flamenco-barcelona",
       "count": 10
     },
@@ -803,10 +815,6 @@
     },
     {
       "path": "/legal/privacitat",
-      "count": 9
-    },
-    {
-      "path": "/serveis/books-artistics",
       "count": 9
     },
     {
@@ -899,16 +907,16 @@
     }
   ],
   "by_lang": {
-    "en": 267,
+    "en": 268,
     "ca": 9,
     "es": 21
   },
   "by_section": {
-    "inici": 564,
+    "inici": 566,
     "galeria": 219,
     "festivals": 197,
-    "serveis": 154,
-    "noticies": 203,
+    "serveis": 156,
+    "noticies": 204,
     "contacte": 63,
     "blog": 50,
     "qui-som": 52,
@@ -1100,7 +1108,8 @@
       "2026-10-25": 6,
       "2026-10-26": 8,
       "2026-10-27": 8,
-      "2026-10-28": 2
+      "2026-10-28": 2,
+      "2026-10-29": 2
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1512,7 +1521,8 @@
       "2026-10-07": 1,
       "2026-10-09": 1,
       "2026-10-15": 1,
-      "2026-10-21": 1
+      "2026-10-21": 1,
+      "2026-10-30": 1
     },
     "/qui-som": {
       "2026-05-09": 2,
@@ -1670,7 +1680,8 @@
       "2026-10-18": 1,
       "2026-10-20": 1,
       "2026-10-23": 1,
-      "2026-10-27": 1
+      "2026-10-27": 1,
+      "2026-10-29": 1
     },
     "/en/legal/privacitat": {
       "2026-08-13": 12,
@@ -1765,6 +1776,17 @@
       "2026-09-11": 1,
       "2026-10-22": 1
     },
+    "/serveis/books-artistics": {
+      "2026-06-05": 2,
+      "2026-06-08": 1,
+      "2026-06-10": 1,
+      "2026-06-23": 1,
+      "2026-07-13": 1,
+      "2026-09-02": 1,
+      "2026-09-24": 1,
+      "2026-09-25": 1,
+      "2026-10-29": 1
+    },
     "/festivals/ciutat-flamenco-barcelona": {
       "2026-05-10": 1,
       "2026-07-01": 1,
@@ -1811,16 +1833,6 @@
       "2026-09-16": 1,
       "2026-09-29": 1,
       "2026-10-06": 1
-    },
-    "/serveis/books-artistics": {
-      "2026-06-05": 2,
-      "2026-06-08": 1,
-      "2026-06-10": 1,
-      "2026-06-23": 1,
-      "2026-07-13": 1,
-      "2026-09-02": 1,
-      "2026-09-24": 1,
-      "2026-09-25": 1
     },
     "/ca": {
       "2026-05-09": 2,
@@ -2345,7 +2357,8 @@
       "2026-10-25": 6,
       "2026-10-26": 8,
       "2026-10-27": 8,
-      "2026-10-28": 2
+      "2026-10-28": 2,
+      "2026-10-29": 2
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2557,7 +2570,8 @@
       "2026-10-25": 2,
       "2026-10-26": 2,
       "2026-10-27": 6,
-      "2026-10-28": 3
+      "2026-10-28": 3,
+      "2026-10-30": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -2720,7 +2734,8 @@
       "2026-10-20": 2,
       "2026-10-22": 1,
       "2026-10-23": 1,
-      "2026-10-27": 2
+      "2026-10-27": 2,
+      "2026-10-29": 2
     },
     "legal": {
       "2026-05-27": 1,
@@ -3107,7 +3122,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 47
+      "count": 48
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -3175,7 +3190,7 @@
     },
     {
       "path": "/2026/07/26/2026-07-25-una-jornada-amb-els-barcelona-gipsy-balkan-orchestra",
-      "count": 47
+      "count": 48
     },
     {
       "path": "/cerca",
@@ -3262,7 +3277,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2964
+      "count": 2968
     },
     {
       "name": "Safari",
@@ -3299,7 +3314,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1459
+      "count": 1463
     },
     {
       "name": "Android",
@@ -3331,7 +3346,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2486
+      "count": 2490
     },
     {
       "name": "phone",
@@ -3358,7 +3373,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 452
+      "count": 456
     },
     {
       "name": "Brazil",
@@ -3430,7 +3445,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2202
+      "count": 2224
     },
     {
       "name": "Google",
@@ -3450,7 +3465,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 39
+      "count": 41
     },
     {
       "name": "www.facebook.com",
