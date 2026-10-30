@@ -3,7 +3,7 @@ title: "Guia d'exposicions, Festivals i espais fotogràfics a Barcelona"
 date: 2026-06-15
 lead: "Recull dels millors espais de Barcelona i àrea metropolitana on veure regularment exposicions de fotografia, amb enllaços directes a la seva programació."
 image: "/images/noticies/2023-04-30-PinholeDay2023-HolgaWPC-0001.jpg"
-tags: ["fotografia", "Barcelona", "exposicions", "galeries", "cultura", "guia", "espais fotogràfics"]
+tags: ["fotografia", "Barcelona", "exposicions", "galeries", "cultura", "guia", "espais fotogràfics", "festivals", "arts visuals", "cultura visual", "tallers", "conferències", "xerrades"]
 pinned: true
 draft: false
 aliases:
