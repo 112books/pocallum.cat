@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-03T23:47:43.737614Z",
+  "generated": "2026-11-04T03:56:30.665276Z",
   "period": {
-    "start": "2025-11-03",
-    "end": "2026-11-03"
+    "start": "2025-11-04",
+    "end": "2026-11-04"
   },
-  "total": 1866,
+  "total": 1871,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -714,12 +714,16 @@
     {
       "date": "2026-11-02",
       "count": 4
+    },
+    {
+      "date": "2026-11-03",
+      "count": 5
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 549
+      "count": 550
     },
     {
       "path": "/galeria",
@@ -743,7 +747,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 50
+      "count": 51
     },
     {
       "path": "/blog",
@@ -802,12 +806,12 @@
       "count": 12
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
+      "path": "/en/galeria",
       "count": 11
     },
     {
-      "path": "/en/galeria",
-      "count": 10
+      "path": "/festivals/calella-harmonica-festival",
+      "count": 11
     },
     {
       "path": "/serveis/books-artistics",
@@ -886,6 +890,10 @@
       "count": 7
     },
     {
+      "path": "/en/serveis/books-for-actors",
+      "count": 6
+    },
+    {
       "path": "/noticies/2026-06-la-juganera",
       "count": 6
     },
@@ -898,7 +906,7 @@
       "count": 5
     },
     {
-      "path": "/en/serveis/books-for-actors",
+      "path": "/en/obra",
       "count": 5
     },
     {
@@ -912,28 +920,24 @@
     {
       "path": "/en/testing-vintage-cameras",
       "count": 5
-    },
-    {
-      "path": "/serveis/concerts",
-      "count": 5
     }
   ],
   "by_lang": {
-    "en": 274,
+    "en": 278,
     "ca": 9,
     "es": 21
   },
   "by_section": {
-    "inici": 572,
-    "galeria": 222,
+    "inici": 573,
+    "galeria": 223,
     "festivals": 197,
-    "serveis": 160,
-    "noticies": 208,
+    "serveis": 161,
+    "noticies": 209,
     "contacte": 63,
     "blog": 50,
     "qui-som": 53,
     "el-blog": 37,
-    "obra": 64,
+    "obra": 65,
     "legal": 83,
     "cerca": 21,
     "node": 31,
@@ -1125,7 +1129,8 @@
       "2026-10-30": 1,
       "2026-10-31": 1,
       "2026-11-01": 1,
-      "2026-11-02": 2
+      "2026-11-02": 2,
+      "2026-11-03": 1
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1499,7 +1504,8 @@
       "2026-10-09": 1,
       "2026-10-15": 1,
       "2026-10-21": 1,
-      "2026-10-30": 3
+      "2026-10-30": 3,
+      "2026-11-03": 1
     },
     "/blog": {
       "2026-05-09": 1,
@@ -1792,14 +1798,6 @@
       "2026-08-14": 1,
       "2026-09-22": 1
     },
-    "/festivals/calella-harmonica-festival": {
-      "2026-05-20": 6,
-      "2026-05-25": 1,
-      "2026-06-03": 1,
-      "2026-07-02": 1,
-      "2026-09-11": 1,
-      "2026-10-22": 1
-    },
     "/en/galeria": {
       "2026-08-16": 1,
       "2026-08-31": 1,
@@ -1810,7 +1808,16 @@
       "2026-09-25": 1,
       "2026-10-03": 1,
       "2026-10-15": 1,
-      "2026-10-30": 1
+      "2026-10-30": 1,
+      "2026-11-03": 1
+    },
+    "/festivals/calella-harmonica-festival": {
+      "2026-05-20": 6,
+      "2026-05-25": 1,
+      "2026-06-03": 1,
+      "2026-07-02": 1,
+      "2026-09-11": 1,
+      "2026-10-22": 1
     },
     "/serveis/books-artistics": {
       "2026-06-05": 2,
@@ -1964,6 +1971,14 @@
       "2026-09-08": 1,
       "2026-10-19": 1
     },
+    "/en/serveis/books-for-actors": {
+      "2026-09-01": 1,
+      "2026-09-30": 1,
+      "2026-10-08": 1,
+      "2026-10-17": 1,
+      "2026-10-30": 1,
+      "2026-11-03": 1
+    },
     "/noticies/2026-06-la-juganera": {
       "2026-06-02": 2,
       "2026-06-03": 1,
@@ -1982,12 +1997,12 @@
       "2026-10-03": 2,
       "2026-10-06": 1
     },
-    "/en/serveis/books-for-actors": {
-      "2026-09-01": 1,
-      "2026-09-30": 1,
-      "2026-10-08": 1,
-      "2026-10-17": 1,
-      "2026-10-30": 1
+    "/en/obra": {
+      "2026-09-05": 1,
+      "2026-09-20": 1,
+      "2026-09-25": 1,
+      "2026-10-05": 1,
+      "2026-11-03": 1
     },
     "/festivals/clot-en-blues": {
       "2026-07-02": 1,
@@ -2073,12 +2088,6 @@
       "2026-09-17": 1,
       "2026-09-29": 1,
       "2026-10-06": 1
-    },
-    "/en/obra": {
-      "2026-09-05": 1,
-      "2026-09-20": 1,
-      "2026-09-25": 1,
-      "2026-10-05": 1
     },
     "/en/node/23/track": {
       "2026-08-13": 3,
@@ -2389,7 +2398,8 @@
       "2026-10-30": 2,
       "2026-10-31": 1,
       "2026-11-01": 1,
-      "2026-11-02": 2
+      "2026-11-02": 2,
+      "2026-11-03": 1
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2502,7 +2512,8 @@
       "2026-10-28": 2,
       "2026-10-30": 1,
       "2026-11-01": 1,
-      "2026-11-02": 1
+      "2026-11-02": 1,
+      "2026-11-03": 1
     },
     "noticies": {
       "2026-05-09": 1,
@@ -2606,7 +2617,8 @@
       "2026-10-27": 6,
       "2026-10-28": 3,
       "2026-10-30": 4,
-      "2026-10-31": 1
+      "2026-10-31": 1,
+      "2026-11-03": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -2773,7 +2785,8 @@
       "2026-10-29": 2,
       "2026-10-30": 2,
       "2026-11-01": 1,
-      "2026-11-02": 1
+      "2026-11-02": 1,
+      "2026-11-03": 1
     },
     "legal": {
       "2026-05-27": 1,
@@ -2828,7 +2841,8 @@
       "2026-10-15": 1,
       "2026-10-20": 1,
       "2026-10-22": 1,
-      "2026-10-24": 1
+      "2026-10-24": 1,
+      "2026-11-03": 1
     },
     "contacte": {
       "2026-05-09": 1,
@@ -3161,7 +3175,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 50
+      "count": 51
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -3237,7 +3251,7 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 30
+      "count": 31
     },
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
@@ -3311,12 +3325,12 @@
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 40,
+  "avg_time_on_site_seconds": 41,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 2980
+      "count": 2981
     },
     {
       "name": "Safari",
@@ -3368,7 +3382,7 @@
     {
       "name": "Linux",
       "id": "Linux",
-      "count": 273
+      "count": 274
     },
     {
       "name": "Desconegut",
@@ -3385,7 +3399,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2507
+      "count": 2508
     },
     {
       "name": "phone",
@@ -3412,7 +3426,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 460
+      "count": 461
     },
     {
       "name": "Brazil",
@@ -3484,12 +3498,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2244
+      "count": 2247
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 258
+      "count": 261
     },
     {
       "name": "ig",
@@ -3504,7 +3518,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 44
+      "count": 45
     },
     {
       "name": "www.facebook.com",
