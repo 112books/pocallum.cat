@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T00:19:20.976746Z",
+  "generated": "2026-11-09T07:27:11.392772Z",
   "period": {
     "start": "2025-11-09",
     "end": "2026-11-09"
@@ -3352,15 +3352,15 @@
     },
     {
       "path": "/page/2",
+      "count": 18
+    },
+    {
+      "path": "/2026/10/18/2026-10-19-ciutat-flamenco-esperanza-garrido-firmamento",
       "count": 17
     },
     {
       "path": "/2026/07/06/2026-07-05-24e-festival-de-blues-de-barcelona-jam-session-de-clausura",
       "count": 17
-    },
-    {
-      "path": "/2026/10/18/2026-10-19-ciutat-flamenco-esperanza-garrido-firmamento",
-      "count": 16
     },
     {
       "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
@@ -3399,7 +3399,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3016
+      "count": 3018
     },
     {
       "name": "Safari",
@@ -3431,7 +3431,7 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1542
+      "count": 1544
     },
     {
       "name": "Windows",
@@ -3468,7 +3468,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2539
+      "count": 2541
     },
     {
       "name": "phone",
@@ -3558,9 +3558,9 @@
       "count": 42
     },
     {
-      "name": "Mexico",
-      "id": "MX",
-      "count": 36
+      "name": "Vietnam",
+      "id": "VN",
+      "count": 37
     }
   ],
   "refs": [
