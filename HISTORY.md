@@ -4,6 +4,27 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-09 — Imatges trencades a serveis i a la notícia 112 Revelats
+
+**🖼️ Rutes antigues amb `%20` — commit `5fd337d8`**
+- Les fotos de galeria es van renombrar (espais → guions) però algunes pàgines de serveis encara apuntaven als noms antics → 404.
+- `content/ca/serveis/books-per-actors.md`: 6 rutes (Adrià Bernal, Ariadna, Tierry Torniquet, Majo, Hoochie Coochie, Kimberly Boldewijn).
+- `content/ca/serveis/books-artistics.md`: 5 rutes (Koko C, Nadia Otshudi, Berta Corts, Aixhia, Hoochie Coochie).
+- `content/en/serveis/artistic-portfolios.md`: 1 ruta (Berta Corts).
+
+**🧩 `picture.html` i PNG — commit `fix: picture.html accepta png…`**
+- El partial `themes/pocallum/layouts/partials/picture.html` només treia `.jpg/.jpeg` per derivar els WebP; amb PNG generava `112-revelats.png-800.webp` (404). Amb `<picture>` el navegador **no fa fallback** al `<img>` → imatge en blanc a 34 pàgines (llistat de notícies i relacionades).
+- Regex ampliada a `(jpg|jpeg|png)` i generats `static/images/noticies/112-revelats{,-800,-1600}.webp` amb `magick` (q85, `800x>` / `1600x>`), mateixos paràmetres que l'script.
+
+**✅ Verificació**
+- Escaneig de tot `public/` (846 pàgines, sense `/stats/` ni `/admin/`): 1.422 refs d'imatge úniques, 0 trencades. Comprovat en viu a producció després del deploy: 1.422 × 200.
+
+**Notes**
+- `scripts/convert-images.sh` només accepta JPG → per a PNG nous cal generar els WebP a mà o adaptar l'script.
+- Encara queda un fitxer amb espais: `static/images/serveis/concerts/2025-07-05- LM6- Foma800@1600 - Avishai Cohen - 0014.jpg` (funciona; referenciat a `concerts.md` i `live-music.md`). Si es renombra, actualitzar les dues rutes.
+
+---
+
 ## 2026-10-30 — Guia d'exposicions: títol, festival Panoràmic i tags
 
 **📰 Guia d'exposicions, Festivals i espais fotogràfics a Barcelona**

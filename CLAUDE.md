@@ -177,6 +177,9 @@ draft: false
 
 Imatges addicionals al cos (galeria d'una crònica): carpeta `static/images/noticies/{slug}/` + `![](/images/noticies/{slug}/nom.jpg)` al Markdown. **Els noms de fitxer no poden portar espais** — trenca la sintaxi `![]()` i la imatge no renderitza. Usar guions.
 
+⚠️ **Si renombres una imatge, actualitza totes les referències** (`grep -rn 'nom-antic' content/`) — les rutes amb `%20` als HTML de `serveis/` es van quedar penjades i donaven 404 (09/11/2026).
+⚠️ **Tota imatge servida amb `partials/picture.html` necessita les seves variants WebP** (`.webp`, `-800.webp`, `-1600.webp`): si falten, `<picture>` no fa fallback i la imatge surt en blanc. El partial accepta `.jpg/.jpeg/.png`, però `scripts/convert-images.sh` només converteix JPG → per a PNG, `magick` a mà amb els mateixos paràmetres (q85, `800x>`, `1600x>`).
+
 #### Notícia fixada (pinned)
 `pinned: true` al frontmatter (CA **i** EN) fa que una notícia surti sempre primera — tant a `/noticies/` com al bloc de notícies de la portada — independentment de la data. Lògica a `themes/pocallum/layouts/noticies/list.html` i `themes/pocallum/layouts/index.html` (`where ... "Params.pinned" true` + `append` per anteposar-les a la resta ordenada per data). Actualment pinnada: "Guia d'exposicions i espais fotogràfics a Barcelona".
 
