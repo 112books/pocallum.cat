@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-13T18:56:48.555645Z",
+  "generated": "2026-11-14T00:05:40.088714Z",
   "period": {
-    "start": "2025-11-13",
-    "end": "2026-11-13"
+    "start": "2025-11-14",
+    "end": "2026-11-14"
   },
-  "total": 1965,
+  "total": 1967,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -213,7 +213,7 @@
     },
     {
       "date": "2026-06-29",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-06-30",
@@ -249,7 +249,7 @@
     },
     {
       "date": "2026-07-08",
-      "count": 26
+      "count": 25
     },
     {
       "date": "2026-07-09",
@@ -273,11 +273,11 @@
     },
     {
       "date": "2026-07-14",
-      "count": 23
+      "count": 22
     },
     {
       "date": "2026-07-15",
-      "count": 7
+      "count": 6
     },
     {
       "date": "2026-07-16",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-07-28",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-07-29",
@@ -537,7 +537,7 @@
     },
     {
       "date": "2026-09-19",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-09-20",
@@ -754,6 +754,10 @@
     {
       "date": "2026-11-12",
       "count": 5
+    },
+    {
+      "date": "2026-11-13",
+      "count": 2
     }
   ],
   "hits": [
@@ -783,7 +787,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 51
+      "count": 52
     },
     {
       "path": "/blog",
@@ -959,16 +963,16 @@
     }
   ],
   "by_lang": {
-    "en": 290,
+    "en": 288,
     "ca": 9,
-    "es": 18
+    "es": 22
   },
   "by_section": {
     "inici": 605,
     "galeria": 234,
     "festivals": 206,
     "serveis": 178,
-    "noticies": 218,
+    "noticies": 219,
     "contacte": 68,
     "blog": 50,
     "qui-som": 55,
@@ -991,9 +995,10 @@
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
     "no-fem-fotos-de-concerts-construim-relat-visual-per-a-musics": 4,
+    "bienvenidos-pocallum": 4,
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": 4,
     "taller-de-tecniques-antigues-al-laboratori": 4,
-    "content": 13,
+    "content": 10,
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "movent-les-imatges-fixes": 4,
@@ -1567,7 +1572,8 @@
       "2026-10-15": 1,
       "2026-10-21": 1,
       "2026-10-30": 3,
-      "2026-11-03": 1
+      "2026-11-03": 1,
+      "2026-11-13": 1
     },
     "/blog": {
       "2026-05-09": 1,
@@ -2230,6 +2236,12 @@
       "2026-09-22": 1,
       "2026-11-05": 1
     },
+    "/es/bienvenidos-pocallum": {
+      "2026-06-29": 1,
+      "2026-07-28": 1,
+      "2026-09-19": 1,
+      "2026-11-13": 1
+    },
     "/obra/40-anys-blues": {
       "2026-06-25": 1,
       "2026-08-15": 1,
@@ -2320,11 +2332,6 @@
       "2026-07-11": 1,
       "2026-07-17": 1,
       "2026-09-20": 1
-    },
-    "/en/content/20%C3%A8-festival-de-blues-de-barcelona": {
-      "2026-07-08": 1,
-      "2026-07-14": 1,
-      "2026-07-15": 1
     }
   },
   "sections_daily": {
@@ -2737,7 +2744,8 @@
       "2026-11-07": 2,
       "2026-11-08": 1,
       "2026-11-10": 1,
-      "2026-11-12": 1
+      "2026-11-12": 1,
+      "2026-11-13": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -3180,10 +3188,7 @@
       "2026-05-20": 1,
       "2026-05-31": 1,
       "2026-06-07": 1,
-      "2026-07-08": 1,
       "2026-07-13": 1,
-      "2026-07-14": 1,
-      "2026-07-15": 1,
       "2026-07-17": 1,
       "2026-07-20": 1,
       "2026-08-13": 3
@@ -3277,6 +3282,12 @@
       "2026-09-22": 1,
       "2026-11-05": 1
     },
+    "bienvenidos-pocallum": {
+      "2026-06-29": 1,
+      "2026-07-28": 1,
+      "2026-09-19": 1,
+      "2026-11-13": 1
+    },
     "from-chance-to-creativity-a-photo-shoot-with-an-oriental-dress": {
       "2026-06-15": 1,
       "2026-06-21": 1,
@@ -3317,7 +3328,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 51
+      "count": 52
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -3404,12 +3415,12 @@
       "count": 28
     },
     {
-      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
-      "count": 25
+      "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
+      "count": 26
     },
     {
-      "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
-      "count": 24
+      "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
+      "count": 25
     },
     {
       "path": "/arxiu",
@@ -3472,7 +3483,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3072
+      "count": 3076
     },
     {
       "name": "Safari",
@@ -3509,7 +3520,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1513
+      "count": 1517
     },
     {
       "name": "Android",
@@ -3541,7 +3552,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2607
+      "count": 2611
     },
     {
       "name": "phone",
@@ -3563,12 +3574,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2343
+      "count": 2345
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 479
+      "count": 480
     },
     {
       "name": "Brazil",
@@ -3640,12 +3651,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2318
+      "count": 2322
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 278
+      "count": 282
     },
     {
       "name": "ig",
