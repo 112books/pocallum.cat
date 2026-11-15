@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-14T23:30:27.134959Z",
+  "generated": "2026-11-15T03:51:23.143326Z",
   "period": {
-    "start": "2025-11-14",
-    "end": "2026-11-14"
+    "start": "2025-11-15",
+    "end": "2026-11-15"
   },
-  "total": 1967,
+  "total": 1971,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -221,7 +221,7 @@
     },
     {
       "date": "2026-07-01",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-07-02",
@@ -261,7 +261,7 @@
     },
     {
       "date": "2026-07-11",
-      "count": 4
+      "count": 3
     },
     {
       "date": "2026-07-12",
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-07-17",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-07-18",
@@ -373,7 +373,7 @@
     },
     {
       "date": "2026-08-08",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-08-09",
@@ -541,7 +541,7 @@
     },
     {
       "date": "2026-09-20",
-      "count": 21
+      "count": 20
     },
     {
       "date": "2026-09-21",
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-09-24",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-09-25",
@@ -758,16 +758,20 @@
     {
       "date": "2026-11-13",
       "count": 2
+    },
+    {
+      "date": "2026-11-14",
+      "count": 4
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 578
+      "count": 579
     },
     {
       "path": "/galeria",
-      "count": 217
+      "count": 218
     },
     {
       "path": "/festivals",
@@ -963,14 +967,14 @@
     }
   ],
   "by_lang": {
-    "en": 288,
+    "en": 289,
     "ca": 9,
     "es": 22
   },
   "by_section": {
-    "inici": 605,
-    "galeria": 234,
-    "festivals": 206,
+    "inici": 606,
+    "galeria": 235,
+    "festivals": 207,
     "serveis": 178,
     "noticies": 219,
     "contacte": 68,
@@ -990,7 +994,7 @@
     "revelat-de-pellicula-de-color-amb-proces-de-blanc-i-negre": 5,
     "revelado-de-pelicula-color-con-proceso-de-blanco-y-negro": 5,
     "servicios-fotograficos": 5,
-    "tags": 4,
+    "tags": 8,
     "2025": 4,
     "una-mirada-diferent-fotografia-analogica-amb-personalitat-i-misteri": 4,
     "novetat-books-per-actors-i-actrius": 4,
@@ -1002,8 +1006,7 @@
     "sessio-amb-la-ballarina-nahomi-itzel": 4,
     "caffenol-una-tecnica-de-revelado-alternativa": 4,
     "movent-les-imatges-fixes": 4,
-    "contact": 3,
-    "services-and-rates": 3
+    "contact": 3
   },
   "pages_daily": {
     "/": {
@@ -1180,7 +1183,8 @@
       "2026-11-09": 5,
       "2026-11-10": 4,
       "2026-11-11": 9,
-      "2026-11-12": 1
+      "2026-11-12": 1,
+      "2026-11-14": 1
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1292,7 +1296,8 @@
       "2026-11-08": 1,
       "2026-11-10": 1,
       "2026-11-11": 2,
-      "2026-11-12": 1
+      "2026-11-12": 1,
+      "2026-11-14": 1
     },
     "/festivals": {
       "2026-05-09": 2,
@@ -2136,6 +2141,13 @@
       "2026-07-08": 1,
       "2026-07-12": 1
     },
+    "/festivals/sax-o-rama": {
+      "2026-06-10": 1,
+      "2026-07-01": 1,
+      "2026-08-12": 1,
+      "2026-10-22": 1,
+      "2026-11-14": 1
+    },
     "/serveis/concerts": {
       "2026-06-10": 1,
       "2026-06-16": 1,
@@ -2230,6 +2242,12 @@
       "2026-07-05": 1,
       "2026-07-10": 1
     },
+    "/en/tags/112-revelats": {
+      "2026-07-01": 1,
+      "2026-08-08": 1,
+      "2026-09-24": 1,
+      "2026-11-14": 1
+    },
     "/no-fem-fotos-de-concerts-construim-relat-visual-per-a-musics": {
       "2026-06-30": 1,
       "2026-08-13": 1,
@@ -2253,12 +2271,6 @@
       "2026-06-21": 1,
       "2026-07-08": 1,
       "2026-07-19": 1
-    },
-    "/festivals/sax-o-rama": {
-      "2026-06-10": 1,
-      "2026-07-01": 1,
-      "2026-08-12": 1,
-      "2026-10-22": 1
     },
     "/serveis/portada-identitat": {
       "2026-06-10": 1,
@@ -2327,11 +2339,6 @@
       "2026-07-12": 1,
       "2026-07-13": 1,
       "2026-07-18": 1
-    },
-    "/en/services-and-rates": {
-      "2026-07-11": 1,
-      "2026-07-17": 1,
-      "2026-09-20": 1
     }
   },
   "sections_daily": {
@@ -2512,7 +2519,8 @@
       "2026-11-09": 5,
       "2026-11-10": 6,
       "2026-11-11": 10,
-      "2026-11-12": 1
+      "2026-11-12": 1,
+      "2026-11-14": 1
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2634,7 +2642,8 @@
       "2026-11-09": 1,
       "2026-11-10": 1,
       "2026-11-11": 3,
-      "2026-11-12": 1
+      "2026-11-12": 1,
+      "2026-11-14": 1
     },
     "noticies": {
       "2026-05-09": 1,
@@ -2831,7 +2840,8 @@
       "2026-11-08": 1,
       "2026-11-09": 3,
       "2026-11-10": 2,
-      "2026-11-12": 2
+      "2026-11-12": 2,
+      "2026-11-14": 1
     },
     "serveis": {
       "2026-05-09": 2,
@@ -3213,6 +3223,13 @@
       "2026-05-28": 1,
       "2026-06-02": 1
     },
+    "tags": {
+      "2026-07-01": 1,
+      "2026-08-08": 1,
+      "2026-08-13": 4,
+      "2026-09-24": 1,
+      "2026-11-14": 1
+    },
     "jazz-i-am-2026-when-a-small-festival-has-more-to-say-than-a-big-one": {
       "2026-07-08": 2,
       "2026-08-20": 1,
@@ -3256,9 +3273,6 @@
       "2026-05-12": 1,
       "2026-05-13": 2,
       "2026-05-14": 1
-    },
-    "tags": {
-      "2026-08-13": 4
     },
     "2025": {
       "2026-07-08": 1,
@@ -3318,11 +3332,6 @@
       "2026-07-12": 1,
       "2026-07-13": 1,
       "2026-07-18": 1
-    },
-    "services-and-rates": {
-      "2026-07-11": 1,
-      "2026-07-17": 1,
-      "2026-09-20": 1
     }
   },
   "noticies_top": [
@@ -3404,7 +3413,11 @@
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 32
+      "count": 33
+    },
+    {
+      "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
+      "count": 28
     },
     {
       "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
@@ -3413,10 +3426,6 @@
     {
       "path": "/2026/09/20/2026-09-19-casal-de-barri-de-prosperitat-tributo-a-amaral",
       "count": 28
-    },
-    {
-      "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
-      "count": 26
     },
     {
       "path": "/2026/09/20/2026-09-19-festa-major-de-verdum-verdum-punkfest",
@@ -3483,7 +3492,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3088
+      "count": 3090
     },
     {
       "name": "Safari",
@@ -3493,7 +3502,7 @@
     {
       "name": "Firefox",
       "id": "Firefox",
-      "count": 86
+      "count": 89
     },
     {
       "name": "Desconegut",
@@ -3520,12 +3529,12 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1522
+      "count": 1524
     },
     {
       "name": "Android",
       "id": "Android",
-      "count": 539
+      "count": 542
     },
     {
       "name": "iOS",
@@ -3552,12 +3561,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2618
+      "count": 2620
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 971
+      "count": 974
     },
     {
       "name": "desktophd",
@@ -3574,7 +3583,7 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2352
+      "count": 2355
     },
     {
       "name": "United States",
@@ -3619,7 +3628,7 @@
     {
       "name": "Argentina",
       "id": "AR",
-      "count": 50
+      "count": 51
     },
     {
       "name": "Bangladesh",
@@ -3639,7 +3648,7 @@
     {
       "name": "Netherlands",
       "id": "NL",
-      "count": 42
+      "count": 43
     },
     {
       "name": "Mexico",
@@ -3651,22 +3660,22 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2322
+      "count": 2327
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 282
+      "count": 284
     },
     {
       "name": "ig",
       "id": "ig",
-      "count": 66
+      "count": 67
     },
     {
       "name": "l.instagram.com",
       "id": "l.instagram.com",
-      "count": 63
+      "count": 64
     },
     {
       "name": "chatgpt.com",
@@ -3694,9 +3703,9 @@
       "count": 19
     },
     {
-      "name": "www.facebook.com",
-      "id": "www.facebook.com",
-      "count": 17
+      "name": "duckduckgo.com",
+      "id": "duckduckgo.com",
+      "count": 18
     }
   ]
 }
