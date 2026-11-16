@@ -4,6 +4,26 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-16 — Clients: directori privat per client
+
+**🗂️ `clients/` — repositori privat (fora del repo públic)**
+- Un directori per client amb cinc documents: `fitxa.md` (contacte i perfil), `correus.md` (registre de mails), `pressupostos.md`, `full-de-ruta.md` i `control-horari.md`, més `correus/`, `pressupostos/` i `adjunts/`.
+- Plantilles a `clients/_plantilles/` i script `clients/_scripts/nou-client.sh` per crear-ne de nous.
+- `clients/` afegit al `.gitignore` del repo de pocallum.cat; el directori és un repositori git propi (com `ressona-docs`).
+
+**👤 Primer client: Martí Osuna (management de Judit Garuz)**
+- `clients/marti-osuna/`: fitxa completa, mail rebut registrat, concepte creatiu (B/N analògic, Hasselblad 6x6 + Leica, 4 h a la Nau Bostik, 3–4 looks), full de ruta i pressupost.
+- Proposta: **1.500 € + IVA**, un sol escenari. Perruqueria i maquillatge a càrrec del client, 35–40 imatges finals i llicència de 2 anys.
+- PDF corporatiu generat amb WeasyPrint (HTML + Syne/Chicago/IBM Plex, portada fosca): `clients/marti-osuna/pressupostos/2026-11-16-proposta-catwalk.pdf`.
+- Resposta enviada el 2026-11-16 amb disponibilitat (18/11 o setmana del 23–27) i el PDF adjunt.
+- Temps: 2 h registrades a `.taques/pocallum.cat/2026-11-16.md` amb el tag `[marti-osuna]`.
+
+**🔧 Eines**
+- Flux de PDF documentat a `clients/README.md`: `weasyprint` amb `XDG_CACHE_HOME` temporal i tipografies del repo.
+- `.gitignore`: `clients/` exclòs del repo públic.
+
+---
+
 ## 2026-11-09 — Imatges trencades a serveis i a la notícia 112 Revelats
 
 **🖼️ Rutes antigues amb `%20` — commit `5fd337d8`**

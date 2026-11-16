@@ -111,6 +111,7 @@ pocallum.cat/
 │   │   └── logotip/           # logo làmpara PNG
 ├── archetypes/                # plantilles hugo new
 ├── docs/superpowers/specs/    # design docs aprovats
+├── clients/                   # PRIVAT: fitxes de clients (gitignored, repo propi)
 ├── HISTORY.md                 # registre de sessions
 └── hugo.toml                  # configuració principal
 ```
@@ -219,6 +220,23 @@ Surten a `/contacte/` (sota "O escriu-nos directament") i `/qui-som/` (sota el b
 **Deixar-ne un en espera** (pendent de confirmació o de rebre el text): `publicat: false`, camps `cita_ca`/`cita_en` buits. No surt enlloc fins que es completi i es passi a `true`.
 
 ⚠️ Mai publicar una cita sense permís explícit, encara que la font sigui pública (missatge privat, xarxa social, etc.).
+
+---
+
+## Clients (privat)
+
+Directori `clients/` — **privat, exclòs del repositori públic** (`.gitignore`). Un
+directori per client amb cinc documents fixos: `fitxa.md`, `correus.md`,
+`pressupostos.md`, `full-de-ruta.md` i `control-horari.md`, més les carpetes
+`correus/`, `pressupostos/` i `adjunts/`.
+
+- És un **repositori git propi** (com `ressona-docs`); no es desplega mai.
+- Client nou: `clients/_scripts/nou-client.sh "Nom Cognom"`.
+- Els temps es registren a `.taques/pocallum.cat/` amb el prefix `[slug-del-client]` a la tasca.
+- Estats: `nou`, `contactat`, `pressupostat`, `acceptat`, `en-curs`, `lliurat`, `tancat`, `descartat`.
+- Convencions completes: `clients/README.md`.
+
+⚠️ Cap dada de client fora de `clients/`. Cap PDF ni adjunt a `static/` (es desplegaria a producció).
 
 ---
 
