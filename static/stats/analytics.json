@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-16T22:39:17.450881Z",
+  "generated": "2026-11-17T04:52:45.720404Z",
   "period": {
-    "start": "2025-11-16",
-    "end": "2026-11-16"
+    "start": "2025-11-17",
+    "end": "2026-11-17"
   },
-  "total": 1986,
+  "total": 1989,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -766,16 +766,20 @@
     {
       "date": "2026-11-15",
       "count": 15
+    },
+    {
+      "date": "2026-11-16",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 586
+      "count": 588
     },
     {
       "path": "/galeria",
-      "count": 220
+      "count": 221
     },
     {
       "path": "/festivals",
@@ -976,8 +980,8 @@
     "es": 22
   },
   "by_section": {
-    "inici": 613,
-    "galeria": 237,
+    "inici": 615,
+    "galeria": 238,
     "festivals": 208,
     "serveis": 179,
     "noticies": 220,
@@ -1189,7 +1193,8 @@
       "2026-11-11": 9,
       "2026-11-12": 1,
       "2026-11-14": 1,
-      "2026-11-15": 7
+      "2026-11-15": 7,
+      "2026-11-16": 2
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1303,7 +1308,8 @@
       "2026-11-11": 2,
       "2026-11-12": 1,
       "2026-11-14": 1,
-      "2026-11-15": 2
+      "2026-11-15": 2,
+      "2026-11-16": 1
     },
     "/festivals": {
       "2026-05-09": 2,
@@ -2531,7 +2537,8 @@
       "2026-11-11": 10,
       "2026-11-12": 1,
       "2026-11-14": 1,
-      "2026-11-15": 7
+      "2026-11-15": 7,
+      "2026-11-16": 2
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2655,7 +2662,8 @@
       "2026-11-11": 3,
       "2026-11-12": 1,
       "2026-11-14": 1,
-      "2026-11-15": 2
+      "2026-11-15": 2,
+      "2026-11-16": 1
     },
     "noticies": {
       "2026-05-09": 1,
@@ -3432,6 +3440,10 @@
       "count": 34
     },
     {
+      "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
+      "count": 31
+    },
+    {
       "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
       "count": 30
     },
@@ -3484,15 +3496,11 @@
       "count": 16
     },
     {
+      "path": "/2026/10/25/2026-10-24-10-anys-de-date-una-huerta",
+      "count": 15
+    },
+    {
       "path": "/2026/10/24/t%C3%ADtol-2026-10-22-ciutat-flamenco-ana-morales-m%C3%A1s-que-baile",
-      "count": 15
-    },
-    {
-      "path": "/about",
-      "count": 15
-    },
-    {
-      "path": "/2026/07/06/2026-07-04-24e-festival-de-blues-de-barcelona",
       "count": 15
     }
   ],
@@ -3508,7 +3516,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3104
+      "count": 3105
     },
     {
       "name": "Safari",
@@ -3545,7 +3553,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1530
+      "count": 1531
     },
     {
       "name": "Android",
@@ -3577,7 +3585,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2626
+      "count": 2627
     },
     {
       "name": "phone",
@@ -3676,7 +3684,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2334
+      "count": 2337
     },
     {
       "name": "Google",
