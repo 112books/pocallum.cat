@@ -7,7 +7,7 @@ tags: ["blues", "llibres", "40 anys de blues a Barcelona", "112books", "Barcelon
 draft: false
 ---
 
-Totes les fotografies estan fetes per Joan Linux en mig format (Hasselblad 500CM) i en gran format amb una Horseman 8×10". Revelat manualment al seu laboratori a Llumàtics, digitalitzat i editat també per ell. L'edició de tot el llibre s'ha fet a l'Editorial [112Books.eu](https://112books.eu).
+Totes les fotografies estan fetes per [Joan Linux](https://about.pocallum.cat/) en mig format (Hasselblad 500CM) i en gran format amb una Horseman 8×10". Revelat manualment al seu laboratori a Llumàtics, digitalitzat i editat també per ell. L'edició de tot el llibre s'ha fet a l'Editorial [112Books.eu](https://112books.eu).
 
 El blues de Barcelona té quaranta anys d'història i, des del 6 de novembre, també té el llibre que li pertoca. «40 anys de blues a Barcelona» aplega els retrats d'uns 150 músics de l'escena, fets en analògic —grans formats inclosos— al llarg de més de cinc anys de feina. Els textos són de [Manolo Poy](https://www.112books.eu/autors/manuel-lopez-poy/) i el pròleg, de [David Moreu](https://davidmoreu.com).
 
