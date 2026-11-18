@@ -22,6 +22,14 @@ Registre de sessions de treball i canvis rellevants.
 - `.obra-single` era un grid de `160px 1fr` però s'aplicava a l'article, que només té un fill (`.obra-single__layout`): la portada quedava clavada a 160 px.
 - Ara el grid viu a `.obra-single__layout`: `clamp(220px, 34vw, 440px)` + `minmax(0, 1fr)`, `align-items: start` i gap fluid. A `max-width: 768px` passa a una columna amb la portada a 280 px màxim.
 
+**📰 Notícia de la publicació — `/noticies/2026-11-40-anys-de-blues/` (CA + EN)**
+- Crònica curta de la publicació: fitxa del llibre (150 retrats analògics, textos de Manolo Poy, pròleg de David Moreu), presentació del 6 de novembre al Centre Cultural Collblanc – La Torrassa, vídeo de Bad Music Blues, preu (38 € / 33 € socis SBB) i enllaç a 40anysblues.112books.eu per comprar-lo o veure el projecte.
+- Imatge de capçalera composta expressament: `static/images/noticies/40-anys-de-blues-llibre.jpg` (1920×1080, fons fosc amb la coberta centrada) + variants `.webp`, `-800.webp` i `-1600.webp` per `partials/picture.html`. Una coberta vertical dins l'hero de 62 vh i dins les targetes 16/9 es retallava massa; així es veu sencera a tots dos llocs.
+
+**🛒 `Preses Falses`
+- `web` ara apunta a la fitxa de producte `112books.eu/product/preses-falses-40-anys-de-blues-a-barcelona/` (l'antic `112books.eu/preses-falses` servia un PNG solt, no una pàgina).
+- `cta: "Comprar el llibre"` / `"Buy the book"` via el paràmetre `cta` de la fitxa.
+
 **🤖 `static/llms.txt`**
 - Afegit el títol a les publicacions (seccions CA i EN): *40 Anys de Blues a Barcelona* (2026, 112books.eu), edició definitiva del projecte.
 
