@@ -3112,14 +3112,20 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
 }
 
 .obra-single {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: var(--space-10);
   padding-block: var(--space-12);
 }
 
+/* La portada és protagonista: columna ampla i flexible (abans 160px fixos) */
+.obra-single__layout {
+  display: grid;
+  grid-template-columns: clamp(220px, 34vw, 440px) minmax(0, 1fr);
+  gap: clamp(var(--space-8), 4vw, var(--space-16));
+  align-items: start;
+}
+
 .obra-single__cover img {
-  width: 160px;
+  width: 100%;
+  height: auto;
   display: block;
   background: var(--bg2);
 }
@@ -3128,6 +3134,7 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  max-width: 42rem;
 }
 
 .obra-single__meta {
@@ -3192,8 +3199,12 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   .obra-grid--discs {
     grid-template-columns: repeat(2, 1fr);
   }
-  .obra-single {
+  .obra-single__layout {
     grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .obra-single__cover {
+    max-width: 280px;
   }
   .tira-obra {
     flex-direction: column;

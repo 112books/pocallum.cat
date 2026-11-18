@@ -13,10 +13,14 @@ Registre de sessions de treball i canvis rellevants.
 - Text nou al cos: presentació el **6 de novembre del 2026**, [vídeo resum a YouTube](https://www.youtube.com/watch?v=7_6aDeOZyhQ) i enllaç per comprar el llibre i veure tot el projecte (músics, història i temples) a 40anysblues.112books.eu.
 - `date: 2026-11-06` (abans 2026-12-01, data futura): la fitxa s'ordena per la data de presentació.
 
-**🖼️ Portada**
-- Nova ruta canònica `static/images/obra/40-anys-de-blues-a-barcelona.png` (931×1280), descarregada de la fitxa de producte de 112books.eu (el seu `og:image` és aquest mateix fitxer). Substitueix `40-anys-blues.png` al frontmatter de CA i EN; el canvi de nom també evita que el Varnish de Dinahosting serveixi la versió vella d'un fitxer immutable.
-- Comprovat per md5: el fitxer nou i el que ja hi havia des del juny són idèntics (`9d5cc354…`), o sigui que la portada publicada ja era la definitiva; el que canvia és la ruta i que ara consta explícitament com a portada del llibre.
-- Com que la portada surt del camp `image`, queda actualitzada als tres llocs on apareix: fitxa `/obra/40-anys-blues/`, graella de `/obra/`, tira d'obra de la portada, i `og:image`/`twitter:image`.
+**🖼️ Portada — la definitiva**
+- La coberta bona és la que publica el web del projecte: `40anysblues.112books.eu/llibres/40anysbluesbarcelona.png` (855×1209; també n'hi ha una versió webp de 800×1131). Convertida a `static/images/obra/40-anys-de-blues-a-barcelona.jpg` (JPEG q92, 177 KB) perquè serveixi també com a `og:image` a qualsevol plataforma.
+- La imatge anterior (`40-anys-blues.png` i el PNG de 931×1280 de la fitxa de producte de 112books) **no** és el disseny definitiu: comparades, difereixen clarament (RMSE 62/255). El PNG no definitiu introduït el mateix dia s'esborra del repo.
+- Com que la portada surt del camp `image`, queda actualitzada a la fitxa `/obra/40-anys-blues/`, a la graella de `/obra/`, a la tira d'obra de la portada i a `og:image`/`twitter:image`.
+
+**📐 Fitxa de l'obra: amplada de la portada**
+- `.obra-single` era un grid de `160px 1fr` però s'aplicava a l'article, que només té un fill (`.obra-single__layout`): la portada quedava clavada a 160 px.
+- Ara el grid viu a `.obra-single__layout`: `clamp(220px, 34vw, 440px)` + `minmax(0, 1fr)`, `align-items: start` i gap fluid. A `max-width: 768px` passa a una columna amb la portada a 280 px màxim.
 
 **🤖 `static/llms.txt`**
 - Afegit el títol a les publicacions (seccions CA i EN): *40 Anys de Blues a Barcelona* (2026, 112books.eu), edició definitiva del projecte.

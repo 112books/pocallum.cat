@@ -9,7 +9,7 @@ editorial: "112books"
 web: "https://40anysblues.112books.eu"
 cta: "Project website"
 enllac_intern: true
-image: "/images/obra/40-anys-de-blues-a-barcelona.png"
+image: "/images/obra/40-anys-de-blues-a-barcelona.jpg"
 destacat: true
 date: 2026-11-06
 draft: false
