@@ -4,6 +4,23 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-18 — 40 Anys de Blues: presentació i llibre a la venda
+
+**📘 Pàgina d'obra actualitzada — `/obra/40-anys-blues/` (CA + EN)**
+- Tret `en_preparacio: true`: ja no surt el badge «En preparació» ni a la fitxa ni a la graella.
+- `web: https://40anysblues.112books.eu` i `editorial: 112books` → el CTA «Veure a 112books →» i la targeta de `/obra/` apunten ja al projecte.
+- Text nou al cos: presentació el **6 de novembre del 2026**, [vídeo resum a YouTube](https://www.youtube.com/watch?v=7_6aDeOZyhQ) i enllaç per comprar el llibre i veure tot el projecte (músics, història i temples) a 40anysblues.112books.eu.
+- `date: 2026-11-06` (abans 2026-12-01, data futura): la fitxa s'ordena per la data de presentació.
+
+**🖼️ Portada**
+- Nova ruta canònica `static/images/obra/40-anys-de-blues-a-barcelona.png` (931×1280), descarregada de 112books.eu. Substitueix `40-anys-blues.png` al frontmatter de CA i EN; el canvi de nom també evita que el Varnish de Dinahosting serveixi la versió vella d'un fitxer immutable.
+- Com que la portada surt del camp `image`, queda actualitzada als tres llocs on apareix: fitxa `/obra/40-anys-blues/`, graella de `/obra/`, tira d'obra de la portada, i `og:image`/`twitter:image`.
+
+**🤖 `static/llms.txt`**
+- Afegit el títol a les publicacions (seccions CA i EN): *40 Anys de Blues a Barcelona* (2026, 112books.eu), edició definitiva del projecte.
+
+---
+
 ## 2026-11-16 — Clients: directori privat per client
 
 **🗂️ `clients/` — repositori privat (fora del repo públic)**
