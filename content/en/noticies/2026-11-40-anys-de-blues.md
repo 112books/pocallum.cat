@@ -11,7 +11,16 @@ All the photographs are by [Joan Linux](https://about.pocallum.cat/), shot in me
 
 Barcelona blues has forty years of history behind it and, since 6 November, it also has the book it deserves. «40 anys de blues a Barcelona» gathers portraits of around 150 musicians from the scene, shot on film —large format included— over more than five years of work. The texts are by [Manolo Poy](https://www.112books.eu/autors/manuel-lopez-poy/) and the prologue by [David Moreu](https://davidmoreu.com).
 
-We presented it on **6 November 2026** at the Centre Cultural Collblanc – La Torrassa (L'Hospitalet de Llobregat), at an event that also opened the project's photography exhibition. If you could not make it, our friends at Bad Music Blues recorded it: [video of the presentation](https://www.youtube.com/watch?v=7_6aDeOZyhQ).
+We presented it on **6 November 2026** at the Centre Cultural Collblanc – La Torrassa (L'Hospitalet de Llobregat), at an event that also opened the project's photography exhibition. If you could not make it, our friends at Bad Music Blues recorded it:
+
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/7_6aDeOZyhQ"
+          title="Presentation of «40 anys de blues a Barcelona»"
+          loading="lazy"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+</div>
 
 ## How to get it
 

@@ -25,7 +25,9 @@ Registre de sessions de treball i canvis rellevants.
 **📰 Notícia de la publicació — `/noticies/2026-11-40-anys-de-blues/` (CA + EN)**
 - Crònica curta de la publicació: fitxa del llibre (150 retrats analògics), presentació del 6 de novembre al Centre Cultural Collblanc – La Torrassa, vídeo de Bad Music Blues, preu (38 € / 33 € socis SBB), data d'edició i enllaç a 40anysblues.112books.eu per comprar-lo o veure el projecte.
 - Crèdits tècnics al capdavant: mig format (Hasselblad 500CM) i gran format (Horseman 8×10"), revelat manual al laboratori de Llumàtics, digitalitzat i editat per Joan Linux, edició a 112Books.eu.
-- Enllaços d'autor: [Manolo Poy](https://www.112books.eu/autors/manuel-lopez-poy/) i [David Moreu](https://davidmoreu.com).
+- Enllaços d'autor: [Manolo Poy](https://www.112books.eu/autors/manuel-lopez-poy/), [David Moreu](https://davidmoreu.com) i [Joan Linux](https://about.pocallum.cat/).
+- **Vídeo incrustat** amb iframe de `www.youtube-nocookie.com/embed/7_6aDeOZyhQ` (sense galetes fins que es reprodueix) dins un `.video-embed` 16:9 (CSS nou a `main.css`), amb `loading="lazy"`.
+- **CSP ampliada:** `frame-src` ara inclou `https://www.youtube-nocookie.com` a `static/.htaccess` (producció) i a `static/_headers` (referència GitHub Pages). Sense això el navegador bloquejava l'iframe en silenci.
 - Imatge de capçalera composta expressament: `static/images/noticies/40-anys-de-blues-llibre.jpg` (1920×1080, fons fosc amb la coberta centrada) + variants `.webp`, `-800.webp` i `-1600.webp` per `partials/picture.html`. Una coberta vertical dins l'hero de 62 vh i dins les targetes 16/9 es retallava massa; així es veu sencera a tots dos llocs.
 
 **🛒 `Preses Falses`
