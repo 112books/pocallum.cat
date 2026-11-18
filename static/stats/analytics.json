@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-17T22:02:51.885311Z",
+  "generated": "2026-11-18T03:57:14.808231Z",
   "period": {
-    "start": "2025-11-17",
-    "end": "2026-11-17"
+    "start": "2025-11-18",
+    "end": "2026-11-18"
   },
-  "total": 1989,
+  "total": 1996,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -770,12 +770,20 @@
     {
       "date": "2026-11-16",
       "count": 3
+    },
+    {
+      "date": "2026-11-17",
+      "count": 6
+    },
+    {
+      "date": "2026-11-18",
+      "count": 1
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 588
+      "count": 591
     },
     {
       "path": "/galeria",
@@ -799,7 +807,7 @@
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 52
+      "count": 53
     },
     {
       "path": "/blog",
@@ -823,7 +831,7 @@
     },
     {
       "path": "/serveis/books-per-actors",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/en/legal/privacitat",
@@ -855,7 +863,7 @@
     },
     {
       "path": "/en/galeria",
-      "count": 14
+      "count": 15
     },
     {
       "path": "/obra/balkan-reunion",
@@ -866,16 +874,16 @@
       "count": 12
     },
     {
+      "path": "/en/serveis/artistic-portfolios",
+      "count": 11
+    },
+    {
       "path": "/en/serveis",
       "count": 11
     },
     {
       "path": "/festivals/calella-harmonica-festival",
       "count": 11
-    },
-    {
-      "path": "/en/serveis/artistic-portfolios",
-      "count": 10
     },
     {
       "path": "/festivals/barcelona-tattoo-expo",
@@ -975,16 +983,16 @@
     }
   ],
   "by_lang": {
-    "en": 289,
+    "en": 292,
     "ca": 9,
     "es": 22
   },
   "by_section": {
-    "inici": 615,
-    "galeria": 238,
+    "inici": 618,
+    "galeria": 239,
     "festivals": 208,
-    "serveis": 179,
-    "noticies": 220,
+    "serveis": 181,
+    "noticies": 221,
     "contacte": 68,
     "blog": 50,
     "qui-som": 55,
@@ -1194,7 +1202,8 @@
       "2026-11-12": 1,
       "2026-11-14": 1,
       "2026-11-15": 7,
-      "2026-11-16": 2
+      "2026-11-16": 2,
+      "2026-11-17": 3
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1593,7 +1602,8 @@
       "2026-10-21": 1,
       "2026-10-30": 3,
       "2026-11-03": 1,
-      "2026-11-13": 1
+      "2026-11-13": 1,
+      "2026-11-17": 1
     },
     "/blog": {
       "2026-05-09": 1,
@@ -1805,7 +1815,8 @@
       "2026-10-27": 1,
       "2026-10-29": 1,
       "2026-11-01": 1,
-      "2026-11-09": 3
+      "2026-11-09": 3,
+      "2026-11-17": 1
     },
     "/en/legal/privacitat": {
       "2026-08-13": 12,
@@ -1905,7 +1916,8 @@
       "2026-11-03": 1,
       "2026-11-06": 1,
       "2026-11-09": 1,
-      "2026-11-11": 1
+      "2026-11-11": 1,
+      "2026-11-17": 1
     },
     "/obra/balkan-reunion": {
       "2026-08-13": 10,
@@ -1924,6 +1936,18 @@
       "2026-10-29": 1,
       "2026-11-08": 1,
       "2026-11-09": 1
+    },
+    "/en/serveis/artistic-portfolios": {
+      "2026-08-14": 1,
+      "2026-08-16": 1,
+      "2026-08-25": 1,
+      "2026-08-31": 1,
+      "2026-09-20": 1,
+      "2026-10-05": 1,
+      "2026-10-27": 1,
+      "2026-11-08": 2,
+      "2026-11-09": 1,
+      "2026-11-18": 1
     },
     "/en/serveis": {
       "2026-06-03": 1,
@@ -1945,17 +1969,6 @@
       "2026-07-02": 1,
       "2026-09-11": 1,
       "2026-10-22": 1
-    },
-    "/en/serveis/artistic-portfolios": {
-      "2026-08-14": 1,
-      "2026-08-16": 1,
-      "2026-08-25": 1,
-      "2026-08-31": 1,
-      "2026-09-20": 1,
-      "2026-10-05": 1,
-      "2026-10-27": 1,
-      "2026-11-08": 2,
-      "2026-11-09": 1
     },
     "/festivals/barcelona-tattoo-expo": {
       "2026-07-01": 1,
@@ -2538,7 +2551,8 @@
       "2026-11-12": 1,
       "2026-11-14": 1,
       "2026-11-15": 7,
-      "2026-11-16": 2
+      "2026-11-16": 2,
+      "2026-11-17": 3
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2663,7 +2677,8 @@
       "2026-11-12": 1,
       "2026-11-14": 1,
       "2026-11-15": 2,
-      "2026-11-16": 1
+      "2026-11-16": 1,
+      "2026-11-17": 1
     },
     "noticies": {
       "2026-05-09": 1,
@@ -2775,7 +2790,8 @@
       "2026-11-10": 1,
       "2026-11-12": 1,
       "2026-11-13": 1,
-      "2026-11-15": 1
+      "2026-11-15": 1,
+      "2026-11-17": 1
     },
     "festivals": {
       "2026-05-09": 4,
@@ -2955,7 +2971,9 @@
       "2026-11-08": 4,
       "2026-11-09": 9,
       "2026-11-11": 3,
-      "2026-11-15": 1
+      "2026-11-15": 1,
+      "2026-11-17": 1,
+      "2026-11-18": 1
     },
     "legal": {
       "2026-05-27": 1,
@@ -3361,7 +3379,7 @@
   "noticies_top": [
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
-      "count": 52
+      "count": 53
     },
     {
       "path": "/noticies/guia-exposicions-espais-fotografics-barcelona",
@@ -3436,12 +3454,12 @@
       "count": 40
     },
     {
-      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
-      "count": 34
+      "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
+      "count": 36
     },
     {
-      "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
-      "count": 31
+      "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
+      "count": 34
     },
     {
       "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
@@ -3496,11 +3514,11 @@
       "count": 16
     },
     {
-      "path": "/2026/10/25/2026-10-24-10-anys-de-date-una-huerta",
+      "path": "/2026/11/14/2026-11-13-i-13-sant-xibeco-les-festes-dhivern-a-la-prosperitat",
       "count": 15
     },
     {
-      "path": "/2026/10/24/t%C3%ADtol-2026-10-22-ciutat-flamenco-ana-morales-m%C3%A1s-que-baile",
+      "path": "/2026/10/25/2026-10-24-10-anys-de-date-una-huerta",
       "count": 15
     }
   ],
@@ -3516,12 +3534,12 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3119
+      "count": 3120
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1253
+      "count": 1255
     },
     {
       "name": "Firefox",
@@ -3553,7 +3571,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1543
+      "count": 1544
     },
     {
       "name": "Android",
@@ -3563,7 +3581,7 @@
     {
       "name": "iOS",
       "id": "iOS",
-      "count": 512
+      "count": 514
     },
     {
       "name": "Linux",
@@ -3585,12 +3603,12 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2635
+      "count": 2636
     },
     {
       "name": "phone",
       "id": "phone",
-      "count": 995
+      "count": 997
     },
     {
       "name": "desktophd",
@@ -3607,12 +3625,12 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2387
+      "count": 2389
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 492
+      "count": 493
     },
     {
       "name": "Brazil",
@@ -3684,12 +3702,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2337
+      "count": 2347
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 288
+      "count": 290
     },
     {
       "name": "ig",
@@ -3704,12 +3722,12 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 56
+      "count": 57
     },
     {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
-      "count": 30
+      "count": 32
     },
     {
       "name": "pocallum-cat.translate.goog",
