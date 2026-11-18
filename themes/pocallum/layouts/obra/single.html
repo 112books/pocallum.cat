@@ -39,7 +39,7 @@
       <p class="obra-single__prep">{{ i18n "obra_en_preparacio" | default "En preparació" }}</p>
       {{ else if .Params.web }}
       <a href="{{ .Params.web }}" class="btn btn--primary obra-single__cta" target="_blank" rel="noopener noreferrer">
-        {{ i18n "obra_veure" | default "Veure" }} a {{ .Params.editorial | default "112books" }} →
+        {{ with .Params.cta }}{{ . }}{{ else }}{{ i18n "obra_veure" | default "Veure" }} a {{ $.Params.editorial | default "112books" }}{{ end }} →
       </a>
       {{ end }}
 
