@@ -14,7 +14,7 @@ faqs:
     a: "Both. We work with solo artists and ensembles of any size in Barcelona. For groups we create collective sessions that capture the dynamic and energy of the ensemble — not a line of people facing a camera."
   - q: "What does an artist portfolio session in Barcelona cost?"
     a: "It depends on session length, number of people and whether you include advanced editing or an analogue version. Write to us and we'll send a proposal within 48 hours."
-image: "/images/galeria/2025-11-18%20-%20Hassel%20-50mm%20-%20PanF+50%20-%20Berta%20Corts%20-%200002.jpg"
+image: "/images/galeria/2025-11-18-Hassel-50mm-PanF+50-Berta-Corts-0002.jpg"
 aliases:
   - /en/serveis/artistic-portfolios/
 ---

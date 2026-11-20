@@ -338,7 +338,7 @@
 
     var action = form.getAttribute('action') || '';
     if (!action) {
-      window.location.href = '/{{ .Site.LanguagePrefix }}/contacte/';
+      window.location.href = '{{ "contacte/" | relLangURL }}';
       return;
     }
 

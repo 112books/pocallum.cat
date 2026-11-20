@@ -4,6 +4,153 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-20 — Sincronització + auditoria de captació de clients
+
+**🔄 Sync amb el remot**
+- `git pull --ff-only`: `main` 79dfcda1 → 196b6ca0 (6 commits, només analytics), `develop` 8da3965e → 8c21969b (76 commits). Arbre net, cap conflicte ni stash.
+
+**📊 Auditoria de captació — `docs/seo/AUDIT-2026-11-captacio-visites.md`**
+- Dades reals de GoatCounter (8/5/2026 → 19/11/2026, 194 dies): **2.013 visites**, ~10/dia, ~310/mes i **plana** (257→365→310). 42 s de mitjana al lloc. **6 formularis enviats** en tot el període. 59 visites a `/contacte/`.
+- Referents: directe 2.366, **Google 301 (15%)**, Instagram 136, **ChatGPT 57**, Facebook 32, translate.goog 30, blog 22.
+- Pàgines: `/` 597, `/galeria` 224, `/festivals` 104, `/serveis` 82, guia d'exposicions 48 + 53 (EN), `/serveis/books-per-actors` 32.
+- **Prova de SERP** (DuckDuckGo, 10 cerques d'intent comercial, 20/11): només `fotògraf de dansa Barcelona` (#2). Zero per concerts, teatre, book actoral, jazz, flamenc, circ, festivals.
+- Competidors que hi surten: Nuria Aguadé, Daniel López Art, Mattia Sedda, Muse Estudio, Carles Cardelús, Abel Jurado, Pep Casadevall. Tots amb **landing page en castellà** i la paraula «fotógrafo» al `title`.
+- **Diagnòstic**: el coll d'ampolla no és tècnic (TTFB 50-80 ms, schema i hreflang correctes) sinó de distribució i idioma. Ordre d'impacte: GBP → castellà → 4 pàgines de servei que falten (jazz, flamenc, circ, com funciona/preu) → jus del blog → galeria com a pàgina de conversió.
+- Defectes trobats: **152 fitxes de galeria amb `<title>` i `<h1>` buits** (`title: ""`), **661 de 856 pàgines amb la mateixa meta description** genèrica, `/blog/` duplicat i blocat a robots, 404 heredats de WordPress amb tràfic, i el bug de `//contacte/`.
+
+**🔧 Correcció — fallback del formulari de contacte**
+- `themes/pocallum/layouts/contacte/list.html:341`: `'/{{ .Site.LanguagePrefix }}/contacte/'` generava `//contacte/` (domini inexistent) quan el formulari no tenia `action`. Ara `{{ "contacte/" | relLangURL }}` → `/contacte/`.
+
+**Notes**
+- Accions que depenen de decisions de Joan (no aplicades): crear el Google Business Profile (pendent des del juny), decidir si s'activa el castellà, i si es publica una pàgina de preus/franja.
+
+---
+
+## 2026-11-18 — 40 Anys de Blues: presentació i llibre a la venda
+
+**📘 Pàgina d'obra actualitzada — `/obra/40-anys-blues/` (CA + EN)**
+- Tret `en_preparacio: true`: ja no surt el badge «En preparació» ni a la fitxa ni a la graella.
+- `web: https://40anysblues.112books.eu` + `cta: "Web del projecte"` → botó «Web del projecte →» a la fitxa (nou paràmetre `cta` a `obra/single.html`; si no hi és, es manté «Veure a {editorial}»).
+- `enllac_intern: true` → la targeta de `/obra/` continua portant a la fitxa explicativa, no al web extern. Nou paràmetre a `obra/list.html`: la targeta només és externa si l'obra no té fitxa (`and (not $prep) (not $intern) .Params.web`). Les altres 21 obres segueixen enllaçant fora.
+- Text nou al cos: presentació el **6 de novembre del 2026**, [vídeo resum a YouTube](https://www.youtube.com/watch?v=7_6aDeOZyhQ) i enllaç per comprar el llibre i veure tot el projecte (músics, història i temples) a 40anysblues.112books.eu.
+- `date: 2026-11-06` (abans 2026-12-01, data futura): la fitxa s'ordena per la data de presentació.
+
+**🖼️ Portada — la definitiva**
+- La coberta bona és la que publica el web del projecte: `40anysblues.112books.eu/llibres/40anysbluesbarcelona.png` (855×1209; també n'hi ha una versió webp de 800×1131). Convertida a `static/images/obra/40-anys-de-blues-a-barcelona.jpg` (JPEG q92, 177 KB) perquè serveixi també com a `og:image` a qualsevol plataforma.
+- La imatge anterior (`40-anys-blues.png` i el PNG de 931×1280 de la fitxa de producte de 112books) **no** és el disseny definitiu: comparades, difereixen clarament (RMSE 62/255). El PNG no definitiu introduït el mateix dia s'esborra del repo.
+- Com que la portada surt del camp `image`, queda actualitzada a la fitxa `/obra/40-anys-blues/`, a la graella de `/obra/`, a la tira d'obra de la portada i a `og:image`/`twitter:image`.
+
+**📐 Fitxa de l'obra: amplada de la portada**
+- `.obra-single` era un grid de `160px 1fr` però s'aplicava a l'article, que només té un fill (`.obra-single__layout`): la portada quedava clavada a 160 px.
+- Ara el grid viu a `.obra-single__layout`: `clamp(220px, 34vw, 440px)` + `minmax(0, 1fr)`, `align-items: start` i gap fluid. A `max-width: 768px` passa a una columna amb la portada a 280 px màxim.
+
+**📰 Notícia de la publicació — `/noticies/2026-11-40-anys-de-blues/` (CA + EN)**
+- Crònica curta de la publicació: fitxa del llibre (150 retrats analògics), presentació del 6 de novembre al Centre Cultural Collblanc – La Torrassa, vídeo de Bad Music Blues, preu (38 € / 33 € socis SBB), data d'edició i enllaç a 40anysblues.112books.eu per comprar-lo o veure el projecte.
+- Crèdits tècnics al capdavant: mig format (Hasselblad 500CM) i gran format (Horseman 8×10"), revelat manual al laboratori de Llumàtics, digitalitzat i editat per Joan Linux, edició a 112Books.eu.
+- Enllaços d'autor: [Manolo Poy](https://www.112books.eu/autors/manuel-lopez-poy/), [David Moreu](https://davidmoreu.com) i [Joan Linux](https://about.pocallum.cat/).
+- **Vídeo incrustat** amb iframe de `www.youtube-nocookie.com/embed/7_6aDeOZyhQ` (sense galetes fins que es reprodueix) dins un `.video-embed` 16:9 (CSS nou a `main.css`), amb `loading="lazy"`.
+- **CSP ampliada:** `frame-src` ara inclou `https://www.youtube-nocookie.com` a `static/.htaccess` (producció) i a `static/_headers` (referència GitHub Pages). Sense això el navegador bloquejava l'iframe en silenci.
+- Imatge de capçalera composta expressament: `static/images/noticies/40-anys-de-blues-llibre.jpg` (1920×1080, fons fosc amb la coberta centrada) + variants `.webp`, `-800.webp` i `-1600.webp` per `partials/picture.html`. Una coberta vertical dins l'hero de 62 vh i dins les targetes 16/9 es retallava massa; així es veu sencera a tots dos llocs.
+
+**🛒 `Preses Falses`
+- `web` ara apunta a la fitxa de producte `112books.eu/product/preses-falses-40-anys-de-blues-a-barcelona/` (l'antic `112books.eu/preses-falses` servia un PNG solt, no una pàgina).
+- `cta: "Comprar el llibre"` / `"Buy the book"` via el paràmetre `cta` de la fitxa.
+
+**🤖 `static/llms.txt`**
+- Afegit el títol a les publicacions (seccions CA i EN): *40 Anys de Blues a Barcelona* (2026, 112books.eu), edició definitiva del projecte.
+
+---
+
+## 2026-11-16 — Clients: directori privat per client
+
+**🗂️ `clients/` — repositori privat (fora del repo públic)**
+- Un directori per client amb cinc documents: `fitxa.md` (contacte i perfil), `correus.md` (registre de mails), `pressupostos.md`, `full-de-ruta.md` i `control-horari.md`, més `correus/`, `pressupostos/` i `adjunts/`.
+- Plantilles a `clients/_plantilles/` i script `clients/_scripts/nou-client.sh` per crear-ne de nous.
+- `clients/` afegit al `.gitignore` del repo de pocallum.cat; el directori és un repositori git propi (com `ressona-docs`).
+
+**👤 Primer client: Martí Osuna (management de Judit Garuz)**
+- `clients/marti-osuna/`: fitxa completa, mail rebut registrat, concepte creatiu (B/N analògic, Hasselblad 6x6 + Leica, 4 h a la Nau Bostik, 3–4 looks), full de ruta i pressupost.
+- Proposta: **1.500 € + IVA**, un sol escenari. Perruqueria i maquillatge a càrrec del client, 35–40 imatges finals i llicència de 2 anys.
+- PDF corporatiu generat amb WeasyPrint (HTML + Syne/Chicago/IBM Plex, portada fosca): `clients/marti-osuna/pressupostos/2026-11-16-proposta-catwalk.pdf`.
+- Resposta enviada el 2026-11-16 amb disponibilitat (18/11 o setmana del 23–27) i el PDF adjunt.
+- Temps: 2 h registrades a `.taques/pocallum.cat/2026-11-16.md` amb el tag `[marti-osuna]`.
+
+**🔧 Eines**
+- Flux de PDF documentat a `clients/README.md`: `weasyprint` amb `XDG_CACHE_HOME` temporal i tipografies del repo.
+- `.gitignore`: `clients/` exclòs del repo públic.
+
+---
+
+## 2026-11-09 — Imatges trencades a serveis i a la notícia 112 Revelats
+
+**🖼️ Rutes antigues amb `%20` — commit `5fd337d8`**
+- Les fotos de galeria es van renombrar (espais → guions) però algunes pàgines de serveis encara apuntaven als noms antics → 404.
+- `content/ca/serveis/books-per-actors.md`: 6 rutes (Adrià Bernal, Ariadna, Tierry Torniquet, Majo, Hoochie Coochie, Kimberly Boldewijn).
+- `content/ca/serveis/books-artistics.md`: 5 rutes (Koko C, Nadia Otshudi, Berta Corts, Aixhia, Hoochie Coochie).
+- `content/en/serveis/artistic-portfolios.md`: 1 ruta (Berta Corts).
+
+**🧩 `picture.html` i PNG — commit `fix: picture.html accepta png…`**
+- El partial `themes/pocallum/layouts/partials/picture.html` només treia `.jpg/.jpeg` per derivar els WebP; amb PNG generava `112-revelats.png-800.webp` (404). Amb `<picture>` el navegador **no fa fallback** al `<img>` → imatge en blanc a 34 pàgines (llistat de notícies i relacionades).
+- Regex ampliada a `(jpg|jpeg|png)` i generats `static/images/noticies/112-revelats{,-800,-1600}.webp` amb `magick` (q85, `800x>` / `1600x>`), mateixos paràmetres que l'script.
+
+**✅ Verificació**
+- Escaneig de tot `public/` (846 pàgines, sense `/stats/` ni `/admin/`): 1.422 refs d'imatge úniques, 0 trencades. Comprovat en viu a producció després del deploy: 1.422 × 200.
+
+**Notes**
+- `scripts/convert-images.sh` només accepta JPG → per a PNG nous cal generar els WebP a mà o adaptar l'script.
+- Encara queda un fitxer amb espais: `static/images/serveis/concerts/2025-07-05- LM6- Foma800@1600 - Avishai Cohen - 0014.jpg` (funciona; referenciat a `concerts.md` i `live-music.md`). Si es renombra, actualitzar les dues rutes.
+
+---
+
+## 2026-10-30 — Guia d'exposicions: títol, festival Panoràmic i tags
+
+**📰 Guia d'exposicions, Festivals i espais fotogràfics a Barcelona**
+- `content/ca/noticies/guia-exposicions-espais-fotografics-barcelona.md` i `content/en/noticies/photo-exhibitions-spaces-barcelona-guide.md`: títol actualitzat per incloure Festivals; entrada de Panoràmic (Granollers) apuntant ara a l'URL canònic https://festivalpanoramic.cat (abans panoramicgranollers.cat).
+- Tags ampliats a ambdues versions: festivals, arts visuals/visual arts, cultura visual/visual culture, tallers/workshops, conferències/conferences, xerrades/talks (més els existents).
+- Build Hugo verificat sense errors; canvis commitats i pujats a `main` (deploy automàtic a producció).
+
+---
+
+## 2026-10-27 — Ciutat Flamenco 2026: fitxa, notícia i galeria
+
+**🎭 Fitxa del festival — commit `7aeef75a`**
+- `content/{ca,en}/festivals/ciutat-flamenco-barcelona.md`: `anys: "2025 – 2026"`, `date: 2026-10-24`, secció nova «2026: hi hem tornat» (majoria d'espectacles vistos: Nau Bostik, SAT!, Ateneu Popular de Nou Barris, Tradicionàrius) i 6 enllaços nous a les cròniques del blog.
+
+**📰 Notícia `2026-10-ciutat-flamenco-2026` (CA+EN) — mateix commit**
+- Destaca Ana Morales («Más que baile», 22/10, SAT!) i Jordi Latorre («Después del diluvio electrónico», 23/10), amb foto, vídeo Vimeo (`vimeo-embed`), fitxa artística i enllaç a la crònica. La resta (Esperanza Garrido, Districte Flamenco, Ciutat Batalla, Yoel Vargas) en llista breu.
+- Imatges copiades del repo local del blog (`../blog.pocallum.cat/static/media/`) a `static/images/noticies/2026-10-ciutat-flamenco/` amb noms descriptius. No fixada (`pinned`).
+- El web ciutatflamenco.com retorna 403 a curl → a l'EN s'enllacen les pàgines `/ca/` del festival (les `/en/` no s'han pogut verificar).
+
+**🖼️ Galeria — commits `ee6c93e1`, `184d88cb`, `d02ac6ac`, `ddd8194b`**
+- 5 fotos principals dels posts del blog (Esperanza Garrido, Ana Morales, Jordi Latorre, Ciutat Batalla, Yoel Vargas) + 6 de Districte Flamenco (2 per artista: Daniela Martín Heras, Adrián Gómez, Marina Walpercin). Totes `servei: "cultura"`, prefix `ciutat-flamenco-2026-`.
+- Les fotos de «Cara A y Cara B» d'Adrián Gómez mostren la ballarina **Lucía Fernández** → títol: «Lucía Fernández a «Cara A y Cara B», d'Adrián Gómez».
+- La foto genèrica de Districte Flamenco es va treure de la galeria (sobrava amb les 2 per artista); continua a la notícia (còpia pròpia).
+- Districte Flamenco datat el **18/10** (diumenge, segons la crònica), encara que alguns fitxers originals deien 19.
+
+**Nota:** l'script `scripts/convert-images.sh` només accepta un fitxer per crida → cal un bucle per a diverses imatges.
+
+---
+
+## 2026-10-21 — Propostes i missatges per als artistes del Ciutat Flamenco 2026
+
+**📄 Documents de venda de fotografies — `docs/artistes/ciutat-flamenco-2026/`**
+- Nova carpeta amb `_plantilla-ca.md` (text definitiu de Joan) i `_plantilla-es.md`, `_build.py` que genera MD + PDF (pandoc + WeasyPrint: Syne, IBM Plex, Chicago, accent #FF5500) i `missatges/`.
+- Quatre documents: Adrián Gómez («Cara A y Cara B»), Daniela Martín Heras («A la sombra de un poeta»), Marina Walpercin («De tu libertad») i Esperanza Garrido («Firmamento»). Tots el 18/10/2026 a la Nau Bostik (Ciutat Flamenco, Taller de Músics).
+- Condicions: 200 € (10 fotografies editades) i 350 € (fins a 100). Previsualització en galeria privada de Google Fotos a 1.000 px; l'alta resolució només amb l'opció confirmada. IVA no inclòs. Signatura amb el malnom «Pocallum» i https://pocallum.cat.
+- Versió castellana completa per a Adrián (`adrian-gomez-es.md` / `.pdf`).
+
+**💬 Missatges per Instagram — `missatges/`**
+- Text pla (sense markdown) i per sota de 1.000 caràcters, el límit d'Instagram.
+- To càlid per a Marina Walpercin (ella havia escrit primer); to formal amb vós per a la resta, que és contacte a porta freda i no hi ha confiança.
+- Versió castellana del DM i del peu de foto per a Adrián.
+- Cada missatge enllaça el passi de l'actuació al blog: post de *Districte Flamenco* (els tres primers) i post de *Firmamento*.
+- Correcció preparada per a Marina Walpercin (`missatges/marina-walpercin-correccio.md`): el DM que se li va enviar deia 50 fotografies i l'opció de 200 € és de 10.
+- Missatges enviats als quatre artistes el 21/10. Creat `seguiment.md` amb l'estat de cada conversa i el flux a seguir si algú compra.
+
+**Decidit:** l'opció de 200 € és de **10 fotografies editades** (confirmat). Queda pendent aclarir-ho amb Marina Walpercin, que va rebre un missatge amb 50.
+
+---
+
 ## 2026-09-21 — Eliminació workflow update-blog-stats obsolet
 
 **Diagnosi i neteja — commit `b28c9d7`**

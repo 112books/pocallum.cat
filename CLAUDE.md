@@ -111,6 +111,7 @@ pocallum.cat/
 │   │   └── logotip/           # logo làmpara PNG
 ├── archetypes/                # plantilles hugo new
 ├── docs/superpowers/specs/    # design docs aprovats
+├── clients/                   # PRIVAT: fitxes de clients (gitignored, repo propi)
 ├── HISTORY.md                 # registre de sessions
 └── hugo.toml                  # configuració principal
 ```
@@ -177,6 +178,9 @@ draft: false
 
 Imatges addicionals al cos (galeria d'una crònica): carpeta `static/images/noticies/{slug}/` + `![](/images/noticies/{slug}/nom.jpg)` al Markdown. **Els noms de fitxer no poden portar espais** — trenca la sintaxi `![]()` i la imatge no renderitza. Usar guions.
 
+⚠️ **Si renombres una imatge, actualitza totes les referències** (`grep -rn 'nom-antic' content/`) — les rutes amb `%20` als HTML de `serveis/` es van quedar penjades i donaven 404 (09/11/2026).
+⚠️ **Tota imatge servida amb `partials/picture.html` necessita les seves variants WebP** (`.webp`, `-800.webp`, `-1600.webp`): si falten, `<picture>` no fa fallback i la imatge surt en blanc. El partial accepta `.jpg/.jpeg/.png`, però `scripts/convert-images.sh` només converteix JPG → per a PNG, `magick` a mà amb els mateixos paràmetres (q85, `800x>`, `1600x>`).
+
 #### Notícia fixada (pinned)
 `pinned: true` al frontmatter (CA **i** EN) fa que una notícia surti sempre primera — tant a `/noticies/` com al bloc de notícies de la portada — independentment de la data. Lògica a `themes/pocallum/layouts/noticies/list.html` i `themes/pocallum/layouts/index.html` (`where ... "Params.pinned" true` + `append` per anteposar-les a la resta ordenada per data). Actualment pinnada: "Guia d'exposicions i espais fotogràfics a Barcelona".
 
@@ -216,6 +220,23 @@ Surten a `/contacte/` (sota "O escriu-nos directament") i `/qui-som/` (sota el b
 **Deixar-ne un en espera** (pendent de confirmació o de rebre el text): `publicat: false`, camps `cita_ca`/`cita_en` buits. No surt enlloc fins que es completi i es passi a `true`.
 
 ⚠️ Mai publicar una cita sense permís explícit, encara que la font sigui pública (missatge privat, xarxa social, etc.).
+
+---
+
+## Clients (privat)
+
+Directori `clients/` — **privat, exclòs del repositori públic** (`.gitignore`). Un
+directori per client amb cinc documents fixos: `fitxa.md`, `correus.md`,
+`pressupostos.md`, `full-de-ruta.md` i `control-horari.md`, més les carpetes
+`correus/`, `pressupostos/` i `adjunts/`.
+
+- És un **repositori git propi** (com `ressona-docs`); no es desplega mai.
+- Client nou: `clients/_scripts/nou-client.sh "Nom Cognom"`.
+- Els temps es registren a `.taques/pocallum.cat/` amb el prefix `[slug-del-client]` a la tasca.
+- Estats: `nou`, `contactat`, `pressupostat`, `acceptat`, `en-curs`, `lliurat`, `tancat`, `descartat`.
+- Convencions completes: `clients/README.md`.
+
+⚠️ Cap dada de client fora de `clients/`. Cap PDF ni adjunt a `static/` (es desplegaria a producció).
 
 ---
 

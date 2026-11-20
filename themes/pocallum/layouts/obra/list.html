@@ -18,8 +18,10 @@
       {{ range $discs.ByDate.Reverse }}
       {{- $titol := .Title -}}
       {{- $prep := .Params.en_preparacio -}}
-      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{- $intern := .Params.enllac_intern -}}
+      {{/* Targeta externa només si l'obra no té fitxa explicativa (enllac_intern: true) */}}
+      {{- $extern := and (not $prep) (not $intern) .Params.web -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ if $extern }}{{ $extern }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"
@@ -46,8 +48,10 @@
       {{ range $fotollibres.ByDate.Reverse }}
       {{- $titol := .Title -}}
       {{- $prep := .Params.en_preparacio -}}
-      {{- $href := cond (and (not $prep) (ne .Params.web "")) .Params.web .RelPermalink -}}
-      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ $href }}"{{ if not $prep }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{- $intern := .Params.enllac_intern -}}
+      {{/* Targeta externa només si l'obra no té fitxa explicativa (enllac_intern: true) */}}
+      {{- $extern := and (not $prep) (not $intern) .Params.web -}}
+      <a class="obra-card{{ if $prep }} obra-card--prep{{ end }}" href="{{ if $extern }}{{ $extern }}{{ else }}{{ .RelPermalink }}{{ end }}"{{ if $extern }} target="_blank" rel="noopener noreferrer"{{ end }}>
         {{ with .Params.image }}
         <div class="obra-card__cover">
           <img src="{{ . | strings.TrimLeft "/" | relURL }}"

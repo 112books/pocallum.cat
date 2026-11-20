@@ -7,3 +7,5 @@ node_modules/
 .superpowers/
 .taques/
 .taques-central/
+# Clients: dades privades, mai al repositori públic
+clients/

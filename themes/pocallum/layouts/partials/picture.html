@@ -17,7 +17,7 @@
 {{- $class   := .class   | default "" -}}
 {{- $id      := .id      | default "" -}}
 {{/* Deriva paths WebP a partir del JPEG */}}
-{{- $base    := $src | replaceRE `(?i)\.(jpg|jpeg)$` "" -}}
+{{- $base    := $src | replaceRE `(?i)\.(jpg|jpeg|png)$` "" -}}
 {{- $srcJpeg := $src             | strings.TrimLeft "/" | relURL -}}
 {{- $srcWebp := printf "%s.webp"      $base | strings.TrimLeft "/" | relURL -}}
 {{- $src800  := printf "%s-800.webp"  $base | strings.TrimLeft "/" | relURL -}}

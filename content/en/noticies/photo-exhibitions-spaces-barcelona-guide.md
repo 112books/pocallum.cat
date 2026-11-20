@@ -1,9 +1,9 @@
 ---
-title: "Guide to Photography Exhibitions and Spaces in Barcelona"
+title: "Guide to Photography Exhibitions, Festivals and Spaces in Barcelona"
 date: 2026-06-15
 lead: "A curated list of the best venues in Barcelona and the metropolitan area where you can regularly see photography exhibitions, with direct links to their current programming."
 image: "/images/noticies/2023-04-30-PinholeDay2023-HolgaWPC-0001.jpg"
-tags: ["photography", "Barcelona", "exhibitions", "galleries", "culture", "guide", "photo spaces"]
+tags: ["photography", "Barcelona", "exhibitions", "galleries", "culture", "guide", "photo spaces", "festivals", "visual arts", "visual culture", "workshops", "conferences", "talks"]
 pinned: true
 draft: false
 ---
@@ -107,7 +107,7 @@ Barcelona, a city of contrasts, offers a rich and diverse cultural panorama, esp
 - [SCAN Tarragona](https://scan.cat)  
   Contemporary photography festival with an institutional curatorial focus.
 
-- [Panoràmic (Granollers)](https://panoramicgranollers.cat)  
+- [Panoràmic (Granollers)](https://festivalpanoramic.cat)  
   Photography, film and new media in a hybrid format.
 
 - [Visa pour l'Image (Perpignan)](https://www.visapourlimage.com)  
