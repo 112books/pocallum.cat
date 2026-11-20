@@ -9,3 +9,6 @@ node_modules/
 .taques-central/
 # Clients: dades privades, mai al repositori públic
 clients/
+
+# tgb — estat local, no es versiona
+.tgb/
