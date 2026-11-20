@@ -4,6 +4,28 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-20 — Sincronització + auditoria de captació de clients
+
+**🔄 Sync amb el remot**
+- `git pull --ff-only`: `main` 79dfcda1 → 196b6ca0 (6 commits, només analytics), `develop` 8da3965e → 8c21969b (76 commits). Arbre net, cap conflicte ni stash.
+
+**📊 Auditoria de captació — `docs/seo/AUDIT-2026-11-captacio-visites.md`**
+- Dades reals de GoatCounter (8/5/2026 → 19/11/2026, 194 dies): **2.013 visites**, ~10/dia, ~310/mes i **plana** (257→365→310). 42 s de mitjana al lloc. **6 formularis enviats** en tot el període. 59 visites a `/contacte/`.
+- Referents: directe 2.366, **Google 301 (15%)**, Instagram 136, **ChatGPT 57**, Facebook 32, translate.goog 30, blog 22.
+- Pàgines: `/` 597, `/galeria` 224, `/festivals` 104, `/serveis` 82, guia d'exposicions 48 + 53 (EN), `/serveis/books-per-actors` 32.
+- **Prova de SERP** (DuckDuckGo, 10 cerques d'intent comercial, 20/11): només `fotògraf de dansa Barcelona` (#2). Zero per concerts, teatre, book actoral, jazz, flamenc, circ, festivals.
+- Competidors que hi surten: Nuria Aguadé, Daniel López Art, Mattia Sedda, Muse Estudio, Carles Cardelús, Abel Jurado, Pep Casadevall. Tots amb **landing page en castellà** i la paraula «fotógrafo» al `title`.
+- **Diagnòstic**: el coll d'ampolla no és tècnic (TTFB 50-80 ms, schema i hreflang correctes) sinó de distribució i idioma. Ordre d'impacte: GBP → castellà → 4 pàgines de servei que falten (jazz, flamenc, circ, com funciona/preu) → jus del blog → galeria com a pàgina de conversió.
+- Defectes trobats: **152 fitxes de galeria amb `<title>` i `<h1>` buits** (`title: ""`), **661 de 856 pàgines amb la mateixa meta description** genèrica, `/blog/` duplicat i blocat a robots, 404 heredats de WordPress amb tràfic, i el bug de `//contacte/`.
+
+**🔧 Correcció — fallback del formulari de contacte**
+- `themes/pocallum/layouts/contacte/list.html:341`: `'/{{ .Site.LanguagePrefix }}/contacte/'` generava `//contacte/` (domini inexistent) quan el formulari no tenia `action`. Ara `{{ "contacte/" | relLangURL }}` → `/contacte/`.
+
+**Notes**
+- Accions que depenen de decisions de Joan (no aplicades): crear el Google Business Profile (pendent des del juny), decidir si s'activa el castellà, i si es publica una pàgina de preus/franja.
+
+---
+
 ## 2026-11-18 — 40 Anys de Blues: presentació i llibre a la venda
 
 **📘 Pàgina d'obra actualitzada — `/obra/40-anys-blues/` (CA + EN)**
