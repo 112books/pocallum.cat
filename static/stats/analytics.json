@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-20T18:08:46.088012Z",
+  "generated": "2026-11-21T00:30:03.494043Z",
   "period": {
-    "start": "2025-11-20",
-    "end": "2026-11-20"
+    "start": "2025-11-21",
+    "end": "2026-11-21"
   },
-  "total": 2013,
+  "total": 2016,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -782,12 +782,16 @@
     {
       "date": "2026-11-19",
       "count": 7
+    },
+    {
+      "date": "2026-11-20",
+      "count": 3
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 597
+      "count": 599
     },
     {
       "path": "/galeria",
@@ -799,7 +803,7 @@
     },
     {
       "path": "/serveis",
-      "count": 82
+      "count": 83
     },
     {
       "path": "/noticies",
@@ -992,10 +996,10 @@
     "es": 22
   },
   "by_section": {
-    "inici": 624,
+    "inici": 626,
     "galeria": 242,
     "festivals": 208,
-    "serveis": 183,
+    "serveis": 184,
     "noticies": 224,
     "contacte": 68,
     "blog": 50,
@@ -1208,7 +1212,8 @@
       "2026-11-16": 2,
       "2026-11-17": 3,
       "2026-11-18": 5,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-20": 2
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1459,7 +1464,8 @@
       "2026-11-09": 2,
       "2026-11-15": 1,
       "2026-11-18": 1,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-20": 1
     },
     "/noticies": {
       "2026-05-09": 1,
@@ -2567,7 +2573,8 @@
       "2026-11-16": 2,
       "2026-11-17": 3,
       "2026-11-18": 5,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-20": 2
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2992,7 +2999,8 @@
       "2026-11-15": 1,
       "2026-11-17": 1,
       "2026-11-18": 2,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-20": 1
     },
     "legal": {
       "2026-05-27": 1,
@@ -3472,11 +3480,11 @@
     },
     {
       "path": "/cerca",
-      "count": 41
+      "count": 42
     },
     {
       "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
-      "count": 39
+      "count": 40
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -3484,7 +3492,7 @@
     },
     {
       "path": "/2026/11/07/2026-11-06-elektra-i-hekate-heads-nit-de-punk-rock-a-la-prosperitat",
-      "count": 31
+      "count": 32
     },
     {
       "path": "/2026/10/19/2026-10-18-ciutat-flamenco-districte-flamenco",
@@ -3527,16 +3535,16 @@
       "count": 17
     },
     {
+      "path": "/2026/11/14/2026-11-13-i-13-sant-xibeco-les-festes-dhivern-a-la-prosperitat",
+      "count": 16
+    },
+    {
       "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
       "count": 16
     },
     {
       "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
       "count": 16
-    },
-    {
-      "path": "/2026/11/14/2026-11-13-i-13-sant-xibeco-les-festes-dhivern-a-la-prosperitat",
-      "count": 15
     },
     {
       "path": "/2026/10/25/2026-10-24-10-anys-de-date-una-huerta",
@@ -3550,7 +3558,7 @@
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 42,
+  "avg_time_on_site_seconds": 43,
   "browsers": [
     {
       "name": "Chrome",
@@ -3723,12 +3731,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2366
+      "count": 2367
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 301
+      "count": 303
     },
     {
       "name": "ig",
