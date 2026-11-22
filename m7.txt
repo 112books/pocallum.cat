@@ -1,9 +1,0 @@
-DUES TASQUES MÉS FETES
-
-1) ESTADÍSTIQUES (idioma)
-El problema: el català no porta prefix a les URLs (/serveis/ en lloc de /ca/serveis/), així que el comptador d'idiomes NOMÉS veia les pàgines amb prefix i el català quedava fora. Per això el gràfic "Idioma dels visitants" no era fiable.
-Arreglat: qualsevol pàgina sense codi d'idioma ara compta com a català. El castellà ja es reconeixia (/es/), però no tenia volum per sortir. A partir de la propera actualització horària veuràs CA, ES i EN amb dades reals.
-
-2) SEGONA GUIA INFORMACIONAL
-"Què mira un programador de festival quan rep les fotos d'un grup" — en català i anglès. Sis punts concrets des de la teva experiència real: que se't reconegui, que es vegi l'escenari, formats horitzontal i vertical, que es vegi el públic, que no faci pudor de premsa i que arribi a temps.
-No és contingut de relleno: és exactament el que busca algú que vol contractar un fotògraf per al seu festival, i et posiciona com a algú que entén l'altra banda de la taula.
