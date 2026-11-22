@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $serveis := where .Site.RegularPages "Section" "serveis" -}}
+
+<section class="container" style="padding:5rem 0 2rem">
+  <p class="section-eyebrow">{{ i18n "hero_eyebrow" }}</p>
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose" style="max-width:62ch">{{ . }}</div>{{ end }}
+  <p style="margin-top:2rem">
+    <a class="btn btn--primary btn--lg" href="{{ "es/contacte/" | relLangURL }}">{{ i18n "cta_contact" }}</a>
+    <a class="btn" href="https://pocallum.cat/galeria/" style="margin-left:.75rem">{{ i18n "cta_gallery" }}</a>
+  </p>
+</section>
+
+{{ if $serveis }}
+<section class="container" style="padding:2rem 0 5rem">
+  <h2 class="section-title">{{ i18n "serveis_title" }}</h2>
+  <div class="serveis-grid">
+    {{ range $i, $s := $serveis }}
+    <a class="servei-card" href="{{ $s.RelPermalink }}">
+      <span class="servei-card__num">{{ printf "%02d" (add $i 1) }}</span>
+      <h3 class="servei-card__title">{{ $s.Title }}</h3>
+      <p class="servei-card__desc">{{ $s.Description | default ($s.Summary | plainify | truncate 110) }}</p>
+      <span class="servei-card__cta">{{ i18n "serveis_chapter_cta" }}</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ partial "cta-band.html" . }}
+{{ end }}
