@@ -69,5 +69,5 @@ ErrorDocument 404 /404.html
   RewriteRule ^bienvenidos-pocallum/?$ https://pocallum.cat/ [R=301,L]
   RewriteRule ^node/[0-9]+/(track)?.*$ https://pocallum.cat/ [R=301,L]
   RewriteRule ^content(/.*)?$ https://pocallum.cat/ [R=301,L]
-  RewriteRule ^es/?$ https://pocallum.cat/ [R=301,L]
+  # /es/ ja és una versió real del web: no es redirigeix
 </IfModule>
