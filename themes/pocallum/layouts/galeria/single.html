@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{- $servei := .Params.servei | default "cultura" -}}
+{{- $any := .Date.Format "2006" -}}
+{{- $data := .Date.Format "02/01/2006" -}}
+{{- $label := printf "Fotografia de %s · %s" $servei $any -}}
+{{- if eq .Language.Lang "en" -}}
+  {{- $label = printf "Photography: %s · %s" $servei $any -}}
+{{- end -}}
+{{- $title := .Title -}}
+{{- if not $title -}}{{- $title = $label -}}{{- end -}}
+
+<article class="article galeria-item">
+  <header class="article-header container">
+    <h1 class="article-title">{{ $title }}</h1>
+    <p class="galeria-item__meta">
+      {{ with .Params.servei }}<span class="galeria-item__servei">{{ . }}</span>{{ end }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ $data }}</time>
+    </p>
+  </header>
+
+  <div class="article-body container">
+    {{ with .Params.image }}
+    <figure class="galeria-item__fig">
+      {{ partial "picture.html" (dict
+        "src"     .
+        "alt"     $title
+        "loading" "eager"
+        "class"   "galeria-item__img"
+      ) }}
+    </figure>
+    {{ end }}
+
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+    <nav class="galeria-item__nav">
+      <a class="btn" href="{{ "galeria/" | relLangURL }}">← {{ i18n "galeria_title" | default "Galeria" }}</a>
+      <a class="btn btn--primary" href="{{ "contacte/" | relLangURL }}">{{ i18n "cta_contact" | default "Demana pressupost" }}</a>
+    </nav>
+  </div>
+</article>
+
+{{ end }}

@@ -3339,3 +3339,34 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   .festivals-list,
   .foto-grid { display: none !important; }
 }
+
+/* ── Fitxa de galeria (/galeria/<foto>/) ────────────────────────────── */
+.galeria-item .article-header { padding-bottom: 0; }
+.galeria-item__meta {
+  display: flex; align-items: center; gap: .9rem;
+  margin: .75rem 0 0;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: .82rem; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--mid);
+}
+.galeria-item__servei { color: var(--accent); }
+.galeria-item__fig { margin: 2.5rem 0 0; }
+.galeria-item__img { display: block; width: 100%; height: auto; }
+.galeria-item__nav {
+  display: flex; flex-wrap: wrap; gap: 1rem;
+  margin: 3rem 0 4rem;
+  padding-top: 1.5rem; border-top: 1px solid var(--line);
+}
+@media (max-width: 640px) {
+  .galeria-item__fig { margin-top: 1.5rem; }
+  .galeria-item__nav { margin: 2rem 0 3rem; }
+}
+
+/* ── Banda de CTA (galeria, festivals) ─────────────────────────────── */
+.cta-band { margin: 4rem auto 5rem; }
+.cta-band__inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.5rem; padding: 2rem 0 0; border-top: 1px solid var(--line);
+}
+.cta-band__text { margin: 0; max-width: 46ch; color: var(--mid); font-size: 1.05rem; }
+@media (max-width: 640px) { .cta-band { margin: 2.5rem auto 3rem; } }

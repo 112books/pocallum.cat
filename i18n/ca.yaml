@@ -35,7 +35,7 @@ lightbox_next:      "Següent"
 
 # Serveis
 serveis_eyebrow:    "El que fem"
-serveis_title:      "Serveis fotogràfics"
+serveis_title:      "Serveis fotogràfics a Barcelona"
 serveis_intro:      "No treballem amb tarifes tancades. Cada projecte és diferent i mereix un pressupost fet a mida."
 serveis_cta_title:   "Explica'ns el teu projecte"
 serveis_cta_text:    "Treballem a pressupost. Escriu-nos i t'expliquem com podem ajudar-te."
@@ -176,3 +176,4 @@ author_bio_label:   "Sobre l'autor"
 author_bio_name:    "Joan Linux Martínez"
 author_bio_role:    "Fotògraf"
 author_bio_text:    "Fotògraf de música en viu i arts escèniques a Barcelona des del 2002. Ha documentat centenars de concerts, estrenes de teatre i festivals culturals a Catalunya. Publica fotollibre i treballa habitualment amb el Festival de Blues de Barcelona, Jazz I Am, Nou Barris Meets New Orleans i molts altres."
+cta_band_text:     "Cada projecte és diferent. Explica'ns el teu i et fem un pressupost a mida, sense embuts."

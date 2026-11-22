@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-books-artistics
-title: "Book artístic per a músics i artistes a Barcelona"
+title: "Fotògraf de book artístic per a músics i artistes"
 description: "Sessió fotogràfica per a músics, bandes i artistes a Barcelona. Imatges per a premsa, xarxes socials, portades de disc i perfil professional."
 image: "/images/galeria/2025-11-18-Hassel-50mm-PanF+50-Berta-Corts-0002.jpg"
 aliases:

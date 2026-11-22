@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-portada-disc
-title: "Portada de disc — fotografia i disseny a Barcelona"
+title: "Disseny i fotografia de portades de disc a Barcelona"
 description: "Fotografia i disseny gràfic per a portades de disc a Barcelona. Del concepte visual a la impressió. Portades de jazz, blues, música clàssica i electrònica."
 image: "/images/obra/joan-pau-cumellas-baggage.jpg"
 aliases:

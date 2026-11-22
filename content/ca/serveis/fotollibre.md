@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-fotollibre
-title: "Fotollibre artístic — concepte, edició i impressió a Barcelona"
+title: "Fotollibre: concepte, edició i impressió a Barcelona"
 description: "Disseny i producció de fotollibre artístic a Barcelona. Del concepte a la impressió, en sinergia amb 112books.eu. Edicions individuals i col·leccionables."
 image: "/images/obra/antropoformologies.jpg"
 aliases:

@@ -8,12 +8,43 @@
   {{- with index .Pages 0 -}}{{- $ogImage = .Params.image -}}{{- end -}}
 {{- end -}}
 {{- $ogImage = or $ogImage .Site.Params.defaultOgImage -}}
+{{/* Títol visible: les fitxes de galeria sense títol en generen un de propi */}}
+{{- $pageTitle := .Title -}}
+{{- $siteTitle := .Site.Title -}}
+{{- if not $pageTitle -}}
+  {{- if eq .Type "galeria" -}}
+    {{- $servei := .Params.servei | default "cultura" -}}
+    {{- if eq .Language.Lang "en" -}}
+      {{- $pageTitle = printf "Photography: %s · %s" $servei (.Date.Format "2006") -}}
+    {{- else -}}
+      {{- $pageTitle = printf "Fotografia de %s · %s" $servei (.Date.Format "2006") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{/* Descripció: galeria i taxonomies en generen una de pròpia */}}
+{{- if eq .Type "galeria" -}}
+  {{- $servei := .Params.servei | default "cultura" -}}
+  {{- if eq .Language.Lang "en" -}}
+    {{- $desc = printf "%s photography from the Pocallum archive, Barcelona. Concerts, festivals and performing arts documented since 2002." (title $servei) -}}
+  {{- else -}}
+    {{- $desc = printf "Fotografia de %s a Barcelona (%s). Arxiu de Pocallum: concerts, festivals i arts escèniques documentats des del 2002." $servei (.Date.Format "02/01/2006") -}}
+  {{- end -}}
+{{- else if eq .Kind "term" -}}
+  {{- if eq .Language.Lang "en" -}}
+    {{- $desc = printf "Photographs tagged %s — Pocallum, cultural photography in Barcelona." .Title -}}
+  {{- else -}}
+    {{- $desc = printf "Fotografies de %s — Pocallum, fotografia cultural a Barcelona." .Title -}}
+  {{- end -}}
+{{- end -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="{{ $desc }}">
 
-<title>{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+{{- $fullTitle := printf "%s — %s" $pageTitle $siteTitle -}}
+{{- if gt (len $fullTitle) 68 -}}{{- $fullTitle = $pageTitle -}}{{- end -}}
+{{- $fullTitle = printf "%s — %s" $siteTitle (i18n "site_tagline" | default "Fotografia de cultura") -}}
+<title>{{ if .IsHome }}{{ $fullTitle }}{{ else }}{{ if gt (len (printf "%s — %s" $pageTitle $siteTitle)) 68 }}{{ $pageTitle }}{{ else }}{{ $pageTitle }} — {{ $siteTitle }}{{ end }}{{ end }}</title>
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* CSS via Hugo Pipes */}}
@@ -55,7 +86,7 @@
 {{/* Open Graph */}}
 <meta property="og:site_name"   content="Pocallum">
 <meta property="og:locale"      content="{{ .Language.Params.ogLocale | default "ca_ES" }}">
-<meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
+<meta property="og:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" | default "Fotografia de cultura" }}{{ else }}{{ $pageTitle }} — {{ .Site.Title }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:type"        content="{{ if or .IsHome .IsSection }}website{{ else }}article{{ end }}">
 <meta property="og:url"         content="{{ .Permalink }}">
@@ -63,7 +94,7 @@
 
 {{/* Twitter / X Cards */}}
 <meta name="twitter:card"        content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
-<meta name="twitter:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}">
+<meta name="twitter:title"       content="{{ if .IsHome }}{{ .Site.Title }} — {{ i18n "site_tagline" }}{{ else }}{{ $pageTitle }} — {{ .Site.Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $desc }}">
 {{ with $ogImage }}<meta name="twitter:image" content="{{ . | strings.TrimLeft "/" | absURL }}">{{ end }}
 

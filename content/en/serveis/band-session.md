@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-sessio-banda
-title: "Band and artist photography session in Barcelona"
+title: "Band and artist photographer in Barcelona"
 description: "Band or solo artist photography session in Barcelona. Images for press, social media, album covers and promoter presentations. No generic aesthetics."
 related:
   - text: "Artist portfolio photography for musicians"

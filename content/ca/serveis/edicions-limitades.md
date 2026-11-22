@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-edicions-limitades
-title: "Edicions limitades col·leccionables de festivals i events culturals a Barcelona"
+title: "Edicions limitades de festivals i events culturals"
 description: "Convertim el material fotogràfic d'un festival, event o residència artística de Barcelona en un fotollibre tangible. Un objecte que es pot tocar, regalar o vendre. En col·laboració amb 112books.eu."
 image: "/images/obra/antropoformologies.jpg"
 aliases:

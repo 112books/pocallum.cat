@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-edicions-limitades
-title: "Limited collector's editions"
+title: "Limited collector's editions of cultural projects"
 description: "We turn material from a festival, event or working sessions into a tangible photobook. An object you can touch, gift or sell. In collaboration with 112books.eu."
 image: "/images/obra/antropoformologies.jpg"
 aliases:

@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-concerts
-title: "Concert and live music photography in Barcelona"
+title: "Concert photographer in Barcelona — jazz, blues, live music"
 description: "Live music photography in Barcelona. Jazz, blues, flamenco. Concerts and festivals documented without flash, in available light. For press, social media and tour archives."
 image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai%20Cohen%20-%200014.jpg"
 aliases:

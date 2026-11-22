@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-books-actors
-title: "Actor portfolio photography in Barcelona"
+title: "Actor headshot photographer in Barcelona"
 description: "Professional actor headshots and portfolio photography in Barcelona. Character-driven photography for castings, agencies and digital profiles. No generic studio, no white backgrounds."
 related:
   - text: "Artist portfolio photography for musicians"
