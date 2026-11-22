@@ -1,7 +1,13 @@
 {{ define "main" }}
-{{- $pinned := where .Pages "Params.weight" "gt" 0 -}}
+{{- $all := .Pages -}}
+{{- if not $all -}}
+  {{- range hugo.Sites -}}
+    {{- if eq .Language.Lang "ca" -}}{{- $all = where .RegularPages "Section" "festivals" -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $pinned := where $all "Params.weight" "gt" 0 -}}
 {{- $pinned  = $pinned.ByParam "weight" -}}
-{{- $rest   := where (.Pages.ByDate.Reverse) "Params.weight" nil -}}
+{{- $rest   := where ($all.ByDate.Reverse) "Params.weight" nil -}}
 {{- $pages  := $pinned | append $rest -}}
 
 <div class="festivals-wall">

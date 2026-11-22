@@ -1,4 +1,5 @@
 ---
+translationKey: qui-som
 title: "About"
 description: "Pocallum is a cultural photography project created in 2010 by Joan Linux Martínez."
 faqs:

@@ -1,4 +1,5 @@
 ---
+translationKey: el-blog
 title: "Blog"
 description: "Crònica fotogràfica tal com raja. Des del 2010."
 layout: "blog"
