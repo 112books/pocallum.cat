@@ -54,6 +54,16 @@ function fromHex(s) {
       'Jazz, blues,<br>flamenco, dance.<br>Always live.',
       'We photograph<br>what happens<br>between two notes.',
     ],
+    es: [
+      'Hacemos fotos<br>que entienden<br>la música.',
+      'La luz<br>no perdona.<br>Nosotros sí.',
+      'Cada concierto<br>es una sola<br>oportunidad.',
+      'No explicamos<br>la escena.<br>Estamos dentro.',
+      'Quince años<br>en el foso<br>y en la platea.',
+      'El momento<br>no se repite.<br>La foto, sí.',
+      'Jazz, blues,<br>flamenco, danza.<br>Siempre en directo.',
+      'Fotografiamos<br>lo que pasa<br>entre dos notas.',
+    ],
   };
 
   const _heroData = window.__heroData || {};
