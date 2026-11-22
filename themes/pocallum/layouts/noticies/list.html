@@ -1,5 +1,7 @@
 {{ define "main" }}
-{{ $byDate := .Pages.ByDate.Reverse }}
+{{ $all := .Pages }}
+{{ if not $all }}{{ range hugo.Sites }}{{ if eq .Language.Lang "ca" }}{{ $all = where .RegularPages "Section" "noticies" }}{{ end }}{{ end }}{{ end }}
+{{ $byDate := $all.ByDate.Reverse }}
 {{ $pinned := where $byDate "Params.pinned" true }}
 {{ $rest := where $byDate "Params.pinned" "ne" true }}
 {{ $pages := $pinned | append $rest }}

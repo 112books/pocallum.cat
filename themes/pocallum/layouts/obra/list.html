@@ -1,6 +1,8 @@
 {{ define "main" }}
-{{ $fotollibres := where .Pages "Params.tipus" "fotollibre" }}
-{{ $discs := where .Pages "Params.tipus" "disc" }}
+{{ $all := .Pages }}
+{{ if not $all }}{{ range hugo.Sites }}{{ if eq .Language.Lang "ca" }}{{ $all = where .RegularPages "Section" "obra" }}{{ end }}{{ end }}{{ end }}
+{{ $fotollibres := where $all "Params.tipus" "fotollibre" }}
+{{ $discs := where $all "Params.tipus" "disc" }}
 
 <div class="obra-list container">
 

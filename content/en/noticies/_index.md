@@ -1,4 +1,5 @@
 ---
+translationKey: noticies
 title: "News"
 aliases:
   - /testing-adox-hr-50-film

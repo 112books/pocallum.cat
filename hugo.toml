@@ -183,43 +183,50 @@ defaultContentLanguageInSubdir = false
 
 [[languages.es.menus.main]]
   name   = "Galería"
-  url    = "/galeria/"
+  url    = "/es/galeria/"
   weight = 2
   [languages.es.menus.main.params]
     no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Festivales"
-  url    = "/festivals/"
+  url    = "/es/festivals/"
   weight = 3
   [languages.es.menus.main.params]
     no_lang = true
 
 [[languages.es.menus.main]]
-  name   = "Noticias"
-  url    = "/noticies/"
+  name   = "Obra"
+  url    = "/es/obra/"
   weight = 4
   [languages.es.menus.main.params]
     no_lang = true
 
 [[languages.es.menus.main]]
-  name   = "Blog"
-  url    = "/el-blog/"
+  name   = "Noticias"
+  url    = "/es/noticies/"
   weight = 5
   [languages.es.menus.main.params]
     no_lang = true
 
 [[languages.es.menus.main]]
-  name   = "Quiénes somos"
-  url    = "/qui-som/"
+  name   = "Blog"
+  url    = "/es/el-blog/"
   weight = 6
+  [languages.es.menus.main.params]
+    no_lang = true
+
+[[languages.es.menus.main]]
+  name   = "Quiénes somos"
+  url    = "/es/qui-som/"
+  weight = 7
   [languages.es.menus.main.params]
     no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Contacto"
   url    = "/es/contacte/"
-  weight = 7
+  weight = 8
   [languages.es.menus.main.params]
     no_lang   = true
     highlight = true

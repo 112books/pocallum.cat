@@ -1,4 +1,5 @@
 ---
+translationKey: el-blog
 title: "Blog"
 description: "Photographic chronicle, as it happens. Since 2010."
 layout: "blog"

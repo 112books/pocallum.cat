@@ -1,4 +1,5 @@
 ---
+translationKey: qui-som
 title: "Qui som"
 description: "Pocallum és el projecte fotogràfic de Joan Linux Martínez. Fotografia cultural des del 2002. Jazz, blues, arts escèniques, dansa, teatre. Barcelona."
 faqs:
