@@ -6,6 +6,8 @@ image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
   - /ca/serveis/teatre-dansa/
 related:
+  - text: "Fotografia de circ a Barcelona"
+    url: "serveis/fotografia-circ-barcelona/"
   - text: "Cobertura per a festivals i sales"
     url: "serveis/festivals-i-sales/"
   - text: "Fotografia de concerts i directes"

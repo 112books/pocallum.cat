@@ -33,10 +33,10 @@ Durant anys, la col·laboració amb 9 Barris Acull va anar més enllà de les jo
 
 Molts d'aquests calendaris van agafar vida pròpia i es van convertir en exposicions que van itinerar per instituts i centres cívics d'arreu.
 
-- [Calendari 2024 — "Dones de Nou Barris"](https://pocallum.cat/ja-disponible-el-calendari-de-9-barris-acull-dones-de-nou-barris/) — 12 iniciatives en clau femenina al districte
-- [Calendari 2023 — "Joves de Nou Barris, superant obstacles"](https://pocallum.cat/joves-de-nou-barris-superant-obstacles/) — fotografia analògica (Leica M4-2, ADOX HR-50), disseny de Roger Font Micás
-- [Audiovisual 2023 — "Joves de 9 Barris Superant Obstacles"](https://pocallum.cat/joves-de-9-barris-superant-obstacles/) — presentat a les Jornades a la Nau Bostik
-- [Calendari de 9 Barris Acull](https://pocallum.cat/calendari-de-9-barris-acull/) — edicions anteriors
+- Calendari 2024 — "Dones de Nou Barris" — 12 iniciatives en clau femenina al districte
+- Calendari 2023 — "Joves de Nou Barris, superant obstacles" — fotografia analògica (Leica M4-2, ADOX HR-50), disseny de Roger Font Micás
+- Audiovisual 2023 — "Joves de 9 Barris Superant Obstacles" — presentat a les Jornades a la Nau Bostik
+- Calendari de 9 Barris Acull — edicions anteriors
 
 ## Edicions documentades al blog
 
