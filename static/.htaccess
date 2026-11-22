@@ -64,10 +64,10 @@ ErrorDocument 404 /404.html
   RewriteRule ^blog/(.*)$ https://blog.pocallum.cat/$1 [R=301,L]
 
   # Restes de l'antic WordPress (encara reben visites)
-  RewriteRule ^servicios-fotograficos/?$ /serveis/ [R=301,L]
-  RewriteRule ^servees-fotografics-2(/.*)?$ /serveis/ [R=301,L]
-  RewriteRule ^bienvenidos-pocallum/?$ / [R=301,L]
-  RewriteRule ^node/[0-9]+/(track)?.*$ / [R=301,L]
-  RewriteRule ^content(/.*)?$ / [R=301,L]
-  RewriteRule ^es/?$ / [R=301,L]
+  RewriteRule ^servicios-fotograficos/?$ https://pocallum.cat/serveis/ [R=301,L]
+  RewriteRule ^servees-fotografics-2(/.*)?$ https://pocallum.cat/serveis/ [R=301,L]
+  RewriteRule ^bienvenidos-pocallum/?$ https://pocallum.cat/ [R=301,L]
+  RewriteRule ^node/[0-9]+/(track)?.*$ https://pocallum.cat/ [R=301,L]
+  RewriteRule ^content(/.*)?$ https://pocallum.cat/ [R=301,L]
+  RewriteRule ^es/?$ https://pocallum.cat/ [R=301,L]
 </IfModule>
