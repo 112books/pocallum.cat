@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-festivals
-title: "Event photography for festivals and cultural venues in Barcelona"
+title: "Festival and music venue photographer, Barcelona"
 description: "Professional photography for music festivals, performing arts and cultural spaces in Barcelona and Catalunya. A reusable visual archive for communications, press and annual reports."
 image: "/images/galeria/MG_9379.jpg"
 aliases:

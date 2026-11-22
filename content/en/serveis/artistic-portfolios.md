@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-books-artistics
-title: "Artist portfolio photography for musicians in Barcelona"
+title: "Artist portfolio photographer for musicians, Barcelona"
 description: "Photography sessions for musicians, bands and artists in Barcelona. Images for press, social media, album covers and professional profiles."
 related:
   - text: "Band and artist photography session"

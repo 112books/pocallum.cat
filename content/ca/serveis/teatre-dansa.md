@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-teatre-dansa
-title: "Fotografia de teatre, dansa i arts escèniques a Barcelona"
+title: "Fotògraf de teatre, dansa i arts escèniques a Barcelona"
 description: "Documentació fotogràfica de teatre, dansa, circ i performance a Barcelona. Sense flash, sense interferir. Sabem quan disparar sense trencar res."
 image: "/images/serveis/teatre-dansa/voces-dansa-sufi-chiara-salvati.jpg"
 aliases:
