@@ -7,7 +7,7 @@
     <div class="testimonis-grid">
       {{ range $items }}
       <blockquote class="testimoni">
-        <p class="testimoni__cita">&ldquo;{{ if eq $lang "en" }}{{ .cita_en }}{{ else }}{{ .cita_ca }}{{ end }}&rdquo;</p>
+        <p class="testimoni__cita">&ldquo;{{ if eq $lang "en" }}{{ .cita_en }}{{ else if eq $lang "es" }}{{ .cita_es | default .cita_ca }}{{ else }}{{ .cita_ca }}{{ end }}&rdquo;</p>
         <footer class="testimoni__autor">{{ .nom }}{{ with .entitat }} <span class="testimoni__entitat">· {{ . }}</span>{{ end }}</footer>
       </blockquote>
       {{ end }}

@@ -1,0 +1,13 @@
+FRASES DE LA PORTADA — TRADUÏDES
+
+Tens raó: quedaven en català. No eren text de la plantilla (això ja estava traduït) sinó de les dades que alimenten la portada i la pàgina de serveis:
+
+· Els títols dels tres blocs: "Para músicos y bandas", "Para festivales y salas", "Para proyectos editoriales".
+· Les descripcions ("Una buena foto no es la que te deja bien. Es la que te deja verdad.").
+· Les cites de cada bloc: "Trabajamos con cuartetos que debutan...", "No explicamos la escena. Estamos dentro.", "Un fotolibro no es un archivo...".
+· Els botons: "Presupuesto a medida · Hablemos".
+· I el testimoni de Sonia Vallejo, que sortia en català a /es/contacte/.
+
+De passada he aprofitat perquè els enllaços de dins dels blocs apuntin a les pàgines en castellà (concerts, jazz, flamenc, circ, book actoral, festivals, teatre i dansa) en lloc de les catalanes.
+
+Desplegat.
