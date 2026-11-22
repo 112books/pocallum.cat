@@ -7,13 +7,15 @@ def safe_get(data, key, default=None):
     return data.get(key, default)
 
 def extract_lang(path):
+    """Idioma de la pàgina. El català és l'idioma per defecte i no porta prefix,
+    així que qualsevol ruta sense codi d'idioma es compta com a català."""
     LANGS = {'ca', 'es', 'en', 'fr', 'de', 'it', 'pt'}
     parts = [p for p in path.strip('/').split('/') if p]
     if parts and parts[0] in LANGS:
         return parts[0]
     if len(parts) >= 2 and parts[1] in LANGS:
         return parts[1]
-    return None
+    return 'ca'
 
 def extract_section(path):
     LANGS = {'ca', 'es', 'en', 'fr', 'de', 'it', 'pt'}
