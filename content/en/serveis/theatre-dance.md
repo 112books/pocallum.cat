@@ -1,6 +1,6 @@
 ---
 translationKey: serveis-teatre-dansa
-title: "Theatre, dance and performing arts photography in Barcelona"
+title: "Theatre, dance and performing arts photographer, Barcelona"
 description: "Photography for theatre, dance, circus and performance in Barcelona. No flash, no disruption. We know when to shoot without breaking the spell."
 related:
   - text: "Event photography for festivals and venues"
