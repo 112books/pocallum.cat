@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /stats/
-Disallow: /blog/
 
 # Sitemap
 Sitemap: https://pocallum.cat/sitemap.xml
