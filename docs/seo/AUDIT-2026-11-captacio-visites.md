@@ -236,16 +236,16 @@ Decisions preses: GBP endavant · castellà **sí** per a les pàgines de servei
 | Títol de /galeria/ i H1 de /serveis/ | ✅ |
 | Banda de CTA a la galeria i a cada fitxa de festival | ✅ |
 | 301 de /servicios-fotograficos/, /servees-fotografics-2/*, /bienvenidos-pocallum/, /node/*, /content, /es | ✅ verificat en viu |
-| robots.txt sense \`Disallow: /blog/\` | ✅ |
+| robots.txt sense `Disallow: /blog/` | ✅ |
 
 ### Troballes noves
 
 1. **Les fitxes de galeria no mostraven la foto.** No era només un títol buit: la plantilla per
    defecte no pintava la imatge, així que 250 pàgines eren literalment un títol i res més.
-   Corregit amb una plantilla pròpia (\`galeria/single.html\`).
-2. **El 301 de \`/blog/\` no és possible des del nostre \`.htaccess\`**: la ruta la serveix el vhost
-   del blog, no el docroot principal. Solució aplicada: treure el \`Disallow\` perquè Google
-   llegeixi el canonical cap a \`blog.pocallum.cat\` i consolidi. El 301 dur requeriria Dinahosting.
+   Corregit amb una plantilla pròpia (`galeria/single.html`).
+2. **El 301 de `/blog/` no és possible des del nostre `.htaccess`**: la ruta la serveix el vhost
+   del blog, no el docroot principal. Solució aplicada: treure el `Disallow` perquè Google
+   llegeixi el canonical cap a `blog.pocallum.cat` i consolidi. El 301 dur requeriria Dinahosting.
 3. **Preus: cap fotògraf individual els publica.** Revisats quatre competidors que rankegen per
    «fotógrafo de conciertos Barcelona»: tres no diuen res de preus i un diu «depèn del format»
    sense xifra. Només les plataformes (partfy.com, experiències d'Airbnb) publiquen imports.
