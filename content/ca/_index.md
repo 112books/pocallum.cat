@@ -1,4 +1,5 @@
 ---
+translationKey: home
 title: "Pocallum — Fotografia de cultura"
 aliases:
   - /es/revelado-de-pelicula-color-con-proceso-de-blanco-y-negro

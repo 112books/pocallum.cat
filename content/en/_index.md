@@ -1,4 +1,5 @@
 ---
+translationKey: home
 title: "Pocallum — Cultural photography"
 aliases:
   - /node/191/track

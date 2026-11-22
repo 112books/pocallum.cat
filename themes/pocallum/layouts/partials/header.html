@@ -1,4 +1,5 @@
 {{ $lp := $.Site.LanguagePrefix }}
+{{ $es := eq .Language.Lang "es" }}
 <header class="site-header" id="js-header">
   <nav class="nav" aria-label="{{ i18n "nav_label" | default "Navegació principal" }}">
 
@@ -15,7 +16,7 @@
       <ul class="nav-links" role="list">
         {{ range .Site.Menus.main }}
         <li>
-          <a href="{{ .URL | relLangURL }}"
+          <a href="{{ if .Params.no_lang }}{{ .URL }}{{ else }}{{ .URL | relLangURL }}{{ end }}"
              class="nav-link{{ if $.IsMenuCurrent "main" . }} is-active{{ end }}{{ with .Params.highlight }} nav-link--cta{{ end }}">
             {{ .Name }}
           </a>
@@ -23,7 +24,7 @@
         {{ end }}
       </ul>
 
-      <a href="{{ "cerca/" | relLangURL }}" class="nav-search-btn"
+      <a href="{{ if $es }}/cerca/{{ else }}{{ "cerca/" | relLangURL }}{{ end }}" class="nav-search-btn"
          aria-label="{{ i18n "search_open" | default "Cercar" }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -35,16 +36,20 @@
       </a>
 
       <div class="nav-langs" aria-label="{{ i18n "lang_switcher" | default "Canvi d'idioma" }}">
-        {{ range .AllTranslations }}
-          {{ if not .Language.Disabled }}
-          <a href="{{ .RelPermalink }}"
-             class="nav-lang{{ if eq . $ }} is-active{{ end }}"
-             lang="{{ .Language.Lang }}"
-             hreflang="{{ .Language.Lang }}">
-            {{ upper .Language.Lang }}
+        {{- $tr := dict -}}
+        {{- range .AllTranslations -}}{{- $tr = merge $tr (dict .Language.Lang .RelPermalink) -}}{{- end -}}
+        {{- range .Site.Sites -}}
+          {{- if not .Language.Disabled -}}
+          {{- $lang := .Language.Lang -}}
+          {{- $url := or (index $tr $lang) .Home.RelPermalink -}}
+          <a href="{{ $url }}"
+             class="nav-lang{{ if eq $lang $.Language.Lang }} is-active{{ end }}"
+             lang="{{ $lang }}"
+             hreflang="{{ $lang }}">
+            {{ upper $lang }}
           </a>
-          {{ end }}
-        {{ end }}
+          {{- end -}}
+        {{- end }}
       </div>
     </div>
 

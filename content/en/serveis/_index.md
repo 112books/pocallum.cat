@@ -1,4 +1,5 @@
 ---
+translationKey: serveis
 title: "Photography services in Barcelona"
 description: "Cultural photography in Barcelona for musicians, festivals, concert venues and editorial projects. Custom quotes."
 faqs:
