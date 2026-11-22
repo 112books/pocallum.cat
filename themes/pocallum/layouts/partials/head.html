@@ -40,6 +40,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="description" content="{{ $desc }}">
+{{- if and (in (slice "taxonomy" "term") .Kind) (eq (len .Pages) 0) -}}
+<meta name="robots" content="noindex, follow">
+{{- end -}}
 
 {{- $fullTitle := printf "%s — %s" $pageTitle $siteTitle -}}
 {{- if gt (len $fullTitle) 68 -}}{{- $fullTitle = $pageTitle -}}{{- end -}}
@@ -112,16 +115,16 @@
   "telephone": "{{ .Site.Params.contactPhone }}",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
+    "streetAddress": "Carrer de Ferran Turné, 1-11",
     "addressLocality": "Barcelona",
-    "postalCode": "08020",
+    "postalCode": "08027",
     "addressRegion": "Catalunya",
     "addressCountry": "ES"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 41.40879,
-    "longitude": 2.19004
+    "latitude": 41.424277,
+    "longitude": 2.192916
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -250,9 +253,9 @@
   "telephone": "{{ .Site.Params.contactPhone }}",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrer dels Ferrocarrils Catalans, 2-14",
+    "streetAddress": "Carrer de Ferran Turné, 1-11",
     "addressLocality": "Barcelona",
-    "postalCode": "08020",
+    "postalCode": "08027",
     "addressRegion": "Catalunya",
     "addressCountry": "ES"
   },

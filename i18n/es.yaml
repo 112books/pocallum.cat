@@ -1,1 +1,179 @@
-site_tagline: "Fotografía cultural"
+site_tagline:       "Fotografía cultural en Barcelona"
+nav_label:          "Navegación principal"
+nav_open:           "Abrir el menú"
+footer_nav_label:   "Navegación pie de página"
+footer_tagline:     "Fotografía cultural en Barcelona"
+lang_switcher:      "Cambio de idioma"
+
+# Portada
+hero_eyebrow:       "Fotografía cultural — Barcelona"
+hero_title:         "Hacemos fotos<br>que entienden<br>la música."
+hero_sub:           "Jazz, blues, teatro, danza y artes escénicas. Desde 2010."
+cta_contact:        "Pide presupuesto"
+cta_gallery:        "Ver galería"
+see_all_photos:     "Toda la galería"
+see_all_services:   "Todos los servicios"
+see_all_news:       "Todas las noticias"
+
+# Secciones portada
+section_serveis_eyebrow: "Lo que hacemos"
+section_serveis_title:   "Servicios"
+section_noticies_eyebrow: "Actualidad"
+section_noticies_title:   "Noticias"
+
+# Galeria
+galeria_eyebrow:    "Trabajos"
+galeria_title:      "Galería"
+galeria_count_label: "fotografías"
+galeria_empty:      "Pronto habrá fotografías."
+foto_open:          "Ampliar imagen"
+foto_alt_default:   "Fotografía de Pocallum"
+lightbox_label:     "Imagen ampliada"
+lightbox_close:     "Cerrar"
+lightbox_prev:      "Anterior"
+lightbox_next:      "Siguiente"
+
+# Serveis
+serveis_eyebrow:    "Lo que hacemos"
+serveis_title:      "Servicios fotográficos en Barcelona"
+serveis_intro:      "No trabajamos con tarifas cerradas. Cada proyecto es distinto y merece un presupuesto a medida."
+serveis_cta_title:   "Cuéntanos tu proyecto"
+serveis_cta_text:    "Trabajamos por presupuesto. Escríbenos y te explicamos cómo podemos ayudarte."
+serveis_chapter_cta: "Hablemos →"
+serveis_final_pre:   "Cada proyecto es distinto."
+serveis_final_title: "Cuéntanos el tuyo y lo hacemos posible."
+
+# Notícies
+noticies_eyebrow:   "Actualidad"
+noticies_title:     "Noticias"
+noticies_empty:     "Pronto habrá noticias."
+back_to_news:       "Noticias"
+pagination_label:   "Paginación"
+pagination_prev:    "Anterior"
+pagination_next:    "Siguiente"
+read_article:       "Leer artículo"
+timeline_label:     "Cronología"
+
+# Festivals
+festivals_eyebrow:    "Dónde hemos trabajado"
+festivals_title:      "Festivales"
+back_to_festivals:    "Festivales"
+festival_web:         "Web"
+
+# Qui som
+quisom_eyebrow:     "El proyecto"
+quisom_role:        "Fotógrafo · Editor · Activista cultural"
+quisom_full_bio:    "Biografía completa"
+skip_to_content:    "Saltar al contenido principal"
+
+# Contacte
+contacte_eyebrow:       "¿Trabajamos juntos?"
+contacte_title:         "Habla con nosotros"
+contacte_intro:         "Cuéntanos tu proyecto. Te enviaremos un presupuesto sin compromiso."
+contacte_form_title:    "Formulario de contacto"
+contacte_form_pending:  "El formulario se activará en breve. Mientras tanto, escríbenos directamente:"
+contact_tel_note:       "Preferimos el correo o el formulario"
+
+# Equip
+equip_label:        "Equipo"
+equip_eyebrow:      "Equipamiento"
+equip_all_title:    "Todo el equipamiento"
+equip_articles_pre: "Artículos con"
+
+# Legal
+footer_legal_nav:   "Páginas legales"
+legal_avis:         "Aviso legal"
+legal_privacitat:   "Privacidad"
+legal_cookies:      "Cookies"
+
+# Blog
+blog_eyebrow:  "Desde 2010"
+blog_visit:    "Visitar el blog"
+
+# Wizard de contacte
+wizard_prev:         "Atrás"
+wizard_next:         "Continuar"
+wizard_send:         "Enviar presupuesto"
+wiz_sending:         "Enviando..."
+wiz_email_subject:   "Nuevo presupuesto — pocallum.cat"
+wiz_s1_title:        "¿Cuál es el proyecto?"
+wiz_s1_sub:          "Elige la categoría que mejor se adapte."
+wiz_s2_title:        "Cuéntanoslo"
+wiz_s2_sub:          "Cuantos más detalles nos des, mejor presupuesto podemos hacer."
+wiz_s2_desc_label:   "El proyecto"
+wiz_s2_desc_ph:      "Describe el proyecto: evento, artista, contexto, el tipo de imágenes que necesitas..."
+wiz_s2_quan_label:   "¿Cuándo? (opcional)"
+wiz_s2_quan_ph:      "Fecha o plazo aproximado"
+wiz_s2_lloc_label:   "¿Dónde? (opcional)"
+wiz_s2_lloc_ph:      "Lugar o localización"
+wiz_s3_title:        "Tus datos"
+wiz_s3_sub:          "Para poder enviarte el presupuesto."
+wiz_s3_nom:          "Nombre"
+wiz_s3_nom_ph:       "¿Cómo te llamamos?"
+wiz_s3_email_ph:     "donde te enviamos el presupuesto"
+wiz_s3_tel:          "Teléfono (opcional)"
+wiz_s3_tel_ph:       "Por si preferimos llamar"
+wiz_s3_via:          "¿Cómo nos has encontrado? (opcional)"
+wiz_consent_text:    "He leído y acepto la política de privacidad. Mis datos solo se utilizarán para contactarme directamente sobre este presupuesto, no se enviarán a terceros ni se usarán para newsletter."
+wiz_consent_link:    "Política de privacidad"
+wiz_via_blog:        "Blog pocallum.cat"
+wiz_via_ref:         "Recomendación"
+wiz_via_web:         "Búsqueda web"
+wiz_via_other:       "Otra vía"
+wiz_s4_title:        "Todo listo"
+wiz_s4_sub:          "Comprueba los datos y envíanos la petición."
+wiz_reply:           "Te responderemos en menos de 48 horas."
+wiz_sum_servei:      "Servicio"
+wiz_sum_proj:        "Proyecto"
+wiz_sum_quan:        "Cuándo"
+wiz_sum_lloc:        "Dónde"
+wiz_sum_nom:         "Nombre"
+wiz_sum_tel:         "Tel."
+wiz_sum_via:         "Vía"
+wiz_sum_consent:     "Consentimiento de privacidad"
+wiz_ok_title:        "¡Recibido!"
+wiz_ok_text:         "Te responderemos en menos de 48 horas."
+wiz_ok_thanks:       "Gracias por el interés en pocallum.cat. Cada proyecto que nos llega es importante para nosotros."
+wiz_ok_back:         "Volver al inicio"
+
+# Cerca
+privacy_toast:       "Sin cookies. Sin rastreo. Respetamos tu privacidad."
+
+search_open:         "Buscar"
+search_label:        "Buscar en el sitio"
+search_title:        "Buscar"
+search_placeholder:  "Buscar en pocallum.cat…"
+search_zero_results: "Ningún resultado para [SEARCH_TERM]"
+
+# Error 404
+e404_title:  "Alguien ha revelado el carrete a la luz."
+e404_desc:   "Esta página no existe. Si venías del WordPress antiguo, la URL ha cambiado — pero la fotografía está aquí."
+e404_cta:    "Volver al inicio"
+
+# Obra
+obra_title: "Obra"
+obra_fotollibres: "Fotolibros"
+obra_discs: "Discos y portadas"
+obra_tira_narrativa: "La obra propia informa la mirada con la que trabajo para los demás."
+obra_tira_link: "Fotolibros · Portadas · Carteles"
+obra_veure: "Ver"
+obra_about_link: "Sobre Joan Linux Martínez"
+obra_en_preparacio: "En preparación"
+clients_label:      "Hemos trabajado para:"
+
+contact_direct_label:   "O escríbenos directamente"
+contact_review_label:   "Déjanos una reseña en Google"
+contact_email_label:    "Correo electrónico"
+contact_tel_label:      "Teléfono"
+
+testimonis_label: "Lo que dicen de nosotros"
+
+serveis_related: "Puede interesarte"
+serveis_all:     "Todos los servicios"
+
+# Bloc autor a les notícies
+author_bio_label:   "Sobre el autor"
+author_bio_name:    "Joan Linux Martínez"
+author_bio_role:    "Fotógrafo"
+author_bio_text:    "Fotógrafo de música en directo y artes escénicas en Barcelona desde 2002. Ha documentado cientos de conciertos, estrenos de teatro y festivales culturales en Cataluña. Publica fotolibros y trabaja habitualmente con el Festival de Blues de Barcelona, Jazz I Am, Nou Barris Meets New Orleans y muchos otros."
+cta_band_text:     "Cada proyecto es distinto. Cuéntanos el tuyo y te hacemos un presupuesto a medida, sin rodeos."
