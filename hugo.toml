@@ -49,7 +49,6 @@ defaultContentLanguageInSubdir = false
     label      = "Castellano"
     locale     = "es"
     weight     = 3
-    disabled   = true
     title      = "Pocallum"
     [languages.es.params]
       description = "Fotografía cultural. Jazz, blues, teatro, danza y artes escénicas. Barcelona."
@@ -173,4 +172,41 @@ defaultContentLanguageInSubdir = false
   url    = "/contacte/"
   weight = 8
   [languages.en.menus.main.params]
+    highlight = true
+
+[[languages.es.menus.main]]
+  name   = "Servicios"
+  url    = "https://pocallum.cat/es/serveis/"
+  weight = 1
+
+[[languages.es.menus.main]]
+  name   = "Galería"
+  url    = "https://pocallum.cat/galeria/"
+  weight = 2
+
+[[languages.es.menus.main]]
+  name   = "Festivales"
+  url    = "https://pocallum.cat/festivals/"
+  weight = 3
+
+[[languages.es.menus.main]]
+  name   = "Noticias"
+  url    = "https://pocallum.cat/noticias/"
+  weight = 4
+
+[[languages.es.menus.main]]
+  name   = "Blog"
+  url    = "https://pocallum.cat/el-blog/"
+  weight = 5
+
+[[languages.es.menus.main]]
+  name   = "Quiénes somos"
+  url    = "https://pocallum.cat/qui-som/"
+  weight = 6
+
+[[languages.es.menus.main]]
+  name   = "Contacto"
+  url    = "https://pocallum.cat/es/contacte/"
+  weight = 7
+  [languages.es.menus.main.params]
     highlight = true
