@@ -50,3 +50,24 @@ ErrorDocument 404 /404.html
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
 </IfModule>
+
+# ──────────────────────────────────────────────────────────────
+#  Redireccions 301 — consolidació de URLs
+#  ⚠️ Cap redirect HTTP→HTTPS aquí: ho gestiona el proxy (loop).
+# ──────────────────────────────────────────────────────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # El blog viu a blog.pocallum.cat. Servir-lo també aquí era contingut
+  # duplicat (i robots.txt no ho arreglava, només n'impedía el rastreig).
+  RewriteRule ^blog/?$ https://blog.pocallum.cat/ [R=301,L]
+  RewriteRule ^blog/(.*)$ https://blog.pocallum.cat/$1 [R=301,L]
+
+  # Restes de l'antic WordPress (encara reben visites)
+  RewriteRule ^servicios-fotograficos/?$ /serveis/ [R=301,L]
+  RewriteRule ^servees-fotografics-2(/.*)?$ /serveis/ [R=301,L]
+  RewriteRule ^bienvenidos-pocallum/?$ / [R=301,L]
+  RewriteRule ^node/[0-9]+/(track)?.*$ / [R=301,L]
+  RewriteRule ^content(/.*)?$ / [R=301,L]
+  RewriteRule ^es/?$ / [R=301,L]
+</IfModule>
