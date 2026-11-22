@@ -4,6 +4,40 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-22 — Castellà: pàgines de servei (fase 1)
+
+**🌍 Idioma ES activat, només per serveis**
+
+- \`hugo.toml\`: \`languages.es\` desactivat → **actiu**, amb menú propi que enllaça la galeria, els
+  festivals, les notícies i el blog **en català** (URLs absolutes, perquè \`relLangURL\` no hi afegeixi
+  el prefix \`/es/\` i generi 404).
+- \`i18n/es.yaml\`: 180 línies, traducció completa (navegació, portada, CTAs, formulari de 4 passos,
+  peu, legal, 404, cerca).
+- \`content/es/\`: portada pròpia (\`layouts/index.es.html\`, 4 targetes de servei + CTA),
+  \`serveis/\` amb **4 pàgines**: conciertos, teatro y danza, book actoral i festivales.
+  Slugs amb paraula clau (\`/es/serveis/fotografo-conciertos-barcelona/\`) i \`translationKey\`
+  compartit amb CA i EN → hreflang automàtic triple.
+- \`content/es/contacte/\` (el formulari funciona en castellà) i \`content/es/legal/\` (3 pàgines
+  resumides que enllacen a la versió catalana, que preval).
+- \`head.html\`: \`noindex\` a les taxonomies buides (\`/es/tags/\`).
+- \`static/.htaccess\`: **retirada** la regla que redirigia \`/es/\` a la portada — ara és una
+  versió real del web.
+
+**📍 NAP corregit**
+
+- L'adreça real és **Carrer de Ferran Turné, 1-11, 08027 Barcelona** (La Sagrera), no la que hi
+  havia (Ferrocarrils Catalans 2-14, 08020). Corregit al JSON-LD (\`head.html\`),
+  a \`/contacte/\` CA i EN, i coordenades noves: **41.424277, 2.192916** (verificades a OSM).
+
+**🔎 Recerca**
+
+- Cap fotògraf individual publica tarifes; només les plataformes. Es manté «pressupost a mida».
+
+**Pendent**: pàgines de jazz, flamenc i circ (CA+ES), guia informacional, i veure si \`/es/\` capta
+tràfic en 2-3 mesos abans de traduir la resta.
+
+---
+
 ## 2026-11-22 — Captació, bloc 1 i 2: galeria, títols i 301
 
 **✅ Bloc 1 — tècnic (commits `a2c9eba0`, `fdda702c`, `ea6faed6`, + fix https)**
