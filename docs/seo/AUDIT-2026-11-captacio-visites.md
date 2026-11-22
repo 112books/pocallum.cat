@@ -219,3 +219,44 @@ curl -s "https://html.duckduckgo.com/html/?q=fot%C3%B2graf+de+concerts+Barcelona
 ```
 
 *Document generat el 20/11/2026. Dades de GoatCounter: 8/5/2026 – 19/11/2026 (194 dies amb registre).*
+
+---
+
+## Execució — 21/22 de novembre de 2026
+
+Decisions preses: GBP endavant · castellà **sí** per a les pàgines de servei · pàgina de preus **no**.
+
+### Fet i desplegat
+
+| Acció | Estat |
+|---|---|
+| Fitxes de galeria: títol propi (152), imatge, data, servei i CTA | ✅ |
+| Meta descriptions úniques per data a la galeria (661 → 217 pàgines) | ✅ |
+| Títols de servei amb «fotògraf» + Barcelona (10 CA + 10 EN) | ✅ |
+| Títol de /galeria/ i H1 de /serveis/ | ✅ |
+| Banda de CTA a la galeria i a cada fitxa de festival | ✅ |
+| 301 de /servicios-fotograficos/, /servees-fotografics-2/*, /bienvenidos-pocallum/, /node/*, /content, /es | ✅ verificat en viu |
+| robots.txt sense \`Disallow: /blog/\` | ✅ |
+
+### Troballes noves
+
+1. **Les fitxes de galeria no mostraven la foto.** No era només un títol buit: la plantilla per
+   defecte no pintava la imatge, així que 250 pàgines eren literalment un títol i res més.
+   Corregit amb una plantilla pròpia (\`galeria/single.html\`).
+2. **El 301 de \`/blog/\` no és possible des del nostre \`.htaccess\`**: la ruta la serveix el vhost
+   del blog, no el docroot principal. Solució aplicada: treure el \`Disallow\` perquè Google
+   llegeixi el canonical cap a \`blog.pocallum.cat\` i consolidi. El 301 dur requeriria Dinahosting.
+3. **Preus: cap fotògraf individual els publica.** Revisats quatre competidors que rankegen per
+   «fotógrafo de conciertos Barcelona»: tres no diuen res de preus i un diu «depèn del format»
+   sense xifra. Només les plataformes (partfy.com, experiències d'Airbnb) publiquen imports.
+   Confirma la decisió de no fer pàgina de preus; sí una de «com funciona».
+4. **Nau Bostik és al barri de La Sagrera** (districte de Sant Andreu — ho confirma l'Ajuntament
+   de Barcelona). Si el Google Business Profile mostra «Sant Andreu», cal canviar-lo a La Sagrera.
+
+### Pendent
+
+- Castellà de les pàgines de servei (10 pàgines; el mercat cerca majoritàriament en castellà).
+- Pàgines noves: jazz, flamenc, circ i «com funciona».
+- Segona guia informacional.
+- Buidar la caché de Varnish del panell de Dinahosting després dels canvis.
+- Actualitzar el robots.txt des del panell si el SEO Toolkit el regenera.

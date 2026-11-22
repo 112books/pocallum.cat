@@ -4,6 +4,38 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-22 — Captació, bloc 1 i 2: galeria, títols i 301
+
+**✅ Bloc 1 — tècnic (commits \`a2c9eba0\`, \`fdda702c\`, \`ea6faed6\`, + fix https)**
+
+- **Fitxa de galeria** (\`themes/pocallum/layouts/galeria/single.html\`, nova): les 250 fitxes no
+  mostraven **cap imatge** (la plantilla per defecte només pintava el títol). Ara: foto, data,
+  servei, enllaç a la galeria i CTA a contacte. Les 152 amb \`title: ""\` generen títol i H1 propis.
+- **\`head.html\`**: títol i meta description propis per tipus \`galeria\` (data completa) i per a
+  les pàgines de taxonomia. El sufix «— Pocallum» s'omet si el títol passa de 68 caràcters.
+- **Descriptions genèriques**: de 661 pàgines a 217.
+- **CTA** (\`partials/cta-band.html\`, nou): sota la graella de la galeria i a cada fitxa de festival.
+- **301** (\`static/.htaccess\`): \`/servicios-fotograficos/\`, \`/servees-fotografics-2/*\`,
+  \`/bienvenidos-pocallum/\`, \`/node/*/track\`, \`/content\`, \`/es\` → destinacions absolutes https.
+  Verificat en viu. \`/blog/\` **no** es pot redirigir (el serveix el vhost del blog): resolt traient
+  el \`Disallow\` de \`robots.txt\` perquè Google llegeixi el canonical.
+
+**✅ Bloc 2 — on-page (commit \`adcb22c9\`)**
+
+- Títols de les 10 pàgines de servei en CA i EN amb «fotògraf/fotógrafo» + Barcelona.
+- H1 de \`/serveis/\` → «Serveis fotogràfics a Barcelona»; títol de \`/galeria/\` amb context.
+
+**🔎 Recerca**
+
+- **Preus**: cap fotògraf individual publica tarifes (3 de 4 competidors no en diuen res; un diu
+  «depèn del format»). Només les plataformes. Es manté el «pressupost a mida».
+- **Adreça**: Nau Bostik és al barri de **La Sagrera** (districte de Sant Andreu, segons l'Ajuntament).
+  El GBP l'ha de mostrar així.
+
+**Pendent**: castellà de les pàgines de servei, pàgines de jazz/flamenc/circ, buidar Varnish.
+
+---
+
 ## 2026-11-20 — Sincronització + auditoria de captació de clients
 
 **🔄 Sync amb el remot**
