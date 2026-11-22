@@ -176,37 +176,50 @@ defaultContentLanguageInSubdir = false
 
 [[languages.es.menus.main]]
   name   = "Servicios"
-  url    = "https://pocallum.cat/es/serveis/"
+  url    = "/es/serveis/"
   weight = 1
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Galería"
-  url    = "https://pocallum.cat/galeria/"
+  url    = "/galeria/"
   weight = 2
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Festivales"
-  url    = "https://pocallum.cat/festivals/"
+  url    = "/festivals/"
   weight = 3
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Noticias"
-  url    = "https://pocallum.cat/noticias/"
+  url    = "/noticies/"
   weight = 4
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Blog"
-  url    = "https://pocallum.cat/el-blog/"
+  url    = "/el-blog/"
   weight = 5
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Quiénes somos"
-  url    = "https://pocallum.cat/qui-som/"
+  url    = "/qui-som/"
   weight = 6
+  [languages.es.menus.main.params]
+    no_lang = true
 
 [[languages.es.menus.main]]
   name   = "Contacto"
-  url    = "https://pocallum.cat/es/contacte/"
+  url    = "/es/contacte/"
   weight = 7
   [languages.es.menus.main.params]
+    no_lang   = true
     highlight = true

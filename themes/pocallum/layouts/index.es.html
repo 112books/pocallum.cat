@@ -1,28 +1,38 @@
 {{ define "main" }}
 {{- $serveis := where .Site.RegularPages "Section" "serveis" -}}
 
-<section class="container" style="padding:5rem 0 2rem">
-  <p class="section-eyebrow">{{ i18n "hero_eyebrow" }}</p>
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ with .Content }}<div class="prose" style="max-width:62ch">{{ . }}</div>{{ end }}
-  <p style="margin-top:2rem">
-    <a class="btn btn--primary btn--lg" href="{{ "es/contacte/" | relLangURL }}">{{ i18n "cta_contact" }}</a>
-    <a class="btn" href="https://pocallum.cat/galeria/" style="margin-left:.75rem">{{ i18n "cta_gallery" }}</a>
-  </p>
+<section class="page-header">
+  <div class="container">
+    <p class="page-eyebrow">{{ i18n "serveis_eyebrow" }}</p>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="page-intro">{{ .Params.lead | default (i18n "serveis_intro") }}</p>
+  </div>
 </section>
 
-{{ if $serveis }}
-<section class="container" style="padding:2rem 0 5rem">
-  <h2 class="section-title">{{ i18n "serveis_title" }}</h2>
-  <div class="serveis-grid">
-    {{ range $i, $s := $serveis }}
-    <a class="servei-card" href="{{ $s.RelPermalink }}">
-      <span class="servei-card__num">{{ printf "%02d" (add $i 1) }}</span>
-      <h3 class="servei-card__title">{{ $s.Title }}</h3>
-      <p class="servei-card__desc">{{ $s.Description | default ($s.Summary | plainify | truncate 110) }}</p>
-      <span class="servei-card__cta">{{ i18n "serveis_chapter_cta" }}</span>
-    </a>
-    {{ end }}
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "section_serveis_title" }}</h2>
+    <div class="servei-llista">
+      {{ range $i, $s := $serveis }}
+      <article class="servei-llista__item">
+        <span class="servei-llista__num">{{ printf "%02d" (add $i 1) }}</span>
+        <div class="servei-llista__body">
+          <h3 class="servei-llista__title">
+            <a href="{{ $s.RelPermalink }}">{{ $s.Title }}</a>
+          </h3>
+          <p class="servei-llista__desc">{{ $s.Description }}</p>
+          <a class="servei-llista__cta" href="{{ $s.RelPermalink }}">{{ i18n "serveis_chapter_cta" }}</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ with .Content }}
+<section class="section section--alt">
+  <div class="container container--narrow">
+    <div class="prose">{{ . }}</div>
   </div>
 </section>
 {{ end }}

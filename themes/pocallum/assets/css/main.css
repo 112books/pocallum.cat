@@ -3370,3 +3370,29 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
 }
 .cta-band__text { margin: 0; max-width: 46ch; color: var(--mid); font-size: 1.05rem; }
 @media (max-width: 640px) { .cta-band { margin: 2.5rem auto 3rem; } }
+
+/* ── Llistat de serveis (portada ES) ───────────────────────────────── */
+.servei-llista { display: flex; flex-direction: column; gap: 2.5rem; margin-top: 2.5rem; }
+.servei-llista__item {
+  display: grid; grid-template-columns: 3.5rem 1fr; gap: 1.25rem;
+  padding-bottom: 2.5rem; border-bottom: 1px solid var(--line);
+}
+.servei-llista__num {
+  font-family: var(--f-mono); font-size: .85rem; letter-spacing: .1em;
+  color: var(--mid); padding-top: .45rem;
+}
+.servei-llista__title { margin: 0 0 .6rem; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.15; }
+.servei-llista__title a { color: var(--fg); text-decoration: none; }
+.servei-llista__title a:hover { color: var(--accent); }
+.servei-llista__desc { margin: 0 0 1rem; color: var(--mid); max-width: 62ch; line-height: 1.6; }
+.servei-llista__cta {
+  display: inline-block; color: var(--accent); text-decoration: none;
+  font-family: var(--f-mono); font-size: .82rem; letter-spacing: .08em;
+  border-bottom: 1px solid transparent; padding-bottom: .15rem;
+}
+.servei-llista__cta:hover { border-color: var(--accent); }
+.servei-llista__item:last-child { border-bottom: 0; padding-bottom: 0; }
+@media (max-width: 640px) {
+  .servei-llista__item { grid-template-columns: 1fr; gap: .5rem; }
+  .servei-llista__num { padding-top: 0; }
+}

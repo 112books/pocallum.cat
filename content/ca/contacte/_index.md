@@ -1,4 +1,5 @@
 ---
+translationKey: contacte
 title: "Parla amb nosaltres"
 description: "Contacta amb Pocallum, fotògrafs culturals a Barcelona. Pressupost personalitzat en 48 hores per a concerts, festivals, teatre i projectes artístics."
 aliases:
