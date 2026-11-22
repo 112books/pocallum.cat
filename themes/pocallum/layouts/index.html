@@ -66,7 +66,9 @@
 {{ end }}
 
 {{/* ── Tira d'obra — 4 cobertes destacades + link a /obra/ ────────────────── */}}
-{{- $allObra := where (where .Site.RegularPages "Section" "obra") "Params.destacat" true -}}
+{{- $obraAll := where .Site.RegularPages "Section" "obra" -}}
+{{- if not $obraAll -}}{{ range hugo.Sites }}{{ if eq .Language.Lang "ca" }}{{ $obraAll = where .RegularPages "Section" "obra" }}{{ end }}{{ end }}{{ end -}}
+{{- $allObra := where $obraAll "Params.destacat" true -}}
 {{- $discs2 := where $allObra "Params.tipus" "disc" | first 2 -}}
 {{- $libs2 := where $allObra "Params.tipus" "fotollibre" | first 2 -}}
 {{- $obra := $discs2 | append $libs2 -}}
@@ -117,6 +119,7 @@
 
 {{/* ── Notícies recents ─────────────────────────────────────────────────── */}}
 {{ $noticiesAll := where .Site.RegularPages "Type" "noticies" }}
+{{ if not $noticiesAll }}{{ range hugo.Sites }}{{ if eq .Language.Lang "ca" }}{{ $noticiesAll = where .RegularPages "Type" "noticies" }}{{ end }}{{ end }}{{ end }}
 {{ $noticiesPinned := where $noticiesAll "Params.pinned" true }}
 {{ $noticiesRest := where $noticiesAll "Params.pinned" "ne" true }}
 {{ $noticies := $noticiesPinned | append $noticiesRest | first 3 }}
