@@ -20,6 +20,16 @@ grups:
     cita_en: "We work with debut quartets and ten-year-old festivals. The editorial standard is the same. The budget is not."
     cta: "Pressupost a mida · Parlem"
     cta_en: "Custom quote · Let's talk"
+    titol_es: "Para músicos y bandas"
+    desc_es: "Una buena foto no es la que te deja bien. Es la que te deja verdad."
+    items_es:
+      - "[Directo y conciertos](/es/serveis/fotografo-conciertos-barcelona/) — lo que pasa entre dos notas"
+      - "[Jazz](/es/serveis/fotografo-jazz-barcelona/) — la música que conocemos por dentro"
+      - "[Flamenco](/es/serveis/fotografo-flamenco-barcelona/) — compás, tiempo y gesto"
+      - "[Book actoral](/es/serveis/fotografo-book-actoral-barcelona/) — castings y agencias"
+      - "[Book artístico y portadas](/es/serveis/) — prensa, redes y disco"
+    cita_es: "Trabajamos con cuartetos que debutan y con festivales de diez años de historia. El criterio editorial es el mismo. El presupuesto, no."
+    cta_es: "Presupuesto a medida · Hablemos"
 
   - titol: "Per a festivals i sales"
     titol_en: "For festivals and venues"
@@ -37,6 +47,14 @@ grups:
     cita_en: "We don't explain the scene. We're in it."
     cta: "Pressupost a mida · Parlem"
     cta_en: "Custom quote · Let's talk"
+    titol_es: "Para festivales y salas"
+    desc_es: "Llevamos quince años en el foso, en la platea y en los camerinos. Sabemos qué pasa cuando se apagan las luces."
+    items_es:
+      - "[Cobertura completa de evento](/es/serveis/fotografo-festivales-barcelona/) — archivo reutilizable para comunicación y prensa"
+      - "[Teatro, danza y circo](/es/serveis/fotografo-teatro-danza-barcelona/) — sabemos cuándo disparar sin romper nada"
+      - "[Circo](/es/serveis/fotografo-circo-barcelona/) — la acción dura menos de un segundo"
+    cita_es: "No explicamos la escena. Estamos dentro."
+    cta_es: "Presupuesto a medida · Hablemos"
 
   - titol: "Per a projectes editorials"
     titol_en: "For editorial projects"
@@ -59,3 +77,11 @@ grups:
     cita_en: "A photobook is not an archive. It's an editorial decision — an object with weight and intent."
     cta: "Pressupost a mida · Parlem"
     cta_en: "Custom quote · Let's talk"
+    titol_es: "Para proyectos editoriales"
+    desc_es: "Del concepto a la impresión. Fotolibro, portada e identidad visual para proyectos que quieren ser objetos, no solo archivos."
+    items_es:
+      - "[Fotolibro](/es/serveis/) — concepto, edición, diseño, impresión (en sinergia con 112books.eu)"
+      - "[Portada e identidad visual](/es/serveis/) (disco, libro, cartel)"
+      - "[Ediciones limitadas coleccionables](/es/serveis/) — el material de un festival, una residencia o unas sesiones convertido en fotolibro. Un objeto tangible para regalar o vender, en colaboración con [112books.eu](https://112books.eu)."
+    cita_es: "Un fotolibro no es un archivo. Es una decisión editorial, un objeto con peso e intención."
+    cta_es: "Presupuesto a medida · Hablemos"
