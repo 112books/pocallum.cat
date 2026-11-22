@@ -46,6 +46,8 @@
     </div>
   </div>
 
+  {{ partial "cta-band.html" . }}
+
   {{ $allPages := .Parent.Pages.ByDate.Reverse }}
   {{ if gt (len $allPages) 1 }}
   <div class="festival-nav-strip">
