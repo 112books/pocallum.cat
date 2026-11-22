@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-21T21:20:02.455151Z",
+  "generated": "2026-11-22T01:47:41.992067Z",
   "period": {
-    "start": "2025-11-21",
-    "end": "2026-11-21"
+    "start": "2025-11-22",
+    "end": "2026-11-22"
   },
-  "total": 2016,
+  "total": 2020,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -786,16 +786,24 @@
     {
       "date": "2026-11-20",
       "count": 3
+    },
+    {
+      "date": "2026-11-21",
+      "count": 2
+    },
+    {
+      "date": "2026-11-22",
+      "count": 2
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 599
+      "count": 600
     },
     {
       "path": "/galeria",
-      "count": 224
+      "count": 226
     },
     {
       "path": "/festivals",
@@ -811,7 +819,7 @@
     },
     {
       "path": "/contacte",
-      "count": 59
+      "count": 60
     },
     {
       "path": "/en/noticies/photo-exhibitions-spaces-barcelona-guide",
@@ -996,12 +1004,12 @@
     "es": 22
   },
   "by_section": {
-    "inici": 626,
-    "galeria": 242,
+    "inici": 627,
+    "galeria": 244,
     "festivals": 208,
     "serveis": 184,
     "noticies": 224,
-    "contacte": 68,
+    "contacte": 69,
     "blog": 50,
     "qui-som": 55,
     "el-blog": 44,
@@ -1213,7 +1221,8 @@
       "2026-11-17": 3,
       "2026-11-18": 5,
       "2026-11-19": 1,
-      "2026-11-20": 2
+      "2026-11-20": 2,
+      "2026-11-21": 1
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1330,7 +1339,8 @@
       "2026-11-15": 2,
       "2026-11-16": 1,
       "2026-11-18": 2,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-22": 2
     },
     "/festivals": {
       "2026-05-09": 2,
@@ -1570,7 +1580,8 @@
       "2026-10-28": 1,
       "2026-11-07": 1,
       "2026-11-09": 2,
-      "2026-11-11": 1
+      "2026-11-11": 1,
+      "2026-11-21": 1
     },
     "/en/noticies/photo-exhibitions-spaces-barcelona-guide": {
       "2026-06-15": 1,
@@ -2574,7 +2585,8 @@
       "2026-11-17": 3,
       "2026-11-18": 5,
       "2026-11-19": 1,
-      "2026-11-20": 2
+      "2026-11-20": 2,
+      "2026-11-21": 1
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2702,7 +2714,8 @@
       "2026-11-16": 1,
       "2026-11-17": 1,
       "2026-11-18": 2,
-      "2026-11-19": 1
+      "2026-11-19": 1,
+      "2026-11-22": 2
     },
     "noticies": {
       "2026-05-09": 1,
@@ -3112,7 +3125,8 @@
       "2026-10-28": 1,
       "2026-11-07": 1,
       "2026-11-09": 2,
-      "2026-11-11": 2
+      "2026-11-11": 2,
+      "2026-11-21": 1
     },
     "qui-som": {
       "2026-05-09": 2,
@@ -3484,7 +3498,7 @@
     },
     {
       "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
-      "count": 40
+      "count": 41
     },
     {
       "path": "/2026/08/19/2026-08-18-isadora-passos-suspensio-capilar",
@@ -3527,6 +3541,14 @@
       "count": 17
     },
     {
+      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
+      "count": 17
+    },
+    {
+      "path": "/2024/02/22/sessio-amb-la-ballarina-nahomi-itzel",
+      "count": 17
+    },
+    {
       "path": "/contact",
       "count": 17
     },
@@ -3539,21 +3561,13 @@
       "count": 16
     },
     {
-      "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
-      "count": 16
-    },
-    {
       "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
       "count": 16
-    },
-    {
-      "path": "/2026/10/25/2026-10-24-10-anys-de-date-una-huerta",
-      "count": 15
     }
   ],
   "wizard_funnel": {
     "wizard-s1": 18,
-    "wizard-s2": 31,
+    "wizard-s2": 32,
     "wizard-s3": 8,
     "wizard-s4": 6,
     "wizard-sent": 6
@@ -3563,7 +3577,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3156
+      "count": 3160
     },
     {
       "name": "Safari",
@@ -3605,7 +3619,7 @@
     {
       "name": "Android",
       "id": "Android",
-      "count": 553
+      "count": 557
     },
     {
       "name": "iOS",
@@ -3642,7 +3656,7 @@
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 634
+      "count": 638
     },
     {
       "name": "tablet",
@@ -3659,7 +3673,7 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 498
+      "count": 502
     },
     {
       "name": "Brazil",
@@ -3731,12 +3745,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2367
+      "count": 2370
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 303
+      "count": 305
     },
     {
       "name": "ig",
@@ -3754,14 +3768,14 @@
       "count": 57
     },
     {
+      "name": "pocallum-cat.translate.goog",
+      "id": "pocallum-cat.translate.goog",
+      "count": 34
+    },
+    {
       "name": "www.facebook.com",
       "id": "www.facebook.com",
       "count": 32
-    },
-    {
-      "name": "pocallum-cat.translate.goog",
-      "id": "pocallum-cat.translate.goog",
-      "count": 30
     },
     {
       "name": "blog.pocallum.cat",
