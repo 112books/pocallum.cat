@@ -6,6 +6,10 @@ image: "/images/serveis/concerts/2025-07-05-%20LM6-%20Foma800@1600%20-%20Avishai
 aliases:
   - /en/serveis/live-music/
 related:
+  - text: "Jazz photography in Barcelona"
+    url: "en/serveis/jazz-photography/"
+  - text: "Flamenco photography in Barcelona"
+    url: "en/serveis/flamenco-photography/"
   - text: "Event photography for festivals and venues"
     url: "serveis/festivals-and-venues/"
   - text: "Band and artist photography session"
