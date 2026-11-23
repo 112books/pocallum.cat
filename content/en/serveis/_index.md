@@ -36,3 +36,5 @@ We don't work with fixed rates because every project is different. The process: 
 ## Does Pocallum work outside Barcelona?
 
 Yes. Our base is Barcelona and Catalonia, but we travel when the project warrants it. We have documented festivals and productions in Madrid, Andalusia, Valencia and abroad. Travel is included in the quote.
+
+**How it works:** delivery times, what's included and how payment works, no small print → [See how it works](/en/com-funciona/)
