@@ -25,8 +25,8 @@ Migrat de WordPress a Hugo. Migració completada a producció (16/09/2026): el w
 | Tema | Custom `themes/pocallum/` |
 | CSS | Vanilla CSS amb custom properties (cap framework) |
 | JS | Vanilla JS mínim (galeria mosaic + shuffle + lightbox) |
-| Idiomes | CA (per defecte), EN, ES (preparat, no activat) |
-| Formulari | Wizard natiu 4 passos → endpoint propi `static/formulari.php` (filtre anti-spam i registre de leads a `~/leads`, sense tercers) |
+| Idiomes | CA (per defecte), EN, ES (actiu des de 21/11/2026) |
+| Formulari | Ràpid de 3 camps (nom, email, què necessites) + wizard de 4 passos opcional → endpoint propi `static/formulari.php` (filtre anti-spam i registre de leads a `~/leads`, sense tercers) |
 | Analytics | GoatCounter (sense cookies, GDPR) — GA4 eliminat (16/09/2026) |
 | DNS/Domini | Dinahosting |
 
@@ -101,7 +101,7 @@ pocallum.cat/
 ├── i18n/
 │   ├── ca.yaml                # strings UI català
 │   ├── en.yaml                # strings UI anglès
-│   └── es.yaml                # preparat, mínim
+│   └── es.yaml                # strings UI castellà
 ├── static/
 │   ├── fonts/                 # woff2 autoallotjades
 │   ├── images/
@@ -122,9 +122,14 @@ pocallum.cat/
 
 - **CA** (català) — idioma per defecte, `defaultContentLanguage = "ca"`
 - **EN** (anglès) — secundari, `contentDir = "content/en"`
-- **ES** (castellà) — preparat però **no activat**: `es.yaml` mínim, sense contingut, no apareix al selector
+- **ES** (castellà) — **actiu des del 21/11/2026** (`contentDir = "content/es"`, pes 3). Va néixer de
+  l'auditoria de captació (`docs/seo/AUDIT-2026-11-captacio-visites.md`, F1): 7 de les 10 cerques
+  comercials del mercat local són en castellà. De moment hi ha les pàgines de servei i
+  `com-funciona`; la resta del web viu en CA i EN
 
-Per activar el castellà quan toqui: afegir contingut a `content/es/`, omplir `es.yaml`, i afegir `languages.es` al menú de `hugo.toml`.
+El castellà **no** ha de traduir-ho tot: només les pàgines que capturen cerca comercial (serveis,
+com-funciona, contacte). Notícies, festivals i galeria es queden en CA i EN per no triplicar
+manteniment; si algun dia s'amplia, cal afegir l'idioma al selector de `hugo.toml`.
 
 ### ⚠️ Regla de traducció obligatòria
 
@@ -132,7 +137,8 @@ Per activar el castellà quan toqui: afegir contingut a `content/es/`, omplir `e
 
 - Festival CA → `content/ca/festivals/slug.md` + `content/en/festivals/slug.md`
 - Notícia CA → `content/ca/noticies/slug.md` + `content/en/noticies/slug.md`
-- El castellà no cal fins que s'activi l'idioma.
+- Les **pàgines de servei** (i `com-funciona`) sí que es fan també en castellà: són les que capturen
+  la cerca comercial del mercat local. Notícies, festivals i galeria, no.
 
 ---
 
@@ -364,7 +370,6 @@ Spec complet: `docs/superpowers/specs/2026-05-05-festivals-serveis-formulari-des
 
 - Newsletter / mailing list
 - Botiga o e-commerce amb mercandatge propi
-- Castellà activat
 - Blog integrat (`blog.pocallum.cat` és independent, viu a Dinahosting) <--- compte amb el rsync: exclou `blog/`!
 - Formació fotogràfica (→ Llumàtics)
 
