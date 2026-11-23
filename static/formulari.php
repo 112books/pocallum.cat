@@ -161,19 +161,23 @@ $leadFile = $monthDir . '/' . $fecha . '-' . $mdId . ($slug ? '-' . $slug : '') 
 $subject = h(preg_replace('/[\r\n]+/', ' ', $subject));
 $to      = LEAD_ADDRESS;
 
-$body = wordwrap(
-    "Servei:      " . $servei . "\n" .
-    "Projecte:    " . $projecte . "\n" .
-    "Quan:        " . $quan . "\n" .
-    "On:          " . $lloc . "\n" .
-    "Nom:         " . $nom . "\n" .
-    "Email:       " . $email . "\n" .
-    "Telefon:     " . $telefon . "\n" .
-    "Via:         " . ($via !== '' ? $via : 'web') . "\n" .
-    "Idioma:      " . $lang . "\n" .
-    "Consentiment: sí\n",
-    76
-);
+/* Només els camps que existeixen: el formulari ràpid no en té la majoria */
+$l = [];
+$l[] = "Formulari:   " . ($mode === 'rapid' ? "ràpid (3 camps)" : "complet (wizard)");
+$l[] = "Nom:         " . $nom;
+$l[] = "Email:       " . $email;
+if ($telefon !== '') { $l[] = "Telèfon:     " . $telefon; }
+if ($servei !== '')  { $l[] = "Servei:      " . $servei; }
+if ($quan !== '')    { $l[] = "Quan:        " . $quan; }
+if ($lloc !== '')    { $l[] = "On:          " . $lloc; }
+$l[] = "Via:         " . ($via !== '' ? $via : 'web');
+$l[] = "Idioma:      " . $lang;
+$l[] = "";
+$l[] = "Què necessita:";
+$l[] = $projecte;
+$l[] = "";
+$l[] = "Consentiment: sí";
+$body = wordwrap(implode("\n", $l), 76);
 
 $headers  = "From: Pocallum <" . $to . ">\r\n";
 $headers .= "Reply-To: " . h($nom) . " <" . $email . ">\r\n";
