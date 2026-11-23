@@ -3396,3 +3396,18 @@ input.wiz-checkbox:checked + .wiz-consent__box::after {
   .servei-llista__item { grid-template-columns: 1fr; gap: .5rem; }
   .servei-llista__num { padding-top: 0; }
 }
+
+/* ── Enllaç festival → servei ──────────────────────────────────────── */
+.festival-servei {
+  margin: 3rem auto 0; padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.festival-servei__eyebrow {
+  margin: 0 0 .5rem; color: var(--mid);
+  font-family: var(--f-mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+}
+.festival-servei__link {
+  color: var(--accent); text-decoration: none; font-size: 1.05rem;
+  border-bottom: 1px solid transparent; padding-bottom: .1rem;
+}
+.festival-servei__link:hover { border-color: var(--accent); }

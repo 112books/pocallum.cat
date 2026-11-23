@@ -1,0 +1,37 @@
+{{/* Enllaç del festival cap al servei que li correspon, segons la disciplina. */}}
+{{- $disc := lower (.Params.disciplina | default "") -}}
+{{- $lang := .Language.Lang -}}
+
+{{- $key := "festivals" -}}
+{{- if strings.Contains $disc "circ" -}}{{- $key = "circ" -}}
+{{- else if strings.Contains $disc "flamenc" -}}{{- $key = "flamenc" -}}
+{{- else if strings.Contains $disc "jazz" -}}{{- $key = "jazz" -}}
+{{- else if or (strings.Contains $disc "teatre") (strings.Contains $disc "dansa") -}}{{- $key = "teatre" -}}
+{{- else if or (strings.Contains $disc "blues") (strings.Contains $disc "música") (strings.Contains $disc "saxofon") (strings.Contains $disc "harmònica") (strings.Contains $disc "canya") (strings.Contains $disc "soul") (strings.Contains $disc "funk") -}}{{- $key = "concerts" -}}
+{{- end -}}
+
+{{- $paths := dict
+  "jazz"      (dict "ca" "/serveis/fotografia-jazz-barcelona/"      "en" "/en/serveis/jazz-photography/"      "es" "/es/serveis/fotografo-jazz-barcelona/")
+  "flamenc"   (dict "ca" "/serveis/fotografia-flamenc-barcelona/"   "en" "/en/serveis/flamenco-photography/"  "es" "/es/serveis/fotografo-flamenco-barcelona/")
+  "circ"      (dict "ca" "/serveis/fotografia-circ-barcelona/"      "en" "/en/serveis/circus-photography/"    "es" "/es/serveis/fotografo-circo-barcelona/")
+  "teatre"    (dict "ca" "/serveis/teatre-dansa/"                   "en" "/en/serveis/theatre-dance/"         "es" "/es/serveis/fotografo-teatro-danza-barcelona/")
+  "concerts"  (dict "ca" "/serveis/concerts/"                       "en" "/en/serveis/live-music/"            "es" "/es/serveis/fotografo-concerts-barcelona/")
+  "festivals" (dict "ca" "/serveis/festivals-i-sales/"              "en" "/en/serveis/festivals-and-venues/"  "es" "/es/serveis/fotografo-festivales-barcelona/")
+-}}
+
+{{- $labels := dict
+  "jazz"      (dict "ca" "Fotografia de jazz a Barcelona"        "en" "Jazz photography in Barcelona"        "es" "Fotografía de jazz en Barcelona")
+  "flamenc"   (dict "ca" "Fotografia de flamenc a Barcelona"     "en" "Flamenco photography in Barcelona"    "es" "Fotografía de flamenco en Barcelona")
+  "circ"      (dict "ca" "Fotografia de circ a Barcelona"        "en" "Circus photography in Barcelona"      "es" "Fotografía de circo en Barcelona")
+  "teatre"    (dict "ca" "Teatre, dansa i arts escèniques"       "en" "Theatre, dance and performing arts"   "es" "Teatro, danza y artes escénicas")
+  "concerts"  (dict "ca" "Concerts i directes a Barcelona"       "en" "Concerts and live music in Barcelona" "es" "Conciertos y directos en Barcelona")
+  "festivals" (dict "ca" "Cobertura per a festivals i sales"     "en" "Festival and venue coverage"          "es" "Cobertura para festivales y salas")
+-}}
+
+{{- $url := index (index $paths $key) $lang -}}
+{{- $label := index (index $labels $key) $lang -}}
+
+<aside class="festival-servei container">
+  <p class="festival-servei__eyebrow">{{ i18n "serveis_related" | default "Pot interessar-te" }}</p>
+  <a class="festival-servei__link" href="{{ $url }}">{{ $label }} →</a>
+</aside>
