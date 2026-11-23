@@ -1,11 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pocallum.cat — Gestor de continguts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Editor de continguts</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #f7f7f5; color: #333;
+    }
+    #carregant {
+      position: fixed; inset: 0; display: grid; place-content: center;
+      gap: .75rem; text-align: center; background: #f7f7f5; z-index: 9999;
+    }
+    #carregant .punt {
+      width: 2rem; height: 2rem; margin: 0 auto; border-radius: 50%;
+      border: 3px solid #ddd; border-top-color: #c81e1e;
+      animation: gira .8s linear infinite;
+    }
+    #carregant p { margin: 0; font-size: .95rem; color: #666; max-width: 26rem; line-height: 1.5; }
+    @keyframes gira { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { #carregant .punt { animation: none; } }
+  </style>
 </head>
 <body>
-  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  <div id="carregant">
+    <div class="punt"></div>
+    <p>Carregant l'editor…</p>
+  </div>
+
+  <!--
+    Sveltia CMS · bundle autoallotjat (opció per defecte)
+    Versió pinada: 0.271.0
+    Actualitza amb: ./scripts/update-vendor.sh
+  -->
+  <script type="module" src="sveltia-cms.js"></script>
+
+  <!--
+    Alternativa: CDN pinada amb SRI (si no vols autoallotjar el bundle).
+    Descomenta aquest bloc i comenta l'anterior.
+    <script type="module"
+      src="https://unpkg.com/@sveltia/cms@0.271.0/dist/sveltia-cms.js"
+      integrity="sha384-rsJ8XRbFXCMUkLHuu3VtCXePoIw1SMqSb5g7f927VhoGUYcTq1u5nX4hmogI0+TB"
+      crossorigin="anonymous"></script>
+  -->
+
+  <script>
+    (function () {
+      var loader = document.getElementById('carregant');
+      function amagar() { loader.style.display = 'none'; }
+
+      // Sveltia munta la seva interfície dins <body>: quan apareix un element
+      // que no és nostre, amaguem la pantalla de càrrega.
+      var obs = new MutationObserver(function (mutacions) {
+        for (var i = 0; i < mutacions.length; i++) {
+          var afegits = mutacions[i].addedNodes;
+          for (var j = 0; j < afegits.length; j++) {
+            var n = afegits[j];
+            if (n.nodeType === 1 && n.id !== 'carregant' &&
+                !/^(SCRIPT|STYLE|LINK|META)$/.test(n.tagName)) {
+              amagar();
+              obs.disconnect();
+              return;
+            }
+          }
+        }
+      });
+      obs.observe(document.body, { childList: true });
+
+      setTimeout(function () {
+        if (loader.style.display !== 'none') {
+          loader.innerHTML =
+            '<p>No s\'ha pogut carregar l\'editor.<br>' +
+            'Comprova la connexió i recarrega la pàgina. Si torna a passar, ' +
+            'obre la consola del navegador (F12) i passa el missatge a qui et dona suport.</p>';
+        }
+      }, 20000);
+    })();
+  </script>
 </body>
 </html>
