@@ -4,6 +4,53 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-22 (vespre) — Castellà complet, contingut nou i enllaçat intern
+
+**🌍 Selector d'idiomes i menú ES**
+
+- El selector mostra **sempre CA, EN i ES** a totes les pàgines; si una pàgina no té traducció,
+  l'enllaç porta a la portada d'aquell idioma (mai un 404). Implementat amb Site.Sites i un mapa
+  de traduccions.
+- Menú ES amb rutes explícites i paràmetre no_lang al header i al footer: relLangURL generava
+  /es/es/serveis/. translationKey afegit a portada, serveis, contacte i a les sis seccions.
+- /es/ passa a usar la **plantilla de portada comuna** (index.es.html eliminat): hero, graella,
+  serveis, obra, notícies i CTA com CA i EN. Fallback al català a notícies i obra.
+
+**🧩 Seccions ES**
+
+- content/es/{galeria,festivals,noticies,obra,qui-som,el-blog}/_index.md amb títol i text en
+  castellà. Les plantilles de llistat (festivals, notícies, obra) fan fallback a ca si l'idioma no
+  té contingut propi — mateix patró que ja feia la galeria.
+
+**📝 Contingut nou**
+
+- **Jazz, flamenc i circ** en CA, EN i ES (9 pàgines) amb FAQ i enllaçat creuat des de concerts i
+  teatre-dansa.
+- **Guia** «Què mira un programador de festival quan rep les fotos d'un grup» (CA + EN).
+- **Pàgina «Com funciona»** en tres idiomes (/com-funciona/) amb FAQPage: 30-50 imatges, 72 h
+  concert / 1 setmana book / festival al final, drets per escrit, bestreta 30%, desplaçament a part.
+
+**🔗 Enllaçat intern**
+
+- Cada fitxa de festival enllaça al servei de la seva disciplina (jazz, flamenc, circ, teatre,
+  concerts o festivals i sales), en els tres idiomes.
+- Dades de serveis i testimonis traduïdes (_es) i enllaços dels blocs cap a les pàgines ES.
+
+**🐞 Correccions**
+
+- main.js: les 8 frases rotatòries del hero només existien en CA i EN; afegides en ES.
+- process-analytics.py: el català no porta prefix a les URLs i **no es comptava**; ara qualsevol
+  ruta sense codi d'idioma compta com a ca. El gràfic d'idiomes de /stats/ ja és fiable.
+- 16 enllaços interns morts (URLs velles de 9 Barris) i 2 falsos positius de /pagefind/.
+
+**✅ Verificació**
+
+- 878 pàgines: 0 títols buits, 0 enllaços interns trencats, hreflang complet amb x-default.
+- Sitemaps: CA 533 · EN 279 · ES 22 — enviats a Search Console.
+- main i develop sincronitzats i desplegats.
+
+---
+
 ## 2026-11-22 — Castellà: pàgines de servei (fase 1)
 
 **🌍 Idioma ES activat, només per serveis**
