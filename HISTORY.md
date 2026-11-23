@@ -4,6 +4,35 @@ Registre de sessions de treball i canvis rellevants.
 
 ---
 
+## 2026-11-23 (vespre) — La fitxa de Google alinea el web, i un formulari de tres camps
+
+**📍 Fitxa de Google Business Profile**
+
+- La fitxa ja existia (es va crear el 20/11), però el web deia una altra cosa. Alineat: la fitxa
+  dins del `sameAs` del schema, l'horari del `OpeningHoursSpecification` de 09:00–20:00 a
+  16:00–20:00 (el de la fitxa), i l'adreça de les quatre pàgines legals de «Ferran Turné, 16,
+  08031» a «1-11, 08027».
+- Paràmetre nou `googleBusiness` a `hugo.toml`. Ara apunta a Maps; quan tinguis l'enllaç
+  «Comparteix» del perfil, es canvia aquest valor i prou.
+- Secció nova a `docs/seo/AUDIT-2026-11-captacio-visites.md` amb les dades de la fitxa i les cinc
+  coses que encara li falten (https, dates 2002/2010, fotos, ressenyes, publicacions).
+
+**📝 Formulari de contacte**
+
+- `/contacte/` obre ara amb **tres camps** (nom, email, què necessites) i un enllaç «Vull afinar
+  el pressupost» que desplega el wizard de quatre passos. El wizard no s'ha tocat: és un formulari
+  germà, amb ids propis (`q-*`) i el mateix endpoint.
+- `formulari.php` desa `formulari: rapid|complet` al lead, i el correu de notificació només mostra
+  els camps plens: amb el formulari ràpid arribaven cinc línies buides.
+- Provat en viu contra el servidor: `{"ok":true}` en tots dos modes.
+
+**📚 Documentació**
+
+- `CLAUDE.md` actualitzat: el castellà ja no hi consta com a desactivat (actiu des del 21/11 i
+  només a les pàgines comercials), el formulari nou a la taula d'stack, i «Castellà activat» fora
+  de la llista de fora d'abast.
+
+---
 ## 2026-11-22 (vespre) — Castellà complet, contingut nou i enllaçat intern
 
 **🌍 Selector d'idiomes i menú ES**
