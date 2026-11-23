@@ -38,3 +38,5 @@ No treballem amb tarifes tancades perquè cada projecte és diferent. El procés
 ## Treballa Pocallum fora de Barcelona?
 
 Sí. La base és Barcelona i Catalunya, però treballem arreu quan el projecte ho val. Hem documentat festivals i produccions a Madrid, Andalusia, el País Valencià i l'estranger. Els desplaçaments s'inclouen al pressupost.
+
+**Com funciona:** terminis, què inclou i com es paga, sense lletra petita → [Veure com funciona](/com-funciona/)

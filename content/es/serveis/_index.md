@@ -7,3 +7,5 @@ translationKey: serveis
 Trabajo con músicos, festivales, salas de concierto y proyectos editoriales en Barcelona y en toda Cataluña. Cada encargo es distinto y cada presupuesto se hace a medida.
 
 El criterio visual es el mismo para un cuarteto que debuta que para un festival de diez años de historia. Cuéntanos tu proyecto.
+
+**Cómo funciona:** plazos, qué incluye y cómo se paga, sin letra pequeña → [Ver cómo funciona](/es/com-funciona/)
