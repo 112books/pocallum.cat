@@ -13,7 +13,7 @@ aliases:
 
 - **Responsable:** Joan Linux Martínez i Serres
 - **NIF:** 38121766W
-- **Adreça:** Nau Bostik, Carrer de Ferran Turné, 16, 08031 Barcelona
+- **Adreça:** Nau Bostik, Carrer de Ferran Turné, 1-11, 08027 Barcelona
 - **Contacte:** <a href="#" data-contact="686f6c6140706f63616c6c756d2e636174"><span data-contact-text>Correu electrònic</span></a>
 
 ---

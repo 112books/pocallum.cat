@@ -65,6 +65,8 @@ defaultContentLanguageInSubdir = false
   facebook        = "https://www.facebook.com/pocallum"
   blog            = "https://blog.pocallum.cat"
   about           = "https://about.pocallum.cat"
+  # Fitxa de Google Business Profile (substituïble per l'enllaç "Comparteix" del perfil)
+  googleBusiness  = "https://www.google.com/maps/search/?api=1&query=Pocallum%2C%20Carrer%20de%20Ferran%20Turn%C3%A9%201-11%2C%2008027%20Barcelona"
   goatcounterSite = "pocallum"
 
   # Contact form: enviament des del mateix hosting (static/formulari.php, mail()).

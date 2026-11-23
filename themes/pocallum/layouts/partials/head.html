@@ -129,7 +129,7 @@
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
+    "opens": "16:00",
     "closes": "20:00"
   },
   "areaServed": [
@@ -170,7 +170,8 @@
   "sameAs": [
     "{{ .Site.Params.instagram }}",
     "{{ .Site.Params.facebook }}",
-    "{{ .Site.Params.blog }}"
+    "{{ .Site.Params.blog }}"{{ with .Site.Params.googleBusiness }},
+    "{{ . }}"{{ end }}
   ]
 }
 </script>
@@ -267,7 +268,8 @@
   "sameAs": [
     "{{ .Site.Params.instagram }}",
     "{{ .Site.Params.facebook }}",
-    "{{ .Site.Params.blog }}"
+    "{{ .Site.Params.blog }}"{{ with .Site.Params.googleBusiness }},
+    "{{ . }}"{{ end }}
   ]
 }
 </script>
