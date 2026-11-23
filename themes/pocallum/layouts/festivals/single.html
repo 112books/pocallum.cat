@@ -46,6 +46,8 @@
     </div>
   </div>
 
+  {{ partial "festival-servei.html" . }}
+
   {{ partial "cta-band.html" . }}
 
   {{ $allPages := .Parent.Pages.ByDate.Reverse }}
