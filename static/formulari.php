@@ -105,6 +105,7 @@ $quan     = e($_POST['quan'] ?? '');
 $lloc     = e($_POST['lloc'] ?? '');
 $telefon  = e($_POST['telefon'] ?? '');
 $via      = e($_POST['via'] ?? '');
+$mode     = ($_POST['mode'] ?? '') === 'rapid' ? 'rapid' : 'complet';
 $lang     = e($_POST['_language'] ?? 'ca');
 $subject  = e($_POST['_subject'] ?? 'Nou pressupost - pocallum.cat');
 $consent  = (($_POST['_consent'] ?? '') === '1');
@@ -146,6 +147,7 @@ $md .= "nom: " . $nom . "\n";
 $md .= "servei: " . $servei . "\n";
 $md .= "via: " . ($via !== '' ? $via : 'web') . "\n";
 $md .= "idioma: " . $lang . "\n";
+$md .= "formulari: " . $mode . "\n";
 $md .= "---\n\n";
 $md .= "## Que li interessa\n\n" . $projecte . "\n";
 if ($quan !== '')   { $md .= "\n- **Quan:** " . $quan . "\n"; }

@@ -13,6 +13,55 @@
 <section class="section section--wizard">
   <div class="container container--narrow">
 
+    {{/* ── Formulari ràpid: 3 camps i prou ───────────────────────────────── */}}
+    <form id="js-quick"{{ with .Site.Params.contactFormEndpoint }} action="{{ . }}"{{ end }} method="POST" novalidate>
+
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_ts" id="js-quick-ts" value="0">
+      <input type="hidden" name="mode" value="rapid">
+      <input type="hidden" name="_subject" value="{{ i18n "wiz_email_subject" | default "Nou pressupost — pocallum.cat" }}">
+      <input type="hidden" name="_language" value="{{ $lang }}">
+
+      <p class="page-intro">{{ i18n "quick_intro" | default "Tres camps i prou. Si vols, després ens ho expliques amb més detall." }}</p>
+
+      <div class="wiz-field-row">
+        <div class="wiz-field">
+          <label class="wiz-label" for="q-nom">{{ i18n "wiz_s3_nom" | default "Nom" }} <span class="wiz-required" aria-hidden="true">*</span></label>
+          <input class="wiz-input" type="text" id="q-nom" name="nom" autocomplete="name"
+            placeholder="{{ i18n "wiz_s3_nom_ph" | default "Com et diem?" }}" required>
+        </div>
+        <div class="wiz-field">
+          <label class="wiz-label" for="q-email">Email <span class="wiz-required" aria-hidden="true">*</span></label>
+          <input class="wiz-input" type="email" id="q-email" name="email" autocomplete="email"
+            placeholder="{{ i18n "wiz_s3_email_ph" | default "on t'enviem el pressupost" }}" required>
+        </div>
+      </div>
+
+      <div class="wiz-field">
+        <label class="wiz-label" for="q-desc">{{ i18n "quick_what" | default "Què necessites?" }} <span class="wiz-required" aria-hidden="true">*</span></label>
+        <textarea class="wiz-textarea" id="q-desc" name="projecte" rows="4" required
+          placeholder="{{ i18n "quick_what_ph" | default "Concert, festival, book, reportatge... dues línies n'hi ha prou." }}"></textarea>
+      </div>
+
+      <div class="wiz-field wiz-field--consent">
+        <label class="wiz-consent" for="q-consent">
+          <input class="wiz-checkbox" type="checkbox" id="q-consent" name="_consent" value="1" required>
+          <span class="wiz-consent__box" aria-hidden="true"></span>
+          <span class="wiz-consent__text">{{ i18n "wiz_consent_text" | default "He llegit i accepto la política de privacitat. Les meves dades només s'utilitzaran per contactar-me directament sobre aquest pressupost, no s'enviaran a tercers ni s'usaran per a newsletter." }} <a href="{{ "legal/privacitat/" | relLangURL }}" target="_blank" rel="noopener">{{ i18n "wiz_consent_link" | default "Política de privacitat" }}</a></span>
+        </label>
+      </div>
+
+      <div class="wiz-nav">
+        <button type="submit" id="js-quick-send" class="btn btn--primary btn--lg">
+          {{ i18n "quick_send" | default "Enviar" }} →
+        </button>
+        <button type="button" id="js-quick-expand" class="wiz-nav__prev">
+          {{ i18n "quick_more" | default "Vull afinar el pressupost" }} →
+        </button>
+      </div>
+    </form>
+
+    <div id="js-wizard-wrap" hidden>
     <div class="wiz-progress-wrap" id="js-progress-wrap" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-label="{{ i18n "wiz_s1_title" | default "Pas 1 de 4" }}">
       <div class="wiz-steps" id="js-wiz-steps">
         <span class="wiz-step-dot is-active" data-step="1">01</span>
@@ -143,6 +192,7 @@
       </div>
 
     </form>
+    </div>{{/* /js-wizard-wrap */}}
 
     <div class="wiz-success" id="js-wiz-success" hidden>
       <div class="wiz-success__check">✓</div>
@@ -360,6 +410,68 @@
     function onErr() {
       sendBtn.disabled = false;
       sendBtn.textContent = '{{ i18n "wizard_send" | default "Enviar pressupost" }} →';
+    }
+  });
+})();
+</script>
+
+<script>
+/* Formulari ràpid: 3 camps, sense wizard */
+(function () {
+  var quick = document.getElementById('js-quick');
+  if (!quick) return;
+  var wrap = document.getElementById('js-wizard-wrap');
+  var success = document.getElementById('js-wiz-success');
+  var ts = document.getElementById('js-quick-ts');
+  var send = document.getElementById('js-quick-send');
+  var more = document.getElementById('js-quick-expand');
+
+  ts.value = String(Date.now());
+  quick.addEventListener('focusin', function () {
+    if (ts.value === '0') ts.value = String(Date.now());
+  }, { once: true });
+
+  if (more) {
+    more.addEventListener('click', function () {
+      quick.hidden = true;
+      wrap.hidden = false;
+      var first = wrap.querySelector('.wiz-card input');
+      if (first) first.focus();
+    });
+  }
+
+  quick.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nom = document.getElementById('q-nom');
+    var email = document.getElementById('q-email');
+    var msg = document.getElementById('q-desc');
+    var ok = document.getElementById('q-consent');
+
+    if (!nom.value.trim()) { nom.focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) { email.focus(); return; }
+    if (!msg.value.trim()) { msg.focus(); return; }
+    if (!ok.checked) { ok.focus(); return; }
+
+    var action = quick.getAttribute('action') || '';
+    send.disabled = true;
+    send.textContent = '{{ i18n "wiz_sending" | default "Enviant..." }}';
+
+    fetch(action, { method: 'POST', body: new FormData(quick), headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (d && d.ok) {
+          if (typeof gcTrack === 'function') gcTrack('formulari-rapid');
+          quick.hidden = true;
+          if (wrap) wrap.hidden = true;
+          success.hidden = false;
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else { fail(); }
+      })
+      .catch(fail);
+
+    function fail() {
+      send.disabled = false;
+      send.textContent = '{{ i18n "quick_send" | default "Enviar" }} →';
     }
   });
 })();
