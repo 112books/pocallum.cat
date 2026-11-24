@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-23T13:51:55.218767Z",
+  "generated": "2026-11-24T01:23:13.808426Z",
   "period": {
-    "start": "2025-11-23",
-    "end": "2026-11-23"
+    "start": "2025-11-24",
+    "end": "2026-11-24"
   },
-  "total": 2034,
+  "total": 2046,
   "total_unique": 0,
   "hits_by_day": [
     {
@@ -794,20 +794,24 @@
     {
       "date": "2026-11-22",
       "count": 18
+    },
+    {
+      "date": "2026-11-23",
+      "count": 12
     }
   ],
   "hits": [
     {
       "path": "/",
-      "count": 601
+      "count": 606
     },
     {
       "path": "/galeria",
-      "count": 227
+      "count": 229
     },
     {
       "path": "/festivals",
-      "count": 106
+      "count": 108
     },
     {
       "path": "/serveis",
@@ -835,7 +839,7 @@
     },
     {
       "path": "/qui-som",
-      "count": 46
+      "count": 47
     },
     {
       "path": "/el-blog",
@@ -890,6 +894,10 @@
       "count": 12
     },
     {
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 12
+    },
+    {
       "path": "/en/serveis/artistic-portfolios",
       "count": 11
     },
@@ -899,10 +907,6 @@
     },
     {
       "path": "/festivals/calella-harmonica-festival",
-      "count": 11
-    },
-    {
-      "path": "/festivals/ciutat-flamenco-barcelona",
       "count": 11
     },
     {
@@ -923,6 +927,10 @@
     },
     {
       "path": "/legal/privacitat",
+      "count": 9
+    },
+    {
+      "path": "/festivals/im-jazz",
       "count": 9
     },
     {
@@ -951,10 +959,6 @@
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 8
-    },
-    {
-      "path": "/festivals/im-jazz",
       "count": 8
     },
     {
@@ -999,19 +1003,19 @@
     }
   ],
   "by_lang": {
-    "ca": 1717,
+    "ca": 1729,
     "en": 292,
     "es": 25
   },
   "by_section": {
-    "inici": 633,
-    "galeria": 245,
-    "festivals": 212,
+    "inici": 638,
+    "galeria": 247,
+    "festivals": 216,
     "serveis": 186,
     "noticies": 226,
     "contacte": 69,
     "blog": 50,
-    "qui-som": 56,
+    "qui-som": 57,
     "el-blog": 45,
     "obra": 71,
     "legal": 83,
@@ -1223,7 +1227,8 @@
       "2026-11-19": 1,
       "2026-11-20": 2,
       "2026-11-21": 1,
-      "2026-11-22": 1
+      "2026-11-22": 1,
+      "2026-11-23": 5
     },
     "/galeria": {
       "2026-05-09": 3,
@@ -1341,7 +1346,8 @@
       "2026-11-16": 1,
       "2026-11-18": 2,
       "2026-11-19": 1,
-      "2026-11-22": 3
+      "2026-11-22": 3,
+      "2026-11-23": 2
     },
     "/festivals": {
       "2026-05-09": 2,
@@ -1416,7 +1422,8 @@
       "2026-11-10": 1,
       "2026-11-12": 1,
       "2026-11-15": 1,
-      "2026-11-22": 2
+      "2026-11-22": 2,
+      "2026-11-23": 2
     },
     "/serveis": {
       "2026-05-09": 2,
@@ -1761,7 +1768,8 @@
       "2026-10-25": 1,
       "2026-10-28": 1,
       "2026-11-01": 1,
-      "2026-11-22": 1
+      "2026-11-22": 1,
+      "2026-11-23": 1
     },
     "/el-blog": {
       "2026-09-16": 3,
@@ -1975,6 +1983,18 @@
       "2026-11-08": 1,
       "2026-11-09": 1
     },
+    "/festivals/ciutat-flamenco-barcelona": {
+      "2026-05-10": 1,
+      "2026-07-01": 1,
+      "2026-07-23": 2,
+      "2026-10-19": 1,
+      "2026-10-25": 1,
+      "2026-10-26": 1,
+      "2026-10-27": 2,
+      "2026-10-28": 1,
+      "2026-11-22": 1,
+      "2026-11-23": 1
+    },
     "/en/serveis/artistic-portfolios": {
       "2026-08-14": 1,
       "2026-08-16": 1,
@@ -2007,17 +2027,6 @@
       "2026-07-02": 1,
       "2026-09-11": 1,
       "2026-10-22": 1
-    },
-    "/festivals/ciutat-flamenco-barcelona": {
-      "2026-05-10": 1,
-      "2026-07-01": 1,
-      "2026-07-23": 2,
-      "2026-10-19": 1,
-      "2026-10-25": 1,
-      "2026-10-26": 1,
-      "2026-10-27": 2,
-      "2026-10-28": 1,
-      "2026-11-22": 1
     },
     "/festivals/barcelona-tattoo-expo": {
       "2026-07-01": 1,
@@ -2066,6 +2075,16 @@
       "2026-09-16": 1,
       "2026-09-29": 1,
       "2026-10-06": 1
+    },
+    "/festivals/im-jazz": {
+      "2026-05-23": 1,
+      "2026-05-29": 1,
+      "2026-06-03": 1,
+      "2026-06-07": 1,
+      "2026-07-02": 1,
+      "2026-07-24": 2,
+      "2026-10-08": 1,
+      "2026-11-23": 1
     },
     "/ca": {
       "2026-05-09": 2,
@@ -2119,15 +2138,6 @@
       "2026-06-02": 1,
       "2026-06-04": 1,
       "2026-09-22": 1
-    },
-    "/festivals/im-jazz": {
-      "2026-05-23": 1,
-      "2026-05-29": 1,
-      "2026-06-03": 1,
-      "2026-06-07": 1,
-      "2026-07-02": 1,
-      "2026-07-24": 2,
-      "2026-10-08": 1
     },
     "/serveis-fotografics-2/books-per-actors-i-actrius": {
       "2026-05-11": 2,
@@ -2597,7 +2607,8 @@
       "2026-11-19": 1,
       "2026-11-20": 2,
       "2026-11-21": 1,
-      "2026-11-22": 5
+      "2026-11-22": 5,
+      "2026-11-23": 5
     },
     "galeria": {
       "2026-05-09": 3,
@@ -2726,7 +2737,8 @@
       "2026-11-17": 1,
       "2026-11-18": 2,
       "2026-11-19": 1,
-      "2026-11-22": 3
+      "2026-11-22": 3,
+      "2026-11-23": 2
     },
     "noticies": {
       "2026-05-09": 1,
@@ -2930,7 +2942,8 @@
       "2026-11-12": 2,
       "2026-11-14": 1,
       "2026-11-15": 1,
-      "2026-11-22": 4
+      "2026-11-22": 4,
+      "2026-11-23": 4
     },
     "serveis": {
       "2026-05-09": 2,
@@ -3189,7 +3202,8 @@
       "2026-11-01": 1,
       "2026-11-09": 1,
       "2026-11-11": 1,
-      "2026-11-22": 1
+      "2026-11-22": 1,
+      "2026-11-23": 1
     },
     "blog": {
       "2026-05-09": 1,
@@ -3464,11 +3478,11 @@
       "count": 18
     },
     {
-      "path": "/festivals/calella-harmonica-festival",
-      "count": 11
+      "path": "/festivals/ciutat-flamenco-barcelona",
+      "count": 12
     },
     {
-      "path": "/festivals/ciutat-flamenco-barcelona",
+      "path": "/festivals/calella-harmonica-festival",
       "count": 11
     },
     {
@@ -3476,15 +3490,15 @@
       "count": 10
     },
     {
+      "path": "/festivals/im-jazz",
+      "count": 9
+    },
+    {
       "path": "/festivals/clot-en-blues",
       "count": 8
     },
     {
       "path": "/festivals/nou-barris-meets-new-orleans",
-      "count": 8
-    },
-    {
-      "path": "/festivals/im-jazz",
       "count": 8
     },
     {
@@ -3507,7 +3521,7 @@
     },
     {
       "path": "/cerca",
-      "count": 42
+      "count": 43
     },
     {
       "path": "/2026/11/15/2026-11-15-presentacio%CC%81-del-llibre-ella-tamb%C3%A9-hi-era-de-joni-d.",
@@ -3542,12 +3556,12 @@
       "count": 22
     },
     {
-      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "path": "/page/2",
       "count": 20
     },
     {
-      "path": "/page/2",
-      "count": 19
+      "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
+      "count": 20
     },
     {
       "path": "/2026/10/18/2026-10-19-ciutat-flamenco-esperanza-garrido-firmamento",
@@ -3555,6 +3569,10 @@
     },
     {
       "path": "/2026/10/17/2026-10-16-sopar-dentitats-al-casal-de-barri-de-prosperitat",
+      "count": 17
+    },
+    {
+      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
       "count": 17
     },
     {
@@ -3572,10 +3590,6 @@
     {
       "path": "/2026/11/14/2026-11-13-i-13-sant-xibeco-les-festes-dhivern-a-la-prosperitat",
       "count": 16
-    },
-    {
-      "path": "/2026/10/03/2026-10-03-la-nuu-festival-una-cr%C3%B2nica-sota-la-pluja",
-      "count": 16
     }
   ],
   "wizard_funnel": {
@@ -3585,17 +3599,17 @@
     "wizard-s4": 6,
     "wizard-sent": 6
   },
-  "avg_time_on_site_seconds": 43,
+  "avg_time_on_site_seconds": 44,
   "browsers": [
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3187
+      "count": 3216
     },
     {
       "name": "Safari",
       "id": "Safari",
-      "count": 1313
+      "count": 1316
     },
     {
       "name": "Firefox",
@@ -3622,12 +3636,12 @@
     {
       "name": "macOS",
       "id": "macOS",
-      "count": 1684
+      "count": 1690
     },
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1574
+      "count": 1600
     },
     {
       "name": "Android",
@@ -3659,7 +3673,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2717
+      "count": 2746
     },
     {
       "name": "phone",
@@ -3669,7 +3683,7 @@
     {
       "name": "desktophd",
       "id": "desktophd",
-      "count": 650
+      "count": 653
     },
     {
       "name": "tablet",
@@ -3681,27 +3695,27 @@
     {
       "name": "Spain",
       "id": "ES",
-      "count": 2483
+      "count": 2491
     },
     {
       "name": "United States",
       "id": "US",
-      "count": 509
+      "count": 521
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 219
+      "count": 222
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 130
+      "count": 133
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 99
+      "count": 100
     },
     {
       "name": "Venezuela",
@@ -3724,6 +3738,11 @@
       "count": 54
     },
     {
+      "name": "Bangladesh",
+      "id": "BD",
+      "count": 53
+    },
+    {
       "name": "Argentina",
       "id": "AR",
       "count": 52
@@ -3732,11 +3751,6 @@
       "name": "United Kingdom",
       "id": "GB",
       "count": 51
-    },
-    {
-      "name": "Bangladesh",
-      "id": "BD",
-      "count": 50
     },
     {
       "name": "Netherlands",
@@ -3758,12 +3772,12 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2378
+      "count": 2422
     },
     {
       "name": "Google",
       "id": "Google",
-      "count": 309
+      "count": 312
     },
     {
       "name": "ig",
@@ -3778,7 +3792,7 @@
     {
       "name": "chatgpt.com",
       "id": "chatgpt.com",
-      "count": 58
+      "count": 59
     },
     {
       "name": "pocallum-cat.translate.goog",
