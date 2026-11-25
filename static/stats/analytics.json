@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T04:41:45.227265Z",
+  "generated": "2026-11-25T15:09:56.619852Z",
   "period": {
     "start": "2025-11-25",
     "end": "2026-11-25"
@@ -3618,7 +3618,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3387
+      "count": 3413
     },
     {
       "name": "Safari",
@@ -3650,7 +3650,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1763
+      "count": 1789
     },
     {
       "name": "macOS",
@@ -3687,7 +3687,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2911
+      "count": 2937
     },
     {
       "name": "phone",
@@ -3714,27 +3714,27 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 599
+      "count": 612
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 238
+      "count": 239
     },
     {
       "name": "Colombia",
       "id": "CO",
-      "count": 145
+      "count": 146
     },
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 103
+      "count": 104
     },
     {
       "name": "Venezuela",
       "id": "VE",
-      "count": 73
+      "count": 74
     },
     {
       "name": "Singapore",
@@ -3744,12 +3744,17 @@
     {
       "name": "Indonesia",
       "id": "ID",
-      "count": 64
+      "count": 65
     },
     {
       "name": "Germany",
       "id": "DE",
       "count": 60
+    },
+    {
+      "name": "Bangladesh",
+      "id": "BD",
+      "count": 55
     },
     {
       "name": "United Kingdom",
@@ -3762,23 +3767,18 @@
       "count": 54
     },
     {
-      "name": "Bangladesh",
-      "id": "BD",
-      "count": 54
-    },
-    {
       "name": "France",
       "id": "FR",
-      "count": 49
-    },
-    {
-      "name": "Netherlands",
-      "id": "NL",
-      "count": 49
+      "count": 50
     },
     {
       "name": "Vietnam",
       "id": "VN",
+      "count": 50
+    },
+    {
+      "name": "Netherlands",
+      "id": "NL",
       "count": 49
     }
   ],
