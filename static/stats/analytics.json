@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-25T23:53:56.920739Z",
+  "generated": "2026-11-26T05:58:56.203818Z",
   "period": {
-    "start": "2025-11-25",
-    "end": "2026-11-25"
+    "start": "2025-11-26",
+    "end": "2026-11-26"
   },
   "total": 2056,
   "total_unique": 0,
@@ -3571,7 +3571,7 @@
     },
     {
       "path": "/page/2",
-      "count": 20
+      "count": 21
     },
     {
       "path": "/2026/08/19/2026-08-18-despedida-anike-lamoso",
@@ -3618,7 +3618,7 @@
     {
       "name": "Chrome",
       "id": "Chrome",
-      "count": 3422
+      "count": 3429
     },
     {
       "name": "Safari",
@@ -3650,7 +3650,7 @@
     {
       "name": "Windows",
       "id": "Windows",
-      "count": 1798
+      "count": 1805
     },
     {
       "name": "macOS",
@@ -3687,7 +3687,7 @@
     {
       "name": "desktop",
       "id": "desktop",
-      "count": 2946
+      "count": 2953
     },
     {
       "name": "phone",
@@ -3714,12 +3714,12 @@
     {
       "name": "United States",
       "id": "US",
-      "count": 619
+      "count": 622
     },
     {
       "name": "Brazil",
       "id": "BR",
-      "count": 239
+      "count": 240
     },
     {
       "name": "Colombia",
@@ -3729,7 +3729,7 @@
     {
       "name": "Ecuador",
       "id": "EC",
-      "count": 104
+      "count": 105
     },
     {
       "name": "Venezuela",
@@ -3752,13 +3752,13 @@
       "count": 60
     },
     {
-      "name": "Bangladesh",
-      "id": "BD",
-      "count": 55
-    },
-    {
       "name": "United Kingdom",
       "id": "GB",
+      "count": 57
+    },
+    {
+      "name": "Bangladesh",
+      "id": "BD",
       "count": 55
     },
     {
@@ -3786,7 +3786,7 @@
     {
       "name": "Desconegut",
       "id": "Desconegut",
-      "count": 2554
+      "count": 2619
     },
     {
       "name": "Google",
